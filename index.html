@@ -141,7 +141,7 @@
       <article class="card">
         <div class="exercise-actions-row">
           <button id="exercise-prev-btn" class="btn btn-soft has-icon" data-icon="⟵">Exercice précédent</button>
-          <button id="exercise-toggle-done-btn" class="btn has-icon" data-icon="✓">Fait</button>
+          <button id="exercise-toggle-done-btn" class="btn has-icon" data-icon="&#9675;">&agrave; faire</button>
           <button id="exercise-next-btn" class="btn btn-soft has-icon icon-right" data-icon="⟶">Exercice suivant</button>
         </div>
       </article>
@@ -202,7 +202,12 @@
       <p id="user-setup-status" class="muted status-line">Choisissez le dossier utilisateur.</p>
 
       <div style="margin-top:12px;display:grid;gap:10px;">
-        <button id="user-setup-pick-root-btn" class="btn btn-soft has-icon" data-icon="📁" type="button">Choisir dossier utilisateur</button>
+        <div id="user-setup-saved-folders-wrap" style="display:none;">
+          <label for="user-setup-saved-folders-select" class="field" style="margin-bottom:6px;">Dossiers de travail enregistrés</label>
+          <select id="user-setup-saved-folders-select"></select>
+        </div>
+
+        <button id="user-setup-pick-root-btn" class="btn btn-soft has-icon" data-icon="📁" type="button">Ajouter un dossier de travail</button>
 
         <label for="user-setup-firstname-input" class="field" style="margin-bottom:0;">Votre prénom</label>
         <input id="user-setup-firstname-input" type="text" maxlength="30" placeholder="Ex: Alice" style="border:2px solid var(--line);border-radius:10px;padding:10px;font:inherit;">
@@ -210,6 +215,21 @@
 
       <div style="margin-top:16px;display:flex;justify-content:flex-end;gap:8px;">
         <button id="user-setup-validate-btn" class="btn has-icon" data-icon="✓" type="button">Valider</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="save-reminder-modal" class="image-modal" style="display:none;" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Rappel enregistrement exercice">
+    <div class="modal-content user-setup-content save-reminder-content">
+      <h2 style="margin-top:0;">Vous avez terminé ?</h2>
+      <p id="save-reminder-message" class="muted">Pensez à enregistrer votre travail dans votre dossier avant de continuer.</p>
+      <ol class="save-reminder-steps">
+        <li>Cliquez sur <strong>Fichier</strong> puis <strong>Enregistrer sous</strong>.</li>
+        <li>Choisissez votre dossier utilisateur : <code id="save-reminder-user-folder">Dossier utilisateur</code>.</li>
+        <li>Nommez le fichier <code id="save-reminder-file-name">ex-001-termine.docx</code>, puis validez avec <strong>Enregistrer</strong>.</li>
+      </ol>
+      <div style="margin-top:16px;display:flex;justify-content:flex-end;">
+        <button id="save-reminder-continue-btn" class="btn has-icon" data-icon="✓" type="button">Continuer</button>
       </div>
     </div>
   </div>

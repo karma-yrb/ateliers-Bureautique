@@ -20,9 +20,19 @@ class WordAtelierController {
     this.userModal = {
       root: document.getElementById("user-setup-modal"),
       status: document.getElementById("user-setup-status"),
+      savedFoldersWrap: document.getElementById("user-setup-saved-folders-wrap"),
+      savedFoldersSelect: document.getElementById("user-setup-saved-folders-select"),
       pickBtn: document.getElementById("user-setup-pick-root-btn"),
       firstNameInput: document.getElementById("user-setup-firstname-input"),
       validateBtn: document.getElementById("user-setup-validate-btn"),
+    };
+
+    this.saveReminderModal = {
+      root: document.getElementById("save-reminder-modal"),
+      message: document.getElementById("save-reminder-message"),
+      userFolder: document.getElementById("save-reminder-user-folder"),
+      fileName: document.getElementById("save-reminder-file-name"),
+      continueBtn: document.getElementById("save-reminder-continue-btn"),
     };
   }
 
@@ -113,10 +123,16 @@ class WordAtelierController {
       if (targetId) window.location.hash = `#exercise/${targetId}`;
     });
 
-    this.view.exerciseNextBtn.addEventListener("click", () => {
+    this.view.exerciseNextBtn.addEventListener("click", async () => {
       if (!this.isReady) return;
       const currentId = this.view.exerciseToggleDoneBtn.getAttribute("data-id");
-      if (currentId && !this.model.getIsDone(currentId)) {
+      const wasDone = currentId ? this.model.getIsDone(currentId) : false;
+      if (currentId && !wasDone) {
+        const canContinue = await this.#showSaveReminderModal("next", currentId);
+        if (!canContinue) return;
+      }
+
+      if (currentId && !wasDone) {
         this.model.markExerciseDone(currentId, true);
         this.#saveProgress();
       }
@@ -124,11 +140,17 @@ class WordAtelierController {
       if (targetId) window.location.hash = `#exercise/${targetId}`;
     });
 
-    this.view.exerciseToggleDoneBtn.addEventListener("click", () => {
+    this.view.exerciseToggleDoneBtn.addEventListener("click", async () => {
       if (!this.isReady) return;
       const id = this.view.exerciseToggleDoneBtn.getAttribute("data-id");
       if (!id) return;
       const isDone = this.model.getIsDone(id);
+
+      if (!isDone) {
+        const canContinue = await this.#showSaveReminderModal("done", id);
+        if (!canContinue) return;
+      }
+
       this.model.markExerciseDone(id, !isDone);
       this.#saveProgress();
       this.#renderExercisePage(id);
@@ -468,6 +490,7 @@ class WordAtelierController {
     let rootHandle = null;
     let initials = "";
     let firstName = "";
+    let savedWorkFolders = await this.storage.getSavedWorkFolders();
 
     if (!forcePrompt) {
       rootHandle = await this.storage.getSavedRootHandle();
@@ -480,6 +503,9 @@ class WordAtelierController {
           ok = await this.storage.ensureWritePermission(rootHandle);
         }
         if (!ok) rootHandle = null;
+        if (ok && rootHandle) {
+          savedWorkFolders = await this.storage.addSavedWorkFolder(rootHandle);
+        }
       }
 
       if (rootHandle && (!initials || !firstName)) {
@@ -503,8 +529,9 @@ class WordAtelierController {
       }
     }
 
-    if (!rootHandle || !firstName) {
-      const picked = await this.#promptUserSetup(rootHandle, { initials, firstName });
+    const shouldPromptFolderChoiceOnLaunch = !forcePrompt && savedWorkFolders.length > 0;
+    if (forcePrompt || shouldPromptFolderChoiceOnLaunch || !rootHandle || !firstName) {
+      const picked = await this.#promptUserSetup(rootHandle, { initials, firstName, savedWorkFolders });
       if (!picked) return null;
       rootHandle = picked.rootHandle;
       initials = picked.initials;
@@ -515,6 +542,7 @@ class WordAtelierController {
 
     await this.storage.ensureProgressDirectory(rootHandle, initials, true);
     await this.storage.saveUserProfile(rootHandle, initials, firstName);
+    await this.storage.addSavedWorkFolder(rootHandle);
     await this.storage.setSavedRootHandle(rootHandle);
     await this.storage.setSavedInitials(initials);
     await this.storage.setSavedFirstName(firstName);
@@ -555,10 +583,73 @@ class WordAtelierController {
       });
   }
 
+  #getSaveReminderFolderLabel() {
+    if (!this.userSession || !this.userSession.rootHandle) {
+      return "Dossier utilisateur";
+    }
+    return this.userSession.rootHandle.name || "Dossier utilisateur";
+  }
+
+  #getSaveReminderFileName(exerciseId) {
+    if (!exerciseId) return "exercice-termine.docx";
+    const normalized = String(exerciseId).trim().toLowerCase();
+    if (/^ex-\d+$/.test(normalized)) {
+      return `${normalized}-termine.docx`;
+    }
+    const exercise = this.model.getExerciseById(exerciseId);
+    if (!exercise || typeof exercise.num !== "number") return "exercice-termine.docx";
+    return `ex-${String(exercise.num).padStart(3, "0")}-termine.docx`;
+  }
+
+  #showSaveReminderModal(trigger, exerciseId) {
+    return new Promise((resolve) => {
+      const modal = this.saveReminderModal.root;
+      const message = this.saveReminderModal.message;
+      const userFolder = this.saveReminderModal.userFolder;
+      const fileName = this.saveReminderModal.fileName;
+      const continueBtn = this.saveReminderModal.continueBtn;
+
+      if (!modal || !message || !userFolder || !fileName || !continueBtn) {
+        resolve(true);
+        return;
+      }
+
+      const folderLabel = this.#getSaveReminderFolderLabel();
+      userFolder.textContent = folderLabel;
+      fileName.textContent = this.#getSaveReminderFileName(exerciseId);
+      message.textContent = trigger === "done"
+        ? "Pensez à enregistrer votre travail dans votre dossier avant de marquer l'exercice comme fait."
+        : "Pensez à enregistrer votre travail dans votre dossier avant de passer à l'exercice suivant.";
+
+      const onClose = () => {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+        continueBtn.onclick = null;
+        window.removeEventListener("keydown", onKeydown);
+        resolve(true);
+      };
+
+      const onKeydown = (event) => {
+        if (event.key === "Escape" || event.key === "Enter") {
+          event.preventDefault();
+          onClose();
+        }
+      };
+
+      continueBtn.onclick = () => onClose();
+      window.addEventListener("keydown", onKeydown);
+      modal.style.display = "flex";
+      modal.setAttribute("aria-hidden", "false");
+      continueBtn.focus();
+    });
+  }
+
   #promptUserSetup(initialRootHandle, defaults = {}) {
     return new Promise((resolve) => {
       const modal = this.userModal.root;
       const status = this.userModal.status;
+      const savedFoldersWrap = this.userModal.savedFoldersWrap;
+      const savedFoldersSelect = this.userModal.savedFoldersSelect;
       const pickBtn = this.userModal.pickBtn;
       const firstNameInput = this.userModal.firstNameInput;
       const validate = this.userModal.validateBtn;
@@ -571,6 +662,8 @@ class WordAtelierController {
       let rootHandle = initialRootHandle || null;
       let resolvedInitials = this.#deriveInitials(rootHandle, defaults.initials);
       const defaultFirstName = this.storage.normalizeFirstName(defaults.firstName);
+      let savedFolders = Array.isArray(defaults.savedWorkFolders) ? defaults.savedWorkFolders.slice() : [];
+      let selectedSavedId = "";
 
       const closeModal = (result) => {
         modal.style.display = "none";
@@ -578,15 +671,97 @@ class WordAtelierController {
         pickBtn.onclick = null;
         validate.onclick = null;
         firstNameInput.onkeydown = null;
+        if (savedFoldersSelect) savedFoldersSelect.onchange = null;
         resolve(result);
       };
 
       const updateFolderStatus = () => {
         if (!rootHandle) {
-          status.textContent = "Choisissez le dossier utilisateur avant de valider.";
+          status.textContent = "Choisissez un dossier de travail dans la liste ou ajoutez-en un nouveau.";
           return;
         }
-        status.textContent = `Dossier sélectionné: ${rootHandle.name || "dossier utilisateur"}.`;
+        status.textContent = `Dossier sélectionné : ${rootHandle.name || "dossier utilisateur"}.`;
+      };
+
+      const renderSavedFolders = () => {
+        if (!savedFoldersWrap || !savedFoldersSelect) return;
+        if (!savedFolders.length) {
+          savedFoldersWrap.style.display = "none";
+          savedFoldersSelect.innerHTML = "";
+          return;
+        }
+
+        savedFoldersWrap.style.display = "";
+        const ordered = [...savedFolders].sort((a, b) => {
+          const left = Date.parse(a.lastUsedAt || "") || 0;
+          const right = Date.parse(b.lastUsedAt || "") || 0;
+          return right - left;
+        });
+
+        savedFoldersSelect.innerHTML = "";
+        for (const folder of ordered) {
+          const option = document.createElement("option");
+          option.value = folder.id;
+          option.textContent = folder.name || "Dossier de travail";
+          savedFoldersSelect.appendChild(option);
+        }
+
+        const currentIds = new Set(ordered.map((folder) => folder.id));
+        if (!selectedSavedId || !currentIds.has(selectedSavedId)) {
+          selectedSavedId = ordered[0].id;
+        }
+        savedFoldersSelect.value = selectedSavedId;
+      };
+
+      const findSavedFolderIdByHandle = async (handle) => {
+        if (!handle) return "";
+        for (const folder of savedFolders) {
+          try {
+            if (await folder.handle.isSameEntry(handle)) return folder.id;
+          } catch {
+            if (folder.name === (handle.name || folder.name)) return folder.id;
+          }
+        }
+        return "";
+      };
+
+      const applySavedFolderSelection = async (folderId, options = {}) => {
+        const requestPermission = options.requestPermission !== false;
+        const folder = savedFolders.find((entry) => entry.id === folderId);
+        if (!folder) return;
+        selectedSavedId = folderId;
+        rootHandle = folder.handle || null;
+        resolvedInitials = this.#deriveInitials(rootHandle, "");
+
+        if (!requestPermission) {
+          updateFolderStatus();
+          return;
+        }
+
+        try {
+          let selectedHandle = rootHandle;
+          let ok = await this.storage.ensureWritePermission(selectedHandle);
+          if (ok) {
+            selectedHandle = await this.storage.resolveUserRootHandle(selectedHandle, resolvedInitials);
+            ok = await this.storage.ensureWritePermission(selectedHandle);
+          }
+          if (!ok) {
+            status.textContent = "Permission refusée sur ce dossier. Sélectionnez-en un autre ou ajoutez-en un nouveau.";
+            return;
+          }
+
+          rootHandle = selectedHandle;
+          resolvedInitials = this.#deriveInitials(rootHandle, "");
+          const profile = await this.storage.loadUserProfile(rootHandle, resolvedInitials, false);
+          if (profile) {
+            const profileInitials = this.storage.normalizeInitials(profile.initials);
+            if (profileInitials) resolvedInitials = profileInitials;
+            if (profile.firstName) firstNameInput.value = profile.firstName;
+          }
+          updateFolderStatus();
+        } catch {
+          status.textContent = "Impossible d'ouvrir ce dossier. Sélectionnez-en un autre.";
+        }
       };
 
       pickBtn.onclick = async () => {
@@ -599,6 +774,7 @@ class WordAtelierController {
             return;
           }
 
+          savedFolders = await this.storage.addSavedWorkFolder(rootHandle);
           resolvedInitials = this.#deriveInitials(rootHandle, "");
           const profile = await this.storage.loadUserProfile(rootHandle, resolvedInitials, false);
           if (profile) {
@@ -606,24 +782,31 @@ class WordAtelierController {
             if (profileInitials) {
               resolvedInitials = profileInitials;
             }
-            if (!this.storage.normalizeFirstName(firstNameInput.value) && profile.firstName) {
+            if (profile.firstName) {
               firstNameInput.value = profile.firstName;
             }
           }
 
+          selectedSavedId = await findSavedFolderIdByHandle(rootHandle);
+          renderSavedFolders();
           updateFolderStatus();
         } catch {
           status.textContent = "Sélection de dossier annulée.";
         }
       };
 
+      if (savedFoldersSelect) {
+        savedFoldersSelect.onchange = async () => {
+          selectedSavedId = savedFoldersSelect.value;
+          await applySavedFolderSelection(selectedSavedId);
+        };
+      }
+
       const validateSelection = async () => {
         if (!rootHandle) {
           status.textContent = "Choisissez le dossier utilisateur avant de valider.";
           return;
         }
-
-        const initials = this.#deriveInitials(rootHandle, resolvedInitials);
 
         const firstName = this.storage.normalizeFirstName(firstNameInput.value);
         if (!firstName) {
@@ -633,6 +816,20 @@ class WordAtelierController {
         }
 
         try {
+          let selectedHandle = rootHandle;
+          let ok = await this.storage.ensureWritePermission(selectedHandle);
+          if (ok) {
+            selectedHandle = await this.storage.resolveUserRootHandle(selectedHandle, resolvedInitials);
+            ok = await this.storage.ensureWritePermission(selectedHandle);
+          }
+          if (!ok) {
+            status.textContent = "Permission refusée sur ce dossier. Sélectionnez-en un autre ou ajoutez-en un nouveau.";
+            return;
+          }
+
+          rootHandle = selectedHandle;
+          const initials = this.#deriveInitials(rootHandle, resolvedInitials);
+          resolvedInitials = initials;
           await this.storage.ensureProgressDirectory(rootHandle, initials, true);
           closeModal({ rootHandle, initials, firstName });
         } catch {
@@ -655,8 +852,19 @@ class WordAtelierController {
       modal.setAttribute("aria-hidden", "false");
       resolvedInitials = this.#deriveInitials(rootHandle, defaults.initials);
       firstNameInput.value = defaultFirstName || "";
-      updateFolderStatus();
-      firstNameInput.focus();
+      (async () => {
+        if (rootHandle) {
+          selectedSavedId = await findSavedFolderIdByHandle(rootHandle);
+        }
+        renderSavedFolders();
+        if (!rootHandle && savedFoldersSelect && savedFoldersSelect.value) {
+          selectedSavedId = savedFoldersSelect.value;
+          await applySavedFolderSelection(selectedSavedId, { requestPermission: false });
+        } else {
+          updateFolderStatus();
+        }
+        firstNameInput.focus();
+      })();
     });
   }
 }

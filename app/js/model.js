@@ -25,6 +25,12 @@ function cleanText(value) {
     .trim();
 }
 
+function cleanStepText(value) {
+  return String(value || "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function toInt(value, fallback = 0) {
   const n = Number(value);
   return Number.isFinite(n) ? n : fallback;
@@ -68,6 +74,7 @@ class WordAtelierModel {
         description: cleanText(ex.description || ""),
         docxUrl: ex.docxUrl || null,
         downloadUrl: ex.downloadUrl || null,
+        downloadLabel: cleanText(ex.downloadLabel || ""),
         imageEnonce: ex.imageEnonce || null,
         imageResultat: ex.imageResultat || null,
         imageEnonceCaption: cleanText(ex.imageEnonceCaption || ""),
@@ -81,7 +88,7 @@ class WordAtelierModel {
               ? ex.scrape.extraImages
               : [],
         ),
-        instructions: Array.isArray(ex.instructions) ? ex.instructions.map((s) => cleanText(s)).filter(Boolean) : [],
+        instructions: Array.isArray(ex.instructions) ? ex.instructions.map((s) => cleanStepText(s)).filter(Boolean) : [],
       }))
       .sort((a, b) => a.globalIndex - b.globalIndex);
 

@@ -443,12 +443,13 @@
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-2-changer-de-police.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": null,
+      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-002/ex-002.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-002/ex-002.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-002/ex-02.jpg",
-      "description": "1 - Téléchargez le document de travail ci-contre",
+      "description": "Téléchargez le document de travail ci-contre",
       "consignes": [
-        "Après sélection, copiez-collez 5 fois le même paragraphe.",
+        "Téléchargez le document de travail ci-contre",
+        "Après sélection, copiez-collez 5 fois le même paragraphe",
         "Appliquez les polices \"Arial Black\", \"Bookman Old Style\", \"Wingdings\", \"Eras Demi ITC\" et \"Lucida Handwriting\" sur chacun des 5 paragraphes créés."
       ]
     },
@@ -491,7 +492,7 @@
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-reproduction-mise-en-forme.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/ex-004.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/ex-004.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/ex-04.jpg",
       "description": "1- Saisissez les mois de l'année en colonne",
@@ -518,16 +519,22 @@
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-005/ex-05.jpg",
       "description": "Reproduire la ligne ci-dessous en utilisant la fonction copier-coller pour cette phrase",
       "consignes": [
-        "Texte 1 : \"Arial\", taille : 12, surligné : bleu clair.",
-        "Texte 2 : \"Comic Sans MS\", taille : 16, gras, surligné : gris.",
-        "Texte 3 : \"Verdana\", taille : 20, italique, couleur : vert, surligné : jaune.",
-        "Texte 4 : \"Bitstream Vera Serif\", taille : 26, couleur : blanc, surligné : violet."
+        "Reproduire la ligne ci-dessous en utilisant la fonction copier-coller pour cette phrase",
+        "« Le raccourci clavier pour enregistrer rapidement est ctrl+s »",
+        "Et surlignez en fonction des consignes",
+        "Texte 1: \"Arial\", taille : 12, surligné : bleu clair.",
+        "Texte 2: \"Comic Sans MS\", taille : 16, gras, surligné : gris.",
+        "Texte 3: \"Verdana\", taille : 20, italique, couleur : vert, surligné : jaune.",
+        "Texte 4: \"Bitstream Vera Serif\", taille : 26, couleur : blanc, surligné : violet."
       ],
       "instructions": [
-        "Texte 1 : \"Arial\", taille : 12, surligné : bleu clair.",
-        "Texte 2 : \"Comic Sans MS\", taille : 16, gras, surligné : gris.",
-        "Texte 3 : \"Verdana\", taille : 20, italique, couleur : vert, surligné : jaune.",
-        "Texte 4 : \"Bitstream Vera Serif\", taille : 26, couleur : blanc, surligné : violet."
+        "Reproduire la ligne ci-dessous en utilisant la fonction copier-coller pour cette phrase",
+        "« Le raccourci clavier pour enregistrer rapidement est ctrl+s »",
+        "Et surlignez en fonction des consignes",
+        "Texte 1: \"Arial\", taille : 12, surligné : bleu clair.",
+        "Texte 2: \"Comic Sans MS\", taille : 16, gras, surligné : gris.",
+        "Texte 3: \"Verdana\", taille : 20, italique, couleur : vert, surligné : jaune.",
+        "Texte 4: \"Bitstream Vera Serif\", taille : 26, couleur : blanc, surligné : violet."
       ]
     },
     {
@@ -653,10 +660,12 @@
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-009/ex-009-solution.gif",
       "description": "Téléchargez votre fichier de travail ci-contre",
       "consignes": [
-        "l'effacement des mots, de phrases, de paragraphes, de retour à la ligne.",
-        "l'insertion d'espace.",
-        "changement d'interligne.",
-        "l'alignement du texte."
+        "7 exercices sur le même document pour manipuler :",
+        "- l'effacement des mots, de phrases, de paragraphes, de retour à la ligne",
+        "- l'insertion d'espace",
+        "- changement d'interligne",
+        "- l'alignement du texte",
+        "Les consignes sont directement dans le document au début de chaque exercice."
       ]
     },
     {
@@ -699,9 +708,10 @@
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-001/ex-001.jpg",
       "description": "Téléchargez le texte de l'exercice ci-contre, Vous travaillez dans le bloc \"Paragraphe\" pour la bordure et le groupe \"Police\" pour les attributs de l'écriture",
       "consignes": [
-        "Utiliser une police épaisse (\"Arial Rounded MT Bold\" taille 24).",
-        "Utiliser la totalité de la page.",
-        "Bordure 0,5 pt ombre avec distance au choix appliqué au paragraphe."
+        "Téléchargez le texte de l'exercice ci-contre, Vous travaillez dans le bloc \"Paragraphe\" pour la bordure et le groupe \"Police\" pour les attributs de l'écriture",
+        "- Utiliser une police épaisse (\"Arial Rounded MT Bold\", 24).",
+        "- Utiliser la totalité de la page.",
+        "- Bordure 0,5pt, ombre avec distance au choix appliqué au paragraphe."
       ]
     },
     {
@@ -773,28 +783,32 @@
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-004/ex-004.docx",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-004/ex-04.jpg",
+      "imageEnonce": null,
+      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-004/ex-004.jpg",
       "description": "1 - Téléchargez le fichier de travail",
       "consignes": [
-        "Titre : alignement centré, gras, police \"Trebuchet ms\" 18.",
-        "Paragraphe 1 : retrait gauche +1,5 cm, retrait droit +0,5 cm + 1 cm, police \"Tempus sans itc\", 12.",
-        "Paragraphe 2 : retrait gauche +3,5 cm, retrait droit +5 5 cm, police \"Forte\", 12, alignement droit, interligne au moins 0,7 cm.",
-        "Paragraphe 3 : retrait gauche +0,4 cm, retrait droit +0,4 cm, police \"Arial narrow\", 14, gras, alignement centré, espacement au-dessus (avant) le paragraphe : 6 pts (0,5 cm).",
-        "Paragraphe 4 : retrait gauche +1 cm, retrait droit +2 cm, police \"Arial rounded mt bold\", 14.",
-        "Paragraphe 5 : retrait gauche +3,5 cm, retrait droit +,5 cm - 2 cm police \"Arial\" 11, interligne double, alignement justifié.",
-        "Paragraphe 6 : retrait droit -0,5 cm + 1 cm, police \"Tahoma\", 12, alignement justifié.",
-        "Paragraphe 7 : retrait gauche +5 cm, retrait droit +5 cm interligne fixe 1 cm, alignement centré."
+        "Téléchargez le fichier de travail",
+        "Vous travaillez dans le bloc \"paragraphe\" en respectant les consignes ci-dessous",
+        "- Titre : Alignement centré, Gras, Police \"Trebuchet MS\", 18",
+        "- Paragraphe 1 : Retrait gauche +1,5cm, Retrait droit +0,5cm +1cm, \"Police Tempus Sans ITC\", 12",
+        "- Paragraphe 2 : Retrait gauche +3,5cm, Retrait droit +5cm, Police Forte, 12, Alignement Droit, Interligne au moins 0,7cm",
+        "- Paragraphe 3 : Retrait gauche +0,4cm Retrait droit +0,4cm, \"Police Arial Narrow\", 14, Gras, Alignement centré, Espacement au-dessus (avant), Paragraphe : 6 Pts Ou 0,5cm",
+        "- Paragraphe 4 : Retrait gauche +1cm, Retrait droit +2cm +1,5cm, \"Police Arial Rounded Mt Bold\", 14",
+        "- Paragraphe 5 : Retrait gauche +3,5cm Retrait droit +1,5cm - 2cm, Police \"Arial\", 11, Interligne double, Alignement justifié.",
+        "- Paragraphe 6 : Retrait droit - 0,5cm +1cm, Police \"Tahoma\", 12, Alignement justifié",
+        "- Paragraphe 7 : Retrait gauche +5cm Retrait droit +5cm, Interligne fixe 1cm, Alignement centré"
       ],
       "instructions": [
-        "Titre : alignement centré, gras, police \"Trebuchet ms\" 18.",
-        "Paragraphe 1 : retrait gauche +1,5 cm, retrait droit +0,5 cm + 1 cm, police \"Tempus sans itc\", 12.",
-        "Paragraphe 2 : retrait gauche +3,5 cm, retrait droit +5 5 cm, police \"Forte\", 12, alignement droit, interligne au moins 0,7 cm.",
-        "Paragraphe 3 : retrait gauche +0,4 cm, retrait droit +0,4 cm, police \"Arial narrow\", 14, gras, alignement centré, espacement au-dessus (avant) le paragraphe : 6 pts (0,5 cm).",
-        "Paragraphe 4 : retrait gauche +1 cm, retrait droit +2 cm, police \"Arial rounded mt bold\", 14.",
-        "Paragraphe 5 : retrait gauche +3,5 cm, retrait droit +,5 cm - 2 cm police \"Arial\" 11, interligne double, alignement justifié.",
-        "Paragraphe 6 : retrait droit -0,5 cm + 1 cm, police \"Tahoma\", 12, alignement justifié.",
-        "Paragraphe 7 : retrait gauche +5 cm, retrait droit +5 cm interligne fixe 1 cm, alignement centré."
+        "Téléchargez le fichier de travail",
+        "Vous travaillez dans le bloc \"paragraphe\" en respectant les consignes ci-dessous",
+        "- Titre : Alignement centré, Gras, Police \"Trebuchet MS\", 18",
+        "- Paragraphe 1 : Retrait gauche +1,5cm, Retrait droit +0,5cm +1cm, \"Police Tempus Sans ITC\", 12",
+        "- Paragraphe 2 : Retrait gauche +3,5cm, Retrait droit +5cm, Police Forte, 12, Alignement Droit, Interligne au moins 0,7cm",
+        "- Paragraphe 3 : Retrait gauche +0,4cm Retrait droit +0,4cm, \"Police Arial Narrow\", 14, Gras, Alignement centré, Espacement au-dessus (avant), Paragraphe : 6 Pts Ou 0,5cm",
+        "- Paragraphe 4 : Retrait gauche +1cm, Retrait droit +2cm +1,5cm, \"Police Arial Rounded Mt Bold\", 14",
+        "- Paragraphe 5 : Retrait gauche +3,5cm Retrait droit +1,5cm - 2cm, Police \"Arial\", 11, Interligne double, Alignement justifié.",
+        "- Paragraphe 6 : Retrait droit - 0,5cm +1cm, Police \"Tahoma\", 12, Alignement justifié",
+        "- Paragraphe 7 : Retrait gauche +5cm Retrait droit +5cm, Interligne fixe 1cm, Alignement centré"
       ]
     },
     {
@@ -815,9 +829,22 @@
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-005/ex-005-solution.webp",
       "description": "1- Téléchargez les images",
       "consignes": [
-        "La ligne de chaque nom d'oiseau est en fond de couleur et à travailler dans le bloc \"paragraphe\", la reproduction de mis en forme (pinceau) vous permettra de répéter l'opération rapidement.",
-        "l'insertion des oiseaux devant chaque paragraphe est simple en choisissant un habillage \"adapté\" pour la photo.",
-        "Saut de page entre les passereaux et les aigles."
+        "Téléchargez les images",
+        "Téléchargez le fichier de travail",
+        "Vous travaillez dans le bloc \"Paragraphe\" et insertion image",
+        "Consignes :",
+        "- La ligne de chaque nom d'oiseau est en fond de couleur et à travailler dans le bloc \"paragraphe\", la reproduction de mis en forme (pinceau) vous permettra de répéter l'opération rapidement.",
+        "- L'insertion des oiseaux devant chaque paragraphe est simple en choisissant un habillage \"adapté\" pour la photo",
+        "- Saut de page entre les passereaux et les aigles"
+      ],
+      "instructions": [
+        "Téléchargez les images",
+        "Téléchargez le fichier de travail",
+        "Vous travaillez dans le bloc \"Paragraphe\" et insertion image",
+        "Consignes :",
+        "- La ligne de chaque nom d'oiseau est en fond de couleur et à travailler dans le bloc \"paragraphe\", la reproduction de mis en forme (pinceau) vous permettra de répéter l'opération rapidement.",
+        "- L'insertion des oiseaux devant chaque paragraphe est simple en choisissant un habillage \"adapté\" pour la photo",
+        "- Saut de page entre les passereaux et les aigles"
       ]
     },
     {
@@ -882,9 +909,17 @@
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-002/ex-002-resultat.jpg",
       "description": "1- Téléchargez les visuels qui vous serviront de puces personnalisées",
       "consignes": [
-        "Texte \"Calibri\" taille 12.",
-        "Titre vert et souligné pointillé rose."
-      ]
+        "Vous faites quatre listes distinctes avec les puces personnalisées que vous venez de télécharger.",
+        "Texte : \"Calibri\", 12",
+        "Titre : vert, souligné pointillé rose."
+      ],
+      "instructions": [
+        "Vous faites quatre listes distinctes avec les puces personnalisées que vous venez de télécharger.",
+        "Texte : \"Calibri\", 12",
+        "Titre : vert, souligné pointillé rose."
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-002/puces.zip",
+      "downloadLabel": "Télécharger puces personnalisées"
     },
     {
       "id": "ex-024",

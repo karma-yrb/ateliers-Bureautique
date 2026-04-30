@@ -58,6 +58,13 @@ export function hasSuspiciousMojibake(value) {
   return mojibakeScore(value) > 0;
 }
 
+export function hasBrokenAccentPlaceholder(value) {
+  if (typeof value !== "string" || !value) return false;
+  if (/^https?:\/\//i.test(value.trim())) return false;
+  // Detect replaced accented letters such as "T?l?charger" or "l'?criture".
+  return /\p{L}\?\p{L}/u.test(value) || /['’]\?\p{L}/u.test(value);
+}
+
 function mojibakeScore(value) {
   if (typeof value !== "string" || !value) return 0;
   let score = 0;
@@ -196,7 +203,7 @@ export async function writeDataFile(filePath, kind, dataObject) {
 
 function collectSuspiciousStrings(value, pointer, out) {
   if (typeof value === "string") {
-    if (hasSuspiciousMojibake(value)) {
+    if (hasSuspiciousMojibake(value) || hasBrokenAccentPlaceholder(value)) {
       out.push({ pointer, value: value.slice(0, 180) });
     }
     return;

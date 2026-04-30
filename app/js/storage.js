@@ -176,6 +176,77 @@
     return this.#setSetting("rootHandle", handle);
   }
 
+  async getSavedWorkFolders() {
+    const raw = await this.#getSetting("workFolders");
+    if (!Array.isArray(raw)) return [];
+    const folders = [];
+    for (const item of raw) {
+      if (!item || typeof item !== "object") continue;
+      const handle = item.handle;
+      if (!handle || handle.kind !== "directory") continue;
+      const name = String(item.name || handle.name || "Dossier de travail").trim() || "Dossier de travail";
+      folders.push({
+        id: String(item.id || ""),
+        name,
+        handle,
+        lastUsedAt: typeof item.lastUsedAt === "string" ? item.lastUsedAt : "",
+      });
+    }
+    return folders.filter((folder) => folder.id);
+  }
+
+  async setSavedWorkFolders(folders) {
+    if (!Array.isArray(folders)) return this.#setSetting("workFolders", []);
+    const payload = folders
+      .filter((item) => item && item.handle && item.handle.kind === "directory")
+      .map((item) => ({
+        id: String(item.id || ""),
+        name: String(item.name || item.handle.name || "Dossier de travail").trim() || "Dossier de travail",
+        handle: item.handle,
+        lastUsedAt: typeof item.lastUsedAt === "string" ? item.lastUsedAt : "",
+      }))
+      .filter((item) => item.id);
+    return this.#setSetting("workFolders", payload);
+  }
+
+  async addSavedWorkFolder(handle) {
+    if (!handle || handle.kind !== "directory") {
+      return this.getSavedWorkFolders();
+    }
+
+    const now = new Date().toISOString();
+    const existing = await this.getSavedWorkFolders();
+    let updated = false;
+
+    for (const folder of existing) {
+      let same = false;
+      try {
+        same = await folder.handle.isSameEntry(handle);
+      } catch {
+        same = folder.name === (handle.name || folder.name);
+      }
+      if (!same) continue;
+
+      folder.handle = handle;
+      folder.name = handle.name || folder.name;
+      folder.lastUsedAt = now;
+      updated = true;
+      break;
+    }
+
+    if (!updated) {
+      existing.push({
+        id: `wf-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+        name: handle.name || "Dossier de travail",
+        handle,
+        lastUsedAt: now,
+      });
+    }
+
+    await this.setSavedWorkFolders(existing);
+    return this.getSavedWorkFolders();
+  }
+
   async getSavedInitials() {
     const initials = await this.#getSetting("initials");
     return this.normalizeInitials(initials);

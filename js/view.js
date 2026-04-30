@@ -218,8 +218,8 @@ class WordAtelierView {
                           <p class="exercise-row-sub">${escapeHtml(row.title)}</p>
                         </div>
                         <div class="exercise-row-actions">
-                          <button class="btn has-icon ${row.done ? "done" : ""}" data-icon="${row.done ? "✓" : "○"}" data-action="toggle-done" data-id="${row.id}">
-                            ${row.done ? "Fait" : "À faire"}
+                          <button class="btn has-icon ${row.done ? "done" : ""}" data-icon="${row.done ? "\u2713" : "\u25CB"}" data-action="toggle-done" data-id="${row.id}">
+                            ${row.done ? "Fait" : "\u00E0 faire"}
                           </button>
                         </div>
                       </div>
@@ -242,12 +242,13 @@ class WordAtelierView {
 
     this.exerciseStatusPill.textContent = vm.done ? "Fait" : "À faire";
     this.exerciseStatusPill.classList.toggle("todo", !vm.done);
-    this.exerciseToggleDoneBtn.textContent = vm.done ? "À faire" : "Fait";
+    this.exerciseToggleDoneBtn.textContent = vm.done ? "Fait" : "\u00E0 faire";
     this.exerciseToggleDoneBtn.classList.toggle("done", vm.done);
-    this.exerciseToggleDoneBtn.setAttribute("data-icon", vm.done ? "○" : "✓");
+    this.exerciseToggleDoneBtn.setAttribute("data-icon", vm.done ? "\u2713" : "\u25CB");
 
     const copyBlock = this.#extractCopyBlock(vm.steps || []);
     const paragraphOnly = this.#isParagraphOnlyExercise(vm.exercise, vm.steps || []);
+    const formatStep = (step) => this.#formatStepForExercise(vm.exercise, step);
     this.exerciseSteps.classList.remove("steps-copy-mode", "steps-paragraph-mode");
     if (copyBlock) {
       this.exerciseSteps.classList.add("steps-copy-mode");
@@ -260,13 +261,13 @@ class WordAtelierView {
         .map((line) => String(line || "").trim())
         .filter(Boolean);
       const text = lines.length
-        ? lines.map((line) => this.#formatStep(line)).join("<br>")
+        ? lines.map((line) => formatStep(line)).join("<br>")
         : "Reproduisez le document en suivant l'énoncé.";
       this.exerciseSteps.classList.add("steps-paragraph-mode");
       this.exerciseSteps.innerHTML = `<p class="steps-paragraph-text">${text}</p>`;
     } else {
       const steps = vm.steps.length
-        ? vm.steps.map((step) => `<li>${this.#formatStep(step)}</li>`).join("")
+        ? vm.steps.map((step) => `<li>${formatStep(step)}</li>`).join("")
         : "<li>Reproduisez le document en suivant l'énoncé.</li>";
       this.exerciseSteps.innerHTML = steps;
     }
@@ -280,6 +281,7 @@ class WordAtelierView {
     }
     if (vm.exercise.downloadUrl) {
       this.exerciseDownloadBtn.href = vm.exercise.downloadUrl;
+      this.exerciseDownloadBtn.textContent = vm.exercise.downloadLabel || "Télécharger le 2ᵉ fichier";
       this.exerciseDownloadBtn.style.display = "";
     } else {
       this.exerciseDownloadBtn.removeAttribute("href");
@@ -323,6 +325,21 @@ class WordAtelierView {
     return `<strong>${escapeHtml(label)}:</strong> ${escapeHtml(rest)}`;
   }
 
+  #formatStepForExercise(exercise, step) {
+    const raw = String(step || "").trim();
+    if (exercise && exercise.id === "ex-010") {
+      const normalized = raw
+        .replace(/[��"]/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .toLowerCase();
+      if (normalized === "le raccourci clavier pour enregistrer rapidement est ctrl+s") {
+        return "<strong>� Le raccourci clavier pour enregistrer rapidement est ctrl+s �</strong>";
+      }
+    }
+    return this.#formatStep(step);
+  }
+
   #extractCopyBlock(steps) {
     if (!Array.isArray(steps) || steps.length < 3) return null;
     const normalized = steps.map((line) => String(line || "").trim()).filter(Boolean);
@@ -343,7 +360,7 @@ class WordAtelierView {
 
   #isParagraphOnlyExercise(exercise, steps) {
     if (!exercise) return false;
-    const paragraphOnlyIds = new Set(["ex-037", "ex-038"]);
+    const paragraphOnlyIds = new Set(["ex-010", "ex-014", "ex-016", "ex-019", "ex-020", "ex-023", "ex-037", "ex-038"]);
     if (!paragraphOnlyIds.has(exercise.id)) return false;
     if (!Array.isArray(steps)) return false;
     return steps.map((line) => String(line || "").trim()).filter(Boolean).length >= 1;
