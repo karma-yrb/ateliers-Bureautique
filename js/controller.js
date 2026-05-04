@@ -879,18 +879,13 @@ class WordAtelierController {
         if (!rootHandle) {
           status.textContent = hasScannedDocuments
             ? "Choisissez un dossier de travail dans la liste ou ajoutez-en un nouveau."
-            : "Scannez d'abord les dossiers existants dans Documents.";
+            : "Scan automatique de Documents indisponible (autorisation manquante). Ajoutez un dossier de travail.";
           return;
         }
         status.textContent = `Dossier sélectionné : ${rootHandle.name || "dossier utilisateur"}.`;
       };
 
       const setPickButtonMode = () => {
-        if (!hasScannedDocuments) {
-          pickBtn.textContent = "Scanner Documents";
-          pickBtn.setAttribute("data-icon", "🔎");
-          return;
-        }
         pickBtn.textContent = "Ajouter un dossier de travail";
         pickBtn.setAttribute("data-icon", "📁");
       };
@@ -1017,8 +1012,7 @@ class WordAtelierController {
         }
       };
 
-      const scanDocumentsBeforeAdd = async (options = {}) => {
-        const allowPrompt = options.allowPrompt !== false;
+      const scanDocumentsBeforeAdd = async () => {
         let documentsHandle = await this.storage.getSavedDocumentsHandle();
 
         if (documentsHandle) {
@@ -1026,25 +1020,16 @@ class WordAtelierController {
           if (!canRead) documentsHandle = null;
         }
 
-        if (!documentsHandle && allowPrompt) {
-          documentsHandle = await this.storage.pickDocumentsDirectory();
-          if (!documentsHandle) {
-            status.textContent = "Scan Documents annulé.";
-            return false;
-          }
-          const canRead = await this.storage.ensureReadPermission(documentsHandle);
-          if (!canRead) {
-            status.textContent = "Permission refusée pour lire Documents.";
-            return false;
-          }
-          await this.storage.setSavedDocumentsHandle(documentsHandle);
+        if (!documentsHandle) {
+          hasScannedDocuments = false;
+          setPickButtonMode();
+          updateFolderStatus();
+          return false;
         }
-
-        if (!documentsHandle) return false;
 
         status.textContent = "Analyse des dossiers existants dans Documents...";
         const scannedFolders = await this.storage.scanDocumentsFolders(documentsHandle, {
-          includeWithoutProgress: true,
+          includeWithoutProgress: false,
         });
 
         hasScannedDocuments = true;
@@ -1074,11 +1059,6 @@ class WordAtelierController {
 
       pickBtn.onclick = async () => {
         try {
-          if (!hasScannedDocuments) {
-            await scanDocumentsBeforeAdd({ allowPrompt: true });
-            return;
-          }
-
           rootHandle = await this.storage.pickUserDirectory();
           const ok = await this.storage.ensureWritePermission(rootHandle);
           if (!ok) {
@@ -1167,7 +1147,7 @@ class WordAtelierController {
       firstNameInput.value = defaultFirstName || "";
       (async () => {
         setPickButtonMode();
-        await scanDocumentsBeforeAdd({ allowPrompt: false });
+        await scanDocumentsBeforeAdd();
         if (rootHandle) {
           selectedSavedId = await findSavedFolderIdByHandle(rootHandle);
         }

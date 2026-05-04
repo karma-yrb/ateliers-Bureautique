@@ -97,6 +97,11 @@
       // continue
     }
 
+    // If a parent folder was selected, resolve to the unique child that already
+    // contains ProgressionAtelier to avoid creating nested duplicate structures.
+    const nestedHandle = await this.findNestedProgressFolder(rootHandle);
+    if (nestedHandle) return nestedHandle;
+
     // Legacy structure: parent folder > INITIALS > ProgressionAtelier.
     const clean = this.normalizeInitials(initials);
     if (!clean) return rootHandle;
@@ -107,6 +112,33 @@
     } catch {
       return rootHandle;
     }
+  }
+
+  async findNestedProgressFolder(parentHandle) {
+    if (!parentHandle || parentHandle.kind !== "directory") return null;
+
+    const matches = [];
+    const maxItems = 250;
+    let inspected = 0;
+
+    for await (const [name, handle] of parentHandle.entries()) {
+      inspected += 1;
+      if (inspected > maxItems) break;
+      if (matches.length > 1) return null;
+      if (!handle || handle.kind !== "directory") continue;
+      if (String(name || "").startsWith(".")) continue;
+
+      try {
+        await handle.getDirectoryHandle("ProgressionAtelier", { create: false });
+        matches.push(handle);
+      } catch {
+        // ignore non-matching child folder
+      }
+
+      if (matches.length > 1) return null;
+    }
+
+    return matches.length === 1 ? matches[0] : null;
   }
 
   async listUserFolders(rootHandle) {
@@ -234,19 +266,38 @@
       if (!handle || handle.kind !== "directory") continue;
       if (String(name || "").startsWith(".")) continue;
 
+      const candidateHandle = (await this.resolveUserRootHandle(handle, "")) || handle;
+
       let hasProgressFolder = false;
       try {
-        await handle.getDirectoryHandle("ProgressionAtelier", { create: false });
+        await candidateHandle.getDirectoryHandle("ProgressionAtelier", { create: false });
         hasProgressFolder = true;
       } catch {
         hasProgressFolder = false;
       }
 
       if (!hasProgressFolder && !includeWithoutProgress) continue;
+
+      let alreadyAdded = false;
+      for (const existing of folders) {
+        try {
+          if (await existing.handle.isSameEntry(candidateHandle)) {
+            alreadyAdded = true;
+            break;
+          }
+        } catch {
+          if ((existing.name || "") === (candidateHandle.name || "")) {
+            alreadyAdded = true;
+            break;
+          }
+        }
+      }
+      if (alreadyAdded) continue;
+
       folders.push({
         id: `scan-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-        name: handle.name || String(name || "Dossier de travail"),
-        handle,
+        name: candidateHandle.name || String(name || "Dossier de travail"),
+        handle: candidateHandle,
         hasProgressFolder,
       });
     }
