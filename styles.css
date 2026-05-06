@@ -70,6 +70,48 @@ body {
   font-size: 1rem;
 }
 
+.header-user-wrap {
+  position: relative;
+}
+
+.header-user-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #fff;
+  border: 1px solid #d4c7b6;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(31, 44, 57, 0.15);
+  min-width: 210px;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.header-user-menu-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 11px 16px;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ede5d8;
+  color: #1f2c39;
+}
+
+.header-user-menu-item:last-child {
+  border-bottom: none;
+}
+
+.header-user-menu-item:hover,
+.header-user-menu-item:focus-visible {
+  background: #f7f1e8;
+  color: #25475f;
+  outline: none;
+}
+
 .header-user-badge {
   border: 1px solid #d4c7b6;
   border-radius: 12px;

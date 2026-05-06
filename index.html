@@ -25,10 +25,16 @@
         </div>
         <p class="subtitle">Je choisis un thème, je lance un exercice, je suis les étapes.</p>
       </div>
-      <button id="header-user-badge" class="header-user-badge header-user-badge-btn" type="button" aria-live="polite" aria-label="Ouvrir le profil utilisateur" title="Ouvrir le profil utilisateur">
-        <span class="header-user-label">Utilisateur</span>
-        <strong class="header-user-name">Non connecté</strong>
-      </button>
+      <div class="header-user-wrap">
+        <button id="header-user-badge" class="header-user-badge header-user-badge-btn" type="button" aria-live="polite" aria-label="Ouvrir le menu utilisateur" aria-haspopup="true" aria-expanded="false" title="Menu utilisateur">
+          <span class="header-user-label">Utilisateur ▾</span>
+          <strong class="header-user-name">Non connecté</strong>
+        </button>
+        <div id="header-user-menu" class="header-user-menu" hidden role="menu">
+          <button id="header-user-switch-btn" class="header-user-menu-item" type="button" role="menuitem">👤 Changer d'utilisateur</button>
+          <button id="header-user-profile-btn" class="header-user-menu-item" type="button" role="menuitem">⚙ Profil &amp; options</button>
+        </div>
+      </div>
     </div>
   </header>
 

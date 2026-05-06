@@ -241,11 +241,44 @@ class WordAtelierController {
     }
 
     const headerUserBtn = document.getElementById("header-user-badge");
-    if (headerUserBtn) {
-      headerUserBtn.addEventListener("click", () => {
-        if (!this.isReady) return;
-        window.location.hash = "#profile";
+    const headerUserMenu = document.getElementById("header-user-menu");
+    const closeUserMenu = () => {
+      if (!headerUserMenu) return;
+      headerUserMenu.hidden = true;
+      if (headerUserBtn) headerUserBtn.setAttribute("aria-expanded", "false");
+    };
+    if (headerUserBtn && headerUserMenu) {
+      headerUserBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = !headerUserMenu.hidden;
+        if (isOpen) {
+          closeUserMenu();
+        } else {
+          headerUserMenu.hidden = false;
+          headerUserBtn.setAttribute("aria-expanded", "true");
+        }
       });
+      document.addEventListener("click", closeUserMenu);
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeUserMenu(); });
+      const headerSwitchBtn = document.getElementById("header-user-switch-btn");
+      if (headerSwitchBtn) {
+        headerSwitchBtn.addEventListener("click", async () => {
+          closeUserMenu();
+          const session = await this.#resolveUserSession(true, { allowPermissionPrompt: true });
+          if (!session) return;
+          this.userSession = session;
+          this.pendingPermissionSession = null;
+          await this.#loadProgressForSession(session);
+          if (this.isReady) this.#renderFromHash();
+        });
+      }
+      const headerProfileBtn = document.getElementById("header-user-profile-btn");
+      if (headerProfileBtn) {
+        headerProfileBtn.addEventListener("click", () => {
+          closeUserMenu();
+          window.location.hash = "#profile";
+        });
+      }
     }
   }
 
