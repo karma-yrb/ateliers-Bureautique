@@ -8270,4 +8270,5 @@ window.WORD_ATELIER_DATA = {
     "withImageResultat": 213,
     "durationSeconds": 14
   }
-};
+}
+;

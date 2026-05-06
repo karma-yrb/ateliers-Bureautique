@@ -45,6 +45,13 @@
     });
   }
 
+  async pickScanRootDirectory() {
+    return window.showDirectoryPicker({
+      id: "word-atelier-scan-root",
+      mode: "read",
+    });
+  }
+
   async ensureDirectoryPermission(handle, mode = "readwrite") {
     if (!handle) return false;
     try {

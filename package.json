@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build:data": "node scripts/build-data-js.mjs",
+    "sync:app": "node scripts/sync-app.mjs",
     "repair:encoding": "node scripts/repair-encoding.mjs",
     "validate:encoding": "node scripts/validate-encoding.mjs",
     "scrape:data": "node scripts/scrape-exercises.mjs",

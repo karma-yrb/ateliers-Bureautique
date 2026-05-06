@@ -851,6 +851,7 @@ class WordAtelierController {
       const savedFoldersSelect = this.userModal.savedFoldersSelect;
       const pickBtn = this.userModal.pickBtn;
       const firstNameInput = this.userModal.firstNameInput;
+      const firstNameLabel = modal.querySelector('label[for="user-setup-firstname-input"]');
       const validate = this.userModal.validateBtn;
 
       if (!modal || !status || !pickBtn || !firstNameInput || !validate) {
@@ -863,7 +864,7 @@ class WordAtelierController {
       const defaultFirstName = this.storage.normalizeFirstName(defaults.firstName);
       let savedFolders = Array.isArray(defaults.savedWorkFolders) ? defaults.savedWorkFolders.slice() : [];
       let selectedSavedId = "";
-      let hasScannedDocuments = false;
+      let pickBtnMode = "hidden";
 
       const closeModal = (result) => {
         modal.style.display = "none";
@@ -875,17 +876,45 @@ class WordAtelierController {
         resolve(result);
       };
 
+      const setFirstNameVisibility = (visible) => {
+        const displayValue = visible ? "" : "none";
+        if (firstNameLabel) firstNameLabel.style.display = displayValue;
+        firstNameInput.style.display = displayValue;
+      };
+
+      const setValidateVisibility = (visible) => {
+        validate.style.display = visible ? "" : "none";
+      };
+
       const updateFolderStatus = () => {
         if (!rootHandle) {
+          setValidateVisibility(false);
           status.textContent = hasScannedDocuments
-            ? "Choisissez un dossier de travail détecté. Si votre dossier n'existe pas encore, créez-le dans Documents puis relancez l'application."
-            : "Scan automatique de Documents indisponible (autorisation manquante). Créez votre dossier dans Documents puis relancez l'application.";
+            ? "Choisissez un dossier de travail dans la liste ci-dessous."
+            : "Cliquez sur le bouton ci-dessous pour accéder à vos dossiers dans Documents.";
           return;
         }
+        setValidateVisibility(true);
         status.textContent = `Dossier sélectionné : ${rootHandle.name || "dossier utilisateur"}.`;
       };
 
-      const setPickButtonMode = () => {
+      const setPickButtonMode = (mode = "hidden") => {
+        pickBtnMode = mode;
+
+        if (mode === "pick-folder") {
+          pickBtn.style.display = "";
+          pickBtn.textContent = "Choisir votre dossier de travail";
+          pickBtn.setAttribute("data-icon", "📂");
+          return;
+        }
+
+        if (mode === "add-folder") {
+          pickBtn.style.display = "";
+          pickBtn.textContent = "Choisir un autre dossier";
+          pickBtn.setAttribute("data-icon", "📂");
+          return;
+        }
+
         pickBtn.style.display = "none";
       };
 
@@ -990,7 +1019,8 @@ class WordAtelierController {
         selectedSavedId = folderId;
         rootHandle = folder.handle || null;
         resolvedInitials = this.#deriveInitials(rootHandle, "");
-        setFirstNameEditMode(false);
+        firstNameInput.value = "";
+        setFirstNameVisibility(false);
 
         if (!requestPermission) {
           const profile = await this.storage.loadUserProfile(rootHandle, resolvedInitials, false);
@@ -998,8 +1028,11 @@ class WordAtelierController {
             firstNameInput.value = profile.firstName;
             setFirstNameEditMode(false);
           } else {
+            firstNameInput.value = defaultFirstName || "";
             setFirstNameEditMode(true);
           }
+          setFirstNameVisibility(true);
+          setValidateVisibility(true);
           updateFolderStatus();
           return;
         }
@@ -1026,93 +1059,91 @@ class WordAtelierController {
               firstNameInput.value = profile.firstName;
               setFirstNameEditMode(false);
             } else {
+              firstNameInput.value = defaultFirstName || "";
               setFirstNameEditMode(true);
             }
           } else {
+            firstNameInput.value = defaultFirstName || "";
             setFirstNameEditMode(true);
           }
+          setFirstNameVisibility(true);
+          setValidateVisibility(true);
           updateFolderStatus();
         } catch {
+          setValidateVisibility(false);
           status.textContent = "Impossible d'ouvrir ce dossier. Sélectionnez-en un autre.";
         }
       };
 
-      const scanDocumentsBeforeAdd = async () => {
-        let documentsHandle = await this.storage.getSavedDocumentsHandle();
-
-        if (documentsHandle) {
-          const canRead = await this.storage.ensureReadPermission(documentsHandle);
-          if (!canRead) documentsHandle = null;
-        }
-
-        if (!documentsHandle) {
-          hasScannedDocuments = false;
-          setPickButtonMode();
-          updateFolderStatus();
-          return false;
-        }
-
-        status.textContent = "Analyse des dossiers existants dans Documents...";
-        const scannedFolders = await this.storage.scanDocumentsFolders(documentsHandle, {
-          includeWithoutProgress: false,
-        });
-
-        hasScannedDocuments = true;
-        setPickButtonMode();
-
-        if (!scannedFolders.length) {
-          status.textContent = "Aucun dossier prêt trouvé dans Documents. Créez votre dossier dans Documents puis relancez l'application.";
-          return true;
-        }
-
-        await mergeSavedFolders(scannedFolders);
-        await this.storage.setSavedWorkFolders(savedFolders);
-        renderSavedFolders();
-
-        if (!rootHandle && savedFoldersSelect && savedFoldersSelect.value) {
-          selectedSavedId = savedFoldersSelect.value;
-          await applySavedFolderSelection(selectedSavedId, { requestPermission: false });
-        } else {
-          updateFolderStatus();
-        }
-
-        if (!rootHandle) {
-          status.textContent = `${scannedFolders.length} dossier(s) détecté(s) dans Documents.`;
-        }
-        return true;
-      };
-
       pickBtn.onclick = async () => {
+        const restoreMode = savedFolders.length ? "add-folder" : "pick-folder";
+        setPickButtonMode("hidden");
         try {
-          rootHandle = await this.storage.pickUserDirectory();
-          const ok = await this.storage.ensureWritePermission(rootHandle);
-          if (!ok) {
-            rootHandle = null;
-            status.textContent = "Permission refusée sur ce dossier. Rechoisissez un dossier utilisateur.";
+          const handle = await this.storage.pickUserDirectory();
+          if (!handle) {
+            setPickButtonMode(restoreMode);
+            status.textContent = "Sélection annulée.";
             return;
           }
 
-          savedFolders = await this.storage.addSavedWorkFolder(rootHandle);
+          const canWrite = await this.storage.ensureWritePermission(handle);
+          if (!canWrite) {
+            setPickButtonMode(restoreMode);
+            status.textContent = "Permission refusée sur ce dossier.";
+            return;
+          }
+
+          // Résolution : si le dossier contient déjà un sous-dossier unique avec ProgressionAtelier,
+          // descendre dedans pour éviter la duplication.
+          const resolvedHandle = await this.storage.resolveUserRootHandle(handle, "") || handle;
+          if (resolvedHandle !== handle) {
+            const ok = await this.storage.ensureWritePermission(resolvedHandle);
+            if (!ok) {
+              setPickButtonMode(restoreMode);
+              status.textContent = "Permission refusée sur ce dossier.";
+              return;
+            }
+          }
+
+          rootHandle = resolvedHandle;
           resolvedInitials = this.#deriveInitials(rootHandle, "");
+
           const profile = await this.storage.loadUserProfile(rootHandle, resolvedInitials, false);
           if (profile) {
-            const profileInitials = this.storage.normalizeInitials(profile.initials);
-            if (profileInitials) {
-              resolvedInitials = profileInitials;
-            }
-            if (profile.firstName) {
-              firstNameInput.value = profile.firstName;
-              setFirstNameEditMode(false);
-            }
+            if (profile.initials) resolvedInitials = this.storage.normalizeInitials(profile.initials);
+            firstNameInput.value = profile.firstName || defaultFirstName || "";
+            setFirstNameEditMode(!profile.firstName);
           } else {
+            firstNameInput.value = defaultFirstName || "";
             setFirstNameEditMode(true);
           }
 
-          selectedSavedId = await findSavedFolderIdByHandle(rootHandle);
+          await mergeSavedFolders([{
+            id: `wf-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+            name: rootHandle.name || "Dossier de travail",
+            handle: rootHandle,
+          }]);
+          await this.storage.setSavedWorkFolders(savedFolders);
           renderSavedFolders();
+
+          const newId = await findSavedFolderIdByHandle(rootHandle);
+          if (newId) {
+            selectedSavedId = newId;
+            if (savedFoldersSelect) savedFoldersSelect.value = newId;
+          }
+
+          setPickButtonMode("add-folder");
+          setFirstNameVisibility(true);
+          setValidateVisibility(true);
           updateFolderStatus();
-        } catch {
-          status.textContent = "Sélection de dossier annulée.";
+          if (!firstNameInput.readOnly) firstNameInput.focus();
+        } catch (error) {
+          setPickButtonMode(restoreMode);
+          if (!error || error.name === "AbortError") {
+            status.textContent = "Sélection annulée.";
+          } else {
+            status.textContent = "Impossible d'ouvrir ce dossier.";
+          }
         }
       };
 
@@ -1172,25 +1203,38 @@ class WordAtelierController {
       modal.style.display = "flex";
       modal.setAttribute("aria-hidden", "false");
       resolvedInitials = this.#deriveInitials(rootHandle, defaults.initials);
-      firstNameInput.value = defaultFirstName || "";
-      setFirstNameEditMode(!firstNameInput.value);
+      firstNameInput.value = "";
+      setFirstNameVisibility(false);
+      setValidateVisibility(false);
+      setFirstNameEditMode(false);
+      // Rendu immédiat sans accès au système de fichiers :
+      // les profils connus sont affichés depuis IndexedDB, la permission
+      // FS n'est demandée qu'au clic sur Valider (user gesture).
       (async () => {
-        setPickButtonMode();
-        await scanDocumentsBeforeAdd();
-        if (rootHandle) {
-          selectedSavedId = await findSavedFolderIdByHandle(rootHandle);
-        }
         renderSavedFolders();
-        if (!rootHandle && savedFoldersSelect && savedFoldersSelect.value) {
-          selectedSavedId = savedFoldersSelect.value;
-          await applySavedFolderSelection(selectedSavedId, { requestPermission: false });
+        if (savedFolders.length > 0) {
+          setPickButtonMode("add-folder");
+          if (rootHandle) {
+            selectedSavedId = await findSavedFolderIdByHandle(rootHandle);
+          }
+          if (!selectedSavedId && savedFoldersSelect && savedFoldersSelect.value) {
+            selectedSavedId = savedFoldersSelect.value;
+          }
+          if (selectedSavedId) {
+            if (savedFoldersSelect) savedFoldersSelect.value = selectedSavedId;
+            // requestPermission: false → utilise le prénom caché dans IndexedDB,
+            // pas d'accès FS. La permission réelle est demandée sur clic Valider.
+            await applySavedFolderSelection(selectedSavedId, { requestPermission: false });
+          } else {
+            updateFolderStatus();
+          }
         } else {
+          setPickButtonMode("pick-folder");
           updateFolderStatus();
         }
-        if (rootHandle && !firstNameInput.value) {
-          setFirstNameEditMode(true);
+        if (firstNameInput.style.display !== "none") {
+          firstNameInput.focus();
         }
-        firstNameInput.focus();
       })();
     });
   }
