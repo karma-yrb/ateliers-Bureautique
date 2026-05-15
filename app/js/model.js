@@ -91,6 +91,7 @@ class WordAtelierModel {
               ? ex.scrape.extraImages
               : [],
         ),
+        preamble: typeof ex.preamble === "string" ? ex.preamble.trim() : "",
         instructions: Array.isArray(ex.instructions) ? ex.instructions.map((s) => cleanStepText(s)).filter(Boolean) : [],
       }))
       .sort((a, b) => a.globalIndex - b.globalIndex);

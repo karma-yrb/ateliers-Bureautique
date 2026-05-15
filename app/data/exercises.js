@@ -986,9 +986,9 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-003/ex-003.docx",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-003/ex-003.jpg",
+      "imageResultat": "data/ex-003.png",
       "description": "Téléchargez le fichier de travail ci-contre",
+      "preamble": "Vous travaillez dans le bloc \"Paragraphe\" en respectant les consignes ci-dessous. Chaque bloc de texte (Titre, Paragraphe 1, 2, 3…) doit être séparé par un appui sur la touche [Entrée].",
       "consignes": [
         "Vous travaillez dans le bloc \"Paragraphe\" en respectant les consignes ci-dessous.",
         "Titre : police \"Bodoni MT Black\", 24, alignement centré, gras.",
@@ -997,11 +997,10 @@ window.WORD_ATELIER_DATA = {
         "Paragraphe 3 : police \"Times New Roman\", 16, alignement centré, espacement au-dessus (avant) le paragraphe : 24 pts (ou 2 cm), bordures 2,5 pts."
       ],
       "instructions": [
-        "Vous travaillez dans le bloc \"Paragraphe\" en respectant les consignes ci-dessous.",
-        "Titre : police \"Bodoni MT Black\", 24, alignement centré, gras.",
+        "Titre : police \"Garamond\", 24, alignement centré, gras.",
         "Paragraphe 1 : police \"Castellar\", 12, interligne double, alignement justifié, retrait gauche +1,5 cm, retrait droit -0,5 cm, retrait de 1re ligne +1,30 cm.",
         "Paragraphe 2 : police \"Times New Roman\", 12, alignement droit, souligné, italique, retrait gauche +3,5 cm.",
-        "Paragraphe 3 : police \"Times New Roman\", 16, alignement centré, espacement au-dessus (avant) le paragraphe : 24 pts (ou 2 cm), bordures 2,5 pts."
+        "Paragraphe 3 : police \"Times New Roman\", 16, alignement centré, Espacement > Avant : 24 pt, bordures 2,5 pts."
       ],
       "scrape": {
         "ok": true,
@@ -1009,11 +1008,9 @@ window.WORD_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-04/ex-003/ex-003.webp"
-        ],
+        "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-04/ex-003/ex-003.jpg"
+          "data/ex-003.png"
         ]
       }
     },

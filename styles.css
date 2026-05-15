@@ -873,6 +873,13 @@ select {
   color: #4b5b6c;
 }
 
+.steps-preamble {
+  margin: 0 0 10px;
+  font-style: italic;
+  color: var(--text-soft, #555);
+  line-height: 1.45;
+}
+
 .steps-list {
   margin: 0;
   padding-left: 20px;

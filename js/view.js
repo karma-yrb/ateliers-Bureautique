@@ -74,6 +74,7 @@ class WordAtelierView {
     this.exerciseTitle = document.getElementById("exercise-title");
     this.exerciseThemeLine = document.getElementById("exercise-theme-line");
     this.exerciseSteps = document.getElementById("exercise-steps");
+    this.exerciseStepsPreamble = document.getElementById("exercise-steps-preamble");
     this.exerciseDocxBtn = document.getElementById("exercise-docx-btn");
     this.exerciseDownloadBtn = document.getElementById("exercise-download-btn");
     this.exercisePickWorkFileBtn = document.getElementById("exercise-pick-workfile-btn");
@@ -248,6 +249,12 @@ class WordAtelierView {
     this.exerciseToggleDoneBtn.textContent = vm.done ? "Fait" : "\u00E0 faire";
     this.exerciseToggleDoneBtn.classList.toggle("done", vm.done);
     this.exerciseToggleDoneBtn.setAttribute("data-icon", vm.done ? "\u2713" : "\u25CB");
+
+    const preamble = (vm.exercise && vm.exercise.preamble) ? vm.exercise.preamble : "";
+    if (this.exerciseStepsPreamble) {
+      this.exerciseStepsPreamble.textContent = preamble;
+      this.exerciseStepsPreamble.style.display = preamble ? "" : "none";
+    }
 
     const paragraphOnly = this.#isParagraphOnlyExercise(vm.exercise, vm.steps || []);
     const formatStep = (step) => this.#formatStepForExercise(vm.exercise, step);
