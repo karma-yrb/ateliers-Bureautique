@@ -653,7 +653,7 @@ window.WORD_ATELIER_DATA = {
         "Texte 1: \"Arial\", taille : 12, surligné : bleu clair.",
         "Texte 2: \"Comic Sans MS\", taille : 16, gras, surligné : gris.",
         "Texte 3: \"Verdana\", taille : 20, italique, couleur : vert, surligné : jaune.",
-        "Texte 4: \"Bitstream Vera Serif\", taille : 26, couleur : blanc, surligné : violet."
+        "Texte 4: \"Times New Roman\", taille : 26, couleur : blanc, surligné : violet."
       ],
       "instructions": [
         "Reproduire la ligne ci-dessous en utilisant la fonction copier-coller pour cette phrase",
@@ -662,7 +662,7 @@ window.WORD_ATELIER_DATA = {
         "Texte 1: \"Arial\", taille : 12, surligné : bleu clair.",
         "Texte 2: \"Comic Sans MS\", taille : 16, gras, surligné : gris.",
         "Texte 3: \"Verdana\", taille : 20, italique, couleur : vert, surligné : jaune.",
-        "Texte 4: \"Bitstream Vera Serif\", taille : 26, couleur : blanc, surligné : violet."
+        "Texte 4: \"Times New Roman\", taille : 26, couleur : blanc, surligné : violet."
       ],
       "scrape": {
         "ok": true,
