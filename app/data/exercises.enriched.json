@@ -1408,7 +1408,14 @@
       "description": "Consignes :",
       "consignes": [],
       "instructions": [
-        "Copier-coller la liste dans votre traitement de texte.",
+        "Ouvrez Microsoft Word : cliquez sur le bouton Demarrer, recherchez \"Word\", puis ouvrez l'application. Ensuite, cliquez sur \"Document vierge\" pour creer un nouveau document.",
+        "Copier-coller la liste dans votre traitement de texte :",
+        "Differents fournisseurs d'accès",
+        "Free,",
+        "Orange,",
+        "Nordnet,",
+        "Oleane,",
+        "Neuf.",
         "Insérez des puces dans un document Word en les personnalisant avec un caractère spécial \"ordinateur\"."
       ],
       "scrape": {
