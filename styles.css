@@ -1254,6 +1254,23 @@ select {
   line-height: 1.5;
 }
 
+.word-close-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em;
+  height: 1.2em;
+  margin: 0 0.08em;
+  border: 1px solid #b72f2f;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #dc4e4e 0%, #c63f3f 100%);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.9em;
+  line-height: 1;
+  vertical-align: -0.08em;
+}
+
 @media (max-width: 780px) {
   .app-header-top {
     flex-direction: column;

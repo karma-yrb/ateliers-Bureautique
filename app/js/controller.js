@@ -26,6 +26,7 @@ class WordAtelierController {
       savedFoldersSelect: document.getElementById("user-setup-saved-folders-select"),
       pickBtn: document.getElementById("user-setup-pick-root-btn"),
       firstNameInput: document.getElementById("user-setup-firstname-input"),
+      cancelBtn: document.getElementById("user-setup-cancel-btn"),
       validateBtn: document.getElementById("user-setup-validate-btn"),
     };
 
@@ -177,6 +178,18 @@ class WordAtelierController {
     if (this.view.exerciseOpenWorkFileBtn) {
       this.view.exerciseOpenWorkFileBtn.addEventListener("click", async () => {
         await this.#openWorkFileForCurrentExercise();
+      });
+    }
+
+    if (this.view.exerciseDocxBtn) {
+      this.view.exerciseDocxBtn.addEventListener("click", () => {
+        void this.#trackExerciseDownloadFromLink(this.view.exerciseDocxBtn);
+      });
+    }
+
+    if (this.view.exerciseDownloadBtn) {
+      this.view.exerciseDownloadBtn.addEventListener("click", () => {
+        void this.#trackExerciseDownloadFromLink(this.view.exerciseDownloadBtn);
       });
     }
 
@@ -707,64 +720,34 @@ class WordAtelierController {
   async #refreshExerciseWorkFileState(exerciseId, options = {}) {
     if (!this.view || !this.view.setExerciseWorkFileState) return;
     const token = ++this.exerciseWorkFileToken;
-    const pickerSupported = Boolean(
+    const folderAccessSupported = Boolean(
       this.storage
-      && this.storage.supportsWorkFilePicker
-      && this.storage.supportsWorkFilePicker(),
+      && this.storage.isSupported
+      && this.storage.isSupported(),
     );
 
-    if (!exerciseId || !this.userSession || !pickerSupported) {
+    if (!exerciseId || !this.userSession || !folderAccessSupported) {
       this.view.setExerciseWorkFileState({
-        pickerSupported,
-        statusText: pickerSupported ? "Aucun fichier lié pour cet exercice." : "Association de fichier indisponible sur ce navigateur.",
+        pickerSupported: folderAccessSupported,
+        openVisible: false,
+        statusText: folderAccessSupported ? "" : "Ouverture du dossier utilisateur indisponible sur ce navigateur.",
       });
       return;
     }
 
-    const entry = await this.storage.getSavedExerciseFile(this.#buildWorkFileProfileKey(), exerciseId);
+    const entry = await this.storage.getSavedExerciseDownload(this.#buildWorkFileProfileKey(), exerciseId);
     if (token !== this.exerciseWorkFileToken) return;
 
     this.view.setExerciseWorkFileState({
-      pickerSupported,
+      pickerSupported: folderAccessSupported,
+      openVisible: Boolean(entry && entry.fileName),
       fileName: entry && entry.fileName ? entry.fileName : "",
       statusText: options.statusText || "",
     });
   }
 
   async #pickWorkFileForCurrentExercise() {
-    if (!this.isReady || !this.userSession || !this.storage) return;
-    const exerciseId = this.#getCurrentExerciseIdFromView();
-    if (!exerciseId) return;
-
-    if (!this.storage.supportsWorkFilePicker || !this.storage.supportsWorkFilePicker()) {
-      await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: "Association de fichier indisponible sur ce navigateur.",
-      });
-      return;
-    }
-
-    const profileKey = this.#buildWorkFileProfileKey();
-    const existing = await this.storage.getSavedExerciseFile(profileKey, exerciseId);
-    const handle = await this.storage.pickWorkFile({
-      startIn: existing && existing.handle ? existing.handle : "downloads",
-    });
-    if (!handle) {
-      await this.#refreshExerciseWorkFileState(exerciseId);
-      return;
-    }
-
-    const ok = await this.storage.ensureFileReadPermission(handle);
-    if (!ok) {
-      await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: "Permission refusée pour ce fichier. Réessayez avec un autre document.",
-      });
-      return;
-    }
-
-    await this.storage.setSavedExerciseFile(profileKey, exerciseId, handle);
-    await this.#refreshExerciseWorkFileState(exerciseId, {
-      statusText: `Fichier associé: ${handle.name || "document Word"}.`,
-    });
+    return;
   }
 
   async #openWorkFileForCurrentExercise() {
@@ -772,47 +755,72 @@ class WordAtelierController {
     const exerciseId = this.#getCurrentExerciseIdFromView();
     if (!exerciseId) return;
 
-    const profileKey = this.#buildWorkFileProfileKey();
-    const entry = await this.storage.getSavedExerciseFile(profileKey, exerciseId);
-    if (!entry || !entry.handle) {
+    if (!this.storage.isSupported || !this.storage.isSupported()) {
       await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: "Aucun fichier associé. Cliquez d'abord sur « Associer mon fichier ».",
+        statusText: "Ouverture du dossier utilisateur indisponible sur ce navigateur.",
       });
       return;
     }
 
-    const ok = await this.storage.ensureFileReadPermission(entry.handle);
-    if (!ok) {
+    const profileKey = this.#buildWorkFileProfileKey();
+    const entry = await this.storage.getSavedExerciseDownload(profileKey, exerciseId);
+    if (!entry || !entry.fileName) {
       await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: "Permission refusée pour ce fichier. Associez-le à nouveau.",
+        statusText: "Téléchargez d'abord le fichier de l'exercice, puis enregistrez-le dans votre dossier utilisateur.",
       });
       return;
     }
 
     try {
-      const file = await entry.handle.getFile();
-      const objectUrl = URL.createObjectURL(file);
-      const opened = window.open(objectUrl, "_blank", "noopener");
-      window.setTimeout(() => {
-        URL.revokeObjectURL(objectUrl);
-      }, 30000);
+      const handle = await this.storage.openUserDirectory(this.userSession.rootHandle);
 
-      if (!opened) {
+      if (!handle) {
         await this.#refreshExerciseWorkFileState(exerciseId, {
-          statusText: "Le navigateur a bloqué l'ouverture. Autorisez les fenêtres puis réessayez.",
+          statusText: `Dossier utilisateur prêt : ${this.userSession.rootHandle && this.userSession.rootHandle.name ? this.userSession.rootHandle.name : "dossier utilisateur"}.`,
         });
         return;
       }
 
-      await this.storage.touchSavedExerciseFile(profileKey, exerciseId);
+      const ok = await this.storage.ensureDirectoryPermission(handle, "readwrite");
+      if (!ok) {
+        await this.#refreshExerciseWorkFileState(exerciseId, {
+          statusText: "Permission refusée pour ce dossier utilisateur.",
+        });
+        return;
+      }
+
+      await this.storage.touchSavedExerciseDownload(profileKey, exerciseId);
       await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: `Ouverture: ${file.name}.`,
+        statusText: `Dossier ouvert : ${handle.name || "dossier utilisateur"}. Cherchez ${entry.fileName}.`,
       });
     } catch {
       await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: "Impossible d'ouvrir ce fichier. Réassociez un document valide.",
+        statusText: "Impossible d'ouvrir le dossier utilisateur.",
       });
     }
+  }
+
+  #getDownloadFileName(downloadUrl) {
+    try {
+      const parsed = new URL(String(downloadUrl || ""), window.location.href);
+      const lastSegment = parsed.pathname.split("/").filter(Boolean).pop() || "";
+      return decodeURIComponent(lastSegment) || "fichier-telecharge";
+    } catch {
+      return "fichier-telecharge";
+    }
+  }
+
+  async #trackExerciseDownloadFromLink(linkEl) {
+    if (!this.isReady || !this.userSession || !this.storage || !linkEl) return;
+    const exerciseId = this.#getCurrentExerciseIdFromView();
+    const href = linkEl.getAttribute("href");
+    if (!exerciseId || !href) return;
+
+    const fileName = this.#getDownloadFileName(href);
+    await this.storage.setSavedExerciseDownload(this.#buildWorkFileProfileKey(), exerciseId, fileName, href);
+    await this.#refreshExerciseWorkFileState(exerciseId, {
+      statusText: `Téléchargement lancé. Enregistrez ${fileName} dans votre dossier utilisateur, puis cliquez sur « Ouvrir mon fichier ».` ,
+    });
   }
 
   #getSaveReminderFolderLabel() {
@@ -885,6 +893,7 @@ class WordAtelierController {
       const pickBtn = this.userModal.pickBtn;
       const firstNameInput = this.userModal.firstNameInput;
       const firstNameLabel = modal.querySelector('label[for="user-setup-firstname-input"]');
+      const cancel = this.userModal.cancelBtn;
       const validate = this.userModal.validateBtn;
 
       if (!modal || !status || !pickBtn || !firstNameInput || !validate) {
@@ -903,11 +912,19 @@ class WordAtelierController {
         modal.style.display = "none";
         modal.setAttribute("aria-hidden", "true");
         pickBtn.onclick = null;
+        if (cancel) cancel.onclick = null;
         validate.onclick = null;
         firstNameInput.onkeydown = null;
         if (savedFoldersSelect) savedFoldersSelect.onchange = null;
         resolve(result);
       };
+
+      if (cancel) {
+        cancel.onclick = () => {
+          status.textContent = "Configuration annulée.";
+          closeModal(null);
+        };
+      }
 
       const setFirstNameVisibility = (visible) => {
         const displayValue = visible ? "" : "none";

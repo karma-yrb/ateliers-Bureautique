@@ -37,6 +37,14 @@
     });
   }
 
+  async openUserDirectory(startHandle = null) {
+    return window.showDirectoryPicker({
+      id: "word-atelier-user-folder-open",
+      mode: "readwrite",
+      startIn: startHandle || "documents",
+    });
+  }
+
   async pickDocumentsDirectory() {
     return window.showDirectoryPicker({
       id: "word-atelier-documents-root",
@@ -536,6 +544,77 @@
     if (!entry) return null;
     entry.lastUsedAt = new Date().toISOString();
     await this.setSavedExerciseFiles(all);
+    return entry;
+  }
+
+  async getSavedExerciseDownloads() {
+    const raw = await this.#getSetting("exerciseDownloads");
+    if (!Array.isArray(raw)) return [];
+    return raw
+      .filter((item) => item && typeof item === "object")
+      .map((item) => ({
+        profileKey: this.normalizeProfileKey(item.profileKey),
+        exerciseId: String(item.exerciseId || "").trim(),
+        fileName: String(item.fileName || "").trim(),
+        sourceUrl: String(item.sourceUrl || "").trim(),
+        lastUsedAt: typeof item.lastUsedAt === "string" ? item.lastUsedAt : "",
+      }))
+      .filter((item) => item.exerciseId && item.fileName);
+  }
+
+  async setSavedExerciseDownloads(items) {
+    if (!Array.isArray(items)) return this.#setSetting("exerciseDownloads", []);
+    const payload = items
+      .filter((item) => item && typeof item === "object")
+      .map((item) => ({
+        profileKey: this.normalizeProfileKey(item.profileKey),
+        exerciseId: String(item.exerciseId || "").trim(),
+        fileName: String(item.fileName || "").trim(),
+        sourceUrl: String(item.sourceUrl || "").trim(),
+        lastUsedAt: typeof item.lastUsedAt === "string" ? item.lastUsedAt : "",
+      }))
+      .filter((item) => item.exerciseId && item.fileName);
+    return this.#setSetting("exerciseDownloads", payload);
+  }
+
+  async setSavedExerciseDownload(profileKey, exerciseId, fileName, sourceUrl = "") {
+    const cleanProfileKey = this.normalizeProfileKey(profileKey);
+    const cleanExerciseId = String(exerciseId || "").trim();
+    const cleanFileName = String(fileName || "").trim();
+    if (!cleanExerciseId || !cleanFileName) return null;
+
+    const all = await this.getSavedExerciseDownloads();
+    const now = new Date().toISOString();
+    const next = all.filter((entry) => !(entry.profileKey === cleanProfileKey && entry.exerciseId === cleanExerciseId));
+    next.push({
+      profileKey: cleanProfileKey,
+      exerciseId: cleanExerciseId,
+      fileName: cleanFileName,
+      sourceUrl: String(sourceUrl || "").trim(),
+      lastUsedAt: now,
+    });
+    await this.setSavedExerciseDownloads(next);
+    return next[next.length - 1];
+  }
+
+  async getSavedExerciseDownload(profileKey, exerciseId) {
+    const cleanProfileKey = this.normalizeProfileKey(profileKey);
+    const cleanExerciseId = String(exerciseId || "").trim();
+    if (!cleanExerciseId) return null;
+    const all = await this.getSavedExerciseDownloads();
+    return all.find((entry) => entry.profileKey === cleanProfileKey && entry.exerciseId === cleanExerciseId) || null;
+  }
+
+  async touchSavedExerciseDownload(profileKey, exerciseId) {
+    const cleanProfileKey = this.normalizeProfileKey(profileKey);
+    const cleanExerciseId = String(exerciseId || "").trim();
+    if (!cleanExerciseId) return null;
+
+    const all = await this.getSavedExerciseDownloads();
+    const entry = all.find((item) => item.profileKey === cleanProfileKey && item.exerciseId === cleanExerciseId);
+    if (!entry) return null;
+    entry.lastUsedAt = new Date().toISOString();
+    await this.setSavedExerciseDownloads(all);
     return entry;
   }
 

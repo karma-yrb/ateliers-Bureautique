@@ -21,7 +21,7 @@
       <div>
         <div class="title-row">
           <h1>Atelier Word</h1>
-          <span class="app-version" aria-label="Version de l'application">v1.2.7</span>
+          <span class="app-version" aria-label="Version de l'application">v1.2.6</span>
         </div>
         <p class="subtitle">Je choisis un thème, je lance un exercice, je suis les étapes.</p>
       </div>
@@ -128,10 +128,10 @@
         <div class="asset-actions">
           <a id="exercise-docx-btn" class="btn has-icon" data-icon="⬇" target="_blank" rel="noopener">Télécharger le fichier</a>
           <a id="exercise-download-btn" class="btn has-icon" data-icon="⬇" target="_blank" rel="noopener">Télécharger le 2ᵉ fichier</a>
-          <button id="exercise-pick-workfile-btn" class="btn btn-soft has-icon" data-icon="📄" type="button">Associer mon fichier</button>
+          <button id="exercise-pick-workfile-btn" class="btn btn-soft has-icon" data-icon="📁" type="button" style="display:none;">Ouvrir mon dossier</button>
           <button id="exercise-open-workfile-btn" class="btn btn-soft has-icon" data-icon="↗" type="button" style="display:none;">Ouvrir mon fichier</button>
         </div>
-        <p id="exercise-workfile-status" class="muted status-line">Aucun fichier lié pour cet exercice.</p>
+        <p id="exercise-workfile-status" class="muted status-line"></p>
         <div class="images-grid">
           <figure class="image-card">
             <figcaption id="exercise-enonce-caption">Énoncé</figcaption>
@@ -223,6 +223,7 @@
       </div>
 
       <div style="margin-top:16px;display:flex;justify-content:flex-end;gap:8px;">
+        <button id="user-setup-cancel-btn" class="btn btn-soft" type="button">Annuler</button>
         <button id="user-setup-validate-btn" class="btn has-icon" data-icon="✓" type="button">Valider</button>
       </div>
     </div>
@@ -231,11 +232,12 @@
   <div id="save-reminder-modal" class="image-modal" style="display:none;" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Rappel enregistrement exercice">
     <div class="modal-content user-setup-content save-reminder-content">
       <h2 style="margin-top:0;">Vous avez terminé ?</h2>
-      <p id="save-reminder-message" class="muted">Pensez à enregistrer votre travail dans votre dossier avant de continuer.</p>
+      <p id="save-reminder-message" class="muted">Pensez à enregistrer votre travail dans votre dossier avant de passer à l'exercice suivant.</p>
       <ol class="save-reminder-steps">
-        <li>Cliquez sur <strong>Fichier</strong> puis <strong>Enregistrer sous</strong>.</li>
-        <li>Choisissez votre dossier utilisateur : <code id="save-reminder-user-folder">Dossier utilisateur</code>.</li>
-        <li>Nommez le fichier <code id="save-reminder-file-name">ex-001-termine.docx</code>, puis validez avec <strong>Enregistrer</strong>.</li>
+        <li>Dans Word, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">×</span> (fermer) ou sur <strong>Fichier</strong> puis <strong>Enregistrer sous</strong>.</li>
+        <li>Choisissez votre dossier utilisateur : <code id="save-reminder-user-folder">xxx</code>.</li>
+        <li>Nommez le fichier <code id="save-reminder-file-name">ex-xxx-termine.docx</code>, puis validez avec <strong>Enregistrer</strong>.</li>
+        <li>Dans Word, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">×</span> (fermer) si besoin.</li>
       </ol>
       <div style="margin-top:16px;display:flex;justify-content:flex-end;">
         <button id="save-reminder-continue-btn" class="btn has-icon" data-icon="✓" type="button">Continuer</button>

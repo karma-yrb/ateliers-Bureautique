@@ -576,19 +576,20 @@ class WordAtelierView {
 
     const vm = workFileVm && typeof workFileVm === "object" ? workFileVm : {};
     const pickerSupported = vm.pickerSupported !== false;
-    const hasLinkedFile = Boolean(vm.fileName);
+    const fileName = String(vm.fileName || "").trim();
+    const openVisible = Boolean(vm.openVisible && fileName);
 
-    this.exercisePickWorkFileBtn.style.display = pickerSupported ? "" : "none";
-    this.exercisePickWorkFileBtn.textContent = hasLinkedFile ? "Changer mon fichier" : "Associer mon fichier";
+    this.exercisePickWorkFileBtn.style.display = "none";
+    this.exercisePickWorkFileBtn.textContent = "Ouvrir mon dossier";
 
-    this.exerciseOpenWorkFileBtn.style.display = hasLinkedFile ? "" : "none";
-    this.exerciseOpenWorkFileBtn.disabled = Boolean(vm.openDisabled);
-    this.exerciseOpenWorkFileBtn.textContent = hasLinkedFile
-      ? `Ouvrir: ${vm.fileName}`
+    this.exerciseOpenWorkFileBtn.style.display = pickerSupported && openVisible ? "" : "none";
+    this.exerciseOpenWorkFileBtn.disabled = !pickerSupported || !openVisible || Boolean(vm.openDisabled);
+    this.exerciseOpenWorkFileBtn.textContent = openVisible
+      ? `Ouvrir mon fichier: ${fileName}`
       : "Ouvrir mon fichier";
 
     if (!pickerSupported) {
-      this.exerciseWorkFileStatus.textContent = "Association de fichier indisponible sur ce navigateur.";
+      this.exerciseWorkFileStatus.textContent = "Ouverture du dossier utilisateur indisponible sur ce navigateur.";
       return;
     }
 
@@ -597,9 +598,9 @@ class WordAtelierView {
       return;
     }
 
-    this.exerciseWorkFileStatus.textContent = hasLinkedFile
-      ? `Fichier lié: ${vm.fileName}`
-      : "Aucun fichier lié pour cet exercice.";
+    this.exerciseWorkFileStatus.textContent = openVisible
+      ? `Fichier attendu dans le dossier utilisateur: ${fileName}`
+      : "";
   }
 
   #bindModalEvents() {
