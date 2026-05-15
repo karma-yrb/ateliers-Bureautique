@@ -656,6 +656,7 @@ window.WORD_ATELIER_DATA = {
         "Texte 4: \"Times New Roman\", taille : 26, couleur : blanc, surligné : violet."
       ],
       "instructions": [
+        "Ouvrez Microsoft Word : cliquez sur le bouton Demarrer, recherchez \"Word\", puis ouvrez l'application. Ensuite, cliquez sur \"Document vierge\" pour creer un nouveau document.",
         "Reproduire la ligne ci-dessous en utilisant la fonction copier-coller pour cette phrase",
         "« Le raccourci clavier pour enregistrer rapidement est ctrl+s »",
         "Et surlignez en fonction des consignes",
