@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.22](https://github.com/karma-yrb/PIMMS-ateliers-Word/compare/v1.2.21...v1.2.22) (2026-05-18)
+
+
+### Bug Fixes
+
+* regenerate exercises.js with correct imageEnonce for ex-019 ([e471cd0](https://github.com/karma-yrb/PIMMS-ateliers-Word/commit/e471cd080dbc304147c44ed5c19d82a9c47de650))
+
 ### [1.2.21](https://github.com/karma-yrb/PIMMS-ateliers-Word/compare/v1.2.20...v1.2.21) (2026-05-18)
 
 ### [1.2.20](https://github.com/karma-yrb/PIMMS-ateliers-Word/compare/v1.2.19...v1.2.20) (2026-05-15)

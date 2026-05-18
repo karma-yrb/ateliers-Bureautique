@@ -1,7 +1,44 @@
 window.RELEASES_DATA = {
-  "version": "1.2.21",
-  "updatedAt": "2026-05-18T14:43:50.255Z",
+  "version": "1.2.22",
+  "updatedAt": "2026-05-18T14:57:39.542Z",
   "releases": [
+    {
+      "version": "1.2.22",
+      "tag": "v1.2.22",
+      "date": "2026-05-18",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "",
+          "description": "regenerate exercises.js with correct imageEnonce for ex-019",
+          "breaking": false,
+          "hash": "e471cd0"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 0,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 1
+      }
+    },
     {
       "version": "1.2.21",
       "tag": "v1.2.21",
