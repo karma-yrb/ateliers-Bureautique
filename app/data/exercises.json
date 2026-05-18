@@ -783,8 +783,8 @@
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-004/ex-004.docx",
-      "imageEnonce": "data/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-004/ex-004.jpg",
+      "imageEnonce": null,
+      "imageResultat": "data/ex-004.jpg",
       "description": "1 - Téléchargez le fichier de travail",
       "consignes": [
         "Téléchargez le fichier de travail",
