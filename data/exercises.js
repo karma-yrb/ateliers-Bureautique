@@ -1029,7 +1029,7 @@ window.WORD_ATELIER_DATA = {
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-004/ex-004.docx",
       "imageEnonce": null,
-      "imageResultat": "data/ex-004.jpg",
+      "imageResultat": "data/ex-004-2.jpg",
       "description": "1 - Téléchargez le fichier de travail",
       "consignes": [
         "Téléchargez le fichier de travail",
@@ -1062,7 +1062,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "data/ex-004.jpg"
+          "data/ex-004-2.jpg"
         ]
       }
     },
