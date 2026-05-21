@@ -393,7 +393,7 @@ class WordAtelierView {
   }
 
   #formatStep(step) {
-    const text = String(step || "").replace(/^\s*\d+\s*[-.)]\s*/, "");
+    const text = String(step || "").trim();
     const formatMultiline = (value) => escapeHtml(value).replace(/\n/g, "<br>");
     const colonIndex = text.indexOf(":");
     if (colonIndex <= 0) return formatMultiline(text);
@@ -422,7 +422,7 @@ class WordAtelierView {
   }
 
   #formatStepPlain(step) {
-    const text = String(step || "").replace(/^\s*\d+\s*[-.)]\s*/, "").trim();
+    const text = String(step || "").trim();
     return escapeHtml(text).replace(/\n/g, "<br>");
   }
 
