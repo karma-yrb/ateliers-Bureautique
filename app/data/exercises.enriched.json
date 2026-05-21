@@ -915,11 +915,11 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-001/ex-001.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-001/ex-001.jpg",
-      "description": "Mise en page (Gestion de l'espace) :\nMarges : Configurer des marges de page identiques (haut, bas, gauche, droite) d'au moins 2,5 cm pour centrer le bloc de texte.\nAlignement horizontal : Centrer le texte horizontalement sur la page.\nAlignement vertical : Utiliser les options de mise en page pour centrer verticalement le paragraphe au milieu de la page blanche.\n\nMise en forme du texte (Groupe Police) :\nAppliquer la police Arial Rounded MT Bold (ou une police épaisse équivalente).\nDéfinir la taille des caractères à 24 points.\nAppliquer l'attribut Italique à l'ensemble du texte.\n\nMise en forme du paragraphe (Groupe Paragraphe) :\nEspacement : Ajuster l'interligne et l'espacement (avant/après) pour que le texte s'étende de manière harmonieuse et utilise la quasi-totalité de la hauteur disponible dans le cadre.\nBordure et ombre : Appliquer une bordure de 0,5 pt de style \"Ombré\" directement au paragraphe (et non à la page). Ajuster les options de distance du texte si nécessaire pour que le cadre ne colle pas aux lettres.",
+      "description": "Mise en page (Gestion de l'espace) :\nMarges : Configurer des marges de page identiques (haut, bas, gauche, droite) d'au moins 2,5 cm pour centrer le bloc de texte.\nAlignement horizontal : Centrer le texte horizontalement sur la page.\nAlignement vertical : Utiliser les options de mise en page pour centrer verticalement le paragraphe au milieu de la page blanche.\n\nMise en forme du texte (Groupe Police) :\nAppliquer la Police \"Arial Rounded Mt Bold\" (ou une police épaisse équivalente).\nDéfinir la taille des caractères à 24 points.\nAppliquer l'attribut Italique à l'ensemble du texte.\n\nMise en forme du paragraphe (Groupe Paragraphe) :\nEspacement : Ajuster l'interligne et l'espacement (avant/après) pour que le texte s'étende de manière harmonieuse et utilise la quasi-totalité de la hauteur disponible dans le cadre.\nBordure et ombre : Appliquer une bordure de 0,5 pt de style \"Ombré\" directement au paragraphe (et non à la page). Ajuster les options de distance du texte si nécessaire pour que le cadre ne colle pas aux lettres.",
       "consignes": [],
       "instructions": [
         "1. Mise en forme du texte (Groupe Police):",
-        "- Appliquer la police Arial Rounded MT Bold (ou une police épaisse équivalente).",
+        "- Appliquer la Police \"Arial Rounded Mt Bold\" (ou une police épaisse équivalente).",
         "- Définir la taille des caractères à 24 points.",
         "- Appliquer l'attribut Italique à l'ensemble du texte.",
         "2. Mise en page (Gestion de l'espace):",
@@ -999,15 +999,15 @@
       "consignes": [
         "Vous travaillez dans le bloc \"Paragraphe\" en respectant les consignes ci-dessous.",
         "Titre : police \"Bodoni MT Black\", 24, alignement centré, gras.",
-        "Paragraphe 1 : police \"Castellar\", 12, interligne double, alignement justifié, retrait gauche +1,5 cm, retrait droit -0,5 cm, retrait de 1re ligne +1,30 cm.",
-        "Paragraphe 2 : police \"Times New Roman\", 12, alignement droit, souligné, italique, retrait gauche +3,5 cm.",
+        "Paragraphe 1 : police \"Castellar\", 12, interligne double, alignement justifié, retrait gauche 1,5 cm, retrait droit -0,5 cm, retrait de 1re ligne 1,3 cm.",
+        "Paragraphe 2 : police \"Times New Roman\", 12, alignement droit, souligné, italique, retrait gauche 3,5 cm.",
         "Paragraphe 3 : police \"Times New Roman\", 16, alignement centré, espacement au-dessus (avant) le paragraphe : 24 pts (ou 2 cm), bordures 2,5 pts."
       ],
       "instructions": [
         "Titre : police \"Garamond\", 24, alignement centré, gras.",
-        "Paragraphe 1 : police \"Castellar\", 12, interligne double, alignement justifié, retrait gauche +1,5 cm, retrait droit -0,5 cm, retrait de 1re ligne +1,30 cm.",
-        "Paragraphe 2 : police \"Times New Roman\", 12, alignement droit, souligné, italique, retrait gauche +3,5 cm.",
-        "Paragraphe 3 : police \"Times New Roman\", 16, alignement centré, Espacement > Avant : 24 pt, bordures 2,5 pts."
+        "Paragraphe 1 : police \"Castellar\", 12, interligne double, alignement justifié, retrait gauche 1,5 cm, retrait droit -0,5 cm, retrait de 1re ligne 1,3 cm.",
+        "Paragraphe 2 : police \"Times New Roman\", 12, alignement droit, souligné, italique, retrait gauche 3,5 cm.",
+        "Paragraphe 3 : police \"Times New Roman\", 14, alignement centré, Espacement avant : 24 pt, bordures 3 pt (Appliquer à : Paragraphe)."
       ],
       "scrape": {
         "ok": true,
@@ -1042,24 +1042,24 @@
         "Téléchargez le fichier de travail",
         "Respectant les consignes ci-dessous en faisant attention à bien séparer les paragraphes :",
         "- Titre: Police \"Trebuchet MS\", 18, Gras, Alignement centré",
-        "- Paragraphe 1: Police \"Tempus Sans ITC\", 12, Retrait gauche +1,5cm, Retrait droit +0,5cm, Retrait 1ère ligne ligne +1cm",
-        "- Paragraphe 2: Police \"Forte\", 12, Alignement Droit, Interligne au moins 0,7cm, Retrait gauche +3,5cm, Retrait droit +5cm",
-        "- Paragraphe 3: Police \"Arial Narrow\", 14, Gras, Alignement centré, Espacement au-dessus (avant) 6 pt (ou 0,5cm), Retrait gauche +0,4cm, Retrait droit +0,4cm",
-        "- Paragraphe 4: \"Police Arial Rounded Mt Bold\", 14, Retrait gauche +1cm, Retrait droit +2cm, Retrait 1ère ligne +1,5cm",
-        "- Paragraphe 5: Police \"Arial\", 11, Interligne double, Alignement justifié, Retrait gauche +3,5cm, Retrait droit +1,5cm, Retrait 1ère ligne -2cm ",
-        "- Paragraphe 6: Police \"Tahoma\", 12, Alignement justifié, Retrait droit - 0,5cm, Retrait 1ère ligne +1cm,",
-        "- Paragraphe 7: Alignement centré, Interligne fixe 1cm, Retrait gauche +5cm, Retrait droit +5cm"
+        "- Paragraphe 1: Police \"Tempus Sans ITC\", 11, Retrait gauche 1,5cm, Retrait droit 0,5cm, Retrait 1ère ligne ligne 0,5cm",
+        "- Paragraphe 2: Police \"Forte\", 12, Alignement Droit, Interligne au moins 0,7cm, Retrait gauche 2cm, Retrait droit 3cm",
+        "- Paragraphe 3: Police \"Arial Narrow\", 11, Gras, Alignement centré, Espacement au-dessus (avant) 6 pt (ou 0,5cm), Retrait gauche 0,4cm, Retrait droit 0,4cm",
+        "- Paragraphe 4: Police \"Arial Rounded Mt Bold\", 12, Retrait gauche 1cm, Retrait droit 2cm",
+        "- Paragraphe 5: Police \"Arial\", 11, Interligne double, Alignement justifié, Retrait gauche 3,5cm, Retrait droit 1,5cm, Retrait 1ère ligne -2cm ",
+        "- Paragraphe 6: Police \"Tahoma\", 12, Alignement justifié, Retrait droit - 0,5cm, Retrait 1ère ligne 1cm,",
+        "- Paragraphe 7: Alignement centré, Interligne fixe (Exactement) 1cm, Retrait gauche 4cm, Retrait droit 4cm"
       ],
       "instructions": [
         "Respectant les consignes ci-dessous en faisant attention à bien séparer les paragraphes :",
         "- Titre: Police \"Trebuchet MS\", 18, Gras, Alignement centré",
-        "- Paragraphe 1: Police \"Tempus Sans ITC\", 12, Retrait gauche +1,5cm, Retrait droit +0,5cm, Retrait 1ère ligne ligne +1cm",
-        "- Paragraphe 2: Police \"Forte\", 12, Alignement Droit, Interligne au moins 0,7cm, Retrait gauche +3,5cm, Retrait droit +5cm",
-        "- Paragraphe 3: Police \"Arial Narrow\", 14, Gras, Alignement centré, Espacement au-dessus (avant) 6 pt (ou 0,5cm), Retrait gauche +0,4cm, Retrait droit +0,4cm",
-        "- Paragraphe 4: \"Police Arial Rounded Mt Bold\", 14, Retrait gauche +1cm, Retrait droit +2cm, Retrait 1ère ligne +1,5cm",
-        "- Paragraphe 5: Police \"Arial\", 11, Interligne double, Alignement justifié, Retrait gauche +3,5cm, Retrait droit +1,5cm, Retrait 1ère ligne -2cm ",
-        "- Paragraphe 6: Police \"Tahoma\", 12, Alignement justifié, Retrait droit - 0,5cm, Retrait 1ère ligne +1cm,",
-        "- Paragraphe 7: Alignement centré, Interligne fixe 1cm, Retrait gauche +5cm, Retrait droit +5cm"
+        "- Paragraphe 1: Police \"Tempus Sans ITC\", 11, Retrait gauche 1,5cm, Retrait droit 0,5cm, Retrait 1ère ligne ligne 0,5cm",
+        "- Paragraphe 2: Police \"Forte\", 12, Alignement Droit, Interligne au moins 0,7cm, Retrait gauche 2cm, Retrait droit 3cm",
+        "- Paragraphe 3: Police \"Arial Narrow\", 11, Gras, Alignement centré, Espacement au-dessus (avant) 6 pt (ou 0,5cm), Retrait gauche 0,4cm, Retrait droit 0,4cm",
+        "- Paragraphe 4: Police \"Arial Rounded Mt Bold\", 12, Retrait gauche 1cm, Retrait droit 2cm",
+        "- Paragraphe 5: Police \"Arial\", 11, Interligne double, Alignement justifié, Retrait gauche 3,5cm, Retrait droit 1,5cm, Retrait 1ère ligne -2cm ",
+        "- Paragraphe 6: Police \"Tahoma\", 12, Alignement justifié, Retrait droit - 0,5cm, Retrait 1ère ligne 1cm,",
+        "- Paragraphe 7: Alignement centré, Interligne fixe (Exactement) 1cm, Retrait gauche 4cm, Retrait droit 4cm"
       ],
       "scrape": {
         "ok": true,
