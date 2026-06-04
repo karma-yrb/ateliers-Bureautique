@@ -1020,7 +1020,7 @@ window.WORD_ATELIER_DATA = {
         "Titre : police \"Garamond\", 24, alignement centré, gras.",
         "Paragraphe 1 : police \"Castellar\", 12, interligne double, alignement justifié, retrait gauche 1,5 cm, retrait droit -0,5 cm, retrait de 1re ligne 1,3 cm.",
         "Paragraphe 2 : police \"Times New Roman\", 12, alignement droit, souligné, italique, retrait gauche 3,5 cm.",
-        "Paragraphe 3 : police \"Times New Roman\", 14, alignement centré, Espacement avant : 24 pt, bordures 3 pt (Appliquer à : Paragraphe)."
+        "Paragraphe 3 : police \"Times New Roman\", 14, alignement centré, Espacement avant : 24 pt, bordures 3 pt appliqué à Paragraphe."
       ],
       "scrape": {
         "ok": true,
