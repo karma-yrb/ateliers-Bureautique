@@ -1,7 +1,60 @@
 window.RELEASES_DATA = {
-  "version": "1.2.38",
-  "updatedAt": "2026-06-04T10:45:32.827Z",
+  "version": "1.2.39",
+  "updatedAt": "2026-06-04T14:35:30.083Z",
   "releases": [
+    {
+      "version": "1.2.39",
+      "tag": "v1.2.39",
+      "date": "2026-06-04",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version de maintenance.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare release",
+          "breaking": false,
+          "hash": "7df3ecc"
+        },
+        {
+          "type": "ci",
+          "typeLabel": "CI",
+          "scope": "",
+          "description": "add GitHub Pages deployment workflow",
+          "breaking": false,
+          "hash": "ec417a9"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "force redeploy",
+          "breaking": false,
+          "hash": "7d29a33"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 2,
+        "build": 0,
+        "ci": 1,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 3
+      }
+    },
     {
       "version": "1.2.38",
       "tag": "v1.2.38",
