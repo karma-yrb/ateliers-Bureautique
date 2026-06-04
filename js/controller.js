@@ -1127,7 +1127,9 @@ class WordAtelierController {
             firstNameInput.value = profile.firstName;
             setFirstNameEditMode(false);
           } else {
-            firstNameInput.value = defaultFirstName || "";
+            // Pas de profil connu pour ce dossier : champ vide et éditable.
+            // On n'utilise pas defaultFirstName qui appartient à l'ancien utilisateur.
+            firstNameInput.value = "";
             setFirstNameEditMode(true);
           }
           setFirstNameVisibility(true);
@@ -1158,11 +1160,14 @@ class WordAtelierController {
               firstNameInput.value = profile.firstName;
               setFirstNameEditMode(false);
             } else {
-              firstNameInput.value = defaultFirstName || "";
+              // Profil sans prénom : champ vide et éditable.
+              firstNameInput.value = "";
               setFirstNameEditMode(true);
             }
           } else {
-            firstNameInput.value = defaultFirstName || "";
+            // Aucun profil pour ce dossier : champ vide et éditable.
+            // On n'utilise pas defaultFirstName qui appartient à l'ancien utilisateur.
+            firstNameInput.value = "";
             setFirstNameEditMode(true);
           }
           setFirstNameVisibility(true);
@@ -1194,13 +1199,14 @@ class WordAtelierController {
 
           // Résolution : si le dossier contient déjà un sous-dossier unique avec ProgressionAtelier,
           // descendre dedans pour éviter la duplication.
+          // Pour un dossier entièrement nouveau, resolveUserRootHandle peut échouer :
+          // on reste alors sur le handle sélectionné.
           let resolvedHandle = handle;
           try {
             resolvedHandle = await this.storage.resolveUserRootHandle(handle, "") || handle;
           } catch {
-            resolvedHandle = handle;  // dossier nouveau → on reste dessus, c'est normal
+            resolvedHandle = handle;
           }
-          
           if (resolvedHandle !== handle) {
             const ok = await this.storage.ensureWritePermission(resolvedHandle);
             if (!ok) {
@@ -1216,10 +1222,11 @@ class WordAtelierController {
           const profile = await this.storage.loadUserProfile(rootHandle, resolvedInitials, false);
           if (profile) {
             if (profile.initials) resolvedInitials = this.storage.normalizeInitials(profile.initials);
-            firstNameInput.value = profile.firstName || defaultFirstName || "";
+            firstNameInput.value = profile.firstName || "";
             setFirstNameEditMode(!profile.firstName);
           } else {
-            firstNameInput.value = defaultFirstName || "";
+            // Nouveau dossier sans profil : champ vide et éditable.
+            firstNameInput.value = "";
             setFirstNameEditMode(true);
           }
 
