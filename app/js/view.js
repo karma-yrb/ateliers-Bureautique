@@ -44,6 +44,21 @@ function getThemeStateLabel(percent) {
   return "À démarrer";
 }
 
+// ─── Zoom steps pour la modale image ────────────────────────────────────────
+const MODAL_ZOOM_STEPS = [1, 1.5, 2, 3, 4, 6, 8];
+
+function snapZoom(current, direction) {
+  if (direction > 0) {
+    const next = MODAL_ZOOM_STEPS.find((z) => z > current);
+    return next ?? MODAL_ZOOM_STEPS[MODAL_ZOOM_STEPS.length - 1];
+  }
+  const prev = [...MODAL_ZOOM_STEPS].reverse().find((z) => z < current);
+  return prev ?? 1;
+}
+
+// ─── Détection touch (pour hint adaptatif) ───────────────────────────────────
+const IS_TOUCH = typeof window !== "undefined" && "ontouchstart" in window;
+
 class WordAtelierView {
   constructor() {
     this.navButtons = Array.from(document.querySelectorAll(".nav-btn"));
@@ -73,6 +88,12 @@ class WordAtelierView {
     this.exerciseStatusPill = document.getElementById("exercise-status-pill");
     this.exerciseTitle = document.getElementById("exercise-title");
     this.exerciseThemeLine = document.getElementById("exercise-theme-line");
+    // ── Nouveaux éléments UX ──
+    this.exerciseBreadcrumb = document.getElementById("exercise-breadcrumb");
+    this.exerciseThemeProgress = document.getElementById("exercise-theme-progress");
+    this.exerciseThemeProgressBar = document.getElementById("exercise-theme-progress-bar");
+    this.exerciseSaveNudge = document.getElementById("exercise-save-nudge");
+    // ─────────────────────────
     this.exerciseSteps = document.getElementById("exercise-steps");
     this.exerciseStepsPreamble = document.getElementById("exercise-steps-preamble");
     this.exerciseDocxBtn = document.getElementById("exercise-docx-btn");
@@ -101,6 +122,7 @@ class WordAtelierView {
     this.headerUserBadge = document.getElementById("header-user-badge");
     this.headerUserName = this.headerUserBadge ? this.headerUserBadge.querySelector(".header-user-name") : null;
 
+    // ─── État modale image ────────────────────────────────────────────────────
     this.imageModal = document.getElementById("image-modal");
     this.imageModalImg = document.getElementById("image-modal-img");
     this.imageModalClose = document.getElementById("image-modal-close");
@@ -112,9 +134,20 @@ class WordAtelierView {
     this.modalDragStartY = 0;
     this.modalScrollStartLeft = 0;
     this.modalScrollStartTop = 0;
+    // Nouveaux : mode split & sources courantes
+    this.modalCurrentEnonceImages = [];
+    this.modalCurrentResultImages = [];
+    this.modalSplitMode = false;
+    // ─────────────────────────────────────────────────────────────────────────
+
+    this.#ensureModalExtras();
     this.#ensureModalStage();
     this.#bindModalEvents();
   }
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Navigation & pages
+  // ═══════════════════════════════════════════════════════════════════════════
 
   setActiveNav(pageName) {
     for (const btn of this.navButtons) {
@@ -129,6 +162,10 @@ class WordAtelierView {
     const navPage = pageName === "exercise" || pageName === "affinity" ? "themes" : pageName;
     this.setActiveNav(navPage);
   }
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Home
+  // ═══════════════════════════════════════════════════════════════════════════
 
   renderHome(vm) {
     this.homeProgressText.textContent = `${vm.completed} / ${vm.total} exercices terminés (${vm.percent}%)`;
@@ -151,8 +188,11 @@ class WordAtelierView {
         <p class="last-meta">${escapeHtml(vm.lastDoneText)}</p>
       `;
     }
-
   }
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Themes / Affinity
+  // ═══════════════════════════════════════════════════════════════════════════
 
   renderAffinityOverview(vm) {
     if (!vm.groups.length) {
@@ -240,25 +280,41 @@ class WordAtelierView {
       .join("");
   }
 
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Exercise — rendu principal
+  // ═══════════════════════════════════════════════════════════════════════════
+
   renderExercise(vm) {
+    // ── Fil d'Ariane ──────────────────────────────────────────────────────────
+    this.#renderBreadcrumb(vm);
+
+    // ── Titre & statut ────────────────────────────────────────────────────────
     this.exerciseTitle.textContent = `Exercice ${vm.exercise.num} - ${vm.exercise.title}`;
-    this.exerciseThemeLine.textContent = `Thème: ${vm.exercise.moduleName}`;
+    this.exerciseThemeLine.textContent = `Thème : ${vm.exercise.moduleName}`;
 
     this.exerciseStatusPill.textContent = vm.done ? "Fait" : "À faire";
     this.exerciseStatusPill.classList.toggle("todo", !vm.done);
-    this.exerciseToggleDoneBtn.textContent = vm.done ? "Fait" : "\u00E0 faire";
+
+    // Bouton toggle : libellé d'action, pas d'état
+    this.exerciseToggleDoneBtn.textContent = vm.done ? "✓ Fait" : "Marquer comme fait";
     this.exerciseToggleDoneBtn.classList.toggle("done", vm.done);
     this.exerciseToggleDoneBtn.setAttribute("data-icon", vm.done ? "\u2713" : "\u25CB");
 
+    // ── Progression dans le thème ─────────────────────────────────────────────
+    this.#renderThemeProgress(vm);
+
+    // ── Préambule ─────────────────────────────────────────────────────────────
     const preamble = (vm.exercise && vm.exercise.preamble) ? vm.exercise.preamble : "";
     if (this.exerciseStepsPreamble) {
       this.exerciseStepsPreamble.textContent = preamble;
       this.exerciseStepsPreamble.style.display = preamble ? "" : "none";
     }
 
+    // ── Étapes ────────────────────────────────────────────────────────────────
     const paragraphOnly = this.#isParagraphOnlyExercise(vm.exercise, vm.steps || []);
     const formatStep = (step) => this.#formatStepForExercise(vm.exercise, step);
     this.exerciseSteps.classList.remove("steps-copy-mode", "steps-paragraph-mode", "steps-has-copy");
+
     if (paragraphOnly) {
       const lines = (vm.steps || [])
         .map((line) => String(line || "").trim())
@@ -300,7 +356,6 @@ class WordAtelierView {
             copyLines.push(next);
             j += 1;
           }
-
           if (copyLines.length) {
             hasCopyBlock = true;
             items.push(`
@@ -323,7 +378,6 @@ class WordAtelierView {
             copyLines.push(next);
             j += 1;
           }
-
           if (copyLines.length >= 2) {
             hasCopyBlock = true;
             items.push(`
@@ -346,6 +400,12 @@ class WordAtelierView {
         : "<li>Reproduisez le document en suivant l'énoncé.</li>";
     }
 
+    // ── Nudge de sauvegarde ───────────────────────────────────────────────────
+    // Visible dès le rendu si l'exercice n'est pas encore fait
+    // (sera aussi déclenché via updateSaveNudge() lors du clic sur les étapes)
+    this.#updateSaveNudge(vm.done);
+
+    // ── Fichiers ──────────────────────────────────────────────────────────────
     if (vm.exercise.docxUrl) {
       this.exerciseDocxBtn.href = vm.exercise.docxUrl;
       this.exerciseDocxBtn.style.display = "";
@@ -366,8 +426,13 @@ class WordAtelierView {
     const filesCard = document.getElementById("exercise-files-card");
     if (filesCard) filesCard.style.display = hasFiles ? "" : "none";
 
+    // ── Images ────────────────────────────────────────────────────────────────
     this.exerciseEnonceCaption.textContent = vm.exercise.imageEnonceCaption || "Énoncé";
     this.exerciseResultCaption.textContent = vm.exercise.imageResultatCaption || "Résultat attendu";
+
+    // Mémoriser les sources pour le mode split de la modale
+    this.modalCurrentEnonceImages = (vm.visuals.enonceImages || []).filter(Boolean);
+    this.modalCurrentResultImages = (vm.visuals.resultImages || []).filter(Boolean);
 
     this.#renderImageGroup(
       this.exerciseEnonceImages,
@@ -384,6 +449,10 @@ class WordAtelierView {
     this.#syncImagesGridLayout();
     this.#renderExtraImages(vm.visuals.extraImages || []);
 
+    // Bouton "Comparer côte à côte" — visible si on a les deux types d'images
+    this.#renderSideBySideBtn();
+
+    // ── Navigation ────────────────────────────────────────────────────────────
     this.exercisePrevBtn.disabled = !vm.prevId;
     this.exerciseNextBtn.disabled = !vm.nextId;
     this.exercisePrevBtn.setAttribute("data-target-id", vm.prevId || "");
@@ -391,6 +460,130 @@ class WordAtelierView {
     this.exerciseToggleDoneBtn.setAttribute("data-id", vm.exercise.id);
     this.setExerciseWorkFileState(vm.workFile || null);
   }
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Helpers exercice — nouveautés UX
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  /**
+   * Fil d'Ariane : Thèmes › [Catégorie affinity] › [Thème] › Exercice N
+   * Utilise les data-attributes portés par les boutons de navigation back
+   * ou se contente du titre de thème disponible dans le DOM.
+   */
+  #renderBreadcrumb(vm) {
+    if (!this.exerciseBreadcrumb) return;
+
+    const affinityLabel = escapeHtml(vm.affinityLabel || "");
+    const themeLabel = escapeHtml(vm.exercise.moduleName || "");
+    const exLabel = `Exercice ${vm.exercise.num}`;
+
+    let parts = [];
+
+    parts.push(`<a href="#themes" class="breadcrumb-link">Thèmes</a>`);
+    if (affinityLabel) {
+      const affinityId = escapeHtml(vm.affinityId || "");
+      parts.push(
+        `<span class="breadcrumb-sep" aria-hidden="true">›</span>` +
+        `<a href="#affinity/${affinityId}" class="breadcrumb-link">${affinityLabel}</a>`,
+      );
+    }
+    if (themeLabel) {
+      const affinityId = escapeHtml(vm.affinityId || "");
+      const themeId = escapeHtml(vm.exercise.moduleId || "");
+      parts.push(
+        `<span class="breadcrumb-sep" aria-hidden="true">›</span>` +
+        `<a href="#affinity/${affinityId}/${themeId}" class="breadcrumb-link">${themeLabel}</a>`,
+      );
+    }
+    parts.push(
+      `<span class="breadcrumb-sep" aria-hidden="true">›</span>` +
+      `<span class="breadcrumb-current" aria-current="page">${exLabel}</span>`,
+    );
+
+    this.exerciseBreadcrumb.innerHTML = parts.join("");
+
+    // Délégation de clic sur les liens du breadcrumb
+    this.exerciseBreadcrumb.querySelectorAll("a.breadcrumb-link").forEach((a) => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        const href = a.getAttribute("href");
+        if (href) window.location.hash = href;
+      });
+    });
+  }
+
+  /**
+   * Barre de progression dans le thème : "Exercice X / N"
+   * vm.themeTotal et vm.themeDone doivent être passés par le controller.
+   */
+  #renderThemeProgress(vm) {
+    if (!this.exerciseThemeProgress) return;
+    const total = vm.themeTotal ?? 0;
+    const done = vm.themeDone ?? 0;
+    const idx = vm.themeIndex ?? vm.exercise.num; // position 1-based dans le thème
+    const percent = total > 0 ? Math.round((done / total) * 100) : 0;
+
+    this.exerciseThemeProgress.textContent = `Exercice ${idx} / ${total} dans ce thème`;
+    if (this.exerciseThemeProgressBar) {
+      this.exerciseThemeProgressBar.style.width = `${percent}%`;
+    }
+  }
+
+  /**
+   * Nudge de sauvegarde : apparaît dès que l'exercice est "en cours"
+   * (non fait). Se masque une fois marqué fait.
+   */
+  #updateSaveNudge(isDone) {
+    if (!this.exerciseSaveNudge) return;
+    this.exerciseSaveNudge.hidden = Boolean(isDone);
+  }
+
+  // Appelable depuis l'extérieur après un toggle done
+  updateSaveNudge(isDone) {
+    this.#updateSaveNudge(isDone);
+  }
+
+  /**
+   * Bouton "Comparer côte à côte" sous la grille d'images.
+   * Injecté dynamiquement pour ne pas alourdir le HTML de base.
+   */
+  #renderSideBySideBtn() {
+    const grid = this.exerciseImagesGrid;
+    if (!grid) return;
+
+    // Supprimer un éventuel bouton précédent
+    const existing = grid.parentElement
+      ? grid.parentElement.querySelector(".images-compare-btn")
+      : null;
+    if (existing) existing.remove();
+
+    const hasEnonce = this.modalCurrentEnonceImages.length > 0;
+    const hasResult = this.modalCurrentResultImages.length > 0;
+    if (!hasEnonce || !hasResult) return;
+
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "images-compare-btn";
+    btn.setAttribute("aria-label", "Comparer l'énoncé et le résultat côte à côte");
+    btn.innerHTML = `<span class="images-compare-icon" aria-hidden="true">⧉</span> Comparer côte à côte`;
+    btn.addEventListener("click", () => {
+      this.openImageModalSplit(
+        this.modalCurrentEnonceImages[0],
+        this.modalCurrentResultImages[0],
+      );
+    });
+
+    // Insérer après la grille
+    if (grid.nextSibling) {
+      grid.parentElement.insertBefore(btn, grid.nextSibling);
+    } else {
+      grid.parentElement.appendChild(btn);
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Helpers exercice — inchangés
+  // ═══════════════════════════════════════════════════════════════════════════
 
   #formatStep(step) {
     const text = String(step || "").trim();
@@ -410,12 +603,12 @@ class WordAtelierView {
     const raw = String(step || "").trim();
     if (exercise && exercise.id === "ex-010") {
       const normalized = raw
-        .replace(/[��"]/g, "")
+        .replace(/[""]/g, "")
         .replace(/\s+/g, " ")
         .trim()
         .toLowerCase();
       if (normalized === "le raccourci clavier pour enregistrer rapidement est ctrl+s") {
-        return "<strong>� Le raccourci clavier pour enregistrer rapidement est ctrl+s �</strong>";
+        return "<strong>💾 Le raccourci clavier pour enregistrer rapidement est Ctrl+S</strong>";
       }
     }
     return this.#formatStep(step);
@@ -453,8 +646,8 @@ class WordAtelierView {
       .map(
         (src, idx) => `
         <button class="image-thumb" type="button" data-zoom-src="${escapeHtml(src)}" title="Cliquer pour agrandir">
-          <img src="${escapeHtml(src)}" alt="${escapeHtml(altPrefix)} ${idx + 1}">
-          <span class="image-thumb-hint">🔍 Cliquer pour agrandir</span>
+          <img src="${escapeHtml(src)}" alt="${escapeHtml(altPrefix)} ${idx + 1}" loading="lazy">
+          <span class="image-thumb-hint" aria-hidden="true">🔍 Cliquer pour agrandir</span>
         </button>
       `,
       )
@@ -488,8 +681,8 @@ class WordAtelierView {
       .map(
         (src, idx) => `
         <button class="extra-image" type="button" data-zoom-src="${escapeHtml(src)}" title="Cliquer pour agrandir">
-          <img src="${escapeHtml(src)}" alt="Image illustrative ${idx + 1}">
-          <span class="image-thumb-hint">🔍 Cliquer pour agrandir</span>
+          <img src="${escapeHtml(src)}" alt="Image illustrative ${idx + 1}" loading="lazy">
+          <span class="image-thumb-hint" aria-hidden="true">🔍 Cliquer pour agrandir</span>
         </button>
       `,
       )
@@ -523,6 +716,10 @@ class WordAtelierView {
       visibleCards[0].classList.add("single-image-card");
     }
   }
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Progress page
+  // ═══════════════════════════════════════════════════════════════════════════
 
   renderProgress(vm) {
     this.progressCompleted.textContent = `${vm.completed} / ${vm.total}`;
@@ -609,6 +806,10 @@ class WordAtelierView {
     svg.appendChild(label);
   }
 
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Setters utilitaires
+  // ═══════════════════════════════════════════════════════════════════════════
+
   setProgressUserPath(message) {
     if (!this.progressUserPath) return;
     this.progressUserPath.textContent = message || "";
@@ -651,7 +852,7 @@ class WordAtelierView {
     this.exerciseOpenWorkFileBtn.style.display = pickerSupported && openVisible ? "" : "none";
     this.exerciseOpenWorkFileBtn.disabled = !pickerSupported || !openVisible || Boolean(vm.openDisabled);
     this.exerciseOpenWorkFileBtn.textContent = openVisible
-      ? `Ouvrir mon fichier: ${fileName}`
+      ? `Ouvrir mon fichier : ${fileName}`
       : "Ouvrir mon fichier";
 
     if (!pickerSupported) {
@@ -665,80 +866,152 @@ class WordAtelierView {
     }
 
     this.exerciseWorkFileStatus.textContent = openVisible
-      ? `Fichier attendu dans le dossier utilisateur: ${fileName}`
+      ? `Fichier attendu dans le dossier utilisateur : ${fileName}`
       : "";
   }
 
-  #bindModalEvents() {
-    if (!this.imageModal || !this.imageModalImg || !this.imageModalClose || !this.imageModalStage) return;
-    this.imageModalClose.addEventListener("click", () => this.closeImageModal());
-    this.imageModalImg.addEventListener("load", () => {
-      this.#setModalZoom(this.modalZoom);
-    });
-    this.imageModalImg.addEventListener("dblclick", (event) => {
-      event.preventDefault();
-      const nextZoom = this.modalZoom < 8 ? this.modalZoom * 2 : 1;
-      this.#setModalZoom(nextZoom);
-    });
-    this.imageModalImg.addEventListener("mousedown", (event) => {
-      if (this.modalZoom <= 1) return;
-      event.preventDefault();
-      this.isModalDragging = true;
-      this.modalDragStartX = event.clientX;
-      this.modalDragStartY = event.clientY;
-      this.modalScrollStartLeft = this.imageModalStage.scrollLeft;
-      this.modalScrollStartTop = this.imageModalStage.scrollTop;
-      this.imageModalImg.style.cursor = "grabbing";
-    });
-    document.addEventListener("mousemove", (event) => {
-      if (!this.isModalDragging || !this.imageModalStage) return;
-      const dx = event.clientX - this.modalDragStartX;
-      const dy = event.clientY - this.modalDragStartY;
-      this.imageModalStage.scrollLeft = this.modalScrollStartLeft - dx;
-      this.imageModalStage.scrollTop = this.modalScrollStartTop - dy;
-    });
-    document.addEventListener("mouseup", () => {
-      if (!this.isModalDragging) return;
-      this.isModalDragging = false;
-      this.imageModalImg.style.cursor = this.modalZoom > 1 ? "grab" : "zoom-in";
-    });
-    this.imageModalStage.addEventListener(
-      "wheel",
-      (event) => {
-        if (event.deltaY < 0) {
-          event.preventDefault();
-          this.#setModalZoom(Math.min(8, this.modalZoom + 1));
-          return;
-        }
-        event.preventDefault();
-        this.#setModalZoom(Math.max(1, this.modalZoom - 1));
-      },
-      { passive: false },
-    );
-    this.imageModal.addEventListener("click", (event) => {
-      if (event.target === this.imageModal) this.closeImageModal();
-    });
-    document.addEventListener("keydown", (event) => {
-      if (this.imageModal.hidden) return;
-      if (event.key === "Escape") this.closeImageModal();
-      if (event.key === "+" || event.key === "=") {
-        event.preventDefault();
-        this.#setModalZoom(Math.min(8, this.modalZoom + 1));
-      }
-      if (event.key === "-") {
-        event.preventDefault();
-        this.#setModalZoom(Math.max(1, this.modalZoom - 1));
-      }
-    });
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Modale image — version enrichie
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  /**
+   * Injecte dans la modale les éléments supplémentaires nécessaires :
+   * - barre de zoom (track + thumb + label)
+   * - bouton split (côte à côte)
+   * - conteneur split
+   * - hint clavier/tactile
+   * S'appuie sur la structure existante : #image-modal contient déjà
+   * #image-modal-close et #image-modal-img.
+   */
+  #ensureModalExtras() {
+    const modal = this.imageModal;
+    if (!modal) return;
+
+    // Toolbar (close + split + titre)
+    if (!modal.querySelector(".image-modal-toolbar")) {
+      const toolbar = document.createElement("div");
+      toolbar.className = "image-modal-toolbar";
+      toolbar.innerHTML = `
+        <span class="image-modal-title" id="image-modal-title"></span>
+        <div class="image-modal-actions">
+          <button class="image-modal-action-btn" id="image-modal-split-btn"
+            title="Comparer énoncé et résultat côte à côte"
+            aria-label="Comparer côte à côte"
+            hidden>
+            ⧉
+          </button>
+          <button class="image-modal-action-btn" id="image-modal-zoom-out-btn"
+            title="Dézoomer (−)" aria-label="Dézoomer">−</button>
+          <button class="image-modal-action-btn" id="image-modal-zoom-in-btn"
+            title="Zoomer (+)" aria-label="Zoomer">+</button>
+        </div>
+      `;
+      modal.prepend(toolbar);
+    }
+
+    // Références
+    this.imageModalTitle = document.getElementById("image-modal-title");
+    this.imageModalSplitBtn = document.getElementById("image-modal-split-btn");
+    this.imageModalZoomInBtn = document.getElementById("image-modal-zoom-in-btn");
+    this.imageModalZoomOutBtn = document.getElementById("image-modal-zoom-out-btn");
+
+    // Barre de zoom
+    if (!modal.querySelector(".image-modal-zoombar")) {
+      const bar = document.createElement("div");
+      bar.className = "image-modal-zoombar";
+      bar.setAttribute("aria-hidden", "true");
+      bar.innerHTML = `
+        <div class="image-modal-zoom-track" id="image-modal-zoom-track">
+          <div class="image-modal-zoom-fill" id="image-modal-zoom-fill"></div>
+          <div class="image-modal-zoom-thumb" id="image-modal-zoom-thumb"></div>
+        </div>
+        <span class="image-modal-zoom-label" id="image-modal-zoom-label">1×</span>
+      `;
+      modal.appendChild(bar);
+    }
+
+    this.imageModalZoomTrack = document.getElementById("image-modal-zoom-track");
+    this.imageModalZoomFill = document.getElementById("image-modal-zoom-fill");
+    this.imageModalZoomThumb = document.getElementById("image-modal-zoom-thumb");
+    this.imageModalZoomLabel = document.getElementById("image-modal-zoom-label");
+
+    // Hint clavier / tactile
+    if (!modal.querySelector(".image-modal-hint")) {
+      const hint = document.createElement("div");
+      hint.className = "image-modal-hint";
+      hint.setAttribute("aria-hidden", "true");
+      hint.textContent = IS_TOUCH
+        ? "Pincer pour zoomer · Double-tap pour agrandir"
+        : "Molette · Double-clic · + / −";
+      modal.appendChild(hint);
+    }
+
+    // Conteneur split (côte à côte)
+    if (!modal.querySelector(".image-modal-split")) {
+      const split = document.createElement("div");
+      split.className = "image-modal-split";
+      split.id = "image-modal-split";
+      split.setAttribute("hidden", "");
+      split.innerHTML = `
+        <div class="image-modal-split-pane">
+          <span class="image-modal-split-label">Énoncé</span>
+          <div class="image-modal-split-scroll">
+            <img id="image-modal-split-enonce" src="" alt="Énoncé" draggable="false">
+          </div>
+        </div>
+        <div class="image-modal-split-pane">
+          <span class="image-modal-split-label">Résultat attendu</span>
+          <div class="image-modal-split-scroll">
+            <img id="image-modal-split-result" src="" alt="Résultat attendu" draggable="false">
+          </div>
+        </div>
+      `;
+      modal.appendChild(split);
+    }
+
+    this.imageModalSplit = document.getElementById("image-modal-split");
+    this.imageModalSplitEnonce = document.getElementById("image-modal-split-enonce");
+    this.imageModalSplitResult = document.getElementById("image-modal-split-result");
   }
 
-  openImageModal(src, altText) {
+  /** Met à jour la barre de zoom visuelle. */
+  #updateZoomBar() {
+    if (!this.imageModalZoomFill) return;
+    const max = MODAL_ZOOM_STEPS[MODAL_ZOOM_STEPS.length - 1];
+    const pct = ((this.modalZoom - 1) / (max - 1)) * 100;
+    this.imageModalZoomFill.style.width = `${pct}%`;
+    this.imageModalZoomThumb.style.left = `${pct}%`;
+    this.imageModalZoomLabel.textContent = `${this.modalZoom}×`;
+  }
+
+  openImageModal(src, altText, titleOverride) {
     if (!src || !this.imageModal || !this.imageModalImg) return;
+    // Sortir du mode split si on était dedans
+    this.#exitSplitMode();
     this.imageModalImg.src = src;
     this.imageModalImg.alt = altText || "Aperçu";
+    if (this.imageModalTitle) {
+      this.imageModalTitle.textContent = titleOverride || altText || "Aperçu";
+    }
+    // Montrer le bouton split si on a les deux images
+    if (this.imageModalSplitBtn) {
+      const canSplit =
+        this.modalCurrentEnonceImages.length > 0 && this.modalCurrentResultImages.length > 0;
+      this.imageModalSplitBtn.hidden = !canSplit;
+    }
     this.#setModalZoom(1);
     this.imageModal.hidden = false;
     this.imageModal.setAttribute("aria-hidden", "false");
+    this.imageModalClose && this.imageModalClose.focus();
+  }
+
+  /** Ouvre la modale directement en mode split (côte à côte). */
+  openImageModalSplit(enonceUrl, resultUrl) {
+    if (!this.imageModal) return;
+    this.#enterSplitMode(enonceUrl, resultUrl);
+    this.imageModal.hidden = false;
+    this.imageModal.setAttribute("aria-hidden", "false");
+    this.imageModalClose && this.imageModalClose.focus();
   }
 
   closeImageModal() {
@@ -748,11 +1021,40 @@ class WordAtelierView {
     this.imageModalImg.removeAttribute("src");
     this.imageModalImg.alt = "";
     this.isModalDragging = false;
+    this.#exitSplitMode();
     this.#setModalZoom(1);
   }
 
+  #enterSplitMode(enonceUrl, resultUrl) {
+    this.modalSplitMode = true;
+    if (this.imageModalImg) this.imageModalImg.style.display = "none";
+    if (this.imageModalStage) this.imageModalStage.style.display = "none";
+    if (this.imageModalSplit) {
+      this.imageModalSplit.removeAttribute("hidden");
+      if (this.imageModalSplitEnonce) this.imageModalSplitEnonce.src = enonceUrl || "";
+      if (this.imageModalSplitResult) this.imageModalSplitResult.src = resultUrl || "";
+    }
+    if (this.imageModalSplitBtn) this.imageModalSplitBtn.classList.add("active");
+    if (this.imageModalTitle) this.imageModalTitle.textContent = "Comparer énoncé et résultat";
+    // Masquer la barre de zoom (non pertinente en split)
+    const bar = this.imageModal.querySelector(".image-modal-zoombar");
+    if (bar) bar.hidden = true;
+  }
+
+  #exitSplitMode() {
+    if (!this.modalSplitMode) return;
+    this.modalSplitMode = false;
+    if (this.imageModalImg) this.imageModalImg.style.display = "";
+    if (this.imageModalStage) this.imageModalStage.style.display = "";
+    if (this.imageModalSplit) this.imageModalSplit.setAttribute("hidden", "");
+    if (this.imageModalSplitBtn) this.imageModalSplitBtn.classList.remove("active");
+    const bar = this.imageModal.querySelector(".image-modal-zoombar");
+    if (bar) bar.hidden = false;
+  }
+
   #setModalZoom(value) {
-    this.modalZoom = Math.max(1, Math.min(8, Number(value) || 1));
+    this.modalZoom = Math.max(1, Math.min(MODAL_ZOOM_STEPS[MODAL_ZOOM_STEPS.length - 1], Number(value) || 1));
+    this.#updateZoomBar();
     if (!this.imageModalImg || !this.imageModalStage) return;
 
     if (this.modalZoom === 1) {
@@ -768,7 +1070,10 @@ class WordAtelierView {
     }
 
     if (!this.modalBaseWidth) {
-      this.modalBaseWidth = this.imageModalImg.getBoundingClientRect().width || this.imageModalImg.naturalWidth || 0;
+      this.modalBaseWidth =
+        this.imageModalImg.getBoundingClientRect().width ||
+        this.imageModalImg.naturalWidth ||
+        0;
     }
     const width = Math.max(1, Math.round(this.modalBaseWidth * this.modalZoom));
     this.imageModalImg.style.maxWidth = "none";
@@ -787,9 +1092,170 @@ class WordAtelierView {
     }
     const stage = document.createElement("div");
     stage.className = "image-modal-stage";
-    this.imageModal.insertBefore(stage, this.imageModalImg);
+    // Chercher le bon point d'insertion (après la toolbar si elle existe)
+    const toolbar = this.imageModal.querySelector(".image-modal-toolbar");
+    if (toolbar && toolbar.nextSibling) {
+      this.imageModal.insertBefore(stage, toolbar.nextSibling);
+    } else {
+      this.imageModal.insertBefore(stage, this.imageModalImg);
+    }
     stage.appendChild(this.imageModalImg);
     this.imageModalStage = stage;
+  }
+
+  #bindModalEvents() {
+    if (!this.imageModal || !this.imageModalImg) return;
+
+    // Fermeture
+    if (this.imageModalClose) {
+      this.imageModalClose.addEventListener("click", () => this.closeImageModal());
+    }
+    this.imageModal.addEventListener("click", (event) => {
+      if (event.target === this.imageModal) this.closeImageModal();
+    });
+
+    // Recentrage au chargement de l'image
+    this.imageModalImg.addEventListener("load", () => {
+      this.#setModalZoom(this.modalZoom);
+    });
+
+    // Double-clic : zoom x2 ou retour x1
+    this.imageModalImg.addEventListener("dblclick", (event) => {
+      if (this.modalSplitMode) return;
+      event.preventDefault();
+      const next = this.modalZoom < MODAL_ZOOM_STEPS[MODAL_ZOOM_STEPS.length - 1]
+        ? snapZoom(this.modalZoom, 1)
+        : 1;
+      this.#setModalZoom(next);
+    });
+
+    // Drag (pan quand zoomé)
+    this.imageModalImg.addEventListener("mousedown", (event) => {
+      if (this.modalZoom <= 1 || this.modalSplitMode) return;
+      event.preventDefault();
+      this.isModalDragging = true;
+      this.modalDragStartX = event.clientX;
+      this.modalDragStartY = event.clientY;
+      this.modalScrollStartLeft = this.imageModalStage.scrollLeft;
+      this.modalScrollStartTop = this.imageModalStage.scrollTop;
+      this.imageModalImg.style.cursor = "grabbing";
+    });
+    document.addEventListener("mousemove", (event) => {
+      if (!this.isModalDragging || !this.imageModalStage) return;
+      const dx = event.clientX - this.modalDragStartX;
+      const dy = event.clientY - this.modalDragStartY;
+      this.imageModalStage.scrollLeft = this.modalScrollStartLeft - dx;
+      this.imageModalStage.scrollTop = this.modalScrollStartTop - dy;
+    });
+    document.addEventListener("mouseup", () => {
+      if (!this.isModalDragging) return;
+      this.isModalDragging = false;
+      if (this.imageModalImg) {
+        this.imageModalImg.style.cursor = this.modalZoom > 1 ? "grab" : "zoom-in";
+      }
+    });
+
+    // Molette (zoom)
+    if (this.imageModalStage) {
+      this.imageModalStage.addEventListener(
+        "wheel",
+        (event) => {
+          if (this.modalSplitMode) return;
+          event.preventDefault();
+          const next = event.deltaY < 0
+            ? snapZoom(this.modalZoom, 1)
+            : snapZoom(this.modalZoom, -1);
+          this.#setModalZoom(next);
+        },
+        { passive: false },
+      );
+    }
+
+    // Clavier
+    document.addEventListener("keydown", (event) => {
+      if (this.imageModal.hidden) return;
+      if (event.key === "Escape") {
+        this.closeImageModal();
+        return;
+      }
+      if (this.modalSplitMode) return;
+      if (event.key === "+" || event.key === "=") {
+        event.preventDefault();
+        this.#setModalZoom(snapZoom(this.modalZoom, 1));
+      }
+      if (event.key === "-") {
+        event.preventDefault();
+        this.#setModalZoom(snapZoom(this.modalZoom, -1));
+      }
+    });
+
+    // Boutons toolbar zoom
+    if (this.imageModalZoomInBtn) {
+      this.imageModalZoomInBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        this.#setModalZoom(snapZoom(this.modalZoom, 1));
+      });
+    }
+    if (this.imageModalZoomOutBtn) {
+      this.imageModalZoomOutBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        this.#setModalZoom(snapZoom(this.modalZoom, -1));
+      });
+    }
+
+    // Track de zoom cliquable
+    if (this.imageModalZoomTrack) {
+      this.imageModalZoomTrack.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (this.modalSplitMode) return;
+        const rect = this.imageModalZoomTrack.getBoundingClientRect();
+        const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+        const max = MODAL_ZOOM_STEPS[MODAL_ZOOM_STEPS.length - 1];
+        const raw = 1 + pct * (max - 1);
+        // Snapper au palier le plus proche
+        const snapped = MODAL_ZOOM_STEPS.reduce((prev, curr) =>
+          Math.abs(curr - raw) < Math.abs(prev - raw) ? curr : prev,
+        );
+        this.#setModalZoom(snapped);
+      });
+    }
+
+    // Bouton split
+    if (this.imageModalSplitBtn) {
+      this.imageModalSplitBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (this.modalSplitMode) {
+          this.#exitSplitMode();
+        } else {
+          this.#enterSplitMode(
+            this.modalCurrentEnonceImages[0] || "",
+            this.modalCurrentResultImages[0] || "",
+          );
+        }
+      });
+    }
+
+    // Touch : pinch-to-zoom (support basique)
+    let lastTouchDist = 0;
+    this.imageModal.addEventListener("touchstart", (e) => {
+      if (e.touches.length === 2) {
+        lastTouchDist = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY,
+        );
+      }
+    }, { passive: true });
+    this.imageModal.addEventListener("touchmove", (e) => {
+      if (e.touches.length !== 2 || this.modalSplitMode) return;
+      const dist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY,
+      );
+      if (lastTouchDist === 0) { lastTouchDist = dist; return; }
+      const ratio = dist / lastTouchDist;
+      lastTouchDist = dist;
+      this.#setModalZoom(Math.max(1, Math.min(8, this.modalZoom * ratio)));
+    }, { passive: true });
   }
 }
 
