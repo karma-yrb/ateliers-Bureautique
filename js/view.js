@@ -419,7 +419,16 @@ class WordAtelierView {
     const label = text.slice(0, colonIndex).trim();
     if (!label) return formatMultiline(text);
 
+    // Ne mettre en gras que les vrais "labels" courts (ex: "Police", "Titre",
+    // "Élément 1"), pas les phrases longues générées automatiquement
+    // (ex: "Construisez la structure ... à partir de cet objectif:").
+    // Sans ce garde-fou, une phrase complète en gras suivie du contenu
+    // donne l'impression visuelle de deux éléments distincts.
+    const wordCount = label.split(/\s+/).filter(Boolean).length;
+    const looksLikeLabel = label.length <= 30 && wordCount <= 4;
+
     const rest = text.slice(colonIndex + 1).trimStart();
+    if (!looksLikeLabel) return formatMultiline(text);
     if (!rest) return `<strong>${escapeHtml(label)}:</strong>`;
     return `<strong>${escapeHtml(label)}:</strong> ${formatMultiline(rest)}`;
   }
