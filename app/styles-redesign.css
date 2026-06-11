@@ -1,59 +1,67 @@
 /* =============================================================================
-   styles-redesign.css  —  Atelier Word · Redesign page exercice
-   Remplace styles-ux-patch.css dans index.html :
-   <link rel="stylesheet" href="styles-redesign.css">
+   styles-redesign-v2.css  —  Atelier Word · Redesign exercice mono-colonne
+   Remplace styles-redesign.css (ou styles-ux-patch.css) dans index.html
    ============================================================================= */
 
+/* ─── Variables supplémentaires ─────────────────────────────────────────────── */
+:root {
+  --ex-blue:        #1a5eb8;
+  --ex-blue-soft:   #e8f0fc;
+  --ex-blue-border: #b3caf0;
+  --ex-violet:      #6c5ce7;
+  --ex-violet-soft: #f0eeff;
+  --ex-violet-border: #c4b8f5;
+  --ex-green:       #2f7a56;
+  --ex-green-soft:  #eef8f2;
+  --ex-green-border:#a6ccb4;
+  --ex-orange:      #c86a14;
+  --ex-orange-soft: #fdf3e7;
+  --ex-orange-border:#f0c88a;
+  --ex-bar:         5px;   /* épaisseur barre latérale signature */
+}
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   1. PAGE EXERCICE — Layout 2 colonnes
-   ─────────────────────────────────────────────────────────────────────────────
-   Structure DOM attendue (générée par view.js) :
-   #page-exercise
-     .exercise-layout
-       .exercise-col-main
-         article.exercise-intro-card      ← header + fil d'ariane + barre thème
-         article.card                      ← étapes
-       .exercise-col-side
-         article.card.exercise-side-start ← 1. Préparer (docx)
-         article.card.exercise-side-images← 2. Images
-         article.card.exercise-side-done  ← 3. Marquer comme fait
-         article.card.exercise-side-nav   ← 4. Navigation prev/next
-   ───────────────────────────────────────────────────────────────────────────── */
+/* ─── Retirer le layout 2 colonnes si résidu du v1 ──────────────────────────── */
+.exercise-layout { display: contents; }
+.exercise-col-main,
+.exercise-col-side { display: contents; }
+.exercise-actions-mobile-card { display: none; }
 
+/* ─── PAGE EXERCICE — flux mono-colonne ─────────────────────────────────────── */
 #page-exercise {
-  gap: 0;
+  gap: 12px;
 }
 
-.exercise-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
-  gap: 14px;
-  align-items: start;
-}
-
-.exercise-col-main {
-  display: grid;
-  gap: 14px;
-  min-width: 0;
-}
-
-.exercise-col-side {
-  display: grid;
-  gap: 10px;
-  position: sticky;
-  top: 12px;
-}
-
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   2. CARD INTRO — header de l'exercice
-   ───────────────────────────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   1. CARD HEADER — statut + titre + breadcrumb + progression
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .exercise-intro-card {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
   display: grid;
   gap: 10px;
-  padding-bottom: 14px;
+  background: linear-gradient(135deg, #fffdf9 0%, #f4f8fb 100%);
+}
+
+/* Barre signature bleue à gauche */
+.exercise-intro-card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: var(--ex-bar);
+  background: linear-gradient(180deg, var(--ex-blue) 0%, var(--accent) 100%);
+  border-radius: 4px 0 0 4px;
+}
+
+/* Top row : retour + statut */
+.exercise-intro-card .exercise-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 0;
+  order: 0;
 }
 
 /* Fil d'ariane */
@@ -61,74 +69,76 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2px 4px;
+  gap: 3px 6px;
   font-size: 12px;
-  color: var(--muted);
   line-height: 1.4;
-  order: 0;
+  order: 1;
 }
 
 .breadcrumb-link {
-  color: var(--muted);
+  color: var(--accent);
+  font-weight: 700;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: color 0.15s, border-color 0.15s;
+  border-bottom: 1px dotted var(--accent);
   cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  padding: 1px 0;
 }
 
-.breadcrumb-link:hover,
-.breadcrumb-link:focus-visible {
-  color: var(--ink);
-  border-bottom-color: currentColor;
-  outline: none;
-}
+.breadcrumb-link:hover { color: var(--ex-blue); border-color: var(--ex-blue); }
 
 .breadcrumb-sep {
   color: #b0bcc9;
+  font-size: 14px;
+  font-weight: 700;
   user-select: none;
+  line-height: 1;
 }
 
 .breadcrumb-current {
   color: var(--ink);
-  font-weight: 700;
+  font-weight: 800;
 }
 
-/* Bouton retour — compact dans le header */
-.exercise-intro-card .exercise-top-row {
-  order: -1;
-  margin-bottom: 0;
-}
-
-/* Titre principal */
+/* Titre */
 .exercise-intro-card #exercise-title {
-  order: 1;
-  margin: 0;
-  font-size: 1.38rem;
-  text-align: left;
-  color: #153e62;
-}
-
-/* Pill thème — repositionnée sous le titre */
-.exercise-intro-card #exercise-theme-line {
   order: 2;
   margin: 0;
-  width: fit-content;
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: #e8f2f3;
-  border: 1px solid #bcd6da;
-  color: #1e5f66;
-  font-weight: 700;
-  font-size: 0.9rem;
+  text-align: left;
+  color: #153e62;
+  font-size: 1.28rem;
+  line-height: 1.3;
 }
 
-/* Barre de progression thème */
-.exercise-theme-progress-wrap {
+/* Tag thème */
+.exercise-intro-card #exercise-theme-line {
   order: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  width: fit-content;
+  padding: 4px 12px 4px 10px;
+  border-radius: 999px;
+  background: var(--ex-blue-soft);
+  border: 1px solid var(--ex-blue-border);
+  color: var(--ex-blue);
+  font-weight: 800;
+  font-size: 0.88rem;
+}
+
+.exercise-intro-card #exercise-theme-line::before {
+  content: "📂";
+  font-size: 13px;
+}
+
+/* Barre progression thème */
+.exercise-theme-progress-wrap {
+  order: 4;
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-top: 6px;
+  padding-top: 8px;
   border-top: 1px solid var(--line);
 }
 
@@ -141,67 +151,205 @@
 
 .exercise-theme-progress-track {
   flex: 1;
-  height: 5px;
-  background: #e8e2d8;
+  height: 6px;
+  background: #e0d8cc;
   border-radius: 999px;
   overflow: hidden;
-  min-width: 60px;
 }
 
 #exercise-theme-progress-bar {
   height: 100%;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), #59a0aa);
   border-radius: inherit;
   width: 0%;
-  transition: width 0.35s ease;
+  transition: width 0.4s ease;
 }
 
-/* Pill statut — dans le top-row */
+/* ── Statut pill : tag cliquable pour dé-valider ──────────────────────────── */
 .status-pill {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   border-radius: 999px;
-  border: 1px solid #c7d8cc;
-  background: #eef8f2;
-  color: #2f6c4a;
-  padding: 4px 12px;
-  font-size: 0.83rem;
+  padding: 5px 12px;
+  font-size: 0.82rem;
   font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  user-select: none;
 }
+
+.status-pill::before { font-size: 13px; }
 
 .status-pill.todo {
-  border-color: #cfd6de;
+  border: 1.5px solid #cfd6de;
   background: #edf1f5;
   color: #4b5b6c;
 }
+.status-pill.todo::before { content: "○"; }
 
+.status-pill:not(.todo) {
+  border: 1.5px solid var(--ex-green-border);
+  background: var(--ex-green-soft);
+  color: var(--ex-green);
+}
+.status-pill:not(.todo)::before { content: "✓"; }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   3. CARD ÉTAPES — colonne principale
-   ───────────────────────────────────────────────────────────────────────────── */
+.status-pill:hover { transform: scale(1.04); box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
 
-.exercise-col-main > .card:not(.exercise-intro-card) h2 {
-  font-size: 1.1rem;
-  color: #1e4a5f;
-  margin-bottom: 10px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--line);
+/* ═══════════════════════════════════════════════════════════════════════════════
+   2. CARD TÉLÉCHARGEMENT — bleue, action principale
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+#exercise-files-card {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  background: linear-gradient(135deg, var(--ex-blue-soft) 0%, #f0f6ff 100%);
+  border-color: var(--ex-blue-border);
 }
 
+#exercise-files-card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: var(--ex-bar);
+  background: var(--ex-blue);
+  border-radius: 4px 0 0 4px;
+}
+
+#exercise-files-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ex-blue);
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+#exercise-files-card h2::before {
+  content: "1";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--ex-blue);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* Injecter le titre "Préparer l'exercice" si absent */
+#exercise-files-card:not(:has(h2)) .asset-actions::before {
+  content: "① Télécharger le fichier";
+  display: block;
+  font-weight: 800;
+  color: var(--ex-blue);
+  margin-bottom: 8px;
+}
+
+.asset-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* Bouton téléchargement docx : couleur bleue forte */
+#exercise-docx-btn {
+  background: var(--ex-blue);
+  border-color: #144fa0;
+  color: #fff;
+  font-size: 1rem;
+  padding: 11px 16px;
+  flex: 1;
+}
+
+#exercise-docx-btn:hover { background: #1550a8; }
+
+/* Hint sous le bouton */
+.exercise-docx-hint,
+.exercise-files-steps {
+  font-size: 0.85rem;
+  color: #2a4e80;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.exercise-files-steps {
+  display: none; /* remplacé par .exercise-docx-hint */
+}
+
+#exercise-workfile-status {
+  font-size: 0.82rem;
+  margin-top: 4px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   3. CARD ÉTAPES — violet, numéros colorés
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+.card:has(#exercise-steps) {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  background: linear-gradient(135deg, #faf9ff 0%, #f5f3ff 100%);
+  border-color: var(--ex-violet-border);
+}
+
+.card:has(#exercise-steps)::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: var(--ex-bar);
+  background: var(--ex-violet);
+  border-radius: 4px 0 0 4px;
+}
+
+.card:has(#exercise-steps) h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ex-violet);
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--ex-violet-border);
+}
+
+.card:has(#exercise-steps) h2::before {
+  content: "2";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--ex-violet);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* Préambule */
 .steps-preamble {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   padding: 10px 14px;
-  background: #f4f8ea;
-  border-left: 3px solid #8aad5a;
+  background: var(--ex-violet-soft);
+  border-left: 3px solid var(--ex-violet);
   border-radius: 0 8px 8px 0;
   font-style: italic;
-  color: #3a5228;
+  color: #4a3fa0;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
+/* Liste numérotée stylée */
 .steps-list {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
   list-style: none;
   display: grid;
   gap: 0;
@@ -211,56 +359,44 @@
 .steps-list li {
   display: flex;
   gap: 12px;
-  padding: 10px 4px;
-  border-bottom: 1px solid #ede7de;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e4f8;
   line-height: 1.5;
   font-size: 0.97rem;
   counter-increment: step-counter;
   align-items: flex-start;
 }
 
-.steps-list li:last-child {
-  border-bottom: none;
-}
+.steps-list li:last-child { border-bottom: none; }
 
 .steps-list li::before {
   content: counter(step-counter);
   flex-shrink: 0;
-  width: 22px;
-  height: 22px;
+  width: 24px; height: 24px;
   border-radius: 50%;
-  background: #e8f2f3;
-  border: 1px solid #bcd6da;
-  color: #1e5f66;
+  background: var(--ex-violet);
+  color: #fff;
   font-size: 11px;
   font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
-/* Étapes en mode paragraphe — pas de compteur */
+/* Étapes mode paragraphe (ex spéciaux) */
 .steps-list.steps-paragraph-mode {
   counter-reset: none;
 }
-
-.steps-list.steps-paragraph-mode li::before {
-  display: none;
-}
-
-.steps-list.steps-paragraph-mode li {
-  display: block;
-  padding: 0;
-  border: none;
-}
+.steps-list.steps-paragraph-mode li::before { display: none; }
+.steps-list.steps-paragraph-mode li { display: block; padding: 0; border: none; }
 
 /* Blocs copier-coller */
 .steps-copy-block {
   margin: 8px 0 0;
-  border: 1px solid #d7d0c4;
+  border: 1px solid var(--ex-violet-border);
   border-radius: 8px;
-  background: #fffdf9;
+  background: #fff;
   padding: 10px 12px;
   white-space: pre-wrap;
   word-break: break-word;
@@ -276,252 +412,104 @@
   padding: 0;
   counter-reset: step-counter;
 }
-
 .steps-list.steps-copy-mode li,
-.steps-list.steps-has-copy li {
-  counter-increment: step-counter;
-}
-
+.steps-list.steps-has-copy li { counter-increment: step-counter; }
 .steps-list.steps-copy-mode li::before,
-.steps-list.steps-has-copy li::before {
-  content: counter(step-counter);
-}
-
+.steps-list.steps-has-copy li::before { content: counter(step-counter); }
 .steps-list.steps-copy-mode .steps-instruction,
-.steps-list.steps-has-copy .steps-instruction {
-  margin: 0;
-  line-height: 1.45;
+.steps-list.steps-has-copy .steps-instruction { margin: 0; line-height: 1.45; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   4. CARD IMAGES — verte, labels clairs
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+.card:has(.images-grid) {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  background: linear-gradient(135deg, var(--ex-green-soft) 0%, #f5fdf8 100%);
+  border-color: var(--ex-green-border);
 }
 
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   4. COLONNE LATÉRALE — cards d'action
-   ───────────────────────────────────────────────────────────────────────────── */
-
-.exercise-col-side .card {
-  padding: 12px 14px;
+.card:has(.images-grid)::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: var(--ex-bar);
+  background: var(--ex-green);
+  border-radius: 4px 0 0 4px;
 }
 
-/* Label de section numéroté */
-.side-section-label {
+.card:has(.images-grid) h2 {
   display: flex;
   align-items: center;
-  gap: 7px;
-  font-size: 11px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--muted);
-  margin-bottom: 10px;
+  gap: 8px;
+  color: var(--ex-green);
+  font-size: 1.05rem;
+  margin-bottom: 12px;
 }
 
-.side-section-num {
+.card:has(.images-grid) h2::before {
+  content: "3";
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 22px; height: 22px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--ex-green);
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   flex-shrink: 0;
 }
 
-/* Card 1 — Télécharger */
-.exercise-side-start {
-  border-color: #bcd6da;
-  background: linear-gradient(180deg, #f4fafb 0%, #edf5f7 100%);
+/* Images grid : 2 colonnes */
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
 }
 
-.exercise-side-start .asset-actions {
-  margin-bottom: 0;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.exercise-side-start .asset-actions .btn {
-  width: 100%;
-  justify-content: center;
-  font-size: 0.95rem;
-  padding: 10px 12px;
-}
-
-/* Hint sous le bouton docx */
-.exercise-docx-hint {
-  margin: 8px 0 0;
-  font-size: 0.82rem;
-  color: #3a6575;
-  line-height: 1.4;
-  text-align: center;
-}
-
-/* Masquer les étapes textuelles de la card préparer (redondantes avec le nouveau layout) */
-.exercise-files-steps {
-  display: none;
-}
-
-#exercise-workfile-status {
-  font-size: 0.82rem;
-  margin-top: 6px;
-  line-height: 1.4;
-}
-
-/* Card 2 — Images */
-.exercise-side-images {
-  padding: 0;
-  overflow: hidden;
-}
-
-.exercise-side-images .side-section-label {
-  padding: 10px 14px 0;
-  margin-bottom: 0;
-}
-
-.exercise-side-images .images-grid {
+.images-grid.single-image-block {
   grid-template-columns: 1fr;
-  gap: 0;
 }
 
-.exercise-side-images .image-card {
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid var(--line);
+/* Figures images */
+.image-card {
+  margin: 0;
+  border-radius: 10px;
+  padding: 10px;
   background: #fff;
-  padding: 8px 12px 10px;
+  border: 2px solid var(--ex-green-border);
 }
 
-.exercise-side-images .image-card:last-child {
-  border-bottom: none;
-}
-
-.exercise-side-images .image-card figcaption {
+/* Figcaption avec badge coloré */
+.image-card figcaption {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  margin-bottom: 8px;
   font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--muted);
-  margin-bottom: 6px;
+  font-size: 0.85rem;
+  color: #2a5040;
 }
 
-/* Badge "Point de départ" / "À reproduire" */
-.exercise-side-images .image-card figcaption::after {
+#exercise-enonce-caption::before { content: "👁"; font-size: 14px; }
+#exercise-result-caption::before { content: "🎯"; font-size: 14px; }
+
+/* Badge Point de départ / À reproduire */
+.image-card figcaption::after {
   content: attr(data-badge);
-  padding: 2px 7px;
+  padding: 2px 8px;
   border-radius: 999px;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: 0;
+  background: var(--ex-green-soft);
+  color: var(--ex-green);
+  border: 1px solid var(--ex-green-border);
 }
 
-#exercise-enonce-caption::after {
-  background: #e8f2f3;
-  color: #1e5f66;
-  border: 1px solid #bcd6da;
-}
-
-#exercise-result-caption::after {
-  background: #eef8f2;
-  color: #2f6c4a;
-  border: 1px solid #a6ccb4;
-}
-
-.exercise-side-images .image-thumb img {
-  max-height: 160px;
-  max-width: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-/* Zone extra images — déplacée dans la colonne principale si présente */
-#exercise-extra-wrap {
-  margin-top: 0;
-}
-
-/* Card 3 — Marquer comme fait */
-.exercise-side-done {
-  text-align: center;
-}
-
-#exercise-toggle-done-btn {
-  width: 100%;
-  justify-content: center;
-  font-size: 0.97rem;
-  padding: 11px 14px;
-  min-width: 0;
-  transition: background 0.15s, border-color 0.15s, color 0.15s;
-}
-
-#exercise-toggle-done-btn.done {
-  background: #e8f3f5;
-  border-color: #9fe1cb;
-  color: #0f6e56;
-}
-
-/* Nudge de sauvegarde */
-#exercise-save-nudge {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  background: #fdf6ec;
-  border: 1px solid #f0d9a8;
-  border-radius: 8px;
-  padding: 8px 10px;
-  font-size: 0.82rem;
-  color: #7a5520;
-  line-height: 1.45;
-  margin-bottom: 8px;
-  text-align: left;
-}
-
-#exercise-save-nudge[hidden] {
-  display: none;
-}
-
-.exercise-save-nudge-icon {
-  flex-shrink: 0;
-  font-size: 14px;
-  margin-top: 1px;
-}
-
-/* Card 4 — Navigation */
-.exercise-side-nav {
-  padding: 10px 12px;
-}
-
-/* Masquer la zone actions du bas (déplacée en sidebar) */
-.exercise-actions-row {
-  display: none;
-}
-
-/* Nouvelle nav sidebar */
-.exercise-side-nav-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
-}
-
-.exercise-side-nav-row .btn {
-  font-size: 0.88rem;
-  padding: 9px 8px;
-  justify-content: center;
-}
-
-.exercise-side-nav-row .btn:disabled {
-  opacity: 0.4;
-  cursor: default;
-  pointer-events: none;
-}
-
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   5. IMAGES — améliorations hover
-   ───────────────────────────────────────────────────────────────────────────── */
-
+/* Images thumb */
 .image-thumb {
   position: relative;
   overflow: hidden;
@@ -531,26 +519,26 @@
   padding: 0;
   display: block;
   width: 100%;
+  border-radius: 6px;
 }
 
 .image-thumb img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: min(100%, 320px);
+  max-height: 220px;
   height: auto;
+  object-fit: contain;
   transition: transform 0.2s ease;
+  border-radius: 6px;
 }
 
-.image-thumb:hover img,
-.image-thumb:focus-visible img {
-  transform: scale(1.03);
-}
+.image-thumb:hover img { transform: scale(1.03); }
 
 .image-thumb-hint {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.48);
+  bottom: 0; left: 0; right: 0;
+  background: rgba(0,0,0,0.5);
   color: #fff;
   font-size: 11px;
   padding: 5px 8px;
@@ -561,14 +549,12 @@
   opacity: 0;
   transition: opacity 0.18s;
   pointer-events: none;
-  user-select: none;
+  border-radius: 0 0 6px 6px;
 }
 
-.image-thumb:hover .image-thumb-hint,
-.image-thumb:focus-visible .image-thumb-hint {
-  opacity: 1;
-}
+.image-thumb:hover .image-thumb-hint { opacity: 1; }
 
+/* Extra images */
 .extra-image {
   position: relative;
   overflow: hidden;
@@ -576,30 +562,91 @@
   background: none;
   border: none;
   padding: 0;
+  border-radius: 6px;
 }
-
-.extra-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: transform 0.2s ease;
-}
-
+.extra-image img { display: block; width: 100%; height: auto; transition: transform 0.2s; border-radius: 6px; }
 .extra-image:hover img { transform: scale(1.03); }
+.extra-image:hover .image-thumb-hint { opacity: 1; }
 
-.extra-image:hover .image-thumb-hint,
-.extra-image:focus-visible .image-thumb-hint {
-  opacity: 1;
+/* ═══════════════════════════════════════════════════════════════════════════════
+   5. CARD NAVIGATION — neutre, prev/next centrés
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+/* La card qui contient exercise-actions-row */
+.card:has(.exercise-actions-row) {
+  background: #faf7f2;
+  border-color: #d8cfc0;
 }
 
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   6. MODALE IMAGE
-   ───────────────────────────────────────────────────────────────────────────── */
-
-.image-modal-stage {
-  margin-top: 0;
+/* Nudge de sauvegarde (avant la nav) */
+#exercise-save-nudge {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  background: var(--ex-orange-soft);
+  border: 1px solid var(--ex-orange-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.88rem;
+  color: #7a4810;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
+
+#exercise-save-nudge[hidden] { display: none; }
+.exercise-save-nudge-icon { flex-shrink: 0; font-size: 16px; margin-top: 1px; }
+
+/* Boutons nav */
+.exercise-actions-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+/* Bouton "Marquer comme fait" masqué — remplacé par le tag dans le header */
+#exercise-toggle-done-btn {
+  display: none;
+}
+
+/* Prev/next */
+#exercise-prev-btn,
+#exercise-next-btn {
+  font-size: 0.92rem;
+  padding: 10px 10px;
+}
+
+#exercise-prev-btn:disabled,
+#exercise-next-btn:disabled {
+  opacity: 0.38;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   6. BREADCRUMB — séparateur visible
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+/* Ciblage direct du séparateur */
+.breadcrumb-sep {
+  color: #8a99a8;
+  font-size: 15px;
+  font-weight: 900;
+  user-select: none;
+  line-height: 1;
+  padding: 0 1px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   7. SUPPRESSION des doublons du layout v1
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+/* Si des vestiges du layout 2-colonnes subsistent, on les cache */
+.exercise-col-side { display: none !important; }
+.exercise-actions-mobile-card { display: none !important; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   8. MODAL IMAGE — inchangée, nettoyage léger
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .image-modal-close {
   position: fixed;
@@ -607,154 +654,13 @@
   right: 16px;
 }
 
+/* ═══════════════════════════════════════════════════════════════════════════════
+   9. RESPONSIVE ≤ 600px
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   7. RESPONSIVE — ≤ 780px : retour mono-colonne
-   ───────────────────────────────────────────────────────────────────────────── */
-
-@media (max-width: 780px) {
-  .exercise-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .exercise-col-side {
-    position: static;
-    order: -1; /* actions AVANT les étapes sur mobile */
-  }
-
-  /* Sur mobile, remettre la nav en bas */
-  .exercise-actions-row {
-    display: grid;
-  }
-
-  .exercise-side-nav {
-    display: none;
-  }
-
-  /* Images côte à côte sur mobile */
-  .exercise-side-images .images-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .exercise-intro-card #exercise-title {
-    font-size: 1.18rem;
-  }
-}
-
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   8. FIL D'ARIANE — breadcrumb dans la card intro
-   ───────────────────────────────────────────────────────────────────────────── */
-
-#exercise-breadcrumb {
-  order: 0;
-}
-
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   9. MOBILE — carte actions en bas visible, sidebar masquée
-   ───────────────────────────────────────────────────────────────────────────── */
-
-/* Sur desktop, masquer la carte mobile-only du bas */
-.exercise-actions-mobile-card {
-  display: none;
-}
-
-@media (max-width: 780px) {
-  .exercise-layout {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  /* Sidebar passe en premier sur mobile (actions visibles sans scroll) */
-  .exercise-col-side {
-    position: static;
-    order: -1;
-  }
-
-  /* Sur mobile : masquer la nav sidebar, montrer la nav mobile en bas */
-  .exercise-side-nav {
-    display: none;
-  }
-
-  .exercise-actions-mobile-card {
-    display: block;
-  }
-
-  .exercise-actions-row {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  /* Images côte à côte dans la sidebar sur mobile */
-  .exercise-side-images .images-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .exercise-side-images .image-thumb img {
-    max-height: 120px;
-  }
-
-  .exercise-intro-card #exercise-title {
-    font-size: 1.18rem;
-  }
-
-  /* Sticky désactivé */
-  .exercise-col-side {
-    position: static !important;
-  }
-}
-
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   10. DÉTAILS SUPPLÉMENTAIRES
-   ───────────────────────────────────────────────────────────────────────────── */
-
-/* Enlever le double h2 "Étapes à suivre" si on garde le titre de la card */
-.exercise-col-main > .card:not(.exercise-intro-card):not(.exercise-actions-mobile-card) > h2 {
-  font-size: 1.05rem;
-  color: #1e4a5f;
-  margin-bottom: 10px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--line);
-}
-
-/* Quand il n'y a pas de fichier docx : masquer la card "1. Commencer par ici"
-   (géré par view.js via filesCard.style.display = none) */
-#exercise-files-card[style*="display: none"],
-#exercise-files-card[style*="display:none"] {
-  display: none !important;
-}
-
-/* Assurer que le bouton "Marquer comme fait" dans la sidebar est full-width */
-.exercise-side-done > .btn {
-  width: 100%;
-  justify-content: center;
-}
-
-/* Fond légèrement distinct pour la card "Fait" quand validé */
-.exercise-side-done:has(#exercise-toggle-done-btn.done) {
-  background: linear-gradient(180deg, #f0faf4 0%, #e8f5ee 100%);
-  border-color: #a6ccb4;
-}
-
-/* Transition douce sur les cards de la sidebar */
-.exercise-col-side .card {
-  transition: border-color 0.2s, background 0.2s;
-}
-
-/* Rendre le `data-badge` visible sur les figcaptions des images */
-.exercise-side-images .image-card figcaption::after {
-  content: attr(data-badge);
-}
-
-/* Améliorer lisibilité de la pill thème dans l'intro */
-.exercise-intro-card #exercise-theme-line {
-  display: inline-block;
-  font-size: 0.88rem;
-}
-
-/* S'assurer que breadcrumb cliquable dans la page exercice répond au clic */
-#exercise-breadcrumb .breadcrumb-link {
-  cursor: pointer;
+@media (max-width: 600px) {
+  .exercise-intro-card #exercise-title { font-size: 1.1rem; }
+  .images-grid { grid-template-columns: 1fr; }
+  .exercise-actions-row { grid-template-columns: 1fr 1fr; }
+  .exercise-actions-row #exercise-toggle-done-btn { display: none; }
 }

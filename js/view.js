@@ -87,12 +87,9 @@ class WordAtelierView {
     this.exerciseResultImages = document.getElementById("exercise-result-images");
     this.exerciseExtraWrap = document.getElementById("exercise-extra-wrap");
     this.exerciseExtraImages = document.getElementById("exercise-extra-images");
-    this.exercisePrevBtns = Array.from(document.querySelectorAll('[id="exercise-prev-btn"]'));
-    this.exerciseNextBtns = Array.from(document.querySelectorAll('[id="exercise-next-btn"]'));
-    this.exerciseToggleDoneBtns = Array.from(document.querySelectorAll('[id="exercise-toggle-done-btn"]'));
-    this.exercisePrevBtn = this.exercisePrevBtns[0] || null;
-    this.exerciseNextBtn = this.exerciseNextBtns[0] || null;
-    this.exerciseToggleDoneBtn = this.exerciseToggleDoneBtns[0] || null;
+    this.exercisePrevBtn = document.getElementById("exercise-prev-btn");
+    this.exerciseNextBtn = document.getElementById("exercise-next-btn");
+    this.exerciseToggleDoneBtn = document.getElementById("exercise-toggle-done-btn");
     this.exerciseBreadcrumb = document.getElementById("exercise-breadcrumb");
     this.exerciseThemeProgress = document.getElementById("exercise-theme-progress");
     this.exerciseThemeProgressBar = document.getElementById("exercise-theme-progress-bar");
@@ -253,28 +250,24 @@ class WordAtelierView {
 
     // Fil d'ariane
     if (this.exerciseBreadcrumb) {
-      const aff = vm.affinityLabel ? `<span class="breadcrumb-link" data-action="open-affinity" data-affinity-id="${escapeHtml(vm.affinityId || '')}">${escapeHtml(vm.affinityLabel)}</span><span class="breadcrumb-sep">›</span>` : '';
-      const theme = `<span class="breadcrumb-link" data-action="toggle-theme" data-affinity-id="${escapeHtml(vm.affinityId || '')}" data-theme-id="${escapeHtml(vm.exercise.moduleId)}">${escapeHtml(vm.exercise.moduleName)}</span><span class="breadcrumb-sep">›</span>`;
+      const aff = vm.affinityLabel
+        ? `<span class="breadcrumb-link" data-action="open-affinity" data-affinity-id="${escapeHtml(vm.affinityId || "")}">${escapeHtml(vm.affinityLabel)}</span><span class="breadcrumb-sep">›</span>`
+        : "";
+      const theme = `<span class="breadcrumb-link" data-action="toggle-theme" data-affinity-id="${escapeHtml(vm.affinityId || "")}" data-theme-id="${escapeHtml(vm.exercise.moduleId)}">${escapeHtml(vm.exercise.moduleName)}</span><span class="breadcrumb-sep">›</span>`;
       this.exerciseBreadcrumb.innerHTML = `${aff}${theme}<span class="breadcrumb-current">Exercice ${vm.exercise.num}</span>`;
     }
 
     // Progression dans le thème
-    if (this.exerciseThemeProgress && vm.themeIndex != null) {
-      this.exerciseThemeProgress.textContent = `${vm.themeDone || 0} / ${vm.themeTotal || 0} faits`;
+    if (this.exerciseThemeProgress && vm.themeTotal) {
+      this.exerciseThemeProgress.textContent = `${vm.themeDone || 0} / ${vm.themeTotal} faits dans ce thème`;
     }
     if (this.exerciseThemeProgressBar && vm.themeTotal) {
-      const pct = Math.round(((vm.themeDone || 0) / vm.themeTotal) * 100);
-      this.exerciseThemeProgressBar.style.width = `${pct}%`;
+      this.exerciseThemeProgressBar.style.width = `${Math.round(((vm.themeDone || 0) / vm.themeTotal) * 100)}%`;
     }
 
-    this.exerciseStatusPill.textContent = vm.done ? "Fait" : "À faire";
+    this.exerciseStatusPill.textContent = vm.done ? "Fait ✓" : "À faire";
     this.exerciseStatusPill.classList.toggle("todo", !vm.done);
-    for (const btn of this.exerciseToggleDoneBtns) {
-      btn.textContent = vm.done ? "Fait ✓" : "\u00C0 faire";
-      btn.classList.toggle("done", vm.done);
-      btn.setAttribute("data-icon", vm.done ? "\u2713" : "\u25CB");
-      btn.setAttribute("data-id", vm.exercise.id);
-    }
+    this.exerciseToggleDoneBtn.setAttribute("data-id", vm.exercise.id);
 
     const preamble = (vm.exercise && vm.exercise.preamble) ? vm.exercise.preamble : "";
     if (this.exerciseStepsPreamble) {
@@ -410,14 +403,10 @@ class WordAtelierView {
     this.#syncImagesGridLayout();
     this.#renderExtraImages(vm.visuals.extraImages || []);
 
-    for (const btn of this.exercisePrevBtns) {
-      btn.disabled = !vm.prevId;
-      btn.setAttribute("data-target-id", vm.prevId || "");
-    }
-    for (const btn of this.exerciseNextBtns) {
-      btn.disabled = !vm.nextId;
-      btn.setAttribute("data-target-id", vm.nextId || "");
-    }
+    this.exercisePrevBtn.disabled = !vm.prevId;
+    this.exerciseNextBtn.disabled = !vm.nextId;
+    this.exercisePrevBtn.setAttribute("data-target-id", vm.prevId || "");
+    this.exerciseNextBtn.setAttribute("data-target-id", vm.nextId || "");
     this.setExerciseWorkFileState(vm.workFile || null);
   }
 
@@ -664,6 +653,14 @@ class WordAtelierView {
       return;
     }
     this.headerUserName.textContent = "Non connecté";
+  }
+
+  updateStatusTag(isDone) {
+    if (!this.exerciseStatusPill) return;
+    this.exerciseStatusPill.textContent = isDone ? "Fait ✓" : "À faire";
+    this.exerciseStatusPill.classList.toggle("todo", !isDone);
+    const id = this.exerciseToggleDoneBtn ? this.exerciseToggleDoneBtn.getAttribute("data-id") : null;
+    if (id) this.exerciseToggleDoneBtn.setAttribute("data-id", id);
   }
 
   updateSaveNudge(isDone) {

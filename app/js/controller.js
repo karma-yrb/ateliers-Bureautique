@@ -143,60 +143,64 @@ class WordAtelierController {
       window.location.hash = "#themes";
     });
 
-    for (const btn of (this.view.exercisePrevBtns || [this.view.exercisePrevBtn])) {
-      if (!btn) continue;
-      btn.addEventListener("click", async () => {
-        if (!this.isReady) {
-          const ready = await this.#ensureReadyFromUserGesture();
-          if (!ready) return;
-        }
-        const targetId = btn.getAttribute("data-target-id");
-        if (targetId) window.location.hash = `#exercise/${targetId}`;
-      });
-    }
+    this.view.exercisePrevBtn.addEventListener("click", async () => {
+      if (!this.isReady) {
+        const ready = await this.#ensureReadyFromUserGesture();
+        if (!ready) return;
+      }
+      const targetId = this.view.exercisePrevBtn.getAttribute("data-target-id");
+      if (targetId) window.location.hash = `#exercise/${targetId}`;
+    });
 
-    for (const btn of (this.view.exerciseNextBtns || [this.view.exerciseNextBtn])) {
-      if (!btn) continue;
-      btn.addEventListener("click", async () => {
-        if (!this.isReady) {
-          const ready = await this.#ensureReadyFromUserGesture();
-          if (!ready) return;
-        }
-        const currentId = this.view.exerciseToggleDoneBtn.getAttribute("data-id");
-        const wasDone = currentId ? this.model.getIsDone(currentId) : false;
-        if (currentId && !wasDone) {
-          const canContinue = await this.#showSaveReminderModal("next", currentId);
-          if (!canContinue) return;
-        }
-        if (currentId && !wasDone) {
-          this.model.markExerciseDone(currentId, true);
-          this.#saveProgress();
-        }
-        const targetId = btn.getAttribute("data-target-id");
-        if (targetId) window.location.hash = `#exercise/${targetId}`;
-      });
-    }
+    this.view.exerciseNextBtn.addEventListener("click", async () => {
+      if (!this.isReady) {
+        const ready = await this.#ensureReadyFromUserGesture();
+        if (!ready) return;
+      }
+      const currentId = this.view.exerciseToggleDoneBtn.getAttribute("data-id");
+      const wasDone = currentId ? this.model.getIsDone(currentId) : false;
+      if (currentId && !wasDone) {
+        const canContinue = await this.#showSaveReminderModal("next", currentId);
+        if (!canContinue) return;
+      }
 
-    for (const btn of (this.view.exerciseToggleDoneBtns || [this.view.exerciseToggleDoneBtn])) {
-      if (!btn) continue;
-      btn.addEventListener("click", async () => {
-        if (!this.isReady) {
-          const ready = await this.#ensureReadyFromUserGesture();
-          if (!ready) return;
-        }
-        const id = this.view.exerciseToggleDoneBtn.getAttribute("data-id");
-        if (!id) return;
-        const isDone = this.model.getIsDone(id);
-
-        if (!isDone) {
-          const canContinue = await this.#showSaveReminderModal("done", id);
-          if (!canContinue) return;
-        }
-
-        this.model.markExerciseDone(id, !isDone);
+      if (currentId && !wasDone) {
+        this.model.markExerciseDone(currentId, true);
         this.#saveProgress();
-        this.view.updateSaveNudge(!this.model.getIsDone(id));
-        this.#renderExercisePage(id);
+        this.view.updateStatusTag(true);
+      }
+      const targetId = this.view.exerciseNextBtn.getAttribute("data-target-id");
+      if (targetId) window.location.hash = `#exercise/${targetId}`;
+    });
+
+    // Toggle via le tag statut dans le header (click + Enter/Space)
+    const handleToggleDone = async (sourceEl) => {
+      if (!this.isReady) {
+        const ready = await this.#ensureReadyFromUserGesture();
+        if (!ready) return;
+      }
+      const id = this.view.exerciseToggleDoneBtn.getAttribute("data-id");
+      if (!id) return;
+      const isDone = this.model.getIsDone(id);
+
+      if (!isDone) {
+        const canContinue = await this.#showSaveReminderModal("done", id);
+        if (!canContinue) return;
+      }
+
+      this.model.markExerciseDone(id, !isDone);
+      this.#saveProgress();
+      this.view.updateStatusTag(!isDone);
+      this.view.updateSaveNudge(!isDone);
+      this.#renderExercisePage(id);
+    };
+
+    this.view.exerciseToggleDoneBtn.addEventListener("click", () => handleToggleDone(this.view.exerciseToggleDoneBtn));
+
+    if (this.view.exerciseStatusPill) {
+      this.view.exerciseStatusPill.addEventListener("click", () => handleToggleDone(this.view.exerciseStatusPill));
+      this.view.exerciseStatusPill.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); handleToggleDone(this.view.exerciseStatusPill); }
       });
     }
 
@@ -391,7 +395,6 @@ class WordAtelierController {
     this.view.themesAffinityList.addEventListener("click", onAction);
     this.view.affinityThemeList.addEventListener("click", onAction);
     this.view.affinityThemeList.addEventListener("keydown", onActionKeydown);
-    // Breadcrumb dans la page exercice
     const exercisePage = document.getElementById("page-exercise");
     if (exercisePage) exercisePage.addEventListener("click", onAction);
   }
