@@ -15,6 +15,7 @@ const ALLOWED_TYPES = new Set([
 ]);
 
 const CONVENTIONAL_RE = /^(?<type>[a-z]+)(\([^)]+\))?(?<breaking>!)?: (?<description>.+)$/;
+const TAG_PREFIX = "word-v";
 
 function git(args) {
   return execFileSync("git", args, {
@@ -25,7 +26,7 @@ function git(args) {
 
 function getLastTag() {
   try {
-    return git(["describe", "--tags", "--abbrev=0"]);
+    return git(["describe", "--tags", "--abbrev=0", "--match", `${TAG_PREFIX}*`]);
   } catch {
     return "";
   }

@@ -443,12 +443,12 @@ class WordAtelierView {
     const raw = String(step || "").trim();
     if (exercise && exercise.id === "ex-010") {
       const normalized = raw
-        .replace(/[��"]/g, "")
+        .replace(/[💾"]/g, "")
         .replace(/\s+/g, " ")
         .trim()
         .toLowerCase();
       if (normalized === "le raccourci clavier pour enregistrer rapidement est ctrl+s") {
-        return "<strong>� Le raccourci clavier pour enregistrer rapidement est ctrl+s �</strong>";
+        return "<strong>💾 Le raccourci clavier pour enregistrer rapidement est ctrl+s 💾</strong>";
       }
     }
     return this.#formatStep(step);

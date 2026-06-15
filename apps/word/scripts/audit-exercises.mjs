@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(SCRIPT_DIR, "..");
 const INPUT_PATH = path.join(ROOT, "data", "exercises.enriched.json");
+const OUTPUT_DIR = path.join(ROOT, "logs");
 const OUTPUT_PATH = path.join(ROOT, "logs", "audit-report.json");
 
 function pct(part, total) {
@@ -133,6 +134,7 @@ const report = {
   moduleQualityTop: moduleQuality.slice(0, 12),
 };
 
+await fs.mkdir(OUTPUT_DIR, { recursive: true });
 await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 
 console.log("Audit report generated:", path.relative(ROOT, OUTPUT_PATH));

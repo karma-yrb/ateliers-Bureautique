@@ -1,4 +1,5 @@
 {
+  "tagPrefix": "word-v",
   "types": [
     {
       "type": "feat",

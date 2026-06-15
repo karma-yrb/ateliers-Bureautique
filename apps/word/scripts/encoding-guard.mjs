@@ -102,7 +102,22 @@ function mojibakeScore(value) {
       }
       continue;
     }
-    if (cp === 0x00e2 && (next === 0x20ac || next === 0x201a || next === 0x201e || next === 0x0080)) {
+    if (
+      cp === 0x00e2 &&
+      (
+        next === 0x0080 ||
+        next === 0x02dc ||
+        next === 0x2013 ||
+        next === 0x2018 ||
+        next === 0x2019 ||
+        next === 0x201a ||
+        next === 0x201c ||
+        next === 0x201d ||
+        next === 0x2020 ||
+        next === 0x20ac ||
+        next === 0x2122
+      )
+    ) {
       score += 5;
       continue;
     }

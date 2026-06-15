@@ -1,6 +1,6 @@
-window.RELEASES_DATA = {
+{
   "version": "1.2.52",
-  "updatedAt": "2026-06-15T08:44:34.442Z",
+  "updatedAt": "2026-06-15T08:44:34.416Z",
   "releases": [
     {
       "version": "1.2.52",
@@ -2032,4 +2032,4 @@ window.RELEASES_DATA = {
       }
     }
   ]
-};
+}

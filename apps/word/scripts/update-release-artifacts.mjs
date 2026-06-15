@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, "..");
+const TAG_PREFIX = "word-v";
 
 const RELEASE_JSON_PATHS = [
   path.join(ROOT_DIR, "releases", "releases.json"),
@@ -40,7 +41,7 @@ function getTodayIsoDate() {
 
 function getLastTag() {
   try {
-    return git(["describe", "--tags", "--abbrev=0"]);
+    return git(["describe", "--tags", "--abbrev=0", "--match", `${TAG_PREFIX}*`]);
   } catch {
     return "";
   }
@@ -48,7 +49,7 @@ function getLastTag() {
 
 function getPreviousVersionFromTag(tag) {
   if (!tag) return "";
-  return String(tag).replace(/^v/, "");
+  return String(tag).replace(new RegExp(`^${TAG_PREFIX}`), "").replace(/^v/, "");
 }
 
 function semverParts(version) {
@@ -186,7 +187,7 @@ function getSummary(releaseType, counts) {
   return "Version de maintenance.";
 }
 
-function upsertReleaseFile(filePath, currentVersion, releaseEntry) {
+function upsertReleaseFile(filePath, currentVersion, releaseEntry, updatedAt) {
   const existing = readJson(filePath, {
     version: currentVersion,
     updatedAt: "",
@@ -197,7 +198,7 @@ function upsertReleaseFile(filePath, currentVersion, releaseEntry) {
   const filtered = releases.filter((item) => item && item.version !== currentVersion);
   const next = {
     version: currentVersion,
-    updatedAt: new Date().toISOString(),
+    updatedAt,
     releases: [releaseEntry, ...filtered],
   };
 
@@ -228,7 +229,7 @@ function main() {
 
   const releaseEntry = {
     version: currentVersion,
-    tag: `v${currentVersion}`,
+    tag: `${TAG_PREFIX}${currentVersion}`,
     date: getTodayIsoDate(),
     releaseType,
     impact: getImpact(counts),
@@ -244,9 +245,10 @@ function main() {
     counts,
   };
 
+  const updatedAt = new Date().toISOString();
   const payloads = [];
   for (const filePath of RELEASE_JSON_PATHS) {
-    payloads.push(upsertReleaseFile(filePath, currentVersion, releaseEntry));
+    payloads.push(upsertReleaseFile(filePath, currentVersion, releaseEntry, updatedAt));
   }
 
   for (let i = 0; i < RELEASE_JS_PATHS.length; i += 1) {
