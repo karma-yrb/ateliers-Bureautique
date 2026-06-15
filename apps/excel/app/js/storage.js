@@ -713,3 +713,4 @@
 }
 
 window.WordAtelierFileStorage = WordAtelierFileStorage;
+window.ExcelAtelierFileStorage = WordAtelierFileStorage;

@@ -45,7 +45,7 @@ function getThemeStateLabel(percent) {
   return "À démarrer";
 }
 
-class WordAtelierView {
+class ExcelAtelierView {
   constructor() {
     this.navButtons = Array.from(document.querySelectorAll(".nav-btn"));
     this.pages = {
@@ -843,4 +843,4 @@ class WordAtelierView {
   }
 }
 
-window.WordAtelierView = WordAtelierView;
+window.ExcelAtelierView = ExcelAtelierView;

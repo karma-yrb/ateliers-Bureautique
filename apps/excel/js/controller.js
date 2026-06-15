@@ -4,7 +4,7 @@
   return `${parts[2]}/${parts[1]}/${parts[0]}`;
 }
 
-class WordAtelierController {
+class ExcelAtelierController {
   constructor(model, view, storage) {
     this.model = model;
     this.view = view;
@@ -1446,4 +1446,4 @@ class WordAtelierController {
   }
 }
 
-window.WordAtelierController = WordAtelierController;
+window.ExcelAtelierController = ExcelAtelierController;

@@ -11,7 +11,7 @@ const STORAGE_SOURCE = await fs.readFile(path.join(ROOT, "js", "storage.js"), "u
 function createStorage() {
   const context = vm.createContext({ window: {} });
   vm.runInContext(STORAGE_SOURCE, context, { filename: "js/storage.js" });
-  const StorageClass = context.window.WordAtelierFileStorage;
+  const StorageClass = context.window.ExcelAtelierFileStorage;
   return new StorageClass();
 }
 

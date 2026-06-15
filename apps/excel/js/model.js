@@ -46,7 +46,7 @@ function foldText(value) {
     .toLowerCase();
 }
 
-class WordAtelierModel {
+class ExcelAtelierModel {
   constructor(rawData) {
     if (!rawData || !Array.isArray(rawData.exercises) || !Array.isArray(rawData.modules)) {
       throw new Error("Données invalides");
@@ -497,4 +497,4 @@ class WordAtelierModel {
   }
 }
 
-window.WordAtelierModel = WordAtelierModel;
+window.ExcelAtelierModel = ExcelAtelierModel;

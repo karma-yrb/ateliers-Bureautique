@@ -55,7 +55,7 @@ function createDataset() {
 function createModel(rawData = createDataset()) {
   const context = vm.createContext({ window: {} });
   vm.runInContext(MODEL_SOURCE, context, { filename: "js/model.js" });
-  const ModelClass = context.window.WordAtelierModel;
+  const ModelClass = context.window.ExcelAtelierModel;
   return new ModelClass(rawData);
 }
 

@@ -1,0 +1,7 @@
+{
+  "name": "@ateliers/atelier-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Code commun pour les ateliers bureautiques Pimms."
+}
