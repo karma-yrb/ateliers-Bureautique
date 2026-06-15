@@ -8,6 +8,7 @@ const INPUT_PATH = path.join(ROOT, "data", "exercises.json");
 const OUTPUT_PATH = path.join(ROOT, "data", "exercises.enriched.json");
 const LOG_JSON_PATH = path.join(ROOT, "logs", "scrape-report.json");
 const LOG_TXT_PATH = path.join(ROOT, "logs", "scrape-report.txt");
+const INDEX_URL = "https://www.clic-formation.net/tableur.html";
 
 const BASE_URL = "https://www.clic-formation.net";
 const CONCURRENCY = 6;
@@ -23,7 +24,7 @@ const DECORATIVE_IMAGE_PATTERNS = [
   "/modules/",
 ];
 
-const EXERCISE_IMAGE_HINT = /\/images\/(02-word|03-word|word|tableau|publipostage|document|exercices|niveau)/i;
+const EXERCISE_IMAGE_HINT = /\/images\/(02-word|03-word|03-excel|excel|word|tableau|publipostage|document|exercices|niveau)/i;
 
 const LEVEL_MAP = {
   1: "Debutant",
@@ -97,6 +98,30 @@ function extractDivContent(html, startIndex) {
     if (!match) break;
     const token = match[0].toLowerCase();
     if (token.startsWith("</div")) {
+      depth -= 1;
+      if (depth === 0) {
+        return html.slice(cursor, match.index);
+      }
+    } else {
+      depth += 1;
+    }
+  }
+  return null;
+}
+
+function extractElementContent(html, startIndex, tagName) {
+  const firstTagClose = html.indexOf(">", startIndex);
+  if (firstTagClose === -1) return null;
+  let depth = 1;
+  let cursor = firstTagClose + 1;
+  const tagRegex = new RegExp(`</?${tagName}\\b[^>]*>`, "gi");
+  tagRegex.lastIndex = cursor;
+
+  while (true) {
+    const match = tagRegex.exec(html);
+    if (!match) break;
+    const token = match[0].toLowerCase();
+    if (token.startsWith(`</${tagName}`)) {
       depth -= 1;
       if (depth === 0) {
         return html.slice(cursor, match.index);
@@ -235,7 +260,7 @@ function extractInstructions(enonceHtml) {
 }
 
 function findDocxUrl(html) {
-  const matches = [...html.matchAll(/https?:\/\/[^"' >]+\.docx/gi)].map((m) => m[0]);
+  const matches = [...html.matchAll(/https?:\/\/[^"' >]+\.(?:xlsx|xls|xlsm|zip|docx)/gi)].map((m) => m[0]);
   if (!matches.length) return null;
   return normalizeUrl(matches[0]);
 }
@@ -263,6 +288,154 @@ function extractTitle(html) {
   const match = html.match(/<title>([\s\S]*?)<\/title>/i);
   if (!match) return null;
   return normalizeTitle(htmlToText(match[1]));
+}
+
+function slugify(value) {
+  return normalizeSpace(String(value || ""))
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "item";
+}
+
+function attrValue(tag, name) {
+  const match = tag.match(new RegExp(`\\b${name}\\s*=\\s*"([^"]*)"`, "i"));
+  return match ? decodeHtmlEntities(match[1]).trim() : "";
+}
+
+function cleanCatalogTitle(value) {
+  return normalizeSpace(htmlToText(value));
+}
+
+function sectionIdFromTitle(title) {
+  const normalized = slugify(title);
+  if (normalized.includes("base")) return "bases";
+  if (normalized.includes("avance")) return "avance";
+  if (normalized.includes("fonction")) return "fonctions";
+  if (normalized.includes("asca")) return "asca";
+  if (normalized.includes("exercices-complets")) return "complets";
+  return normalized;
+}
+
+function isExerciseCatalogLink(label, href, title) {
+  const text = normalizeSpace(`${label} ${title}`).toLowerCase();
+  const url = String(href || "").toLowerCase();
+  if (!href || href.startsWith("javascript:")) return false;
+  if (/support|quizz|quiz|evaluation|g[ée]n[ée]ralit[ée]s|blog|les outils/.test(text)) return false;
+  if (/\/support|\/evaluation|quizz|quiz/.test(url)) return false;
+  return /exercice|cas |r[ée]vision|calculs|planning|fiche|formulaire|facturation|course|salon|gantt|garage|intervention|calendrier|reservation/i.test(`${label} ${title} ${href}`);
+}
+
+function parseExerciseNum(label, fallback) {
+  const match = String(label || "").match(/exercice\s*(\d+)/i);
+  if (match) return Number.parseInt(match[1], 10);
+  return fallback;
+}
+
+function parseLevelFromCatalogLink(tag) {
+  const img = tag.match(/<img\b[^>]*>/i)?.[0] || "";
+  const src = attrValue(img, "src");
+  const srcMatch = src.match(/\/([1-4])(?:-[^/?#]*)?\.(?:png|jpg|webp|gif)/i);
+  return srcMatch ? Number.parseInt(srcMatch[1], 10) : 1;
+}
+
+async function buildCatalogFromIndex() {
+  const html = await fetchWithRetry(INDEX_URL);
+  const articleHtml = extractArticleBody(html) || html;
+  const h3Regex = /<h3\b[^>]*>([\s\S]*?)<\/h3>/gi;
+  const headings = [];
+  let headingMatch;
+  while ((headingMatch = h3Regex.exec(articleHtml)) !== null) {
+    const title = cleanCatalogTitle(headingMatch[1]);
+    if (/^(Excel|Fonctions|Pr[ée]parez|Exercices complets)/i.test(title)) {
+      headings.push({ title, index: headingMatch.index, end: h3Regex.lastIndex });
+    }
+  }
+
+  const modules = [];
+  const exercises = [];
+  let globalIndex = 0;
+
+  for (let sectionIndex = 0; sectionIndex < headings.length; sectionIndex += 1) {
+    const section = headings[sectionIndex];
+    const next = headings[sectionIndex + 1];
+    const sectionHtml = articleHtml.slice(section.end, next ? next.index : articleHtml.length);
+    const sectionId = sectionIdFromTitle(section.title);
+    const level1Regex = /<li\b[^>]*data-level="1"[^>]*>/gi;
+    let moduleMatch;
+    let orderInSection = 0;
+
+    while ((moduleMatch = level1Regex.exec(sectionHtml)) !== null) {
+      const liHtml = extractElementContent(sectionHtml, moduleMatch.index, "li");
+      if (!liHtml) continue;
+      const titleMatch = liHtml.match(/<a\b[^>]*href="javascript:void\(0\);"[^>]*>([\s\S]*?)<\/a>/i)
+        || liHtml.match(/<a\b[^>]*class="[^"]*separator[^"]*"[^>]*>([\s\S]*?)<\/a>/i)
+        || liHtml.match(/<a\b[^>]*>([\s\S]*?)<\/a>/i);
+      const moduleName = titleMatch ? cleanCatalogTitle(titleMatch[1]) : `Module ${modules.length + 1}`;
+      if (!moduleName || /evaluation/i.test(moduleName)) continue;
+
+      orderInSection += 1;
+      const moduleId = `${sectionId}-${slugify(moduleName)}`;
+      const module = {
+        id: moduleId,
+        name: moduleName,
+        cleanName: moduleName,
+        section: sectionId,
+        sectionOrder: sectionIndex + 1,
+        orderInSection,
+      };
+
+      const linkRegex = /<a\b[^>]*href="([^"]+)"[^>]*>[\s\S]*?<\/a>/gi;
+      let linkMatch;
+      let numInModule = 0;
+      const moduleExercises = [];
+      while ((linkMatch = linkRegex.exec(liHtml)) !== null) {
+        const tag = linkMatch[0];
+        const href = decodeHtmlEntities(linkMatch[1]);
+        const labelMatch = tag.match(/<span class="image-title">([\s\S]*?)<span/i);
+        const label = labelMatch ? cleanCatalogTitle(labelMatch[1]) : cleanCatalogTitle(tag);
+        const title = attrValue(tag, "title");
+        if (!isExerciseCatalogLink(label, href, title)) continue;
+        numInModule += 1;
+        globalIndex += 1;
+        const cleanTitle = normalizeSpace(title.replace(/^Exercice\s*\d+\s*[:-]?\s*/i, "")) || label || `Exercice ${numInModule}`;
+        moduleExercises.push({
+          id: `excel-ex-${String(globalIndex).padStart(3, "0")}`,
+          globalIndex,
+          moduleId,
+          moduleName,
+          moduleNameClean: moduleName,
+          num: parseExerciseNum(label, numInModule),
+          title: cleanTitle,
+          level: parseLevelFromCatalogLink(tag),
+          pageUrl: normalizeUrl(href),
+          docxUrl: null,
+          downloadUrl: null,
+          downloadLabel: "",
+          imageEnonce: null,
+          imageResultat: null,
+          imageEnonceCaption: "",
+          imageResultatCaption: "",
+          description: cleanTitle,
+          preamble: "",
+          instructions: [],
+        });
+      }
+
+      if (moduleExercises.length > 0) {
+        modules.push(module);
+        exercises.push(...moduleExercises);
+      }
+    }
+  }
+
+  return {
+    generatedAt: new Date().toISOString(),
+    source: INDEX_URL,
+    modules,
+    exercises,
+  };
 }
 
 function buildSectionMap(sections) {
@@ -430,8 +603,8 @@ function dedupeSteps(steps) {
 
 async function main() {
   const start = Date.now();
-  const rawInput = stripBom(await fs.readFile(INPUT_PATH, "utf8"));
-  const dataset = JSON.parse(rawInput);
+  const dataset = await buildCatalogFromIndex();
+  await fs.writeFile(INPUT_PATH, JSON.stringify(dataset, null, 2), "utf8");
 
   const exercises = dataset.exercises || [];
   const withUrls = exercises.filter((ex) => ex.pageUrl);

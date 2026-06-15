@@ -193,7 +193,7 @@ function computeMetrics(dataset) {
       Array.isArray(exercise.instructions) &&
       exercise.instructions.some((step) => normalizeText(step).length > 220),
   ).length;
-  const missingDocx = exercises.filter((exercise) => !exercise.docxUrl).length;
+  const missingWorkFile = exercises.filter((exercise) => !exercise.docxUrl && !exercise.downloadUrl).length;
   const missingResultImage = exercises.filter((exercise) => !exercise.imageResultat).length;
   const modulesWithoutExercises = modules.filter(
     (module) => exercises.filter((exercise) => exercise.moduleId === module.id).length === 0,
@@ -203,7 +203,7 @@ function computeMetrics(dataset) {
     exercises: exercises.length,
     shortInstructions,
     longInstructions,
-    missingDocx,
+    missingWorkFile,
     missingResultImage,
     modulesWithoutExercises,
   };

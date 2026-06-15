@@ -30,12 +30,12 @@ const moduleById = new Map(
     total: 0,
     shortInstructions: 0,
     longInstructionSteps: 0,
-    missingDocx: 0,
+    missingWorkFile: 0,
     missingResultImage: 0,
   }]),
 );
 
-const missingDocxIds = [];
+const missingWorkFileIds = [];
 const missingResultImageIds = [];
 const shortInstructionIds = [];
 const longInstructionStepIds = [];
@@ -50,7 +50,7 @@ for (const exercise of exercises) {
   const instructions = Array.isArray(exercise.instructions) ? exercise.instructions : [];
   const isShort = instructions.length < 2;
   const hasLongStep = instructions.some((step) => String(step).length > 220);
-  const noDocx = !exercise.docxUrl;
+  const noWorkFile = !exercise.docxUrl && !exercise.downloadUrl;
   const noResultImage = !exercise.imageResultat;
 
   if (isShort) {
@@ -61,9 +61,9 @@ for (const exercise of exercises) {
     longInstructionStepIds.push(exercise.id);
     if (moduleStat) moduleStat.longInstructionSteps += 1;
   }
-  if (noDocx) {
-    missingDocxIds.push(exercise.id);
-    if (moduleStat) moduleStat.missingDocx += 1;
+  if (noWorkFile) {
+    missingWorkFileIds.push(exercise.id);
+    if (moduleStat) moduleStat.missingWorkFile += 1;
   }
   if (noResultImage) {
     missingResultImageIds.push(exercise.id);
@@ -86,12 +86,12 @@ const moduleQuality = [...moduleById.values()]
     ...m,
     shortInstructionsPct: pct(m.shortInstructions, m.total),
     longInstructionStepsPct: pct(m.longInstructionSteps, m.total),
-    missingDocxPct: pct(m.missingDocx, m.total),
+    missingWorkFilePct: pct(m.missingWorkFile, m.total),
     missingResultImagePct: pct(m.missingResultImage, m.total),
   }))
   .sort((a, b) => {
-    const scoreA = a.shortInstructionsPct + a.missingDocxPct + a.missingResultImagePct;
-    const scoreB = b.shortInstructionsPct + b.missingDocxPct + b.missingResultImagePct;
+    const scoreA = a.shortInstructionsPct + a.missingWorkFilePct + a.missingResultImagePct;
+    const scoreB = b.shortInstructionsPct + b.missingWorkFilePct + b.missingResultImagePct;
     return scoreB - scoreA;
   });
 
@@ -109,10 +109,10 @@ const report = {
   },
   quality: {
     modulesWithoutExercises,
-    missingDocx: {
-      count: missingDocxIds.length,
-      pct: pct(missingDocxIds.length, exercises.length),
-      ids: missingDocxIds,
+    missingWorkFile: {
+      count: missingWorkFileIds.length,
+      pct: pct(missingWorkFileIds.length, exercises.length),
+      ids: missingWorkFileIds,
     },
     missingResultImage: {
       count: missingResultImageIds.length,
@@ -140,7 +140,7 @@ await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 console.log("Audit report generated:", path.relative(ROOT, OUTPUT_PATH));
 console.log(JSON.stringify({
   totals: report.totals,
-  missingDocx: report.quality.missingDocx.count,
+  missingWorkFile: report.quality.missingWorkFile.count,
   missingResultImage: report.quality.missingResultImage.count,
   shortInstructions: report.quality.shortInstructions.count,
   modulesWithoutExercises: report.quality.modulesWithoutExercises.length,
