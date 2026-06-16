@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/karma-yrb/ateliers-Word/compare/word-v1.3.0...word-v1.3.1) (2026-06-16)
+
+
+### Refactoring
+
+* share browser storage runtime ([49f505a](https://github.com/karma-yrb/ateliers-Word/commit/49f505a8086f6b1f68e48280d1b63e116bd56ceb))
+
 ## 1.3.0 (2026-06-16)
 
 
