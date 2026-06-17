@@ -368,9 +368,11 @@ class AtelierView {
 
     if (vm.exercise.docxUrl) {
       this.exerciseDocxBtn.href = vm.exercise.docxUrl;
+      this.exerciseDocxBtn.download = this.#getExerciseDownloadFileName(vm.exercise, vm.exercise.docxUrl);
       this.exerciseDocxBtn.style.display = "";
     } else {
       this.exerciseDocxBtn.removeAttribute("href");
+      this.exerciseDocxBtn.removeAttribute("download");
       this.exerciseDocxBtn.style.display = "none";
     }
     if (vm.exercise.downloadUrl) {
@@ -841,6 +843,26 @@ class AtelierView {
     this.imageModal.insertBefore(stage, this.imageModalImg);
     stage.appendChild(this.imageModalImg);
     this.imageModalStage = stage;
+  }
+
+  #getExerciseDownloadFileName(exercise, fileUrl) {
+    const exerciseId = String(exercise && exercise.id ? exercise.id : "")
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9_-]+/g, "-")
+      .replace(/^-+|-+$/g, "") || "exercice";
+    let extension = ".docx";
+
+    try {
+      const parsed = new URL(String(fileUrl || ""), window.location.href);
+      const lastSegment = parsed.pathname.split("/").filter(Boolean).pop() || "";
+      const match = lastSegment.match(/\.[a-z0-9]{2,8}$/i);
+      if (match) extension = match[0].toLowerCase();
+    } catch {
+      // conserver .docx
+    }
+
+    return `${exerciseId}${extension}`;
   }
 }
 

@@ -967,6 +967,8 @@ function createAtelierController(config = {}) {
     }
 
     await this.storage.touchSavedExerciseDownload(profileKey, exerciseId);
+    const canContinue = await this.#showWorkFilePickerReminderModal();
+    if (!canContinue) return;
     await this.#pickWorkFileForCurrentExercise();
   }
 
@@ -980,6 +982,13 @@ function createAtelierController(config = {}) {
     }
   }
 
+  #getDownloadFileNameFromLink(linkEl) {
+    if (!linkEl) return "fichier-telecharge";
+    const suggestedName = String(linkEl.getAttribute("download") || "").trim();
+    if (suggestedName) return suggestedName;
+    return this.#getDownloadFileName(linkEl.getAttribute("href"));
+  }
+
   async #handleExerciseDownloadClick(event, linkEl) {
     if (event) event.preventDefault();
     if (!linkEl) return;
@@ -987,7 +996,7 @@ function createAtelierController(config = {}) {
     const href = linkEl.getAttribute("href");
     if (!href) return;
 
-    const fileName = this.#getDownloadFileName(href);
+    const fileName = this.#getDownloadFileNameFromLink(linkEl);
     const canContinue = await this.#showDownloadReminderModal(fileName);
     if (!canContinue) return;
 
@@ -999,13 +1008,16 @@ function createAtelierController(config = {}) {
     const href = linkEl.getAttribute("href");
     if (!href) return;
 
-    const target = linkEl.getAttribute("target") || "_self";
-    if (target === "_blank") {
-      window.open(href, "_blank", "noopener");
-      return;
-    }
-
-    window.location.href = href;
+    const downloadName = String(linkEl.getAttribute("download") || "").trim();
+    const target = linkEl.getAttribute("target") || "_blank";
+    const anchor = document.createElement("a");
+    anchor.href = href;
+    anchor.rel = linkEl.getAttribute("rel") || "noopener";
+    anchor.target = target;
+    if (downloadName) anchor.download = downloadName;
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
   }
 
   #escapeHtml(value) {
@@ -1038,18 +1050,18 @@ function createAtelierController(config = {}) {
       fileName,
     );
 
-    const userFolderText = userFolderExists === true
-      ? `Attention : le fichier existe d\u00e9j\u00e0 dans votre dossier ${folderLabel}.`
-      : userFolderExists === false
-        ? `Aucun fichier du m\u00eame nom trouv\u00e9 dans votre dossier ${folderLabel}.`
-        : `Dossier ${folderLabel} non v\u00e9rifi\u00e9 : permission de lecture absente.`;
+    if (userFolderExists !== true) {
+      return {
+        important: false,
+        html: "",
+      };
+    }
 
     return {
-      important: userFolderExists === true,
+      important: true,
       html: `
-        <strong>V\u00e9rification avant t\u00e9l\u00e9chargement</strong><br>
-        ${this.#escapeHtml(userFolderText)}<br>
-        T\u00e9l\u00e9chargements : v\u00e9rification impossible sans acc\u00e8s explicite au dossier du navigateur.
+        <strong>Attention</strong><br>
+        ${this.#escapeHtml(`Le fichier existe d\u00e9j\u00e0 dans votre dossier ${folderLabel}.`)}
       `,
     };
   }
@@ -1060,7 +1072,7 @@ function createAtelierController(config = {}) {
     const href = linkEl.getAttribute("href");
     if (!exerciseId || !href) return;
 
-    const fileName = this.#getDownloadFileName(href);
+    const fileName = this.#getDownloadFileNameFromLink(linkEl);
     await this.storage.setSavedExerciseDownload(this.#buildWorkFileProfileKey(), exerciseId, fileName, href);
     await this.#refreshExerciseWorkFileState(exerciseId, {
       statusText: `T\u00e9l\u00e9chargement lanc\u00e9. Ouvrez le document dans ${settings.officeAppName}, cliquez sur "Activer la modification", enregistrez ${fileName} dans votre dossier utilisateur, puis cliquez sur "S\u00e9lectionner mon fichier".`,
@@ -1155,6 +1167,61 @@ function createAtelierController(config = {}) {
       const nextFileName = modal.querySelector("#save-reminder-file-name");
       if (nextUserFolder) nextUserFolder.textContent = folderLabel;
       if (nextFileName) nextFileName.textContent = cleanFileName;
+
+      const onClose = (result) => {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+        if (cancelBtn) cancelBtn.onclick = null;
+        continueBtn.onclick = null;
+        window.removeEventListener("keydown", onKeydown);
+        resolve(result);
+      };
+
+      const onKeydown = (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          onClose(false);
+        }
+        if (event.key === "Enter") {
+          event.preventDefault();
+          onClose(true);
+        }
+      };
+
+      if (cancelBtn) cancelBtn.onclick = () => onClose(false);
+      continueBtn.onclick = () => onClose(true);
+      window.addEventListener("keydown", onKeydown);
+      modal.style.display = "flex";
+      modal.setAttribute("aria-hidden", "false");
+      continueBtn.focus();
+    });
+  }
+
+  #showWorkFilePickerReminderModal() {
+    return new Promise((resolve) => {
+      const modal = this.saveReminderModal.root;
+      const fileName = this.saveReminderModal.fileName;
+      const cancelBtn = this.saveReminderModal.cancelBtn;
+      const continueBtn = this.saveReminderModal.continueBtn;
+
+      if (!modal || !fileName || !continueBtn) {
+        resolve(true);
+        return;
+      }
+
+      fileName.textContent = "T\u00e9l\u00e9chargements";
+      this.#setSaveReminderContent({
+        title: "Avant de choisir le fichier",
+        message: "Pensez \u00e0 v\u00e9rifier dans le dossier \"T\u00e9l\u00e9chargements\" si vous ne voyez pas votre fichier ici.",
+        steps: `
+          <li>Le s\u00e9lecteur de fichier va s'ouvrir apr\u00e8s ce message.</li>
+          <li>Si le fichier n'appara\u00eet pas dans votre dossier utilisateur, regardez aussi dans <code id="save-reminder-file-name"></code>.</li>
+        `,
+        continueLabel: "Choisir le fichier",
+      });
+
+      const nextFileName = modal.querySelector("#save-reminder-file-name");
+      if (nextFileName) nextFileName.textContent = "T\u00e9l\u00e9chargements";
 
       const onClose = (result) => {
         modal.style.display = "none";
