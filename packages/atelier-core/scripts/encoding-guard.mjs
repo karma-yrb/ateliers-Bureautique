@@ -11,6 +11,23 @@ export const DEFAULT_DATA_FILE_RELATIVE_PATHS = [
   "app/data/exercises.js",
 ];
 
+export const DEFAULT_TEXT_FILE_EXTENSIONS = [
+  ".cjs",
+  ".css",
+  ".html",
+  ".js",
+  ".json",
+  ".md",
+  ".mjs",
+  ".sh",
+  ".txt",
+  ".yaml",
+  ".yml",
+];
+
+const DEFAULT_TEXT_FILE_EXCLUDED_DIRECTORIES = new Set([".git", "node_modules"]);
+const DEFAULT_TEXT_FILE_EXCLUDED_FILES = new Set(["package-lock.json"]);
+
 const CP1252_REVERSE = new Map([
   [0x20ac, 0x80],
   [0x201a, 0x82],
@@ -196,6 +213,93 @@ function assertBrowserGlobalName(globalName) {
 export function createDataFiles(root, relativePaths = DEFAULT_DATA_FILE_RELATIVE_PATHS) {
   if (!root) throw new Error("root est requis");
   return relativePaths.map((relativePath) => path.join(root, relativePath));
+}
+
+function isTextFile(filePath, extensions = DEFAULT_TEXT_FILE_EXTENSIONS) {
+  return extensions.includes(path.extname(filePath).toLowerCase());
+}
+
+async function collectTextFiles(root, out, options = {}) {
+  const excludedDirectories = options.excludedDirectories || DEFAULT_TEXT_FILE_EXCLUDED_DIRECTORIES;
+  const excludedFiles = options.excludedFiles || DEFAULT_TEXT_FILE_EXCLUDED_FILES;
+  const extensions = options.extensions || DEFAULT_TEXT_FILE_EXTENSIONS;
+
+  let entries;
+  try {
+    entries = await fs.readdir(root, { withFileTypes: true });
+  } catch (error) {
+    if (error.code === "ENOENT") return;
+    throw error;
+  }
+
+  for (const entry of entries) {
+    if (entry.isDirectory()) {
+      if (!excludedDirectories.has(entry.name)) {
+        await collectTextFiles(path.join(root, entry.name), out, options);
+      }
+      continue;
+    }
+
+    if (!entry.isFile() || excludedFiles.has(entry.name)) continue;
+
+    const filePath = path.join(root, entry.name);
+    if (isTextFile(filePath, extensions)) out.push(filePath);
+  }
+}
+
+function collectSuspiciousTextLines(text) {
+  const lines = text.split(/\r?\n/);
+  const suspicious = [];
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
+    if (hasSuspiciousMojibake(line)) {
+      suspicious.push({
+        line: index + 1,
+        value: line.trim().slice(0, 180),
+      });
+    }
+  }
+
+  return suspicious;
+}
+
+export async function validateTextFiles({
+  roots,
+  rootForReport,
+  extensions = DEFAULT_TEXT_FILE_EXTENSIONS,
+  excludedDirectories = DEFAULT_TEXT_FILE_EXCLUDED_DIRECTORIES,
+  excludedFiles = DEFAULT_TEXT_FILE_EXCLUDED_FILES,
+} = {}) {
+  const scanRoots = (Array.isArray(roots) ? roots : [roots]).filter(Boolean).map((entry) => path.resolve(entry));
+  const reportRoot = path.resolve(rootForReport || scanRoots[0] || process.cwd());
+  const files = [];
+
+  for (const scanRoot of scanRoots) {
+    await collectTextFiles(scanRoot, files, { extensions, excludedDirectories, excludedFiles });
+  }
+
+  const report = [];
+  const uniqueFiles = [...new Set(files)].sort();
+  let totalSuspicious = 0;
+
+  for (const filePath of uniqueFiles) {
+    const raw = await fs.readFile(filePath, "utf8");
+    const suspicious = collectSuspiciousTextLines(stripBom(raw));
+    totalSuspicious += suspicious.length;
+    report.push({
+      file: path.relative(reportRoot, filePath),
+      hadBom: hasBom(raw),
+      suspiciousCount: suspicious.length,
+      suspiciousSamples: suspicious.slice(0, 8),
+    });
+  }
+
+  return {
+    ok: report.every((entry) => !entry.hadBom && entry.suspiciousCount === 0),
+    totalSuspicious,
+    report,
+  };
 }
 
 export function createEncodingGuard({ root, globalName, dataFileRelativePaths } = {}) {

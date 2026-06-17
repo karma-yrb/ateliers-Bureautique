@@ -1,4 +1,4 @@
-﻿# README - Version distribuable (app)
+# README - Version distribuable (app)
 
 Cette version enregistre la progression dans un fichier utilisateur (pas en localStorage pour la progression).
 

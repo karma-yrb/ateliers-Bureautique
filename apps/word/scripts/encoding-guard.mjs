@@ -6,6 +6,7 @@ import {
   hasSuspiciousMojibake,
   repairDatasetObject,
   repairMojibakeString,
+  validateTextFiles,
 } from "../../../packages/atelier-core/scripts/encoding-guard.mjs";
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
@@ -27,4 +28,5 @@ export {
   hasSuspiciousMojibake,
   repairDatasetObject,
   repairMojibakeString,
+  validateTextFiles,
 };

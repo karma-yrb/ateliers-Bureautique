@@ -50,13 +50,13 @@ function foldText(value) {
 class AtelierModel {
   constructor(rawData) {
     if (!rawData || !Array.isArray(rawData.exercises) || !Array.isArray(rawData.modules)) {
-      throw new Error("DonnÃ©es invalides");
+      throw new Error("Données invalides");
     }
 
     this.themes = rawData.modules
       .map((m) => ({
         id: m.id,
-        name: cleanText(m.cleanName || m.name || "ThÃ¨me"),
+        name: cleanText(m.cleanName || m.name || "Thème"),
         section: m.section || "",
         sectionOrder: toInt(m.sectionOrder, 99),
         orderInSection: toInt(m.orderInSection, 999),
@@ -71,7 +71,7 @@ class AtelierModel {
         id: ex.id,
         globalIndex: toInt(ex.globalIndex, 0),
         moduleId: ex.moduleId,
-        moduleName: cleanText(ex.moduleNameClean || ex.moduleName || "ThÃ¨me"),
+        moduleName: cleanText(ex.moduleNameClean || ex.moduleName || "Thème"),
         num: toInt(ex.num, 0),
         title: cleanText(ex.title || `Exercice ${ex.num || ""}`),
         level: toInt(ex.level, 0),
@@ -171,8 +171,8 @@ class AtelierModel {
     if (section === "complets" || name.includes("niveau")) {
       return {
         id: "parcours",
-        label: "Parcours guidÃ©s",
-        subtitle: "Exercices complets classÃ©s par niveau.",
+        label: "Parcours guidés",
+        subtitle: "Exercices complets classés par niveau.",
         order: 5,
       };
     }
@@ -183,7 +183,7 @@ class AtelierModel {
       return {
         id: "automatisation",
         label: "Automatisation et production",
-        subtitle: "Gagner du temps sur les tÃ¢ches rÃ©pÃ©titives et les documents pro.",
+        subtitle: "Gagner du temps sur les tâches répétitives et les documents pro.",
         order: 4,
       };
     }
@@ -194,7 +194,7 @@ class AtelierModel {
       return {
         id: "structure",
         label: "Structure du document",
-        subtitle: "Construire des documents organisÃ©s, lisibles et solides.",
+        subtitle: "Construire des documents organisés, lisibles et solides.",
         order: 3,
       };
     }
@@ -292,7 +292,7 @@ class AtelierModel {
       return this.exercises[0];
     }
 
-    // PrioritÃ© 1: continuer dans la mÃªme sÃ©rie Ã  partir du dernier exercice fait.
+    // Priorité 1: continuer dans la même série à partir du dernier exercice fait.
     if (anchor) {
       const themeList = this.getExercisesByTheme(anchor.moduleId);
       const anchorIndex = themeList.findIndex((item) => item.id === anchor.id);
@@ -304,12 +304,12 @@ class AtelierModel {
       }
     }
 
-    // PrioritÃ© 2: premier exercice non terminÃ© dans l'ordre global.
+    // Priorité 2: premier exercice non terminé dans l'ordre global.
     for (const exercise of this.exercises) {
       if (!doneSet.has(exercise.id)) return exercise;
     }
 
-    // Tout est terminÃ©: reprendre sur le dernier exercice connu.
+    // Tout est terminé: reprendre sur le dernier exercice connu.
     if (anchor) return anchor;
     return this.exercises[this.exercises.length - 1];
   }
@@ -333,8 +333,8 @@ class AtelierModel {
 
     const fallback = [];
     if (exercise.description) fallback.push(exercise.description);
-    fallback.push("Reproduisez le document en vous aidant de l'image de l'Ã©noncÃ©.");
-    if (exercise.imageResultat) fallback.push("Comparez votre travail avec le rÃ©sultat attendu.");
+    fallback.push("Reproduisez le document en vous aidant de l'image de l'énoncé.");
+    if (exercise.imageResultat) fallback.push("Comparez votre travail avec le résultat attendu.");
     return fallback;
   }
 
@@ -356,7 +356,7 @@ class AtelierModel {
     } else if (exercise.imageResultat) {
       fallbackResultImages = [exercise.imageResultat];
     } else if (exercise.imageEnonce) {
-      // RÃ¨gle mÃ©tier demandÃ©e: image unique => rÃ©sultat attendu.
+      // Règle métier demandée: image unique => résultat attendu.
       fallbackResultImages = [exercise.imageEnonce];
     }
 
@@ -421,11 +421,11 @@ class AtelierModel {
   }
 
   getLevelLabel(percent) {
-    if (percent >= 90) return "MaÃ®trise";
+    if (percent >= 90) return "Maîtrise";
     if (percent >= 65) return "Autonomie";
     if (percent >= 35) return "Pratique";
     if (percent >= 10) return "Lancement";
-    return "DÃ©marrage";
+    return "Démarrage";
   }
 
   getThemeProgressRows() {

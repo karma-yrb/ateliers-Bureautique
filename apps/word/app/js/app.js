@@ -1,4 +1,4 @@
-﻿const data = window.WORD_ATELIER_DATA;
+const data = window.WORD_ATELIER_DATA;
 if (!data) {
   throw new Error("Données WORD_ATELIER_DATA introuvables");
 }

@@ -1,4 +1,4 @@
-﻿const data = window.EXCEL_ATELIER_DATA;
+const data = window.EXCEL_ATELIER_DATA;
 if (!data) {
   throw new Error("Données EXCEL_ATELIER_DATA introuvables");
 }

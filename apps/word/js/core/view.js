@@ -16,7 +16,7 @@ function shortDate(isoDay) {
   return `${parts[2]}/${parts[1]}`;
 }
 
-// Repart directement sur la constante des couleurs sans la ligne fantÃ´me
+// Repart directement sur la constante des couleurs sans la ligne fantôme
 const THEME_COLORS = [
   { accent: "#2e6f76", soft: "#e8f3f5", track: "#d2e6ea" },
   { accent: "#8b6b4a", soft: "#f4eee6", track: "#e7d9c6" },
@@ -41,9 +41,9 @@ function getThemeColors(themeKey) {
 }
 
 function getThemeStateLabel(percent) {
-  if (percent >= 100) return "TerminÃ©";
+  if (percent >= 100) return "Terminé";
   if (percent > 0) return "En cours";
-  return "Ã€ dÃ©marrer";
+  return "À démarrer";
 }
 
 class AtelierView {
@@ -137,23 +137,23 @@ class AtelierView {
   }
 
   renderHome(vm) {
-    this.homeProgressText.textContent = `${vm.completed} / ${vm.total} exercices terminÃ©s (${vm.percent}%)`;
+    this.homeProgressText.textContent = `${vm.completed} / ${vm.total} exercices terminés (${vm.percent}%)`;
     this.homeProgressBar.style.width = `${vm.percent}%`;
     this.homeLevel.textContent = `Palier actuel: ${vm.level}`;
     if (this.homeStartBtn) this.homeStartBtn.textContent = vm.startLabel || "Commencer maintenant";
-    if (this.homeQuickTheme) this.homeQuickTheme.textContent = vm.startTheme || "Ã€ dÃ©finir";
+    if (this.homeQuickTheme) this.homeQuickTheme.textContent = vm.startTheme || "À définir";
     if (this.homeQuickExercise) this.homeQuickExercise.textContent = vm.startExercise || "Choisissez un exercice";
-    if (this.homeStartHelp) this.homeStartHelp.textContent = vm.startHelp || "Lance automatiquement le prochain exercice conseillÃ©.";
+    if (this.homeStartHelp) this.homeStartHelp.textContent = vm.startHelp || "Lance automatiquement le prochain exercice conseillé.";
 
     if (!vm.lastExercise) {
       this.homeLastExercise.innerHTML = `
-        <p class="last-title">Aucun exercice terminÃ©.</p>
-        <p class="last-meta">Lancez votre premier exercice depuis la page ThÃ¨mes.</p>
+        <p class="last-title">Aucun exercice terminé.</p>
+        <p class="last-meta">Lancez votre premier exercice depuis la page Thèmes.</p>
       `;
     } else {
       this.homeLastExercise.innerHTML = `
         <p class="last-title">Exercice ${vm.lastExercise.num} - ${escapeHtml(vm.lastExercise.title)}</p>
-        <p class="last-meta">ThÃ¨me: ${escapeHtml(vm.lastExercise.moduleName)}</p>
+        <p class="last-meta">Thème: ${escapeHtml(vm.lastExercise.moduleName)}</p>
         <p class="last-meta">${escapeHtml(vm.lastDoneText)}</p>
       `;
     }
@@ -162,7 +162,7 @@ class AtelierView {
 
   renderAffinityOverview(vm) {
     if (!vm.groups.length) {
-      this.themesAffinityList.innerHTML = `<div class="empty">Aucune catÃ©gorie disponible.</div>`;
+      this.themesAffinityList.innerHTML = `<div class="empty">Aucune catégorie disponible.</div>`;
       return;
     }
 
@@ -194,7 +194,7 @@ class AtelierView {
     this.affinitySubtitle.textContent = vm.affinity.subtitle;
 
     if (!vm.cards.length) {
-      this.affinityThemeList.innerHTML = `<div class="empty">Aucun thÃ¨me disponible.</div>`;
+      this.affinityThemeList.innerHTML = `<div class="empty">Aucun thème disponible.</div>`;
       return;
     }
 
@@ -205,7 +205,7 @@ class AtelierView {
           <button class="theme-block-header" data-action="toggle-theme" data-affinity-id="${escapeHtml(vm.affinity.id)}" data-theme-id="${escapeHtml(card.id)}" aria-expanded="${card.open ? "true" : "false"}">
             <span class="theme-block-title">${escapeHtml(card.name)}</span>
             <span class="theme-block-meta">${card.done}/${card.total} (${card.percent}%)</span>
-            <span class="theme-block-arrow">${card.open ? "â–¾" : "â–¸"}</span>
+            <span class="theme-block-arrow">${card.open ? "▾" : "▸"}</span>
           </button>
           <div class="theme-block-body">
             <div class="exercise-list">
@@ -235,7 +235,7 @@ class AtelierView {
                     `,
               )
               .join("")
-            : `<div class="empty">Aucun exercice dans ce thÃ¨me.</div>`
+            : `<div class="empty">Aucun exercice dans ce thème.</div>`
           }
             </div>
           </div>
@@ -258,7 +258,7 @@ class AtelierView {
       this.exerciseBreadcrumb.innerHTML = `${aff}${theme}<span class="breadcrumb-current">Exercice ${vm.exercise.num}</span>`;
     }
 
-    // Progression dans le thÃ¨me
+    // Progression dans le thème
     if (this.exerciseThemeProgress && vm.themeTotal) {
       this.exerciseThemeProgress.textContent = `${vm.themeDone || 0} / ${vm.themeTotal} faits`;
     }
@@ -266,7 +266,7 @@ class AtelierView {
       this.exerciseThemeProgressBar.style.width = `${Math.round(((vm.themeDone || 0) / vm.themeTotal) * 100)}%`;
     }
 
-    this.exerciseStatusPill.textContent = vm.done ? "Fait âœ“" : "Ã€ faire";
+    this.exerciseStatusPill.textContent = vm.done ? "Fait ✓" : "À faire";
     this.exerciseStatusPill.classList.toggle("todo", !vm.done);
     this.exerciseToggleDoneBtn.setAttribute("data-id", vm.exercise.id);
 
@@ -285,13 +285,13 @@ class AtelierView {
         .filter(Boolean);
       const text = lines.length
         ? lines.map((line) => formatStep(line)).join("<br>")
-        : "Reproduisez le document en suivant l'Ã©noncÃ©.";
+        : "Reproduisez le document en suivant l'énoncé.";
       this.exerciseSteps.classList.add("steps-paragraph-mode");
       this.exerciseSteps.innerHTML = `<p class="steps-paragraph-text">${text}</p>`;
     } else {
       const normalizedSteps = (vm.steps || []).map((step) => String(step || "").trim()).filter(Boolean);
-      const markerPattern = /^texte\s+Ã \s+copier\/coller\s*:?\s*$/i;
-      const copyIntroPattern = /(texte\s+Ã \s+copier\/coller|copier-coller\s+(?:le|la|ce)?\s*(?:texte|liste)|copier-coller\s+ce\s+texte)/i;
+      const markerPattern = /^texte\s+à\s+copier\/coller\s*:?\s*$/i;
+      const copyIntroPattern = /(texte\s+à\s+copier\/coller|copier-coller\s+(?:le|la|ce)?\s*(?:texte|liste)|copier-coller\s+ce\s+texte)/i;
       const numberedStepPattern = /^\d+\./;
       let hasCopyBlock = false;
       const items = [];
@@ -363,7 +363,7 @@ class AtelierView {
       if (hasCopyBlock) this.exerciseSteps.classList.add("steps-has-copy");
       this.exerciseSteps.innerHTML = items.length
         ? items.join("")
-        : "<li>Reproduisez le document en suivant l'Ã©noncÃ©.</li>";
+        : "<li>Reproduisez le document en suivant l'énoncé.</li>";
     }
 
     if (vm.exercise.docxUrl) {
@@ -377,7 +377,7 @@ class AtelierView {
     }
     if (vm.exercise.downloadUrl) {
       this.exerciseDownloadBtn.href = vm.exercise.downloadUrl;
-      this.exerciseDownloadBtn.textContent = vm.exercise.downloadLabel || "TÃ©lÃ©charger le 2áµ‰ fichier";
+      this.exerciseDownloadBtn.textContent = vm.exercise.downloadLabel || "Télécharger le 2ᵉ fichier";
       this.exerciseDownloadBtn.style.display = "";
     } else {
       this.exerciseDownloadBtn.removeAttribute("href");
@@ -388,20 +388,20 @@ class AtelierView {
     const filesCard = document.getElementById("exercise-files-card");
     if (filesCard) filesCard.style.display = hasFiles ? "" : "none";
 
-    this.exerciseEnonceCaption.textContent = vm.exercise.imageEnonceCaption || "Ã‰noncÃ©";
-    this.exerciseResultCaption.textContent = vm.exercise.imageResultatCaption || "RÃ©sultat attendu";
+    this.exerciseEnonceCaption.textContent = vm.exercise.imageEnonceCaption || "Énoncé";
+    this.exerciseResultCaption.textContent = vm.exercise.imageResultatCaption || "Résultat attendu";
 
     this.#renderImageGroup(
       this.exerciseEnonceImages,
       vm.visuals.enonceImages,
-      "Image Ã©noncÃ©",
-      "Pas d'image d'Ã©noncÃ© sur la source.",
+      "Image énoncé",
+      "Pas d'image d'énoncé sur la source.",
     );
     this.#renderImageGroup(
       this.exerciseResultImages,
       vm.visuals.resultImages,
-      "Image rÃ©sultat attendu",
-      "Pas d'image de rÃ©sultat sur la source.",
+      "Image résultat attendu",
+      "Pas d'image de résultat sur la source.",
     );
     this.#syncImagesGridLayout();
     this.#renderExtraImages(vm.visuals.extraImages || []);
@@ -423,17 +423,17 @@ class AtelierView {
     if (!label) return formatMultiline(text);
 
     // Ne mettre en gras que les vrais "labels" courts (ex: "Police", "Titre",
-    // "Ã‰lÃ©ment 1"), pas les phrases longues gÃ©nÃ©rÃ©es automatiquement
-    // (ex: "Construisez la structure ... Ã  partir de cet objectif:").
-    // Sans ce garde-fou, une phrase complÃ¨te en gras suivie du contenu
-    // donne l'impression visuelle de deux Ã©lÃ©ments distincts.
+    // "Élément 1"), pas les phrases longues générées automatiquement
+    // (ex: "Construisez la structure ... à partir de cet objectif:").
+    // Sans ce garde-fou, une phrase complète en gras suivie du contenu
+    // donne l'impression visuelle de deux éléments distincts.
     const wordCount = label.split(/\s+/).filter(Boolean).length;
     const looksLikeLabel = label.length <= 30 && wordCount <= 4;
 
     const rest = text.slice(colonIndex + 1).trimStart();
     if (!looksLikeLabel) {
-      // Phrase longue suivie de son contenu : on saute une ligne aprÃ¨s les
-      // deux-points pour bien sÃ©parer visuellement l'objectif du contenu,
+      // Phrase longue suivie de son contenu : on saute une ligne après les
+      // deux-points pour bien séparer visuellement l'objectif du contenu,
       // sans pour autant le mettre en gras (ce n'est pas un vrai "label").
       if (!rest) return formatMultiline(text);
       return `${formatMultiline(`${label} :`)}<br>${formatMultiline(rest)}`;
@@ -446,12 +446,12 @@ class AtelierView {
     const raw = String(step || "").trim();
     if (exercise && exercise.id === "ex-010") {
       const normalized = raw
-        .replace(/[ðŸ’¾"]/g, "")
+        .replace(/[💾"]/g, "")
         .replace(/\s+/g, " ")
         .trim()
         .toLowerCase();
       if (normalized === "le raccourci clavier pour enregistrer rapidement est ctrl+s") {
-        return "<strong>ðŸ’¾ Le raccourci clavier pour enregistrer rapidement est ctrl+s ðŸ’¾</strong>";
+        return "<strong>💾 Le raccourci clavier pour enregistrer rapidement est ctrl+s 💾</strong>";
       }
     }
     return this.#formatStep(step);
@@ -469,7 +469,7 @@ class AtelierView {
       if (!Array.isArray(steps)) return false;
       return steps.map((line) => String(line || "").trim()).filter(Boolean).length >= 1;
     }
-    // Par dÃ©faut, pour tous les autres exercices, cela renverra false 
+    // Par défaut, pour tous les autres exercices, cela renverra false
     // et l'application affichera les puces (<li>)
     return false;
   }
@@ -494,7 +494,7 @@ class AtelierView {
         (src, idx) => `
         <button class="image-thumb" type="button" data-zoom-src="${escapeHtml(src)}" title="Cliquer pour agrandir">
           <img src="${escapeHtml(src)}" alt="${escapeHtml(altPrefix)} ${idx + 1}">
-          <span class="image-thumb-hint">ðŸ” Cliquer pour agrandir</span>
+          <span class="image-thumb-hint">🔍 Cliquer pour agrandir</span>
         </button>
       `,
       )
@@ -529,7 +529,7 @@ class AtelierView {
         (src, idx) => `
         <button class="extra-image" type="button" data-zoom-src="${escapeHtml(src)}" title="Cliquer pour agrandir">
           <img src="${escapeHtml(src)}" alt="Image illustrative ${idx + 1}">
-          <span class="image-thumb-hint">ðŸ” Cliquer pour agrandir</span>
+          <span class="image-thumb-hint">🔍 Cliquer pour agrandir</span>
         </button>
       `,
       )
@@ -674,12 +674,12 @@ class AtelierView {
       this.headerUserName.textContent = safeInitials;
       return;
     }
-    this.headerUserName.textContent = "Non connectÃ©";
+    this.headerUserName.textContent = "Non connecté";
   }
 
   updateStatusTag(isDone) {
     if (!this.exerciseStatusPill) return;
-    this.exerciseStatusPill.textContent = isDone ? "Fait âœ“" : "Ã€ faire";
+    this.exerciseStatusPill.textContent = isDone ? "Fait ✓" : "À faire";
     this.exerciseStatusPill.classList.toggle("todo", !isDone);
     const id = this.exerciseToggleDoneBtn ? this.exerciseToggleDoneBtn.getAttribute("data-id") : null;
     if (id) this.exerciseToggleDoneBtn.setAttribute("data-id", id);
@@ -788,7 +788,7 @@ class AtelierView {
   openImageModal(src, altText) {
     if (!src || !this.imageModal || !this.imageModalImg) return;
     this.imageModalImg.src = src;
-    this.imageModalImg.alt = altText || "AperÃ§u";
+    this.imageModalImg.alt = altText || "Aperçu";
     this.#setModalZoom(1);
     this.imageModal.hidden = false;
     this.imageModal.setAttribute("aria-hidden", "false");
