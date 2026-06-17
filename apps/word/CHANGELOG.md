@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.4.0...word-v1.4.1) (2026-06-17)
+
+
+### Bug Fixes
+
+* allow legacy release baseline commit ([b54f620](https://github.com/karma-yrb/ateliers-Bureautique/commit/b54f620dd4ec899aa56c98bc5b551f222b0b930d))
+
 ## [1.4.0](https://github.com/karma-yrb/ateliers-Word/compare/word-v1.3.5...word-v1.4.0) (2026-06-17)
 
 

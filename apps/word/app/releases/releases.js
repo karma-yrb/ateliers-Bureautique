@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.4.0",
-  "updatedAt": "2026-06-17T10:16:09.201Z",
+  "version": "1.4.1",
+  "updatedAt": "2026-06-17T12:41:08.138Z",
   "releases": [
+    {
+      "version": "1.4.1",
+      "tag": "word-v1.4.1",
+      "date": "2026-06-17",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "",
+          "description": "allow legacy release baseline commit",
+          "breaking": false,
+          "hash": "b54f620"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "5bc8ffa"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "regularise release launch scripts",
+          "breaking": false,
+          "hash": "3896ab9"
+        },
+        {
+          "type": "other",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "Publish ateliers under word and excel paths",
+          "breaking": false,
+          "hash": "f55a031"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.1",
+          "breaking": false,
+          "hash": "18c802a"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 1,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.4.0",
       "tag": "word-v1.4.0",
