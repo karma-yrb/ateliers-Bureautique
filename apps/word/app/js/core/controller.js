@@ -212,14 +212,14 @@ function createAtelierController(config = {}) {
     }
 
     if (this.view.exerciseDocxBtn) {
-      this.view.exerciseDocxBtn.addEventListener("click", () => {
-        void this.#trackExerciseDownloadFromLink(this.view.exerciseDocxBtn);
+      this.view.exerciseDocxBtn.addEventListener("click", (event) => {
+        this.#handleExerciseDownloadClick(event, this.view.exerciseDocxBtn);
       });
     }
 
     if (this.view.exerciseDownloadBtn) {
-      this.view.exerciseDownloadBtn.addEventListener("click", () => {
-        void this.#trackExerciseDownloadFromLink(this.view.exerciseDownloadBtn);
+      this.view.exerciseDownloadBtn.addEventListener("click", (event) => {
+        this.#handleExerciseDownloadClick(event, this.view.exerciseDownloadBtn);
       });
     }
 
@@ -978,6 +978,34 @@ function createAtelierController(config = {}) {
     }
   }
 
+  async #handleExerciseDownloadClick(event, linkEl) {
+    if (event) event.preventDefault();
+    if (!linkEl) return;
+
+    const href = linkEl.getAttribute("href");
+    if (!href) return;
+
+    const fileName = this.#getDownloadFileName(href);
+    const canContinue = await this.#showDownloadReminderModal(fileName);
+    if (!canContinue) return;
+
+    await this.#trackExerciseDownloadFromLink(linkEl);
+    this.#openDownloadLink(linkEl);
+  }
+
+  #openDownloadLink(linkEl) {
+    const href = linkEl.getAttribute("href");
+    if (!href) return;
+
+    const target = linkEl.getAttribute("target") || "_self";
+    if (target === "_blank") {
+      window.open(href, "_blank", "noopener");
+      return;
+    }
+
+    window.location.href = href;
+  }
+
   async #trackExerciseDownloadFromLink(linkEl) {
     if (!this.isReady || !this.userSession || !this.storage || !linkEl) return;
     const exerciseId = this.#getCurrentExerciseIdFromView();
@@ -1017,6 +1045,74 @@ function createAtelierController(config = {}) {
     return this.#getNumberedSaveReminderFileName(exercise.num);
   }
 
+  #setSaveReminderContent({ title, message, steps, continueLabel = "Continuer" }) {
+    const modal = this.saveReminderModal.root;
+    const titleEl = modal ? modal.querySelector("#save-reminder-title") : null;
+    const stepsEl = modal ? modal.querySelector(".save-reminder-steps") : null;
+    const continueBtn = this.saveReminderModal.continueBtn;
+
+    if (titleEl) titleEl.textContent = title;
+    if (this.saveReminderModal.message) this.saveReminderModal.message.textContent = message;
+    if (stepsEl) stepsEl.innerHTML = steps;
+    if (continueBtn) continueBtn.textContent = continueLabel;
+  }
+
+  #showDownloadReminderModal(downloadFileName) {
+    return new Promise((resolve) => {
+      const modal = this.saveReminderModal.root;
+      const userFolder = this.saveReminderModal.userFolder;
+      const fileName = this.saveReminderModal.fileName;
+      const continueBtn = this.saveReminderModal.continueBtn;
+
+      if (!modal || !userFolder || !fileName || !continueBtn) {
+        resolve(true);
+        return;
+      }
+
+      const folderLabel = this.#getSaveReminderFolderLabel();
+      const cleanFileName = downloadFileName || "fichier";
+      userFolder.textContent = folderLabel;
+      fileName.textContent = cleanFileName;
+      this.#setSaveReminderContent({
+        title: "Avant de t\u00e9l\u00e9charger",
+        message: `Pensez \u00e0 enregistrer le fichier dans votre dossier ${folderLabel}.`,
+        steps: `
+          <li>Le t\u00e9l\u00e9chargement va d\u00e9marrer apr\u00e8s ce message.</li>
+          <li>Dans la fen\u00eatre d'enregistrement, choisissez votre dossier utilisateur : <code id="save-reminder-user-folder"></code>.</li>
+          <li>Conservez ou retrouvez le fichier <code id="save-reminder-file-name"></code>.</li>
+          <li>Ouvrez ensuite le fichier dans ${settings.officeAppName}.</li>
+        `,
+        continueLabel: "T\u00e9l\u00e9charger",
+      });
+
+      const nextUserFolder = modal.querySelector("#save-reminder-user-folder");
+      const nextFileName = modal.querySelector("#save-reminder-file-name");
+      if (nextUserFolder) nextUserFolder.textContent = folderLabel;
+      if (nextFileName) nextFileName.textContent = cleanFileName;
+
+      const onClose = () => {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+        continueBtn.onclick = null;
+        window.removeEventListener("keydown", onKeydown);
+        resolve(true);
+      };
+
+      const onKeydown = (event) => {
+        if (event.key === "Escape" || event.key === "Enter") {
+          event.preventDefault();
+          onClose();
+        }
+      };
+
+      continueBtn.onclick = () => onClose();
+      window.addEventListener("keydown", onKeydown);
+      modal.style.display = "flex";
+      modal.setAttribute("aria-hidden", "false");
+      continueBtn.focus();
+    });
+  }
+
   #showSaveReminderModal(trigger, exerciseId) {
     return new Promise((resolve) => {
       const modal = this.saveReminderModal.root;
@@ -1031,11 +1127,25 @@ function createAtelierController(config = {}) {
       }
 
       const folderLabel = this.#getSaveReminderFolderLabel();
+      const expectedFileName = this.#getSaveReminderFileName(exerciseId);
       userFolder.textContent = folderLabel;
-      fileName.textContent = this.#getSaveReminderFileName(exerciseId);
-      message.textContent = trigger === "done"
-        ? "Pensez à enregistrer votre travail dans votre dossier avant de marquer l'exercice comme fait."
-        : "Pensez à enregistrer votre travail dans votre dossier avant de passer à l'exercice suivant.";
+      fileName.textContent = expectedFileName;
+      this.#setSaveReminderContent({
+        title: "Vous avez termin\u00e9 ?",
+        message: trigger === "done"
+          ? "Pensez \u00e0 enregistrer votre travail dans votre dossier avant de marquer l'exercice comme fait."
+          : "Pensez \u00e0 enregistrer votre travail dans votre dossier avant de passer \u00e0 l'exercice suivant.",
+        steps: `
+          <li>Dans Word, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer) ou sur <strong>Fichier</strong> puis <strong>Enregistrer sous</strong>.</li>
+          <li>Choisissez votre dossier utilisateur : <code id="save-reminder-user-folder"></code>.</li>
+          <li>Nommez le fichier <code id="save-reminder-file-name"></code>, puis validez avec <strong>Enregistrer</strong>.</li>
+          <li>Dans Word, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer) si besoin.</li>
+        `,
+      });
+      const nextUserFolder = modal.querySelector("#save-reminder-user-folder");
+      const nextFileName = modal.querySelector("#save-reminder-file-name");
+      if (nextUserFolder) nextUserFolder.textContent = folderLabel;
+      if (nextFileName) nextFileName.textContent = expectedFileName;
 
       const onClose = () => {
         modal.style.display = "none";
