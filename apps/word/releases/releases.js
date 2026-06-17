@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "1.3.5",
-  "updatedAt": "2026-06-17T09:24:21.977Z",
+  "version": "1.4.0",
+  "updatedAt": "2026-06-17T10:16:09.201Z",
   "releases": [
+    {
+      "version": "1.4.0",
+      "tag": "word-v1.4.0",
+      "date": "2026-06-17",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalités ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalités et améliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "430982c"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "",
+          "description": "sécuriser l'encodage des accents",
+          "breaking": false,
+          "hash": "1ee2850"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare release",
+          "breaking": false,
+          "hash": "48a3693"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalité",
+          "scope": "",
+          "description": "améliore le flux de téléchargement des exercices",
+          "breaking": false,
+          "hash": "2e95f58"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 2,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.3.5",
       "tag": "word-v1.3.5",

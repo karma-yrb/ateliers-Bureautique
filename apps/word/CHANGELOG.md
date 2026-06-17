@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/karma-yrb/ateliers-Word/compare/word-v1.3.5...word-v1.4.0) (2026-06-17)
+
+
+### Features
+
+* améliore le flux de téléchargement des exercices ([2e95f58](https://github.com/karma-yrb/ateliers-Word/commit/2e95f5841e71a64d69dbb338c5f21fd2855ab25f))
+
+
+### Bug Fixes
+
+* sécuriser l'encodage des accents ([1ee2850](https://github.com/karma-yrb/ateliers-Word/commit/1ee28508e732153f3f379e9de5cd2c097d279363))
+
 ### [1.3.5](https://github.com/karma-yrb/ateliers-Word/compare/word-v1.3.4...word-v1.3.5) (2026-06-17)
 
 ### [1.3.4](https://github.com/karma-yrb/ateliers-Word/compare/word-v1.3.3...word-v1.3.4) (2026-06-17)
