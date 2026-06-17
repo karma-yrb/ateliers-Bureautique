@@ -1112,6 +1112,7 @@ function createAtelierController(config = {}) {
     continueLabel = "Continuer",
     existingStatusHtml = "",
     existingStatusImportant = false,
+    numberedSteps = true,
   }) {
     const modal = this.saveReminderModal.root;
     const titleEl = modal ? modal.querySelector("#save-reminder-title") : null;
@@ -1121,7 +1122,10 @@ function createAtelierController(config = {}) {
 
     if (titleEl) titleEl.textContent = title;
     if (this.saveReminderModal.message) this.saveReminderModal.message.textContent = message;
-    if (stepsEl) stepsEl.innerHTML = steps;
+    if (stepsEl) {
+      stepsEl.innerHTML = steps;
+      stepsEl.classList.toggle("is-unnumbered", !numberedSteps);
+    }
     if (existingStatus) {
       existingStatus.hidden = !existingStatusHtml;
       existingStatus.innerHTML = existingStatusHtml;
@@ -1270,17 +1274,32 @@ function createAtelierController(config = {}) {
       const expectedFileName = this.#getSaveReminderFileName(exerciseId);
       userFolder.textContent = folderLabel;
       fileName.textContent = expectedFileName;
-      this.#setSaveReminderContent({
-        title: "Vous avez termin\u00e9 ?",
-        message: trigger === "done"
-          ? "Pensez \u00e0 enregistrer votre travail dans votre dossier avant de marquer l'exercice comme fait."
-          : "Pensez \u00e0 enregistrer votre travail dans votre dossier avant de passer \u00e0 l'exercice suivant.",
-        steps: `
+      const isDoneTrigger = trigger === "done";
+      const nextReminderSteps = `
+          <li><strong>Dans Word</strong><br>
+            Si vous n'avez pas d\u00e9j\u00e0 enregistrer votre fichier dans votre dossier
+            <ul class="save-reminder-substeps">
+              <li>Cliquez sur "Fichier" puis "Enregistrer sous"</li>
+              <li>Choisissez Parcourir &gt; Documents.</li>
+              <li>Puis votre dossier utilisateur : ${this.#escapeHtml(folderLabel)}.</li>
+              <li>Validez avec Enregistrer.</li>
+            </ul>
+          </li>
+          <li>Dans tout les cas terminez par cliquez sur <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer).</li>
+        `;
+      const doneReminderSteps = `
           <li>Dans Word, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer) ou sur <strong>Fichier</strong> puis <strong>Enregistrer sous</strong>.</li>
           <li>Choisissez votre dossier utilisateur : <code id="save-reminder-user-folder"></code>.</li>
           <li>Nommez le fichier <code id="save-reminder-file-name"></code>, puis validez avec <strong>Enregistrer</strong>.</li>
           <li>Dans Word, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer) si besoin.</li>
-        `,
+        `;
+      this.#setSaveReminderContent({
+        title: "Vous avez termin\u00e9 ?",
+        message: isDoneTrigger
+          ? "Pensez \u00e0 enregistrer votre travail dans votre dossier avant de marquer l'exercice comme fait."
+          : "Pensez \u00e0 enregistrer votre travail dans votre dossier avant de passer \u00e0 l'exercice suivant.",
+        steps: isDoneTrigger ? doneReminderSteps : nextReminderSteps,
+        numberedSteps: isDoneTrigger,
       });
       const nextUserFolder = modal.querySelector("#save-reminder-user-folder");
       const nextFileName = modal.querySelector("#save-reminder-file-name");

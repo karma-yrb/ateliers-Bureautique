@@ -1299,12 +1299,24 @@ select {
 
 .save-reminder-content {
   max-width: 620px;
+  width: min(780px, calc(100vw - 28px));
 }
 
 .save-reminder-steps {
   margin: 12px 0 0;
   padding-left: 20px;
   line-height: 1.5;
+}
+
+.save-reminder-steps.is-unnumbered {
+  list-style: none;
+  padding-left: 0;
+}
+
+.save-reminder-substeps {
+  margin: 8px 0 0;
+  padding-left: 22px;
+  list-style: disc;
 }
 
 .save-reminder-existing-status {
