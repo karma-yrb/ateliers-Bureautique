@@ -43,6 +43,8 @@ function createAtelierController(config = {}) {
       message: document.getElementById("save-reminder-message"),
       userFolder: document.getElementById("save-reminder-user-folder"),
       fileName: document.getElementById("save-reminder-file-name"),
+      existingStatus: document.getElementById("save-reminder-existing-status"),
+      cancelBtn: document.getElementById("save-reminder-cancel-btn"),
       continueBtn: document.getElementById("save-reminder-continue-btn"),
     };
   }
@@ -212,14 +214,14 @@ function createAtelierController(config = {}) {
     }
 
     if (this.view.exerciseDocxBtn) {
-      this.view.exerciseDocxBtn.addEventListener("click", () => {
-        void this.#trackExerciseDownloadFromLink(this.view.exerciseDocxBtn);
+      this.view.exerciseDocxBtn.addEventListener("click", (event) => {
+        this.#handleExerciseDownloadClick(event, this.view.exerciseDocxBtn);
       });
     }
 
     if (this.view.exerciseDownloadBtn) {
-      this.view.exerciseDownloadBtn.addEventListener("click", () => {
-        void this.#trackExerciseDownloadFromLink(this.view.exerciseDownloadBtn);
+      this.view.exerciseDownloadBtn.addEventListener("click", (event) => {
+        this.#handleExerciseDownloadClick(event, this.view.exerciseDownloadBtn);
       });
     }
 
@@ -865,34 +867,82 @@ function createAtelierController(config = {}) {
   async #refreshExerciseWorkFileState(exerciseId, options = {}) {
     if (!this.view || !this.view.setExerciseWorkFileState) return;
     const token = ++this.exerciseWorkFileToken;
-    const folderAccessSupported = Boolean(
+    const filePickerSupported = Boolean(
       this.storage
-      && this.storage.isSupported
-      && this.storage.isSupported(),
+      && this.storage.supportsWorkFilePicker
+      && this.storage.supportsWorkFilePicker(),
     );
 
-    if (!exerciseId || !this.userSession || !folderAccessSupported) {
+    if (!exerciseId || !this.userSession || !filePickerSupported) {
       this.view.setExerciseWorkFileState({
-        pickerSupported: folderAccessSupported,
+        pickerSupported: filePickerSupported,
         openVisible: false,
-        statusText: folderAccessSupported ? "" : "Ouverture du dossier utilisateur indisponible sur ce navigateur.",
+        statusText: filePickerSupported ? "" : "S\u00e9lection du fichier indisponible sur ce navigateur.",
       });
       return;
     }
 
-    const entry = await this.storage.getSavedExerciseDownload(this.#buildWorkFileProfileKey(), exerciseId);
+    const profileKey = this.#buildWorkFileProfileKey();
+    const entry = await this.storage.getSavedExerciseDownload(profileKey, exerciseId);
+    const selectedFile = this.storage.getSavedExerciseFile
+      ? await this.storage.getSavedExerciseFile(profileKey, exerciseId)
+      : null;
     if (token !== this.exerciseWorkFileToken) return;
 
+    const fileName = selectedFile && selectedFile.fileName
+      ? selectedFile.fileName
+      : entry && entry.fileName ? entry.fileName : "";
+
     this.view.setExerciseWorkFileState({
-      pickerSupported: folderAccessSupported,
-      openVisible: Boolean(entry && entry.fileName),
-      fileName: entry && entry.fileName ? entry.fileName : "",
+      pickerSupported: filePickerSupported,
+      openVisible: Boolean(fileName),
+      fileName,
       statusText: options.statusText || "",
     });
   }
 
   async #pickWorkFileForCurrentExercise() {
-    return;
+    if (!this.isReady || !this.userSession || !this.storage) return;
+    const exerciseId = this.#getCurrentExerciseIdFromView();
+    if (!exerciseId) return;
+
+    if (!this.storage.supportsWorkFilePicker || !this.storage.supportsWorkFilePicker()) {
+      await this.#refreshExerciseWorkFileState(exerciseId, {
+        statusText: "S\u00e9lection du fichier indisponible sur ce navigateur.",
+      });
+      return;
+    }
+
+    const profileKey = this.#buildWorkFileProfileKey();
+    const expected = await this.storage.getSavedExerciseDownload(profileKey, exerciseId);
+
+    try {
+      const handle = await this.storage.pickWorkFile({
+        startIn: this.userSession.rootHandle || "downloads",
+      });
+
+      if (!handle) {
+        await this.#refreshExerciseWorkFileState(exerciseId, {
+          statusText: "S\u00e9lection du fichier annul\u00e9e.",
+        });
+        return;
+      }
+
+      await this.storage.setSavedExerciseFile(profileKey, exerciseId, handle);
+      const selectedName = handle.name || "fichier s\u00e9lectionn\u00e9";
+      const expectedName = expected && expected.fileName ? expected.fileName : "";
+      const mismatchText = expectedName && selectedName !== expectedName
+        ? ` Attention, le fichier attendu \u00e9tait ${expectedName}.`
+        : "";
+
+      await this.#refreshExerciseWorkFileState(exerciseId, {
+        statusText: `Fichier s\u00e9lectionn\u00e9 : ${selectedName}.${mismatchText}`,
+      });
+    } catch {
+      await this.#refreshExerciseWorkFileState(exerciseId, {
+        statusText: "Impossible de s\u00e9lectionner le fichier.",
+      });
+    }
   }
 
   async #openWorkFileForCurrentExercise() {
@@ -900,9 +950,9 @@ function createAtelierController(config = {}) {
     const exerciseId = this.#getCurrentExerciseIdFromView();
     if (!exerciseId) return;
 
-    if (!this.storage.isSupported || !this.storage.isSupported()) {
+    if (!this.storage.supportsWorkFilePicker || !this.storage.supportsWorkFilePicker()) {
       await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: "Ouverture du dossier utilisateur indisponible sur ce navigateur.",
+        statusText: "S\u00e9lection du fichier indisponible sur ce navigateur.",
       });
       return;
     }
@@ -911,38 +961,15 @@ function createAtelierController(config = {}) {
     const entry = await this.storage.getSavedExerciseDownload(profileKey, exerciseId);
     if (!entry || !entry.fileName) {
       await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: "Téléchargez d'abord le fichier de l'exercice, puis enregistrez-le dans votre dossier utilisateur.",
+        statusText: "T\u00e9l\u00e9chargez d'abord le fichier de l'exercice, puis s\u00e9lectionnez-le ici.",
       });
       return;
     }
 
-    try {
-      const handle = await this.storage.openUserDirectory(this.userSession.rootHandle);
-
-      if (!handle) {
-        await this.#refreshExerciseWorkFileState(exerciseId, {
-          statusText: `Dossier utilisateur prêt : ${this.userSession.rootHandle && this.userSession.rootHandle.name ? this.userSession.rootHandle.name : "dossier utilisateur"}.`,
-        });
-        return;
-      }
-
-      const ok = await this.storage.ensureDirectoryPermission(handle, "readwrite");
-      if (!ok) {
-        await this.#refreshExerciseWorkFileState(exerciseId, {
-          statusText: "Permission refusée pour ce dossier utilisateur.",
-        });
-        return;
-      }
-
-      await this.storage.touchSavedExerciseDownload(profileKey, exerciseId);
-      await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: `Dossier ouvert : ${handle.name || "dossier utilisateur"}. Cherchez ${entry.fileName}.`,
-      });
-    } catch {
-      await this.#refreshExerciseWorkFileState(exerciseId, {
-        statusText: "Impossible d'ouvrir le dossier utilisateur.",
-      });
-    }
+    await this.storage.touchSavedExerciseDownload(profileKey, exerciseId);
+    const canContinue = await this.#showWorkFilePickerReminderModal();
+    if (!canContinue) return;
+    await this.#pickWorkFileForCurrentExercise();
   }
 
   #getDownloadFileName(downloadUrl) {
@@ -955,16 +982,100 @@ function createAtelierController(config = {}) {
     }
   }
 
+  #getDownloadFileNameFromLink(linkEl) {
+    if (!linkEl) return "fichier-telecharge";
+    const suggestedName = String(linkEl.getAttribute("download") || "").trim();
+    if (suggestedName) return suggestedName;
+    return this.#getDownloadFileName(linkEl.getAttribute("href"));
+  }
+
+  async #handleExerciseDownloadClick(event, linkEl) {
+    if (event) event.preventDefault();
+    if (!linkEl) return;
+
+    const href = linkEl.getAttribute("href");
+    if (!href) return;
+
+    const fileName = this.#getDownloadFileNameFromLink(linkEl);
+    const canContinue = await this.#showDownloadReminderModal(fileName);
+    if (!canContinue) return;
+
+    await this.#trackExerciseDownloadFromLink(linkEl);
+    this.#openDownloadLink(linkEl);
+  }
+
+  #openDownloadLink(linkEl) {
+    const href = linkEl.getAttribute("href");
+    if (!href) return;
+
+    const downloadName = String(linkEl.getAttribute("download") || "").trim();
+    const target = linkEl.getAttribute("target") || "_blank";
+    const anchor = document.createElement("a");
+    anchor.href = href;
+    anchor.rel = linkEl.getAttribute("rel") || "noopener";
+    anchor.target = target;
+    if (downloadName) anchor.download = downloadName;
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+  }
+
+  #escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  async #fileExistsInDirectory(directoryHandle, fileName) {
+    if (!directoryHandle || directoryHandle.kind !== "directory" || !fileName) return null;
+    try {
+      if (this.storage && this.storage.queryDirectoryPermission) {
+        const allowed = await this.storage.queryDirectoryPermission(directoryHandle, "read");
+        if (!allowed) return null;
+      }
+      await directoryHandle.getFileHandle(fileName, { create: false });
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  async #buildDownloadExistingStatus(fileName) {
+    const folderLabel = this.#getSaveReminderFolderLabel();
+    const userFolderExists = await this.#fileExistsInDirectory(
+      this.userSession && this.userSession.rootHandle,
+      fileName,
+    );
+
+    if (userFolderExists !== true) {
+      return {
+        important: false,
+        html: "",
+      };
+    }
+
+    return {
+      important: true,
+      html: `
+        <strong>Attention</strong><br>
+        ${this.#escapeHtml(`Le fichier existe d\u00e9j\u00e0 dans votre dossier ${folderLabel}.`)}
+      `,
+    };
+  }
+
   async #trackExerciseDownloadFromLink(linkEl) {
     if (!this.isReady || !this.userSession || !this.storage || !linkEl) return;
     const exerciseId = this.#getCurrentExerciseIdFromView();
     const href = linkEl.getAttribute("href");
     if (!exerciseId || !href) return;
 
-    const fileName = this.#getDownloadFileName(href);
+    const fileName = this.#getDownloadFileNameFromLink(linkEl);
     await this.storage.setSavedExerciseDownload(this.#buildWorkFileProfileKey(), exerciseId, fileName, href);
     await this.#refreshExerciseWorkFileState(exerciseId, {
-      statusText: `Téléchargement lancé. Ouvrez le document dans ${settings.officeAppName}, cliquez sur « Activer la modification », enregistrez ${fileName} dans votre dossier utilisateur, puis cliquez sur « Ouvrir mon fichier ».`,
+      statusText: `T\u00e9l\u00e9chargement lanc\u00e9. Ouvrez le document dans ${settings.officeAppName}, cliquez sur "Activer la modification", enregistrez ${fileName} dans votre dossier utilisateur, puis cliquez sur "S\u00e9lectionner mon fichier".`,
     });
   }
 
@@ -994,12 +1105,164 @@ function createAtelierController(config = {}) {
     return this.#getNumberedSaveReminderFileName(exercise.num);
   }
 
+  #setSaveReminderContent({
+    title,
+    message,
+    steps,
+    continueLabel = "Continuer",
+    existingStatusHtml = "",
+    existingStatusImportant = false,
+    numberedSteps = true,
+  }) {
+    const modal = this.saveReminderModal.root;
+    const titleEl = modal ? modal.querySelector("#save-reminder-title") : null;
+    const stepsEl = modal ? modal.querySelector(".save-reminder-steps") : null;
+    const existingStatus = this.saveReminderModal.existingStatus;
+    const continueBtn = this.saveReminderModal.continueBtn;
+
+    if (titleEl) titleEl.textContent = title;
+    if (this.saveReminderModal.message) this.saveReminderModal.message.textContent = message;
+    if (stepsEl) {
+      stepsEl.innerHTML = steps;
+      stepsEl.classList.toggle("is-unnumbered", !numberedSteps);
+    }
+    if (existingStatus) {
+      existingStatus.hidden = !existingStatusHtml;
+      existingStatus.innerHTML = existingStatusHtml;
+      existingStatus.classList.toggle("is-important", Boolean(existingStatusImportant));
+    }
+    if (continueBtn) continueBtn.textContent = continueLabel;
+  }
+
+  async #showDownloadReminderModal(downloadFileName) {
+    const existingStatus = await this.#buildDownloadExistingStatus(downloadFileName);
+
+    return new Promise((resolve) => {
+      const modal = this.saveReminderModal.root;
+      const userFolder = this.saveReminderModal.userFolder;
+      const fileName = this.saveReminderModal.fileName;
+      const cancelBtn = this.saveReminderModal.cancelBtn;
+      const continueBtn = this.saveReminderModal.continueBtn;
+
+      if (!modal || !userFolder || !fileName || !continueBtn) {
+        resolve(true);
+        return;
+      }
+
+      const folderLabel = this.#getSaveReminderFolderLabel();
+      const cleanFileName = downloadFileName || "fichier";
+      userFolder.textContent = folderLabel;
+      fileName.textContent = cleanFileName;
+      this.#setSaveReminderContent({
+        title: "Avant de t\u00e9l\u00e9charger",
+        message: `Pensez \u00e0 enregistrer le fichier dans votre dossier ${folderLabel}.`,
+        steps: `
+          <li>Le t\u00e9l\u00e9chargement va d\u00e9marrer apr\u00e8s ce message.</li>
+          <li>Dans la fen\u00eatre d'enregistrement, choisissez votre dossier utilisateur : <code id="save-reminder-user-folder"></code>.</li>
+          <li>Conservez ou retrouvez le fichier <code id="save-reminder-file-name"></code>.</li>
+          <li>Ouvrez ensuite le fichier dans ${settings.officeAppName}.</li>
+        `,
+        continueLabel: "T\u00e9l\u00e9charger",
+        existingStatusHtml: existingStatus.html,
+        existingStatusImportant: existingStatus.important,
+      });
+
+      const nextUserFolder = modal.querySelector("#save-reminder-user-folder");
+      const nextFileName = modal.querySelector("#save-reminder-file-name");
+      if (nextUserFolder) nextUserFolder.textContent = folderLabel;
+      if (nextFileName) nextFileName.textContent = cleanFileName;
+
+      const onClose = (result) => {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+        if (cancelBtn) cancelBtn.onclick = null;
+        continueBtn.onclick = null;
+        window.removeEventListener("keydown", onKeydown);
+        resolve(result);
+      };
+
+      const onKeydown = (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          onClose(false);
+        }
+        if (event.key === "Enter") {
+          event.preventDefault();
+          onClose(true);
+        }
+      };
+
+      if (cancelBtn) cancelBtn.onclick = () => onClose(false);
+      continueBtn.onclick = () => onClose(true);
+      window.addEventListener("keydown", onKeydown);
+      modal.style.display = "flex";
+      modal.setAttribute("aria-hidden", "false");
+      continueBtn.focus();
+    });
+  }
+
+  #showWorkFilePickerReminderModal() {
+    return new Promise((resolve) => {
+      const modal = this.saveReminderModal.root;
+      const fileName = this.saveReminderModal.fileName;
+      const cancelBtn = this.saveReminderModal.cancelBtn;
+      const continueBtn = this.saveReminderModal.continueBtn;
+
+      if (!modal || !fileName || !continueBtn) {
+        resolve(true);
+        return;
+      }
+
+      fileName.textContent = "T\u00e9l\u00e9chargements";
+      this.#setSaveReminderContent({
+        title: "Avant de choisir le fichier",
+        message: "Pensez \u00e0 v\u00e9rifier dans le dossier \"T\u00e9l\u00e9chargements\" si vous ne voyez pas votre fichier ici.",
+        steps: `
+          <li>Le s\u00e9lecteur de fichier va s'ouvrir apr\u00e8s ce message.</li>
+          <li>Si le fichier n'appara\u00eet pas dans votre dossier utilisateur, regardez aussi dans <code id="save-reminder-file-name"></code>.</li>
+        `,
+        continueLabel: "Choisir le fichier",
+      });
+
+      const nextFileName = modal.querySelector("#save-reminder-file-name");
+      if (nextFileName) nextFileName.textContent = "T\u00e9l\u00e9chargements";
+
+      const onClose = (result) => {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+        if (cancelBtn) cancelBtn.onclick = null;
+        continueBtn.onclick = null;
+        window.removeEventListener("keydown", onKeydown);
+        resolve(result);
+      };
+
+      const onKeydown = (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          onClose(false);
+        }
+        if (event.key === "Enter") {
+          event.preventDefault();
+          onClose(true);
+        }
+      };
+
+      if (cancelBtn) cancelBtn.onclick = () => onClose(false);
+      continueBtn.onclick = () => onClose(true);
+      window.addEventListener("keydown", onKeydown);
+      modal.style.display = "flex";
+      modal.setAttribute("aria-hidden", "false");
+      continueBtn.focus();
+    });
+  }
+
   #showSaveReminderModal(trigger, exerciseId) {
     return new Promise((resolve) => {
       const modal = this.saveReminderModal.root;
       const message = this.saveReminderModal.message;
       const userFolder = this.saveReminderModal.userFolder;
       const fileName = this.saveReminderModal.fileName;
+      const cancelBtn = this.saveReminderModal.cancelBtn;
       const continueBtn = this.saveReminderModal.continueBtn;
 
       if (!modal || !message || !userFolder || !fileName || !continueBtn) {
@@ -1008,28 +1271,63 @@ function createAtelierController(config = {}) {
       }
 
       const folderLabel = this.#getSaveReminderFolderLabel();
+      const expectedFileName = this.#getSaveReminderFileName(exerciseId);
       userFolder.textContent = folderLabel;
-      fileName.textContent = this.#getSaveReminderFileName(exerciseId);
-      message.textContent = trigger === "done"
-        ? "Pensez à enregistrer votre travail dans votre dossier avant de marquer l'exercice comme fait."
-        : "Pensez à enregistrer votre travail dans votre dossier avant de passer à l'exercice suivant.";
+      fileName.textContent = expectedFileName;
+      const isDoneTrigger = trigger === "done";
+      const nextReminderSteps = `
+          <li><strong>Dans Word</strong><br>
+            Si vous n'avez pas d\u00e9j\u00e0 enregistrer votre fichier dans votre dossier
+            <ul class="save-reminder-substeps">
+              <li>Cliquez sur "Fichier" puis "Enregistrer sous"</li>
+              <li>Choisissez Parcourir &gt; Documents.</li>
+              <li>Puis votre dossier utilisateur : ${this.#escapeHtml(folderLabel)}.</li>
+              <li>Validez avec Enregistrer.</li>
+            </ul>
+          </li>
+          <li>Dans tout les cas terminez par cliquez sur <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer).</li>
+        `;
+      const doneReminderSteps = `
+          <li>Dans Word, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer) ou sur <strong>Fichier</strong> puis <strong>Enregistrer sous</strong>.</li>
+          <li>Choisissez votre dossier utilisateur : <code id="save-reminder-user-folder"></code>.</li>
+          <li>Nommez le fichier <code id="save-reminder-file-name"></code>, puis validez avec <strong>Enregistrer</strong>.</li>
+          <li>Dans Word, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer) si besoin.</li>
+        `;
+      this.#setSaveReminderContent({
+        title: "Vous avez termin\u00e9 ?",
+        message: isDoneTrigger
+          ? "Pensez \u00e0 enregistrer votre travail dans votre dossier avant de marquer l'exercice comme fait."
+          : "Pensez \u00e0 enregistrer votre travail dans votre dossier avant de passer \u00e0 l'exercice suivant.",
+        steps: isDoneTrigger ? doneReminderSteps : nextReminderSteps,
+        numberedSteps: isDoneTrigger,
+      });
+      const nextUserFolder = modal.querySelector("#save-reminder-user-folder");
+      const nextFileName = modal.querySelector("#save-reminder-file-name");
+      if (nextUserFolder) nextUserFolder.textContent = folderLabel;
+      if (nextFileName) nextFileName.textContent = expectedFileName;
 
-      const onClose = () => {
+      const onClose = (result) => {
         modal.style.display = "none";
         modal.setAttribute("aria-hidden", "true");
+        if (cancelBtn) cancelBtn.onclick = null;
         continueBtn.onclick = null;
         window.removeEventListener("keydown", onKeydown);
-        resolve(true);
+        resolve(result);
       };
 
       const onKeydown = (event) => {
-        if (event.key === "Escape" || event.key === "Enter") {
+        if (event.key === "Escape") {
           event.preventDefault();
-          onClose();
+          onClose(false);
+        }
+        if (event.key === "Enter") {
+          event.preventDefault();
+          onClose(true);
         }
       };
 
-      continueBtn.onclick = () => onClose();
+      if (cancelBtn) cancelBtn.onclick = () => onClose(false);
+      continueBtn.onclick = () => onClose(true);
       window.addEventListener("keydown", onKeydown);
       modal.style.display = "flex";
       modal.setAttribute("aria-hidden", "false");
