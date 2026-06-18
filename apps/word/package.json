@@ -5,6 +5,7 @@
   "description": "Atelier Word - application pedagogique en HTML/CSS/JS vanilla.",
   "type": "module",
   "scripts": {
+    "structure:data": "node scripts/structure-exercises.mjs",
     "build:data": "node scripts/build-data-js.mjs",
     "sync:app": "node scripts/sync-app.mjs",
     "repair:encoding": "node scripts/repair-encoding.mjs",

@@ -33,7 +33,8 @@
 
 - `npm run scrape:data` -> enrichit `data/exercises.enriched.json`.
 - `npm run revise:data` -> applique les vagues 1 a 3 de revision (docx/images/contenu/coherence).
-- `npm run build:data` -> regenere `data/exercises.js`.
+- `npm run structure:data` -> transforme `data/exercises.enriched.json` en `data/exercises.structured.json`.
+- `npm run build:data` -> regenere `data/exercises.js` a partir de `data/exercises.structured.json`.
 - `npm run audit:data` -> genere `logs/audit-report.json`.
 - `npm test` -> execute les tests unitaires.
 - `npm run release` / `npm run release:first` -> versioning `standard-version` (depot git requis).

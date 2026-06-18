@@ -18,6 +18,7 @@ Monorepo des ateliers bureautiques.
 Depuis la racine :
 
 - `npm run word:test`
+- `npm run word:structure:data`
 - `npm run word:build:data`
 - `npm run word:sync:app`
 - `npm run word:audit:data`

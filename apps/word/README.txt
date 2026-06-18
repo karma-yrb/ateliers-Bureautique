@@ -14,6 +14,7 @@ Structure
 - js/storage.js
 - js/app.js
 - data/exercises.enriched.json
+- data/exercises.structured.json
 - data/exercises.js
 - scripts/
 - tests/
@@ -31,7 +32,8 @@ Utilisation
 Scripts npm
 - npm run scrape:data -> enrichit data/exercises.enriched.json et les logs de scraping.
 - npm run revise:data -> applique les vagues de revision pedagogique et structurelle.
-- npm run build:data -> regenere data/exercises.js pour le navigateur.
+- npm run structure:data -> transforme data/exercises.enriched.json en data/exercises.structured.json.
+- npm run build:data -> regenere data/exercises.js pour le navigateur a partir de data/exercises.structured.json.
 - npm run audit:data -> genere logs/audit-report.json.
 - npm run repair:encoding -> corrige automatiquement les chaines en mojibake dans les donnees.
 - npm run validate:encoding -> verifie parse JSON/JS, absence BOM et absence de mojibake.
