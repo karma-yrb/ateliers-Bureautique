@@ -26,6 +26,9 @@ function createAtelierController(config = {}) {
     this.pendingPermissionSession = null;
     this.saveQueue = Promise.resolve();
     this.exerciseWorkFileToken = 0;
+    this.routeStorageKey = `atelier:last-hash:${settings.progressFileName}`;
+    this.uiStateStorageKey = `atelier:last-ui-state:${settings.progressFileName}`;
+    this.userSnapshotStorageKey = `atelier:last-user:${settings.progressFileName}`;
 
     this.userModal = {
       root: document.getElementById("user-setup-modal"),
@@ -53,11 +56,13 @@ function createAtelierController(config = {}) {
     this.#bindStaticEvents();
     this.#bindDynamicEvents();
     window.addEventListener("hashchange", () => {
+      this.#persistCurrentHash();
       if (this.isReady) this.#renderFromHash();
     });
 
     if (!window.location.hash) {
-      window.location.hash = "#home";
+      const restoredHash = this.#getPersistedHash();
+      window.location.hash = restoredHash || "#home";
     }
 
     this.#bootstrap().catch(() => {
@@ -69,6 +74,16 @@ function createAtelierController(config = {}) {
 
   async #bootstrap() {
     if (!this.storage || !this.storage.isSupported()) {
+      const snapshot = this.#getPersistedUserSnapshot();
+      if (snapshot && (snapshot.firstName || snapshot.initials)) {
+        this.view.setHeaderUser(snapshot.firstName || "", snapshot.initials || "");
+        this.view.setProgressUserPath(snapshot.folderName
+          ? `Dernier dossier connu : ${snapshot.folderName}`
+          : "Dernier dossier utilisateur connu.");
+        this.view.setProgressStatus("Sauvegarde dossier indisponible, profil local affiche.");
+        this.#renderFromHash();
+        return;
+      }
       this.view.setHeaderUser("", "");
       this.view.setProgressStatus("Ce navigateur ne permet pas la sauvegarde automatique locale (utiliser Edge/Chrome récents).");
       this.view.showPage("home");
@@ -77,6 +92,16 @@ function createAtelierController(config = {}) {
 
     const session = await this.#resolveUserSession(false, { allowPermissionPrompt: false });
     if (!session) {
+      const snapshot = this.#getPersistedUserSnapshot();
+      if (snapshot && (snapshot.firstName || snapshot.initials)) {
+        this.view.setHeaderUser(snapshot.firstName || "", snapshot.initials || "");
+        this.view.setProgressUserPath(snapshot.folderName
+          ? `Dernier dossier connu : ${snapshot.folderName}`
+          : "Dernier dossier utilisateur connu.");
+        this.view.setProgressStatus("Profil local retrouve, mais l'acces au dossier doit etre reactive.");
+        this.#renderFromHash();
+        return;
+      }
       this.view.setHeaderUser("", "");
       this.view.setProgressStatus("Aucun utilisateur configuré.");
       this.view.showPage("home");
@@ -86,7 +111,7 @@ function createAtelierController(config = {}) {
       this.pendingPermissionSession = session;
       this.view.setHeaderUser(session.firstName || "", session.initials || "");
       this.view.setProgressStatus("Accès dossier requis. Cliquez sur « Commencer maintenant » pour autoriser l'accès.");
-      this.view.showPage("home");
+      this.#renderFromHash();
       return;
     }
 
@@ -424,7 +449,104 @@ function createAtelierController(config = {}) {
     this.#renderHomePage();
   }
 
+  #persistCurrentHash() {
+    try {
+      const currentHash = String(window.location.hash || "").trim();
+      if (!currentHash) return;
+      window.localStorage.setItem(this.routeStorageKey, currentHash);
+    } catch {
+      // LocalStorage indisponible: on continue sans persistance de navigation
+    }
+  }
+
+  #getPersistedHash() {
+    try {
+      const stored = String(window.localStorage.getItem(this.routeStorageKey) || "").trim();
+      if (!stored.startsWith("#")) return "";
+      return stored;
+    } catch {
+      return "";
+    }
+  }
+
+  #persistUiState(state) {
+    try {
+      if (!state || typeof state !== "object") return;
+      window.localStorage.setItem(this.uiStateStorageKey, JSON.stringify(state));
+    } catch {
+      // LocalStorage indisponible: on continue sans persistance de vue
+    }
+  }
+
+  #getPersistedUiState() {
+    try {
+      const raw = window.localStorage.getItem(this.uiStateStorageKey);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === "object" ? parsed : null;
+    } catch {
+      return null;
+    }
+  }
+
+  #persistUserSnapshot(snapshot) {
+    try {
+      if (!snapshot || typeof snapshot !== "object") return;
+      window.localStorage.setItem(this.userSnapshotStorageKey, JSON.stringify({
+        firstName: String(snapshot.firstName || "").trim(),
+        initials: String(snapshot.initials || "").trim(),
+        folderName: String(snapshot.folderName || "").trim(),
+      }));
+    } catch {
+      // LocalStorage indisponible: on continue sans snapshot utilisateur
+    }
+  }
+
+  #getPersistedUserSnapshot() {
+    try {
+      const raw = window.localStorage.getItem(this.userSnapshotStorageKey);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === "object"
+        ? {
+            firstName: String(parsed.firstName || "").trim(),
+            initials: String(parsed.initials || "").trim(),
+            folderName: String(parsed.folderName || "").trim(),
+          }
+        : null;
+    } catch {
+      return null;
+    }
+  }
+
+  #buildFallbackHashFromUiState() {
+    const state = this.#getPersistedUiState();
+    if (!state) return "";
+
+    if (state.page === "exercise" && state.exerciseId) {
+      const exercise = this.model.getExerciseById(state.exerciseId);
+      if (exercise) return `#exercise/${exercise.id}`;
+    }
+
+    if (state.page === "affinity" && state.affinityId) {
+      if (state.themeId) {
+        const theme = this.model.getThemeById(state.themeId);
+        if (theme && this.model.getAffinityIdForTheme(theme.id) === state.affinityId) {
+          return `#affinity/${state.affinityId}/${theme.id}`;
+        }
+      }
+      return `#affinity/${state.affinityId}`;
+    }
+
+    if (state.page === "themes" || state.page === "progress" || state.page === "profile" || state.page === "home") {
+      return `#${state.page}`;
+    }
+
+    return "";
+  }
+
   #renderHomePage() {
+    this.#persistUiState({ page: "home" });
     this.view.showPage("home");
     const summary = this.model.getSummary();
     const lastExercise = this.model.getLastExercise();
@@ -468,6 +590,7 @@ function createAtelierController(config = {}) {
   }
 
   #renderThemesOverview() {
+    this.#persistUiState({ page: "themes" });
     this.view.showPage("themes");
     const groups = this.model.getThemeAffinityGroups().map((group) => {
       const totalExercises = group.themes.reduce(
@@ -539,6 +662,11 @@ function createAtelierController(config = {}) {
       };
     });
 
+    this.#persistUiState({
+      page: "affinity",
+      affinityId: affinity.id,
+      themeId: this.currentThemeId || "",
+    });
     this.view.showPage("affinity");
     this.view.renderAffinityPage({
       affinity: {
@@ -562,6 +690,12 @@ function createAtelierController(config = {}) {
     }
     this.currentThemeId = exercise.moduleId;
     this.currentAffinityId = this.model.getAffinityIdForTheme(exercise.moduleId) || this.currentAffinityId;
+    this.#persistUiState({
+      page: "exercise",
+      exerciseId: exercise.id,
+      affinityId: this.currentAffinityId || "",
+      themeId: this.currentThemeId || "",
+    });
     if (this.model.markExerciseOpened(exercise.id)) {
       this.#saveProgress();
     }
@@ -591,6 +725,7 @@ function createAtelierController(config = {}) {
   }
 
   #renderProgressPage() {
+    this.#persistUiState({ page: "progress" });
     this.view.showPage("progress");
     const summary = this.model.getSummary();
     const curveSeries = this.model.getCurveSeries(30);
@@ -600,6 +735,7 @@ function createAtelierController(config = {}) {
   // FIX 2 — Page Profil : affiche les infos utilisateur et permet de modifier le prénom inline.
   // Prérequis HTML : <div id="profile-user-section"></div> dans #page-profile.
   #renderProfilePage() {
+    this.#persistUiState({ page: "profile" });
     this.view.showPage("profile");
     if (!this.userSession) return;
 
@@ -698,7 +834,20 @@ function createAtelierController(config = {}) {
   }
 
   async #resumePendingSessionFromUserGesture() {
-    if (!this.pendingPermissionSession || !this.pendingPermissionSession.rootHandle) return false;
+    if (!this.pendingPermissionSession) return false;
+    if (!this.pendingPermissionSession.rootHandle) {
+      this.pendingPermissionSession = null;
+      const session = await this.#resolveUserSession(true, { allowPermissionPrompt: true });
+      if (!session) {
+        this.view.setProgressStatus("Configuration utilisateur annulee.");
+        return false;
+      }
+      this.userSession = session;
+      await this.#loadProgressForSession(session);
+      this.isReady = true;
+      this.#renderFromHash();
+      return true;
+    }
 
     const pending = this.pendingPermissionSession;
     let selectedHandle = pending.rootHandle;
@@ -760,6 +909,23 @@ function createAtelierController(config = {}) {
       rootHandle = await this.storage.getSavedRootHandle();
       initials = this.storage.normalizeInitials(await this.storage.getSavedInitials());
       firstName = this.storage.normalizeFirstName(await this.storage.getSavedFirstName());
+      const snapshot = this.#getPersistedUserSnapshot();
+      if (!firstName && snapshot && snapshot.firstName) {
+        firstName = this.storage.normalizeFirstName(snapshot.firstName);
+      }
+      if (!initials && snapshot && snapshot.initials) {
+        initials = this.storage.normalizeInitials(snapshot.initials);
+      }
+
+      if (!rootHandle && savedWorkFolders.length) {
+        const orderedFolders = [...savedWorkFolders].sort((a, b) => {
+          const left = Date.parse(a.lastUsedAt || "") || 0;
+          const right = Date.parse(b.lastUsedAt || "") || 0;
+          return right - left;
+        });
+        rootHandle = orderedFolders[0].handle || null;
+      }
+
       if (rootHandle) {
         let ok = allowPermissionPrompt
           ? await this.storage.ensureWritePermission(rootHandle)
@@ -803,6 +969,15 @@ function createAtelierController(config = {}) {
       if (rootHandle && !initials) {
         initials = this.#deriveInitials(rootHandle, "");
       }
+
+      if (!rootHandle && (firstName || initials)) {
+        return {
+          rootHandle: null,
+          initials: initials || "USER",
+          firstName,
+          permissionRequired: true,
+        };
+      }
     }
 
     if (forcePrompt || !rootHandle || !firstName) {
@@ -821,6 +996,11 @@ function createAtelierController(config = {}) {
     await this.storage.setSavedRootHandle(rootHandle);
     await this.storage.setSavedInitials(initials);
     await this.storage.setSavedFirstName(firstName);
+    this.#persistUserSnapshot({
+      firstName,
+      initials,
+      folderName: rootHandle && rootHandle.name ? rootHandle.name : "",
+    });
 
     return { rootHandle, initials, firstName, permissionRequired: false };
   }
@@ -839,6 +1019,19 @@ function createAtelierController(config = {}) {
     this.view.setHeaderUser(session.firstName, session.initials);
     const rootName = session.rootHandle && session.rootHandle.name ? session.rootHandle.name : "Dossier choisi";
     this.view.setProgressUserPath(`Fichier: ${rootName} > ProgressionAtelier > ${settings.progressFileName}`);
+    this.#persistUserSnapshot({
+      firstName: session.firstName,
+      initials: session.initials,
+      folderName: rootName,
+    });
+
+    const currentHash = String(window.location.hash || "").trim();
+    if (!currentHash || currentHash === "#home") {
+      const fallbackHash = this.#buildFallbackHashFromUiState();
+      if (fallbackHash && fallbackHash !== currentHash) {
+        window.location.hash = fallbackHash;
+      }
+    }
   }
 
   #saveProgress() {
