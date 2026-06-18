@@ -1,7 +1,60 @@
 window.RELEASES_DATA = {
-  "version": "1.4.6",
-  "updatedAt": "2026-06-18T13:37:42.981Z",
+  "version": "1.4.7",
+  "updatedAt": "2026-06-18T14:08:12.679Z",
   "releases": [
+    {
+      "version": "1.4.7",
+      "tag": "word-v1.4.7",
+      "date": "2026-06-18",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "4cce10e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "simplify user switch profile selection",
+          "breaking": false,
+          "hash": "2f45461"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "render exercise descriptions and criteria",
+          "breaking": false,
+          "hash": "22dd260"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 1,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 3
+      }
+    },
     {
       "version": "1.4.6",
       "tag": "word-v1.4.6",

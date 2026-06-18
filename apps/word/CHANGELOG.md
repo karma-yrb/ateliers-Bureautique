@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.7](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.4.6...word-v1.4.7) (2026-06-18)
+
+
+### Bug Fixes
+
+* **word:** render exercise descriptions and criteria ([22dd260](https://github.com/karma-yrb/ateliers-Bureautique/commit/22dd260d938d74a2001a92b91e5a3649a1d505a5))
+* **word:** simplify user switch profile selection ([2f45461](https://github.com/karma-yrb/ateliers-Bureautique/commit/2f454611c84b01ab31d9748a74c672d070ebd4bf))
+
 ### [1.4.6](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.4.5...word-v1.4.6) (2026-06-18)
 
 ### [1.4.5](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.4.4...word-v1.4.5) (2026-06-18)
