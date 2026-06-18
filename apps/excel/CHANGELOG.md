@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.3...excel-v0.1.4) (2026-06-18)
+
+
+### Bug Fixes
+
+* **word:** render exercise descriptions and criteria ([22dd260](https://github.com/karma-yrb/ateliers-Bureautique/commit/22dd260d938d74a2001a92b91e5a3649a1d505a5))
+* **word:** simplify user switch profile selection ([2f45461](https://github.com/karma-yrb/ateliers-Bureautique/commit/2f454611c84b01ab31d9748a74c672d070ebd4bf))
+
 ### [0.1.3](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.2...excel-v0.1.3) (2026-06-18)
 
 ### [0.1.2](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.1...excel-v0.1.2) (2026-06-17)

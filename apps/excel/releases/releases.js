@@ -1,7 +1,116 @@
 window.RELEASES_DATA = {
-  "version": "0.1.3",
-  "updatedAt": "2026-06-18T09:52:32.953Z",
+  "version": "0.1.4",
+  "updatedAt": "2026-06-18T14:08:19.975Z",
   "releases": [
+    {
+      "version": "0.1.4",
+      "tag": "excel-v0.1.4",
+      "date": "2026-06-18",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.7",
+          "breaking": false,
+          "hash": "50f20a2"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "4cce10e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "simplify user switch profile selection",
+          "breaking": false,
+          "hash": "2f45461"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "render exercise descriptions and criteria",
+          "breaking": false,
+          "hash": "22dd260"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.6",
+          "breaking": false,
+          "hash": "6c22826"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare release",
+          "breaking": false,
+          "hash": "9639176"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.5",
+          "breaking": false,
+          "hash": "a74ae52"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare release",
+          "breaking": false,
+          "hash": "cc94805"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.4",
+          "breaking": false,
+          "hash": "f8bb876"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare release",
+          "breaking": false,
+          "hash": "59cceff"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 8,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 10
+      }
+    },
     {
       "version": "0.1.3",
       "tag": "excel-v0.1.3",
