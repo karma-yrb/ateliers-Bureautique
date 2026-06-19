@@ -390,12 +390,11 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/ex-003-tuto.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/exo-02-resultat.jpg",
-      "description": "Vos onglets ressemblent à ceci :",
+      "description": "Vos onglets ressemblent aux onglets de l'image ci-dessous. Faites les manipulations nécessaires pour qu'ils ressemblent à l'image de résultat attendu. Vous pouvez ajouter d'autres onglets en cochant les options qui vous sont utiles.",
       "consignes": [],
       "instructions": [
-        "Faites les manipulations nécessaires pour qu'ils ressemblent à ceci : .",
-        "Pour réaliser cette opération le menu est fichier-->Options-->Personnaliser le ruban.",
-        "Vous manipulez ensuite en cliqué-Glissé."
+        "Pour réaliser cette opération le menu est fichier > Options > Personnaliser le ruban.",
+        "Vous manipulez ensuite en Cliqué-Glissé."
       ],
       "scrape": {
         "ok": true,
@@ -413,7 +412,7 @@
         ],
         "resultImages": []
       },
-      "preamble": "Vos onglets ressemblent à ceci : .",
+      "preamble": "Faites les manipulations nécessaires pour qu'ils ressemblent à l'image de résultat attendu. Vous pouvez ajouter d'autres onglets en cochant les options qui vous sont utiles.",
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
@@ -439,13 +438,13 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-001/ex-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-001/ex-01.jpg",
-      "description": "Comme dans l'exemple ci-dessous sous, vous créez un dossier \"Europe\" sur le bureau, puis un sous dossier \"france\" à l'intérieur. Dans le dossier France, vous enregistrez un document Word au trois formats présentés",
+      "description": "Dans l'exemple ci-dessous sous, vous créez un dossier \"Europe\" sur le bureau, puis un sous dossier \"France\" à l'intérieur. avec un document Word en 3 formats",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Comme dans l'exemple ci-dessous sous, vous créez un dossier \"Europe\" sur le bureau, puis.",
-        "Appliquez les réglages Word utiles (Accueil, Insertion, Mise en page) pour obtenir le rendu attendu.",
-        "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme terminé."
+        "Créez un dossier \"Europe\" sur le bureau.",
+        "Puis un dossier \"France\".",
+        "Dans France, créez un document Word en 3 formats : .doc, .docx et .pdf.",
+        "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts."
       ],
       "scrape": {
         "ok": true,
@@ -484,10 +483,10 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-010/ex-010.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-002/ex-002.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-002/ex-002.jpg",
-      "description": "Comment utiliser les modèle disponible avec votre logiciel via \"Microsoft\"",
+      "description": "Comment utiliser les modèle disponible avec via \"Microsoft Word\"",
       "consignes": [],
       "instructions": [
-        "Une fois votre logiciel ouvert, vous choisissez un nouveau document, puis dans la rubrique \"Professionnel\", trouvez un modèle de CV.",
+        "Une fois votre logiciel ouvert, Cliquer sur \"Nouveau\"", "Sur la ligne \"recherche suggérées\" choisir \"Professionnel\" et trouvez un modèle de CV.",
         "En fonction de la version de votre logiciel, vous aurez des choix différents."
       ],
       "scrape": {
