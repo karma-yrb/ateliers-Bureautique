@@ -1,7 +1,52 @@
 {
-  "version": "1.5.4",
-  "updatedAt": "2026-06-19T10:54:27.478Z",
+  "version": "1.5.5",
+  "updatedAt": "2026-06-19T11:01:02.515Z",
   "releases": [
+    {
+      "version": "1.5.5",
+      "tag": "word-v1.5.5",
+      "date": "2026-06-19",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version de maintenance.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "77a8b66"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.6",
+          "breaking": false,
+          "hash": "0984be2"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 2,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 2
+      }
+    },
     {
       "version": "1.5.4",
       "tag": "word-v1.5.4",
