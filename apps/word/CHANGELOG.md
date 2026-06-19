@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.6](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.5.5...word-v1.5.6) (2026-06-19)
+
+
+### Bug Fixes
+
+* **excel:** normalize work file download names ([1e0042c](https://github.com/karma-yrb/ateliers-Bureautique/commit/1e0042c237ba6c314d2ab42cae320908b32457de))
+
 ### [1.5.5](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.5.4...word-v1.5.5) (2026-06-19)
 
 ### [1.5.4](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.5.3...word-v1.5.4) (2026-06-19)
