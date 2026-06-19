@@ -1031,8 +1031,9 @@ select {
 
 .image-stack {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 8px;
-  justify-items: center;
+  align-items: start;
 }
 
 .image-thumb {
@@ -1041,24 +1042,53 @@ select {
   background: #fff;
   padding: 0;
   cursor: zoom-in;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .image-thumb img {
-  width: auto;
-  max-width: min(100%, 320px);
+  width: 100%;
+  max-width: none;
   max-height: 220px;
   height: auto;
   object-fit: contain;
   display: block;
 }
 
+.image-thumb-count {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  min-width: 44px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(34, 53, 78, 0.88);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-align: center;
+  pointer-events: none;
+}
+
+.image-thumb-caption {
+  display: block;
+  padding: 8px 10px 10px;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: #445463;
+  text-align: left;
+  background: #fff;
+}
+
 .result-card {
   display: grid;
-  justify-items: center;
+  justify-items: stretch;
 }
 
 .result-card .image-thumb img {
-  max-width: min(100%, 340px);
+  max-width: none;
   max-height: 240px;
 }
 

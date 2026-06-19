@@ -583,13 +583,39 @@
 
 .image-thumb img {
   display: block;
-  width: auto;
-  max-width: min(100%, 320px);
+  width: 100%;
+  max-width: none;
   max-height: 220px;
   height: auto;
   object-fit: contain;
   transition: transform 0.2s ease;
   border-radius: 6px;
+}
+
+.image-thumb-count {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  min-width: 44px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(19, 50, 41, 0.88);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-align: center;
+  pointer-events: none;
+}
+
+.image-thumb-caption {
+  display: block;
+  padding: 8px 10px 10px;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: #20433a;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.96);
 }
 
 .image-thumb:hover img { transform: scale(1.03); }
