@@ -1,7 +1,60 @@
 {
-  "version": "0.1.7",
-  "updatedAt": "2026-06-19T11:01:08.633Z",
+  "version": "0.1.8",
+  "updatedAt": "2026-06-19T12:10:37.213Z",
   "releases": [
+    {
+      "version": "0.1.8",
+      "tag": "excel-v0.1.8",
+      "date": "2026-06-19",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.6",
+          "breaking": false,
+          "hash": "7a412a9"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "58e43be"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel",
+          "description": "normalize work file download names",
+          "breaking": false,
+          "hash": "1e0042c"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 2,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 3
+      }
+    },
     {
       "version": "0.1.7",
       "tag": "excel-v0.1.7",

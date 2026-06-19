@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.7...excel-v0.1.8) (2026-06-19)
+
+
+### Bug Fixes
+
+* **excel:** normalize work file download names ([1e0042c](https://github.com/karma-yrb/ateliers-Bureautique/commit/1e0042c237ba6c314d2ab42cae320908b32457de))
+
 ### [0.1.7](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.6...excel-v0.1.7) (2026-06-19)
 
 ### [0.1.6](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.5...excel-v0.1.6) (2026-06-19)
