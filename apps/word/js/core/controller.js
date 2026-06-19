@@ -1170,21 +1170,36 @@ function createAtelierController(config = {}) {
     await this.#pickWorkFileForCurrentExercise();
   }
 
-  #getDownloadFileName(downloadUrl) {
+  #getCanonicalExerciseDownloadFileName(exerciseId, downloadUrl) {
+    const exercise = exerciseId ? this.model.getExerciseById(exerciseId) : null;
+    const exerciseNumber = Number(exercise && exercise.num);
+    const exerciseFileStem = Number.isFinite(exerciseNumber) && exerciseNumber > 0
+      ? `ex-${String(exerciseNumber).padStart(3, "0")}`
+      : String(exerciseId || "")
+        .trim()
+        .toLowerCase()
+        .replace(/^excel-ex-(\d{1,3})$/, (_match, value) => `ex-${String(value).padStart(3, "0")}`)
+        .replace(/^ex-(\d{1,3})$/, (_match, value) => `ex-${String(value).padStart(3, "0")}`)
+        .replace(/[^a-z0-9_-]+/g, "-")
+        .replace(/^-+|-+$/g, "") || "fichier-telecharge";
+    let extension = "";
+
     try {
       const parsed = new URL(String(downloadUrl || ""), window.location.href);
-      const lastSegment = parsed.pathname.split("/").filter(Boolean).pop() || "";
-      return decodeURIComponent(lastSegment) || "fichier-telecharge";
+      const lastSegment = decodeURIComponent(parsed.pathname.split("/").filter(Boolean).pop() || "");
+      const extensionMatch = lastSegment.match(/\.[a-z0-9]{2,8}$/i);
+      if (extensionMatch) extension = extensionMatch[0].toLowerCase();
     } catch {
-      return "fichier-telecharge";
+      // conserve l'extension vide si l'URL est invalide
     }
+
+    return `${exerciseFileStem}${extension}`;
   }
 
   #getDownloadFileNameFromLink(linkEl) {
     if (!linkEl) return "fichier-telecharge";
-    const suggestedName = String(linkEl.getAttribute("download") || "").trim();
-    if (suggestedName) return suggestedName;
-    return this.#getDownloadFileName(linkEl.getAttribute("href"));
+    const exerciseId = this.#getCurrentExerciseIdFromView();
+    return this.#getCanonicalExerciseDownloadFileName(exerciseId, linkEl.getAttribute("href"));
   }
 
   async #handleExerciseDownloadClick(event, linkEl) {
@@ -1206,7 +1221,7 @@ function createAtelierController(config = {}) {
     const href = linkEl.getAttribute("href");
     if (!href) return;
 
-    const downloadName = String(linkEl.getAttribute("download") || "").trim();
+    const downloadName = this.#getDownloadFileNameFromLink(linkEl);
     const target = linkEl.getAttribute("target") || "_blank";
     const anchor = document.createElement("a");
     anchor.href = href;
