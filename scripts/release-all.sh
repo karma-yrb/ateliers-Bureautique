@@ -1,19 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+source "$(dirname "$0")/release-lib.sh"
+
 COMMIT_MESSAGE="${RELEASE_COMMIT_MESSAGE:-chore: prepare monorepo release}"
 
-if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-  echo "[release:all] ERREUR: ce dossier n'est pas un depot Git."
-  echo "[release:all] Ouvre le dossier clone du depot, ou initialise Git avant de publier."
-  exit 1
-fi
-
-CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-if [[ "$CURRENT_BRANCH" != "main" ]]; then
-  echo "[release:all] ERREUR: pas sur main (branche actuelle: $CURRENT_BRANCH)"
-  exit 1
-fi
+ensure_git_on_main
 
 npm run word:test
 npm run excel:test
@@ -26,8 +18,33 @@ if [[ -n "$(git status --porcelain)" ]]; then
   git commit -m "$COMMIT_MESSAGE"
 fi
 
-npm run word:release
-npm run excel:release
+word_release_needed=false
+excel_release_needed=false
+
+if release_needed "word-v" "apps/word" "packages/atelier-core"; then
+  word_release_needed=true
+fi
+
+if release_needed "excel-v" "apps/excel" "packages/atelier-core"; then
+  excel_release_needed=true
+fi
+
+if [[ "$word_release_needed" == true ]]; then
+  npm run word:release
+else
+  echo "[release:all] Aucun changement a publier pour Word."
+fi
+
+if [[ "$excel_release_needed" == true ]]; then
+  npm run excel:release
+else
+  echo "[release:all] Aucun changement a publier pour Excel."
+fi
+
+if [[ "$word_release_needed" == false && "$excel_release_needed" == false ]]; then
+  echo "[release:all] Aucun bump de version necessaire."
+  exit 0
+fi
 
 git push --follow-tags
 
