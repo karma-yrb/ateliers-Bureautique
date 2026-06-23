@@ -1,7 +1,132 @@
 window.RELEASES_DATA = {
-  "version": "0.1.8",
-  "updatedAt": "2026-06-19T12:10:37.213Z",
+  "version": "0.1.9",
+  "updatedAt": "2026-06-23T14:20:28.067Z",
   "releases": [
+    {
+      "version": "0.1.9",
+      "tag": "excel-v0.1.9",
+      "date": "2026-06-23",
+      "releaseType": "patch",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalités ou changements techniques structurants."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.8",
+          "breaking": false,
+          "hash": "903bf8f"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "16c74bc"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel",
+          "description": "align exercise schema and normalize encoding",
+          "breaking": false,
+          "hash": "7375b9b"
+        },
+        {
+          "type": "refactor",
+          "typeLabel": "Refactoring",
+          "scope": "excel",
+          "description": "align structured exercise source with word workflow",
+          "breaking": false,
+          "hash": "2c500c4"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare release",
+          "breaking": false,
+          "hash": "2e63ca1"
+        },
+        {
+          "type": "test",
+          "typeLabel": "Test",
+          "scope": "word",
+          "description": "stabilize visuals model assertions",
+          "breaking": false,
+          "hash": "d973a30"
+        },
+        {
+          "type": "test",
+          "typeLabel": "Test",
+          "scope": "word",
+          "description": "update visuals model expectations",
+          "breaking": false,
+          "hash": "7a68a97"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "support multi-image exercise visuals",
+          "breaking": false,
+          "hash": "b29e104"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.7",
+          "breaking": false,
+          "hash": "eb878aa"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "5cd59cd"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare release",
+          "breaking": false,
+          "hash": "9a5a57e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare release",
+          "breaking": false,
+          "hash": "7934eea"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 1,
+        "docs": 0,
+        "test": 2,
+        "chore": 7,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 12
+      }
+    },
     {
       "version": "0.1.8",
       "tag": "excel-v0.1.8",
