@@ -96,7 +96,7 @@ test("single image is treated as expected result when result image is missing", 
   const exercise = model.getExerciseById("ex-001");
   const visuals = model.getVisualsForExercise(exercise);
   assert.deepEqual(Array.from(visuals.enonceImages), []);
-  assert.deepEqual(Array.from(visuals.resultImages), ["https://img/ex1.jpg"]);
+  assert.equal(JSON.stringify(Array.from(visuals.resultImages)), JSON.stringify([{ src: "https://img/ex1.jpg", caption: "" }]));
 });
 
 test("importProgressObject sanitizes invalid exercise ids", () => {

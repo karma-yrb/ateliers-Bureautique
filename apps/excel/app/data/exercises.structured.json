@@ -422,8 +422,8 @@
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-001/ex-001.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-002/ex-002.jpg",
+      "imageEnonce": null,
+      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-001/ex-001.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Prise en main Excel",
@@ -444,7 +444,7 @@
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-002/ex-002.jpg"
+          "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-001/ex-001.jpg"
         ]
       },
       "section": "bases",
@@ -486,7 +486,7 @@
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-001/competence-02-ex-011.jpg",
+      "imageEnonce": null,
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -504,7 +504,11 @@
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-001/competence-02-ex-011.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-001/competence-02-ex-012.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-001/competence-02-ex-013.jpg"
+        ]
       },
       "section": "bases",
       "moduleSlug": "prise-en-main",
