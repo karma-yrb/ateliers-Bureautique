@@ -504,7 +504,17 @@ class AtelierView {
     const existingEmpty = figure.querySelector(".image-empty");
     if (existingEmpty) existingEmpty.remove();
 
-    const unique = [...new Set((images || []).filter(Boolean))];
+    const unique = [];
+    const seen = new Set();
+    for (const item of images || []) {
+      const src = typeof item === "string" ? item : item && item.src;
+      if (!src || seen.has(src)) continue;
+      seen.add(src);
+      unique.push({
+        src,
+        caption: typeof item === "object" && item ? String(item.caption || "") : "",
+      });
+    }
     if (!unique.length) {
       containerEl.innerHTML = "";
       figure.classList.remove("empty");
@@ -516,9 +526,9 @@ class AtelierView {
     figure.classList.remove("empty");
     containerEl.innerHTML = unique
       .map(
-        (src, idx) => `
-        <button class="image-thumb" type="button" data-zoom-src="${escapeHtml(src)}" title="Cliquer pour agrandir">
-          <img src="${escapeHtml(src)}" alt="${escapeHtml(altPrefix)} ${idx + 1}">
+        (image, idx) => `
+        <button class="image-thumb" type="button" data-zoom-src="${escapeHtml(image.src)}" title="Cliquer pour agrandir">
+          <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption || `${altPrefix} ${idx + 1}`)}">
           <span class="image-thumb-hint">🔍 Cliquer pour agrandir</span>
         </button>
       `,

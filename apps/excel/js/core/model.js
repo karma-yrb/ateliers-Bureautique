@@ -19,6 +19,22 @@ function uniqueStrings(items) {
   return [...new Set(items.filter((v) => typeof v === "string" && v.trim()))];
 }
 
+function uniqueImageObjects(items) {
+  if (!Array.isArray(items)) return [];
+  const seen = new Set();
+  const out = [];
+  for (const item of items) {
+    const src = typeof item === "string" ? item.trim() : String(item && item.src || "").trim();
+    if (!src || seen.has(src)) continue;
+    seen.add(src);
+    out.push({
+      src,
+      caption: typeof item === "object" && item ? cleanText(item.caption || "") : "",
+    });
+  }
+  return out;
+}
+
 function cleanText(value) {
   return String(value || "")
     .replace(/^[^\p{L}\p{N}]+/u, "")
@@ -421,10 +437,12 @@ class AtelierModel {
     }
 
     const hasScrapeVisuals = scrapeEnonceImages.length > 0 || scrapeResultImages.length > 0;
-    const enonceImages = hasScrapeVisuals ? (scrapeEnonceImages.length ? scrapeEnonceImages : fallbackEnonceImages) : fallbackEnonceImages;
-    const resultImages = hasScrapeVisuals ? (scrapeResultImages.length ? scrapeResultImages : fallbackResultImages) : fallbackResultImages;
+    const enonceImagesRaw = hasScrapeVisuals ? (scrapeEnonceImages.length ? scrapeEnonceImages : fallbackEnonceImages) : fallbackEnonceImages;
+    const resultImagesRaw = hasScrapeVisuals ? (scrapeResultImages.length ? scrapeResultImages : fallbackResultImages) : fallbackResultImages;
+    const enonceImages = uniqueImageObjects(enonceImagesRaw.map((src) => ({ src, caption: exercise.imageEnonceCaption || "" })));
+    const resultImages = uniqueImageObjects(resultImagesRaw.map((src) => ({ src, caption: exercise.imageResultatCaption || "" })));
 
-    const used = new Set([...enonceImages, ...resultImages]);
+    const used = new Set([...enonceImages, ...resultImages].map((image) => image.src));
     const extraImages = uniqueStrings(exercise.extraImages).filter((url) => !used.has(url));
     return { enonceImages, resultImages, extraImages };
   }
