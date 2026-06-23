@@ -421,11 +421,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/interface-excel/exercice-1.html",
       "docxUrl": null,
       "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadLabel": null,
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-001/ex-001.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Prise en main Excel",
       "preamble": "",
       "instructions": [
@@ -444,7 +444,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-001/ex-001.jpg"
+          "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-001/ex-001.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-002/ex-002.jpg"
         ]
       },
       "section": "bases",
@@ -471,7 +472,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraImages": [],
+      "extraDownloadUrls": []
     },
     {
       "id": "excel-ex-002",
@@ -484,8 +487,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/interface-excel/exercice-2.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": null,
       "imageResultat": null,
       "imageEnonceCaption": "",
@@ -539,11 +542,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/interface-excel/exercice-3.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-01/ex-telecharger.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-01/figer-ligne.jpg",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Gérer l'affichage du classeur",
       "preamble": "",
       "instructions": [
@@ -558,7 +561,14 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-01/figer-ligne.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-02/figer-colonne.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-03/fractionner.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-04/zoom-180.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-05/mode-mise-en-page.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-05/mode-saut-de-page.jpg"
+        ]
       },
       "section": "bases",
       "moduleSlug": "prise-en-main",
@@ -575,7 +585,9 @@ window.EXCEL_ATELIER_DATA = {
         "T éléchargez ce fichier, il sera valable pour les exercices de cette série.",
         "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-004",
@@ -588,8 +600,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/interface-excel/exercice-4.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-06/ex-006.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/ex-003.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-06/ex-006-solution.jpg",
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-06/ex-006-solution.jpg",
       "imageEnonceCaption": "",
@@ -641,11 +653,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/saisir-des-donnees/exercice-1.html",
       "docxUrl": null,
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/ex-002-01.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/003-resultat.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Saisir des données dans Excel",
       "preamble": "",
       "instructions": [
@@ -663,7 +675,14 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/ex-002-02.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/ex-002-01.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/serie-3-signes.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/ex-002-resultat.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/003-initiale.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/003-resultat.jpg"
+        ]
       },
       "section": "bases",
       "moduleSlug": "saisir-des-donnees",
@@ -689,7 +708,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraImages": [],
+      "extraDownloadUrls": []
     },
     {
       "id": "excel-ex-006",
@@ -702,8 +723,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/saisir-des-donnees/exercice-2.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-04/exo-04-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-04/exo-04-resultat.jpg",
       "imageEnonceCaption": "",
@@ -766,8 +787,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/saisir-des-donnees/exercice-3.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003.gif",
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003.gif",
       "imageEnonceCaption": "",
@@ -822,8 +843,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/saisir-des-donnees/exercice-4.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-33/ex-001/ex-001.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-005/ex-005.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-33/ex-001/ex-001.gif",
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-33/ex-001/ex-001-solution.gif",
       "imageEnonceCaption": "",
@@ -896,8 +917,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-1.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-002/ex-02.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
@@ -952,8 +973,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-2.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-003/ex-03.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
@@ -1004,8 +1025,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-3.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008.zip",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-04/ex-04.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
@@ -1068,8 +1089,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-4.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-04/ex-04-telecharger.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex1/base-tcd-1.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-04/exo-04-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-04/exo-04-resultat.jpg",
       "imageEnonceCaption": "",
@@ -1132,8 +1153,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-5.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/icone.zip",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-005/ex-005-selection-non-contigu.gif",
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-005/ex-005-selection-non-contigu.gif",
       "imageEnonceCaption": "",
@@ -1184,8 +1205,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-1.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/cas-fiche-intervention-tutore.xlsx",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-001/exo-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-001/exo-01.jpg",
       "imageEnonceCaption": "",
@@ -1248,8 +1269,8 @@ window.EXCEL_ATELIER_DATA = {
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-2.html",
       "docxUrl": null,
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/images.zip",
+      "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-002/ex-002.webp",
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-002/ex-002.webp",
       "imageEnonceCaption": "",
@@ -1607,11 +1628,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-8.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-05.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-2.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-1.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Mise en forme tableau (révision complète)",
       "preamble": "",
       "instructions": [
@@ -1626,7 +1647,13 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-1.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-2.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-3.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-4.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-5.gif"
+        ]
       },
       "section": "bases",
       "moduleSlug": "mise-en-forme",
@@ -1643,7 +1670,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-022",
@@ -1720,12 +1749,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-1.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/ex-01-telechargez.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/ex-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/ex-01-resultat.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/drapeau-exo.zip",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Insérer simplement des images ou icônes dans Excel via le menu \"Insertion\"-->Image",
       "preamble": "",
       "instructions": [
@@ -1740,10 +1769,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/ex-01.jpg"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/ex-01.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/ex-01-resultat.jpg"
         ]
       },
@@ -1765,7 +1793,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous téléchargez les drapeaux des pays ici (fichier zip à décompresser avant toute utilisation).",
         "Vous insérez les images dans les bonnes cellules. Vous ajustez la largeur des colonnes."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-024",
@@ -1778,12 +1808,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-2.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/images.zip",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-1-arriere-plan.webp",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/ex-02-telechargez.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Intégrer des illustrations, filigrane, pied de page et smart-art",
       "preamble": "",
       "instructions": [
@@ -1798,7 +1828,11 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-1-arriere-plan.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-2-entete-1.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-2-entete-3.webp"
+        ]
       },
       "section": "bases",
       "moduleSlug": "integrer-une-image",
@@ -1815,7 +1849,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous téléchargez le fichier et les visuels ci-contre.",
         "Consignes :."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-025",
@@ -1885,11 +1921,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-4.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04.zip",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04-03.jpg",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Intégrer des illustrations via SMART-ART",
       "preamble": "",
       "instructions": [
@@ -1907,7 +1943,13 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/smart-art-01.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04-01.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/smart-art-02.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04-02.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04-03.jpg"
+        ]
       },
       "section": "bases",
       "moduleSlug": "integrer-une-image",
@@ -1933,7 +1975,9 @@ window.EXCEL_ATELIER_DATA = {
         "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-027",
@@ -2032,12 +2076,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-6.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-006/ex-006.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-006/image-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-006/ex-006.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-006/voitures.zip",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Outils de mise en forme d'image",
       "preamble": "",
       "instructions": [
@@ -2056,6 +2100,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-006/image-01.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-006/ex-006.jpg"
         ]
       },
@@ -2083,7 +2128,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-029",
@@ -2867,12 +2914,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-3-addition.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-001/ex-003.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-003/ex-003.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-003/ex-003-solution.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-003/ex-003.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Addition",
       "preamble": "",
       "instructions": [
@@ -2890,10 +2937,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-003/ex-003.gif"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-003/ex-003.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-003/ex-003-solution.gif"
         ]
       },
@@ -2924,7 +2970,9 @@ window.EXCEL_ATELIER_DATA = {
         "Pour les titres de colonnes Format cellules alignements vertical et horizontal centrés pour les libellés de la colonne A utilisé les icônes d'alignement du texte.",
         "Présenter le titre : Fusionner et centrer les cellules A1 à E1."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-042",
@@ -4326,12 +4374,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/division/exercice-2-division.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002-telecharger.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002-solution.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Division",
       "preamble": "",
       "instructions": [
@@ -4350,10 +4398,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002.jpg"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002-solution.jpg"
         ]
       },
@@ -4387,7 +4434,9 @@ window.EXCEL_ATELIER_DATA = {
         "Le résultat sera présenté avec ou sans format de cellule.",
         "(0,03 ou 3 %)."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-066",
@@ -4985,12 +5034,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-2-pourcentage.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-001-telecharger.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-002/ex-09.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-002/ex-09-soluce.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-002/ex-002.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Pourcentage",
       "preamble": "",
       "instructions": [
@@ -5007,10 +5056,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-002/ex-09.jpg"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-002/ex-09.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-002/ex-09-soluce.jpg"
         ]
       },
@@ -5038,7 +5086,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-075",
@@ -5051,12 +5101,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-3-pourcentage.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-001-telecharger.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/ex-003-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/003-solution.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/ex-003.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Pourcentage",
       "preamble": "",
       "instructions": [
@@ -5070,10 +5120,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/ex-003-enonce.gif"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/ex-003-enonce.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/003-solution.jpg"
         ]
       },
@@ -5092,7 +5141,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous calculez le pourcentage de chaque désignation en euros par rapport au total.",
         "L'addition des colonnes D et E sont sans souci."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-076",
@@ -5105,12 +5156,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-4-pourcentage.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-001-telecharger.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-004/ex-004-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-004/004-solution.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-004/ex-004.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Pourcentage",
       "preamble": "",
       "instructions": [
@@ -5124,10 +5175,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-004/ex-004-enonce.gif"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-004/ex-004-enonce.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-004/004-solution.jpg"
         ]
       },
@@ -5146,7 +5196,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous calculez l'évolution des parts de marché des différentes chaînes entre les deux années.",
         "En colonne C et E, vous devrez bloquer une série de cellules pour tirer la poignée de recopie vers le bas."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-077",
@@ -5159,12 +5211,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-5-pourcentage.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-001-telecharger.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Pourcentage",
       "preamble": "",
       "instructions": [
@@ -5181,10 +5233,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.gif"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.jpg"
         ]
       },
@@ -5212,7 +5263,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-078",
@@ -5225,12 +5278,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-6-pourcentage.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-001-telecharger.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Pourcentage",
       "preamble": "",
       "instructions": [
@@ -5244,10 +5297,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.gif"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.jpg"
         ]
       },
@@ -5266,7 +5318,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous imaginez le calcul qui vous permettra de connaitre l'évolution de la consommation par mois par rapport à la consommation globale du trimestre.",
         "Deux chiffres après la virgule et format pourcentage requis."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-079",
@@ -5528,11 +5582,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-1-graphiques-1.html",
       "docxUrl": null,
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-01.jpg",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
@@ -5548,10 +5602,14 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-01.jpg"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-01.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-05-a.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-05-b.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-05-c.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-05-d.jpg"
+        ]
       },
       "section": "bases",
       "moduleSlug": "graphiques",
@@ -5574,7 +5632,9 @@ window.EXCEL_ATELIER_DATA = {
         "Graphique 3 : Graphique en pourcentage sur la répartition des ventes en 2005.",
         "Graphique 4 : Graphique sous forme de courbe sur l'ensemble des ventes de la période."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraImages": [],
+      "extraDownloadUrls": []
     },
     {
       "id": "excel-ex-082",
@@ -5588,11 +5648,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-2-graphique.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/ex-002.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/tuto.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
@@ -5610,7 +5670,19 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/tuto.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/13-b-3.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/01-electricite.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/02-electricite.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/tuto-2.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/03-ventes-enonce.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/03-ventes.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/04-charges-enonce.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/04-charges.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/05-chiffres-enonce.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/05-chiffres.gif"
+        ]
       },
       "section": "bases",
       "moduleSlug": "graphiques",
@@ -5636,7 +5708,9 @@ window.EXCEL_ATELIER_DATA = {
         "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-083",
@@ -5650,11 +5724,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-3-graphique.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/ex-03-telecharger.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/ex-003-01.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/resultat-01.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
@@ -5669,7 +5743,16 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/support-cas-01.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/ex-003-01.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/resultat-01.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/support-01.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/support-02.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/ex-003-02.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/resultat-02.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/resultat-03.gif"
+        ]
       },
       "section": "bases",
       "moduleSlug": "graphiques",
@@ -5686,7 +5769,9 @@ window.EXCEL_ATELIER_DATA = {
         "Dans un premier temps, vous effectuez les calculs dans les tableaux.",
         "Dans un second temps, vous créez les graphiques conformément aux consignes. Vous pouvez également consulter les \"résultats attendus\"."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-084",
@@ -5699,12 +5784,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-4-graphique.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/ex-04.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004-01.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004-avec-calculs.xlsx",
+      "downloadLabel": "Telecharger les ressources",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
@@ -5727,10 +5812,12 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004.gif"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/13-05.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/13-05-solution2.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/13-05-solution1.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004-01.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004-02.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004-03.gif"
@@ -5778,7 +5865,14 @@ window.EXCEL_ATELIER_DATA = {
         "Pour les utilisateurs d'Excel 2016 et plus, représenter l'écart entre 2007 et 2015.",
         "Afficher les étiquettes en taille 28 et afficher les valeurs."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [
+        {
+          "url": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004.xlsx",
+          "label": "Telecharger le 3e fichier"
+        }
+      ],
+      "extraImages": []
     },
     {
       "id": "excel-ex-085",
@@ -5792,11 +5886,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-5-graphique.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-telecharger.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-03.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
@@ -5812,6 +5906,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-01.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-02.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-03.jpg"
         ]
       },
@@ -5830,7 +5926,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous pouvez télécharger le fichier de travail ci-contre.",
         "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-086",
@@ -6031,11 +6129,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-9-graphique-excel.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/ex-009.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto01.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/resultat.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Graphique Excel - Pyramides des âges",
       "preamble": "",
       "instructions": [
@@ -6053,7 +6151,17 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto01.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto02.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto03.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto04.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto05.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto06.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto07.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto08.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/resultat.gif"
+        ]
       },
       "section": "bases",
       "moduleSlug": "graphiques",
@@ -6079,7 +6187,9 @@ window.EXCEL_ATELIER_DATA = {
         "La procédure est détaillée ci-dessous soit via quelques indices si vous êtes à l'aise avec les graphiques.",
         "soit via une vidéo si vous l'êtes moins."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-090",
@@ -6828,11 +6938,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/format-de-celulle/exercice-4-format-de-cellule-excel.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/ex-004.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/enonce-exercice-04.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/resultat-attendu.jpg",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Format de cellule à insérer",
       "preamble": "",
       "instructions": [
@@ -6849,10 +6959,10 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/enonce-exercice-04.webp"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/enonce.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/enonce-exercice-04.webp",
           "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/resultat-attendu.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/solution-exercice-04.webp"
         ]
@@ -6881,7 +6991,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-103",
@@ -7728,11 +7840,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tri/exercice-1-tri.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/10-01-tri.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/ex-001-enonce.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Trier et Filtrer une liste",
       "preamble": "",
       "instructions": [
@@ -7753,10 +7865,16 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/ex-001-enonce.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/ex-001-enonce.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-01.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-02.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-03.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-04.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-05.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-06.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "trier-et-filtrer",
@@ -7794,7 +7912,9 @@ window.EXCEL_ATELIER_DATA = {
         "Feuille 6 : Faire un classement au temps de la catégorie S pour les hommes.",
         "Résultat attendu :."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-118",
@@ -7808,11 +7928,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tri/exercice-2-tri.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/10-02-tri.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002.webp",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Trier et Filtrer une liste",
       "preamble": "",
       "instructions": [
@@ -7831,10 +7951,14 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002.webp"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002-s1.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002-s2.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002-s3.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002-s4.webp"
+        ]
       },
       "section": "avance",
       "moduleSlug": "trier-et-filtrer",
@@ -7866,7 +7990,9 @@ window.EXCEL_ATELIER_DATA = {
         "niveau 2 : nom des sociétés.",
         "Feuille 4 : Filtrer les sociétés de la région Bourgogne pour les entreprises du BTP."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-119",
@@ -7880,11 +8006,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tri/exercice-3.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-base.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-1.jpg",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Trier et Filtrer une liste",
       "preamble": "",
       "instructions": [
@@ -7902,7 +8028,12 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-1.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-2.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-3.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-4.jpg"
+        ]
       },
       "section": "avance",
       "moduleSlug": "trier-et-filtrer",
@@ -7928,7 +8059,9 @@ window.EXCEL_ATELIER_DATA = {
         "Feuille 3 : Insérez une mise en forme conditionnelle qui va mettre un fond en couleur (au choix), au CA de plus de 10.000 €, Triez sur cette couleur et du plus grand au plus petit CA.",
         "Feuille 4 : Filtrez les CA de moins de 10 000 € dont les clients sont sur Nice, classez les clients par ordre alphabétique."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-120",
@@ -8139,12 +8272,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-6-tri-filtre.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-1.jpg",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-005/ex-005.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Exercice 6",
       "preamble": "",
       "instructions": [
@@ -8161,16 +8294,13 @@ window.EXCEL_ATELIER_DATA = {
         "url": "https://www.clic-formation.net/tri/exercice-6-tri-filtre.html",
         "prevUrl": null,
         "nextUrl": null,
-        "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-2.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-3.jpg"
-        ],
-        "enonceImages": [
+        "extraImages": [],
+        "enonceImages": [],
+        "resultImages": [
           "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-1.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-2.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-3.jpg"
-        ],
-        "resultImages": []
+        ]
       },
       "section": "avance",
       "moduleSlug": "trier-et-filtrer",
@@ -8199,7 +8329,9 @@ window.EXCEL_ATELIER_DATA = {
         "Résultat attendu :.",
         "Solution."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-124",
@@ -8324,11 +8456,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tri/exercice-9-segment.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-009/ex-009.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-009/ex-009.webp",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Exercice 9",
       "preamble": "",
       "instructions": [
@@ -8350,10 +8482,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-009/ex-009.webp"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-009/ex-009.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-009/ex-009-solution.webp"
+        ]
       },
       "section": "avance",
       "moduleSlug": "trier-et-filtrer",
@@ -8394,7 +8527,9 @@ window.EXCEL_ATELIER_DATA = {
         "Par exemple pour la Croatie le résultat sera 3 pour le nombre de villes de plus de 100 000 habitants et 1097843 pour le nombre d'habitants.",
         "Les icônes sont à trouver dans le menu Insertion-->Illustrations-->Icônes."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-126",
@@ -8640,11 +8775,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-5.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005-solution.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Mise en forme conditionnelle",
       "preamble": "",
       "instructions": [
@@ -8658,10 +8793,10 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005.webp"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005-explication.jpg",
           "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005-solution.webp"
         ]
       },
@@ -8680,7 +8815,9 @@ window.EXCEL_ATELIER_DATA = {
         "Pour toutes les valeurs du tableau (hors total) vous appliquez une règle de mise en forme conditionnelle à trois couleurs : du jaune au vert en passant par le rouge. La valeur médiane en pourcentage sera réglée à 50%.",
         "Vous en profiterez pour fusionner correctement la cellule VENTE et RÉCAPITULATIF."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-131",
@@ -8923,12 +9060,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-9.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-008/ex-008.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009-solution.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Mise en forme conditionnelle",
       "preamble": "",
       "instructions": [
@@ -8942,10 +9079,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009.webp"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009.webp",
           "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009-solution.webp"
         ]
       },
@@ -8964,7 +9100,9 @@ window.EXCEL_ATELIER_DATA = {
         "Consignes :.",
         "B7 : C15 Avec la mise en forme conditionnelle, faire sortir les valeurs hors fourchette en police blanche et fond de cellule rouge."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-135",
@@ -9474,12 +9612,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-8-convertir-des-donnees.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-008/ex-008.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009-solution.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Convertir des données",
       "preamble": "",
       "instructions": [
@@ -9496,14 +9634,11 @@ window.EXCEL_ATELIER_DATA = {
         "url": "https://www.clic-formation.net/validation-des-donnees/exercice-8-convertir-des-donnees.html",
         "prevUrl": null,
         "nextUrl": null,
-        "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/tuto.gif"
-        ],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/tuto.gif"
-        ],
+        "extraImages": [],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/tuto.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009-solution.gif"
         ]
       },
@@ -9534,7 +9669,9 @@ window.EXCEL_ATELIER_DATA = {
         "Démarche à mettre en œuvre :.",
         "Vue de départ."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-144",
@@ -9737,11 +9874,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-3.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/ex-003.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/tuto-appareil-photo.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/ex-003-appareil-photo-resultats.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Lier des feuilles de calculs & appareil photo",
       "preamble": "",
       "instructions": [
@@ -9759,7 +9896,12 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/tuto-appareil-photo.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/tuto-appareil-photo-02.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/ex-003-solution.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/ex-003-appareil-photo-resultats.webp"
+        ]
       },
       "section": "avance",
       "moduleSlug": "lier-des-feuilles",
@@ -9785,7 +9927,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-148",
@@ -10045,12 +10189,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-8.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-007/ex-007-hyper-texte-travail.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008.zip",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Lier des feuilles de calculs dans plusieurs classeurs",
       "preamble": "",
       "instructions": [
@@ -10066,10 +10210,9 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008-enonce.gif"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008-enonce.gif",
           "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008.gif"
         ]
       },
@@ -10094,7 +10237,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous pouvez au choix utiliser le clic droit copier-coller avec liaison ou utiliser directement une formule de type : ='Chemin_du_fichier\\[region-est.xlsx]tableau'!E5.",
         "Si vous utilisez la poignée de recopie et le clic droit, pensez à retirer le $ de la valeur absolue. Ceci depuis la ligne 4."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-153",
@@ -10810,12 +10955,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/tableau-croise-dynamique-1.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/ex-001.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/ex-001.gif",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex1/base-tcd-1.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Exercie 1 : Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -10831,10 +10976,14 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/ex-001.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/ex-001.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/exo1.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/exo-2.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/exo-3.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/exo-4.jpg"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -10857,7 +11006,9 @@ window.EXCEL_ATELIER_DATA = {
         "Chiffre d'affaires par mois et par appellation pour chaque région.",
         "Modifiez le tableau 1 pour obtenir la répartition en pourcentage de votre chiffre d'affaires."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-163",
@@ -10871,11 +11022,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-2-tcd.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/ex-002.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/ex-002.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -10894,10 +11045,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/ex-002.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/ex-002.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-1.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-2.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-3.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-4.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-5.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-6.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/ex-002-feuille-7.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -10929,7 +11087,9 @@ window.EXCEL_ATELIER_DATA = {
         "Chiffre d'affaires par origine et faire une représentation graphique.",
         "Vous insérez une \"chronologie\" pour évaluer le nombre de dates dernières nuitées en fonction de l'année."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-164",
@@ -10943,11 +11103,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-3-tcd.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/ex-003.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/ex-003.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -10967,10 +11127,18 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/ex-003.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/ex-003.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-1.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-2.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-3.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-4.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-5.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-6.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-7.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-8.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -11005,7 +11173,9 @@ window.EXCEL_ATELIER_DATA = {
         "Nombre de salariés avec distinction homme/femme.",
         "Pour chaque sexe et par site, trouver le nombre de personnes."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-165",
@@ -11019,11 +11189,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-4-tcd.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/ex-004.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/ex-004.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -11047,10 +11217,14 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/ex-004.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/ex-004.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/feuille-1.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/feuille-2.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/feuille-3.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/feuille-4.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -11097,7 +11271,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous présentez un graphique pour présenter la répartition des ventes par villes en pourcentage.",
         "Résultat attendu :."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-166",
@@ -11111,11 +11287,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-5-tcd.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/ex-005.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/ex-005.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -11138,10 +11314,14 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/ex-005.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/ex-005.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/feuille-1.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/feuille-2.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/feuille-3.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/feuille-4.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -11185,7 +11365,9 @@ window.EXCEL_ATELIER_DATA = {
         "Feuille 4.",
         "Le CA en pourcentage des sections."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-167",
@@ -11199,11 +11381,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-6-tcd.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/ex-006.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/ex-006.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -11227,10 +11409,15 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/ex-006.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/ex-006.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-1.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-2.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-3.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-4.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-5.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -11277,7 +11464,9 @@ window.EXCEL_ATELIER_DATA = {
         "Feuille-5.",
         "La répartition en pourcentage de la masse salariale en fonction du Diplôme."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-168",
@@ -11291,11 +11480,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-7.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/ex-007.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/ex-007.jpg",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -11316,10 +11505,18 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/ex-007.jpg"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/ex-007.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-01.jpg",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-02.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-03.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-04.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-05.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-06.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-07.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-08.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -11357,7 +11554,9 @@ window.EXCEL_ATELIER_DATA = {
         "Faire apparaître le % de la masse salariale des femmes par rapport aux hommes et en faire une représentation graphique avec les étiquettes en police taille 20.",
         "Classer le personnel de 1 à 20 en fonction de leur salaire."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-169",
@@ -11371,11 +11570,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-8.html",
       "docxUrl": null,
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-008/ex-008.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -11391,10 +11590,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-008/ex-008.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-008/ex-008.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-008/ex-008-solution-2.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -11417,7 +11617,9 @@ window.EXCEL_ATELIER_DATA = {
         "Calculs des moyennes et les écarts-types des chiffres d'affaires pour chaque vendeur et pour chaque produit.",
         "Résultat attendu :."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraImages": [],
+      "extraDownloadUrls": []
     },
     {
       "id": "excel-ex-170",
@@ -11431,11 +11633,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-9.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-enonce.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
@@ -11452,10 +11654,13 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-enonce.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-enonce.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-feuille-1.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-feuille-2.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-feuille-3.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
@@ -11481,7 +11686,9 @@ window.EXCEL_ATELIER_DATA = {
         "Feuille 3 : Présentez le nombre de véhicules vendu par vendeur avec une distinction du carburant. Vous en ferez un graphique comme sur le résultat attendu.",
         "Résultat attendu :."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-171",
@@ -11657,11 +11864,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/sous-totaux/exercice-4.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/ex-004.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/ex-004-enonce.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Sous-Totaux",
       "preamble": "",
       "instructions": [
@@ -11676,10 +11883,13 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/ex-004-enonce.gif"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/ex-004-enonce.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/par-service.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/par-duree.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/par-type-de-panne.gif"
+        ]
       },
       "section": "avance",
       "moduleSlug": "sous-totaux",
@@ -11699,7 +11909,9 @@ window.EXCEL_ATELIER_DATA = {
         "par type de panne.",
         "par durée."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-175",
@@ -12263,11 +12475,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/macro/exercice-2-macro.html",
       "docxUrl": null,
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-002/ex-002.webp",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Exercice 2",
       "preamble": "",
       "instructions": [
@@ -12285,10 +12497,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-002/ex-002.webp"
-        ],
-        "resultImages": []
+        "enonceImages": [],
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-002/ex-002.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp"
+        ]
       },
       "section": "avance",
       "moduleSlug": "macro",
@@ -12317,7 +12530,9 @@ window.EXCEL_ATELIER_DATA = {
         "Développeur-->Macros-->Sélection de la macro-->Exécuter.",
         "Un tableau identique arrive instantanément sur votre feuille."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraImages": [],
+      "extraDownloadUrls": []
     },
     {
       "id": "excel-ex-185",
@@ -12330,12 +12545,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/macro/exercice-3-macro.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/ex-003.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/support-01.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/ex-003-solution.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/icone.zip",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Exercice 3",
       "preamble": "",
       "instructions": [
@@ -12370,11 +12585,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/support-01.webp"
-        ],
+        "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/ex-003-solution.webp"
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/support-01.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/ex-003-solution.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp"
         ]
       },
       "section": "avance",
@@ -12455,7 +12670,9 @@ window.EXCEL_ATELIER_DATA = {
         "Sub Bouton_impression().",
         "ActiveSheet.PrintOut copies:=1, collate:=True, IgnoreprintAreas:=False."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-186",
@@ -12469,11 +12686,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/macro/exercice-4-macro.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004-solution.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Exercice 4",
       "preamble": "",
       "instructions": [
@@ -12499,11 +12716,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004.webp"
-        ],
+        "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004-solution.gif"
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp"
         ]
       },
       "section": "avance",
@@ -12557,7 +12774,9 @@ window.EXCEL_ATELIER_DATA = {
         "Via le menu développeur, vous insérez les macros.",
         "Menu développeur-->Macro-->Ajouter précisément le nom de la macro-->Créer-->Copier coller le code."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-187",
@@ -12709,11 +12928,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-2-case-a-cocher.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/ex-002.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/ex-002-solution.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Case à cocher",
       "preamble": "",
       "instructions": [
@@ -12732,10 +12951,10 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/ex-002.webp"
-        ],
+        "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/ex-002.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/tuto-mefc.webp",
           "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/ex-002-solution.webp"
         ]
       },
@@ -12769,7 +12988,9 @@ window.EXCEL_ATELIER_DATA = {
         "Colonne E, vous insérez une fonction SOMME pour calculer le nombre de case cochée.",
         "Colonne B, vous insérez un jeu d'icônes au choix. Un exemple de \"barème\" est disponible dans le volet \"jeu d'icônes ci-dessous."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-190",
@@ -13167,11 +13388,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-4-bouton-radio.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/ex-004.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/tuto-01.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/ex-004-resultat.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cases d'option",
       "preamble": "",
       "instructions": [
@@ -13191,6 +13412,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/tuto-01.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/tuto-02.webp",
           "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/ex-004-resultat.webp"
         ]
       },
@@ -13221,7 +13444,9 @@ window.EXCEL_ATELIER_DATA = {
         "il vous faudra faire l'exercice sur la feuille REQUETE.",
         "CONSIGNES :."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-195",
@@ -13561,11 +13786,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-asca-ul11-word/wi-tool.html",
       "docxUrl": "https://www.clic-formation.net/images/02-word/asca-ul21/2008-05/wi-tools.docx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/asca-ul21/2008-05/01.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Wi-Tool",
       "preamble": "",
       "instructions": [
@@ -13590,7 +13815,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/02-word/asca-ul21/2008-05/01.gif",
+          "https://www.clic-formation.net/images/02-word/asca-ul21/2008-05/02.gif"
+        ]
       },
       "section": "asca",
       "moduleSlug": "ul11-word",
@@ -13637,7 +13865,9 @@ window.EXCEL_ATELIER_DATA = {
         "L'ensemble du document constitue un seul fichier, puisqu'il sera diffusé par courrier électronique. Toutefois, pour permettre le contrôle de votre production, vous demanderez l'impression des tarifs sur une 2ᵉ page.",
         "Vous respecterez les consignes de travail portées sur les documents. NB : le formulaire auquel il est fait référence dans le texte, n'est pas à présenter."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-201",
@@ -14226,11 +14456,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-asca-ul21-excel/enveloppe.html",
       "docxUrl": null,
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/2016-01-gens-enveloppe.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/2016-01-gens-enveloppe-2.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Enveloppe",
       "preamble": "",
       "instructions": [
@@ -14258,6 +14488,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/2016-01-gens-enveloppe.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/tableau.webp",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/2016-01-gens-enveloppe-2.webp",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/2016-01-gens-enveloppe-solution-1.webp"
         ]
@@ -14313,7 +14545,9 @@ window.EXCEL_ATELIER_DATA = {
         "Éditer pour chaque négociation.",
         "Éditer l'ensemble des formules (et si des noms existent, la liste correspondante) avec les en-têtes de lignes et de colonnes (Taille minimum de police à 10)."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraImages": [],
+      "extraDownloadUrls": []
     },
     {
       "id": "excel-ex-209",
@@ -14327,11 +14561,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-asca-ul21-excel/nett-industrie.html",
       "docxUrl": null,
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-01-nett-industrie/2017-01-nett-industrie-01.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-01-nett-industrie/2017-01-nett-industrie-resultat.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Nett Industrie",
       "preamble": "",
       "instructions": [
@@ -14348,6 +14582,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-01-nett-industrie/2017-01-nett-industrie-01.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-01-nett-industrie/regle-2.png",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-01-nett-industrie/2017-01-nett-industrie-resultat.webp"
         ]
       },
@@ -14369,7 +14605,9 @@ window.EXCEL_ATELIER_DATA = {
         "Les conditions de ristourne sont contractuelles : pour l'entreprise, la ristourne représente un pourcentage fixe du chiffre d'affaires.",
         "Son calcul est indépendant et fera l'objet d'un document commercial à part entière."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraImages": [],
+      "extraDownloadUrls": []
     },
     {
       "id": "excel-ex-210",
@@ -16217,11 +16455,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/cas-formulaire-de-saisie.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-formulaire-saisie/cas_formulaire_inscription.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-formulaire-saisie/cas-formulaire-03.webp",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas Formulaire de saisie",
       "preamble": "",
       "instructions": [
@@ -16239,7 +16477,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-formulaire-saisie/cas-formulaire-03.webp",
+          "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp"
+        ]
       },
       "section": "complets",
       "moduleSlug": "cas-formulaire-de-saisie",
@@ -16265,7 +16506,9 @@ window.EXCEL_ATELIER_DATA = {
         "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-224",
@@ -16278,12 +16521,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-fiche-dintervention.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/cas-fiche-intervention-sans-zone.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/preparation-feuille-base.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/selection-resultat.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/cas-fiche-intervention-tutore.xlsx",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas Fiche d'intervention",
       "preamble": "",
       "instructions": [
@@ -16302,7 +16545,18 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/preparation-feuille-base.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/preparation-feuille-fiche.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/liste.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/selection.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/estnum.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/filtre.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/selection-nom.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/selection-resultat.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/validation-01.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/validation-02.webp"
+        ]
       },
       "section": "complets",
       "moduleSlug": "cas-fiche-d-intervention",
@@ -16331,7 +16585,9 @@ window.EXCEL_ATELIER_DATA = {
         "Fichier contenant déjà les zones nommées (+ facile).",
         "Pour commencer, téléchargez un classeur ci-dessus. Si vous choisissez l'option + facile, vous allez directement à la rubrique : \"Mise en place de la saisie semi-automatique ou autocomplétion\"."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-225",
@@ -16345,11 +16601,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/cas-calendrier-perpetuel.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier-resultat-modele-complexe.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier-resultat-modele-simple.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas Calendrier perpétuel (ou presque)",
       "preamble": "",
       "instructions": [
@@ -16368,6 +16624,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier-modele.webp",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier-resultat-modele-simple.webp",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier-resultat-modele-complexe.webp"
         ]
@@ -16396,7 +16653,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-226",
@@ -16505,12 +16764,12 @@ window.EXCEL_ATELIER_DATA = {
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-fiche-horticole.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/cas-fiche-horticole.xlsx",
-      "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/etape-02.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/resultat-attendu.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/images.zip",
+      "downloadLabel": "Telecharger le 2e fichier",
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas Fiche Horticole",
       "preamble": "",
       "instructions": [
@@ -16528,6 +16787,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/etape-01.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/etape-02.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/etape-3.webp",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/resultat-attendu.webp"
         ]
       },
@@ -16552,7 +16814,9 @@ window.EXCEL_ATELIER_DATA = {
         "les fonctions INDIRECT.",
         "les fonctions RECHERCHEX ou V."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-228",
@@ -16566,11 +16830,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/cas-gantt-simple.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/cas-gantt-01.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-01.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/resultat-gantt.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas diagramme de GANTT Simple",
       "preamble": "",
       "instructions": [
@@ -16589,6 +16853,11 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-01.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-02.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-03.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-06.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-04.webp",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/resultat-gantt.webp"
         ]
       },
@@ -16616,7 +16885,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-229",
@@ -16630,11 +16901,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/cas-societe-clicou.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/cas-vente-clicou.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-1.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-3.webp",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas Société CLICOU",
       "preamble": "",
       "instructions": [
@@ -16650,9 +16921,12 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-3.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-1.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-2.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-3.webp",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-1.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-2.webp"
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-2.webp",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-3.webp"
         ]
       },
       "section": "complets",
@@ -16670,7 +16944,9 @@ window.EXCEL_ATELIER_DATA = {
         "Dans cet exercice, vous mettez en œuvre les fonctions SOMME, NB.VAL, NB.SI, SOMME.SI, MIN, en les combinants. La fonction \"convertir\" dans le groupe \"Outils de données\".",
         "Vous pouvez télécharger le fichier de travail ici."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-230",
@@ -16748,11 +17024,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/cas-grand-raid.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/complet-01/cas-grand-raid-telecharger.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/complet-01/exo-01.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas grand Raid 6666",
       "preamble": "",
       "instructions": [
@@ -16771,7 +17047,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/complet-01/exo-01.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/complet-01/exo-02.gif"
+        ]
       },
       "section": "complets",
       "moduleSlug": "cas-grand-raid",
@@ -16800,7 +17079,9 @@ window.EXCEL_ATELIER_DATA = {
         "une feuille fiche coureurs qui recueille les renseignements coureur et les calculs de cout d'inscription.",
         "Une feuille donnée qui reprend les listes qui vous seront nécessaire pour l'exercice."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-232",
@@ -16814,11 +17095,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/cas-course-haut-caroux.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/support.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-course.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-categorie.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas Course Haut Caroux",
       "preamble": "",
       "instructions": [
@@ -16837,6 +17118,10 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-code.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-course.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-taille.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-departement.gif",
           "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-categorie.gif"
         ]
       },
@@ -16864,7 +17149,9 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-233",
@@ -16878,11 +17165,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/cas-salon-de-coiffure.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/ex-005.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/05.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/15.gif",
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "downloadLabel": null,
+      "imageEnonce": null,
+      "imageResultat": null,
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas Salon de Coiffure",
       "preamble": "",
       "instructions": [
@@ -16901,8 +17188,18 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/15.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/14.gif"
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/03.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/04.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/05.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/06.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/07.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/08.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/10.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/11.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/12.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/13.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/14.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/15.gif"
         ]
       },
       "section": "complets",
@@ -16929,7 +17226,9 @@ window.EXCEL_ATELIER_DATA = {
         "Mise en forme conditionnelle.",
         "Graphique et tableau croisé dynamique."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-234",
@@ -16943,11 +17242,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/cas-facturation.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-facturation.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-1.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Cas Facturation",
       "preamble": "",
       "instructions": [
@@ -16968,7 +17267,13 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-1.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-2.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-3.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-4.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-5.gif"
+        ]
       },
       "section": "complets",
       "moduleSlug": "cas-facturation",
@@ -17003,7 +17308,9 @@ window.EXCEL_ATELIER_DATA = {
         "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous.",
         "Vous pouvez télécharger le fichier de travail ci-contre."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-235",
@@ -17017,11 +17324,11 @@ window.EXCEL_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/revisions-operations-simples.html",
       "docxUrl": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/complet-operation-base.xlsx",
       "downloadUrl": null,
-      "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-01-solution.gif",
+      "downloadLabel": null,
+      "imageEnonce": null,
       "imageResultat": null,
-      "imageEnonceCaption": "",
-      "imageResultatCaption": "",
+      "imageEnonceCaption": null,
+      "imageResultatCaption": null,
       "description": "Révisions Opérations simples",
       "preamble": "",
       "instructions": [
@@ -17037,7 +17344,18 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [],
-        "resultImages": []
+        "resultImages": [
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-01-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-02-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-03-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-04-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-05-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-06-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-07-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-08-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-09-solution.gif",
+          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-10-solution.gif"
+        ]
       },
       "section": "complets",
       "moduleSlug": "revision-operations",
@@ -17057,7 +17375,9 @@ window.EXCEL_ATELIER_DATA = {
         "les opérations de bases, et %.",
         "Le calcul est à faire systématiquement dans les cellules avec un fond bleu."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "extraDownloadUrls": [],
+      "extraImages": []
     },
     {
       "id": "excel-ex-236",
