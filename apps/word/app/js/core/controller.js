@@ -510,6 +510,36 @@ function createAtelierController(config = {}) {
     };
   }
 
+  #getSessionFolderName(rootHandle) {
+    return rootHandle && rootHandle.name ? rootHandle.name : "Dossier choisi";
+  }
+
+  #persistSessionSnapshot(session) {
+    if (!session) return;
+    this.#persistUserSnapshot({
+      firstName: session.firstName,
+      initials: session.initials,
+      folderName: this.#getSessionFolderName(session.rootHandle),
+    });
+  }
+
+  async #persistResolvedSession(session) {
+    await this.storage.ensureProgressDirectory(session.rootHandle, session.initials, true);
+    await this.storage.saveUserProfile(session.rootHandle, session.initials, session.firstName);
+    await this.storage.addSavedWorkFolder(session.rootHandle);
+    await this.storage.setSavedRootHandle(session.rootHandle);
+    await this.storage.setSavedInitials(session.initials);
+    await this.storage.setSavedFirstName(session.firstName);
+    this.#persistSessionSnapshot(session);
+  }
+
+  #syncSessionIdentity(session) {
+    this.view.setHeaderUser(session.firstName, session.initials);
+    const folderName = this.#getSessionFolderName(session.rootHandle);
+    this.view.setProgressUserPath(`Fichier: ${folderName} > ProgressionAtelier > ${settings.progressFileName}`);
+    this.#persistSessionSnapshot(session);
+  }
+
   #buildFallbackHashFromUiState() {
     const state = this.#getPersistedUiState();
     if (!state) return "";
@@ -1020,19 +1050,9 @@ function createAtelierController(config = {}) {
 
     initials = this.#deriveInitials(rootHandle, initials);
 
-    await this.storage.ensureProgressDirectory(rootHandle, initials, true);
-    await this.storage.saveUserProfile(rootHandle, initials, firstName);
-    await this.storage.addSavedWorkFolder(rootHandle);
-    await this.storage.setSavedRootHandle(rootHandle);
-    await this.storage.setSavedInitials(initials);
-    await this.storage.setSavedFirstName(firstName);
-    this.#persistUserSnapshot({
-      firstName,
-      initials,
-      folderName: rootHandle && rootHandle.name ? rootHandle.name : "",
-    });
-
-    return { rootHandle, initials, firstName, permissionRequired: false };
+    const session = { rootHandle, initials, firstName, permissionRequired: false };
+    await this.#persistResolvedSession(session);
+    return session;
   }
 
   async #loadProgressForSession(session) {
@@ -1046,14 +1066,7 @@ function createAtelierController(config = {}) {
       await this.#saveProgress();
     }
 
-    this.view.setHeaderUser(session.firstName, session.initials);
-    const rootName = session.rootHandle && session.rootHandle.name ? session.rootHandle.name : "Dossier choisi";
-    this.view.setProgressUserPath(`Fichier: ${rootName} > ProgressionAtelier > ${settings.progressFileName}`);
-    this.#persistUserSnapshot({
-      firstName: session.firstName,
-      initials: session.initials,
-      folderName: rootName,
-    });
+    this.#syncSessionIdentity(session);
 
     const currentHash = String(window.location.hash || "").trim();
     if (!currentHash || currentHash === "#home") {
