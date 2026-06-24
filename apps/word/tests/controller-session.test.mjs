@@ -12,6 +12,7 @@ const CORE_SESSION_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "ses
 const CORE_WORKFILE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "workfile.js"), "utf8");
 const CORE_REMINDER_MODAL_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "reminder-modal.js"), "utf8");
 const CORE_USER_SETUP_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "user-setup.js"), "utf8");
+const CORE_PROGRESS_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "progress.js"), "utf8");
 const CORE_PROFILE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "profile.js"), "utf8");
 const CONTROLLER_SOURCE = await fs.readFile(path.join(ROOT, "js", "controller.js"), "utf8");
 
@@ -207,7 +208,10 @@ function createModel() {
       return JSON.stringify(this.importedProgress || {});
     },
     getSummary() {
-      return { completed: 0, total: 1, percent: 0, level: "Demarrage" };
+      return { completed: 0, total: 1, percent: 0, level: "Demarrage", streak: 0 };
+    },
+    getCurveSeries() {
+      return [{ day: "2026-06-24", value: 0 }];
     },
     getLastExercise() {
       return null;
@@ -266,6 +270,7 @@ function createView() {
     progressUserPath: "",
     shownPage: "",
     renderedExerciseId: "",
+    renderedProgressVm: null,
     setHeaderUser(firstName, initials) {
       this.headerUser = { firstName, initials };
     },
@@ -286,7 +291,8 @@ function createView() {
       this.exerciseToggleDoneBtn.setAttribute("data-id", vm.exercise.id);
       this.shownPage = "exercise";
     },
-    renderProgress() {
+    renderProgress(vm) {
+      this.renderedProgressVm = vm;
       this.shownPage = "progress";
     },
     renderAffinityOverview() {},
@@ -424,6 +430,7 @@ function createHarness(options = {}) {
   vm.runInContext(CORE_WORKFILE_SOURCE, context, { filename: "js/core/workfile.js" });
   vm.runInContext(CORE_REMINDER_MODAL_SOURCE, context, { filename: "js/core/reminder-modal.js" });
   vm.runInContext(CORE_USER_SETUP_SOURCE, context, { filename: "js/core/user-setup.js" });
+  vm.runInContext(CORE_PROGRESS_SOURCE, context, { filename: "js/core/progress.js" });
   vm.runInContext(CORE_PROFILE_SOURCE, context, { filename: "js/core/profile.js" });
   vm.runInContext(CORE_CONTROLLER_SOURCE, context, { filename: "js/core/controller.js" });
   vm.runInContext(CONTROLLER_SOURCE, context, { filename: "js/controller.js" });
@@ -616,4 +623,35 @@ test("controller updates the shared profile view and saved first name", async ()
   assert.equal(harness.storageState.savedFirstName, "Alicia");
   assert.equal(harness.storageState.profiles.get("alice-folder").firstName, "Alicia");
   assert.equal(harness.document.getElementById("profile-firstname-display").textContent, "Alicia");
+});
+
+test("controller renders the shared progress view model", async () => {
+  const aliceHandle = createHandle("alice-folder", "Alice");
+  const harness = createHarness({
+    savedRootHandle: aliceHandle,
+    savedInitials: "AL",
+    savedFirstName: "Alice",
+    savedWorkFolders: [
+      { id: "alice-folder", name: "Alice", handle: aliceHandle, lastUsedAt: "2026-06-24T09:00:00.000Z" },
+    ],
+    profiles: new Map([["alice-folder", { initials: "AL", firstName: "Alice" }]]),
+    progressByInitials: new Map([["AL", { done: [] }]]),
+  });
+
+  harness.controller.init();
+  await flushAsyncWork();
+
+  harness.window.location.hash = "#progress";
+  harness.triggerWindowEvent("hashchange");
+  await flushAsyncWork();
+
+  assert.equal(harness.view.shownPage, "progress");
+  assert.deepEqual(JSON.parse(JSON.stringify(harness.view.renderedProgressVm)), {
+    completed: 0,
+    total: 1,
+    percent: 0,
+    level: "Demarrage",
+    streak: 0,
+    curveSeries: [{ day: "2026-06-24", value: 0 }],
+  });
 });

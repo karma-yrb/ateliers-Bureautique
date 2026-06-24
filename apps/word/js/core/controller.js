@@ -82,6 +82,11 @@ function createAtelierController(config = {}) {
       deriveInitials: (rootHandle, fallback) => this.#deriveInitials(rootHandle, fallback),
       documentRef: document,
     });
+    this.progressRuntime = window.createAtelierProgressRuntime({
+      persistenceRuntime: this.persistenceRuntime,
+      view: this.view,
+      model: this.model,
+    });
     this.profileRuntime = window.createAtelierProfileRuntime({
       documentRef: document,
       persistenceRuntime: this.persistenceRuntime,
@@ -660,11 +665,7 @@ function createAtelierController(config = {}) {
   }
 
   #renderProgressPage() {
-    this.persistenceRuntime.persistUiState({ page: "progress" });
-    this.view.showPage("progress");
-    const summary = this.model.getSummary();
-    const curveSeries = this.model.getCurveSeries(30);
-    this.view.renderProgress({ ...summary, curveSeries });
+    this.progressRuntime.render();
   }
 
   // FIX 2 — Page Profil : affiche les infos utilisateur et permet de modifier le prénom inline.
