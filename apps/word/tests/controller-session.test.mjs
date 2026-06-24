@@ -11,6 +11,7 @@ const CORE_PERSISTENCE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", 
 const CORE_SESSION_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "session.js"), "utf8");
 const CORE_WORKFILE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "workfile.js"), "utf8");
 const CORE_REMINDER_MODAL_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "reminder-modal.js"), "utf8");
+const CORE_HOME_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "home.js"), "utf8");
 const CORE_USER_SETUP_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "user-setup.js"), "utf8");
 const CORE_PROGRESS_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "progress.js"), "utf8");
 const CORE_PROFILE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "profile.js"), "utf8");
@@ -271,6 +272,7 @@ function createView() {
     shownPage: "",
     renderedExerciseId: "",
     renderedProgressVm: null,
+    renderedHomeVm: null,
     setHeaderUser(firstName, initials) {
       this.headerUser = { firstName, initials };
     },
@@ -283,7 +285,8 @@ function createView() {
     showPage(page) {
       this.shownPage = page;
     },
-    renderHome() {
+    renderHome(vm) {
+      this.renderedHomeVm = vm;
       this.shownPage = "home";
     },
     renderExercise(vm) {
@@ -429,6 +432,7 @@ function createHarness(options = {}) {
   vm.runInContext(CORE_SESSION_SOURCE, context, { filename: "js/core/session.js" });
   vm.runInContext(CORE_WORKFILE_SOURCE, context, { filename: "js/core/workfile.js" });
   vm.runInContext(CORE_REMINDER_MODAL_SOURCE, context, { filename: "js/core/reminder-modal.js" });
+  vm.runInContext(CORE_HOME_SOURCE, context, { filename: "js/core/home.js" });
   vm.runInContext(CORE_USER_SETUP_SOURCE, context, { filename: "js/core/user-setup.js" });
   vm.runInContext(CORE_PROGRESS_SOURCE, context, { filename: "js/core/progress.js" });
   vm.runInContext(CORE_PROFILE_SOURCE, context, { filename: "js/core/profile.js" });
@@ -653,5 +657,62 @@ test("controller renders the shared progress view model", async () => {
     level: "Demarrage",
     streak: 0,
     curveSeries: [{ day: "2026-06-24", value: 0 }],
+  });
+});
+
+test("controller renders the shared home view model", async () => {
+  const aliceHandle = createHandle("alice-folder", "Alice");
+  const harness = createHarness({
+    savedRootHandle: aliceHandle,
+    savedInitials: "AL",
+    savedFirstName: "Alice",
+    savedWorkFolders: [
+      { id: "alice-folder", name: "Alice", handle: aliceHandle, lastUsedAt: "2026-06-24T09:00:00.000Z" },
+    ],
+    profiles: new Map([["alice-folder", { initials: "AL", firstName: "Alice" }]]),
+    progressByInitials: new Map([["AL", { done: [] }]]),
+  });
+
+  harness.model.getSummary = () => ({ completed: 2, total: 5, percent: 40, level: "Intermediaire", streak: 3 });
+  harness.model.getLastExercise = () => ({
+    id: "ex-001",
+    num: 1,
+    title: "Exercice 1",
+    moduleName: "Theme 1",
+  });
+  harness.model.getResumeExercise = () => ({
+    id: "ex-002",
+    num: 2,
+    title: "Exercice 2",
+    moduleName: "Theme 1",
+  });
+  harness.model.getIsDone = (id) => id === "ex-001";
+  harness.model.getLastCompletedDate = () => "2026-06-24";
+
+  harness.controller.init();
+  await flushAsyncWork();
+
+  harness.window.location.hash = "#home";
+  harness.triggerWindowEvent("hashchange");
+  await flushAsyncWork();
+
+  assert.equal(harness.view.shownPage, "home");
+  assert.deepEqual(JSON.parse(JSON.stringify(harness.view.renderedHomeVm)), {
+    completed: 2,
+    total: 5,
+    percent: 40,
+    level: "Intermediaire",
+    streak: 3,
+    lastExercise: {
+      id: "ex-001",
+      num: 1,
+      title: "Exercice 1",
+      moduleName: "Theme 1",
+    },
+    lastDoneText: "Fait le 24/06/2026.",
+    startLabel: "Continuer : Exercice 2",
+    startTheme: "Theme 1",
+    startExercise: "Exercice 2 - Exercice 2",
+    startHelp: "Exercice 2 (Theme 1)",
   });
 });

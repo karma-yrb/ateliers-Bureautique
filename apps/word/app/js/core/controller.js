@@ -1,10 +1,4 @@
 (() => {
-function formatDay(isoDay) {
-  const parts = String(isoDay || "").split("-");
-  if (parts.length !== 3) return "";
-  return `${parts[2]}/${parts[1]}/${parts[0]}`;
-}
-
 function createAtelierController(config = {}) {
   const settings = {
     progressFileName: config.progressFileName || "progression-atelier.json",
@@ -34,6 +28,11 @@ function createAtelierController(config = {}) {
       routeStorageKey: this.routeStorageKey,
       uiStateStorageKey: this.uiStateStorageKey,
       userSnapshotStorageKey: this.userSnapshotStorageKey,
+      model: this.model,
+    });
+    this.homeRuntime = window.createAtelierHomeRuntime({
+      persistenceRuntime: this.persistenceRuntime,
+      view: this.view,
       model: this.model,
     });
     this.sessionRuntime = window.createAtelierSessionRuntime({
@@ -486,49 +485,8 @@ function createAtelierController(config = {}) {
   }
 
   #renderHomePage() {
-    this.persistenceRuntime.persistUiState({ page: "home" });
-    this.view.showPage("home");
-    const summary = this.model.getSummary();
-    const lastExercise = this.model.getLastExercise();
-    const resumeExercise = this.model.getResumeExercise();
-    let lastDoneText = "Pas encore terminé.";
-    if (lastExercise) {
-      const done = this.model.getIsDone(lastExercise.id);
-      if (done) {
-        const day = this.model.getLastCompletedDate(lastExercise.id);
-        lastDoneText = day ? `Fait le ${formatDay(day)}.` : "Dernier exercice marqué comme fait.";
-      } else {
-        lastDoneText = "Dernier exercice ouvert.";
-      }
-    }
-
-    let startLabel = "Commencer maintenant";
-    let startTheme = "Aucun thème sélectionné";
-    let startExercise = "Choisissez votre premier exercice";
-    let startHelp = "Lance automatiquement le prochain exercice conseillé.";
-    if (resumeExercise && summary.completed > 0) {
-      startLabel = `Continuer : Exercice ${resumeExercise.num}`;
-      startTheme = resumeExercise.moduleName;
-      startExercise = `Exercice ${resumeExercise.num} - ${resumeExercise.title}`;
-      startHelp = `${resumeExercise.title} (${resumeExercise.moduleName})`;
-    } else if (resumeExercise) {
-      startLabel = `Démarrer : Exercice ${resumeExercise.num}`;
-      startTheme = resumeExercise.moduleName;
-      startExercise = `Exercice ${resumeExercise.num} - ${resumeExercise.title}`;
-      startHelp = `${resumeExercise.title} (${resumeExercise.moduleName})`;
-    }
-
-    this.view.renderHome({
-      ...summary,
-      lastExercise,
-      lastDoneText,
-      startLabel,
-      startTheme,
-      startExercise,
-      startHelp,
-    });
+    this.homeRuntime.render();
   }
-
   #renderThemesOverview() {
     this.persistenceRuntime.persistUiState({ page: "themes" });
     this.view.showPage("themes");
