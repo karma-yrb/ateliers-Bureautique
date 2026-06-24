@@ -89,6 +89,8 @@ function createAtelierController(config = {}) {
     if (!window.location.hash) {
       const restoredHash = this.persistenceRuntime.getPersistedHash();
       window.location.hash = restoredHash || "#home";
+    } else {
+      this.persistenceRuntime.persistCurrentHash(window.location.hash);
     }
 
     this.#bootstrap().catch(() => {

@@ -11,6 +11,7 @@ const CORE_PERSISTENCE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", 
 const CORE_SESSION_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "session.js"), "utf8");
 const CORE_WORKFILE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "workfile.js"), "utf8");
 const CORE_REMINDER_MODAL_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "reminder-modal.js"), "utf8");
+const CORE_USER_SETUP_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "user-setup.js"), "utf8");
 const CONTROLLER_SOURCE = await fs.readFile(path.join(ROOT, "js", "controller.js"), "utf8");
 
 class FakeElement {}
@@ -98,6 +99,9 @@ function createLocalStorage(initial = {}) {
     },
     removeItem(key) {
       store.delete(key);
+    },
+    dump() {
+      return Object.fromEntries(store.entries());
     },
   };
 }
@@ -408,6 +412,7 @@ function createHarness(options = {}) {
   vm.runInContext(CORE_SESSION_SOURCE, context, { filename: "js/core/session.js" });
   vm.runInContext(CORE_WORKFILE_SOURCE, context, { filename: "js/core/workfile.js" });
   vm.runInContext(CORE_REMINDER_MODAL_SOURCE, context, { filename: "js/core/reminder-modal.js" });
+  vm.runInContext(CORE_USER_SETUP_SOURCE, context, { filename: "js/core/user-setup.js" });
   vm.runInContext(CORE_CONTROLLER_SOURCE, context, { filename: "js/core/controller.js" });
   vm.runInContext(CONTROLLER_SOURCE, context, { filename: "js/controller.js" });
 
@@ -506,4 +511,61 @@ test("controller switches to the selected saved user from the header menu", asyn
   assert.equal(harness.storageState.savedFirstName, "Bob");
   assert.deepEqual(harness.model.importedProgress, { done: [] });
   assert.match(harness.view.progressUserPath, /Bob/);
+});
+
+test("controller restores the switched user after refresh", async () => {
+  const aliceHandle = createHandle("alice-folder", "Alice");
+  const bobHandle = createHandle("bob-folder", "Bob");
+  const savedWorkFolders = [
+    { id: "alice-folder", name: "Alice", handle: aliceHandle, lastUsedAt: "2026-06-24T09:00:00.000Z" },
+    { id: "bob-folder", name: "Bob", handle: bobHandle, lastUsedAt: "2026-06-24T08:00:00.000Z" },
+  ];
+  const profiles = new Map([
+    ["alice-folder", { initials: "AL", firstName: "Alice" }],
+    ["bob-folder", { initials: "BO", firstName: "Bob" }],
+  ]);
+  const progressByInitials = new Map([
+    ["AL", { done: ["ex-001"] }],
+    ["BO", { done: ["ex-002"] }],
+  ]);
+  const firstRun = createHarness({
+    hash: "#exercise/ex-002",
+    savedRootHandle: aliceHandle,
+    savedInitials: "AL",
+    savedFirstName: "Alice",
+    savedWorkFolders,
+    profiles,
+    progressByInitials,
+  });
+
+  firstRun.controller.init();
+  await flushAsyncWork();
+
+  firstRun.document.getElementById("header-user-switch-btn").click();
+  await flushAsyncWork();
+
+  const savedFoldersSelect = firstRun.document.getElementById("user-setup-saved-folders-select");
+  savedFoldersSelect.value = "bob-folder";
+  await savedFoldersSelect.onchange();
+  firstRun.document.getElementById("user-setup-validate-btn").click();
+  await flushAsyncWork();
+
+  const refreshed = createHarness({
+    hash: "",
+    localStorage: firstRun.window.localStorage.dump(),
+    savedRootHandle: firstRun.storageState.savedRootHandle,
+    savedInitials: firstRun.storageState.savedInitials,
+    savedFirstName: firstRun.storageState.savedFirstName,
+    savedWorkFolders: firstRun.storageState.savedWorkFolders,
+    profiles,
+    progressByInitials,
+  });
+
+  refreshed.controller.init();
+  await flushAsyncWork();
+
+  assert.deepEqual(refreshed.view.headerUser, { firstName: "Bob", initials: "BO" });
+  assert.equal(refreshed.window.location.hash, "#exercise/ex-002");
+  assert.deepEqual(refreshed.model.importedProgress, { done: ["ex-002"] });
+  assert.match(refreshed.view.progressUserPath, /Bob/);
 });
