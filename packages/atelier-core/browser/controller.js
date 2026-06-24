@@ -76,6 +76,12 @@ function createAtelierController(config = {}) {
       modalRefs: this.saveReminderModal,
       windowRef: window,
     });
+    this.userSetupRuntime = window.createAtelierUserSetupRuntime({
+      storage: this.storage,
+      modalRefs: this.userModal,
+      deriveInitials: (rootHandle, fallback) => this.#deriveInitials(rootHandle, fallback),
+      documentRef: document,
+    });
   }
 
   init() {
@@ -1238,6 +1244,7 @@ function createAtelierController(config = {}) {
   }
 
   #promptUserSetup(initialRootHandle, defaults = {}) {
+    return this.userSetupRuntime.show(initialRootHandle, defaults);
     return new Promise((resolve) => {
       const modal = this.userModal.root;
       const status = this.userModal.status;
