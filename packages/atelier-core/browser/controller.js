@@ -29,11 +29,18 @@ function createAtelierController(config = {}) {
     this.routeStorageKey = `atelier:last-hash:${settings.progressFileName}`;
     this.uiStateStorageKey = `atelier:last-ui-state:${settings.progressFileName}`;
     this.userSnapshotStorageKey = `atelier:last-user:${settings.progressFileName}`;
+    this.persistenceRuntime = window.createAtelierPersistenceRuntime({
+      localStorage: window.localStorage,
+      routeStorageKey: this.routeStorageKey,
+      uiStateStorageKey: this.uiStateStorageKey,
+      userSnapshotStorageKey: this.userSnapshotStorageKey,
+      model: this.model,
+    });
     this.sessionRuntime = window.createAtelierSessionRuntime({
       storage: this.storage,
       view: this.view,
       progressFileName: settings.progressFileName,
-      persistUserSnapshot: (snapshot) => this.#persistUserSnapshot(snapshot),
+      persistUserSnapshot: (snapshot) => this.persistenceRuntime.persistUserSnapshot(snapshot),
     });
 
     this.userModal = {
@@ -62,12 +69,12 @@ function createAtelierController(config = {}) {
     this.#bindStaticEvents();
     this.#bindDynamicEvents();
     window.addEventListener("hashchange", () => {
-      this.#persistCurrentHash();
+      this.persistenceRuntime.persistCurrentHash(window.location.hash);
       if (this.isReady) this.#renderFromHash();
     });
 
     if (!window.location.hash) {
-      const restoredHash = this.#getPersistedHash();
+      const restoredHash = this.persistenceRuntime.getPersistedHash();
       window.location.hash = restoredHash || "#home";
     }
 
@@ -80,7 +87,7 @@ function createAtelierController(config = {}) {
 
   async #bootstrap() {
     if (!this.storage || !this.storage.isSupported()) {
-      const snapshot = this.#getPersistedUserSnapshot();
+      const snapshot = this.persistenceRuntime.getPersistedUserSnapshot();
       if (snapshot && (snapshot.firstName || snapshot.initials)) {
         this.view.setHeaderUser(snapshot.firstName || "", snapshot.initials || "");
         this.view.setProgressUserPath(snapshot.folderName
@@ -98,7 +105,7 @@ function createAtelierController(config = {}) {
 
     const session = await this.#resolveUserSession(false, { allowPermissionPrompt: false });
     if (!session) {
-      const snapshot = this.#getPersistedUserSnapshot();
+      const snapshot = this.persistenceRuntime.getPersistedUserSnapshot();
       if (snapshot && (snapshot.firstName || snapshot.initials)) {
         this.view.setHeaderUser(snapshot.firstName || "", snapshot.initials || "");
         this.view.setProgressUserPath(snapshot.folderName
@@ -442,108 +449,8 @@ function createAtelierController(config = {}) {
     this.#renderHomePage();
   }
 
-  #writeLocalStorage(key, value) {
-    try {
-      if (!key) return false;
-      window.localStorage.setItem(key, value);
-      return true;
-    } catch {
-      return false;
-    }
-  }
-
-  #readLocalStorageText(key) {
-    try {
-      if (!key) return "";
-      return String(window.localStorage.getItem(key) || "").trim();
-    } catch {
-      return "";
-    }
-  }
-
-  #readLocalStorageJson(key) {
-    try {
-      const raw = this.#readLocalStorageText(key);
-      if (!raw) return null;
-      const parsed = JSON.parse(raw);
-      return parsed && typeof parsed === "object" ? parsed : null;
-    } catch {
-      return null;
-    }
-  }
-
-  #persistCurrentHash() {
-    const currentHash = String(window.location.hash || "").trim();
-    if (!currentHash) return;
-    this.#writeLocalStorage(this.routeStorageKey, currentHash);
-  }
-
-  #getPersistedHash() {
-    const stored = this.#readLocalStorageText(this.routeStorageKey);
-    if (!stored.startsWith("#")) {
-      return "";
-    }
-    return stored;
-  }
-
-  #persistUiState(state) {
-    if (!state || typeof state !== "object") return;
-    this.#writeLocalStorage(this.uiStateStorageKey, JSON.stringify(state));
-  }
-
-  #getPersistedUiState() {
-    return this.#readLocalStorageJson(this.uiStateStorageKey);
-  }
-
-  #persistUserSnapshot(snapshot) {
-    if (!snapshot || typeof snapshot !== "object") return;
-    this.#writeLocalStorage(this.userSnapshotStorageKey, JSON.stringify({
-      firstName: String(snapshot.firstName || "").trim(),
-      initials: String(snapshot.initials || "").trim(),
-      folderName: String(snapshot.folderName || "").trim(),
-    }));
-  }
-
-  #getPersistedUserSnapshot() {
-    const parsed = this.#readLocalStorageJson(this.userSnapshotStorageKey);
-    if (!parsed) {
-      return null;
-    }
-    return {
-      firstName: String(parsed.firstName || "").trim(),
-      initials: String(parsed.initials || "").trim(),
-      folderName: String(parsed.folderName || "").trim(),
-    };
-  }
-
-  #buildFallbackHashFromUiState() {
-    const state = this.#getPersistedUiState();
-    if (!state) return "";
-
-    if (state.page === "exercise" && state.exerciseId) {
-      const exercise = this.model.getExerciseById(state.exerciseId);
-      if (exercise) return `#exercise/${exercise.id}`;
-    }
-
-    if (state.page === "affinity" && state.affinityId) {
-      if (state.themeId) {
-        const theme = this.model.getThemeById(state.themeId);
-        if (theme && this.model.getAffinityIdForTheme(theme.id) === state.affinityId) {
-          return `#affinity/${state.affinityId}/${theme.id}`;
-        }
-      }
-      return `#affinity/${state.affinityId}`;
-    }
-
-    if (state.page === "themes" || state.page === "progress" || state.page === "profile" || state.page === "home") {
-      return `#${state.page}`;
-    }
-
-    return "";
-  }
-
   #renderHomePage() {
-    this.#persistUiState({ page: "home" });
+    this.persistenceRuntime.persistUiState({ page: "home" });
     this.view.showPage("home");
     const summary = this.model.getSummary();
     const lastExercise = this.model.getLastExercise();
@@ -587,7 +494,7 @@ function createAtelierController(config = {}) {
   }
 
   #renderThemesOverview() {
-    this.#persistUiState({ page: "themes" });
+    this.persistenceRuntime.persistUiState({ page: "themes" });
     this.view.showPage("themes");
     const groups = this.model.getThemeAffinityGroups().map((group) => {
       const totalExercises = group.themes.reduce(
@@ -659,7 +566,7 @@ function createAtelierController(config = {}) {
       };
     });
 
-    this.#persistUiState({
+    this.persistenceRuntime.persistUiState({
       page: "affinity",
       affinityId: affinity.id,
       themeId: this.currentThemeId || "",
@@ -687,7 +594,7 @@ function createAtelierController(config = {}) {
     }
     this.currentThemeId = exercise.moduleId;
     this.currentAffinityId = this.model.getAffinityIdForTheme(exercise.moduleId) || this.currentAffinityId;
-    this.#persistUiState({
+    this.persistenceRuntime.persistUiState({
       page: "exercise",
       exerciseId: exercise.id,
       affinityId: this.currentAffinityId || "",
@@ -722,7 +629,7 @@ function createAtelierController(config = {}) {
   }
 
   #renderProgressPage() {
-    this.#persistUiState({ page: "progress" });
+    this.persistenceRuntime.persistUiState({ page: "progress" });
     this.view.showPage("progress");
     const summary = this.model.getSummary();
     const curveSeries = this.model.getCurveSeries(30);
@@ -732,7 +639,7 @@ function createAtelierController(config = {}) {
   // FIX 2 — Page Profil : affiche les infos utilisateur et permet de modifier le prénom inline.
   // Prérequis HTML : <div id="profile-user-section"></div> dans #page-profile.
   #renderProfilePage() {
-    this.#persistUiState({ page: "profile" });
+    this.persistenceRuntime.persistUiState({ page: "profile" });
     this.view.showPage("profile");
     if (!this.userSession) return;
 
@@ -914,7 +821,7 @@ function createAtelierController(config = {}) {
       rootHandle = await this.storage.getSavedRootHandle();
       initials = this.storage.normalizeInitials(await this.storage.getSavedInitials());
       firstName = this.storage.normalizeFirstName(await this.storage.getSavedFirstName());
-      const snapshot = this.#getPersistedUserSnapshot();
+      const snapshot = this.persistenceRuntime.getPersistedUserSnapshot();
       if (!firstName && snapshot && snapshot.firstName) {
         firstName = this.storage.normalizeFirstName(snapshot.firstName);
       }
@@ -986,7 +893,7 @@ function createAtelierController(config = {}) {
 
     const currentHash = String(window.location.hash || "").trim();
     if (!currentHash || currentHash === "#home") {
-      const fallbackHash = this.#buildFallbackHashFromUiState();
+      const fallbackHash = this.persistenceRuntime.buildFallbackHashFromUiState();
       if (fallbackHash && fallbackHash !== currentHash) {
         window.location.hash = fallbackHash;
       }

@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CORE_CONTROLLER_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "controller.js"), "utf8");
+const CORE_PERSISTENCE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "persistence.js"), "utf8");
 const CORE_SESSION_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "session.js"), "utf8");
 const CONTROLLER_SOURCE = await fs.readFile(path.join(ROOT, "js", "controller.js"), "utf8");
 
@@ -401,6 +402,7 @@ function createHarness(options = {}) {
     clearTimeout,
   });
 
+  vm.runInContext(CORE_PERSISTENCE_SOURCE, context, { filename: "js/core/persistence.js" });
   vm.runInContext(CORE_SESSION_SOURCE, context, { filename: "js/core/session.js" });
   vm.runInContext(CORE_CONTROLLER_SOURCE, context, { filename: "js/core/controller.js" });
   vm.runInContext(CONTROLLER_SOURCE, context, { filename: "js/controller.js" });
