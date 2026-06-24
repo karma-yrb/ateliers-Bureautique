@@ -72,6 +72,10 @@ function createAtelierController(config = {}) {
       cancelBtn: document.getElementById("save-reminder-cancel-btn"),
       continueBtn: document.getElementById("save-reminder-continue-btn"),
     };
+    this.reminderModalRuntime = window.createAtelierReminderModalRuntime({
+      modalRefs: this.saveReminderModal,
+      windowRef: window,
+    });
   }
 
   init() {
@@ -1094,24 +1098,15 @@ function createAtelierController(config = {}) {
     existingStatusImportant = false,
     numberedSteps = true,
   }) {
-    const modal = this.saveReminderModal.root;
-    const titleEl = modal ? modal.querySelector("#save-reminder-title") : null;
-    const stepsEl = modal ? modal.querySelector(".save-reminder-steps") : null;
-    const existingStatus = this.saveReminderModal.existingStatus;
-    const continueBtn = this.saveReminderModal.continueBtn;
-
-    if (titleEl) titleEl.textContent = title;
-    if (this.saveReminderModal.message) this.saveReminderModal.message.textContent = message;
-    if (stepsEl) {
-      stepsEl.innerHTML = steps;
-      stepsEl.classList.toggle("is-unnumbered", !numberedSteps);
-    }
-    if (existingStatus) {
-      existingStatus.hidden = !existingStatusHtml;
-      existingStatus.innerHTML = existingStatusHtml;
-      existingStatus.classList.toggle("is-important", Boolean(existingStatusImportant));
-    }
-    if (continueBtn) continueBtn.textContent = continueLabel;
+    this.reminderModalRuntime.setContent({
+      title,
+      message,
+      steps,
+      continueLabel,
+      existingStatusHtml,
+      existingStatusImportant,
+      numberedSteps,
+    });
   }
 
   async #showDownloadReminderModal(downloadFileName) {
@@ -1152,32 +1147,7 @@ function createAtelierController(config = {}) {
       if (nextUserFolder) nextUserFolder.textContent = folderLabel;
       if (nextFileName) nextFileName.textContent = cleanFileName;
 
-      const onClose = (result) => {
-        modal.style.display = "none";
-        modal.setAttribute("aria-hidden", "true");
-        if (cancelBtn) cancelBtn.onclick = null;
-        continueBtn.onclick = null;
-        window.removeEventListener("keydown", onKeydown);
-        resolve(result);
-      };
-
-      const onKeydown = (event) => {
-        if (event.key === "Escape") {
-          event.preventDefault();
-          onClose(false);
-        }
-        if (event.key === "Enter") {
-          event.preventDefault();
-          onClose(true);
-        }
-      };
-
-      if (cancelBtn) cancelBtn.onclick = () => onClose(false);
-      continueBtn.onclick = () => onClose(true);
-      window.addEventListener("keydown", onKeydown);
-      modal.style.display = "flex";
-      modal.setAttribute("aria-hidden", "false");
-      continueBtn.focus();
+      this.reminderModalRuntime.show().then(resolve);
     });
   }
 
@@ -1207,32 +1177,7 @@ function createAtelierController(config = {}) {
       const nextFileName = modal.querySelector("#save-reminder-file-name");
       if (nextFileName) nextFileName.textContent = "T\u00e9l\u00e9chargements";
 
-      const onClose = (result) => {
-        modal.style.display = "none";
-        modal.setAttribute("aria-hidden", "true");
-        if (cancelBtn) cancelBtn.onclick = null;
-        continueBtn.onclick = null;
-        window.removeEventListener("keydown", onKeydown);
-        resolve(result);
-      };
-
-      const onKeydown = (event) => {
-        if (event.key === "Escape") {
-          event.preventDefault();
-          onClose(false);
-        }
-        if (event.key === "Enter") {
-          event.preventDefault();
-          onClose(true);
-        }
-      };
-
-      if (cancelBtn) cancelBtn.onclick = () => onClose(false);
-      continueBtn.onclick = () => onClose(true);
-      window.addEventListener("keydown", onKeydown);
-      modal.style.display = "flex";
-      modal.setAttribute("aria-hidden", "false");
-      continueBtn.focus();
+      this.reminderModalRuntime.show().then(resolve);
     });
   }
 
@@ -1286,32 +1231,7 @@ function createAtelierController(config = {}) {
       if (nextUserFolder) nextUserFolder.textContent = folderLabel;
       if (nextFileName) nextFileName.textContent = expectedFileName;
 
-      const onClose = (result) => {
-        modal.style.display = "none";
-        modal.setAttribute("aria-hidden", "true");
-        if (cancelBtn) cancelBtn.onclick = null;
-        continueBtn.onclick = null;
-        window.removeEventListener("keydown", onKeydown);
-        resolve(result);
-      };
-
-      const onKeydown = (event) => {
-        if (event.key === "Escape") {
-          event.preventDefault();
-          onClose(false);
-        }
-        if (event.key === "Enter") {
-          event.preventDefault();
-          onClose(true);
-        }
-      };
-
-      if (cancelBtn) cancelBtn.onclick = () => onClose(false);
-      continueBtn.onclick = () => onClose(true);
-      window.addEventListener("keydown", onKeydown);
-      modal.style.display = "flex";
-      modal.setAttribute("aria-hidden", "false");
-      continueBtn.focus();
+      this.reminderModalRuntime.show().then(resolve);
     });
   }
 
