@@ -64,6 +64,14 @@ function createAtelierController(config = {}) {
       renderAffinityFallback: () => this.#renderAffinityPage(this.currentAffinityId, this.currentThemeId),
       renderThemesFallback: () => this.#renderThemesOverview(),
     });
+    this.routeRuntime = window.createAtelierRouteRuntime({
+      renderHome: () => this.#renderHomePage(),
+      renderThemes: () => this.#renderThemesOverview(),
+      renderAffinity: (affinityId, themeId) => this.#renderAffinityPage(affinityId, themeId),
+      renderExercise: (exerciseId) => this.#renderExercisePage(exerciseId),
+      renderProgress: () => this.#renderProgressPage(),
+      renderProfile: () => this.#renderProfilePage(),
+    });
     this.sessionRuntime = window.createAtelierSessionRuntime({
       storage: this.storage,
       view: this.view,
@@ -484,33 +492,7 @@ function createAtelierController(config = {}) {
   }
 
   #renderFromHash() {
-    const hash = window.location.hash.replace(/^#/, "");
-    const [route, param1, param2] = hash.split("/");
-
-    if (route === "themes") {
-      this.#renderThemesOverview();
-      return;
-    }
-    if (route === "affinity") {
-      this.#renderAffinityPage(param1 || null, param2 || null);
-      return;
-    }
-    if (route === "exercise") {
-      if (param1) {
-        this.#renderExercisePage(param1);
-        return;
-      }
-    }
-    if (route === "progress") {
-      this.#renderProgressPage();
-      return;
-    }
-    if (route === "profile") {
-      this.#renderProfilePage();
-      return;
-    }
-
-    this.#renderHomePage();
+    this.routeRuntime.renderFromHash(window.location.hash);
   }
 
   #renderHomePage() {

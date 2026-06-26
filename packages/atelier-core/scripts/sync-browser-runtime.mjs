@@ -10,6 +10,7 @@ export const DEFAULT_BROWSER_RUNTIME_FILES = [
   { src: "browser/home.js", dst: "js/core/home.js" },
   { src: "browser/themes.js", dst: "js/core/themes.js" },
   { src: "browser/exercise.js", dst: "js/core/exercise.js" },
+  { src: "browser/route.js", dst: "js/core/route.js" },
   { src: "browser/persistence.js", dst: "js/core/persistence.js" },
   { src: "browser/session.js", dst: "js/core/session.js" },
   { src: "browser/workfile.js", dst: "js/core/workfile.js" },

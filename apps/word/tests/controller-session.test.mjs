@@ -14,6 +14,7 @@ const CORE_REMINDER_MODAL_SOURCE = await fs.readFile(path.join(ROOT, "js", "core
 const CORE_HOME_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "home.js"), "utf8");
 const CORE_THEMES_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "themes.js"), "utf8");
 const CORE_EXERCISE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "exercise.js"), "utf8");
+const CORE_ROUTE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "route.js"), "utf8");
 const CORE_USER_SETUP_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "user-setup.js"), "utf8");
 const CORE_PROGRESS_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "progress.js"), "utf8");
 const CORE_PROFILE_SOURCE = await fs.readFile(path.join(ROOT, "js", "core", "profile.js"), "utf8");
@@ -450,6 +451,7 @@ function createHarness(options = {}) {
   vm.runInContext(CORE_HOME_SOURCE, context, { filename: "js/core/home.js" });
   vm.runInContext(CORE_THEMES_SOURCE, context, { filename: "js/core/themes.js" });
   vm.runInContext(CORE_EXERCISE_SOURCE, context, { filename: "js/core/exercise.js" });
+  vm.runInContext(CORE_ROUTE_SOURCE, context, { filename: "js/core/route.js" });
   vm.runInContext(CORE_USER_SETUP_SOURCE, context, { filename: "js/core/user-setup.js" });
   vm.runInContext(CORE_PROGRESS_SOURCE, context, { filename: "js/core/progress.js" });
   vm.runInContext(CORE_PROFILE_SOURCE, context, { filename: "js/core/profile.js" });

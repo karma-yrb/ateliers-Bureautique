@@ -25,6 +25,7 @@ test("Excel HTML loads shared runtime scripts in dependency order", async () => 
   const homeIndex = html.indexOf('src="js/core/home.js"');
   const themesIndex = html.indexOf('src="js/core/themes.js"');
   const exerciseIndex = html.indexOf('src="js/core/exercise.js"');
+  const routeIndex = html.indexOf('src="js/core/route.js"');
   const persistenceIndex = html.indexOf('src="js/core/persistence.js"');
   const sessionIndex = html.indexOf('src="js/core/session.js"');
   const workfileIndex = html.indexOf('src="js/core/workfile.js"');
@@ -37,6 +38,7 @@ test("Excel HTML loads shared runtime scripts in dependency order", async () => 
   assert.notEqual(homeIndex, -1);
   assert.notEqual(themesIndex, -1);
   assert.notEqual(exerciseIndex, -1);
+  assert.notEqual(routeIndex, -1);
   assert.notEqual(persistenceIndex, -1);
   assert.notEqual(sessionIndex, -1);
   assert.notEqual(workfileIndex, -1);
@@ -48,6 +50,7 @@ test("Excel HTML loads shared runtime scripts in dependency order", async () => 
   assert.ok(homeIndex < persistenceIndex);
   assert.ok(themesIndex < persistenceIndex);
   assert.ok(exerciseIndex < persistenceIndex);
+  assert.ok(routeIndex < persistenceIndex);
   assert.ok(persistenceIndex < sessionIndex);
   assert.ok(sessionIndex < workfileIndex);
   assert.ok(workfileIndex < reminderModalIndex);
