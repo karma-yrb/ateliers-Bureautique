@@ -12,6 +12,9 @@ const ALLOWED_TYPES = new Set([
   "ci",
   "style",
   "revert",
+  "core",
+  "word",
+  "excel",
 ]);
 
 const CONVENTIONAL_RE = /^(?<type>[a-z]+)(\([^)]+\))?(?<breaking>!)?: (?<description>.+)$/;
