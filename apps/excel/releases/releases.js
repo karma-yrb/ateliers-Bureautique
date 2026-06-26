@@ -1,7 +1,196 @@
 window.RELEASES_DATA = {
-  "version": "0.1.9",
-  "updatedAt": "2026-06-23T14:20:28.067Z",
+  "version": "0.1.10",
+  "updatedAt": "2026-06-26T12:35:49.278Z",
   "releases": [
+    {
+      "version": "0.1.10",
+      "tag": "excel-v0.1.10",
+      "date": "2026-06-26",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.9",
+          "breaking": false,
+          "hash": "8bf1857"
+        },
+        {
+          "type": "build",
+          "typeLabel": "Build",
+          "scope": "",
+          "description": "allow workspace release commit types",
+          "breaking": false,
+          "hash": "f582c79"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared user account events",
+          "breaking": false,
+          "hash": "14cef1a"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared exercise navigation events",
+          "breaking": false,
+          "hash": "1ff7cf8"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared dynamic UI events",
+          "breaking": false,
+          "hash": "3f29949"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared route runtime",
+          "breaking": false,
+          "hash": "cd0d96e"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared exercise runtime",
+          "breaking": false,
+          "hash": "c9594c5"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "remove dead themes controller code",
+          "breaking": false,
+          "hash": "0b67d51"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared themes runtime",
+          "breaking": false,
+          "hash": "bc0fc68"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared home runtime",
+          "breaking": false,
+          "hash": "def3737"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared progress runtime",
+          "breaking": false,
+          "hash": "72051e8"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared profile runtime",
+          "breaking": false,
+          "hash": "464e2b6"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "remove dead user setup controller code",
+          "breaking": false,
+          "hash": "438c0e8"
+        },
+        {
+          "type": "test",
+          "typeLabel": "Test",
+          "scope": "",
+          "description": "enforce shared runtime load order",
+          "breaking": false,
+          "hash": "2af7950"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "route user setup through shared runtime",
+          "breaking": false,
+          "hash": "1df4147"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "persist route across user switch refresh",
+          "breaking": false,
+          "hash": "7fafbd4"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared reminder modal runtime",
+          "breaking": false,
+          "hash": "a52691f"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared work file runtime module",
+          "breaking": false,
+          "hash": "cdce43a"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared persistence runtime module",
+          "breaking": false,
+          "hash": "e57518b"
+        },
+        {
+          "type": "core",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "extract shared session runtime module",
+          "breaking": false,
+          "hash": "5ef41d5"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 2,
+        "chore": 1,
+        "build": 2,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 24,
+        "breaking": 0,
+        "total": 31
+      }
+    },
     {
       "version": "0.1.9",
       "tag": "excel-v0.1.9",

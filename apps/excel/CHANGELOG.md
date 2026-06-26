@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.9...excel-v0.1.10) (2026-06-26)
+
+
+### Bug Fixes
+
+* **excel:** align remaining technical exercise assets ([73db817](https://github.com/karma-yrb/ateliers-Bureautique/commit/73db817997697dbd2accc5422d613e795a9d9060))
+* **excel:** correct initial exercise assets ([3b41f02](https://github.com/karma-yrb/ateliers-Bureautique/commit/3b41f027381b54243bf0a2fedaba7538b98fbaab))
+
+
+### Tests
+
+* document and enforce shared DOM contract ([a50cb60](https://github.com/karma-yrb/ateliers-Bureautique/commit/a50cb60e905d9e6437396f9a2a4b58daff4c1489))
+* enforce shared runtime load order ([2af7950](https://github.com/karma-yrb/ateliers-Bureautique/commit/2af795040a465317e349c1130eb1f8af9779ffe7))
+
 ### [0.1.9](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.8...excel-v0.1.9) (2026-06-23)
 
 
