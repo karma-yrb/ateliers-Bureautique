@@ -1,7 +1,60 @@
 window.RELEASES_DATA = {
-  "version": "0.1.10",
-  "updatedAt": "2026-06-26T12:35:49.278Z",
+  "version": "0.1.11",
+  "updatedAt": "2026-06-26T13:16:37.359Z",
   "releases": [
+    {
+      "version": "0.1.11",
+      "tag": "excel-v0.1.11",
+      "date": "2026-06-26",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.10",
+          "breaking": false,
+          "hash": "e70eece"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "badc56d"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel",
+          "description": "align theme category labels with excel module",
+          "breaking": false,
+          "hash": "bcec087"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 2,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 3
+      }
+    },
     {
       "version": "0.1.10",
       "tag": "excel-v0.1.10",
