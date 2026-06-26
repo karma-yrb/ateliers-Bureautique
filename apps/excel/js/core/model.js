@@ -219,7 +219,7 @@ class AtelierModel {
       return {
         id: "automatisation",
         label: "Automatisation et production",
-        subtitle: "Gagner du temps sur les tâches répétitives et les documents pro.",
+        subtitle: "Gagner du temps sur les tâches répétitives et les feuilles de calcul.",
         order: 4,
       };
     }
@@ -229,8 +229,8 @@ class AtelierModel {
     ) {
       return {
         id: "structure",
-        label: "Structure du document",
-        subtitle: "Construire des documents organisés, lisibles et solides.",
+        label: "Structure du classeur",
+        subtitle: "Organiser les feuilles, tableaux et données de manière claire.",
         order: 3,
       };
     }
@@ -240,16 +240,16 @@ class AtelierModel {
     ) {
       return {
         id: "visuel",
-        label: "Mise en forme visuelle",
-        subtitle: "Travailler l'apparence et l'impact visuel des documents.",
+        label: "Mise en forme et visuels",
+        subtitle: "Travailler l'apparence des tableaux, cellules, graphiques et visuels.",
         order: 2,
       };
     }
 
     return {
       id: "fondations",
-      label: "Fondations Word",
-      subtitle: "Prendre en main les bases de saisie, paragraphes et organisation simple.",
+      label: "Fondations Excel",
+      subtitle: "Prendre en main la saisie, les calculs simples et l'organisation des feuilles.",
       order: 1,
     };
   }
