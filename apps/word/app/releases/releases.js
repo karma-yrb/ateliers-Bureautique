@@ -1,7 +1,52 @@
 window.RELEASES_DATA = {
-  "version": "1.5.10",
-  "updatedAt": "2026-06-26T13:16:31.799Z",
+  "version": "1.5.11",
+  "updatedAt": "2026-06-26T13:57:21.753Z",
   "releases": [
+    {
+      "version": "1.5.11",
+      "tag": "word-v1.5.11",
+      "date": "2026-06-26",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version de maintenance.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "9b25a9f"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.11",
+          "breaking": false,
+          "hash": "181df4d"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 2,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 2
+      }
+    },
     {
       "version": "1.5.10",
       "tag": "word-v1.5.10",
