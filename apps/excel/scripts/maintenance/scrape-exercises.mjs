@@ -298,6 +298,7 @@ function buildImageAwareExerciseContent(enonceHtml) {
     if (block.tag === "p") {
       const text = cleanInstructionLine(htmlToText(block.html));
       if (!text) continue;
+      if (/^vous pouvez t[?e]l[?e]charger le fichier de travail ci-contre\.?$/i.test(text)) continue;
       if (/^t\s*[ée]l[ée]chargez ce fichier\b/i.test(text)) continue;
       if (/^v\s*ous t[ée]l[ée]chargez le fichier de travail ici\b/i.test(text)) continue;
       if (/^clics\s*:/i.test(text)) continue;

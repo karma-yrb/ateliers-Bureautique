@@ -1413,7 +1413,6 @@
       "description": "Ecriture oblique dans une cellule",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous reproduisez ce tableau en prenant soin de respecter la mise en forme et particulièrement l'orientation de l'écriture des cellules.",
         "Cette fonction se trouve dans le format de cellule et alignement."
       ],
@@ -1432,18 +1431,15 @@
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous reproduisez ce tableau en prenant soin de respecter la mise en forme et particulièrement l'orientation de l'écriture des cellules.",
         "Cette fonction se trouve dans le format de cellule et alignement."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous reproduisez ce tableau en prenant soin de respecter la mise en forme et particulièrement l'orientation de l'écriture des cellules.",
         "Cette fonction se trouve dans le format de cellule et alignement."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous reproduisez ce tableau en prenant soin de respecter la mise en forme et particulièrement l'orientation de l'écriture des cellules.",
         "Cette fonction se trouve dans le format de cellule et alignement."
       ],
@@ -1527,7 +1523,6 @@
       "description": "Styles personnalisés",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez ce tableau avec les styles personnalisés d'Excel prédéfinis dans votre version. Vous pouvez également créer votre propre style, c'est plus classe."
       ],
       "levelLabel": "Debutant",
@@ -1545,16 +1540,13 @@
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez ce tableau avec les styles personnalisés d'Excel prédéfinis dans votre version. Vous pouvez également créer votre propre style, c'est plus classe."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez ce tableau avec les styles personnalisés d'Excel prédéfinis dans votre version. Vous pouvez également créer votre propre style, c'est plus classe."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez ce tableau avec les styles personnalisés d'Excel prédéfinis dans votre version. Vous pouvez également créer votre propre style, c'est plus classe."
       ],
       "paragraphMode": false
@@ -1645,7 +1637,6 @@
       "description": "Mise en forme tableau (révision complète)",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
       "levelLabel": "Debutant",
@@ -1667,16 +1658,13 @@
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
       "paragraphMode": false,
@@ -3654,7 +3642,6 @@
       "description": "Soustraction",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez le tableau en calculant les totaux par atelier et le solde de production par mois."
       ],
       "levelLabel": "Debutant",
@@ -3674,16 +3661,13 @@
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez le tableau en calculant les totaux par atelier et le solde de production par mois."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez le tableau en calculant les totaux par atelier et le solde de production par mois."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez le tableau en calculant les totaux par atelier et le solde de production par mois."
       ],
       "paragraphMode": false
@@ -3708,7 +3692,6 @@
       "description": "Soustraction",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "Après avoir calculé le total d'heure par personne, vous en déduisez le solde. Le format n'est pas requis."
       ],
       "levelLabel": "Debutant",
@@ -3728,16 +3711,13 @@
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "Après avoir calculé le total d'heure par personne, vous en déduisez le solde. Le format n'est pas requis."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "Après avoir calculé le total d'heure par personne, vous en déduisez le solde. Le format n'est pas requis."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "Après avoir calculé le total d'heure par personne, vous en déduisez le solde. Le format n'est pas requis."
       ],
       "paragraphMode": false
@@ -3762,7 +3742,6 @@
       "description": "Soustraction",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez le tableau en calculant les totaux par mois et le solde de livraisons."
       ],
       "levelLabel": "Debutant",
@@ -3782,16 +3761,13 @@
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez le tableau en calculant les totaux par mois et le solde de livraisons."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez le tableau en calculant les totaux par mois et le solde de livraisons."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez le tableau en calculant les totaux par mois et le solde de livraisons."
       ],
       "paragraphMode": false
@@ -3816,7 +3792,6 @@
       "description": "Exercice pour mettre en place une soustraction entre deux nombres dans excel",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Avec une soustraction que vous étirez vers le bas, vous calculez la différence en euros entre 2024 et 2025."
       ],
       "levelLabel": "Debutant",
@@ -3836,16 +3811,13 @@
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Avec une soustraction que vous étirez vers le bas, vous calculez la différence en euros entre 2024 et 2025."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Avec une soustraction que vous étirez vers le bas, vous calculez la différence en euros entre 2024 et 2025."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Avec une soustraction que vous étirez vers le bas, vous calculez la différence en euros entre 2024 et 2025."
       ],
       "paragraphMode": false
@@ -3870,7 +3842,6 @@
       "description": "Exercice pour mettre en place une soustraction entre deux nombres dans excel - Exercice 8",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "En B11, vous saisissez la soustraction qui vous permet de faire le différentiel entre le total dépense de l'association et sa subvention. (vous utilisez la poignée de recopie pour déployer l'opération horizontalement).",
         "En C12, vous calculez le solde cumulé (addition) et vous tirez également par la droite."
       ],
@@ -3891,18 +3862,15 @@
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "En B11, vous saisissez la soustraction qui vous permet de faire le différentiel entre le total dépense de l'association et sa subvention. (vous utilisez la poignée de recopie pour déployer l'opération horizontalement).",
         "En C12, vous calculez le solde cumulé (addition) et vous tirez également par la droite."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "En B11, vous saisissez la soustraction qui vous permet de faire le différentiel entre le total dépense de l'association et sa subvention. (vous utilisez la poignée de recopie pour déployer l'opération horizontalement).",
         "En C12, vous calculez le solde cumulé (addition) et vous tirez également par la droite."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "En B11, vous saisissez la soustraction qui vous permet de faire le différentiel entre le total dépense de l'association et sa subvention. (vous utilisez la poignée de recopie pour déployer l'opération horizontalement).",
         "En C12, vous calculez le solde cumulé (addition) et vous tirez également par la droite."
       ],
@@ -4322,7 +4290,6 @@
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous faites la division dans la colonne C pour trouver le chiffre d'affaires par personne."
       ],
       "levelLabel": "Debutant",
@@ -4342,16 +4309,13 @@
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous faites la division dans la colonne C pour trouver le chiffre d'affaires par personne."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous faites la division dans la colonne C pour trouver le chiffre d'affaires par personne."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous faites la division dans la colonne C pour trouver le chiffre d'affaires par personne."
       ],
       "paragraphMode": false
@@ -4376,7 +4340,6 @@
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Dans un premier temps.",
         "vous faites la somme des CA par jour en G19.",
         "puis dans un second temps.",
@@ -4400,7 +4363,6 @@
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Dans un premier temps.",
         "vous faites la somme des CA par jour en G19.",
         "puis dans un second temps.",
@@ -4410,7 +4372,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Dans un premier temps.",
         "vous faites la somme des CA par jour en G19.",
         "puis dans un second temps.",
@@ -4419,7 +4380,6 @@
         "(0,03 ou 3 %)."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Dans un premier temps.",
         "vous faites la somme des CA par jour en G19.",
         "puis dans un second temps.",
@@ -4451,7 +4411,6 @@
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Calcul d'un budget en € constant et calcul du taux de croissance de ce budget.",
         "en fonction d'un budget en € courants et de l'indice des prix.",
         "(Pour une partie de la réponse de la ligne 4 l'indice des prix est à diviser par 100)."
@@ -4473,20 +4432,17 @@
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Calcul d'un budget en € constant et calcul du taux de croissance de ce budget.",
         "en fonction d'un budget en € courants et de l'indice des prix.",
         "(Pour une partie de la réponse de la ligne 4 l'indice des prix est à diviser par 100)."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Calcul d'un budget en € constant et calcul du taux de croissance de ce budget.",
         "en fonction d'un budget en € courants et de l'indice des prix.",
         "(Pour une partie de la réponse de la ligne 4 l'indice des prix est à diviser par 100)."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Calcul d'un budget en € constant et calcul du taux de croissance de ce budget.",
         "en fonction d'un budget en € courants et de l'indice des prix.",
         "(Pour une partie de la réponse de la ligne 4 l'indice des prix est à diviser par 100)."
@@ -4513,7 +4469,6 @@
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez les cellules bleues avec la division et la somme.",
         "Répartition des entreprises par secteurs d'activités."
       ],
@@ -4534,18 +4489,15 @@
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez les cellules bleues avec la division et la somme.",
         "Répartition des entreprises par secteurs d'activités."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez les cellules bleues avec la division et la somme.",
         "Répartition des entreprises par secteurs d'activités."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Complétez les cellules bleues avec la division et la somme.",
         "Répartition des entreprises par secteurs d'activités."
       ],
@@ -4709,7 +4661,6 @@
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Concevoir un tableau par représentant permettant de connaître, pour chaque mois, le détail du salaire brut de chacun. (fixe + commission + prime).",
         "L’entreprise ALEOU rémunère ses représentants en leur attribuant un salaire fixe et une prime basée sur le chiffre d’affaires.",
         "En outre, chaque mois, elle partage entre eux une commission. Cette commission est partagée proportionnellement au chiffre d’affaires mensuel réalisé par chacun d’eux.",
@@ -4735,7 +4686,6 @@
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Concevoir un tableau par représentant permettant de connaître, pour chaque mois, le détail du salaire brut de chacun. (fixe + commission + prime).",
         "L’entreprise ALEOU rémunère ses représentants en leur attribuant un salaire fixe et une prime basée sur le chiffre d’affaires.",
         "En outre, chaque mois, elle partage entre eux une commission. Cette commission est partagée proportionnellement au chiffre d’affaires mensuel réalisé par chacun d’eux.",
@@ -4746,7 +4696,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Concevoir un tableau par représentant permettant de connaître, pour chaque mois, le détail du salaire brut de chacun. (fixe + commission + prime).",
         "L’entreprise ALEOU rémunère ses représentants en leur attribuant un salaire fixe et une prime basée sur le chiffre d’affaires.",
         "En outre, chaque mois, elle partage entre eux une commission. Cette commission est partagée proportionnellement au chiffre d’affaires mensuel réalisé par chacun d’eux.",
@@ -4756,7 +4705,6 @@
         "Chiffres d'affaires :."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Concevoir un tableau par représentant permettant de connaître, pour chaque mois, le détail du salaire brut de chacun. (fixe + commission + prime).",
         "L’entreprise ALEOU rémunère ses représentants en leur attribuant un salaire fixe et une prime basée sur le chiffre d’affaires.",
         "En outre, chaque mois, elle partage entre eux une commission. Cette commission est partagée proportionnellement au chiffre d’affaires mensuel réalisé par chacun d’eux.",
@@ -4849,8 +4797,6 @@
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "En D3:D21, vous devez déterminer à l'aide de la division quel est le rendement de production d'objet à l'heure. Le temps de réalisation d'un objet est donné à la MINUTE."
       ],
       "levelLabel": "Debutant",
@@ -4870,19 +4816,13 @@
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "En D3:D21, vous devez déterminer à l'aide de la division quel est le rendement de production d'objet à l'heure. Le temps de réalisation d'un objet est donné à la MINUTE."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "En D3:D21, vous devez déterminer à l'aide de la division quel est le rendement de production d'objet à l'heure. Le temps de réalisation d'un objet est donné à la MINUTE."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "En D3:D21, vous devez déterminer à l'aide de la division quel est le rendement de production d'objet à l'heure. Le temps de réalisation d'un objet est donné à la MINUTE."
       ],
       "paragraphMode": false
@@ -4907,8 +4847,6 @@
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "En D3:D20, vous devez déterminer, à l'aide de la division, le pourcentage de perte de chaque produit vendu par Fruits et Légumes du Languedoc 34."
       ],
       "levelLabel": "Debutant",
@@ -4928,19 +4866,13 @@
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "En D3:D20, vous devez déterminer, à l'aide de la division, le pourcentage de perte de chaque produit vendu par Fruits et Légumes du Languedoc 34."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "En D3:D20, vous devez déterminer, à l'aide de la division, le pourcentage de perte de chaque produit vendu par Fruits et Légumes du Languedoc 34."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
-        "Vous pouvez télécharger votre fichier de travail ci-contre.",
         "En D3:D20, vous devez déterminer, à l'aide de la division, le pourcentage de perte de chaque produit vendu par Fruits et Légumes du Languedoc 34."
       ],
       "paragraphMode": false
@@ -5875,7 +5807,6 @@
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
       ],
       "levelLabel": "Debutant",
@@ -5895,16 +5826,13 @@
       "section": "bases",
       "moduleSlug": "graphiques",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
       ],
       "paragraphMode": false,
@@ -5986,7 +5914,6 @@
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après avoir téléchargé le fichier de travail.",
         "vous proposez l'insertion d'un graphique en \"radar\" pour illustrer les notes des élèves de cette classe.",
         "Vous augmenterez la taille de la police et appliquez un léger relief aux traces."
@@ -6006,20 +5933,17 @@
       "section": "bases",
       "moduleSlug": "graphiques",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après avoir téléchargé le fichier de travail.",
         "vous proposez l'insertion d'un graphique en \"radar\" pour illustrer les notes des élèves de cette classe.",
         "Vous augmenterez la taille de la police et appliquez un léger relief aux traces."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après avoir téléchargé le fichier de travail.",
         "vous proposez l'insertion d'un graphique en \"radar\" pour illustrer les notes des élèves de cette classe.",
         "Vous augmenterez la taille de la police et appliquez un léger relief aux traces."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après avoir téléchargé le fichier de travail.",
         "vous proposez l'insertion d'un graphique en \"radar\" pour illustrer les notes des élèves de cette classe.",
         "Vous augmenterez la taille de la police et appliquez un léger relief aux traces."
@@ -6046,7 +5970,6 @@
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Graphique à deux axes L'objectif est de représenter ces deux séries de données sur le même graphique.",
         "mais sur deux axes différents.",
         "afin de rendre lisible le graphique.",
@@ -6069,7 +5992,6 @@
       "section": "bases",
       "moduleSlug": "graphiques",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Graphique à deux axes L'objectif est de représenter ces deux séries de données sur le même graphique.",
         "mais sur deux axes différents.",
         "afin de rendre lisible le graphique.",
@@ -6079,7 +6001,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Graphique à deux axes L'objectif est de représenter ces deux séries de données sur le même graphique.",
         "mais sur deux axes différents.",
         "afin de rendre lisible le graphique.",
@@ -6088,7 +6009,6 @@
         "Vous afficherez les étiquettes de données en décaler pour les ventes."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Graphique à deux axes L'objectif est de représenter ces deux séries de données sur le même graphique.",
         "mais sur deux axes différents.",
         "afin de rendre lisible le graphique.",
@@ -6118,7 +6038,6 @@
       "description": "Graphique Excel - Pyramides des âges",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Pyramide des âges :.",
         "L'objectif est de représenter la pyramide des âges de la France en 2019.",
         "La procédure est détaillée ci-dessous soit via quelques indices si vous êtes à l'aise avec les graphiques.",
@@ -6147,7 +6066,6 @@
       "section": "bases",
       "moduleSlug": "graphiques",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Pyramide des âges :.",
         "L'objectif est de représenter la pyramide des âges de la France en 2019.",
         "La procédure est détaillée ci-dessous soit via quelques indices si vous êtes à l'aise avec les graphiques.",
@@ -6155,14 +6073,12 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Pyramide des âges :.",
         "L'objectif est de représenter la pyramide des âges de la France en 2019.",
         "La procédure est détaillée ci-dessous soit via quelques indices si vous êtes à l'aise avec les graphiques.",
         "soit via une vidéo si vous l'êtes moins."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Pyramide des âges :.",
         "L'objectif est de représenter la pyramide des âges de la France en 2019.",
         "La procédure est détaillée ci-dessous soit via quelques indices si vous êtes à l'aise avec les graphiques.",
@@ -6258,7 +6174,6 @@
       "description": "Graphique Sparkline",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes : De F2 à F6, vous insérez des graphiques spaklines avec les données des 4 trimestres pour chaque champ d'activité."
       ],
       "levelLabel": "Debutant",
@@ -6278,16 +6193,13 @@
       "section": "bases",
       "moduleSlug": "graphiques",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes : De F2 à F6, vous insérez des graphiques spaklines avec les données des 4 trimestres pour chaque champ d'activité."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes : De F2 à F6, vous insérez des graphiques spaklines avec les données des 4 trimestres pour chaque champ d'activité."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes : De F2 à F6, vous insérez des graphiques spaklines avec les données des 4 trimestres pour chaque champ d'activité."
       ],
       "paragraphMode": false
@@ -6664,7 +6576,6 @@
       "description": "Niveau de difficulté de l'exercice : 1",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'exercice est simple, vous devez imprimer le tableau au MILIEU de la page.",
         "Vous préparez une impression personnalisée \"Ajuster la feuille à une page\" et sans marge.",
         "PS : Pour tester votre travail, vous utilisez l'option \"microsoft print to PDF\"."
@@ -6684,20 +6595,17 @@
       "section": "bases",
       "moduleSlug": "impression",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'exercice est simple, vous devez imprimer le tableau au MILIEU de la page.",
         "Vous préparez une impression personnalisée \"Ajuster la feuille à une page\" et sans marge.",
         "PS : Pour tester votre travail, vous utilisez l'option \"microsoft print to PDF\"."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'exercice est simple, vous devez imprimer le tableau au MILIEU de la page.",
         "Vous préparez une impression personnalisée \"Ajuster la feuille à une page\" et sans marge.",
         "PS : Pour tester votre travail, vous utilisez l'option \"microsoft print to PDF\"."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'exercice est simple, vous devez imprimer le tableau au MILIEU de la page.",
         "Vous préparez une impression personnalisée \"Ajuster la feuille à une page\" et sans marge.",
         "PS : Pour tester votre travail, vous utilisez l'option \"microsoft print to PDF\"."
@@ -6724,7 +6632,6 @@
       "description": "Exercice pour manipuler de façon simple les formats de cellules dans excel. Niveau facile",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes :.",
         "Après avoir ouvert un classeur Excel reproduire le tableau ci-dessous ou télécharger le fichier de travail ci-contre.",
         "Retrouvez les valeurs attendues uniquement en modifiant le format de cellule.",
@@ -6749,7 +6656,6 @@
       "section": "avance",
       "moduleSlug": "format-de-cellule",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes :.",
         "Après avoir ouvert un classeur Excel reproduire le tableau ci-dessous ou télécharger le fichier de travail ci-contre.",
         "Retrouvez les valeurs attendues uniquement en modifiant le format de cellule.",
@@ -6758,7 +6664,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes :.",
         "Après avoir ouvert un classeur Excel reproduire le tableau ci-dessous ou télécharger le fichier de travail ci-contre.",
         "Retrouvez les valeurs attendues uniquement en modifiant le format de cellule.",
@@ -6766,7 +6671,6 @@
         "Solution."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes :.",
         "Après avoir ouvert un classeur Excel reproduire le tableau ci-dessous ou télécharger le fichier de travail ci-contre.",
         "Retrouvez les valeurs attendues uniquement en modifiant le format de cellule.",
@@ -7100,7 +7004,6 @@
       "description": "Exercice complet pour la mise en place de nombreux formats DATE personnalisés",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez les formats de cellule personnalisés dans les cellules bleues afin d'afficher les dates comme prévu dans la capture écran ci-contre. La colonne B renferme des indices sérieux…."
       ],
       "levelLabel": null,
@@ -7120,16 +7023,13 @@
       "section": "avance",
       "moduleSlug": "format-de-cellule",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez les formats de cellule personnalisés dans les cellules bleues afin d'afficher les dates comme prévu dans la capture écran ci-contre. La colonne B renferme des indices sérieux…."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez les formats de cellule personnalisés dans les cellules bleues afin d'afficher les dates comme prévu dans la capture écran ci-contre. La colonne B renferme des indices sérieux…."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez les formats de cellule personnalisés dans les cellules bleues afin d'afficher les dates comme prévu dans la capture écran ci-contre. La colonne B renferme des indices sérieux…."
       ],
       "paragraphMode": false
@@ -9216,7 +9116,6 @@
       "description": "Validation des données",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Dans la colonne désignation et la colonne TVA, vous mettez en place un menu déroulant en vous appuyant sur les colonnes L et M que vous masquerez à l'issue."
       ],
@@ -9237,18 +9136,15 @@
       "section": "avance",
       "moduleSlug": "outils-de-donnees",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Dans la colonne désignation et la colonne TVA, vous mettez en place un menu déroulant en vous appuyant sur les colonnes L et M que vous masquerez à l'issue."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Dans la colonne désignation et la colonne TVA, vous mettez en place un menu déroulant en vous appuyant sur les colonnes L et M que vous masquerez à l'issue."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Dans la colonne désignation et la colonne TVA, vous mettez en place un menu déroulant en vous appuyant sur les colonnes L et M que vous masquerez à l'issue."
       ],
@@ -9590,7 +9486,6 @@
       "description": "Convertir des données",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'objectif de l'exercice est d'utiliser la fonction CONVERTIR d'Excel pour séparer le département et le nom de la ville.",
         "À noter que vous obtiendrez un résultat identique avec les fonctions TEXTE du tableur.",
         "C'est moins facile à mettre en œuvre.",
@@ -9614,7 +9509,6 @@
       "section": "avance",
       "moduleSlug": "outils-de-donnees",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'objectif de l'exercice est d'utiliser la fonction CONVERTIR d'Excel pour séparer le département et le nom de la ville.",
         "À noter que vous obtiendrez un résultat identique avec les fonctions TEXTE du tableur.",
         "C'est moins facile à mettre en œuvre.",
@@ -9623,7 +9517,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'objectif de l'exercice est d'utiliser la fonction CONVERTIR d'Excel pour séparer le département et le nom de la ville.",
         "À noter que vous obtiendrez un résultat identique avec les fonctions TEXTE du tableur.",
         "C'est moins facile à mettre en œuvre.",
@@ -9631,7 +9524,6 @@
         "Vue de départ."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'objectif de l'exercice est d'utiliser la fonction CONVERTIR d'Excel pour séparer le département et le nom de la ville.",
         "À noter que vous obtiendrez un résultat identique avec les fonctions TEXTE du tableur.",
         "C'est moins facile à mettre en œuvre.",
@@ -9793,7 +9685,6 @@
       "description": "Exercice 2",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Remplir les deux tableaux ci-dessous en collant avec liaison les valeurs copiées dans les autres onglets."
       ],
       "levelLabel": "Intermediaire",
@@ -9813,16 +9704,13 @@
       "section": "avance",
       "moduleSlug": "lier-des-feuilles",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Remplir les deux tableaux ci-dessous en collant avec liaison les valeurs copiées dans les autres onglets."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Remplir les deux tableaux ci-dessous en collant avec liaison les valeurs copiées dans les autres onglets."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Remplir les deux tableaux ci-dessous en collant avec liaison les valeurs copiées dans les autres onglets."
       ],
       "paragraphMode": false
@@ -9912,7 +9800,6 @@
       "description": "Lier des feuilles de calculs",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Depuis cette feuille, vous rapatriez dynamiquement les valeurs du tableau Lyon Sud de la feuille \"Vue d'ensemble\"."
       ],
       "levelLabel": null,
@@ -9932,16 +9819,13 @@
       "section": "avance",
       "moduleSlug": "lier-des-feuilles",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Depuis cette feuille, vous rapatriez dynamiquement les valeurs du tableau Lyon Sud de la feuille \"Vue d'ensemble\"."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Depuis cette feuille, vous rapatriez dynamiquement les valeurs du tableau Lyon Sud de la feuille \"Vue d'ensemble\"."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Depuis cette feuille, vous rapatriez dynamiquement les valeurs du tableau Lyon Sud de la feuille \"Vue d'ensemble\"."
       ],
       "paragraphMode": false
@@ -9966,7 +9850,6 @@
       "description": "Lier des feuilles de calculs",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous alimentez dynamiquement les feuilles \"adresse\".",
         "\"mail\" et \"telephone\" depuis la feuille \"carnet\".",
         "En d'autre terme.",
@@ -9989,7 +9872,6 @@
       "section": "avance",
       "moduleSlug": "lier-des-feuilles",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous alimentez dynamiquement les feuilles \"adresse\".",
         "\"mail\" et \"telephone\" depuis la feuille \"carnet\".",
         "En d'autre terme.",
@@ -9997,14 +9879,12 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous alimentez dynamiquement les feuilles \"adresse\".",
         "\"mail\" et \"telephone\" depuis la feuille \"carnet\".",
         "En d'autre terme.",
         "ce que vous saisissez dans la feuille carnet doit se répercuter automatiquement sur les autres feuilles du classeur."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous alimentez dynamiquement les feuilles \"adresse\".",
         "\"mail\" et \"telephone\" depuis la feuille \"carnet\".",
         "En d'autre terme.",
@@ -10098,7 +9978,6 @@
       "description": "Lier des feuilles de calculs via des liens Hypertextes",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'objectif de l'exercice est de mettre en place un système de liens hypertextes entre les feuilles d'un même classeur.",
         "Pour simplifier le travail (si nécessaire) il existe déjà un bouton dans le fichier de travail. Il suffit donc de le dupliquer sur les différentes feuilles. Vous pouvez également créer vos propres boutons.",
         "Techniquement, il sera possible d'aller depuis la page d'accueil vers n'importe quelle page et revenir à l'accueil depuis n'importe quelle page."
@@ -10119,20 +9998,17 @@
       "section": "avance",
       "moduleSlug": "lier-des-feuilles",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'objectif de l'exercice est de mettre en place un système de liens hypertextes entre les feuilles d'un même classeur.",
         "Pour simplifier le travail (si nécessaire) il existe déjà un bouton dans le fichier de travail. Il suffit donc de le dupliquer sur les différentes feuilles. Vous pouvez également créer vos propres boutons.",
         "Techniquement, il sera possible d'aller depuis la page d'accueil vers n'importe quelle page et revenir à l'accueil depuis n'importe quelle page."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'objectif de l'exercice est de mettre en place un système de liens hypertextes entre les feuilles d'un même classeur.",
         "Pour simplifier le travail (si nécessaire) il existe déjà un bouton dans le fichier de travail. Il suffit donc de le dupliquer sur les différentes feuilles. Vous pouvez également créer vos propres boutons.",
         "Techniquement, il sera possible d'aller depuis la page d'accueil vers n'importe quelle page et revenir à l'accueil depuis n'importe quelle page."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "L'objectif de l'exercice est de mettre en place un système de liens hypertextes entre les feuilles d'un même classeur.",
         "Pour simplifier le travail (si nécessaire) il existe déjà un bouton dans le fichier de travail. Il suffit donc de le dupliquer sur les différentes feuilles. Vous pouvez également créer vos propres boutons.",
         "Techniquement, il sera possible d'aller depuis la page d'accueil vers n'importe quelle page et revenir à l'accueil depuis n'importe quelle page."
@@ -11158,7 +11034,6 @@
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Ce tableau représente la vente d'un magasin sur deux villes grâce à la fonction tableau croisé dynamiques de Excel, vous présentez 4 feuilles de résultats :.",
         "Feuille 1.",
         "Vous présentez un tableau qui reprend une présentation des chiffres par ville, du type de vente, modèle et taille (dans cet ordre).",
@@ -11190,7 +11065,6 @@
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Ce tableau représente la vente d'un magasin sur deux villes grâce à la fonction tableau croisé dynamiques de Excel, vous présentez 4 feuilles de résultats :.",
         "Feuille 1.",
         "Vous présentez un tableau qui reprend une présentation des chiffres par ville, du type de vente, modèle et taille (dans cet ordre).",
@@ -11205,7 +11079,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Ce tableau représente la vente d'un magasin sur deux villes grâce à la fonction tableau croisé dynamiques de Excel, vous présentez 4 feuilles de résultats :.",
         "Feuille 1.",
         "Vous présentez un tableau qui reprend une présentation des chiffres par ville, du type de vente, modèle et taille (dans cet ordre).",
@@ -11219,7 +11092,6 @@
         "Résultat attendu :."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Ce tableau représente la vente d'un magasin sur deux villes grâce à la fonction tableau croisé dynamiques de Excel, vous présentez 4 feuilles de résultats :.",
         "Feuille 1.",
         "Vous présentez un tableau qui reprend une présentation des chiffres par ville, du type de vente, modèle et taille (dans cet ordre).",
@@ -11256,7 +11128,6 @@
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Le résultat des ventes de plusieurs vendeurs sont présentés sur le fichier à télécharger ci-contre.",
         "Vous devez présenter les résultats de votre tableau croisé dynamique en 4 feuilles.",
         "Feuille 1.",
@@ -11287,7 +11158,6 @@
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Le résultat des ventes de plusieurs vendeurs sont présentés sur le fichier à télécharger ci-contre.",
         "Vous devez présenter les résultats de votre tableau croisé dynamique en 4 feuilles.",
         "Feuille 1.",
@@ -11301,7 +11171,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Le résultat des ventes de plusieurs vendeurs sont présentés sur le fichier à télécharger ci-contre.",
         "Vous devez présenter les résultats de votre tableau croisé dynamique en 4 feuilles.",
         "Feuille 1.",
@@ -11314,7 +11183,6 @@
         "Le CA en pourcentage des sections."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Le résultat des ventes de plusieurs vendeurs sont présentés sur le fichier à télécharger ci-contre.",
         "Vous devez présenter les résultats de votre tableau croisé dynamique en 4 feuilles.",
         "Feuille 1.",
@@ -11350,7 +11218,6 @@
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après avoir chargé votre fichier de travail ci-contre, vous répondez aux 5 questions ci-dessous.",
         "Feuille-1.",
         "La masse salariale par poste et par agence.",
@@ -11383,7 +11250,6 @@
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après avoir chargé votre fichier de travail ci-contre, vous répondez aux 5 questions ci-dessous.",
         "Feuille-1.",
         "La masse salariale par poste et par agence.",
@@ -11398,7 +11264,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après avoir chargé votre fichier de travail ci-contre, vous répondez aux 5 questions ci-dessous.",
         "Feuille-1.",
         "La masse salariale par poste et par agence.",
@@ -11412,7 +11277,6 @@
         "La répartition en pourcentage de la masse salariale en fonction du Diplôme."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après avoir chargé votre fichier de travail ci-contre, vous répondez aux 5 questions ci-dessous.",
         "Feuille-1.",
         "La masse salariale par poste et par agence.",
@@ -11671,7 +11535,6 @@
       "description": "Exercice 1",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez simplement un sous-total pour chaque variété de fruits."
       ],
       "levelLabel": "Debutant",
@@ -11691,16 +11554,13 @@
       "section": "avance",
       "moduleSlug": "sous-totaux",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez simplement un sous-total pour chaque variété de fruits."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez simplement un sous-total pour chaque variété de fruits."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez simplement un sous-total pour chaque variété de fruits."
       ],
       "paragraphMode": false
@@ -11725,7 +11585,6 @@
       "description": "Sous-Totaux",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez un sous-total pour déterminer la moyenne de chaque classe dans chaque matière. Il vous faudra modifier le fichier de travail."
       ],
       "levelLabel": "Intermediaire",
@@ -11745,16 +11604,13 @@
       "section": "avance",
       "moduleSlug": "sous-totaux",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez un sous-total pour déterminer la moyenne de chaque classe dans chaque matière. Il vous faudra modifier le fichier de travail."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez un sous-total pour déterminer la moyenne de chaque classe dans chaque matière. Il vous faudra modifier le fichier de travail."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Vous appliquez un sous-total pour déterminer la moyenne de chaque classe dans chaque matière. Il vous faudra modifier le fichier de travail."
       ],
       "paragraphMode": false
@@ -11779,7 +11635,6 @@
       "description": "Sous-Totaux",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après une modification du fichier de travail, vous déterminez le sous-total de chaque société. (sans modifications ça va être compliqué)."
       ],
       "levelLabel": "Intermediaire",
@@ -11799,16 +11654,13 @@
       "section": "avance",
       "moduleSlug": "sous-totaux",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après une modification du fichier de travail, vous déterminez le sous-total de chaque société. (sans modifications ça va être compliqué)."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après une modification du fichier de travail, vous déterminez le sous-total de chaque société. (sans modifications ça va être compliqué)."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Après une modification du fichier de travail, vous déterminez le sous-total de chaque société. (sans modifications ça va être compliqué)."
       ],
       "paragraphMode": false
@@ -11894,7 +11746,6 @@
       "description": "La consolidation dans excel",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Dans un espace au choix sur la feuille de calcul et de préférence à côté, vous insérez un tableau qui va faire la \"consolidation\" des deux premiers."
       ],
       "levelLabel": "Debutant",
@@ -11914,16 +11765,13 @@
       "section": "avance",
       "moduleSlug": "consolidation",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Dans un espace au choix sur la feuille de calcul et de préférence à côté, vous insérez un tableau qui va faire la \"consolidation\" des deux premiers."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Dans un espace au choix sur la feuille de calcul et de préférence à côté, vous insérez un tableau qui va faire la \"consolidation\" des deux premiers."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Dans un espace au choix sur la feuille de calcul et de préférence à côté, vous insérez un tableau qui va faire la \"consolidation\" des deux premiers."
       ],
       "paragraphMode": false
@@ -12515,7 +12363,6 @@
       "description": "Exercice 3",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes :.",
         "L'objectif de l'exercice est de créer un modèle de facture, d'insérer un bouton d'impression direct et un bouton d'aperçu avant impression via 2 macros.",
         "Après avoir téléchargé le modèle de facture ci-dessus.",
@@ -12556,7 +12403,6 @@
       "section": "avance",
       "moduleSlug": "macro",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes :.",
         "L'objectif de l'exercice est de créer un modèle de facture, d'insérer un bouton d'impression direct et un bouton d'aperçu avant impression via 2 macros.",
         "Après avoir téléchargé le modèle de facture ci-dessus.",
@@ -12582,7 +12428,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes :.",
         "L'objectif de l'exercice est de créer un modèle de facture, d'insérer un bouton d'impression direct et un bouton d'aperçu avant impression via 2 macros.",
         "Après avoir téléchargé le modèle de facture ci-dessus.",
@@ -12607,7 +12452,6 @@
         "ActiveSheet.PrintOut copies:=1, collate:=True, IgnoreprintAreas:=False."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "Consignes :.",
         "L'objectif de l'exercice est de créer un modèle de facture, d'insérer un bouton d'impression direct et un bouton d'aperçu avant impression via 2 macros.",
         "Après avoir téléchargé le modèle de facture ci-dessus.",
@@ -12897,7 +12741,6 @@
       "description": "Case à cocher",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Prévoir la distribution des cellules pour votre tableau.",
         "Insérez une case à cocher de F3 à L5 et attribuez les cellules liées (la tâche est un peu fastidieuse, il est possible d'attribuer automatiquement les cellules liées via la macro disponible dans le tuto plus bas).",
@@ -12922,7 +12765,6 @@
       "section": "avance",
       "moduleSlug": "controles-de-formulaire",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Prévoir la distribution des cellules pour votre tableau.",
         "Insérez une case à cocher de F3 à L5 et attribuez les cellules liées (la tâche est un peu fastidieuse, il est possible d'attribuer automatiquement les cellules liées via la macro disponible dans le tuto plus bas).",
@@ -12932,7 +12774,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Prévoir la distribution des cellules pour votre tableau.",
         "Insérez une case à cocher de F3 à L5 et attribuez les cellules liées (la tâche est un peu fastidieuse, il est possible d'attribuer automatiquement les cellules liées via la macro disponible dans le tuto plus bas).",
@@ -12941,7 +12782,6 @@
         "Colonne B, vous insérez un jeu d'icônes au choix. Un exemple de \"barème\" est disponible dans le volet \"jeu d'icônes ci-dessous."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Prévoir la distribution des cellules pour votre tableau.",
         "Insérez une case à cocher de F3 à L5 et attribuez les cellules liées (la tâche est un peu fastidieuse, il est possible d'attribuer automatiquement les cellules liées via la macro disponible dans le tuto plus bas).",
@@ -12973,7 +12813,6 @@
       "description": "Case à cocher",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Le web propose de nombreuses solutions pour mettre en place un QCM via Excel.",
         "cet exemple n'est qu'un parmi tant d'autres.",
@@ -13008,7 +12847,6 @@
       "section": "avance",
       "moduleSlug": "controles-de-formulaire",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Le web propose de nombreuses solutions pour mettre en place un QCM via Excel.",
         "cet exemple n'est qu'un parmi tant d'autres.",
@@ -13028,7 +12866,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Le web propose de nombreuses solutions pour mettre en place un QCM via Excel.",
         "cet exemple n'est qu'un parmi tant d'autres.",
@@ -13047,7 +12884,6 @@
         "Vous masquez la feuille CORRIGE."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Le web propose de nombreuses solutions pour mettre en place un QCM via Excel.",
         "cet exemple n'est qu'un parmi tant d'autres.",
@@ -13087,7 +12923,6 @@
       "description": "Cases d'option",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "En B2, B3 et B4, vous insérez un bouton radio via le contrôle de formulaire du menu développeur en leur associant A5 comme cellule liée.",
         "En D6, vous insérez une fonction SI imbriquée qui indiquera le mode de livraison en fonction de la valeur de A5.",
@@ -13110,7 +12945,6 @@
       "section": "avance",
       "moduleSlug": "controles-de-formulaire",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "En B2, B3 et B4, vous insérez un bouton radio via le contrôle de formulaire du menu développeur en leur associant A5 comme cellule liée.",
         "En D6, vous insérez une fonction SI imbriquée qui indiquera le mode de livraison en fonction de la valeur de A5.",
@@ -13118,14 +12952,12 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "En B2, B3 et B4, vous insérez un bouton radio via le contrôle de formulaire du menu développeur en leur associant A5 comme cellule liée.",
         "En D6, vous insérez une fonction SI imbriquée qui indiquera le mode de livraison en fonction de la valeur de A5.",
         "À l'issue, vous masquez la ligne 5 (plus design)."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "En B2, B3 et B4, vous insérez un bouton radio via le contrôle de formulaire du menu développeur en leur associant A5 comme cellule liée.",
         "En D6, vous insérez une fonction SI imbriquée qui indiquera le mode de livraison en fonction de la valeur de A5.",
@@ -13153,7 +12985,6 @@
       "description": "Cases d'option",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "E19: E26, vous insérez le calcul qui détermine le montant de l'achat en fonction de la quantité et du prix unitaire.",
         "E28 Sous total de la zone précédente.",
@@ -13180,7 +13011,6 @@
       "section": "avance",
       "moduleSlug": "controles-de-formulaire",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "E19: E26, vous insérez le calcul qui détermine le montant de l'achat en fonction de la quantité et du prix unitaire.",
         "E28 Sous total de la zone précédente.",
@@ -13192,7 +13022,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "E19: E26, vous insérez le calcul qui détermine le montant de l'achat en fonction de la quantité et du prix unitaire.",
         "E28 Sous total de la zone précédente.",
@@ -13203,7 +13032,6 @@
         "B32 (au hasard) Vous affichez le résultat du choix des boutons radio. Masquez la ligne à l'issue."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "E19: E26, vous insérez le calcul qui détermine le montant de l'achat en fonction de la quantité et du prix unitaire.",
         "E28 Sous total de la zone précédente.",
@@ -13235,7 +13063,6 @@
       "description": "Cases d'option",
       "preamble": "",
       "instructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Bien respecter le process ci-dessous et ne pas s'énerver si ça ne fonctionne pas du premier coup.",
         "Insertion d'une case d'option.",
@@ -13272,7 +13099,6 @@
       "section": "avance",
       "moduleSlug": "controles-de-formulaire",
       "consignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Bien respecter le process ci-dessous et ne pas s'énerver si ça ne fonctionne pas du premier coup.",
         "Insertion d'une case d'option.",
@@ -13294,7 +13120,6 @@
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Bien respecter le process ci-dessous et ne pas s'énerver si ça ne fonctionne pas du premier coup.",
         "Insertion d'une case d'option.",
@@ -13315,7 +13140,6 @@
         "Vous pouvez masquer la colonne G pour un résultat plus propre."
       ],
       "originalInstructions": [
-        "Vous pouvez télécharger le fichier de travail ci-contre.",
         "CONSIGNES :.",
         "Bien respecter le process ci-dessous et ne pas s'énerver si ça ne fonctionne pas du premier coup.",
         "Insertion d'une case d'option.",
@@ -17193,8 +17017,7 @@
         "OU.",
         "imbriquées ou pas.",
         "Toutes les formules sont à faire dans une cellule sur le modèle proposé à chaque fois.",
-        "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous.",
-        "Vous pouvez télécharger le fichier de travail ci-contre."
+        "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous."
       ],
       "levelLabel": "Avance",
       "scrape": {
@@ -17221,8 +17044,7 @@
         "OU.",
         "imbriquées ou pas.",
         "Toutes les formules sont à faire dans une cellule sur le modèle proposé à chaque fois.",
-        "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous.",
-        "Vous pouvez télécharger le fichier de travail ci-contre."
+        "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous."
       ],
       "criteria": [],
       "originalConsignes": [
@@ -17232,8 +17054,7 @@
         "OU.",
         "imbriquées ou pas.",
         "Toutes les formules sont à faire dans une cellule sur le modèle proposé à chaque fois.",
-        "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous.",
-        "Vous pouvez télécharger le fichier de travail ci-contre."
+        "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous."
       ],
       "originalInstructions": [
         "Cet exercice vous fera travailler les fonctions :.",
@@ -17242,8 +17063,7 @@
         "OU.",
         "imbriquées ou pas.",
         "Toutes les formules sont à faire dans une cellule sur le modèle proposé à chaque fois.",
-        "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous.",
-        "Vous pouvez télécharger le fichier de travail ci-contre."
+        "Vous pouvezpar ailleurs télécharger le fichier de travail ci-dessous."
       ],
       "paragraphMode": false,
       "extraDownloadUrls": [],
