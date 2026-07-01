@@ -1,7 +1,60 @@
 {
-  "version": "0.1.16",
-  "updatedAt": "2026-06-30T13:32:41.936Z",
+  "version": "0.1.17",
+  "updatedAt": "2026-07-01T12:05:57.895Z",
   "releases": [
+    {
+      "version": "0.1.17",
+      "tag": "excel-v0.1.17",
+      "date": "2026-07-01",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblées, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientée stabilité.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.14",
+          "breaking": false,
+          "hash": "5963424"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "48ae40e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel",
+          "description": "remove download prompts from exercise steps",
+          "breaking": false,
+          "hash": "ea6ae3c"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 2,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 3
+      }
+    },
     {
       "version": "0.1.16",
       "tag": "excel-v0.1.16",

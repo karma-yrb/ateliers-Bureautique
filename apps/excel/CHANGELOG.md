@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.17](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.16...excel-v0.1.17) (2026-07-01)
+
+
+### Bug Fixes
+
+* **excel:** remove download prompts from exercise steps ([ea6ae3c](https://github.com/karma-yrb/ateliers-Bureautique/commit/ea6ae3c26c23bf5d75d600920514b1cbd7ff5b02))
+
 ### [0.1.16](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.15...excel-v0.1.16) (2026-06-30)
 
 
