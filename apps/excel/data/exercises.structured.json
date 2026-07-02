@@ -2093,10 +2093,12 @@
       "description": "Intégrer des illustrations via SMART-ART",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Intégrer des illustrations via SMART-ART.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Telechargez puis ouvrez le fichier de travail (decompressez l'archive ZIP si necessaire via clic droit > Extraire tout...).",
+        "Inserez un SmartArt adapte au modele (menu Insertion > SmartArt), puis renseignez les textes.",
+        "Ajustez la mise en forme du SmartArt (couleurs, styles, tailles) pour vous rapprocher du rendu attendu.",
+        "Ajoutez les illustrations demandees et placez-les correctement dans la composition.",
+        "Verifiez l'alignement global et les espacements avant validation.",
+        "Terminez par l'insertion d'icones (menu Insertion > Icones), puis redimensionnez et recolorez-les pour finaliser la maquette."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2117,10 +2119,12 @@
       "section": "bases",
       "moduleSlug": "integrer-une-image",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Intégrer des illustrations via SMART-ART.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Telechargez puis ouvrez le fichier de travail (decompressez l'archive ZIP si necessaire via clic droit > Extraire tout...).",
+        "Inserez un SmartArt adapte au modele (menu Insertion > SmartArt), puis renseignez les textes.",
+        "Ajustez la mise en forme du SmartArt (couleurs, styles, tailles) pour vous rapprocher du rendu attendu.",
+        "Ajoutez les illustrations demandees et placez-les correctement dans la composition.",
+        "Verifiez l'alignement global et les espacements avant validation.",
+        "Terminez par l'insertion d'icones (menu Insertion > Icones), puis redimensionnez et recolorez-les pour finaliser la maquette."
       ],
       "criteria": [],
       "originalConsignes": [
