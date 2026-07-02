@@ -570,6 +570,8 @@ test("controller switches to the selected saved user from the header menu", asyn
   await flushAsyncWork();
 
   assert.deepEqual(harness.view.headerUser, { firstName: "Bob", initials: "BO" });
+  assert.equal(harness.window.location.hash, "#home");
+  assert.equal(harness.view.shownPage, "home");
   assert.equal(harness.storageState.savedRootHandle, bobHandle);
   assert.equal(harness.storageState.savedFirstName, "Bob");
   assert.deepEqual(harness.model.importedProgress, { done: [] });

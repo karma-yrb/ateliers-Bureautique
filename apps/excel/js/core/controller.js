@@ -276,6 +276,9 @@ function createAtelierController(config = {}) {
     this.pendingPermissionSession = null;
     await this.#loadProgressForSession(session);
     this.isReady = true;
+    if (options.targetHash && String(options.targetHash).trim()) {
+      window.location.hash = String(options.targetHash).trim();
+    }
     if (options.render) {
       this.#renderFromHash();
     }

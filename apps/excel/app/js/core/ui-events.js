@@ -168,7 +168,7 @@ function createAtelierUiEventsRuntime(config = {}) {
         changeBtn.addEventListener("click", async () => {
           const session = await resolveUserSession(true, { allowPermissionPrompt: true });
           if (!session) return;
-          await activateSession(session, { render: isReady() });
+          await activateSession(session, { render: true, targetHash: "#home" });
         });
       }
 
@@ -244,7 +244,7 @@ function createAtelierUiEventsRuntime(config = {}) {
             closeUserMenu();
             const session = await resolveUserSession(true, { allowPermissionPrompt: true });
             if (!session) return;
-            await activateSession(session, { render: isReady() });
+            await activateSession(session, { render: true, targetHash: "#home" });
           });
         }
         const headerProfileBtn = document.getElementById("header-user-profile-btn");
