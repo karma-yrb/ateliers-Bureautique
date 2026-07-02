@@ -10,17 +10,16 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles-redesign-v2.css">
   <script defer src="data/exercises.js?v=2026-06-23-1"></script>
+  <!-- ATELIER_SHARED_BOOTSTRAP_SCRIPTS:START -->
+  <script defer src="js/app-config.js"></script>
   <script defer src="js/core/model.js"></script>
-  <script defer src="js/model.js"></script>
   <script defer src="js/core/view.js"></script>
-  <script defer src="js/view.js"></script>
   <script defer src="js/core/storage.js"></script>
   <script defer src="js/core/home.js"></script>
   <script defer src="js/core/themes.js"></script>
   <script defer src="js/core/exercise.js"></script>
   <script defer src="js/core/route.js"></script>
   <script defer src="js/core/ui-events.js"></script>
-  <script defer src="js/storage.js"></script>
   <script defer src="js/core/persistence.js"></script>
   <script defer src="js/core/session.js"></script>
   <script defer src="js/core/workfile.js"></script>
@@ -29,10 +28,12 @@
   <script defer src="js/core/progress.js"></script>
   <script defer src="js/core/profile.js"></script>
   <script defer src="js/core/controller.js"></script>
-  <script defer src="js/controller.js"></script>
-  <script defer src="js/app.js"></script>
+  <script defer src="js/core/app-runtime.js"></script>
+  <script defer src="js/core/app-bootstrap.js"></script>
+  <!-- ATELIER_SHARED_BOOTSTRAP_SCRIPTS:END -->
 </head>
 <body>
+  <!-- ATELIER_SHARED_HEADER_NAV:START -->
   <header class="app-header">
     <div class="app-header-top">
       <div>
@@ -61,8 +62,10 @@
     <button class="nav-btn" data-nav="progress">Progression</button>
     <a class="nav-btn nav-link-btn" href="releases/">Releases</a>
   </nav>
+  <!-- ATELIER_SHARED_HEADER_NAV:END -->
 
   <main class="container">
+    <!-- ATELIER_SHARED_OVERVIEW_PAGES:START -->
     <section id="page-home" class="page" aria-labelledby="home-title">
       <article class="card home-resume-card">
         <h2 id="home-title">Reprendre mon atelier</h2>
@@ -124,6 +127,7 @@
         <div id="affinity-theme-list" class="theme-accordion"></div>
       </article>
     </section>
+  <!-- ATELIER_SHARED_OVERVIEW_PAGES:END -->
 
     <section id="page-exercise" class="page" aria-labelledby="exercise-title">
 
@@ -196,6 +200,7 @@
 
     </section>
 
+    <!-- ATELIER_SHARED_PROGRESS_PROFILE:START -->
     <section id="page-progress" class="page" aria-labelledby="progress-title">
       <article class="card">
         <h2 id="progress-title">Progression</h2>
@@ -236,6 +241,7 @@
         </ul>
       </article>
     </section>
+  <!-- ATELIER_SHARED_PROGRESS_PROFILE:END -->
   </main>
 
   <div id="image-modal" class="image-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Aperçu de l'image">
@@ -247,6 +253,7 @@
     <p id="image-modal-counter" class="image-modal-counter" hidden></p>
   </div>
 
+  <!-- ATELIER_SHARED_USER_SETUP_MODAL:START -->
   <div id="user-setup-modal" class="image-modal" style="display:none;" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Configuration utilisateur">
     <div class="modal-content user-setup-content">
       <h2 style="margin-top:0;">Configuration utilisateur</h2>
@@ -271,6 +278,7 @@
       </div>
     </div>
   </div>
+  <!-- ATELIER_SHARED_USER_SETUP_MODAL:END -->
 
   <div id="save-reminder-modal" class="image-modal" style="display:none;" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Rappel enregistrement exercice">
     <div class="modal-content user-setup-content save-reminder-content">

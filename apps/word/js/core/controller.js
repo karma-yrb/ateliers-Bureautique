@@ -176,6 +176,10 @@ function createAtelierController(config = {}) {
       this.persistenceRuntime.persistCurrentHash(window.location.hash);
     }
 
+    // Show the default landing page immediately while async storage/session
+    // bootstrap resolves, so the UI never appears blank on slow or limited browsers.
+    this.view.showPage("home");
+
     this.#bootstrap().catch(() => {
       this.view.setHeaderUser("", "");
       this.view.setProgressStatus("Erreur d'initialisation utilisateur.");

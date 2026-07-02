@@ -17,6 +17,7 @@ Monorepo des ateliers bureautiques.
 
 Depuis la racine :
 
+- `npm run core:test`
 - `npm run word:test`
 - `npm run word:build:data`
 - `npm run word:sync:app`
@@ -27,6 +28,29 @@ Depuis la racine :
 - `npm run excel:sync:app`
 
 Depuis `apps/word` ou `apps/excel`, les commandes locales restent disponibles (`npm test`, `npm run build:data`, etc.).
+
+## Architecture partagee
+
+Le socle commun vit maintenant dans `packages/atelier-core` :
+
+- `browser/` : runtime navigateur partage, synchronise vers `apps/*/js/core/`
+- `scripts/` : sync, validation, release et helpers de build communs
+- `tests/shared/` : contrats de test reutilises par Word et Excel
+- `runtime-contract.mjs` : ordre de chargement des scripts partages
+
+Chaque app garde seulement ce qui lui est propre :
+
+- `apps/*/data/` pour les exercices et assets
+- `apps/*/js/app-config.js` pour les noms globaux et la configuration de stockage
+- quelques wrappers de scripts dans `apps/*/scripts/`
+
+La note d'architecture detaillee est dans `packages/atelier-core/ARCHITECTURE.md`.
+
+## Flux recommande
+
+1. Modifier la logique partagee dans `packages/atelier-core`
+2. Relancer `npm run word:sync:app` ou `npm run excel:sync:app`
+3. Verifier avec `npm run core:test`, puis `npm run word:test` et/ou `npm run excel:test`
 
 Pour Word, le flux de donnees a ete simplifie :
 

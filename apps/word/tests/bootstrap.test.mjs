@@ -6,26 +6,26 @@ const APP_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 
 registerBootstrapContractTests({
   appRoot: APP_ROOT,
-  appLabel: "Excel",
-  datasetGlobalName: "EXCEL_ATELIER_DATA",
-  modelGlobalName: "ExcelAtelierModel",
-  viewGlobalName: "ExcelAtelierView",
-  storageGlobalName: "ExcelAtelierFileStorage",
-  controllerGlobalName: "ExcelAtelierController",
+  appLabel: "Word",
+  datasetGlobalName: "WORD_ATELIER_DATA",
+  modelGlobalName: "WordAtelierModel",
+  viewGlobalName: "WordAtelierView",
+  storageGlobalName: "WordAtelierFileStorage",
+  controllerGlobalName: "WordAtelierController",
   createDataset() {
     return {
       modules: [
-        { id: "m1", cleanName: "Bases Excel", section: "bases", sectionOrder: 1, orderInSection: 1 },
+        { id: "m1", cleanName: "Bases Word", section: "bases", sectionOrder: 1, orderInSection: 1 },
       ],
       exercises: [
         {
           id: "ex-001",
           globalIndex: 1,
           moduleId: "m1",
-          moduleNameClean: "Bases Excel",
+          moduleNameClean: "Bases Word",
           num: 1,
-          title: "Saisir une formule",
-          instructions: ["Entrer une formule simple."],
+          title: "Mettre en forme un texte",
+          instructions: ["Appliquer une mise en forme simple."],
         },
       ],
     };

@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { DEFAULT_BROWSER_RUNTIME_FILES } from "./sync-browser-runtime.mjs";
+import { BROWSER_RUNTIME_FILES } from "../runtime-contract.mjs";
 
 const PACKAGE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -24,7 +24,7 @@ function normalizeContent(value) {
 async function compareRuntime(appRoot) {
   const mismatches = [];
 
-  for (const { src, dst } of DEFAULT_BROWSER_RUNTIME_FILES) {
+  for (const { src, dst } of BROWSER_RUNTIME_FILES) {
     const srcPath = path.join(PACKAGE_ROOT, src);
     const dstPath = path.join(appRoot, dst);
     const [srcContent, dstContent] = await Promise.all([

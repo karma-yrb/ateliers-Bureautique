@@ -28,6 +28,7 @@
     "runtime:validate:word": "node packages/atelier-core/scripts/validate-browser-runtime-sync.mjs --app-root apps/word",
     "runtime:validate:excel": "node packages/atelier-core/scripts/validate-browser-runtime-sync.mjs --app-root apps/excel",
     "runtime:validate": "npm run runtime:validate:word && npm run runtime:validate:excel",
+    "core:test": "npm --prefix packages/atelier-core test",
     "excel:release": "npm --prefix apps/excel run release",
     "excel:release:all": "npm --prefix apps/excel run release:all"
   }

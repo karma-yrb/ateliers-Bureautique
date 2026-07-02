@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readdirSync, rmSync, statSync } from "node:fs";
 import path from "node:path";
 
 export const DEFAULT_SYNC_ITEMS = [
@@ -13,14 +13,29 @@ function copyRecursive(src, dst) {
   const stat = statSync(src);
 
   if (stat.isDirectory()) {
+    if (existsSync(dst) && !statSync(dst).isDirectory()) {
+      rmSync(dst, { force: true, recursive: true });
+    }
     mkdirSync(dst, { recursive: true });
-    for (const entry of readdirSync(src)) {
+    const srcEntries = readdirSync(src);
+    const srcEntryNames = new Set(srcEntries);
+
+    for (const entry of srcEntries) {
       copyRecursive(path.join(src, entry), path.join(dst, entry));
+    }
+
+    for (const entry of readdirSync(dst)) {
+      if (!srcEntryNames.has(entry)) {
+        rmSync(path.join(dst, entry), { force: true, recursive: true });
+      }
     }
     return;
   }
 
   mkdirSync(path.dirname(dst), { recursive: true });
+  if (existsSync(dst) && statSync(dst).isDirectory()) {
+    rmSync(dst, { force: true, recursive: true });
+  }
   copyFileSync(src, dst);
 }
 
