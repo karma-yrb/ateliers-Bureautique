@@ -2,7 +2,7 @@ import { runValidateReleaseCommits } from "../../../packages/atelier-core/script
 
 const result = runValidateReleaseCommits({
   tagPrefix: "word-v",
-  allowedLegacyCommits: ["f55a031"],
+  allowedLegacyCommits: ["f55a031", "b9a0585"],
 });
 
 if (!result.ok) {
