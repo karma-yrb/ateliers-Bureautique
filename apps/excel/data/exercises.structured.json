@@ -1944,9 +1944,9 @@
       "title": "Intégrer des illustrations, filigrane, pied de page et smart-art",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-2.html",
-      "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/images.zip",
-      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/ex-02-telechargez.xlsx",
-      "downloadLabel": "Telecharger le 2e fichier",
+      "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/ex-02-telechargez.xlsx",
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/images.zip",
+      "downloadLabel": "Telecharger les images (ZIP)",
       "imageEnonce": null,
       "imageResultat": null,
       "imageEnonceCaption": null,
@@ -2027,9 +2027,9 @@
       "title": "Intégrer des illustrations et des formes",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-3.html",
-      "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-003/images.zip",
-      "downloadUrl": null,
-      "downloadLabel": "",
+      "docxUrl": null,
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-003/images.zip",
+      "downloadLabel": "Telecharger les images (ZIP)",
       "imageEnonce": null,
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-003/ex-03-resultat.jpg",
       "imageEnonceCaption": "",
@@ -2083,9 +2083,9 @@
       "title": "Intégrer des illustrations via SMART-ART",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-4.html",
-      "docxUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04.zip",
-      "downloadUrl": null,
-      "downloadLabel": null,
+      "docxUrl": null,
+      "downloadUrl": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04.zip",
+      "downloadLabel": "Telecharger les ressources (ZIP)",
       "imageEnonce": null,
       "imageResultat": null,
       "imageEnonceCaption": null,
@@ -2826,7 +2826,7 @@
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009.webp",
+      "imageEnonce": null,
       "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -2835,10 +2835,10 @@
       "instructions": [
         "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Objectif : Exploiter les données depuis internet pour les intégrer dans une liste personnalisable.",
-        "Vous récupérez sur ce site internet les Capitales asiatiques et vous les importées dans vos listes personnalisées.",
-        "Si le copier-coller depuis internet vous pose un problème (liens et cellules grisées), vous passez le texte (via copier-coller) par le bloc note puis Excel.",
-        "Vue page web.",
-        "Vue Excel après le bloc-note."
+        "Vous recuperez les capitales asiatiques depuis le site web propose puis vous les importez dans vos listes personnalisees.",
+        "Si le copier-coller depuis internet pose probleme (liens ou cellules grisees), collez d'abord dans le Bloc-notes puis recollez dans Excel.",
+        "Creez ensuite la liste personnalisee via Fichier > Options > Options avancees > Modifier les listes personnalisees.",
+        "Testez la liste sur une feuille vierge avec la poignee de recopie, puis comparez au resultat attendu."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2849,10 +2849,7 @@
         "extraImages": [
           "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009-vue-excel.webp"
         ],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009-vue-excel.webp"
-        ],
+        "enonceImages": [],
         "resultImages": [
           "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009-resultat.webp"
         ]
@@ -2862,10 +2859,10 @@
       "consignes": [
         "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Objectif : Exploiter les données depuis internet pour les intégrer dans une liste personnalisable.",
-        "Vous récupérez sur ce site internet les Capitales asiatiques et vous les importées dans vos listes personnalisées.",
-        "Si le copier-coller depuis internet vous pose un problème (liens et cellules grisées), vous passez le texte (via copier-coller) par le bloc note puis Excel.",
-        "Vue page web.",
-        "Vue Excel après le bloc-note."
+        "Vous recuperez les capitales asiatiques depuis le site web propose puis vous les importez dans vos listes personnalisees.",
+        "Si le copier-coller depuis internet pose probleme (liens ou cellules grisees), collez d'abord dans le Bloc-notes puis recollez dans Excel.",
+        "Creez ensuite la liste personnalisee via Fichier > Options > Options avancees > Modifier les listes personnalisees.",
+        "Testez la liste sur une feuille vierge avec la poignee de recopie, puis comparez au resultat attendu."
       ],
       "criteria": [],
       "originalConsignes": [
