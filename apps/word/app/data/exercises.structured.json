@@ -302,7 +302,11 @@
       "levelLabel": null,
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-001/exo-01.docx",
       "imageEnonce": "",
-      "imageResultat": ["data/ex-001a.png","data/ex-001b.png","data/ex-001c.png"],
+      "imageResultat": [
+        "data/ex-001a.png",
+        "data/ex-001b.png",
+        "data/ex-001c.png"
+      ],
       "description": "",
       "consignes": [],
       "instructions": [
@@ -347,10 +351,13 @@
       "docxUrl": "",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-002/ex-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-002/ex-01-resultats.jpg",
-      "description": "Ouvrez un document Word, puis personnalisez votre barre d'accès rapide pour qu'elle ressemble à l'image ci-dessous. Faites les manipulations nécessaires pour qu'elle ressemble à l'image de résultat attendu, vous pouvez ajouter d'autres raccourcis en cochant les options qui vous sont utiles.",
+      "description": "Personnalisez la barre d'acces rapide pour obtenir un rendu proche du modele.",
       "consignes": [],
       "instructions": [
-        "Cliquez sur la petite flèche vers le bas à côté de la barre d'accès rapide pour accéder aux options de personnalisation.", "Sélectionnez les commandes que vous souhaitez ajouter à la barre d'accès rapide, telles que l'icône d'impression rapide.", "Vous pouvez également choisir d'autres commandes utiles en cochant les options disponibles."
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
+        "Cliquez sur la petite flèche vers le bas à côté de la barre d'accès rapide pour accéder aux options de personnalisation.",
+        "Sélectionnez les commandes que vous souhaitez ajouter à la barre d'accès rapide, telles que l'icône d'impression rapide.",
+        "Vous pouvez également choisir d'autres commandes utiles en cochant les options disponibles."
       ],
       "scrape": {
         "ok": true,
@@ -390,9 +397,10 @@
       "docxUrl": "",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/ex-003-tuto.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/exo-02-resultat.jpg",
-      "description": "Vos onglets ressemblent aux onglets de l'image ci-dessous. Faites les manipulations nécessaires pour qu'ils ressemblent à l'image de résultat attendu. Vous pouvez ajouter d'autres onglets en cochant les options qui vous sont utiles.",
+      "description": "Personnalisez les onglets du ruban pour reproduire le resultat attendu.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Pour réaliser cette opération le menu est fichier > Options > Personnaliser le ruban.",
         "Vous manipulez ensuite en Cliqué-Glissé."
       ],
@@ -438,9 +446,10 @@
       "docxUrl": "",
       "imageEnonce": "",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-001/ex-01.jpg",
-      "description": "Dans l'exemple ci-dessous sous, vous créez un dossier \"Europe\" sur le bureau, puis un sous dossier \"France\" à l'intérieur. avec un document Word en 3 formats",
+      "description": "Creez une arborescence de dossiers et enregistrez un document Word dans trois formats.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Créez un dossier \"Europe\" sur le bureau.",
         "Puis un dossier \"France\".",
         "Dans France, créez un document Word en 3 formats : .doc, .docx et .pdf.",
@@ -486,7 +495,8 @@
       "description": "Comment utiliser les modèle disponible avec via \"Microsoft Word\"",
       "consignes": [],
       "instructions": [
-        "Une fois votre logiciel ouvert, Cliquer sur \"Nouveau\"", "Sur la ligne \"recherche suggérées\" choisir \"Professionnel\" et trouvez un modèle de CV.",
+        "Une fois votre logiciel ouvert, Cliquer sur \"Nouveau\"",
+        "Sur la ligne \"recherche suggérées\" choisir \"Professionnel\" et trouvez un modèle de CV.",
         "En fonction de la version de votre logiciel, vous aurez des choix différents."
       ],
       "scrape": {
@@ -669,9 +679,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/reproduction.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/ex-04.jpg",
-      "description": "1- Saisissez les mois de l'année en colonne",
+      "description": "Saisissez les mois de l'annee et reutilisez le pinceau de reproduction de mise en forme.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Saisissez les mois de l'année en colonne.",
         "Alternez les couleurs ET les mises en forme comme sur l'exemple. Une fois les trois premiers mois en place, vous utilisez le PINCEAU de reproduction de mise en forme."
       ],
@@ -713,7 +724,7 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-005/ex-05.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-005/ex-05.jpg",
-      "description": "Reproduire la ligne ci-dessous en utilisant la fonction copier-coller pour cette phrase",
+      "description": "Reproduisez la phrase modele et appliquez le surlignage demande.",
       "consignes": [],
       "instructions": [
         "Ouvrez Microsoft Word : cliquez sur le bouton Demarrer, recherchez \"Word\", puis ouvrez l'application. Ensuite, cliquez sur \"Document vierge\" pour creer un nouveau document.",
@@ -894,7 +905,7 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-008/ex-008.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-008/ex-008.jpg",
-      "description": "Saisir ce texte à l'identique sur votre traitement de texte, exécuter la mise en forme comme sur le modèle. Vous pouvez aussi faire un copier-coller, mais la saisie vous permettra de vérifier si vous connaissez la façon de sortir tous les caractères.",
+      "description": "Saisissez ou collez le texte, puis reproduisez la mise en forme du modele.",
       "consignes": [
         "Saisir ce texte à l'identique sur votre traitement de texte, exécuter la mise en forme comme sur le modèle. Vous pouvez aussi faire un copier-coller, mais la saisie vous permettra de vérifier si vous connaissez la façon de sortir tous les caractères.",
         "Texte à copier/coller :",
@@ -1716,7 +1727,7 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-007/ex-007--resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-007/ex-007--resultat.jpg",
-      "description": "Consignes :",
+      "description": "Copiez le texte fourni et personnalisez les puces avec un caractere special.",
       "consignes": [],
       "instructions": [
         "1. Ouvrez Microsoft Word: cliquez sur le bouton Demarrer, recherchez \"Word\", puis ouvrez l'application. Ensuite, cliquez sur \"Document vierge\" pour creer un nouveau document.",
@@ -1759,9 +1770,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-008/exercice-05-08.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-008/exercice-05-08.jpg",
-      "description": "Après avoir copier-coller le texte ci-dessous, vous utilisez la fonction \"trié\" pour remettre l'ensemble par ordre alphabétique",
+      "description": "Collez les elements fournis, puis triez-les par ordre alphabetique dans Word.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Jupiter.",
         "Atmosphère.",
         "Satellites.",
@@ -2394,9 +2406,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-002/ex-11.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-002/ex-11.jpg",
-      "description": "Vous réalisez un document identique au résultat attendu.",
+      "description": "Reproduisez le document en utilisant les formes disponibles dans Word.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Exercice de style à l'état pur.",
         "Tous les types de formes visibles dans l'exercice sont disponibles dans Word et libre Office.",
         "Si vous souhaitez adapter au fur et à mesure les formes, pensez à \"grouper \" en fonction de l'avancée de votre travail."
@@ -2477,9 +2490,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-004/ex-004.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-004/ex-004.jpg",
-      "description": "Vous pouvez télécharger ci-contre le texte brut de cet exercice, mais ça ne sera pas forcément un avantage, sauf si vous manipulez le copier-coller.",
+      "description": "Reproduisez la composition en formes en vous aidant du modele fourni.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "La zone du haut utilise les effets 3D."
       ],
       "scrape": {
@@ -2520,9 +2534,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-006/ex-006-comment-faire.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-005/ex-14.jpg",
-      "description": "Cet exercice ne comporte pas de fichier de travail et est du même type que le précédent.",
+      "description": "Creez la composition avec SmartArt et les photos fournies.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Téléchargez les photos utiles à l'exercice.",
         "Vous insérez le modèle via smart-art et insérer les photos dans les zones prévues.",
         "Aligner les copies avec les flèches de direction plutôt qu'avec la souris."
@@ -2851,9 +2866,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-003/ex-003.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-003/ex-003.jpg",
-      "description": "Téléchargez la carte à travailler",
+      "description": "Placez des zones de texte sur la carte en respectant les couleurs et les arrondis.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Vous insérez les zones de texte pour couvrir les noms de la carte.",
         "Vous respectez les couleurs et arrondis.",
         "Ne pas hésiter à utiliser le copier-coller pour aller plus vite."
@@ -3288,9 +3304,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003-tuto.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003.jpg",
-      "description": "Téléchargez les documents de travail ci-contre et décompresser l'ensemble sur le bureau",
+      "description": "Assemblez textes et images, puis groupez chaque bloc avant de le positionner.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Mettre le texte dans des zones de textes via un copier-coller.",
         "Grouper chaque zone avec sa photo et positionner l'ensemble."
       ],
@@ -4349,9 +4366,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-004/ex-132-05.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-004/ex-132-04.jpg",
-      "description": "En quelques clics, vous fabriquez deux modèles de calendrier imprimable sur une page A4 en paysage.",
+      "description": "Creez deux calendriers imprimables sur une page A4 en paysage.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Insérez 7 lignes et 14 colonnes.",
         "Réalisez le second grâce à un copier-coller du premier."
       ],
@@ -5111,9 +5129,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-006/ex-06.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-006/ex-06.jpg",
-      "description": "Saisir ou téléchargez le texte",
+      "description": "Collez le texte fourni, puis reglez les marges selon le modele.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Après avoir fait un copier-coller du texte ci-dessous dans votre traitement de texte, vous réglez les marges."
       ],
       "scrape": {
@@ -6540,9 +6559,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-003/ex-003.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-003/ex-003.jpg",
-      "description": "Après avoir copier-coller ce texte en direction de votre logiciel, vous mettez en forme votre modèle que vous enregistrez dans un dossier \"assurance\" au sein du dossier \"Modèles office personnalisée\".",
+      "description": "Creez puis enregistrez un modele Word personnalise pour un courrier d'assurance.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "[Nom et Prénom].",
         "[Ville, le JJ/MM/AAAA].",
         "[Adresse].",
@@ -6616,9 +6636,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-004/ex-004.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-004/ex-004.jpg",
-      "description": "Après avoir copier-coller ce texte en direction de votre logiciel, vous mettez en forme votre modèle que vous enregistrez dans un dossier au sein du dossier \"Modèles office personnalisée\". Vous prendrez soin de \"matérialiser\" les zones de saisies personnalisées.",
+      "description": "Creez puis enregistrez un modele Word personnalise avec zones de saisie.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Après avoir copier-coller ce texte en direction de votre logiciel.",
         "vous mettez en forme votre modèle que vous enregistrez dans un dossier au sein du dossier \"Modèles office personnalisée\".",
         "Vous prendrez soin de \"matérialiser\" les zones de saisies personnalisées.",
@@ -6695,9 +6716,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-001/ex-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-001/ex-01.jpg",
-      "description": "1-Copiez-collez le texte vers Word",
+      "description": "Collez le texte, puis appliquez les styles rapides demandes aux questions et reponses.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Copiez-collez le texte vers Word.",
         "CETTE ÉCOLE EST-ELLE ACCUEILLANTE ?",
         "Oui, très accueillante ; les gens et les locaux.",
@@ -6760,9 +6782,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-002/ex-002-solution.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-002/ex-002-solution.jpg",
-      "description": "1-Copiez-collez le texte vers Word",
+      "description": "Collez le texte, puis appliquez les styles demandes aux questions et reponses.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Copiez-collez le texte vers Word.",
         "CETTE ÉCOLE EST-ELLE ACCUEILLANTE ?",
         "Oui, très accueillante ; les gens et les locaux.",
@@ -7110,9 +7133,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-004/ex-004-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-004/ex-004-resultat.jpg",
-      "description": "Télécharger ci-contre les données et la lettre type",
+      "description": "Preparez un publipostage a partir des donnees et de la lettre type.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Créer un dossier sur votre bureau.",
         "Glissez le carnet d'adresse (fichier XLS à télécharger).",
         "Faites un copier-coller du texte dans Word et insérer le bloc adresse après une mise en forme sommaire.",
@@ -7164,9 +7188,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-005/ex-005.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-005/ex-05.jpg",
-      "description": "Exercice publipostage pas très différent des précédents, mais utile pour confirmer la maîtrise.",
+      "description": "Realisez un publipostage avec champs conditionnels pour valider votre maitrise.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Créer un dossier sur votre bureau.",
         "Glissez le carnet d'adresse.",
         "Faites un copier-coller du texte dans Word et insérer le bloc adresse après une mise en forme sommaire."
@@ -7761,9 +7786,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-001/ex-01-simple-clic.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-001/ex-01.jpg",
-      "description": "1-Téléchargez le tableau sous Excel et ouvrez-le.",
+      "description": "Collez un tableau Excel dans Word et verifiez que la liaison fonctionne.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Copier-coller le tableau Excel en direction de Word.",
         "Résultat attendu avec 1 double clic dans le tableau : ."
       ],
@@ -9724,9 +9750,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/agro/agro-resultat.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/agro/agro-resultat.webp",
-      "description": "Saut de section, mise en colonne, copier-coller via Excel",
+      "description": "Combinez saut de section, colonnes, collages Excel et reglages de marges.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "Le saut de section.",
         "La mise en colonne.",
         "Le copier-coller de tableau et graphique via Excel.",
@@ -9817,9 +9844,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/facebook/facebook-resultat.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/facebook/facebook-resultat.webp",
-      "description": "Tableau complexe et zones de texte en cascade",
+      "description": "Composez la page avec un tableau complexe, des colonnes et des zones de texte.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "La mise en place d'un tableau 5 lignes et 6 colonnes avec bordures invisibles sur la première ligne.",
         "Saut de section et mis en colonne pour le texte central.",
         "Insertion de forme (flèche)."
@@ -9917,9 +9945,10 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/flyer-a5-mc-isolation/resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/flyer-a5-mc-isolation/resultat.jpg",
-      "description": "Composition d'un flyer",
+      "description": "Composez le flyer avec un tableau, des colonnes et des formes.",
       "consignes": [],
       "instructions": [
+        "Ouvrez Microsoft Word, puis creez un nouveau document vierge.",
         "La mise en place d'un tableau 5 lignes et 6 colonnes avec bordures invisibles sur la première ligne.",
         "Saut de section et mis en colonne pour le texte central.",
         "Insertion de forme (flèche)."
