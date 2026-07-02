@@ -2582,11 +2582,12 @@
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Ouvrez Excel et creez un classeur vierge (ou ouvrez le fichier de travail fourni).",
+        "Si une archive ZIP est fournie, decompressez-la une seule fois via clic droit > Extraire tout... puis utilisez les fichiers extraits.",
+        "Realisez le tableau en utilisant la poignee de recopie pour accelerer la saisie.",
+        "Appliquez la mise en forme demandee (alignement, formats de cellule, bordures).",
+        "Comparez votre feuille avec l'image de resultat et corrigez les ecarts.",
+        "Enregistrez le classeur final."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2603,11 +2604,12 @@
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Ouvrez Excel et creez un classeur vierge (ou ouvrez le fichier de travail fourni).",
+        "Si une archive ZIP est fournie, decompressez-la une seule fois via clic droit > Extraire tout... puis utilisez les fichiers extraits.",
+        "Realisez le tableau en utilisant la poignee de recopie pour accelerer la saisie.",
+        "Appliquez la mise en forme demandee (alignement, formats de cellule, bordures).",
+        "Comparez votre feuille avec l'image de resultat et corrigez les ecarts.",
+        "Enregistrez le classeur final."
       ],
       "criteria": [],
       "originalConsignes": [
