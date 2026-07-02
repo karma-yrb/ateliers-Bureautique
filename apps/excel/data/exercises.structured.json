@@ -2441,15 +2441,13 @@
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
-        "cellules à saisir maximum, à faire en moins d'une minute.",
-        "A3 : Saisir 1 (format euro).",
-        "A4 : Saisir 1,50 (format euro).",
-        "Sélectionner A3 et A4 : tirer vers le bas jusqu'à 10,00€.",
-        "B2 : Saisir 10%.",
-        "C2 : Saisir 20%.",
-        "Sélectionner B2 et C2 : tirer vers la droite jusqu'à 50%.",
-        "En B3, vous trouvez la formule qui va calculer les montants verticalement puis horizontalement (une seule saisie donc en B3) avec la poignée de recopie."
+        "Ouvrez Excel et creez un classeur vierge.",
+        "Observez l'image d'enonce pour reproduire la structure du tableau (emplacement des titres, lignes et colonnes).",
+        "Saisissez A3 = 1,00 EUR et A4 = 1,50 EUR, puis etendez la serie vers le bas jusqu'a 10,00 EUR avec la poignee de recopie.",
+        "Saisissez B2 = 10% et C2 = 20%, puis etendez vers la droite jusqu'a 50%.",
+        "En B3, saisissez la formule de calcul du montant, puis recopiez-la vers la droite et vers le bas avec la poignee de recopie.",
+        "Comparez ensuite votre feuille a l'image de resultat et corrigez les ecarts de format ou de formule.",
+        "Enregistrez le fichier une fois le rendu conforme."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2466,15 +2464,13 @@
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
-        "cellules à saisir maximum, à faire en moins d'une minute.",
-        "A3 : Saisir 1 (format euro).",
-        "A4 : Saisir 1,50 (format euro).",
-        "Sélectionner A3 et A4 : tirer vers le bas jusqu'à 10,00€.",
-        "B2 : Saisir 10%.",
-        "C2 : Saisir 20%.",
-        "Sélectionner B2 et C2 : tirer vers la droite jusqu'à 50%.",
-        "En B3, vous trouvez la formule qui va calculer les montants verticalement puis horizontalement (une seule saisie donc en B3) avec la poignée de recopie."
+        "Ouvrez Excel et creez un classeur vierge.",
+        "Observez l'image d'enonce pour reproduire la structure du tableau (emplacement des titres, lignes et colonnes).",
+        "Saisissez A3 = 1,00 EUR et A4 = 1,50 EUR, puis etendez la serie vers le bas jusqu'a 10,00 EUR avec la poignee de recopie.",
+        "Saisissez B2 = 10% et C2 = 20%, puis etendez vers la droite jusqu'a 50%.",
+        "En B3, saisissez la formule de calcul du montant, puis recopiez-la vers la droite et vers le bas avec la poignee de recopie.",
+        "Comparez ensuite votre feuille a l'image de resultat et corrigez les ecarts de format ou de formule.",
+        "Enregistrez le fichier une fois le rendu conforme."
       ],
       "criteria": [],
       "originalConsignes": [
