@@ -1,7 +1,84 @@
 window.RELEASES_DATA = {
-  "version": "0.1.21",
-  "updatedAt": "2026-07-06T09:00:26.308Z",
+  "version": "0.1.22",
+  "updatedAt": "2026-07-06T12:56:48.340Z",
   "releases": [
+    {
+      "version": "0.1.22",
+      "tag": "powerpoint-v0.1.22",
+      "date": "2026-07-06",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.21",
+          "breaking": false,
+          "hash": "468a23d"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.6.0",
+          "breaking": false,
+          "hash": "d58b925"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "2918a6e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "user-setup",
+          "description": "clarify account picker label",
+          "breaking": false,
+          "hash": "e45fb8e"
+        },
+        {
+          "type": "word",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "modernize exercises and remove ex-037",
+          "breaking": false,
+          "hash": "63b37f7"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "include powerpoint in monorepo publish",
+          "breaking": false,
+          "hash": "ac55f11"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 1,
+        "breaking": 0,
+        "total": 6
+      }
+    },
     {
       "version": "0.1.21",
       "tag": "powerpoint-v0.1.21",

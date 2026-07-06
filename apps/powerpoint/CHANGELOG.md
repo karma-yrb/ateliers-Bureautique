@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.22](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.21...powerpoint-v0.1.22) (2026-07-06)
+
+
+### Bug Fixes
+
+* **user-setup:** clarify account picker label ([e45fb8e](https://github.com/karma-yrb/ateliers-Bureautique/commit/e45fb8e7aaf948ba54d91ee8d6baceb67fdbcb8f))
+
 ### 0.1.21 (2026-07-06)
 
 
