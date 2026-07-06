@@ -48,6 +48,20 @@ Ce document liste les éléments HTML minimaux attendus par le runtime partagé 
 - `save-reminder-existing-status`
 - `save-reminder-cancel-btn`
 - `save-reminder-continue-btn`
+- `exercise-feedback-modal`
+- `exercise-feedback-form`
+- `exercise-feedback-difficulty`
+- `exercise-feedback-clarity`
+- `exercise-feedback-autonomy`
+- `exercise-feedback-comment`
+- `exercise-feedback-status`
+- `exercise-feedback-cancel-btn`
+- `exercise-feedback-continue-btn`
+
+## Rapport d'usabilite
+
+- `progress-usability-summary`
+- `progress-usability-list`
 
 ## Ordre de chargement des scripts partages
 

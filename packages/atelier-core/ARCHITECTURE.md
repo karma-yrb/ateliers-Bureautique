@@ -21,6 +21,10 @@
 2. Relancer `sync:app` de l'app concernee pour recopier runtime et HTML partages
 3. Verifier avec les tests de contrat HTML/runtime et les tests applicatifs
 
+## Features partagees documentees
+
+- [QCM de fin d'exercice et rapport d'usabilite](./docs/FEATURE_QCM_USABILITE.md)
+
 ## Regles de maintenance
 
 - Ne pas modifier directement `apps/*/js/core/*` sauf urgence ponctuelle, car ces fichiers sont regeneres

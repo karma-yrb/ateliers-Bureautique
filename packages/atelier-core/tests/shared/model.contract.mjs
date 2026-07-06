@@ -149,6 +149,67 @@ export function registerSharedModelContractTests(createModel) {
     assert.equal(model.getLastExercise().id, "ex-001");
   });
 
+  test("exercise feedback is stored once per exercise and exposed in usability report", () => {
+    const model = createModel();
+
+    assert.equal(model.setExerciseFeedback("ex-001", {
+      difficulty: "hard",
+      clarity: "unclear",
+      autonomy: "assisted",
+      comment: "Besoin d'aide",
+    }), true);
+    assert.equal(model.setExerciseFeedback("ex-001", {
+      difficulty: "adapted",
+      clarity: "clear",
+      autonomy: "independent",
+      comment: "Mieux compris",
+    }), true);
+
+    const feedback = model.getExerciseFeedback("ex-001");
+    const report = model.getUsabilityReport();
+
+    assert.equal(feedback.difficulty, "adapted");
+    assert.equal(feedback.clarity, "clear");
+    assert.equal(feedback.autonomy, "independent");
+    assert.equal(report.totalFeedback, 1);
+    assert.equal(report.flaggedExercises.length, 0);
+    assert.match(report.lastFeedback.exerciseLabel, /Exercice 1/);
+  });
+
+  test("importProgressObject drops malformed feedback entries", () => {
+    const model = createModel();
+    model.importProgressObject({
+      completedIds: [],
+      history: [],
+      feedback: [
+        {
+          exerciseId: "ex-001",
+          difficulty: "hard",
+          clarity: "unclear",
+          autonomy: "assisted",
+          comment: "A revoir",
+        },
+        {
+          exerciseId: "unknown-id",
+          difficulty: "adapted",
+          clarity: "clear",
+          autonomy: "independent",
+        },
+        {
+          exerciseId: "ex-002",
+          difficulty: "invalid",
+          clarity: "clear",
+          autonomy: "independent",
+        },
+      ],
+    });
+
+    const report = model.getUsabilityReport();
+    assert.equal(report.totalFeedback, 1);
+    assert.equal(report.flaggedExercises.length, 1);
+    assert.match(report.flaggedExercises[0].exerciseLabel, /Exercice 1/);
+  });
+
   test("resetProgress clears completion data", () => {
     const model = createModel();
     model.markExerciseDone("ex-001", true);

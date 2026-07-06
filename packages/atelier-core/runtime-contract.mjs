@@ -32,6 +32,9 @@ export const REQUIRED_DOM_IDS = [
   "affinity-theme-list",
   "user-setup-modal",
   "save-reminder-modal",
+  "exercise-feedback-modal",
+  "progress-usability-summary",
+  "progress-usability-list",
 ];
 
 export const SHARED_RUNTIME_SCRIPT_ORDER = [

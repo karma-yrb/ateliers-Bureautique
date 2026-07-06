@@ -20,6 +20,8 @@ function createAtelierFileStorage(config = {}) {
     this.storeName = "settings";
     this.dbPromise = null;
     this.profileFileName = "profil-utilisateur.json";
+    this.usabilityReportFileName = "rapport-usabilite.json";
+    this.usabilityReportMarkdownFileName = "rapport-usabilite.md";
   }
 
   isSupported() {
@@ -232,6 +234,22 @@ function createAtelierFileStorage(config = {}) {
     const fileHandle = await progressDir.getFileHandle(settings.progressFileName, { create: true });
     const writable = await fileHandle.createWritable();
     await writable.write(JSON.stringify(progressObject, null, 2));
+    await writable.close();
+  }
+
+  async saveUsabilityReport(rootHandle, initials, reportObject) {
+    const progressDir = await this.ensureProgressDirectory(rootHandle, initials, true);
+    const fileHandle = await progressDir.getFileHandle(this.usabilityReportFileName, { create: true });
+    const writable = await fileHandle.createWritable();
+    await writable.write(JSON.stringify(reportObject, null, 2));
+    await writable.close();
+  }
+
+  async saveUsabilityReportMarkdown(rootHandle, initials, markdownText) {
+    const progressDir = await this.ensureProgressDirectory(rootHandle, initials, true);
+    const fileHandle = await progressDir.getFileHandle(this.usabilityReportMarkdownFileName, { create: true });
+    const writable = await fileHandle.createWritable();
+    await writable.write(String(markdownText || ""));
     await writable.close();
   }
 

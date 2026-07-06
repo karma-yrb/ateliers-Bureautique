@@ -24,6 +24,7 @@ export function createDirectoryHandle(name, options = {}) {
   const hasProgress = options.hasProgress === true;
   const children = options.children || {};
   const id = String(options.id || name);
+  const files = options.files || {};
 
   return {
     kind: "directory",
@@ -34,8 +35,32 @@ export function createDirectoryHandle(name, options = {}) {
           return {
             kind: "directory",
             name: "ProgressionAtelier",
-            async getFileHandle() {
-              throw new Error("not implemented");
+            async getFileHandle(fileName, fileOptions = {}) {
+              if (!Object.prototype.hasOwnProperty.call(files, fileName) && !(fileOptions && fileOptions.create)) {
+                throw new Error("not implemented");
+              }
+              if (!Object.prototype.hasOwnProperty.call(files, fileName)) {
+                files[fileName] = "";
+              }
+              return {
+                kind: "file",
+                name: fileName,
+                async getFile() {
+                  return {
+                    async text() {
+                      return String(files[fileName] || "");
+                    },
+                  };
+                },
+                async createWritable() {
+                  return {
+                    async write(content) {
+                      files[fileName] = String(content);
+                    },
+                    async close() {},
+                  };
+                },
+              };
             },
           };
         }
@@ -137,5 +162,41 @@ export function registerSharedStorageContractTests(createStorage) {
     assert.equal(scanned[0].name, "progression-atelier");
     assert.equal(scanned[0].handle, userFolder);
     assert.equal(scanned[0].hasProgressFolder, true);
+  });
+
+  test("saveUsabilityReport writes a JSON report in ProgressionAtelier", async () => {
+    const files = {};
+    const storage = createStorage();
+    const userFolder = createDirectoryHandle("AL", {
+      hasProgress: true,
+      id: "al",
+      files,
+    });
+
+    await storage.saveUsabilityReport(userFolder, "AL", {
+      generatedAt: "2026-07-06T15:30:00.000Z",
+      user: { initials: "AL", firstName: "Alice" },
+      report: { totalFeedback: 2 },
+    });
+
+    assert.deepEqual(JSON.parse(files["rapport-usabilite.json"]), {
+      generatedAt: "2026-07-06T15:30:00.000Z",
+      user: { initials: "AL", firstName: "Alice" },
+      report: { totalFeedback: 2 },
+    });
+  });
+
+  test("saveUsabilityReportMarkdown writes a readable markdown report", async () => {
+    const files = {};
+    const storage = createStorage();
+    const userFolder = createDirectoryHandle("AL", {
+      hasProgress: true,
+      id: "al",
+      files,
+    });
+
+    await storage.saveUsabilityReportMarkdown(userFolder, "AL", "# Rapport\n\n- Feedbacks : 2\n");
+
+    assert.equal(files["rapport-usabilite.md"], "# Rapport\n\n- Feedbacks : 2\n");
   });
 }

@@ -19,6 +19,18 @@ function uniqueStrings(items) {
   return [...new Set(items.filter((v) => typeof v === "string" && v.trim()))];
 }
 
+function normalizeFeedbackValue(value, allowedValues) {
+  const text = typeof value === "string" ? value.trim().toLowerCase() : "";
+  return allowedValues.includes(text) ? text : "";
+}
+
+function normalizeFeedbackComment(value) {
+  return String(value || "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 280);
+}
+
 function uniqueImageObjects(items) {
   if (!Array.isArray(items)) return [];
   const seen = new Set();
@@ -192,11 +204,12 @@ class AtelierModel {
 
   #emptyProgress() {
     return {
-      version: 2,
+      version: 3,
       updatedAt: new Date().toISOString(),
       completedIds: [],
       lastExerciseId: null,
       history: [],
+      feedback: [],
     };
   }
 
@@ -211,6 +224,13 @@ class AtelierModel {
   #sanitizeProgress() {
     this.progress.completedIds = this.progress.completedIds.filter((id) => this.exById.has(id));
     this.progress.history = this.progress.history.filter((h) => this.exById.has(h.exerciseId));
+    this.progress.feedback = this.progress.feedback.filter((entry) => (
+      entry
+      && this.exById.has(entry.exerciseId)
+      && entry.difficulty
+      && entry.clarity
+      && entry.autonomy
+    ));
     if (!this.progress.lastExerciseId || !this.exById.has(this.progress.lastExerciseId)) {
       this.progress.lastExerciseId = this.#findLatestCompletedFromHistory();
     }
@@ -561,6 +581,108 @@ class AtelierModel {
     return true;
   }
 
+  setExerciseFeedback(exerciseId, payload = {}) {
+    if (!this.exById.has(exerciseId)) return false;
+
+    const difficulty = normalizeFeedbackValue(payload.difficulty, ["easy", "adapted", "hard"]);
+    const clarity = normalizeFeedbackValue(payload.clarity, ["unclear", "medium", "clear"]);
+    const autonomy = normalizeFeedbackValue(payload.autonomy, ["assisted", "partial", "independent"]);
+    if (!difficulty || !clarity || !autonomy) return false;
+
+    const nextEntry = {
+      exerciseId,
+      submittedAt: new Date().toISOString(),
+      difficulty,
+      clarity,
+      autonomy,
+      comment: normalizeFeedbackComment(payload.comment),
+    };
+
+    const remaining = Array.isArray(this.progress.feedback)
+      ? this.progress.feedback.filter((entry) => entry.exerciseId !== exerciseId)
+      : [];
+    remaining.push(nextEntry);
+    this.progress.feedback = remaining;
+    this.#saveProgress();
+    return true;
+  }
+
+  getExerciseFeedback(exerciseId) {
+    if (!exerciseId || !Array.isArray(this.progress.feedback)) return null;
+    return this.progress.feedback.find((entry) => entry.exerciseId === exerciseId) || null;
+  }
+
+  getUsabilityReport() {
+    const entries = Array.isArray(this.progress.feedback) ? this.progress.feedback.slice() : [];
+    const empty = {
+      totalFeedback: 0,
+      difficultyAverage: null,
+      clarityAverage: null,
+      autonomyAverage: null,
+      lastFeedback: null,
+      flaggedExercises: [],
+    };
+    if (!entries.length) return empty;
+
+    const scoreMaps = {
+      difficulty: { easy: 1, adapted: 2, hard: 3 },
+      clarity: { unclear: 1, medium: 2, clear: 3 },
+      autonomy: { assisted: 1, partial: 2, independent: 3 },
+    };
+    const labelMaps = {
+      difficulty: { easy: "Trop facile", adapted: "Adaptee", hard: "Difficile" },
+      clarity: { unclear: "Pas claire", medium: "Moyenne", clear: "Tres claire" },
+      autonomy: { assisted: "Avec aide", partial: "Aide partielle", independent: "En autonomie" },
+    };
+    const average = (key) => {
+      const total = entries.reduce((sum, entry) => sum + (scoreMaps[key][entry[key]] || 0), 0);
+      return Number((total / entries.length).toFixed(1));
+    };
+
+    const flaggedExercises = entries
+      .map((entry) => {
+        const exercise = this.getExerciseById(entry.exerciseId);
+        if (!exercise) return null;
+        const flags = [];
+        if (entry.difficulty === "hard") flags.push("difficulte elevee");
+        if (entry.clarity === "unclear") flags.push("clarte faible");
+        if (entry.autonomy === "assisted") flags.push("autonomie faible");
+        if (!flags.length) return null;
+        return {
+          exerciseId: entry.exerciseId,
+          exerciseLabel: exercise ? `Exercice ${exercise.num} - ${exercise.title}` : entry.exerciseId,
+          flags,
+          difficultyLabel: labelMaps.difficulty[entry.difficulty],
+          clarityLabel: labelMaps.clarity[entry.clarity],
+          autonomyLabel: labelMaps.autonomy[entry.autonomy],
+          comment: entry.comment || "",
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.exerciseLabel.localeCompare(b.exerciseLabel, "fr", { sensitivity: "base" }));
+
+    const lastFeedback = entries
+      .slice()
+      .sort((a, b) => String(b.submittedAt || "").localeCompare(String(a.submittedAt || "")))[0];
+    const lastExercise = lastFeedback ? this.getExerciseById(lastFeedback.exerciseId) : null;
+
+    return {
+      totalFeedback: entries.length,
+      difficultyAverage: average("difficulty"),
+      clarityAverage: average("clarity"),
+      autonomyAverage: average("autonomy"),
+      lastFeedback: lastFeedback ? {
+        exerciseLabel: lastExercise ? `Exercice ${lastExercise.num} - ${lastExercise.title}` : lastFeedback.exerciseId,
+        submittedAt: lastFeedback.submittedAt,
+        difficultyLabel: labelMaps.difficulty[lastFeedback.difficulty],
+        clarityLabel: labelMaps.clarity[lastFeedback.clarity],
+        autonomyLabel: labelMaps.autonomy[lastFeedback.autonomy],
+        comment: lastFeedback.comment || "",
+      } : null,
+      flaggedExercises,
+    };
+  }
+
   getSummary() {
     const total = this.exercises.length;
     const completed = this.progress.completedIds.length;
@@ -640,7 +762,7 @@ class AtelierModel {
 
   importProgressObject(obj) {
     const imported = {
-      version: 2,
+      version: 3,
       updatedAt: new Date().toISOString(),
       completedIds: uniqueStrings(obj && obj.completedIds),
       lastExerciseId: obj && typeof obj.lastExerciseId === "string" ? obj.lastExerciseId : null,
@@ -652,6 +774,18 @@ class AtelierModel {
               delta: Number.isFinite(h && h.delta) ? Math.trunc(h.delta) : 0,
             }))
             .filter((h) => h.date && h.exerciseId && h.delta !== 0)
+        : [],
+      feedback: Array.isArray(obj && obj.feedback)
+        ? obj.feedback
+          .map((entry) => ({
+            exerciseId: entry && typeof entry.exerciseId === "string" ? entry.exerciseId : null,
+            submittedAt: entry && typeof entry.submittedAt === "string" ? entry.submittedAt : new Date().toISOString(),
+            difficulty: normalizeFeedbackValue(entry && entry.difficulty, ["easy", "adapted", "hard"]),
+            clarity: normalizeFeedbackValue(entry && entry.clarity, ["unclear", "medium", "clear"]),
+            autonomy: normalizeFeedbackValue(entry && entry.autonomy, ["assisted", "partial", "independent"]),
+            comment: normalizeFeedbackComment(entry && entry.comment),
+          }))
+          .filter((entry) => entry.exerciseId && entry.difficulty && entry.clarity && entry.autonomy)
         : [],
     };
     this.progress = imported;

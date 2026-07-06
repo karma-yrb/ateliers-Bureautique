@@ -27,6 +27,11 @@ const SHARED_USER_SETUP_BLOCK = {
   end: "<!-- ATELIER_SHARED_USER_SETUP_MODAL:END -->",
 };
 
+const SHARED_EXERCISE_FEEDBACK_BLOCK = {
+  start: "<!-- ATELIER_SHARED_EXERCISE_FEEDBACK_MODAL:START -->",
+  end: "<!-- ATELIER_SHARED_EXERCISE_FEEDBACK_MODAL:END -->",
+};
+
 function renderScriptTags() {
   return APP_BOOTSTRAP_SCRIPT_ORDER
     .map((scriptPath) => `  <script defer src="${scriptPath}"></script>`)
@@ -157,6 +162,19 @@ function renderProgressProfile() {
         <h2>Courbe (30 jours)</h2>
         <svg id="progress-curve" viewBox="0 0 860 220" role="img" aria-label="Courbe de progression"></svg>
       </article>
+
+      <article class="card">
+        <h2>Rapport d'usabilite</h2>
+        <div id="progress-usability-summary" class="stats-grid">
+          <div class="stat"><p>Feedbacks</p><strong>0</strong></div>
+          <div class="stat"><p>Difficulte</p><strong>-</strong></div>
+          <div class="stat"><p>Clarte</p><strong>-</strong></div>
+          <div class="stat"><p>Autonomie</p><strong>-</strong></div>
+        </div>
+        <ul id="progress-usability-list" class="profile-tips">
+          <li>Aucun retour QCM enregistre pour le moment.</li>
+        </ul>
+      </article>
     </section>
 
     <section id="page-profile" class="page" aria-labelledby="profile-title">
@@ -211,6 +229,48 @@ function renderUserSetupModal() {
   </div>`;
 }
 
+function renderExerciseFeedbackModal() {
+  return `  <div id="exercise-feedback-modal" class="image-modal" style="display:none;" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Questionnaire de fin d'exercice">
+    <div class="modal-content user-setup-content save-reminder-content">
+      <h2 id="exercise-feedback-title" style="margin-top:0;">Avant de terminer</h2>
+      <p id="exercise-feedback-intro" class="muted">Donnez un retour rapide sur cet exercice.</p>
+      <form id="exercise-feedback-form" style="display:grid;gap:12px;">
+        <label class="field" for="exercise-feedback-difficulty">Difficulte ressentie</label>
+        <select id="exercise-feedback-difficulty" required>
+          <option value="">Choisir</option>
+          <option value="easy">Trop facile</option>
+          <option value="adapted">Adaptee</option>
+          <option value="hard">Difficile</option>
+        </select>
+
+        <label class="field" for="exercise-feedback-clarity">Clarte des consignes</label>
+        <select id="exercise-feedback-clarity" required>
+          <option value="">Choisir</option>
+          <option value="unclear">Pas claire</option>
+          <option value="medium">Moyenne</option>
+          <option value="clear">Tres claire</option>
+        </select>
+
+        <label class="field" for="exercise-feedback-autonomy">Autonomie ressentie</label>
+        <select id="exercise-feedback-autonomy" required>
+          <option value="">Choisir</option>
+          <option value="assisted">J'ai eu besoin d'aide</option>
+          <option value="partial">Un peu d'aide</option>
+          <option value="independent">En autonomie</option>
+        </select>
+
+        <label class="field" for="exercise-feedback-comment">Commentaire optionnel</label>
+        <textarea id="exercise-feedback-comment" rows="3" maxlength="280" placeholder="Blocage, point confus, aide recue..."></textarea>
+        <p id="exercise-feedback-status" class="muted status-line"></p>
+      </form>
+      <div style="margin-top:16px;display:flex;gap:10px;justify-content:flex-end;">
+        <button id="exercise-feedback-cancel-btn" class="btn btn-soft" type="button">Annuler</button>
+        <button id="exercise-feedback-continue-btn" class="btn has-icon" data-icon="âœ“" type="button">Terminer l'exercice</button>
+      </div>
+    </div>
+  </div>`;
+}
+
 export async function syncAppHtml({ appRoot, appName, logger = console }) {
   if (!appRoot) throw new Error("appRoot est requis");
   if (!appName) throw new Error("appName est requis");
@@ -226,6 +286,7 @@ export async function syncAppHtml({ appRoot, appName, logger = console }) {
   next = replaceMarkedBlock(next, SHARED_OVERVIEW_PAGES_BLOCK, renderOverviewPages(), indexPath);
   next = replaceMarkedBlock(next, SHARED_PROGRESS_PROFILE_BLOCK, renderProgressProfile(), indexPath);
   next = replaceMarkedBlock(next, SHARED_USER_SETUP_BLOCK, renderUserSetupModal(), indexPath);
+  next = replaceMarkedBlock(next, SHARED_EXERCISE_FEEDBACK_BLOCK, renderExerciseFeedbackModal(), indexPath);
 
   if (next !== current) {
     await fs.writeFile(indexPath, next, "utf8");

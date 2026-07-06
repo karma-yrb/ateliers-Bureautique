@@ -228,6 +228,9 @@ function createModel() {
     getCurveSeries() {
       return [{ day: "2026-06-24", value: 0 }];
     },
+    getUsabilityReport() {
+      return null;
+    },
     getLastExercise() {
       return null;
     },
@@ -700,6 +703,7 @@ export async function registerControllerSessionContractTests({
       level: "Demarrage",
       streak: 0,
       curveSeries: [{ day: "2026-06-24", value: 0 }],
+      usabilityReport: null,
     });
   });
 
