@@ -6,11 +6,13 @@ Monorepo des ateliers bureautiques.
 
 - `apps/word` : atelier Word actuel, versionne independamment.
 - `apps/excel` : atelier Excel aligne maintenant son flux de donnees sur Word.
+- `apps/powerpoint` : atelier PowerPoint base sur le meme socle partage.
 
 ## URLs publiees
 
 - `/word/` : atelier Word.
 - `/excel/` : atelier Excel.
+- `/powerpoint/` : atelier PowerPoint.
 - `/` : choix de l'atelier.
 
 ## Commandes
@@ -26,8 +28,12 @@ Depuis la racine :
 - `npm run excel:test`
 - `npm run excel:build:data`
 - `npm run excel:sync:app`
+- `npm run powerpoint:test`
+- `npm run powerpoint:build:data`
+- `npm run powerpoint:sync:app`
 
 Depuis `apps/word` ou `apps/excel`, les commandes locales restent disponibles (`npm test`, `npm run build:data`, etc.).
+Depuis `apps/powerpoint`, les memes commandes locales sont aussi disponibles.
 
 ## Architecture partagee
 

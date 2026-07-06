@@ -25,11 +25,19 @@
     "excel:revise:data": "npm --prefix apps/excel run revise:data",
     "excel:audit:data": "npm --prefix apps/excel run audit:data",
     "excel:test": "npm --prefix apps/excel test",
+    "powerpoint:build:data": "npm --prefix apps/powerpoint run build:data",
+    "powerpoint:sync:app": "npm --prefix apps/powerpoint run sync:app",
+    "powerpoint:repair:encoding": "npm --prefix apps/powerpoint run repair:encoding",
+    "powerpoint:validate:encoding": "npm --prefix apps/powerpoint run validate:encoding",
+    "powerpoint:test": "npm --prefix apps/powerpoint test",
     "runtime:validate:word": "node packages/atelier-core/scripts/validate-browser-runtime-sync.mjs --app-root apps/word",
     "runtime:validate:excel": "node packages/atelier-core/scripts/validate-browser-runtime-sync.mjs --app-root apps/excel",
-    "runtime:validate": "npm run runtime:validate:word && npm run runtime:validate:excel",
+    "runtime:validate:powerpoint": "node packages/atelier-core/scripts/validate-browser-runtime-sync.mjs --app-root apps/powerpoint",
+    "runtime:validate": "npm run runtime:validate:word && npm run runtime:validate:excel && npm run runtime:validate:powerpoint",
     "core:test": "npm --prefix packages/atelier-core test",
     "excel:release": "npm --prefix apps/excel run release",
-    "excel:release:all": "npm --prefix apps/excel run release:all"
+    "excel:release:all": "npm --prefix apps/excel run release:all",
+    "powerpoint:release": "npm --prefix apps/powerpoint run release",
+    "powerpoint:release:all": "npm --prefix apps/powerpoint run release:all"
   }
 }

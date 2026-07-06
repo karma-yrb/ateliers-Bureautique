@@ -14,6 +14,7 @@
       --panel: #ffffff;
       --word: #285aa8;
       --excel: #217a4b;
+      --powerpoint: #d24726;
     }
 
     * {
@@ -53,12 +54,13 @@
 
     .atelier-list {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
       margin-top: 32px;
     }
 
     .atelier-link {
+      position: relative;
       display: flex;
       flex-direction: column;
       gap: 18px;
@@ -75,6 +77,35 @@
     .atelier-link:hover {
       outline: 3px solid rgba(25, 33, 42, 0.16);
       outline-offset: 3px;
+    }
+
+    .atelier-link[aria-disabled="true"] {
+      cursor: not-allowed;
+      opacity: 0.78;
+    }
+
+    .atelier-link[aria-disabled="true"]::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      background: rgba(25, 33, 42, 0.94);
+      color: #ffffff;
+      font-size: 0.95rem;
+      line-height: 1.35;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 120ms ease, transform 120ms ease;
+      pointer-events: none;
+    }
+
+    .atelier-link[aria-disabled="true"]:focus::after,
+    .atelier-link[aria-disabled="true"]:hover::after {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .atelier-name {
@@ -119,6 +150,10 @@
 
     .atelier-excel {
       border-top: 5px solid var(--excel);
+    }
+
+    .atelier-powerpoint {
+      border-top: 5px solid var(--powerpoint);
     }
 
     @media (max-width: 680px) {
@@ -166,6 +201,23 @@
           </div>
         </div>
       </a>
+      <div
+        class="atelier-link atelier-powerpoint"
+        role="link"
+        aria-disabled="true"
+        tabindex="0"
+        data-tooltip="Bientot disponible... l'atelier PowerPoint est en preparation."
+      >
+        <div class="atelier-head">
+          <span class="atelier-logo" aria-hidden="true">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Office%20PowerPoint%20%282025%E2%80%93present%29.svg" alt="">
+          </span>
+          <div class="atelier-copy">
+            <span class="atelier-name">PowerPoint</span>
+            <p>Exercices de presentations, diapositives, animations et mise en page.</p>
+          </div>
+        </div>
+      </div>
     </nav>
   </main>
 </body>
