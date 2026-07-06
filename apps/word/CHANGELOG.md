@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.5.17...word-v1.6.0) (2026-07-06)
+
+
+### Features
+
+* **powerpoint:** add powerpoint workshop ([ab2eebb](https://github.com/karma-yrb/ateliers-Bureautique/commit/ab2eebb2c6af3eb244d94b281712e243be6ecd5f))
+
+
+### Bug Fixes
+
+* **user-setup:** clarify account picker label ([e45fb8e](https://github.com/karma-yrb/ateliers-Bureautique/commit/e45fb8e7aaf948ba54d91ee8d6baceb67fdbcb8f))
+
 ### [1.5.17](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.5.16...word-v1.5.17) (2026-07-02)
 
 

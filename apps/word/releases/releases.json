@@ -1,7 +1,92 @@
 {
-  "version": "1.5.17",
-  "updatedAt": "2026-07-02T15:03:58.164Z",
+  "version": "1.6.0",
+  "updatedAt": "2026-07-06T12:56:35.757Z",
   "releases": [
+    {
+      "version": "1.6.0",
+      "tag": "word-v1.6.0",
+      "date": "2026-07-06",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "2918a6e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "user-setup",
+          "description": "clarify account picker label",
+          "breaking": false,
+          "hash": "e45fb8e"
+        },
+        {
+          "type": "word",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "modernize exercises and remove ex-037",
+          "breaking": false,
+          "hash": "63b37f7"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "include powerpoint in monorepo publish",
+          "breaking": false,
+          "hash": "ac55f11"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.21",
+          "breaking": false,
+          "hash": "72bf8ed"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "powerpoint",
+          "description": "add powerpoint workshop",
+          "breaking": false,
+          "hash": "ab2eebb"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.20",
+          "breaking": false,
+          "hash": "8debea5"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 1,
+        "breaking": 0,
+        "total": 7
+      }
+    },
     {
       "version": "1.5.17",
       "tag": "word-v1.5.17",
