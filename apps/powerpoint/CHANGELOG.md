@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.23](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.22...powerpoint-v0.1.23) (2026-07-06)
+
+
+### Features
+
+* **core:** add exercise feedback and usability reports ([5db0fdb](https://github.com/karma-yrb/ateliers-Bureautique/commit/5db0fdb394d3f86b4c4be56ded3a40c6dd8d4d45))
+
 ### [0.1.22](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.21...powerpoint-v0.1.22) (2026-07-06)
 
 
