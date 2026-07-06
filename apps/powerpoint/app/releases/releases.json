@@ -1,7 +1,196 @@
 {
-  "version": "0.1.20",
-  "updatedAt": "2026-07-02T15:04:07.360Z",
+  "version": "0.1.21",
+  "updatedAt": "2026-07-06T09:00:26.308Z",
   "releases": [
+    {
+      "version": "0.1.21",
+      "tag": "powerpoint-v0.1.21",
+      "date": "2026-07-06",
+      "releaseType": "initial",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "powerpoint",
+          "description": "add powerpoint workshop",
+          "breaking": false,
+          "hash": "ab2eebb"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.20",
+          "breaking": false,
+          "hash": "8debea5"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.17",
+          "breaking": false,
+          "hash": "1582052"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "d1db898"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-037",
+          "description": "remove enonce image and normalize download link roles",
+          "breaking": false,
+          "hash": "8a9880e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-033",
+          "description": "remove repeated decompression wording",
+          "breaking": false,
+          "hash": "30023ed"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-032",
+          "description": "clarify coccinelle and Louis Braille image insertion",
+          "breaking": false,
+          "hash": "e6e5e4d"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-031",
+          "description": "rewrite unclear mixed text into actionable steps",
+          "breaking": false,
+          "hash": "25b03d0"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-026",
+          "description": "reorder workflow and end with icon insertion",
+          "breaking": false,
+          "hash": "d185a1b"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-022",
+          "description": "add explicit decompression step and clearer workflow",
+          "breaking": false,
+          "hash": "a1cac39"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-016",
+          "description": "rewrite instructions to be clear and digestible",
+          "breaking": false,
+          "hash": "1b82778"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-011",
+          "description": "harmonize steps into a single coherent list",
+          "breaking": false,
+          "hash": "60bcc2f"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel-ex-001",
+          "description": "add explicit captions for each result image",
+          "breaking": false,
+          "hash": "3411f6e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "ux",
+          "description": "affichage nom, étape lancement et reset section Préparer l'exercice",
+          "breaking": false,
+          "hash": "cb59d55"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.7",
+          "breaking": false,
+          "hash": "5ec8825"
+        },
+        {
+          "type": "word",
+          "typeLabel": "Autre",
+          "scope": "",
+          "description": "clarify startup steps for no-file exercises",
+          "breaking": false,
+          "hash": "66d126f"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.19",
+          "breaking": false,
+          "hash": "dadae2c"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.16",
+          "breaking": false,
+          "hash": "7eb8f3d"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "allow legacy shared menu fix commit",
+          "breaking": false,
+          "hash": "2a690aa"
+        },
+        {
+          "type": "refactor",
+          "typeLabel": "Refactoring",
+          "scope": "core",
+          "description": "share runtime, contracts and release tooling",
+          "breaking": false,
+          "hash": "d310a6b"
+        }
+      ],
+      "counts": {
+        "feat": 8,
+        "fix": 28,
+        "perf": 0,
+        "refactor": 9,
+        "docs": 0,
+        "test": 4,
+        "chore": 192,
+        "build": 2,
+        "ci": 1,
+        "style": 0,
+        "revert": 0,
+        "other": 27,
+        "breaking": 0,
+        "total": 271
+      }
+    },
     {
       "version": "0.1.20",
       "tag": "powerpoint-v0.1.20",

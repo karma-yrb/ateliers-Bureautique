@@ -2,6 +2,73 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.21 (2026-07-06)
+
+
+### Features
+
+* améliore le flux de téléchargement des exercices ([2e95f58](https://github.com/karma-yrb/ateliers-Bureautique/commit/2e95f5841e71a64d69dbb338c5f21fd2855ab25f))
+* améliorer la configuration utilisateur et les contenus d'atelier ([5858c0e](https://github.com/karma-yrb/ateliers-Bureautique/commit/5858c0e6e1bbab60497b07a7ab9cc01e05e7ae63))
+* enrich excel exercise dataset ([748158f](https://github.com/karma-yrb/ateliers-Bureautique/commit/748158f249a3a3b2d6c18c5f1f17018f9f47213d))
+* **excel:** scaffold excel atelier app ([9522678](https://github.com/karma-yrb/ateliers-Bureautique/commit/95226783b936ab4a9fa3e87bd9722edd6ca00b97))
+* **home:** ajouter les logos Word et Excel sur l'accueil bureautique ([626c940](https://github.com/karma-yrb/ateliers-Bureautique/commit/626c9406c638223aa3aa634dfa7f613d29441712))
+* initialiser le projet et afficher la version dans le header ([fd2baed](https://github.com/karma-yrb/ateliers-Bureautique/commit/fd2baedb35848002e36f05f6e869e3a9576aa265))
+* **powerpoint:** add powerpoint workshop ([ab2eebb](https://github.com/karma-yrb/ateliers-Bureautique/commit/ab2eebb2c6af3eb244d94b281712e243be6ecd5f))
+* **release:** automate header version bump and releases page ([e1df579](https://github.com/karma-yrb/ateliers-Bureautique/commit/e1df5795829862061ca086e615a982b46ff4e43c))
+
+
+### Bug Fixes
+
+* allow legacy release baseline commit ([b54f620](https://github.com/karma-yrb/ateliers-Bureautique/commit/b54f620dd4ec899aa56c98bc5b551f222b0b930d))
+* **excel-ex-001:** add explicit captions for each result image ([3411f6e](https://github.com/karma-yrb/ateliers-Bureautique/commit/3411f6e29b035e84313dc719e608e1953eb58e36))
+* **excel-ex-011:** harmonize steps into a single coherent list ([60bcc2f](https://github.com/karma-yrb/ateliers-Bureautique/commit/60bcc2f76859f8af8ac326a2a06355193a87cb6d))
+* **excel-ex-016:** rewrite instructions to be clear and digestible ([1b82778](https://github.com/karma-yrb/ateliers-Bureautique/commit/1b82778c414b31062d3989599becc978340a53d7))
+* **excel-ex-022:** add explicit decompression step and clearer workflow ([a1cac39](https://github.com/karma-yrb/ateliers-Bureautique/commit/a1cac3915940045e8816b16c5cc989f8761f4527))
+* **excel-ex-026:** reorder workflow and end with icon insertion ([d185a1b](https://github.com/karma-yrb/ateliers-Bureautique/commit/d185a1b36e4a56734ec367bdd1cb7e91b4afcc90))
+* **excel-ex-031:** rewrite unclear mixed text into actionable steps ([25b03d0](https://github.com/karma-yrb/ateliers-Bureautique/commit/25b03d0c0dda624e16ebafc40837785c42625d43))
+* **excel-ex-032:** clarify coccinelle and Louis Braille image insertion ([e6e5e4d](https://github.com/karma-yrb/ateliers-Bureautique/commit/e6e5e4d2ed103e0046f21286540acf7d02b60b6c))
+* **excel-ex-033:** remove repeated decompression wording ([30023ed](https://github.com/karma-yrb/ateliers-Bureautique/commit/30023ed0845dffcec67b08606629d115654f0483))
+* **excel-ex-037:** remove enonce image and normalize download link roles ([8a9880e](https://github.com/karma-yrb/ateliers-Bureautique/commit/8a9880e52d9b749cb82796f5f2247f4ab3715e69))
+* **excel:** align exercise instruction text ([630c8f2](https://github.com/karma-yrb/ateliers-Bureautique/commit/630c8f2d07fdffce1a7e46674da3ac20e9364e04))
+* **excel:** align exercise schema and normalize encoding ([7375b9b](https://github.com/karma-yrb/ateliers-Bureautique/commit/7375b9bdea2fc072629c5b79ec0f233f9bc5124d))
+* **excel:** align remaining technical exercise assets ([73db817](https://github.com/karma-yrb/ateliers-Bureautique/commit/73db817997697dbd2accc5422d613e795a9d9060))
+* **excel:** align theme category labels with excel module ([bcec087](https://github.com/karma-yrb/ateliers-Bureautique/commit/bcec087db19f96ee4920a0aebed6c5ec9601b7ff))
+* **excel:** correct initial exercise assets ([3b41f02](https://github.com/karma-yrb/ateliers-Bureautique/commit/3b41f027381b54243bf0a2fedaba7538b98fbaab))
+* **excel:** normalize work file download names ([1e0042c](https://github.com/karma-yrb/ateliers-Bureautique/commit/1e0042c237ba6c314d2ab42cae320908b32457de))
+* **excel:** remove download prompts from exercise steps ([ea6ae3c](https://github.com/karma-yrb/ateliers-Bureautique/commit/ea6ae3c26c23bf5d75d600920514b1cbd7ff5b02))
+* **excel:** restore original instructions for ex-016 ([b56c8f1](https://github.com/karma-yrb/ateliers-Bureautique/commit/b56c8f177bc22554ea6d1e1a6ca957309178206b))
+* **model:** handle multi-image exercise rendering ([f1f13c2](https://github.com/karma-yrb/ateliers-Bureautique/commit/f1f13c22d132923097e13b4f1cfa1ff64e0273f9))
+* regenerate exercises.js with correct imageEnonce for ex-019 ([e471cd0](https://github.com/karma-yrb/ateliers-Bureautique/commit/e471cd080dbc304147c44ed5c19d82a9c47de650))
+* **release:** avoid prebump stdout version override ([27bf455](https://github.com/karma-yrb/ateliers-Bureautique/commit/27bf455a80d92dbcf381b4b22492811093e3f398))
+* sécuriser l'encodage des accents ([1ee2850](https://github.com/karma-yrb/ateliers-Bureautique/commit/1ee28508e732153f3f379e9de5cd2c097d279363))
+* **session:** reload progress and return home after user switch ([53a81b9](https://github.com/karma-yrb/ateliers-Bureautique/commit/53a81b95577fc3d2aec1afe8fb266e755e6c215a))
+* **ux:** affichage nom, étape lancement et reset section Préparer l'exercice ([cb59d55](https://github.com/karma-yrb/ateliers-Bureautique/commit/cb59d551856a72978c85759630695b28e9afc17d))
+* **word-data:** ajouter l'ouverture de Word aux exos sans fichier ([57ecfd5](https://github.com/karma-yrb/ateliers-Bureautique/commit/57ecfd52807ea4b62ce618bbdd5551450274ee94))
+* **word:** render exercise descriptions and criteria ([22dd260](https://github.com/karma-yrb/ateliers-Bureautique/commit/22dd260d938d74a2001a92b91e5a3649a1d505a5))
+* **word:** simplify user switch profile selection ([2f45461](https://github.com/karma-yrb/ateliers-Bureautique/commit/2f454611c84b01ab31d9748a74c672d070ebd4bf))
+* **word:** support multi-image exercise visuals ([b29e104](https://github.com/karma-yrb/ateliers-Bureautique/commit/b29e104ef32d18cd61b3be44166cd3cdd80e3d2b))
+
+
+### Tests
+
+* document and enforce shared DOM contract ([a50cb60](https://github.com/karma-yrb/ateliers-Bureautique/commit/a50cb60e905d9e6437396f9a2a4b58daff4c1489))
+* enforce shared runtime load order ([2af7950](https://github.com/karma-yrb/ateliers-Bureautique/commit/2af795040a465317e349c1130eb1f8af9779ffe7))
+* **word:** stabilize visuals model assertions ([d973a30](https://github.com/karma-yrb/ateliers-Bureautique/commit/d973a3052c39948ce27abd7a1de3938b1f1e2d0b))
+* **word:** update visuals model expectations ([7a68a97](https://github.com/karma-yrb/ateliers-Bureautique/commit/7a68a9761c4bda3d3aed309d6bca9b12729fec06))
+
+
+### Refactoring
+
+* **core:** share runtime, contracts and release tooling ([d310a6b](https://github.com/karma-yrb/ateliers-Bureautique/commit/d310a6b50688ee0ed3a46c1d5ee4a8240dcc7f98))
+* **excel:** align structured exercise source with word workflow ([2c500c4](https://github.com/karma-yrb/ateliers-Bureautique/commit/2c500c462917a1cadb6579c0737155835523aa7b))
+* **repo:** migrate word app to monorepo ([bf2fb8d](https://github.com/karma-yrb/ateliers-Bureautique/commit/bf2fb8d4f75e1d1baf497273ecd94bb11b2cacb9))
+* share atelier scripts and fix excel bootstrap ([d29473f](https://github.com/karma-yrb/ateliers-Bureautique/commit/d29473f4698318be1a5b840ea76705e3001d847c))
+* share browser controller runtime ([077cb7a](https://github.com/karma-yrb/ateliers-Bureautique/commit/077cb7a6d188fe24a4420fc8587b1e3e9a68a230))
+* share browser model runtime ([399c350](https://github.com/karma-yrb/ateliers-Bureautique/commit/399c35020a1123a708462b4af29d0ec05454aecd))
+* share browser storage runtime ([49f505a](https://github.com/karma-yrb/ateliers-Bureautique/commit/49f505a8086f6b1f68e48280d1b63e116bd56ceb))
+* share browser view runtime ([b82e3ea](https://github.com/karma-yrb/ateliers-Bureautique/commit/b82e3ea58b6c247410876da9d1e7dbb4bdce03af))
+* share encoding validation scripts ([bab817c](https://github.com/karma-yrb/ateliers-Bureautique/commit/bab817cd4e219e546695db4db4fe5f7e4e8b33a0))
+
 ### [0.1.20](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.19...powerpoint-v0.1.20) (2026-07-02)
 
 
