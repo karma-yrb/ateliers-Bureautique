@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "1.6.0",
-  "updatedAt": "2026-07-06T12:56:35.757Z",
+  "version": "1.7.0",
+  "updatedAt": "2026-07-06T15:20:32.781Z",
   "releases": [
+    {
+      "version": "1.7.0",
+      "tag": "word-v1.7.0",
+      "date": "2026-07-06",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "apps",
+          "description": "sync shared feedback and reporting runtime",
+          "breaking": false,
+          "hash": "e8da842"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "core",
+          "description": "add exercise feedback and usability reports",
+          "breaking": false,
+          "hash": "5db0fdb"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.22",
+          "breaking": false,
+          "hash": "da95a79"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.21",
+          "breaking": false,
+          "hash": "468a23d"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.6.0",
       "tag": "word-v1.6.0",
