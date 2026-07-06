@@ -15,6 +15,9 @@ function createAtelierUiEventsRuntime(config = {}) {
   const renderFromHash = typeof config.renderFromHash === "function" ? config.renderFromHash : () => {};
   const renderExercise = typeof config.renderExercise === "function" ? config.renderExercise : () => {};
   const showSaveReminder = typeof config.showSaveReminder === "function" ? config.showSaveReminder : async () => true;
+  const submitExerciseCompletion = typeof config.submitExerciseCompletion === "function"
+    ? config.submitExerciseCompletion
+    : async () => false;
   const pickWorkFile = typeof config.pickWorkFile === "function" ? config.pickWorkFile : async () => {};
   const openWorkFile = typeof config.openWorkFile === "function" ? config.openWorkFile : async () => {};
   const handleDownloadClick = typeof config.handleDownloadClick === "function"
@@ -106,13 +109,8 @@ function createAtelierUiEventsRuntime(config = {}) {
         const currentId = view.exerciseToggleDoneBtn.getAttribute("data-id");
         const wasDone = currentId ? model.getIsDone(currentId) : false;
         if (currentId && !wasDone) {
-          const canContinue = await showSaveReminder("next", currentId);
-          if (!canContinue) return;
-        }
-
-        if (currentId && !wasDone) {
-          model.markExerciseDone(currentId, true);
-          saveProgress();
+          const completed = await submitExerciseCompletion(currentId, "next");
+          if (!completed) return;
         }
         const targetId = view.exerciseNextBtn.getAttribute("data-target-id");
         if (targetId) setHash(`#exercise/${targetId}`);
@@ -128,13 +126,13 @@ function createAtelierUiEventsRuntime(config = {}) {
         const isExerciseDone = model.getIsDone(id);
 
         if (!isExerciseDone) {
-          const canContinue = await showSaveReminder("done", id);
-          if (!canContinue) return;
+          const completed = await submitExerciseCompletion(id, "done");
+          if (!completed) return;
+        } else {
+          model.markExerciseDone(id, false);
+          saveProgress();
+          renderExercise(id);
         }
-
-        model.markExerciseDone(id, !isExerciseDone);
-        saveProgress();
-        renderExercise(id);
       });
 
       if (view.exercisePickWorkFileBtn) {

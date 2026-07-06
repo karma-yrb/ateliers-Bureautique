@@ -10,7 +10,10 @@ function createAtelierProgressRuntime(config = {}) {
       view.showPage("progress");
       const summary = model.getSummary();
       const curveSeries = model.getCurveSeries(30);
-      view.renderProgress({ ...summary, curveSeries });
+      const usabilityReport = typeof model.getUsabilityReport === "function"
+        ? model.getUsabilityReport()
+        : null;
+      view.renderProgress({ ...summary, curveSeries, usabilityReport });
     },
   };
 }

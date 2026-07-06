@@ -16,6 +16,16 @@ function shortDate(isoDay) {
   return `${parts[2]}/${parts[1]}`;
 }
 
+function shortDateTime(value) {
+  const dt = new Date(value);
+  if (Number.isNaN(dt.getTime())) return "";
+  const day = String(dt.getDate()).padStart(2, "0");
+  const month = String(dt.getMonth() + 1).padStart(2, "0");
+  const hours = String(dt.getHours()).padStart(2, "0");
+  const minutes = String(dt.getMinutes()).padStart(2, "0");
+  return `${day}/${month} ${hours}:${minutes}`;
+}
+
 // Repart directement sur la constante des couleurs sans la ligne fantôme
 const THEME_COLORS = [
   { accent: "#2e6f76", soft: "#e8f3f5", track: "#d2e6ea" },
@@ -115,6 +125,8 @@ class AtelierView {
     this.progressCurve = document.getElementById("progress-curve");
     this.progressUserPath = document.getElementById("progress-user-path");
     this.progressStatus = document.getElementById("progress-file-status");
+    this.progressUsabilitySummary = document.getElementById("progress-usability-summary");
+    this.progressUsabilityList = document.getElementById("progress-usability-list");
     this.headerUserBadge = document.getElementById("header-user-badge");
     this.headerUserName = this.headerUserBadge ? this.headerUserBadge.querySelector(".header-user-name") : null;
 
@@ -741,6 +753,62 @@ class AtelierView {
     this.progressStreak.textContent = `${vm.streak} ${vm.streak > 1 ? "jours" : "jour"}`;
     this.progressLevel.textContent = vm.level;
     this.renderCurve(vm.curveSeries);
+    this.renderUsabilityReport(vm.usabilityReport);
+  }
+
+  renderUsabilityReport(report) {
+    if (!this.progressUsabilitySummary || !this.progressUsabilityList) return;
+    const safeReport = report && typeof report === "object" ? report : {};
+    const totalFeedback = Number(safeReport.totalFeedback || 0);
+
+    if (!totalFeedback) {
+      this.progressUsabilitySummary.innerHTML = `
+        <div class="stat"><p>Feedbacks</p><strong>0</strong></div>
+        <div class="stat"><p>Difficulte</p><strong>-</strong></div>
+        <div class="stat"><p>Clarte</p><strong>-</strong></div>
+        <div class="stat"><p>Autonomie</p><strong>-</strong></div>
+      `;
+      this.progressUsabilityList.innerHTML = `<li>Aucun retour QCM enregistre pour le moment.</li>`;
+      return;
+    }
+
+    this.progressUsabilitySummary.innerHTML = `
+      <div class="stat"><p>Feedbacks</p><strong>${totalFeedback}</strong></div>
+      <div class="stat"><p>Difficulte moy.</p><strong>${safeReport.difficultyAverage}/3</strong></div>
+      <div class="stat"><p>Clarte moy.</p><strong>${safeReport.clarityAverage}/3</strong></div>
+      <div class="stat"><p>Autonomie moy.</p><strong>${safeReport.autonomyAverage}/3</strong></div>
+    `;
+
+    const items = [];
+    if (safeReport.lastFeedback) {
+      items.push(`
+        <li>
+          <strong>Dernier retour:</strong> ${escapeHtml(safeReport.lastFeedback.exerciseLabel)}
+          (${escapeHtml(shortDateTime(safeReport.lastFeedback.submittedAt))}) -
+          difficulte ${escapeHtml(safeReport.lastFeedback.difficultyLabel)},
+          clarte ${escapeHtml(safeReport.lastFeedback.clarityLabel)},
+          autonomie ${escapeHtml(safeReport.lastFeedback.autonomyLabel)}
+          ${safeReport.lastFeedback.comment ? `<br>${escapeHtml(safeReport.lastFeedback.comment)}` : ""}
+        </li>
+      `);
+    }
+
+    if (Array.isArray(safeReport.flaggedExercises) && safeReport.flaggedExercises.length) {
+      for (const row of safeReport.flaggedExercises) {
+        items.push(`
+          <li>
+            <strong>${escapeHtml(row.exerciseLabel)}</strong> -
+            ${escapeHtml(row.flags.join(", "))}
+            (${escapeHtml(row.difficultyLabel)} / ${escapeHtml(row.clarityLabel)} / ${escapeHtml(row.autonomyLabel)})
+            ${row.comment ? `<br>${escapeHtml(row.comment)}` : ""}
+          </li>
+        `);
+      }
+    } else {
+      items.push("<li>Aucun exercice n'est remonte comme point de vigilance.</li>");
+    }
+
+    this.progressUsabilityList.innerHTML = items.join("");
   }
 
   renderCurve(series) {

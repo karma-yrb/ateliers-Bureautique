@@ -82,6 +82,7 @@ function createAtelierController(config = {}) {
       getCurrentThemeId: () => this.currentThemeId,
       getDefaultThemeId: () => this.model.getDefaultThemeId(),
       saveProgress: () => this.#saveProgress(),
+      submitExerciseCompletion: (exerciseId, trigger) => this.#completeExerciseWithFeedback(exerciseId, trigger),
       renderFromHash: () => this.#renderFromHash(),
       renderExercise: (exerciseId) => this.#renderExercisePage(exerciseId),
       showSaveReminder: (trigger, exerciseId) => this.#showSaveReminderModal(trigger, exerciseId),
@@ -134,6 +135,17 @@ function createAtelierController(config = {}) {
       existingStatus: document.getElementById("save-reminder-existing-status"),
       cancelBtn: document.getElementById("save-reminder-cancel-btn"),
       continueBtn: document.getElementById("save-reminder-continue-btn"),
+    };
+    this.exerciseFeedbackModal = {
+      root: document.getElementById("exercise-feedback-modal"),
+      form: document.getElementById("exercise-feedback-form"),
+      difficulty: document.getElementById("exercise-feedback-difficulty"),
+      clarity: document.getElementById("exercise-feedback-clarity"),
+      autonomy: document.getElementById("exercise-feedback-autonomy"),
+      comment: document.getElementById("exercise-feedback-comment"),
+      status: document.getElementById("exercise-feedback-status"),
+      cancelBtn: document.getElementById("exercise-feedback-cancel-btn"),
+      continueBtn: document.getElementById("exercise-feedback-continue-btn"),
     };
     this.reminderModalRuntime = window.createAtelierReminderModalRuntime({
       modalRefs: this.saveReminderModal,
@@ -452,15 +464,191 @@ function createAtelierController(config = {}) {
     this.saveQueue = this.saveQueue
       .then(async () => {
         const progressObject = JSON.parse(this.model.exportProgressJson());
+        const usabilityReport = typeof this.model.getUsabilityReport === "function"
+          ? this.model.getUsabilityReport()
+          : null;
         await this.storage.saveProgress(
           this.userSession.rootHandle,
           this.userSession.initials,
           progressObject,
         );
+        if (usabilityReport && typeof this.storage.saveUsabilityReport === "function") {
+          const reportPayload = {
+            generatedAt: new Date().toISOString(),
+            user: {
+              initials: this.userSession.initials,
+              firstName: this.userSession.firstName,
+              folderName: this.userSession.rootHandle && this.userSession.rootHandle.name
+                ? this.userSession.rootHandle.name
+                : "",
+            },
+            report: usabilityReport,
+          };
+          await this.storage.saveUsabilityReport(
+            this.userSession.rootHandle,
+            this.userSession.initials,
+            reportPayload,
+          );
+          if (typeof this.storage.saveUsabilityReportMarkdown === "function") {
+            await this.storage.saveUsabilityReportMarkdown(
+              this.userSession.rootHandle,
+              this.userSession.initials,
+              this.#buildUsabilityReportMarkdown(reportPayload),
+            );
+          }
+        }
       })
       .catch(() => {
         this.view.setProgressStatus("Erreur de sauvegarde. Vérifiez les permissions du dossier utilisateur.");
       });
+  }
+
+  #buildUsabilityReportMarkdown(reportPayload) {
+    const payload = reportPayload && typeof reportPayload === "object" ? reportPayload : {};
+    const user = payload.user || {};
+    const report = payload.report || {};
+    const lines = [
+      "# Rapport d'usabilite",
+      "",
+      `Genere le : ${String(payload.generatedAt || "")}`,
+      `Utilisateur : ${String(user.firstName || "")} (${String(user.initials || "")})`.trim(),
+    ];
+
+    if (user.folderName) {
+      lines.push(`Dossier : ${String(user.folderName)}`);
+    }
+
+    lines.push(
+      "",
+      "## Synthese",
+      "",
+      `- Feedbacks : ${Number(report.totalFeedback || 0)}`,
+      `- Difficulte moyenne : ${report.difficultyAverage ?? "-"}/3`,
+      `- Clarte moyenne : ${report.clarityAverage ?? "-"}/3`,
+      `- Autonomie moyenne : ${report.autonomyAverage ?? "-"}/3`,
+    );
+
+    if (report.lastFeedback) {
+      lines.push(
+        "",
+        "## Dernier retour",
+        "",
+        `- Exercice : ${String(report.lastFeedback.exerciseLabel || "")}`,
+        `- Date : ${String(report.lastFeedback.submittedAt || "")}`,
+        `- Difficulte : ${String(report.lastFeedback.difficultyLabel || "")}`,
+        `- Clarte : ${String(report.lastFeedback.clarityLabel || "")}`,
+        `- Autonomie : ${String(report.lastFeedback.autonomyLabel || "")}`,
+      );
+      if (report.lastFeedback.comment) {
+        lines.push(`- Commentaire : ${String(report.lastFeedback.comment)}`);
+      }
+    }
+
+    lines.push("", "## Exercices a surveiller", "");
+    if (Array.isArray(report.flaggedExercises) && report.flaggedExercises.length) {
+      for (const row of report.flaggedExercises) {
+        lines.push(`### ${String(row.exerciseLabel || "")}`);
+        lines.push(`- Signaux : ${Array.isArray(row.flags) ? row.flags.join(", ") : ""}`);
+        lines.push(`- Difficulte : ${String(row.difficultyLabel || "")}`);
+        lines.push(`- Clarte : ${String(row.clarityLabel || "")}`);
+        lines.push(`- Autonomie : ${String(row.autonomyLabel || "")}`);
+        if (row.comment) {
+          lines.push(`- Commentaire : ${String(row.comment)}`);
+        }
+        lines.push("");
+      }
+    } else {
+      lines.push("Aucun point de vigilance remonte pour le moment.", "");
+    }
+
+    return `${lines.join("\n").trim()}\n`;
+  }
+
+  async #completeExerciseWithFeedback(exerciseId, trigger) {
+    if (!exerciseId || this.model.getIsDone(exerciseId)) return false;
+    const canContinue = await this.#showSaveReminderModal(trigger, exerciseId);
+    if (!canContinue) return false;
+
+    const feedback = await this.#showExerciseFeedbackModal(exerciseId);
+    if (!feedback) return false;
+
+    this.model.setExerciseFeedback(exerciseId, feedback);
+    this.model.markExerciseDone(exerciseId, true);
+    this.#saveProgress();
+    return true;
+  }
+
+  #showExerciseFeedbackModal(exerciseId) {
+    return new Promise((resolve) => {
+      const refs = this.exerciseFeedbackModal;
+      const exercise = this.model.getExerciseById(exerciseId);
+      const existing = this.model.getExerciseFeedback(exerciseId);
+      if (!refs.root || !refs.form || !refs.difficulty || !refs.clarity || !refs.autonomy || !refs.continueBtn) {
+        resolve({
+          difficulty: existing && existing.difficulty ? existing.difficulty : "adapted",
+          clarity: existing && existing.clarity ? existing.clarity : "medium",
+          autonomy: existing && existing.autonomy ? existing.autonomy : "partial",
+          comment: existing && existing.comment ? existing.comment : "",
+        });
+        return;
+      }
+
+      const titleEl = refs.root.querySelector("#exercise-feedback-title");
+      const introEl = refs.root.querySelector("#exercise-feedback-intro");
+      if (titleEl) titleEl.textContent = "Avant de terminer";
+      if (introEl) {
+        introEl.textContent = exercise
+          ? `Donnez un retour rapide sur l'exercice ${exercise.num} - ${exercise.title}.`
+          : "Donnez un retour rapide sur l'exercice.";
+      }
+
+      refs.difficulty.value = existing && existing.difficulty ? existing.difficulty : "";
+      refs.clarity.value = existing && existing.clarity ? existing.clarity : "";
+      refs.autonomy.value = existing && existing.autonomy ? existing.autonomy : "";
+      if (refs.comment) refs.comment.value = existing && existing.comment ? existing.comment : "";
+      if (refs.status) refs.status.textContent = "";
+
+      const close = (result) => {
+        refs.root.style.display = "none";
+        refs.root.setAttribute("aria-hidden", "true");
+        if (refs.cancelBtn) refs.cancelBtn.onclick = null;
+        refs.continueBtn.onclick = null;
+        window.removeEventListener("keydown", onKeydown);
+        resolve(result);
+      };
+
+      const submit = () => {
+        const payload = {
+          difficulty: refs.difficulty.value,
+          clarity: refs.clarity.value,
+          autonomy: refs.autonomy.value,
+          comment: refs.comment ? refs.comment.value : "",
+        };
+        if (!payload.difficulty || !payload.clarity || !payload.autonomy) {
+          if (refs.status) refs.status.textContent = "Selectionnez une reponse pour chaque question.";
+          return;
+        }
+        close(payload);
+      };
+
+      const onKeydown = (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          close(null);
+        }
+      };
+
+      if (refs.cancelBtn) refs.cancelBtn.onclick = () => close(null);
+      refs.continueBtn.onclick = submit;
+      refs.form.onsubmit = (event) => {
+        event.preventDefault();
+        submit();
+      };
+      window.addEventListener("keydown", onKeydown);
+      refs.root.style.display = "flex";
+      refs.root.setAttribute("aria-hidden", "false");
+      refs.difficulty.focus();
+    });
   }
 
   #getCurrentExerciseIdFromView() {
