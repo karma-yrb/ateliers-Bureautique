@@ -85,7 +85,7 @@ function createAtelierUserSetupRuntime(config = {}) {
 
           if (mode === "add-folder") {
             pickBtn.style.display = "";
-            pickBtn.textContent = "Choisir un autre dossier";
+            pickBtn.textContent = "Choisir ou créer un autre compte";
             pickBtn.setAttribute("data-icon", "📂");
             return;
           }
