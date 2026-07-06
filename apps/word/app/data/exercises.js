@@ -2128,11 +2128,12 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-001/17-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-001/17-01.jpg",
-      "description": "À l'aide la fonction Word-art dans Word, reproduisez l'affichette ci-dessous. Fichier de travail ci-contre",
+      "description": "À l'aide de WordArt dans Word, reproduisez l'affichette ci-dessous à partir du fichier de travail.",
       "consignes": [],
       "instructions": [
-        "Pour le titre \"Spécial sport nautique\" Il vous faut accéder à la barre outils \"format de forme\" et le bloc \"Styles WordArt\" qui apparaissent quand la forme est active.",
-        "L'ensemble doit tenir sur l'ensemble de la page."
+        "Insérez un WordArt pour le titre \"Spécial sport nautique\" puis ouvrez l'onglet \"Format de forme\" pour accéder aux styles WordArt.",
+        "Ajustez la taille, la couleur et les effets du titre pour obtenir un rendu proche du modèle.",
+        "Disposez l'ensemble de l'affichette de façon équilibrée sur la page."
       ],
       "scrape": {
         "ok": true,
@@ -2147,64 +2148,13 @@ window.WORD_ATELIER_DATA = {
       },
       "preamble": "",
       "criteria": [
-        "La police est au choix."
+        "La police est au choix si le rendu reste proche du modèle."
       ],
       "originalConsignes": [],
       "originalInstructions": [
         "Pour le titre \"Spécial sport nautique\" Il vous faut accéder à la barre outils \"format de forme\" et le bloc \"Styles WordArt\" qui apparaissent quand la forme est active.",
         "L'ensemble doit tenir sur l'ensemble de la page.",
         "La police est au choix."
-      ]
-    },
-    {
-      "id": "ex-037",
-      "globalIndex": 37,
-      "section": "bases",
-      "paragraphMode": true,
-      "moduleId": "m7",
-      "moduleName": "🅰 Word Art et Lettrine",
-      "moduleNameClean": "Word Art et Lettrine",
-      "moduleSlug": "word-art-et-lettrine",
-      "num": 2,
-      "title": "WordArt",
-      "pageUrl": "https://www.clic-formation.net/17-word-art/exercice-2.html",
-      "level": 2,
-      "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-002/17-02-images.zip",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-002/17-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-002/ex-02.jpg",
-      "description": "À l'aide de la fonction Word Art dans Word, vous reproduisez l'affichette ci-dessous. L'incrustation des danseurs s'obtient dans le remplissage de la forme. La reste n'est qu'une question de goût, mais toujours dans la rubrique \"wordart\".",
-      "consignes": [
-        "À l'aide de la fonction Word Art dans Word, vous reproduisez l'affichette ci-dessous.",
-        "L'incrustation des danseurs s'obtient dans le remplissage de la forme.",
-        "La reste n'est qu'une question de goût, mais toujours dans la rubrique \"wordart\"."
-      ],
-      "instructions": [
-        "L'incrustation des danseurs s'obtient dans le remplissage de la forme.",
-        "La reste n'est qu'une question de goût, mais toujours dans la rubrique \"wordart\"."
-      ],
-      "scrape": {
-        "ok": true,
-        "url": "https://www.clic-formation.net/17-word-art/exercice-2.html",
-        "prevUrl": null,
-        "nextUrl": null,
-        "extraImages": [],
-        "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-07/ex-002/17-02.jpg"
-        ],
-        "resultImages": []
-      },
-      "preamble": "À l'aide de la fonction Word Art dans Word, vous reproduisez l'affichette ci-dessous.",
-      "criteria": [],
-      "originalConsignes": [
-        "À l'aide de la fonction Word Art dans Word, vous reproduisez l'affichette ci-dessous.",
-        "L'incrustation des danseurs s'obtient dans le remplissage de la forme.",
-        "La reste n'est qu'une question de goût, mais toujours dans la rubrique \"wordart\"."
-      ],
-      "originalInstructions": [
-        "À l'aide de la fonction Word Art dans Word, vous reproduisez l'affichette ci-dessous.",
-        "L'incrustation des danseurs s'obtient dans le remplissage de la forme.",
-        "La reste n'est qu'une question de goût, mais toujours dans la rubrique \"wordart\"."
       ]
     },
     {
@@ -2224,13 +2174,15 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-003/ex-003.docx",
       "imageEnonce": null,
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-003/ex-003.jpg",
-      "description": "Vous insérez un Word art du style qui vous convient au-dessus et au-dessous du tableau. Résultat attendu :",
+      "description": "Insérez deux WordArt, au-dessus et au-dessous du tableau, avec un style actuel proche du résultat attendu.",
       "consignes": [
-        "Vous insérez un Word art du style qui vous convient au-dessus et au-dessous du tableau.",
-        "Résultat attendu :"
+        "Insérez un WordArt au-dessus du tableau et un second en dessous.",
+        "Choisissez un style WordArt actuel qui reste proche de l'esprit du modèle."
       ],
       "instructions": [
-        "Vous insérez un Word art du style qui vous convient au-dessus et au-dessous du tableau."
+        "Insérez deux zones WordArt et saisissez les titres demandés.",
+        "Ajustez la couleur, le contour et les effets pour obtenir un rendu lisible et décoratif.",
+        "Centrez correctement les WordArt par rapport au tableau."
       ],
       "scrape": {
         "ok": true,
@@ -2243,8 +2195,11 @@ window.WORD_ATELIER_DATA = {
           "https://www.clic-formation.net/images/02-word/word-competence-07/ex-003/ex-003.jpg"
         ]
       },
-      "preamble": "Résultat attendu :",
-      "criteria": [],
+      "preamble": "Appuyez-vous sur le résultat attendu, sans chercher à reproduire exactement un ancien style Office 2010.",
+      "criteria": [
+        "Les deux WordArt encadrent bien le tableau.",
+        "Le rendu est cohérent, lisible et proche du modèle."
+      ],
       "originalConsignes": [
         "Vous insérez un Word art du style qui vous convient au-dessus et au-dessous du tableau.",
         "Résultat attendu :"
@@ -3521,7 +3476,9 @@ window.WORD_ATELIER_DATA = {
       "description": "1-Téléchargez le fichier texte et les images ci-contre.",
       "consignes": [],
       "instructions": [
-        "Le travail est distribué sur 7 pages."
+        "Mettez en page le document sur 7 pages en vous appuyant sur le résultat attendu.",
+        "Insérez les images fournies puis positionnez les repères colorés avec les options d'habillage de Word.",
+        "Si un visuel décoratif manque dans votre version de Word, remplacez-le par une icône, une forme ou une image équivalente."
       ],
       "scrape": {
         "ok": true,
@@ -3536,7 +3493,8 @@ window.WORD_ATELIER_DATA = {
       },
       "preamble": "Le travail est à présenter globalement comme dans le résultat attendu.",
       "criteria": [
-        "Pour les pins de couleur utiliser l'habillage de l'image pour les positionner."
+        "Utilisez l'habillage de l'image pour positionner précisément les repères colorés.",
+        "L'objectif est d'obtenir une mise en page fidèle, même si certains styles d'images diffèrent légèrement selon la version de Word."
       ],
       "originalConsignes": [],
       "originalInstructions": [
@@ -3564,10 +3522,11 @@ window.WORD_ATELIER_DATA = {
       "description": "1-Téléchargez le fichier texte et les images ci-contre.",
       "consignes": [],
       "instructions": [
-        "La ligne rouge et les lignes grises sont à faire dans le bloc \"paragraphe\", pensez à faire un début de ligne et une fin de ligne hors des marges.",
-        "le terme nouveau et les prix de chaque article sont surlignés jaunes et rouges à l'envi.",
-        "Les sauts de pages sont à mettre sur les trois premières pages.",
-        "En pied de page, insérez la numérotation."
+        "Créez la ligne rouge et les lignes grises avec les outils du bloc \"Paragraphe\".",
+        "Mettez en valeur le terme \"nouveau\" et les prix avec un surlignage ou une couleur de texte proche du modèle.",
+        "Ajoutez les sauts de page nécessaires sur les trois premières pages.",
+        "Insérez une numérotation en pied de page.",
+        "Positionnez les images avec les options d'habillage disponibles dans Word 2024."
       ],
       "scrape": {
         "ok": true,
@@ -3582,7 +3541,8 @@ window.WORD_ATELIER_DATA = {
       },
       "preamble": "",
       "criteria": [
-        "Les textes sont justifiés."
+        "Les textes sont justifiés.",
+        "La mise en page reste lisible et proche du visuel attendu, même si certains styles d'image ou d'interface diffèrent."
       ],
       "originalConsignes": [],
       "originalInstructions": [
@@ -3612,10 +3572,11 @@ window.WORD_ATELIER_DATA = {
       "description": "Téléchargez le fichier texte et les images ci-contre.",
       "consignes": [],
       "instructions": [
-        "Mise au format paysage.",
-        "Insertion de saut de section.",
-        "Mise en 3 colonnes.",
-        "Insertion vidéo via menu \"Vidéo en ligne\"."
+        "Passez la page au format paysage.",
+        "Insérez les sauts de section nécessaires avant de modifier la mise en page.",
+        "Mettez la zone demandée en 3 colonnes.",
+        "Insérez une vidéo via Insertion > Vidéo en ligne si cette commande est disponible.",
+        "Si l'insertion vidéo en ligne n'est pas proposée dans votre environnement, décrivez l'emplacement prévu et poursuivez la mise en page du document."
       ],
       "scrape": {
         "ok": true,
@@ -6197,13 +6158,12 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-001/ex-001.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-001/ex-001.jpg",
-      "description": "Dans le menu Insertion-->smart Art, vous trouvez le groupe \"processus\", et faites une présentation identique au résultat attendu ci-dessous.",
+      "description": "Dans Insertion > SmartArt, choisissez une disposition de type processus puis reproduisez la présentation du résultat attendu.",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Dans le menu Insertion-->smart Art, vous trouvez le groupe \"processus\", et faites une.",
-        "Inserez un SmartArt via Insertion > SmartArt puis ajustez les blocs.",
-        "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme terminé."
+        "Insérez un SmartArt de type \"Processus\" via Insertion > SmartArt.",
+        "Saisissez le contenu demandé puis ajustez la disposition, la taille et les couleurs pour vous rapprocher du modèle.",
+        "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts principaux."
       ],
       "scrape": {
         "ok": true,
@@ -6245,7 +6205,9 @@ window.WORD_ATELIER_DATA = {
       "description": "Faire une mise en page conforme au résultat attendu.",
       "consignes": [],
       "instructions": [
-        "Utilisez la fonctionnalité \"SmartArt\" vue \"engrenages\"."
+        "Insérez un SmartArt dont la disposition évoque des engrenages ou un processus circulaire.",
+        "Ajustez les blocs, les couleurs et la taille pour obtenir un rendu proche du modèle.",
+        "Si le style exact n'existe pas dans votre version de Word, choisissez la variante la plus proche."
       ],
       "scrape": {
         "ok": true,
@@ -6285,10 +6247,9 @@ window.WORD_ATELIER_DATA = {
       "description": "Téléchargez les visuels",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez les visuels.",
-        "Inserez un SmartArt via Insertion > SmartArt puis ajustez les blocs.",
-        "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme terminé."
+        "Téléchargez les visuels puis insérez un SmartArt adapté à la composition attendue.",
+        "Ajoutez les images dans les emplacements prévus ou placez-les à côté du SmartArt selon le modèle.",
+        "Ajustez la structure, les couleurs et l'alignement pour obtenir un résultat proche de l'exemple."
       ],
       "scrape": {
         "ok": true,
@@ -6330,8 +6291,9 @@ window.WORD_ATELIER_DATA = {
       "description": "Manipulation de la fonction \"organigramme\".",
       "consignes": [],
       "instructions": [
-        "Notez que dans l'exemple, il existe 4 niveaux de hiérarchies.",
-        "Résultat attendu : ."
+        "Créez un SmartArt de type organigramme.",
+        "Reproduisez les 4 niveaux de hiérarchie visibles dans le modèle.",
+        "Ajustez les tailles de blocs, l'espacement et les couleurs pour garder une lecture claire."
       ],
       "scrape": {
         "ok": true,
@@ -6344,8 +6306,11 @@ window.WORD_ATELIER_DATA = {
         ],
         "resultImages": []
       },
-      "preamble": "Faire une mise en page conforme au résultat attendu.",
-      "criteria": [],
+      "preamble": "Reproduisez l'organisation générale du modèle sans chercher à retrouver exactement un ancien style Office.",
+      "criteria": [
+        "Le document comporte bien 4 niveaux hiérarchiques.",
+        "La structure reste lisible et équilibrée."
+      ],
       "originalConsignes": [],
       "originalInstructions": [
         "Manipulation de la fonction \"organigramme\".",
@@ -6373,7 +6338,9 @@ window.WORD_ATELIER_DATA = {
       "description": "Téléchargez votre fichier de travail ici",
       "consignes": [],
       "instructions": [
-        "Vous réorganisez le visuel déjà fait en changeant la forme, insérez les 5 étiquettes supplémentaires et réorganisez l'ordre."
+        "Ouvrez le fichier de travail puis modifiez le SmartArt déjà présent.",
+        "Changez la disposition si nécessaire, ajoutez les 5 étiquettes supplémentaires et réorganisez l'ordre des éléments.",
+        "Vérifiez que le résultat final reste lisible et proche du modèle fourni."
       ],
       "scrape": {
         "ok": true,
@@ -6386,7 +6353,7 @@ window.WORD_ATELIER_DATA = {
           "https://www.clic-formation.net/images/02-word/word-competence-21/ex-005/ex-005-solution.jpg"
         ]
       },
-      "preamble": "Consignes : .",
+      "preamble": "Modifiez le SmartArt existant pour obtenir la version attendue.",
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
@@ -6413,10 +6380,9 @@ window.WORD_ATELIER_DATA = {
       "description": "Téléchargez votre fichier de travail ici",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez votre fichier de travail ici.",
-        "Inserez un SmartArt via Insertion > SmartArt puis ajustez les blocs.",
-        "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme terminé."
+        "Ouvrez le fichier de travail puis insérez ou modifiez le SmartArt demandé.",
+        "Ajustez les blocs, l'ordre des éléments et la présentation générale.",
+        "Comparez votre document avec le résultat attendu puis corrigez les écarts principaux."
       ],
       "scrape": {
         "ok": true,
@@ -6458,7 +6424,7 @@ window.WORD_ATELIER_DATA = {
       "description": "1-Copier ce texte dans votre logiciel.",
       "consignes": [],
       "instructions": [
-        "Copier ce texte dans votre logiciel.",
+        "Copiez ce texte dans Word puis mettez-le en forme comme un modèle de courrier.",
         "(Civilité Nom Prénom).",
         "(Adresse).",
         "(CP Ville).",
@@ -6469,7 +6435,7 @@ window.WORD_ATELIER_DATA = {
         "Veuillez agréer, Madame, Monsieur, l'expression de ma considération distinguée.",
         "Mme GUILLON.",
         "Directrice.",
-        "Enregistrer au format \"docx\" ou \"dot\" en fonction de la version de votre logiciel dans votre \"bibliothèque\" personnelle ou sur le bureau. Le fichier s'appellera \" courrier-01.dot \"."
+        "Enregistrez ensuite le document comme modèle Word au format disponible dans votre version (`.dotx`, `.dot` ou `.docx` selon la consigne de votre environnement)."
       ],
       "scrape": {
         "ok": true,
@@ -6482,8 +6448,11 @@ window.WORD_ATELIER_DATA = {
           "https://www.clic-formation.net/images/02-word/word-competence-22/ex-001/ex-001-resultat.jpg"
         ]
       },
-      "preamble": "Mettre en forme plus ou moins comme le résultat attendu.",
-      "criteria": [],
+      "preamble": "Mettez en forme le courrier de façon proche du résultat attendu.",
+      "criteria": [
+        "La structure du courrier est correcte.",
+        "Le fichier est enregistré dans un format de modèle compatible avec votre version de Word."
+      ],
       "originalConsignes": [],
       "originalInstructions": [
         "Copier ce texte dans votre logiciel.",
@@ -6517,10 +6486,12 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-002/ex-002.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-002/ex-002-support.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-002/ex-002-solution.jpg",
-      "description": "Vous ouvrez un nouveau document à partir de la bibliothèque d'Office. Sur l'exemple le modèle \"économique\".",
+      "description": "Créez un document à partir d'un modèle Office existant, par exemple un modèle proche de \"Économique\".",
       "consignes": [],
       "instructions": [
-        "Vous l'enregistrez dans \"Modèle Office personnalisés\" de votre dossier \"Documents\"."
+        "Ouvrez Word puis créez un document à partir d'un modèle fourni par Office.",
+        "Choisissez un modèle sobre proche de celui montré dans l'exemple si le nom exact diffère dans votre version.",
+        "Enregistrez-le ensuite dans vos modèles personnalisés ou dans votre dossier Documents selon votre environnement."
       ],
       "scrape": {
         "ok": true,
@@ -6716,7 +6687,7 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-001/ex-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-001/ex-01.jpg",
-      "description": "Collez le texte, puis appliquez les styles rapides demandes aux questions et reponses.",
+      "description": "Collez le texte, puis appliquez des styles rapides aux questions et aux réponses.",
       "consignes": [],
       "instructions": [
         "Cherchez l'icone Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour creer un nouveau document.",
@@ -6733,7 +6704,8 @@ window.WORD_ATELIER_DATA = {
         "Il faut passer son Bac, aller à l'université, préparer une licence.",
         "Quelles activités permettent le meilleur contact avec les élèves ?",
         "Le sport, la musique et les sorties.",
-        "Vous appliquez le style rapide \"Citation intense\" pour les questions et \"Titre du livre\" pour les réponses."
+        "Appliquez un style rapide de votre choix pour distinguer les questions des réponses.",
+        "Si votre galerie contient \"Citation intense\" et \"Titre du livre\", vous pouvez les utiliser ; sinon choisissez deux styles proches et cohérents."
       ],
       "scrape": {
         "ok": true,
@@ -6782,7 +6754,7 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-002/ex-002-solution.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-002/ex-002-solution.jpg",
-      "description": "Collez le texte, puis appliquez les styles demandes aux questions et reponses.",
+      "description": "Collez le texte, puis appliquez des styles cohérents aux questions et aux réponses.",
       "consignes": [],
       "instructions": [
         "Cherchez l'icone Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour creer un nouveau document.",
@@ -6799,7 +6771,8 @@ window.WORD_ATELIER_DATA = {
         "Il faut passer son Bac, aller à l'université préparer une licence.",
         "Quelles activités permettent le meilleur contact avec les élèves ?",
         "Le sport, la musique et les sorties.",
-        "Dans WORD, vous appliquez le style sur les questions : Titre et Titre 1 sur les réponses. (valable dans Office 2013) D'autres styles seront disponibles dans d'autres versions."
+        "Appliquez un style de titre pour les questions et un second style pour les réponses.",
+        "Les noms exacts de styles peuvent varier selon la version de Word : choisissez des styles proches si votre galerie diffère."
       ],
       "scrape": {
         "ok": true,
@@ -6848,9 +6821,13 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-23/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-003/nouveau-style-word.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-003/ex-03.jpg",
-      "description": "Dans le groupe style de l'onglet Accueil, vous créez 3 nouveaux styles rapides",
+      "description": "Dans le groupe Styles de l'onglet Accueil, créez 3 nouveaux styles rapides.",
       "consignes": [],
-      "instructions": [],
+      "instructions": [
+        "Ouvrez le volet des styles puis créez trois nouveaux styles personnalisés.",
+        "Nommez-les `PNH 1`, `PNH 2` et `PNH 3`.",
+        "Appliquez à chacun les caractéristiques indiquées ci-dessous."
+      ],
       "scrape": {
         "ok": true,
         "url": "https://www.clic-formation.net/27-styles/exercice-3.html",
