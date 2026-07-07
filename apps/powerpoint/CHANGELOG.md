@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.25](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.24...powerpoint-v0.1.25) (2026-07-07)
+
+
+### Features
+
+* **home:** refine landing page hero and enable PowerPoint ([c8261fb](https://github.com/karma-yrb/ateliers-Bureautique/commit/c8261fb968e333834906cc5978744948210a1d41))
+
+
+### Bug Fixes
+
+* **modules:** link version badge to releases ([21fee96](https://github.com/karma-yrb/ateliers-Bureautique/commit/21fee96aee15ab353af4aed957768654408c226f))
+* **release:** run root npm commands through cmd on windows ([3adb0f9](https://github.com/karma-yrb/ateliers-Bureautique/commit/3adb0f97055fe2656d741b4f5313f1cb01e694d1))
+* **release:** support npm invocation on windows ([3fd0b20](https://github.com/karma-yrb/ateliers-Bureautique/commit/3fd0b20a544be9f0dc2cce6c58da1e950ea20b7d))
+
 ### [0.1.24](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.23...powerpoint-v0.1.24) (2026-07-07)
 
 

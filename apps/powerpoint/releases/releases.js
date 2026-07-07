@@ -1,7 +1,100 @@
 window.RELEASES_DATA = {
-  "version": "0.1.24",
-  "updatedAt": "2026-07-07T10:10:21.991Z",
+  "version": "0.1.25",
+  "updatedAt": "2026-07-07T10:33:50.378Z",
   "releases": [
+    {
+      "version": "0.1.25",
+      "tag": "powerpoint-v0.1.25",
+      "date": "2026-07-07",
+      "releaseType": "patch",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.1.0",
+          "breaking": false,
+          "hash": "7d543c5"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.8.0",
+          "breaking": false,
+          "hash": "23c9f14"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "9abaea4"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "home",
+          "description": "refine landing page hero and enable PowerPoint",
+          "breaking": false,
+          "hash": "c8261fb"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modules",
+          "description": "link version badge to releases",
+          "breaking": false,
+          "hash": "21fee96"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.0.0",
+          "breaking": false,
+          "hash": "b23c7c7"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "release",
+          "description": "run root npm commands through cmd on windows",
+          "breaking": false,
+          "hash": "3adb0f9"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "release",
+          "description": "support npm invocation on windows",
+          "breaking": false,
+          "hash": "3fd0b20"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 3,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 8
+      }
+    },
     {
       "version": "0.1.24",
       "tag": "powerpoint-v0.1.24",
