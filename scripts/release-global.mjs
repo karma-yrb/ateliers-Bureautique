@@ -8,6 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, "..");
 const TAG_PREFIX = "bureautique-v";
+const NPM_COMMAND = process.platform === "win32" ? "npm.cmd" : "npm";
 
 function run(command, args) {
   return execFileSync(command, args, {
@@ -45,7 +46,7 @@ function main() {
     ? ["run", "release", "--", "--skip.tag", "--skip.commit"]
     : ["run", "release:first", "--", "--skip.tag", "--skip.commit"];
 
-  execFileSync("npm", releaseArgs, {
+  execFileSync(NPM_COMMAND, releaseArgs, {
     cwd: ROOT_DIR,
     stdio: "inherit",
   });
