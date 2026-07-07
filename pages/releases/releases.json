@@ -1,5 +1,195 @@
 {
   "version": "1.0.0",
-  "updatedAt": "",
-  "releases": []
+  "updatedAt": "2026-07-07T10:11:43.283Z",
+  "releases": [
+    {
+      "version": "1.0.0",
+      "tag": "bureautique-v1.0.0",
+      "date": "2026-07-07",
+      "releaseType": "initial",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "release",
+          "description": "run root npm commands through cmd on windows",
+          "breaking": false,
+          "hash": "3adb0f9"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "release",
+          "description": "support npm invocation on windows",
+          "breaking": false,
+          "hash": "3fd0b20"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.24",
+          "breaking": false,
+          "hash": "3ea1d05"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.0.1",
+          "breaking": false,
+          "hash": "00e6e2c"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.7.1",
+          "breaking": false,
+          "hash": "702ca68"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "repo",
+          "description": "enforce conventional commit messages",
+          "breaking": false,
+          "hash": "247d41f"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "homepage",
+          "description": "display global version badge",
+          "breaking": false,
+          "hash": "8c35d9d"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "feedback",
+          "description": "align selected toggle colors",
+          "breaking": false,
+          "hash": "8fe8295"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "add global product version and realign excel to 1.0.0",
+          "breaking": false,
+          "hash": "dd8c3f4"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modal",
+          "description": "unifie et simplifie la fin d'exercice",
+          "breaking": false,
+          "hash": "334ba1e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "repair misencoded completion icon",
+          "breaking": false,
+          "hash": "3c3b0d3"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.23",
+          "breaking": false,
+          "hash": "e66dd21"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.22",
+          "breaking": false,
+          "hash": "d83ff37"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.7.0",
+          "breaking": false,
+          "hash": "9fe664a"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "apps",
+          "description": "sync shared feedback and reporting runtime",
+          "breaking": false,
+          "hash": "e8da842"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "core",
+          "description": "add exercise feedback and usability reports",
+          "breaking": false,
+          "hash": "5db0fdb"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.22",
+          "breaking": false,
+          "hash": "da95a79"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.21",
+          "breaking": false,
+          "hash": "468a23d"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.6.0",
+          "breaking": false,
+          "hash": "d58b925"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "2918a6e"
+        }
+      ],
+      "counts": {
+        "feat": 9,
+        "fix": 35,
+        "perf": 0,
+        "refactor": 9,
+        "docs": 0,
+        "test": 4,
+        "chore": 207,
+        "build": 2,
+        "ci": 1,
+        "style": 0,
+        "revert": 0,
+        "other": 28,
+        "breaking": 0,
+        "total": 295
+      }
+    }
+  ]
 }
