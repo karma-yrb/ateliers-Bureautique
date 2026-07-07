@@ -265,7 +265,7 @@ function renderExerciseFeedbackModal() {
       </form>
       <div style="margin-top:16px;display:flex;gap:10px;justify-content:flex-end;">
         <button id="exercise-feedback-cancel-btn" class="btn btn-soft" type="button">Annuler</button>
-        <button id="exercise-feedback-continue-btn" class="btn has-icon" data-icon="âœ“" type="button">Terminer l'exercice</button>
+        <button id="exercise-feedback-continue-btn" class="btn has-icon" data-icon="✓" type="button">Terminer l'exercice</button>
       </div>
     </div>
   </div>`;
