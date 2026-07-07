@@ -1,7 +1,124 @@
 window.RELEASES_DATA = {
-  "version": "0.1.25",
-  "updatedAt": "2026-07-07T10:33:50.378Z",
+  "version": "0.1.26",
+  "updatedAt": "2026-07-07T12:25:32.894Z",
   "releases": [
+    {
+      "version": "0.1.26",
+      "tag": "powerpoint-v0.1.26",
+      "date": "2026-07-07",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.1.1",
+          "breaking": false,
+          "hash": "ecaa063"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.8.1",
+          "breaking": false,
+          "hash": "0841806"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "home",
+          "description": "hide powerpoint access",
+          "breaking": false,
+          "hash": "aeb54f6"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "workfile",
+          "description": "hide unusable open file button",
+          "breaking": false,
+          "hash": "507a385"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "deploy",
+          "description": "publish powerpoint page",
+          "breaking": false,
+          "hash": "03f45c0"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.3.0",
+          "breaking": false,
+          "hash": "735309e"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "repo",
+          "description": "harden do commit helper",
+          "breaking": false,
+          "hash": "6a1e65a"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.2.0",
+          "breaking": false,
+          "hash": "d956f2b"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "repo",
+          "description": "document git bash requirement",
+          "breaking": false,
+          "hash": "18e45d4"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "repo",
+          "description": "add targeted commit helper",
+          "breaking": false,
+          "hash": "a250204"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.1.0",
+          "breaking": false,
+          "hash": "f3b4a1e"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 3,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 3,
+        "test": 0,
+        "chore": 5,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 11
+      }
+    },
     {
       "version": "0.1.25",
       "tag": "powerpoint-v0.1.25",

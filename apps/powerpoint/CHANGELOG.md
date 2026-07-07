@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.25...powerpoint-v0.1.26) (2026-07-07)
+
+
+### Bug Fixes
+
+* **deploy:** publish powerpoint page ([03f45c0](https://github.com/karma-yrb/ateliers-Bureautique/commit/03f45c09f46a823c104f519ea9df4f4baea95d43))
+* **home:** hide powerpoint access ([aeb54f6](https://github.com/karma-yrb/ateliers-Bureautique/commit/aeb54f60d9599ad7643235f7cea843e4cae0703a))
+* **workfile:** hide unusable open file button ([507a385](https://github.com/karma-yrb/ateliers-Bureautique/commit/507a3851b8d619e52429c401824ba82b0285bbbc))
+
+
+### Documentation
+
+* **repo:** add targeted commit helper ([a250204](https://github.com/karma-yrb/ateliers-Bureautique/commit/a250204c1bc7fbae841e87088c89814cd9efdfc3))
+* **repo:** document git bash requirement ([18e45d4](https://github.com/karma-yrb/ateliers-Bureautique/commit/18e45d4540af57181e7cb8d1e6b1cfec11eb3203))
+* **repo:** harden do commit helper ([6a1e65a](https://github.com/karma-yrb/ateliers-Bureautique/commit/6a1e65a0ad486f2f687e892ee5399eb189457b5d))
+
 ### [0.1.25](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.24...powerpoint-v0.1.25) (2026-07-07)
 
 
