@@ -1431,8 +1431,49 @@ select {
   width: min(780px, calc(100vw - 28px));
 }
 
+.exercise-feedback-section {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border: 1px solid #d8e0ea;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.exercise-feedback-section-tips {
+  border-color: #c9d7ea;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.exercise-feedback-form {
+  background: #fffdfb;
+}
+
+.exercise-feedback-section-head {
+  margin-bottom: 10px;
+}
+
+.exercise-feedback-eyebrow {
+  margin: 0 0 4px;
+  color: #5f7592;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.exercise-feedback-section-title {
+  margin: 0;
+  color: #21364c;
+  font-size: 1.05rem;
+}
+
+.exercise-feedback-form label.field:first-of-type {
+  margin-top: 6px;
+}
+
 .save-reminder-steps {
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   padding-left: 20px;
   line-height: 1.5;
 }
@@ -1486,6 +1527,11 @@ select {
   .app-header-top {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .exercise-feedback-section {
+    padding: 14px;
+    border-radius: 14px;
   }
 
   .header-user-badge {

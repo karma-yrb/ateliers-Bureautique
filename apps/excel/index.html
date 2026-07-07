@@ -294,37 +294,147 @@
   <!-- ATELIER_SHARED_USER_SETUP_MODAL:END -->
 
   <!-- ATELIER_SHARED_EXERCISE_FEEDBACK_MODAL:START -->
+  <style>
+    .feedback-toggle-group {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .feedback-toggle-options {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      border: 2px solid #c6d3e2;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #e9f0f7;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 2px rgba(27, 52, 84, 0.08);
+    }
+
+    .feedback-toggle-option {
+      display: block;
+      position: relative;
+    }
+
+    .feedback-toggle-option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .feedback-toggle-option span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 10px 12px;
+      border-right: 1px solid #c6d3e2;
+      background: transparent;
+      color: #29435f;
+      font-weight: 700;
+      line-height: 1.35;
+      text-align: center;
+      cursor: pointer;
+      transition: background 120ms ease, color 120ms ease;
+    }
+
+    .feedback-toggle-option:last-child span {
+      border-right: 0;
+    }
+
+    .feedback-toggle-option input[value="easy"]:checked + span {
+      background: #dff3e6;
+      color: #1f5b35;
+    }
+
+    .feedback-toggle-option input[value="adapted"]:checked + span,
+    .feedback-toggle-option input[value="medium"]:checked + span,
+    .feedback-toggle-option input[value="partial"]:checked + span {
+      background: #fff1cf;
+      color: #815a00;
+    }
+
+    .feedback-toggle-option input[value="hard"]:checked + span,
+    .feedback-toggle-option input[value="unclear"]:checked + span,
+    .feedback-toggle-option input[value="assisted"]:checked + span {
+      background: #fde0dc;
+      color: #7d2e24;
+    }
+
+    .feedback-toggle-option input[value="clear"]:checked + span,
+    .feedback-toggle-option input[value="independent"]:checked + span {
+      background: #e0eefc;
+      color: #214c82;
+    }
+
+    .feedback-toggle-option input:focus-visible + span {
+      outline: 3px solid rgba(47, 124, 133, 0.28);
+      outline-offset: -3px;
+    }
+
+    @media (max-width: 780px) {
+      .feedback-toggle-options {
+        grid-template-columns: 1fr;
+      }
+
+      .feedback-toggle-option span {
+        border-right: 0;
+        border-bottom: 1px solid #c6d3e2;
+      }
+
+      .feedback-toggle-option:last-child span {
+        border-bottom: 0;
+      }
+    }
+  </style>
   <div id="exercise-feedback-modal" class="image-modal" style="display:none;" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Questionnaire de fin d'exercice">
     <div class="modal-content user-setup-content save-reminder-content">
       <h2 id="exercise-feedback-title" style="margin-top:0;">Avant de terminer</h2>
-      <p id="exercise-feedback-intro" class="muted">Donnez un retour rapide sur cet exercice.</p>
-      <form id="exercise-feedback-form" style="display:grid;gap:12px;">
-        <label class="field" for="exercise-feedback-difficulty">Difficulte ressentie</label>
-        <select id="exercise-feedback-difficulty" required>
-          <option value="">Choisir</option>
-          <option value="easy">Trop facile</option>
-          <option value="adapted">Adaptee</option>
-          <option value="hard">Difficile</option>
-        </select>
+      <section class="exercise-feedback-section exercise-feedback-section-tips">
+        <div class="exercise-feedback-section-head">
+          <p class="exercise-feedback-eyebrow">Pensez a enregistrer votre travail</p>
+        </div>
+        <p id="exercise-feedback-save-message" class="muted"></p>
+        <ol id="exercise-feedback-save-steps" class="save-reminder-steps">
+          <li>Dans l'application, cliquez sur <strong>Fichier</strong> puis <strong>Enregistrer sous</strong>.</li>
+          <li>Choisissez votre dossier utilisateur : <code id="exercise-feedback-user-folder">xxx</code>.</li>
+          <li>Nommez le fichier <code id="exercise-feedback-file-name">ex-xxx-termine</code>, puis validez avec <strong>Enregistrer</strong>.</li>
+        </ol>
+      </section>
+      <form id="exercise-feedback-form" class="exercise-feedback-section exercise-feedback-form" style="display:grid;gap:12px;">
+        <div class="exercise-feedback-section-head">
+          <p class="exercise-feedback-eyebrow">Dites-nous comment cela s&apos;est pass&eacute;</p>
+        </div>
+        <fieldset class="feedback-toggle-group" id="exercise-feedback-difficulty-group">
+          <legend class="field">Difficult&eacute; ressentie</legend>
+          <div class="feedback-toggle-options">
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-difficulty" value="easy"><span>Trop facile</span></label>
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-difficulty" value="adapted"><span>Adapt&eacute;e</span></label>
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-difficulty" value="hard"><span>Difficile</span></label>
+          </div>
+        </fieldset>
 
-        <label class="field" for="exercise-feedback-clarity">Clarte des consignes</label>
-        <select id="exercise-feedback-clarity" required>
-          <option value="">Choisir</option>
-          <option value="unclear">Pas claire</option>
-          <option value="medium">Moyenne</option>
-          <option value="clear">Tres claire</option>
-        </select>
+        <fieldset class="feedback-toggle-group" id="exercise-feedback-clarity-group">
+          <legend class="field">Clart&eacute; des consignes</legend>
+          <div class="feedback-toggle-options">
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-clarity" value="unclear"><span>Pas claire</span></label>
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-clarity" value="medium"><span>Moyenne</span></label>
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-clarity" value="clear"><span>Tr&egrave;s claire</span></label>
+          </div>
+        </fieldset>
 
-        <label class="field" for="exercise-feedback-autonomy">Autonomie ressentie</label>
-        <select id="exercise-feedback-autonomy" required>
-          <option value="">Choisir</option>
-          <option value="assisted">J'ai eu besoin d'aide</option>
-          <option value="partial">Un peu d'aide</option>
-          <option value="independent">En autonomie</option>
-        </select>
+        <fieldset class="feedback-toggle-group" id="exercise-feedback-autonomy-group">
+          <legend class="field">Autonomie ressentie</legend>
+          <div class="feedback-toggle-options">
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-autonomy" value="assisted"><span>J'ai eu besoin d'aide</span></label>
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-autonomy" value="partial"><span>Un peu d'aide</span></label>
+            <label class="feedback-toggle-option"><input type="radio" name="exercise-feedback-autonomy" value="independent"><span>En autonomie</span></label>
+          </div>
+        </fieldset>
 
         <label class="field" for="exercise-feedback-comment">Commentaire optionnel</label>
-        <textarea id="exercise-feedback-comment" rows="3" maxlength="280" placeholder="Blocage, point confus, aide recue..."></textarea>
+        <textarea id="exercise-feedback-comment" rows="3" maxlength="280" placeholder="Blocage, point confus, aide re&ccedil;ue..."></textarea>
         <p id="exercise-feedback-status" class="muted status-line"></p>
       </form>
       <div style="margin-top:16px;display:flex;gap:10px;justify-content:flex-end;">

@@ -139,9 +139,9 @@ function createAtelierController(config = {}) {
     this.exerciseFeedbackModal = {
       root: document.getElementById("exercise-feedback-modal"),
       form: document.getElementById("exercise-feedback-form"),
-      difficulty: document.getElementById("exercise-feedback-difficulty"),
-      clarity: document.getElementById("exercise-feedback-clarity"),
-      autonomy: document.getElementById("exercise-feedback-autonomy"),
+      difficulty: document.querySelectorAll('input[name="exercise-feedback-difficulty"]'),
+      clarity: document.querySelectorAll('input[name="exercise-feedback-clarity"]'),
+      autonomy: document.querySelectorAll('input[name="exercise-feedback-autonomy"]'),
       comment: document.getElementById("exercise-feedback-comment"),
       status: document.getElementById("exercise-feedback-status"),
       cancelBtn: document.getElementById("exercise-feedback-cancel-btn"),
@@ -566,10 +566,7 @@ function createAtelierController(config = {}) {
 
   async #completeExerciseWithFeedback(exerciseId, trigger) {
     if (!exerciseId || this.model.getIsDone(exerciseId)) return false;
-    const canContinue = await this.#showSaveReminderModal(trigger, exerciseId);
-    if (!canContinue) return false;
-
-    const feedback = await this.#showExerciseFeedbackModal(exerciseId);
+    const feedback = await this.#showExerciseFeedbackModal(exerciseId, trigger);
     if (!feedback) return false;
 
     this.model.setExerciseFeedback(exerciseId, feedback);
@@ -578,7 +575,7 @@ function createAtelierController(config = {}) {
     return true;
   }
 
-  #showExerciseFeedbackModal(exerciseId) {
+  #showExerciseFeedbackModal(exerciseId, trigger) {
     return new Promise((resolve) => {
       const refs = this.exerciseFeedbackModal;
       const exercise = this.model.getExerciseById(exerciseId);
@@ -594,17 +591,43 @@ function createAtelierController(config = {}) {
       }
 
       const titleEl = refs.root.querySelector("#exercise-feedback-title");
-      const introEl = refs.root.querySelector("#exercise-feedback-intro");
+      const saveMessageEl = refs.root.querySelector("#exercise-feedback-save-message");
+      const saveStepsEl = refs.root.querySelector("#exercise-feedback-save-steps");
       if (titleEl) titleEl.textContent = "Avant de terminer";
-      if (introEl) {
-        introEl.textContent = exercise
-          ? `Donnez un retour rapide sur l'exercice ${exercise.num} - ${exercise.title}.`
-          : "Donnez un retour rapide sur l'exercice.";
+      const folderLabel = this.#getSaveReminderFolderLabel();
+      const expectedFileName = this.#getSaveReminderFileName(exerciseId);
+      const isDoneTrigger = trigger === "done";
+      if (saveMessageEl) {
+        saveMessageEl.textContent = "";
       }
+      if (saveStepsEl) {
+        saveStepsEl.innerHTML = isDoneTrigger
+          ? `
+            <li>Dans ${settings.officeAppName}, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer) ou sur <strong>Fichier</strong> puis <strong>Enregistrer sous</strong>.</li>
+            <li>Choisissez votre dossier utilisateur : <code id="exercise-feedback-user-folder"></code>.</li>
+            <li>Nommez le fichier <code id="exercise-feedback-file-name"></code>, puis validez avec <strong>Enregistrer</strong>.</li>
+            <li>Dans ${settings.officeAppName}, cliquez <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer) si besoin.</li>
+          `
+          : `
+            <li>Si vous n'avez pas deja enregistre votre fichier dans votre dossier
+              <ul class="save-reminder-substeps">
+                <li>Cliquez sur "Fichier" puis "Enregistrer sous"</li>
+                <li>Choisissez Parcourir &gt; Documents.</li>
+                <li>Puis votre dossier utilisateur : ${this.#escapeHtml(folderLabel)}.</li>
+                <li>Validez avec Enregistrer.</li>
+              </ul>
+            </li>
+            <li>Dans tous les cas, terminez en cliquant sur <span class="word-close-icon" aria-hidden="true" title="Fermer">\u00d7</span> (fermer).</li>
+          `;
+      }
+      const userFolderEl = refs.root.querySelector("#exercise-feedback-user-folder");
+      const fileNameEl = refs.root.querySelector("#exercise-feedback-file-name");
+      if (userFolderEl) userFolderEl.textContent = folderLabel;
+      if (fileNameEl) fileNameEl.textContent = expectedFileName;
 
-      refs.difficulty.value = existing && existing.difficulty ? existing.difficulty : "";
-      refs.clarity.value = existing && existing.clarity ? existing.clarity : "";
-      refs.autonomy.value = existing && existing.autonomy ? existing.autonomy : "";
+      this.#setFeedbackToggleValue(refs.difficulty, existing && existing.difficulty ? existing.difficulty : "");
+      this.#setFeedbackToggleValue(refs.clarity, existing && existing.clarity ? existing.clarity : "");
+      this.#setFeedbackToggleValue(refs.autonomy, existing && existing.autonomy ? existing.autonomy : "");
       if (refs.comment) refs.comment.value = existing && existing.comment ? existing.comment : "";
       if (refs.status) refs.status.textContent = "";
 
@@ -619,9 +642,9 @@ function createAtelierController(config = {}) {
 
       const submit = () => {
         const payload = {
-          difficulty: refs.difficulty.value,
-          clarity: refs.clarity.value,
-          autonomy: refs.autonomy.value,
+          difficulty: this.#getFeedbackToggleValue(refs.difficulty),
+          clarity: this.#getFeedbackToggleValue(refs.clarity),
+          autonomy: this.#getFeedbackToggleValue(refs.autonomy),
           comment: refs.comment ? refs.comment.value : "",
         };
         if (!payload.difficulty || !payload.clarity || !payload.autonomy) {
@@ -647,8 +670,20 @@ function createAtelierController(config = {}) {
       window.addEventListener("keydown", onKeydown);
       refs.root.style.display = "flex";
       refs.root.setAttribute("aria-hidden", "false");
-      refs.difficulty.focus();
+      const firstDifficultyOption = Array.from(refs.difficulty || []).find((input) => input instanceof HTMLElement);
+      if (firstDifficultyOption) firstDifficultyOption.focus();
     });
+  }
+
+  #getFeedbackToggleValue(inputs) {
+    const checked = Array.from(inputs || []).find((input) => input.checked);
+    return checked ? checked.value : "";
+  }
+
+  #setFeedbackToggleValue(inputs, value) {
+    for (const input of Array.from(inputs || [])) {
+      input.checked = Boolean(value) && input.value === value;
+    }
   }
 
   #getCurrentExerciseIdFromView() {
