@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.22...excel-v1.0.1) (2026-07-07)
+
+
+### Bug Fixes
+
+* **feedback:** align selected toggle colors ([8fe8295](https://github.com/karma-yrb/ateliers-Bureautique/commit/8fe8295b414b6bf58e1a1c5d38fc57845e8b898b))
+* **homepage:** display global version badge ([8c35d9d](https://github.com/karma-yrb/ateliers-Bureautique/commit/8c35d9deb38d8e6e737100df2260c6183d5d5e39))
+* **modal:** unifie et simplifie la fin d'exercice ([334ba1e](https://github.com/karma-yrb/ateliers-Bureautique/commit/334ba1e21d02ae259f897270a69ed5913c443201))
+* **word:** repair misencoded completion icon ([3c3b0d3](https://github.com/karma-yrb/ateliers-Bureautique/commit/3c3b0d3442fdba11927e2a96147444911f1e6f35))
+
 ## [1.0.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.22...excel-v1.0.0) (2026-07-07)
 
 

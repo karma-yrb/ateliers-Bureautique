@@ -1,7 +1,100 @@
 window.RELEASES_DATA = {
-  "version": "1.0.0",
-  "updatedAt": "2026-07-07T00:00:00.000Z",
+  "version": "1.0.1",
+  "updatedAt": "2026-07-07T10:10:13.914Z",
   "releases": [
+    {
+      "version": "1.0.1",
+      "tag": "excel-v1.0.1",
+      "date": "2026-07-07",
+      "releaseType": "major",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version majeure avec evolutions potentiellement incompatibles.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.7.1",
+          "breaking": false,
+          "hash": "702ca68"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "repo",
+          "description": "enforce conventional commit messages",
+          "breaking": false,
+          "hash": "247d41f"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "homepage",
+          "description": "display global version badge",
+          "breaking": false,
+          "hash": "8c35d9d"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "feedback",
+          "description": "align selected toggle colors",
+          "breaking": false,
+          "hash": "8fe8295"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "add global product version and realign excel to 1.0.0",
+          "breaking": false,
+          "hash": "dd8c3f4"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modal",
+          "description": "unifie et simplifie la fin d'exercice",
+          "breaking": false,
+          "hash": "334ba1e"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "repair misencoded completion icon",
+          "breaking": false,
+          "hash": "3c3b0d3"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.23",
+          "breaking": false,
+          "hash": "e66dd21"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 4,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 8
+      }
+    },
     {
       "version": "1.0.0",
       "tag": "excel-v1.0.0",
