@@ -23,6 +23,7 @@ fi
 word_release_needed=false
 excel_release_needed=false
 powerpoint_release_needed=false
+global_release_needed=false
 
 if release_needed "word-v" "apps/word" "packages/atelier-core"; then
   word_release_needed=true
@@ -34,6 +35,10 @@ fi
 
 if release_needed "powerpoint-v" "apps/powerpoint" "packages/atelier-core"; then
   powerpoint_release_needed=true
+fi
+
+if release_needed "bureautique-v" "apps" "packages" "pages" "scripts" "package.json" "README.md"; then
+  global_release_needed=true
 fi
 
 if [[ "$word_release_needed" == true ]]; then
@@ -54,7 +59,13 @@ else
   echo "[release:all] Aucun changement a publier pour PowerPoint."
 fi
 
-if [[ "$word_release_needed" == false && "$excel_release_needed" == false && "$powerpoint_release_needed" == false ]]; then
+if [[ "$global_release_needed" == true ]]; then
+  node scripts/release-global.mjs
+else
+  echo "[release:all] Aucun changement a publier pour la version globale."
+fi
+
+if [[ "$word_release_needed" == false && "$excel_release_needed" == false && "$powerpoint_release_needed" == false && "$global_release_needed" == false ]]; then
   echo "[release:all] Aucun bump de version necessaire."
   exit 0
 fi

@@ -170,12 +170,41 @@
       }
     }
   </style>
+  <script defer>
+    async function loadGlobalReleaseVersion() {
+      const versionNode = document.getElementById("global-version-value");
+      const dateNode = document.getElementById("global-version-date");
+      if (!versionNode || !dateNode) return;
+
+      try {
+        const response = await fetch("./releases/releases.json", { cache: "no-store" });
+        if (!response.ok) throw new Error("releases.json inaccessible");
+        const data = await response.json();
+        const version = data?.version ? `v${data.version}` : "Version indisponible";
+        const releaseDate = data?.releases?.[0]?.date || "";
+        versionNode.textContent = version;
+        dateNode.textContent = releaseDate ? `Publiee le ${releaseDate}` : "Historique des releases";
+      } catch {
+        versionNode.textContent = "Version indisponible";
+        dateNode.textContent = "Historique des releases";
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", loadGlobalReleaseVersion);
+  </script>
 </head>
 <body>
   <main>
     <header>
       <h1>Ateliers Bureautique</h1>
       <p>Choisissez l'atelier a ouvrir.</p>
+      <div class="hero-meta">
+        <a class="version-chip" href="./releases/" aria-label="Ouvrir l'historique des releases globales">
+          <span>Version produit</span>
+          <strong id="global-version-value">Chargement...</strong>
+          <span id="global-version-date">Historique des releases</span>
+        </a>
+      </div>
     </header>
 
     <nav class="atelier-list" aria-label="Ateliers disponibles">
@@ -222,3 +251,34 @@
   </main>
 </body>
 </html>
+    .hero-meta {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+
+    .version-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 40px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel);
+      color: var(--ink);
+      font-size: 0.98rem;
+      text-decoration: none;
+    }
+
+    .version-chip strong {
+      font-size: 1rem;
+    }
+
+    .version-chip:hover,
+    .version-chip:focus {
+      outline: 3px solid rgba(25, 33, 42, 0.12);
+      outline-offset: 3px;
+    }

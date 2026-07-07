@@ -198,15 +198,21 @@ function writeReleaseJs(filePath, payload) {
   writeFileSync(filePath, content, "utf8");
 }
 
-export function runUpdateReleaseArtifacts({ rootDir, tagPrefix, logger = console }) {
+export function runUpdateReleaseArtifacts({
+  rootDir,
+  tagPrefix,
+  logger = console,
+  releaseJsonPaths,
+  releaseJsPaths,
+}) {
   if (!rootDir) throw new Error("rootDir est requis");
   if (!tagPrefix) throw new Error("tagPrefix est requis");
 
-  const releaseJsonPaths = [
+  const resolvedReleaseJsonPaths = releaseJsonPaths || [
     path.join(rootDir, "releases", "releases.json"),
     path.join(rootDir, "app", "releases", "releases.json"),
   ];
-  const releaseJsPaths = [
+  const resolvedReleaseJsPaths = releaseJsPaths || [
     path.join(rootDir, "releases", "releases.js"),
     path.join(rootDir, "app", "releases", "releases.js"),
   ];
@@ -244,13 +250,13 @@ export function runUpdateReleaseArtifacts({ rootDir, tagPrefix, logger = console
 
   const updatedAt = new Date().toISOString();
   const payloads = [];
-  for (const filePath of releaseJsonPaths) {
+  for (const filePath of resolvedReleaseJsonPaths) {
     payloads.push(upsertReleaseFile(filePath, currentVersion, releaseEntry, updatedAt));
   }
 
-  for (let i = 0; i < releaseJsPaths.length; i += 1) {
+  for (let i = 0; i < resolvedReleaseJsPaths.length; i += 1) {
     const payload = payloads[i] || payloads[0];
-    if (payload) writeReleaseJs(releaseJsPaths[i], payload);
+    if (payload) writeReleaseJs(resolvedReleaseJsPaths[i], payload);
   }
 
   logger.log(`[release-notes] Fichiers release mis a jour pour v${currentVersion}.`);

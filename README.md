@@ -7,6 +7,7 @@ Monorepo des ateliers bureautiques.
 - `apps/word` : atelier Word actuel, versionne independamment.
 - `apps/excel` : atelier Excel aligne maintenant son flux de donnees sur Word.
 - `apps/powerpoint` : atelier PowerPoint base sur le meme socle partage.
+- `pages/` : accueil commun et version produit globale affichee a l'utilisateur.
 
 ## URLs publiees
 
@@ -14,12 +15,15 @@ Monorepo des ateliers bureautiques.
 - `/excel/` : atelier Excel.
 - `/powerpoint/` : atelier PowerPoint.
 - `/` : choix de l'atelier.
+- `/releases/` : releases globales Ateliers Bureautique.
 
 ## Commandes
 
 Depuis la racine :
 
 - `npm run core:test`
+- `npm run release`
+- `npm run release:first`
 - `npm run word:test`
 - `npm run word:build:data`
 - `npm run word:sync:app`
@@ -49,6 +53,12 @@ Chaque app garde seulement ce qui lui est propre :
 - `apps/*/data/` pour les exercices et assets
 - `apps/*/js/app-config.js` pour les noms globaux et la configuration de stockage
 - quelques wrappers de scripts dans `apps/*/scripts/`
+
+## Versionnement
+
+- Une version produit globale est portee par la racine du monorepo et affichee sur `pages/index.html`.
+- Les versions `word-v...`, `excel-v...` et `powerpoint-v...` restent des versions techniques par module.
+- `npm run release:all` publie les modules necessaires puis termine par la release globale `bureautique-v...`.
 
 La note d'architecture detaillee est dans `packages/atelier-core/ARCHITECTURE.md`.
 

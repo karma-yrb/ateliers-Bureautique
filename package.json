@@ -1,5 +1,6 @@
 {
   "name": "ateliers-bureautique",
+  "version": "1.0.0",
   "private": true,
   "description": "Monorepo des ateliers bureautiques Pimms.",
   "workspaces": [
@@ -7,6 +8,8 @@
     "packages/*"
   ],
   "scripts": {
+    "release": "standard-version",
+    "release:first": "standard-version --first-release",
     "release:all": "if exist \"%LOCALAPPDATA%\\Programs\\Git\\bin\\bash.exe\" (\"%LOCALAPPDATA%\\Programs\\Git\\bin\\bash.exe\" scripts/release-all.sh) else (bash scripts/release-all.sh)",
     "lance": "node scripts/run-release-all.mjs",
     "lance pub": "npm run release:all",
@@ -39,5 +42,8 @@
     "excel:release:all": "npm --prefix apps/excel run release:all",
     "powerpoint:release": "npm --prefix apps/powerpoint run release",
     "powerpoint:release:all": "npm --prefix apps/powerpoint run release:all"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   }
 }

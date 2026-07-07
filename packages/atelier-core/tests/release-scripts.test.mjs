@@ -103,6 +103,40 @@ test("runUpdateReleaseArtifacts writes synchronized release payloads for both ap
   }
 });
 
+test("runUpdateReleaseArtifacts supports custom release targets", async () => {
+  const rootDir = await createTempRepo();
+
+  try {
+    await writeJson(path.join(rootDir, "package.json"), {
+      name: "ateliers-bureautique",
+      version: "1.0.0",
+      private: true,
+      type: "module",
+    });
+    await writeText(path.join(rootDir, "README.md"), "initial\n");
+    commitAll(rootDir, "chore: bootstrap global release fixtures");
+
+    const logs = [];
+    runUpdateReleaseArtifacts({
+      rootDir,
+      tagPrefix: "bureautique-v",
+      releaseJsonPaths: [path.join(rootDir, "pages", "releases", "releases.json")],
+      releaseJsPaths: [path.join(rootDir, "pages", "releases", "releases.js")],
+      logger: { log(message) { logs.push(message); } },
+    });
+
+    const releasesJson = JSON.parse(await fs.readFile(path.join(rootDir, "pages", "releases", "releases.json"), "utf8"));
+    const releasesJs = await fs.readFile(path.join(rootDir, "pages", "releases", "releases.js"), "utf8");
+
+    assert.equal(releasesJson.version, "1.0.0");
+    assert.equal(releasesJson.releases[0].tag, "bureautique-v1.0.0");
+    assert.match(releasesJs, /window\.RELEASES_DATA = /);
+    assert.deepEqual(logs, ["[release-notes] Fichiers release mis a jour pour v1.0.0."]);
+  } finally {
+    await fs.rm(rootDir, { recursive: true, force: true });
+  }
+});
+
 test("runValidateReleaseCommits reports valid conventional commits since the last matching tag", async () => {
   const rootDir = await createTempRepo();
 

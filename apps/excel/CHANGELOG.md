@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.22...excel-v1.0.0) (2026-07-07)
+
+
+### Maintenance
+
+* **release:** realign Excel technical versioning to 1.0.0 after product unification
+
 ### [0.1.22](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v0.1.21...excel-v0.1.22) (2026-07-06)
 
 

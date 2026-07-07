@@ -1,7 +1,44 @@
 window.RELEASES_DATA = {
-  "version": "0.1.22",
-  "updatedAt": "2026-07-06T15:20:39.926Z",
+  "version": "1.0.0",
+  "updatedAt": "2026-07-07T00:00:00.000Z",
   "releases": [
+    {
+      "version": "1.0.0",
+      "tag": "excel-v1.0.0",
+      "date": "2026-07-07",
+      "releaseType": "major",
+      "impact": {
+        "level": "low",
+        "rationale": "Realignement du versionnement technique sans changement fonctionnel annonce."
+      },
+      "summary": "Version majeure de realignement du versionnement technique Excel.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "realign Excel technical versioning to 1.0.0 after product unification",
+          "breaking": false,
+          "hash": ""
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 1,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 1
+      }
+    },
     {
       "version": "0.1.22",
       "tag": "excel-v0.1.22",
