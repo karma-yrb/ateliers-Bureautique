@@ -1,7 +1,84 @@
 {
-  "version": "1.3.0",
-  "updatedAt": "2026-07-07T10:49:11.396Z",
+  "version": "1.4.0",
+  "updatedAt": "2026-07-07T12:25:41.228Z",
   "releases": [
+    {
+      "version": "1.4.0",
+      "tag": "bureautique-v1.4.0",
+      "date": "2026-07-07",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.26",
+          "breaking": false,
+          "hash": "d0bdff0"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.1.1",
+          "breaking": false,
+          "hash": "ecaa063"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.8.1",
+          "breaking": false,
+          "hash": "0841806"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "home",
+          "description": "hide powerpoint access",
+          "breaking": false,
+          "hash": "aeb54f6"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "workfile",
+          "description": "hide unusable open file button",
+          "breaking": false,
+          "hash": "507a385"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "deploy",
+          "description": "publish powerpoint page",
+          "breaking": false,
+          "hash": "03f45c0"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 3,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 6
+      }
+    },
     {
       "version": "1.3.0",
       "tag": "bureautique-v1.3.0",
