@@ -40,7 +40,7 @@
     }
 
     h1 {
-      margin: 0 0 8px;
+      margin: 0;
       font-size: clamp(2rem, 4vw, 3.5rem);
       line-height: 1.05;
     }
@@ -52,16 +52,59 @@
       line-height: 1.5;
     }
 
+    .hero-title-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .hero-intro {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: min(100%, 720px);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 14px 18px;
+      border: 1px solid #d8e6ee;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at top left, rgba(33, 122, 75, 0.14), transparent 38%),
+        linear-gradient(135deg, #ffffff 0%, #f2f9fc 100%);
+      box-shadow: 0 16px 40px rgba(25, 33, 42, 0.07);
+    }
+
+    .hero-intro-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 42px;
+      width: 42px;
+      height: 42px;
+      padding: 0;
+      border: 1px solid rgba(33, 122, 75, 0.14);
+      border-radius: 50%;
+      background: linear-gradient(135deg, #eff8f2 0%, #e3f3ea 100%);
+      color: #217a4b;
+      box-shadow: 0 8px 18px rgba(33, 122, 75, 0.12);
+    }
+
+    .hero-intro-badge svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    .hero-intro p {
+      font-size: 1.02rem;
+    }
+
     .hero-meta {
-      margin-top: 14px;
       display: flex;
       align-items: center;
       gap: 10px;
-    }
-
-    .hero-meta-label {
-      color: var(--muted);
-      font-size: 0.98rem;
     }
 
     .version-chip {
@@ -203,6 +246,10 @@
       .atelier-head {
         align-items: flex-start;
       }
+
+      .hero-intro {
+        align-items: flex-start;
+      }
     }
   </style>
   <script defer>
@@ -231,13 +278,20 @@
 <body>
   <main>
     <header>
-      <h1>Ateliers Bureautique</h1>
-      <p>Choisissez l'atelier a ouvrir.</p>
-      <div class="hero-meta">
-        <span class="hero-meta-label">Version produit</span>
+      <div class="hero-title-row">
+        <h1>Ateliers Bureautique</h1>
         <a class="version-chip" href="./releases/" aria-label="Ouvrir l'historique des releases globales" title="Voir l'historique des releases">
           <span id="global-version-value">v1.0.0</span>
         </a>
+      </div>
+      <div class="hero-intro">
+        <span class="hero-intro-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4.75 6.75A1.75 1.75 0 0 1 6.5 5h11A1.75 1.75 0 0 1 19.25 6.75v10.5A1.75 1.75 0 0 1 17.5 19h-11a1.75 1.75 0 0 1-1.75-1.75V6.75Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 9h8M8 12h5M8 15h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <p>Selectionnez un atelier pour commencer votre parcours et progresser a votre rythme.</p>
       </div>
     </header>
 
@@ -264,13 +318,7 @@
           </div>
         </div>
       </a>
-      <div
-        class="atelier-link atelier-powerpoint"
-        role="link"
-        aria-disabled="true"
-        tabindex="0"
-        data-tooltip="Bientot disponible... l'atelier PowerPoint est en preparation."
-      >
+      <a class="atelier-link atelier-powerpoint" href="powerpoint/">
         <div class="atelier-head">
           <span class="atelier-logo" aria-hidden="true">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Office%20PowerPoint%20%282025%E2%80%93present%29.svg" alt="">
@@ -280,7 +328,7 @@
             <p>Exercices de presentations, diapositives, animations et mise en page.</p>
           </div>
         </div>
-      </div>
+      </a>
     </nav>
   </main>
 </body>
