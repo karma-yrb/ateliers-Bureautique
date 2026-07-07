@@ -10,6 +10,7 @@
   "scripts": {
     "hooks:install": "node scripts/install-git-hooks.mjs",
     "commitmsg:check": "node scripts/validate-commit-message.mjs",
+    "do:commit": "bash scripts/do-commit.sh",
     "release": "standard-version",
     "release:first": "standard-version --first-release",
     "release:all": "if exist \"%LOCALAPPDATA%\\Programs\\Git\\bin\\bash.exe\" (\"%LOCALAPPDATA%\\Programs\\Git\\bin\\bash.exe\" scripts/release-all.sh) else (bash scripts/release-all.sh)",

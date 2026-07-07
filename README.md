@@ -22,6 +22,7 @@ Monorepo des ateliers bureautiques.
 Depuis la racine :
 
 - `npm run core:test`
+- `npm run do:commit -- "fix(scope): description" [fichier...]`
 - `npm run release`
 - `npm run release:first`
 - `npm run word:test`
@@ -38,6 +39,13 @@ Depuis la racine :
 
 Depuis `apps/word` ou `apps/excel`, les commandes locales restent disponibles (`npm test`, `npm run build:data`, etc.).
 Depuis `apps/powerpoint`, les memes commandes locales sont aussi disponibles.
+
+## Commit cible
+
+- `npm run do:commit -- "fix(scope): description" [fichier...]`
+- Si tu passes des chemins de fichiers, seuls ces fichiers sont ajoutes puis commites.
+- Si tu ne passes pas de fichiers, la commande commit uniquement ce qui est deja stage.
+- Le message est valide par la meme regle que le hook `commit-msg`.
 
 ## Architecture partagee
 
