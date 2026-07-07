@@ -1,7 +1,84 @@
 {
-  "version": "1.0.0",
-  "updatedAt": "2026-07-07T10:11:43.283Z",
+  "version": "1.1.0",
+  "updatedAt": "2026-07-07T10:33:56.944Z",
   "releases": [
+    {
+      "version": "1.1.0",
+      "tag": "bureautique-v1.1.0",
+      "date": "2026-07-07",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.25",
+          "breaking": false,
+          "hash": "6fe0a75"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.1.0",
+          "breaking": false,
+          "hash": "7d543c5"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.8.0",
+          "breaking": false,
+          "hash": "23c9f14"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "9abaea4"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "home",
+          "description": "refine landing page hero and enable PowerPoint",
+          "breaking": false,
+          "hash": "c8261fb"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modules",
+          "description": "link version badge to releases",
+          "breaking": false,
+          "hash": "21fee96"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 6
+      }
+    },
     {
       "version": "1.0.0",
       "tag": "bureautique-v1.0.0",
