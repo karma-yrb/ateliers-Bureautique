@@ -315,6 +315,9 @@
     .feedback-toggle-option {
       display: block;
       position: relative;
+      background: transparent;
+      color: #29435f;
+      transition: background 120ms ease, color 120ms ease;
     }
 
     .feedback-toggle-option input {
@@ -330,42 +333,40 @@
       min-height: 54px;
       padding: 10px 12px;
       border-right: 1px solid #c6d3e2;
-      background: transparent;
-      color: #29435f;
       font-weight: 700;
       line-height: 1.35;
       text-align: center;
       cursor: pointer;
-      transition: background 120ms ease, color 120ms ease;
+      color: inherit;
     }
 
     .feedback-toggle-option:last-child span {
       border-right: 0;
     }
 
-    .feedback-toggle-option input[value="easy"]:checked + span {
+    .feedback-toggle-option:has(input[value="easy"]:checked) {
       background: #dff3e6;
       color: #1f5b35;
     }
 
-    .feedback-toggle-option input[value="adapted"]:checked + span,
-    .feedback-toggle-option input[value="medium"]:checked + span,
-    .feedback-toggle-option input[value="partial"]:checked + span {
+    .feedback-toggle-option:has(input[value="adapted"]:checked),
+    .feedback-toggle-option:has(input[value="medium"]:checked),
+    .feedback-toggle-option:has(input[value="partial"]:checked) {
       background: #fff1cf;
       color: #815a00;
     }
 
-    .feedback-toggle-option input[value="hard"]:checked + span,
-    .feedback-toggle-option input[value="unclear"]:checked + span,
-    .feedback-toggle-option input[value="assisted"]:checked + span {
+    .feedback-toggle-option:has(input[value="hard"]:checked),
+    .feedback-toggle-option:has(input[value="unclear"]:checked),
+    .feedback-toggle-option:has(input[value="assisted"]:checked) {
       background: #fde0dc;
       color: #7d2e24;
     }
 
-    .feedback-toggle-option input[value="clear"]:checked + span,
-    .feedback-toggle-option input[value="independent"]:checked + span {
-      background: #e0eefc;
-      color: #214c82;
+    .feedback-toggle-option:has(input[value="clear"]:checked),
+    .feedback-toggle-option:has(input[value="independent"]:checked) {
+      background: #dff3e6;
+      color: #1f5b35;
     }
 
     .feedback-toggle-option input:focus-visible + span {
