@@ -29,10 +29,11 @@ jobs:
 
       - name: Prepare Pages artifact
         run: |
-          mkdir -p dist/word dist/excel
+          mkdir -p dist/word dist/excel dist/powerpoint
           cp -R pages/. dist/
           cp -R apps/word/app/. dist/word/
           cp -R apps/excel/app/. dist/excel/
+          cp -R apps/powerpoint/app/. dist/powerpoint/
           touch dist/.nojekyll
 
       - name: Upload artifact
