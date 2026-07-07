@@ -935,16 +935,13 @@ class AtelierView {
     const vm = workFileVm && typeof workFileVm === "object" ? workFileVm : {};
     const pickerSupported = vm.pickerSupported !== false;
     const fileName = String(vm.fileName || "").trim();
-    const openVisible = Boolean(vm.openVisible && fileName);
 
     this.exercisePickWorkFileBtn.style.display = "none";
     this.exercisePickWorkFileBtn.textContent = "S\u00e9lectionner mon fichier";
 
-    this.exerciseOpenWorkFileBtn.style.display = pickerSupported && openVisible ? "" : "none";
-    this.exerciseOpenWorkFileBtn.disabled = !pickerSupported || !openVisible || Boolean(vm.openDisabled);
-    this.exerciseOpenWorkFileBtn.textContent = openVisible
-      ? `S\u00e9lectionner mon fichier: ${fileName}`
-      : "S\u00e9lectionner mon fichier";
+    this.exerciseOpenWorkFileBtn.style.display = "none";
+    this.exerciseOpenWorkFileBtn.disabled = true;
+    this.exerciseOpenWorkFileBtn.textContent = "Ouvrir mon fichier";
 
     if (!pickerSupported) {
       this.exerciseWorkFileStatus.textContent = "S\u00e9lection du fichier indisponible sur ce navigateur.";
@@ -956,7 +953,7 @@ class AtelierView {
       return;
     }
 
-    this.exerciseWorkFileStatus.textContent = openVisible
+    this.exerciseWorkFileStatus.textContent = fileName
       ? `Fichier attendu: ${fileName}`
       : "";
   }
