@@ -8,7 +8,20 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, "..");
 const TAG_PREFIX = "bureautique-v";
-const NPM_COMMAND = process.platform === "win32" ? "npm.cmd" : "npm";
+function runNpm(args) {
+  if (process.platform === "win32") {
+    execFileSync("cmd.exe", ["/d", "/s", "/c", "npm.cmd", ...args], {
+      cwd: ROOT_DIR,
+      stdio: "inherit",
+    });
+    return;
+  }
+
+  execFileSync("npm", args, {
+    cwd: ROOT_DIR,
+    stdio: "inherit",
+  });
+}
 
 function run(command, args) {
   return execFileSync(command, args, {
@@ -46,10 +59,7 @@ function main() {
     ? ["run", "release", "--", "--skip.tag", "--skip.commit"]
     : ["run", "release:first", "--", "--skip.tag", "--skip.commit"];
 
-  execFileSync(NPM_COMMAND, releaseArgs, {
-    cwd: ROOT_DIR,
-    stdio: "inherit",
-  });
+  runNpm(releaseArgs);
 
   execFileSync("node", ["scripts/update-global-release-artifacts.mjs"], {
     cwd: ROOT_DIR,
