@@ -1,6 +1,6 @@
 import { execFileSync } from "node:child_process";
 
-const ALLOWED_TYPES = new Set([
+export const ALLOWED_TYPES = new Set([
   "feat",
   "fix",
   "perf",
@@ -17,7 +17,7 @@ const ALLOWED_TYPES = new Set([
   "excel",
 ]);
 
-const CONVENTIONAL_RE = /^(?<type>[a-z]+)(\([^)]+\))?(?<breaking>!)?: (?<description>.+)$/;
+export const CONVENTIONAL_RE = /^(?<type>[a-z]+)(\([^)]+\))?(?<breaking>!)?: (?<description>.+)$/;
 
 function git(cwd, args) {
   return execFileSync("git", args, {
@@ -57,6 +57,24 @@ function isSkippableCommit(subject) {
   return subject.startsWith("Merge ") || subject.startsWith('Revert "');
 }
 
+export function validateCommitSubject(subject) {
+  if (isSkippableCommit(subject)) {
+    return { ok: true, skipped: true };
+  }
+
+  const match = subject.match(CONVENTIONAL_RE);
+  if (!match) {
+    return { ok: false, reason: "format invalide" };
+  }
+
+  const type = match.groups?.type || "";
+  if (!ALLOWED_TYPES.has(type)) {
+    return { ok: false, reason: `type '${type}' non autorise` };
+  }
+
+  return { ok: true, skipped: false };
+}
+
 export function runValidateReleaseCommits({
   cwd = process.cwd(),
   tagPrefix,
@@ -84,20 +102,11 @@ export function runValidateReleaseCommits({
     if (allowedLegacySet.has(commit.hash)) continue;
     if (isSkippableCommit(commit.subject)) continue;
 
-    const match = commit.subject.match(CONVENTIONAL_RE);
-    if (!match) {
+    const validation = validateCommitSubject(commit.subject);
+    if (!validation.ok) {
       invalid.push({
         ...commit,
-        reason: "format invalide",
-      });
-      continue;
-    }
-
-    const type = match.groups?.type || "";
-    if (!ALLOWED_TYPES.has(type)) {
-      invalid.push({
-        ...commit,
-        reason: `type '${type}' non autorise`,
+        reason: validation.reason,
       });
     }
   }
