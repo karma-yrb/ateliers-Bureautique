@@ -1,7 +1,44 @@
 window.RELEASES_DATA = {
-  "version": "1.2.0",
-  "updatedAt": "2026-07-07T10:45:01.475Z",
+  "version": "1.3.0",
+  "updatedAt": "2026-07-07T10:49:11.396Z",
   "releases": [
+    {
+      "version": "1.3.0",
+      "tag": "bureautique-v1.3.0",
+      "date": "2026-07-07",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "repo",
+          "description": "harden do commit helper",
+          "breaking": false,
+          "hash": "6a1e65a"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 1,
+        "test": 0,
+        "chore": 0,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 1
+      }
+    },
     {
       "version": "1.2.0",
       "tag": "bureautique-v1.2.0",
