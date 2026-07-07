@@ -52,6 +52,41 @@
       line-height: 1.5;
     }
 
+    .hero-meta {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-meta-label {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .version-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 4px 12px;
+      border: 1px solid #9fc9d8;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #f7fdff 0%, #ebf8fd 100%);
+      color: #216b84;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    .version-chip:hover,
+    .version-chip:focus {
+      outline: 3px solid rgba(33, 107, 132, 0.18);
+      outline-offset: 3px;
+    }
+
     .atelier-list {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -171,22 +206,22 @@
     }
   </style>
   <script defer>
+    const GLOBAL_PRODUCT_VERSION_FALLBACK = "v1.0.0";
+
     async function loadGlobalReleaseVersion() {
       const versionNode = document.getElementById("global-version-value");
-      const dateNode = document.getElementById("global-version-date");
-      if (!versionNode || !dateNode) return;
+      if (!versionNode) return;
+
+       versionNode.textContent = GLOBAL_PRODUCT_VERSION_FALLBACK;
 
       try {
         const response = await fetch("./releases/releases.json", { cache: "no-store" });
         if (!response.ok) throw new Error("releases.json inaccessible");
         const data = await response.json();
-        const version = data?.version ? `v${data.version}` : "Version indisponible";
-        const releaseDate = data?.releases?.[0]?.date || "";
+        const version = data?.version ? `v${data.version}` : GLOBAL_PRODUCT_VERSION_FALLBACK;
         versionNode.textContent = version;
-        dateNode.textContent = releaseDate ? `Publiee le ${releaseDate}` : "Historique des releases";
       } catch {
-        versionNode.textContent = "Version indisponible";
-        dateNode.textContent = "Historique des releases";
+        versionNode.textContent = GLOBAL_PRODUCT_VERSION_FALLBACK;
       }
     }
 
@@ -199,10 +234,9 @@
       <h1>Ateliers Bureautique</h1>
       <p>Choisissez l'atelier a ouvrir.</p>
       <div class="hero-meta">
-        <a class="version-chip" href="./releases/" aria-label="Ouvrir l'historique des releases globales">
-          <span>Version produit</span>
-          <strong id="global-version-value">Chargement...</strong>
-          <span id="global-version-date">Historique des releases</span>
+        <span class="hero-meta-label">Version produit</span>
+        <a class="version-chip" href="./releases/" aria-label="Ouvrir l'historique des releases globales" title="Voir l'historique des releases">
+          <span id="global-version-value">v1.0.0</span>
         </a>
       </div>
     </header>
@@ -251,34 +285,3 @@
   </main>
 </body>
 </html>
-    .hero-meta {
-      margin-top: 14px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
-    }
-
-    .version-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      min-height: 40px;
-      padding: 8px 14px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: var(--panel);
-      color: var(--ink);
-      font-size: 0.98rem;
-      text-decoration: none;
-    }
-
-    .version-chip strong {
-      font-size: 1rem;
-    }
-
-    .version-chip:hover,
-    .version-chip:focus {
-      outline: 3px solid rgba(25, 33, 42, 0.12);
-      outline-offset: 3px;
-    }
