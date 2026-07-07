@@ -62,6 +62,13 @@ body {
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.app-version:hover,
+.app-version:focus-visible {
+  background: #e8f2f3;
+  outline: none;
 }
 
 .subtitle {
