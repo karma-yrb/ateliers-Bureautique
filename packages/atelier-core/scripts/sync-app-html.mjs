@@ -66,7 +66,12 @@ function renderHeaderNav({ appName, version }) {
         </div>
         <p class="subtitle">Je choisis un thème, je lance un exercice, je suis les étapes.</p>
       </div>
-      <div class="header-user-wrap">
+      <div class="header-actions">
+        <a class="header-home-link" href="../../pages/" aria-label="Retour a l'accueil Bureautique" title="Retour a l'accueil Bureautique">
+          <span class="header-home-link-icon" aria-hidden="true">&#128421;</span>
+          <span class="header-home-link-text">Accueil Bureautique</span>
+        </a>
+        <div class="header-user-wrap">
         <button id="header-user-badge" class="header-user-badge header-user-badge-btn" type="button" aria-live="polite" aria-label="Ouvrir le menu utilisateur" aria-haspopup="true" aria-expanded="false" title="Menu utilisateur">
           <span class="header-user-label">Utilisateur &#9662;</span>
           <strong class="header-user-name">Non connecté</strong>
@@ -76,6 +81,7 @@ function renderHeaderNav({ appName, version }) {
           <button id="header-user-profile-btn" class="header-user-menu-item" type="button" role="menuitem">&#9881; Profil &amp; options</button>
         </div>
         <p id="header-runtime-status" class="muted status-line">Mode local</p>
+        </div>
       </div>
     </div>
   </header>
@@ -84,7 +90,6 @@ function renderHeaderNav({ appName, version }) {
     <button class="nav-btn" data-nav="home">Accueil</button>
     <button class="nav-btn" data-nav="themes">Thèmes</button>
     <button class="nav-btn" data-nav="progress">Progression</button>
-    <a class="nav-btn nav-link-btn" href="../../pages/">Accueil Bureautique</a>
   </nav>`;
 }
 
