@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.4.1",
-  "updatedAt": "2026-07-08T13:55:28.012Z",
+  "version": "1.4.2",
+  "updatedAt": "2026-07-08T14:05:52.824Z",
   "releases": [
+    {
+      "version": "1.4.2",
+      "tag": "excel-v1.4.2",
+      "date": "2026-07-08",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.11.2",
+          "breaking": false,
+          "hash": "d1dbc5e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "580a736"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modules",
+          "description": "restaurer le bouton accueil bureautique",
+          "breaking": false,
+          "hash": "6baae3c"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.0",
+          "breaking": false,
+          "hash": "0eb9e63"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.31",
+          "breaking": false,
+          "hash": "340982e"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.4.1",
       "tag": "excel-v1.4.1",

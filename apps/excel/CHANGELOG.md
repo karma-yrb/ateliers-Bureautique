@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.4.1...excel-v1.4.2) (2026-07-08)
+
+
+### Bug Fixes
+
+* **modules:** restaurer le bouton accueil bureautique ([6baae3c](https://github.com/karma-yrb/ateliers-Bureautique/commit/6baae3c0cdbc50310dbb4cb876d3c6abe997c9cd))
+
 ### [1.4.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.4.0...excel-v1.4.1) (2026-07-08)
 
 ## [1.4.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.3.0...excel-v1.4.0) (2026-07-08)
