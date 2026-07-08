@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.33](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.32...powerpoint-v0.1.33) (2026-07-08)
+
+
+### Features
+
+* **header:** deplacer l'accueil bureautique dans le header ([50109fc](https://github.com/karma-yrb/ateliers-Bureautique/commit/50109fc5c1e87519350596edead3b0b31eedd139))
+
 ### [0.1.32](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.31...powerpoint-v0.1.32) (2026-07-08)
 
 
