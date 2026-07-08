@@ -31,6 +31,7 @@ function createAtelierUserSetupRuntime(config = {}) {
         const storageModeWrap = modalRefs.storageModeWrap;
         const localModeBtn = modalRefs.localModeBtn;
         const serverModeBtn = modalRefs.serverModeBtn;
+        const modeHelp = modalRefs.modeHelp;
         const pickBtn = modalRefs.pickBtn;
         const firstNameInput = modalRefs.firstNameInput;
         const firstNameLabel = modal ? modal.querySelector('label[for="user-setup-firstname-input"]') : null;
@@ -100,6 +101,30 @@ function createAtelierUserSetupRuntime(config = {}) {
           validate.style.display = visible ? "" : "none";
         };
 
+        const findBestSavedFolderIdForMode = (mode) => {
+          const ordered = [...savedFolders]
+            .filter((folder) => getFolderStorageMode(folder) === mode)
+            .sort((a, b) => {
+              const left = Date.parse(a.lastUsedAt || "") || 0;
+              const right = Date.parse(b.lastUsedAt || "") || 0;
+              return right - left;
+            });
+          return ordered.length ? ordered[0].id : "";
+        };
+
+        const renderModeHelp = () => {
+          if (!modeHelp) return;
+          if (preferredStorageMode === "server" && configuredUserFoldersRootLabel) {
+            modeHelp.textContent = `Mode serveur : ouvrez un dossier utilisateur depuis ${configuredUserFoldersRootLabel}.`;
+            return;
+          }
+          if (preferredStorageMode === "server") {
+            modeHelp.textContent = "Mode serveur : utilisez un dossier deja present sur le partage reseau local.";
+            return;
+          }
+          modeHelp.textContent = "Mode local : utilisez un dossier sur cette machine.";
+        };
+
         const renderStorageModeButtons = () => {
           if (!storageModeWrap || !localModeBtn || !serverModeBtn) return;
           storageModeWrap.style.display = "";
@@ -113,6 +138,7 @@ function createAtelierUserSetupRuntime(config = {}) {
           } else {
             serverModeBtn.removeAttribute("title");
           }
+          renderModeHelp();
         };
 
         const updateFolderStatus = () => {
@@ -389,10 +415,15 @@ function createAtelierUserSetupRuntime(config = {}) {
         if (localModeBtn) {
           localModeBtn.onclick = async () => {
             preferredStorageMode = "local";
-            selectedSavedId = "";
+            selectedSavedId = findBestSavedFolderIdForMode("local");
             rootHandle = null;
             renderStorageModeButtons();
             renderSavedFolders();
+            if (selectedSavedId) {
+              if (savedFoldersSelect) savedFoldersSelect.value = selectedSavedId;
+              await applySavedFolderSelection(selectedSavedId, { requestPermission: false });
+              return;
+            }
             updateFolderStatus();
           };
         }
@@ -401,10 +432,15 @@ function createAtelierUserSetupRuntime(config = {}) {
           serverModeBtn.onclick = async () => {
             if (serverModeBtn.disabled) return;
             preferredStorageMode = "server";
-            selectedSavedId = "";
+            selectedSavedId = findBestSavedFolderIdForMode("server");
             rootHandle = null;
             renderStorageModeButtons();
             renderSavedFolders();
+            if (selectedSavedId) {
+              if (savedFoldersSelect) savedFoldersSelect.value = selectedSavedId;
+              await applySavedFolderSelection(selectedSavedId, { requestPermission: false });
+              return;
+            }
             updateFolderStatus();
           };
         }

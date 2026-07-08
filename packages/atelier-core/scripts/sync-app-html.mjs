@@ -222,6 +222,7 @@ function renderUserSetupModal() {
             <button id="user-setup-mode-local-btn" class="btn btn-soft" type="button">Dossier local</button>
             <button id="user-setup-mode-server-btn" class="btn btn-soft" type="button">Dossier serveur</button>
           </div>
+          <p id="user-setup-mode-help" class="muted status-line" style="margin:0;">Mode local : utilisez un dossier sur cette machine.</p>
         </div>
 
         <div id="user-setup-saved-folders-wrap" style="display:none;">

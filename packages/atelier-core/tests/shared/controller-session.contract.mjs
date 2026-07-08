@@ -134,6 +134,7 @@ function createDocument() {
     "user-setup-storage-mode-wrap",
     "user-setup-mode-local-btn",
     "user-setup-mode-server-btn",
+    "user-setup-mode-help",
     "user-setup-saved-folders-wrap",
     "user-setup-saved-folders-select",
     "user-setup-pick-root-btn",

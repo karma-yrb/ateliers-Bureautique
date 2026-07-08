@@ -126,6 +126,7 @@ function createAtelierController(config = {}) {
       storageModeWrap: document.getElementById("user-setup-storage-mode-wrap"),
       localModeBtn: document.getElementById("user-setup-mode-local-btn"),
       serverModeBtn: document.getElementById("user-setup-mode-server-btn"),
+      modeHelp: document.getElementById("user-setup-mode-help"),
       pickBtn: document.getElementById("user-setup-pick-root-btn"),
       firstNameInput: document.getElementById("user-setup-firstname-input"),
       cancelBtn: document.getElementById("user-setup-cancel-btn"),
