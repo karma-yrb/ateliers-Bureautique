@@ -61,14 +61,14 @@ function createAtelierUserSetupRuntime(config = {}) {
 
         const buildEmptySelectionMessage = () => {
           if (preferredStorageMode === "server" && configuredUserFoldersRootLabel) {
-            return `Choisissez le dossier utilisateur sur le partage serveur configure : ${configuredUserFoldersRootLabel}.`;
+            return `Ouvrez un dossier utilisateur existant sur le partage serveur configure : ${configuredUserFoldersRootLabel}.`;
           }
           if (preferredStorageMode === "server") {
-            return "Choisissez le dossier utilisateur sur le serveur local ou restez en mode local si besoin.";
+            return "Ouvrez un dossier utilisateur existant sur le serveur local ou restez en mode local si besoin.";
           }
           return hasScannedDocuments
-            ? "Choisissez un dossier de travail dans la liste ci-dessous."
-            : "Cliquez sur le bouton ci-dessous pour acceder a vos dossiers dans Documents.";
+            ? "Choisissez ou creez un dossier de travail dans la liste ci-dessous."
+            : "Cliquez sur le bouton ci-dessous pour choisir ou creer un dossier dans Documents.";
         };
 
         const closeModal = (result) => {
@@ -115,14 +115,14 @@ function createAtelierUserSetupRuntime(config = {}) {
         const renderModeHelp = () => {
           if (!modeHelp) return;
           if (preferredStorageMode === "server" && configuredUserFoldersRootLabel) {
-            modeHelp.textContent = `Mode serveur : ouvrez un dossier utilisateur depuis ${configuredUserFoldersRootLabel}.`;
+            modeHelp.textContent = `Mode serveur : ouvrez un dossier utilisateur existant depuis ${configuredUserFoldersRootLabel}.`;
             return;
           }
           if (preferredStorageMode === "server") {
-            modeHelp.textContent = "Mode serveur : utilisez un dossier deja present sur le partage reseau local.";
+            modeHelp.textContent = "Mode serveur : ouvrez un dossier deja present sur le partage reseau local.";
             return;
           }
-          modeHelp.textContent = "Mode local : utilisez un dossier sur cette machine.";
+          modeHelp.textContent = "Mode local : choisissez ou creez un dossier sur cette machine.";
         };
 
         const renderStorageModeButtons = () => {
@@ -156,8 +156,8 @@ function createAtelierUserSetupRuntime(config = {}) {
           if (mode === "pick-folder") {
             pickBtn.style.display = "";
             pickBtn.textContent = preferredStorageMode === "server"
-              ? "Choisir le dossier serveur"
-              : "Choisir votre dossier de travail";
+              ? "Ouvrir un dossier serveur existant"
+              : "Choisir ou creer un dossier local";
             pickBtn.setAttribute("data-icon", "??");
             return;
           }
@@ -165,8 +165,8 @@ function createAtelierUserSetupRuntime(config = {}) {
           if (mode === "add-folder") {
             pickBtn.style.display = "";
             pickBtn.textContent = preferredStorageMode === "server"
-              ? "Choisir ou creer un autre dossier serveur"
-              : "Choisir ou creer un autre compte";
+              ? "Ouvrir un autre dossier serveur"
+              : "Choisir ou creer un autre dossier local";
             pickBtn.setAttribute("data-icon", "??");
             return;
           }
