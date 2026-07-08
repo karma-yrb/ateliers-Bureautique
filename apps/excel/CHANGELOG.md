@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.5.1...excel-v1.5.2) (2026-07-08)
+
+
+### Bug Fixes
+
+* **header:** corriger le retour vers l'accueil publie ([565a4f7](https://github.com/karma-yrb/ateliers-Bureautique/commit/565a4f74b9aab66da0ae191b3515e5333636bd74))
+
 ### [1.5.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.5.0...excel-v1.5.1) (2026-07-08)
 
 
