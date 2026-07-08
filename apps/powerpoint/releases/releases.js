@@ -1,7 +1,124 @@
 window.RELEASES_DATA = {
-  "version": "0.1.26",
-  "updatedAt": "2026-07-07T12:25:32.894Z",
+  "version": "0.1.27",
+  "updatedAt": "2026-07-08T08:00:41.809Z",
   "releases": [
+    {
+      "version": "0.1.27",
+      "tag": "powerpoint-v0.1.27",
+      "date": "2026-07-08",
+      "releaseType": "patch",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.2.0",
+          "breaking": false,
+          "hash": "6447b9a"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.0",
+          "breaking": false,
+          "hash": "90f2b39"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "powerpoint",
+          "description": "sync packaged structured exercise data",
+          "breaking": false,
+          "hash": "049d36d"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "connected",
+          "description": "clarify local and server folder actions in user setup",
+          "breaking": false,
+          "hash": "12a32f3"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "connected",
+          "description": "guide local and server folder reuse in user setup",
+          "breaking": false,
+          "hash": "11f82fe"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "connected",
+          "description": "add explicit local or server folder selection in user setup",
+          "breaking": false,
+          "hash": "6fad7a2"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "powerpoint",
+          "description": "align statement and result visuals in structured exercise data",
+          "breaking": false,
+          "hash": "dfd3113"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "connected",
+          "description": "add deployment config, prefer server-backed user folders, and handle local/server progress conflicts",
+          "breaking": false,
+          "hash": "52fd4f7"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "home",
+          "description": "reduce disabled powerpoint opacity",
+          "breaking": false,
+          "hash": "9f2255c"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "home",
+          "description": "disable powerpoint access",
+          "breaking": false,
+          "hash": "c359c1f"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.0",
+          "breaking": false,
+          "hash": "c1300ca"
+        }
+      ],
+      "counts": {
+        "feat": 4,
+        "fix": 3,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 11
+      }
+    },
     {
       "version": "0.1.26",
       "tag": "powerpoint-v0.1.26",
