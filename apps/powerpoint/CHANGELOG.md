@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.28](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.27...powerpoint-v0.1.28) (2026-07-08)
+
+
+### Bug Fixes
+
+* **ui:** corrige les icones du menu utilisateur ([2051715](https://github.com/karma-yrb/ateliers-Bureautique/commit/2051715c9d252ce88a39f45fd213b0345b70ad75))
+
 ### [0.1.27](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.26...powerpoint-v0.1.27) (2026-07-08)
 
 
