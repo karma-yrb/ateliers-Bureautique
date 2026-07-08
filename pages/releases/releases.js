@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "1.10.0",
-  "updatedAt": "2026-07-08T14:06:08.474Z",
+  "version": "1.11.0",
+  "updatedAt": "2026-07-08T14:11:21.774Z",
   "releases": [
+    {
+      "version": "1.11.0",
+      "tag": "bureautique-v1.11.0",
+      "date": "2026-07-08",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.33",
+          "breaking": false,
+          "hash": "4e795b5"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.0",
+          "breaking": false,
+          "hash": "c1a8049"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.0",
+          "breaking": false,
+          "hash": "2c6c90c"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "header",
+          "description": "deplacer l'accueil bureautique dans le header",
+          "breaking": false,
+          "hash": "50109fc"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.10.0",
       "tag": "bureautique-v1.10.0",
