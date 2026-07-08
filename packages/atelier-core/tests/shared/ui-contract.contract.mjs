@@ -19,7 +19,11 @@ export function registerUiContractTests({ appRoot, appLabel, forbiddenIds = [] }
 
   test(`${appLabel} HTML loads shared runtime scripts in dependency order`, async () => {
     const html = await fs.readFile(path.join(appRoot, "index.html"), "utf8");
-    const scriptIndexes = SHARED_RUNTIME_SCRIPT_ORDER.map((scriptPath) => html.indexOf(`src="${scriptPath}"`));
+    const scriptIndexes = SHARED_RUNTIME_SCRIPT_ORDER.map((scriptPath) => {
+      const scriptMatcher = new RegExp(`src="${scriptPath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:\\?[^"]*)?"`);
+      const match = scriptMatcher.exec(html);
+      return match ? match.index : -1;
+    });
 
     for (const scriptIndex of scriptIndexes) {
       assert.notEqual(scriptIndex, -1);

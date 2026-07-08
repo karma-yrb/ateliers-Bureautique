@@ -1,13 +1,5 @@
 # Récapitulatif des modifications - App Word
 
-## Backup
-
-Un backup complet de l'application Word a été créé ici :
-
-- `backups/word-app-20260706-141316`
-
----
-
 ## Exercices modifiés par module
 
 ## W17 - WordArt et Lettrine
