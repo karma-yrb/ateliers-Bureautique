@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.12.0",
-  "updatedAt": "2026-07-08T14:11:00.071Z",
+  "version": "1.12.1",
+  "updatedAt": "2026-07-08T14:45:06.393Z",
   "releases": [
+    {
+      "version": "1.12.1",
+      "tag": "word-v1.12.1",
+      "date": "2026-07-08",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "repo",
+          "description": "nettoie le backup et fiabilise le test html",
+          "breaking": false,
+          "hash": "f3c1040"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "header",
+          "description": "corriger le lien accueil bureautique",
+          "breaking": false,
+          "hash": "e2aa251"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.11.0",
+          "breaking": false,
+          "hash": "e8c7384"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.33",
+          "breaking": false,
+          "hash": "4e795b5"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.0",
+          "breaking": false,
+          "hash": "c1a8049"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.12.0",
       "tag": "word-v1.12.0",

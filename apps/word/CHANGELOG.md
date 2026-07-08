@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.12.0...word-v1.12.1) (2026-07-08)
+
+
+### Bug Fixes
+
+* **header:** corriger le lien accueil bureautique ([e2aa251](https://github.com/karma-yrb/ateliers-Bureautique/commit/e2aa251be1b84b0b52e13eecef95bf44237923a9))
+* **repo:** nettoie le backup et fiabilise le test html ([f3c1040](https://github.com/karma-yrb/ateliers-Bureautique/commit/f3c1040033d304bc63b5b9590a384efc8c727764))
+
 ## [1.12.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.11.2...word-v1.12.0) (2026-07-08)
 
 
