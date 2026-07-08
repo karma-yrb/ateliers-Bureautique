@@ -1,7 +1,100 @@
 window.RELEASES_DATA = {
-  "version": "1.6.0",
-  "updatedAt": "2026-07-08T12:28:41.713Z",
+  "version": "1.7.0",
+  "updatedAt": "2026-07-08T12:43:36.945Z",
   "releases": [
+    {
+      "version": "1.7.0",
+      "tag": "bureautique-v1.7.0",
+      "date": "2026-07-08",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.29",
+          "breaking": false,
+          "hash": "82b1b47"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.3.0",
+          "breaking": false,
+          "hash": "3ef566b"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.10.0",
+          "breaking": false,
+          "hash": "18020a2"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "12960da"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modules",
+          "description": "link version badge to releases",
+          "breaking": false,
+          "hash": "4fab6ec"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "modules",
+          "description": "ajouter le bouton accueil bureautique",
+          "breaking": false,
+          "hash": "97fff79"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "ui",
+          "description": "corrige l icone du selecteur de dossier",
+          "breaking": false,
+          "hash": "318113a"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "connected",
+          "description": "align v1 documentation with deployed local-server flows",
+          "breaking": false,
+          "hash": "d5df0e7"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 1,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 8
+      }
+    },
     {
       "version": "1.6.0",
       "tag": "bureautique-v1.6.0",
