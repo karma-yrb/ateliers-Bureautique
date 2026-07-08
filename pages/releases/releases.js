@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.11.0",
-  "updatedAt": "2026-07-08T14:11:21.774Z",
+  "version": "1.12.0",
+  "updatedAt": "2026-07-08T14:45:28.855Z",
   "releases": [
+    {
+      "version": "1.12.0",
+      "tag": "bureautique-v1.12.0",
+      "date": "2026-07-08",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.34",
+          "breaking": false,
+          "hash": "528e29e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.1",
+          "breaking": false,
+          "hash": "d552b18"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.1",
+          "breaking": false,
+          "hash": "ab0d43a"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "repo",
+          "description": "nettoie le backup et fiabilise le test html",
+          "breaking": false,
+          "hash": "f3c1040"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "header",
+          "description": "corriger le lien accueil bureautique",
+          "breaking": false,
+          "hash": "e2aa251"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.11.0",
       "tag": "bureautique-v1.11.0",
