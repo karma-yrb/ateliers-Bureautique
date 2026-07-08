@@ -84,6 +84,7 @@ function renderHeaderNav({ appName, version }) {
     <button class="nav-btn" data-nav="home">Accueil</button>
     <button class="nav-btn" data-nav="themes">Thèmes</button>
     <button class="nav-btn" data-nav="progress">Progression</button>
+    <a class="nav-btn nav-link-btn" href="../../pages/">Accueil Bureautique</a>
   </nav>`;
 }
 
