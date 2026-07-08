@@ -1471,6 +1471,106 @@ select {
   vertical-align: -0.08em;
 }
 
+/* PowerPoint module theme: stage, slides, and presentation energy */
+:root {
+  --bg: #fff1ea;
+  --panel: #fffdfa;
+  --line: #f1c8bb;
+  --ink: #47241b;
+  --muted: #7b5a4f;
+  --accent: #d24726;
+  --accent-soft: #ffe5dd;
+  --ok: #2f7a56;
+  --danger: #b34b43;
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(210, 71, 38, 0.14), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(255, 168, 120, 0.18), transparent 30%),
+    linear-gradient(180deg, #fff7f2 0%, #fff1ea 100%);
+}
+
+.app-header h1,
+.card h2 {
+  color: #9a371d;
+}
+
+.app-header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 14px;
+  margin-top: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b63d21 0%, #d24726 50%, #f08d62 100%);
+  opacity: 0.28;
+}
+
+.app-version,
+.header-user-badge {
+  border-color: #f0c0b0;
+  background: linear-gradient(180deg, #fffefc 0%, #fff0e9 100%);
+  color: #a43e22;
+}
+
+.nav-btn {
+  border-color: #efc9be;
+  background: linear-gradient(180deg, #fffdfa 0%, #fff4ee 100%);
+  color: #6f392b;
+}
+
+.nav-btn.active {
+  background: linear-gradient(180deg, #ffe9e1 0%, #ffd9cd 100%);
+  border-color: #eb9d84;
+  color: #8e2f18;
+}
+
+.card {
+  box-shadow: 0 16px 34px rgba(210, 71, 38, 0.09);
+}
+
+.home-resume-card,
+.themes-hero-card,
+.exercise-intro-card {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255, 253, 250, 0.98) 0%, rgba(255, 239, 231, 0.98) 100%);
+}
+
+.home-resume-card::after,
+.themes-hero-card::after,
+.exercise-intro-card::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  width: 170px;
+  height: 170px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(210, 71, 38, 0.13), rgba(240, 141, 98, 0.04));
+  transform: rotate(18deg);
+  pointer-events: none;
+}
+
+.image-card,
+.result-card,
+.theme-block,
+.theme-progress-card,
+.stat {
+  background: linear-gradient(180deg, #fffdfa 0%, #fff7f2 100%);
+  border-color: #f0d0c5;
+}
+
+.themes-legend-item,
+.theme-progress-tag,
+.theme-chip {
+  background: #fff0e8;
+  border-color: #efb7a3;
+  color: #9f3c20;
+}
+
 @media (max-width: 780px) {
   .app-header-top {
     flex-direction: column;
