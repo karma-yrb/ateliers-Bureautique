@@ -275,6 +275,14 @@
       <p id="user-setup-status" class="muted status-line">Choisissez votre dossier de travail pour commencer.</p>
 
       <div style="margin-top:12px;display:grid;gap:10px;">
+        <div id="user-setup-storage-mode-wrap" style="display:grid;gap:8px;">
+          <span class="field">Emplacement a utiliser</span>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button id="user-setup-mode-local-btn" class="btn btn-soft" type="button">Dossier local</button>
+            <button id="user-setup-mode-server-btn" class="btn btn-soft" type="button">Dossier serveur</button>
+          </div>
+        </div>
+
         <div id="user-setup-saved-folders-wrap" style="display:none;">
           <label for="user-setup-saved-folders-select" class="field" style="margin-bottom:6px;">Dossiers de travail enregistrés</label>
           <select id="user-setup-saved-folders-select"></select>

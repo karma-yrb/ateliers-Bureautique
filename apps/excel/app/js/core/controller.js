@@ -123,6 +123,9 @@ function createAtelierController(config = {}) {
       status: document.getElementById("user-setup-status"),
       savedFoldersWrap: document.getElementById("user-setup-saved-folders-wrap"),
       savedFoldersSelect: document.getElementById("user-setup-saved-folders-select"),
+      storageModeWrap: document.getElementById("user-setup-storage-mode-wrap"),
+      localModeBtn: document.getElementById("user-setup-mode-local-btn"),
+      serverModeBtn: document.getElementById("user-setup-mode-server-btn"),
       pickBtn: document.getElementById("user-setup-pick-root-btn"),
       firstNameInput: document.getElementById("user-setup-firstname-input"),
       cancelBtn: document.getElementById("user-setup-cancel-btn"),
@@ -172,6 +175,7 @@ function createAtelierController(config = {}) {
       documentRef: document,
       getPreferredStorageMode: () => this.#getPreferredStorageMode(),
       getRuntimeStatusLabel: () => this.#getRuntimeStatusLabel(),
+      getConfiguredUserFoldersRootLabel: () => this.#getConfiguredUserFoldersRootLabel(),
     });
     this.progressRuntime = window.createAtelierProgressRuntime({
       persistenceRuntime: this.persistenceRuntime,
@@ -187,6 +191,8 @@ function createAtelierController(config = {}) {
       setUserSession: (session) => {
         this.userSession = session;
       },
+      getRuntimeStatusLabel: () => this.#getRuntimeStatusLabel(),
+      getDeploymentConfig: () => this.deploymentConfig,
     });
   }
 
@@ -287,6 +293,11 @@ function createAtelierController(config = {}) {
   #getPreferredStorageMode() {
     if (this.serverStatus && this.serverStatus.available) return "server";
     return "local";
+  }
+
+  #getConfiguredUserFoldersRootLabel() {
+    if (!this.deploymentConfig || !this.deploymentConfig.networkShares) return "";
+    return String(this.deploymentConfig.networkShares.userFoldersRoot || "").trim();
   }
 
   #bindStaticEvents() {
@@ -425,6 +436,7 @@ function createAtelierController(config = {}) {
     let rootHandle = null;
     let initials = "";
     let firstName = "";
+    let selectedStorageMode = this.#getPreferredStorageMode();
     let savedWorkFolders = await this.storage.getSavedWorkFolders();
 
     if (!forcePrompt) {
@@ -442,6 +454,9 @@ function createAtelierController(config = {}) {
       if (!rootHandle && savedWorkFolders.length) {
         const latestFolder = this.#getPreferredSavedFolder(savedWorkFolders);
         rootHandle = latestFolder && latestFolder.handle ? latestFolder.handle : null;
+        if (latestFolder && latestFolder.storageMode) {
+          selectedStorageMode = String(latestFolder.storageMode).trim() || selectedStorageMode;
+        }
       }
 
       if (rootHandle) {
@@ -479,6 +494,7 @@ function createAtelierController(config = {}) {
       rootHandle = picked.rootHandle;
       initials = picked.initials;
       firstName = picked.firstName;
+      selectedStorageMode = picked.storageMode || selectedStorageMode;
     }
 
     initials = this.#deriveInitials(rootHandle, initials);
@@ -488,7 +504,7 @@ function createAtelierController(config = {}) {
       initials,
       firstName,
       permissionRequired: false,
-      storageMode: this.#getPreferredStorageMode(),
+      storageMode: selectedStorageMode || this.#getPreferredStorageMode(),
     };
     await this.sessionRuntime.persistResolvedSession(session);
     return session;
