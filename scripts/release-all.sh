@@ -11,9 +11,17 @@ npm run word:test
 npm run excel:test
 npm run powerpoint:test
 
+npm run word:build:data
+npm run excel:build:data
+npm run powerpoint:build:data
+
 npm run word:sync:app
 npm run excel:sync:app
 npm run powerpoint:sync:app
+
+npm run word:validate:app-sync
+npm run excel:validate:app-sync
+npm run powerpoint:validate:app-sync
 
 if [[ -n "$(git status --porcelain)" ]]; then
   git add -A
