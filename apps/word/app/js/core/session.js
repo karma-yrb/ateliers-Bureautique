@@ -25,7 +25,16 @@ function createAtelierSessionRuntime(config = {}) {
     return orderedFolders[0] || null;
   }
 
-  async function resolveExistingRootHandle(rootHandle, initials, allowPermissionPrompt) {
+  function getPreferredSavedFolder(savedWorkFolders, preferredStorageMode = "") {
+    if (!Array.isArray(savedWorkFolders) || !savedWorkFolders.length) return null;
+    const cleanMode = String(preferredStorageMode || "").trim();
+    if (!cleanMode) return getMostRecentSavedFolder(savedWorkFolders);
+    const matching = savedWorkFolders.filter((folder) => String(folder.storageMode || "").trim() === cleanMode);
+    if (matching.length) return getMostRecentSavedFolder(matching);
+    return getMostRecentSavedFolder(savedWorkFolders);
+  }
+
+  async function resolveExistingRootHandle(rootHandle, initials, allowPermissionPrompt, metadata = {}) {
     if (!rootHandle) {
       return { rootHandle: null, accessible: false, savedWorkFolders: null };
     }
@@ -49,7 +58,7 @@ function createAtelierSessionRuntime(config = {}) {
       return { rootHandle: null, accessible: false, savedWorkFolders: null };
     }
 
-    const savedWorkFolders = await storage.addSavedWorkFolder(resolvedRootHandle);
+    const savedWorkFolders = await storage.addSavedWorkFolder(resolvedRootHandle, metadata);
     return { rootHandle: resolvedRootHandle, accessible: true, savedWorkFolders };
   }
 
@@ -93,13 +102,14 @@ function createAtelierSessionRuntime(config = {}) {
       firstName: session.firstName,
       initials: session.initials,
       folderName: getSessionFolderName(session.rootHandle),
+      storageMode: session.storageMode || "",
     });
   }
 
   async function persistResolvedSession(session) {
     await storage.ensureProgressDirectory(session.rootHandle, session.initials, true);
     await storage.saveUserProfile(session.rootHandle, session.initials, session.firstName);
-    await storage.addSavedWorkFolder(session.rootHandle);
+    await storage.addSavedWorkFolder(session.rootHandle, { storageMode: session.storageMode || "" });
     await storage.setSavedRootHandle(session.rootHandle);
     await storage.setSavedInitials(session.initials);
     await storage.setSavedFirstName(session.firstName);
@@ -109,13 +119,15 @@ function createAtelierSessionRuntime(config = {}) {
   function syncSessionIdentity(session) {
     view.setHeaderUser(session.firstName, session.initials);
     const folderName = getSessionFolderName(session.rootHandle);
-    view.setProgressUserPath(`Fichier: ${folderName} > ProgressionAtelier > ${progressFileName}`);
+    const folderPrefix = session.storageMode === "server" ? "Dossier serveur" : "Dossier local";
+    view.setProgressUserPath(`${folderPrefix}: ${folderName} > ProgressionAtelier > ${progressFileName}`);
     persistSessionSnapshot(session);
   }
 
   return {
     deriveInitials,
     getMostRecentSavedFolder,
+    getPreferredSavedFolder,
     resolveExistingRootHandle,
     hydrateExistingProfile,
     getSessionFolderName,

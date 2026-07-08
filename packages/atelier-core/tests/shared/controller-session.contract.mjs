@@ -144,6 +144,16 @@ function createDocument() {
     "save-reminder-existing-status",
     "save-reminder-cancel-btn",
     "save-reminder-continue-btn",
+    "progress-conflict-modal",
+    "progress-conflict-title",
+    "progress-conflict-message",
+    "progress-conflict-current-label",
+    "progress-conflict-current-updated-at",
+    "progress-conflict-alternate-label",
+    "progress-conflict-alternate-updated-at",
+    "progress-conflict-status",
+    "progress-conflict-stay-btn",
+    "progress-conflict-switch-btn",
     "progress-change-user-btn",
     "progress-reset-btn",
     "progress-reset-profile-btn",
@@ -389,6 +399,7 @@ function createStorage(state) {
           name: handle.name,
           handle,
           lastUsedAt: "2026-06-24T09:00:00.000Z",
+          storageMode: "",
         });
       }
       return state.savedWorkFolders.slice();
@@ -467,7 +478,11 @@ export async function registerControllerSessionContractTests({
         if (!windowListeners.has(type)) windowListeners.set(type, []);
         windowListeners.get(type).push(handler);
       },
-      removeEventListener() {},
+      removeEventListener(type, handler) {
+        if (!windowListeners.has(type)) return;
+        const next = (windowListeners.get(type) || []).filter((entry) => entry !== handler);
+        windowListeners.set(type, next);
+      },
       confirm() {
         return true;
       },

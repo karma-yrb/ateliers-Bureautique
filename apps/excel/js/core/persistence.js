@@ -63,6 +63,7 @@ function createAtelierPersistenceRuntime(config = {}) {
       firstName: String(snapshot.firstName || "").trim(),
       initials: String(snapshot.initials || "").trim(),
       folderName: String(snapshot.folderName || "").trim(),
+      storageMode: String(snapshot.storageMode || "").trim(),
     }));
   }
 
@@ -73,6 +74,7 @@ function createAtelierPersistenceRuntime(config = {}) {
       firstName: String(parsed.firstName || "").trim(),
       initials: String(parsed.initials || "").trim(),
       folderName: String(parsed.folderName || "").trim(),
+      storageMode: String(parsed.storageMode || "").trim(),
     };
   }
 

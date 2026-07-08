@@ -20,6 +20,8 @@ function createAtelierController(config = {}) {
     this.pendingPermissionSession = null;
     this.saveQueue = Promise.resolve();
     this.exerciseWorkFileToken = 0;
+    this.deploymentConfig = null;
+    this.serverStatus = null;
     this.routeStorageKey = `atelier:last-hash:${settings.progressFileName}`;
     this.uiStateStorageKey = `atelier:last-ui-state:${settings.progressFileName}`;
     this.userSnapshotStorageKey = `atelier:last-user:${settings.progressFileName}`;
@@ -147,6 +149,18 @@ function createAtelierController(config = {}) {
       cancelBtn: document.getElementById("exercise-feedback-cancel-btn"),
       continueBtn: document.getElementById("exercise-feedback-continue-btn"),
     };
+    this.progressConflictModal = {
+      root: document.getElementById("progress-conflict-modal"),
+      title: document.getElementById("progress-conflict-title"),
+      message: document.getElementById("progress-conflict-message"),
+      currentLabel: document.getElementById("progress-conflict-current-label"),
+      currentUpdatedAt: document.getElementById("progress-conflict-current-updated-at"),
+      alternateLabel: document.getElementById("progress-conflict-alternate-label"),
+      alternateUpdatedAt: document.getElementById("progress-conflict-alternate-updated-at"),
+      status: document.getElementById("progress-conflict-status"),
+      stayBtn: document.getElementById("progress-conflict-stay-btn"),
+      switchBtn: document.getElementById("progress-conflict-switch-btn"),
+    };
     this.reminderModalRuntime = window.createAtelierReminderModalRuntime({
       modalRefs: this.saveReminderModal,
       windowRef: window,
@@ -156,6 +170,8 @@ function createAtelierController(config = {}) {
       modalRefs: this.userModal,
       deriveInitials: (rootHandle, fallback) => this.#deriveInitials(rootHandle, fallback),
       documentRef: document,
+      getPreferredStorageMode: () => this.#getPreferredStorageMode(),
+      getRuntimeStatusLabel: () => this.#getRuntimeStatusLabel(),
     });
     this.progressRuntime = window.createAtelierProgressRuntime({
       persistenceRuntime: this.persistenceRuntime,
@@ -201,6 +217,11 @@ function createAtelierController(config = {}) {
   }
 
   async #bootstrap() {
+    await this.#loadDeploymentRuntimeState();
+    if (this.view && this.view.setRuntimeStatus) {
+      this.view.setRuntimeStatus(this.#getRuntimeStatusLabel());
+    }
+
     if (!this.storage || !this.storage.isSupported()) {
       const snapshot = this.persistenceRuntime.getPersistedUserSnapshot();
       if (snapshot && (snapshot.firstName || snapshot.initials)) {
@@ -244,6 +265,28 @@ function createAtelierController(config = {}) {
     }
 
     await this.#activateSession(session, { render: true });
+  }
+
+  async #loadDeploymentRuntimeState() {
+    if (typeof window.loadAtelierDeploymentConfig === "function") {
+      this.deploymentConfig = await window.loadAtelierDeploymentConfig(window.getAtelierAppConfig ? window.getAtelierAppConfig() : undefined);
+    }
+
+    if (typeof window.checkAtelierServerAvailability === "function") {
+      this.serverStatus = await window.checkAtelierServerAvailability(this.deploymentConfig || undefined);
+    }
+  }
+
+  #getRuntimeStatusLabel() {
+    const serverEnabled = Boolean(this.deploymentConfig && this.deploymentConfig.server && this.deploymentConfig.server.enabled);
+    if (!serverEnabled) return "Mode local";
+    if (this.serverStatus && this.serverStatus.available) return "Serveur local disponible";
+    return "Serveur local indisponible, mode local";
+  }
+
+  #getPreferredStorageMode() {
+    if (this.serverStatus && this.serverStatus.available) return "server";
+    return "local";
   }
 
   #bindStaticEvents() {
@@ -360,8 +403,17 @@ function createAtelierController(config = {}) {
     return this.sessionRuntime.getMostRecentSavedFolder(savedWorkFolders);
   }
 
+  #getPreferredSavedFolder(savedWorkFolders) {
+    return this.sessionRuntime.getPreferredSavedFolder(savedWorkFolders, this.#getPreferredStorageMode());
+  }
+
   async #resolveExistingRootHandle(rootHandle, initials, allowPermissionPrompt) {
-    return this.sessionRuntime.resolveExistingRootHandle(rootHandle, initials, allowPermissionPrompt);
+    return this.sessionRuntime.resolveExistingRootHandle(
+      rootHandle,
+      initials,
+      allowPermissionPrompt,
+      { storageMode: this.#getPreferredStorageMode() },
+    );
   }
 
   async #hydrateExistingProfile(rootHandle, initials, firstName) {
@@ -388,7 +440,7 @@ function createAtelierController(config = {}) {
       }
 
       if (!rootHandle && savedWorkFolders.length) {
-        const latestFolder = this.#getMostRecentSavedFolder(savedWorkFolders);
+        const latestFolder = this.#getPreferredSavedFolder(savedWorkFolders);
         rootHandle = latestFolder && latestFolder.handle ? latestFolder.handle : null;
       }
 
@@ -431,21 +483,40 @@ function createAtelierController(config = {}) {
 
     initials = this.#deriveInitials(rootHandle, initials);
 
-    const session = { rootHandle, initials, firstName, permissionRequired: false };
+    const session = {
+      rootHandle,
+      initials,
+      firstName,
+      permissionRequired: false,
+      storageMode: this.#getPreferredStorageMode(),
+    };
     await this.sessionRuntime.persistResolvedSession(session);
     return session;
   }
 
   async #loadProgressForSession(session) {
-    const loaded = await this.storage.loadProgress(session.rootHandle, session.initials);
+    let loaded = await this.storage.loadProgress(session.rootHandle, session.initials);
+    const alternateResolution = await this.#maybeResolveAlternateProgress(session, loaded);
+    if (alternateResolution) {
+      session.rootHandle = alternateResolution.rootHandle;
+      session.storageMode = alternateResolution.storageMode;
+      if (alternateResolution.firstName) session.firstName = alternateResolution.firstName;
+      loaded = alternateResolution.progress;
+    }
+    let progressStatusMessage = "";
     if (loaded) {
       this.model.importProgressObject(loaded);
-      this.view.setProgressStatus(`Progression chargée pour ${session.firstName} (${session.initials}).`);
+      progressStatusMessage = `Progression chargee pour ${session.firstName} (${session.initials}).`;
     } else {
       this.model.resetProgress();
-      this.view.setProgressStatus(`Nouveau profil ${session.firstName} (${session.initials}) créé.`);
+      progressStatusMessage = `Nouveau profil ${session.firstName} (${session.initials}) cree.`;
       await this.#saveProgress();
     }
+
+    const divergenceNotice = await this.#buildAlternateProgressNotice(session, loaded);
+    this.view.setProgressStatus(divergenceNotice
+      ? `${progressStatusMessage} ${divergenceNotice}`
+      : progressStatusMessage);
 
     this.sessionRuntime.syncSessionIdentity(session);
 
@@ -458,12 +529,216 @@ function createAtelierController(config = {}) {
     }
   }
 
+  async #buildAlternateProgressNotice(session, currentProgress) {
+    if (!session || !session.rootHandle || !session.initials) return "";
+
+    const alternateFolder = await this.#findAlternateSavedFolder(session);
+    if (!alternateFolder) return "";
+
+    const alternateInitials = this.sessionRuntime.deriveInitials(alternateFolder.handle, session.initials);
+    const alternateProgress = await this.storage.loadProgress(alternateFolder.handle, alternateInitials);
+    if (!alternateProgress) return "";
+
+    const currentUpdatedAt = this.#extractProgressUpdatedAt(currentProgress);
+    const alternateUpdatedAt = this.#extractProgressUpdatedAt(alternateProgress);
+    if (!alternateUpdatedAt) return "";
+
+    const alternateLabel = alternateFolder.storageMode === "server" ? "serveur" : "local";
+    if (!currentUpdatedAt) {
+      return `Une progression existe aussi cote ${alternateLabel}.`;
+    }
+    if (alternateUpdatedAt > currentUpdatedAt) {
+      return `Attention : une version ${alternateLabel} plus recente a ete detectee.`;
+    }
+    if (alternateUpdatedAt < currentUpdatedAt) {
+      return `Information : une version ${alternateLabel} plus ancienne existe aussi.`;
+    }
+    return "";
+  }
+
+  async #maybeResolveAlternateProgress(session, currentProgress) {
+    if (!session || !session.rootHandle || !session.initials) return null;
+
+    const alternateFolder = await this.#findAlternateSavedFolder(session);
+    if (!alternateFolder) return null;
+
+    const alternateInitials = this.sessionRuntime.deriveInitials(alternateFolder.handle, session.initials);
+    const alternateProgress = await this.storage.loadProgress(alternateFolder.handle, alternateInitials);
+    if (!alternateProgress) return null;
+
+    const currentUpdatedAt = this.#extractProgressUpdatedAt(currentProgress);
+    const alternateUpdatedAt = this.#extractProgressUpdatedAt(alternateProgress);
+    const alternateLabel = alternateFolder.storageMode === "server" ? "serveur" : "local";
+
+    let shouldSwitch = false;
+    if (!currentProgress && alternateProgress) {
+      shouldSwitch = await this.#confirmAlternateProgress({
+        title: "Progression detectee",
+        message: `Une progression existe sur le dossier ${alternateLabel}. Voulez-vous l'utiliser maintenant ?`,
+        currentLabel: session.storageMode === "server" ? "Version serveur" : "Version locale",
+        currentUpdatedAt,
+        alternateLabel: alternateFolder.storageMode === "server" ? "Version serveur" : "Version locale",
+        alternateUpdatedAt,
+        switchLabel: "Utiliser cette version",
+      });
+    } else if (alternateUpdatedAt && (!currentUpdatedAt || alternateUpdatedAt > currentUpdatedAt)) {
+      shouldSwitch = await this.#confirmAlternateProgress({
+        title: "Version plus recente detectee",
+        message: `Une version ${alternateLabel} plus recente a ete detectee. Voulez-vous l'utiliser maintenant ?`,
+        currentLabel: session.storageMode === "server" ? "Version serveur actuelle" : "Version locale actuelle",
+        currentUpdatedAt,
+        alternateLabel: alternateFolder.storageMode === "server" ? "Version serveur proposee" : "Version locale proposee",
+        alternateUpdatedAt,
+        switchLabel: "Basculer vers la version recente",
+      });
+    }
+
+    if (!shouldSwitch) return null;
+
+    let firstName = session.firstName || "";
+    try {
+      const profile = await this.storage.loadUserProfile(alternateFolder.handle, alternateInitials, false);
+      if (profile && profile.firstName) {
+        firstName = this.storage.normalizeFirstName(profile.firstName);
+      }
+    } catch {
+      // ignore unreadable alternate profile
+    }
+
+    const nextSession = {
+      ...session,
+      rootHandle: alternateFolder.handle,
+      initials: alternateInitials,
+      firstName,
+      storageMode: alternateFolder.storageMode || (session.storageMode === "server" ? "local" : "server"),
+    };
+    await this.sessionRuntime.persistResolvedSession(nextSession);
+    return {
+      rootHandle: nextSession.rootHandle,
+      storageMode: nextSession.storageMode,
+      firstName: nextSession.firstName,
+      progress: alternateProgress,
+    };
+  }
+
+  async #confirmAlternateProgress(details) {
+    const refs = this.progressConflictModal;
+    if (
+      !refs
+      || !refs.root
+      || !refs.message
+      || !refs.stayBtn
+      || !refs.switchBtn
+    ) {
+      if (typeof window.confirm !== "function") return false;
+      try {
+        return Boolean(window.confirm(details && details.message ? details.message : ""));
+      } catch {
+        return false;
+      }
+    }
+
+    const formatUpdatedAt = (value) => {
+      const raw = String(value || "").trim();
+      if (!raw) return "Non disponible";
+      const date = new Date(raw);
+      if (Number.isNaN(date.getTime())) return raw;
+      return date.toLocaleString("fr-FR");
+    };
+
+    return new Promise((resolve) => {
+      if (refs.title) refs.title.textContent = details && details.title ? details.title : "Choix de progression";
+      refs.message.textContent = details && details.message ? details.message : "";
+      if (refs.currentLabel) refs.currentLabel.textContent = details && details.currentLabel ? details.currentLabel : "Version actuelle";
+      if (refs.currentUpdatedAt) refs.currentUpdatedAt.textContent = formatUpdatedAt(details && details.currentUpdatedAt);
+      if (refs.alternateLabel) refs.alternateLabel.textContent = details && details.alternateLabel ? details.alternateLabel : "Version proposee";
+      if (refs.alternateUpdatedAt) refs.alternateUpdatedAt.textContent = formatUpdatedAt(details && details.alternateUpdatedAt);
+      if (refs.status) refs.status.textContent = "Choisissez la version a garder pour cette session.";
+      refs.switchBtn.textContent = details && details.switchLabel ? details.switchLabel : "Utiliser cette version";
+
+      const close = (result) => {
+        refs.root.style.display = "none";
+        refs.root.setAttribute("aria-hidden", "true");
+        refs.stayBtn.onclick = null;
+        refs.switchBtn.onclick = null;
+        window.removeEventListener("keydown", onKeydown);
+        resolve(result);
+      };
+
+      const onKeydown = (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          close(false);
+        }
+      };
+
+      refs.stayBtn.onclick = () => close(false);
+      refs.switchBtn.onclick = () => close(true);
+      window.addEventListener("keydown", onKeydown);
+      refs.root.style.display = "flex";
+      refs.root.setAttribute("aria-hidden", "false");
+      refs.switchBtn.focus();
+    });
+  }
+
+  #extractProgressUpdatedAt(progressObject) {
+    if (!progressObject || typeof progressObject !== "object") return "";
+    const fromMeta = progressObject.meta && typeof progressObject.meta.updatedAt === "string"
+      ? progressObject.meta.updatedAt.trim()
+      : "";
+    if (fromMeta) return fromMeta;
+    return typeof progressObject.updatedAt === "string" ? progressObject.updatedAt.trim() : "";
+  }
+
+  async #findAlternateSavedFolder(session) {
+    const savedWorkFolders = await this.storage.getSavedWorkFolders();
+    const oppositeMode = session.storageMode === "server" ? "local" : "server";
+
+    for (const folder of savedWorkFolders) {
+      if (!folder || !folder.handle) continue;
+      if (String(folder.storageMode || "").trim() !== oppositeMode) continue;
+
+      let sameEntry = false;
+      try {
+        sameEntry = await folder.handle.isSameEntry(session.rootHandle);
+      } catch {
+        sameEntry = folder.name === (session.rootHandle.name || folder.name);
+      }
+      if (sameEntry) continue;
+
+      const folderInitials = this.sessionRuntime.deriveInitials(folder.handle, "");
+      if (folderInitials !== session.initials) continue;
+
+      try {
+        const profile = await this.storage.loadUserProfile(folder.handle, folderInitials, false);
+        if (profile && profile.firstName && session.firstName) {
+          const left = this.storage.normalizeFirstName(profile.firstName).toLowerCase();
+          const right = this.storage.normalizeFirstName(session.firstName).toLowerCase();
+          if (left && right && left !== right) continue;
+        }
+      } catch {
+      }
+
+      return folder;
+    }
+
+    return null;
+  }
+
   #saveProgress() {
     if (!this.userSession) return;
 
     this.saveQueue = this.saveQueue
       .then(async () => {
         const progressObject = JSON.parse(this.model.exportProgressJson());
+        progressObject.meta = {
+          ...(progressObject.meta && typeof progressObject.meta === "object" ? progressObject.meta : {}),
+          updatedAt: typeof progressObject.updatedAt === "string" ? progressObject.updatedAt : new Date().toISOString(),
+          deviceId: this.deploymentConfig && this.deploymentConfig.environment
+            ? String(this.deploymentConfig.environment.label || "").trim()
+            : "",
+          storageMode: this.userSession.storageMode || "local",
+        };
         const usabilityReport = typeof this.model.getUsabilityReport === "function"
           ? this.model.getUsabilityReport()
           : null;

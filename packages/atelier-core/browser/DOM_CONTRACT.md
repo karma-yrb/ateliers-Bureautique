@@ -19,9 +19,11 @@ Ce document liste les éléments HTML minimaux attendus par le runtime partagé 
 - `header-user-menu`
 - `header-user-switch-btn`
 - `header-user-profile-btn`
+- `header-runtime-status`
 - `progress-change-user-btn`
 - `progress-reset-btn`
 - `progress-reset-profile-btn`
+- `runtime-status`
 
 ## Fichier de travail
 
@@ -57,6 +59,16 @@ Ce document liste les éléments HTML minimaux attendus par le runtime partagé 
 - `exercise-feedback-status`
 - `exercise-feedback-cancel-btn`
 - `exercise-feedback-continue-btn`
+- `progress-conflict-modal`
+- `progress-conflict-title`
+- `progress-conflict-message`
+- `progress-conflict-current-label`
+- `progress-conflict-current-updated-at`
+- `progress-conflict-alternate-label`
+- `progress-conflict-alternate-updated-at`
+- `progress-conflict-status`
+- `progress-conflict-stay-btn`
+- `progress-conflict-switch-btn`
 
 ## Rapport d'usabilite
 

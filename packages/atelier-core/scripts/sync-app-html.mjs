@@ -32,6 +32,11 @@ const SHARED_EXERCISE_FEEDBACK_BLOCK = {
   end: "<!-- ATELIER_SHARED_EXERCISE_FEEDBACK_MODAL:END -->",
 };
 
+const SHARED_PROGRESS_CONFLICT_BLOCK = {
+  start: "<!-- ATELIER_SHARED_PROGRESS_CONFLICT_MODAL:START -->",
+  end: "<!-- ATELIER_SHARED_PROGRESS_CONFLICT_MODAL:END -->",
+};
+
 function renderScriptTags() {
   return APP_BOOTSTRAP_SCRIPT_ORDER
     .map((scriptPath) => `  <script defer src="${scriptPath}"></script>`)
@@ -63,13 +68,14 @@ function renderHeaderNav({ appName, version }) {
       </div>
       <div class="header-user-wrap">
         <button id="header-user-badge" class="header-user-badge header-user-badge-btn" type="button" aria-live="polite" aria-label="Ouvrir le menu utilisateur" aria-haspopup="true" aria-expanded="false" title="Menu utilisateur">
-          <span class="header-user-label">Utilisateur ▾</span>
+          <span class="header-user-label">Utilisateur ?</span>
           <strong class="header-user-name">Non connecté</strong>
         </button>
         <div id="header-user-menu" class="header-user-menu" hidden role="menu">
-          <button id="header-user-switch-btn" class="header-user-menu-item" type="button" role="menuitem">👤 Changer d'utilisateur</button>
-          <button id="header-user-profile-btn" class="header-user-menu-item" type="button" role="menuitem">⚙ Profil &amp; options</button>
+          <button id="header-user-switch-btn" class="header-user-menu-item" type="button" role="menuitem">?? Changer d'utilisateur</button>
+          <button id="header-user-profile-btn" class="header-user-menu-item" type="button" role="menuitem">? Profil &amp; options</button>
         </div>
+        <p id="header-runtime-status" class="muted status-line">Mode local</p>
       </div>
     </div>
   </header>
@@ -100,15 +106,15 @@ function renderOverviewPages() {
           </div>
           <aside class="home-resume-action" aria-label="Action principale">
             <p class="home-action-label">Accès rapide</p>
-            <button id="home-start-btn" class="btn btn-large home-start-btn has-icon" data-icon="▶">Commencer maintenant</button>
+            <button id="home-start-btn" class="btn btn-large home-start-btn has-icon" data-icon="?">Commencer maintenant</button>
             <div class="home-quick-details" aria-live="polite">
               <p class="home-quick-line home-quick-theme-line">
                 <span class="home-quick-kicker">Thème</span>
-                <strong id="home-quick-theme">—</strong>
+                <strong id="home-quick-theme">-</strong>
               </p>
               <p class="home-quick-line home-quick-exercise-line">
                 <span class="home-quick-kicker">Exercice</span>
-                <strong id="home-quick-exercise">—</strong>
+                <strong id="home-quick-exercise">-</strong>
               </p>
             </div>
             <p id="home-start-help" class="muted home-start-help">Lance automatiquement le prochain exercice conseillé.</p>
@@ -137,7 +143,7 @@ function renderOverviewPages() {
     <section id="page-affinity" class="page" aria-labelledby="affinity-title">
       <article class="card">
         <div class="exercise-top-row">
-          <button id="affinity-back-btn" class="btn btn-soft has-icon" data-icon="◀">Retour catégories</button>
+          <button id="affinity-back-btn" class="btn btn-soft has-icon" data-icon="?">Retour catégories</button>
         </div>
         <h2 id="affinity-title">Catégorie</h2>
         <p id="affinity-subtitle" class="muted"></p>
@@ -183,9 +189,9 @@ function renderProgressProfile() {
         <p class="muted">Sauvegarde automatique dans le dossier utilisateur: <code>Dossier utilisateur &gt; ProgressionAtelier</code>.</p>
         <p id="progress-user-path" class="muted status-line">Aucun utilisateur sélectionné.</p>
         <div class="progress-actions">
-          <button id="progress-change-user-btn" class="btn btn-soft has-icon" data-icon="👤">Changer d'utilisateur</button>
-          <button id="progress-reset-btn" class="btn btn-danger has-icon" data-icon="↺">Réinitialiser progression</button>
-          <button id="progress-reset-profile-btn" class="btn btn-danger has-icon" data-icon="🗑">Réinitialiser profil local</button>
+          <button id="progress-change-user-btn" class="btn btn-soft has-icon" data-icon="??">Changer d'utilisateur</button>
+          <button id="progress-reset-btn" class="btn btn-danger has-icon" data-icon="?">Réinitialiser progression</button>
+          <button id="progress-reset-profile-btn" class="btn btn-danger has-icon" data-icon="??">Réinitialiser profil local</button>
         </div>
         <p id="progress-file-status" class="muted status-line"></p>
       </article>
@@ -215,7 +221,7 @@ function renderUserSetupModal() {
           <select id="user-setup-saved-folders-select"></select>
         </div>
 
-        <button id="user-setup-pick-root-btn" class="btn btn-soft has-icon" data-icon="📁" type="button" style="display:none;">Ajouter un dossier de travail</button>
+        <button id="user-setup-pick-root-btn" class="btn btn-soft has-icon" data-icon="??" type="button" style="display:none;">Ajouter un dossier de travail</button>
 
         <label for="user-setup-firstname-input" class="field" style="margin-bottom:0;">Votre prénom</label>
         <input id="user-setup-firstname-input" type="text" maxlength="30" placeholder="Ex: Alice" style="border:2px solid var(--line);border-radius:10px;padding:10px;font:inherit;">
@@ -223,7 +229,7 @@ function renderUserSetupModal() {
 
       <div style="margin-top:16px;display:flex;justify-content:flex-end;gap:8px;">
         <button id="user-setup-cancel-btn" class="btn btn-soft" type="button">Annuler</button>
-        <button id="user-setup-validate-btn" class="btn has-icon" data-icon="✓" type="button">Valider</button>
+        <button id="user-setup-validate-btn" class="btn has-icon" data-icon="?" type="button">Valider</button>
       </div>
     </div>
   </div>`;
@@ -376,7 +382,31 @@ function renderExerciseFeedbackModal() {
       </form>
       <div style="margin-top:16px;display:flex;gap:10px;justify-content:flex-end;">
         <button id="exercise-feedback-cancel-btn" class="btn btn-soft" type="button">Annuler</button>
-        <button id="exercise-feedback-continue-btn" class="btn has-icon" data-icon="✓" type="button">Terminer l'exercice</button>
+        <button id="exercise-feedback-continue-btn" class="btn has-icon" data-icon="?" type="button">Terminer l'exercice</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderProgressConflictModal() {
+  return `  <div id="progress-conflict-modal" class="image-modal" style="display:none;" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Choix de progression">
+    <div class="modal-content user-setup-content save-reminder-content">
+      <h2 id="progress-conflict-title" style="margin-top:0;">Choix de progression</h2>
+      <p id="progress-conflict-message" class="muted">Deux versions de progression ont ete detectees.</p>
+      <div style="display:grid;gap:12px;margin-top:14px;">
+        <article class="card" style="margin:0;">
+          <p class="field" id="progress-conflict-current-label" style="margin-bottom:6px;">Version actuelle</p>
+          <p id="progress-conflict-current-updated-at" class="muted status-line">Non disponible</p>
+        </article>
+        <article class="card" style="margin:0;">
+          <p class="field" id="progress-conflict-alternate-label" style="margin-bottom:6px;">Version proposee</p>
+          <p id="progress-conflict-alternate-updated-at" class="muted status-line">Non disponible</p>
+        </article>
+      </div>
+      <p id="progress-conflict-status" class="muted status-line" style="margin-top:14px;">Choisissez la version a garder pour cette session.</p>
+      <div style="margin-top:16px;display:flex;gap:10px;justify-content:flex-end;">
+        <button id="progress-conflict-stay-btn" class="btn btn-soft" type="button">Garder la version actuelle</button>
+        <button id="progress-conflict-switch-btn" class="btn has-icon" data-icon="?" type="button">Utiliser cette version</button>
       </div>
     </div>
   </div>`;
@@ -398,6 +428,7 @@ export async function syncAppHtml({ appRoot, appName, logger = console }) {
   next = replaceMarkedBlock(next, SHARED_PROGRESS_PROFILE_BLOCK, renderProgressProfile(), indexPath);
   next = replaceMarkedBlock(next, SHARED_USER_SETUP_BLOCK, renderUserSetupModal(), indexPath);
   next = replaceMarkedBlock(next, SHARED_EXERCISE_FEEDBACK_BLOCK, renderExerciseFeedbackModal(), indexPath);
+  next = replaceMarkedBlock(next, SHARED_PROGRESS_CONFLICT_BLOCK, renderProgressConflictModal(), indexPath);
 
   if (next !== current) {
     await fs.writeFile(indexPath, next, "utf8");

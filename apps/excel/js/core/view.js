@@ -125,10 +125,12 @@ class AtelierView {
     this.progressCurve = document.getElementById("progress-curve");
     this.progressUserPath = document.getElementById("progress-user-path");
     this.progressStatus = document.getElementById("progress-file-status");
+    this.runtimeStatus = document.getElementById("runtime-status");
     this.progressUsabilitySummary = document.getElementById("progress-usability-summary");
     this.progressUsabilityList = document.getElementById("progress-usability-list");
     this.headerUserBadge = document.getElementById("header-user-badge");
     this.headerUserName = this.headerUserBadge ? this.headerUserBadge.querySelector(".header-user-name") : null;
+    this.headerRuntimeStatus = document.getElementById("header-runtime-status");
 
     this.imageModal = document.getElementById("image-modal");
     this.imageModalImg = document.getElementById("image-modal-img");
@@ -895,6 +897,12 @@ class AtelierView {
 
   setProgressStatus(message) {
     this.progressStatus.textContent = message || "";
+  }
+
+  setRuntimeStatus(message) {
+    const text = message || "";
+    if (this.runtimeStatus) this.runtimeStatus.textContent = text;
+    if (this.headerRuntimeStatus) this.headerRuntimeStatus.textContent = text;
   }
 
   setHeaderUser(firstName, initials) {

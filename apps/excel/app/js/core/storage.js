@@ -400,6 +400,7 @@ function createAtelierFileStorage(config = {}) {
         name,
         handle,
         lastUsedAt: typeof item.lastUsedAt === "string" ? item.lastUsedAt : "",
+        storageMode: typeof item.storageMode === "string" ? item.storageMode : "",
       });
     }
     return folders.filter((folder) => folder.id);
@@ -414,18 +415,20 @@ function createAtelierFileStorage(config = {}) {
         name: String(item.name || item.handle.name || "Dossier de travail").trim() || "Dossier de travail",
         handle: item.handle,
         lastUsedAt: typeof item.lastUsedAt === "string" ? item.lastUsedAt : "",
+        storageMode: typeof item.storageMode === "string" ? item.storageMode : "",
       }))
       .filter((item) => item.id);
     return this.#setSetting("workFolders", payload);
   }
 
-  async addSavedWorkFolder(handle) {
+  async addSavedWorkFolder(handle, metadata = {}) {
     if (!handle || handle.kind !== "directory") {
       return this.getSavedWorkFolders();
     }
 
     const now = new Date().toISOString();
     const existing = await this.getSavedWorkFolders();
+    const storageMode = typeof metadata.storageMode === "string" ? metadata.storageMode.trim() : "";
     let updated = false;
 
     for (const folder of existing) {
@@ -440,6 +443,7 @@ function createAtelierFileStorage(config = {}) {
       folder.handle = handle;
       folder.name = handle.name || folder.name;
       folder.lastUsedAt = now;
+      if (storageMode) folder.storageMode = storageMode;
       updated = true;
       break;
     }
@@ -450,6 +454,7 @@ function createAtelierFileStorage(config = {}) {
         name: handle.name || "Dossier de travail",
         handle,
         lastUsedAt: now,
+        storageMode,
       });
     }
 

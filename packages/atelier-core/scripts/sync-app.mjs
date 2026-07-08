@@ -4,6 +4,7 @@ import path from "node:path";
 export const DEFAULT_SYNC_ITEMS = [
   { src: "js", dst: "app/js" },
   { src: "data", dst: "app/data" },
+  { src: "deployment-config.json", dst: "app/deployment-config.json" },
   { src: "styles.css", dst: "app/styles.css" },
   { src: "styles-redesign-v2.css", dst: "app/styles-redesign-v2.css" },
   { src: "index.html", dst: "app/index.html" },

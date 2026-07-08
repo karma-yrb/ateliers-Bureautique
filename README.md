@@ -72,6 +72,8 @@ Chaque app garde seulement ce qui lui est propre :
 
 La note d'architecture detaillee est dans `packages/atelier-core/ARCHITECTURE.md`.
 
+Pour la trajectoire `mode local + mode connecte via serveur local`, voir `packages/atelier-core/docs/ARCHITECTURE_VERSION_CONNECTEE.md`.
+
 ## Flux recommande
 
 1. Modifier la logique partagee dans `packages/atelier-core`

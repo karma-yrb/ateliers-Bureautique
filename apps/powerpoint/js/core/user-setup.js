@@ -7,6 +7,12 @@ function createAtelierUserSetupRuntime(config = {}) {
     : (_rootHandle, fallback = "") => fallback;
   const documentRef = config.documentRef || document;
   const hasScannedDocuments = Boolean(config.hasScannedDocuments);
+  const getPreferredStorageMode = typeof config.getPreferredStorageMode === "function"
+    ? config.getPreferredStorageMode
+    : () => "local";
+  const getRuntimeStatusLabel = typeof config.getRuntimeStatusLabel === "function"
+    ? config.getRuntimeStatusLabel
+    : () => "Mode local";
 
   function createFolderId() {
     return `wf-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
@@ -34,6 +40,16 @@ function createAtelierUserSetupRuntime(config = {}) {
         let resolvedInitials = deriveInitials(rootHandle, defaults.initials);
         let savedFolders = Array.isArray(defaults.savedWorkFolders) ? defaults.savedWorkFolders.slice() : [];
         let selectedSavedId = "";
+        let preferredStorageMode = getPreferredStorageMode();
+
+        const getFolderStorageMode = (folder) => {
+          const value = folder && typeof folder.storageMode === "string" ? folder.storageMode.trim() : "";
+          return value || "local";
+        };
+
+        const getFolderStorageLabel = (folder) => (
+          getFolderStorageMode(folder) === "server" ? "serveur" : "local"
+        );
 
         const closeModal = (result) => {
           modal.style.display = "none";
@@ -114,6 +130,9 @@ function createAtelierUserSetupRuntime(config = {}) {
 
           savedFoldersWrap.style.display = "";
           const ordered = [...savedFolders].sort((a, b) => {
+            const aPreferred = getFolderStorageMode(a) === preferredStorageMode ? 1 : 0;
+            const bPreferred = getFolderStorageMode(b) === preferredStorageMode ? 1 : 0;
+            if (aPreferred !== bPreferred) return bPreferred - aPreferred;
             const left = Date.parse(a.lastUsedAt || "") || 0;
             const right = Date.parse(b.lastUsedAt || "") || 0;
             return right - left;
@@ -123,9 +142,10 @@ function createAtelierUserSetupRuntime(config = {}) {
           for (const folder of ordered) {
             const option = documentRef.createElement("option");
             option.value = folder.id;
+            const storageLabel = getFolderStorageLabel(folder);
             option.textContent = folder.firstName
-              ? `${folder.firstName} (${folder.name})`
-              : (folder.name || "Dossier de travail");
+              ? `${folder.firstName} (${folder.name}) [${storageLabel}]`
+              : `${folder.name || "Dossier de travail"} [${storageLabel}]`;
             savedFoldersSelect.appendChild(option);
           }
 
@@ -182,6 +202,7 @@ function createAtelierUserSetupRuntime(config = {}) {
               name: String(incoming.name || handle.name || "Dossier de travail").trim() || "Dossier de travail",
               handle,
               lastUsedAt: typeof incoming.lastUsedAt === "string" ? incoming.lastUsedAt : "",
+              storageMode: typeof incoming.storageMode === "string" ? incoming.storageMode : "",
             });
           }
 
@@ -290,6 +311,7 @@ function createAtelierUserSetupRuntime(config = {}) {
               id: createFolderId(),
               name: rootHandle.name || "Dossier de travail",
               handle: rootHandle,
+              storageMode: preferredStorageMode,
             }]);
             await storage.setSavedWorkFolders(savedFolders);
             renderSavedFolders();
@@ -370,6 +392,7 @@ function createAtelierUserSetupRuntime(config = {}) {
 
         modal.style.display = "flex";
         modal.setAttribute("aria-hidden", "false");
+        preferredStorageMode = getPreferredStorageMode();
         resolvedInitials = deriveInitials(rootHandle, defaults.initials);
         firstNameInput.value = "";
         setFirstNameVisibility(false);
