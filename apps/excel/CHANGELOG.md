@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.4.2...excel-v1.5.0) (2026-07-08)
+
+
+### Features
+
+* **header:** deplacer l'accueil bureautique dans le header ([50109fc](https://github.com/karma-yrb/ateliers-Bureautique/commit/50109fc5c1e87519350596edead3b0b31eedd139))
+
 ### [1.4.2](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.4.1...excel-v1.4.2) (2026-07-08)
 
 
