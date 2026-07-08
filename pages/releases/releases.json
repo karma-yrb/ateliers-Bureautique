@@ -1,7 +1,76 @@
 {
-  "version": "1.9.0",
-  "updatedAt": "2026-07-08T13:55:41.922Z",
+  "version": "1.10.0",
+  "updatedAt": "2026-07-08T14:06:08.474Z",
   "releases": [
+    {
+      "version": "1.10.0",
+      "tag": "bureautique-v1.10.0",
+      "date": "2026-07-08",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.32",
+          "breaking": false,
+          "hash": "00cf5c7"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.2",
+          "breaking": false,
+          "hash": "65bf974"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.11.2",
+          "breaking": false,
+          "hash": "d1dbc5e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "580a736"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modules",
+          "description": "restaurer le bouton accueil bureautique",
+          "breaking": false,
+          "hash": "6baae3c"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.9.0",
       "tag": "bureautique-v1.9.0",
