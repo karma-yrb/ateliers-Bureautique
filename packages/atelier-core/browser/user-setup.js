@@ -153,12 +153,13 @@ function createAtelierUserSetupRuntime(config = {}) {
         };
 
         const setPickButtonMode = (mode = "hidden") => {
+          const folderIcon = String.fromCodePoint(0x1f4c1);
           if (mode === "pick-folder") {
             pickBtn.style.display = "";
             pickBtn.textContent = preferredStorageMode === "server"
               ? "Ouvrir un dossier serveur existant"
               : "Choisir ou creer un dossier local";
-            pickBtn.setAttribute("data-icon", "??");
+            pickBtn.setAttribute("data-icon", folderIcon);
             return;
           }
 
@@ -167,7 +168,7 @@ function createAtelierUserSetupRuntime(config = {}) {
             pickBtn.textContent = preferredStorageMode === "server"
               ? "Ouvrir un autre dossier serveur"
               : "Choisir ou creer un autre dossier local";
-            pickBtn.setAttribute("data-icon", "??");
+            pickBtn.setAttribute("data-icon", folderIcon);
             return;
           }
 
