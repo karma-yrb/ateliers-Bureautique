@@ -62,7 +62,7 @@ function renderHeaderNav({ appName, version }) {
       <div>
         <div class="title-row">
           <h1>Atelier ${appName}</h1>
-          <span class="app-version" aria-label="Version de l'application">v${version}</span>
+          <a class="app-version" href="releases/" aria-label="Ouvrir l'historique des releases de l'atelier ${appName}" title="Voir l'historique des releases">v${version}</a>
         </div>
         <p class="subtitle">Je choisis un thème, je lance un exercice, je suis les étapes.</p>
       </div>
@@ -84,7 +84,6 @@ function renderHeaderNav({ appName, version }) {
     <button class="nav-btn" data-nav="home">Accueil</button>
     <button class="nav-btn" data-nav="themes">Thèmes</button>
     <button class="nav-btn" data-nav="progress">Progression</button>
-    <a class="nav-btn nav-link-btn" href="releases/">Releases</a>
   </nav>`;
 }
 
