@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.2](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.12.1...word-v1.12.2) (2026-07-08)
+
+
+### Bug Fixes
+
+* **header:** corriger le retour vers l'accueil publie ([565a4f7](https://github.com/karma-yrb/ateliers-Bureautique/commit/565a4f74b9aab66da0ae191b3515e5333636bd74))
+
 ### [1.12.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.12.0...word-v1.12.1) (2026-07-08)
 
 
