@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.34](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.33...powerpoint-v0.1.34) (2026-07-08)
+
+
+### Bug Fixes
+
+* **header:** corriger le lien accueil bureautique ([e2aa251](https://github.com/karma-yrb/ateliers-Bureautique/commit/e2aa251be1b84b0b52e13eecef95bf44237923a9))
+* **repo:** nettoie le backup et fiabilise le test html ([f3c1040](https://github.com/karma-yrb/ateliers-Bureautique/commit/f3c1040033d304bc63b5b9590a384efc8c727764))
+
 ### [0.1.33](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.32...powerpoint-v0.1.33) (2026-07-08)
 
 
