@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "1.12.0",
-  "updatedAt": "2026-07-08T14:45:28.855Z",
+  "version": "1.13.0",
+  "updatedAt": "2026-07-08T15:01:51.400Z",
   "releases": [
+    {
+      "version": "1.13.0",
+      "tag": "bureautique-v1.13.0",
+      "date": "2026-07-08",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.35",
+          "breaking": false,
+          "hash": "0d4c677"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.2",
+          "breaking": false,
+          "hash": "74a58aa"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.2",
+          "breaking": false,
+          "hash": "c874239"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "header",
+          "description": "corriger le retour vers l'accueil publie",
+          "breaking": false,
+          "hash": "565a4f7"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.12.0",
       "tag": "bureautique-v1.12.0",
