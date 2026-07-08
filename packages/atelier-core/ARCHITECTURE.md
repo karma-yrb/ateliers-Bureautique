@@ -26,6 +26,13 @@
 - [QCM de fin d'exercice et rapport d'usabilite](./docs/FEATURE_QCM_USABILITE.md)
 - [Architecture cible de la version connectee](./docs/ARCHITECTURE_VERSION_CONNECTEE.md)
 
+La note `ARCHITECTURE_VERSION_CONNECTEE.md` documente aussi l'etat reel de la V1 actuellement deployee :
+
+- configuration editable `deployment-config.json`
+- statut runtime local / serveur
+- choix explicite du dossier local ou serveur
+- gestion simple des divergences local / serveur
+
 ## Regles de maintenance
 
 - Ne pas modifier directement `apps/*/js/core/*` sauf urgence ponctuelle, car ces fichiers sont regeneres

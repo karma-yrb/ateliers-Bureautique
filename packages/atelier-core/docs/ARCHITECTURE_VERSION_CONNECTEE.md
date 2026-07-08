@@ -456,6 +456,58 @@ Quand le serveur local redevient disponible, la comparaison entre dossier local 
 
 La V1 ne doit pas tenter une bascule silencieuse en plein milieu d'une session.
 
+## UI actuellement en place dans la V1
+
+La V1 deployee ne se limite plus a une simple priorite implicite local/serveur.
+
+L'interface actuelle met deja en place :
+
+- un statut runtime visible (`Mode local`, `Serveur local disponible`, `Serveur local indisponible, mode local`)
+- un choix explicite dans la modale utilisateur entre `Dossier local` et `Dossier serveur`
+- une aide contextuelle differente selon le mode choisi
+- une re-utilisation prioritaire des dossiers deja enregistres pour le mode courant
+- une page profil qui affiche le mode actif, le dossier actif et les chemins reseau configures
+
+## Parcours utilisateur V1 actuellement implemente
+
+### Parcours local
+
+Quand l'utilisateur choisit `Dossier local` :
+
+- l'interface parle de `choisir ou creer un dossier local`
+- les dossiers deja memorises en local sont proposes en priorite
+- la session reste totalement utilisable meme sans serveur local
+
+### Parcours serveur
+
+Quand l'utilisateur choisit `Dossier serveur` :
+
+- l'interface parle d'`ouvrir un dossier serveur existant`
+- si `networkShares.userFoldersRoot` est renseigne, ce chemin est affiche comme repere
+- les dossiers deja memorises cote serveur sont proposes en priorite
+
+Important :
+
+- en V1, le parcours serveur vise d'abord l'ouverture d'un dossier deja existant sur le partage
+- la creation automatisee d'une arborescence serveur administree n'est pas encore un objectif
+
+## Role concret de `deployment-config.json` en V1
+
+Le fichier `deployment-config.json` ne sert plus seulement a preparer une architecture future.
+
+En V1 actuelle, il pilote deja :
+
+- l'activation ou non de la detection serveur
+- l'URL et le `healthcheck` du serveur local
+- le libelle de l'environnement poste
+- les chemins reseau affiches dans le profil
+- le chemin repere du partage utilisateurs via `networkShares.userFoldersRoot`
+
+Consequence pratique :
+
+- une fois le reseau local pret, il suffit souvent de renseigner ce fichier pour que le poste sache quoi privilegier et quoi afficher
+- l'acces au dossier reste toutefois soumis a la permission navigateur lors de la premiere ouverture
+
 ## Etats fonctionnels de V1
 
 ### Etat 1 - session locale
@@ -586,6 +638,13 @@ Objectif :
 
 - eviter tout ecrasement silencieux
 - reporter les fusions complexes a une version ulterieure
+
+Etat implemente actuellement :
+
+- si une version plus recente est detectee de l'autre cote (`local` ou `serveur`), l'application ouvre une modale dediee
+- cette modale remplace le `confirm()` navigateur
+- elle presente la version actuelle, la version proposee et leurs dates connues
+- l'utilisateur choisit explicitement quelle version utiliser pour la session en cours
 
 ## Messages UI recommandes
 

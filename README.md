@@ -74,6 +74,13 @@ La note d'architecture detaillee est dans `packages/atelier-core/ARCHITECTURE.md
 
 Pour la trajectoire `mode local + mode connecte via serveur local`, voir `packages/atelier-core/docs/ARCHITECTURE_VERSION_CONNECTEE.md`.
 
+Etat actuel de la V1 connectee :
+
+- fallback local conserve sans reseau local
+- detection du serveur local par configuration `deployment-config.json`
+- choix explicite `Dossier local` / `Dossier serveur` dans le parcours utilisateur
+- priorite au dossier serveur quand il est disponible et autorise
+
 ## Flux recommande
 
 1. Modifier la logique partagee dans `packages/atelier-core`
