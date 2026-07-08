@@ -1,7 +1,68 @@
 {
-  "version": "1.11.2",
-  "updatedAt": "2026-07-08T14:05:36.407Z",
+  "version": "1.12.0",
+  "updatedAt": "2026-07-08T14:11:00.071Z",
   "releases": [
+    {
+      "version": "1.12.0",
+      "tag": "word-v1.12.0",
+      "date": "2026-07-08",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "header",
+          "description": "deplacer l'accueil bureautique dans le header",
+          "breaking": false,
+          "hash": "50109fc"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.10.0",
+          "breaking": false,
+          "hash": "d140070"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.32",
+          "breaking": false,
+          "hash": "00cf5c7"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.2",
+          "breaking": false,
+          "hash": "65bf974"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.11.2",
       "tag": "word-v1.11.2",
