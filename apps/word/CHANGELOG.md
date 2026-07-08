@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.9.0...word-v1.9.1) (2026-07-08)
+
+
+### Bug Fixes
+
+* **ui:** corrige les icones du menu utilisateur ([2051715](https://github.com/karma-yrb/ateliers-Bureautique/commit/2051715c9d252ce88a39f45fd213b0345b70ad75))
+
 ## [1.9.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.8.1...word-v1.9.0) (2026-07-08)
 
 
