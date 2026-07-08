@@ -1,7 +1,76 @@
 {
-  "version": "0.1.31",
-  "updatedAt": "2026-07-08T13:55:35.796Z",
+  "version": "0.1.32",
+  "updatedAt": "2026-07-08T14:06:01.413Z",
   "releases": [
+    {
+      "version": "0.1.32",
+      "tag": "powerpoint-v0.1.32",
+      "date": "2026-07-08",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.2",
+          "breaking": false,
+          "hash": "65bf974"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.11.2",
+          "breaking": false,
+          "hash": "d1dbc5e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "580a736"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modules",
+          "description": "restaurer le bouton accueil bureautique",
+          "breaking": false,
+          "hash": "6baae3c"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.0",
+          "breaking": false,
+          "hash": "0eb9e63"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "0.1.31",
       "tag": "powerpoint-v0.1.31",

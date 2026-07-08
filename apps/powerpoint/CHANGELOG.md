@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.32](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.31...powerpoint-v0.1.32) (2026-07-08)
+
+
+### Bug Fixes
+
+* **modules:** restaurer le bouton accueil bureautique ([6baae3c](https://github.com/karma-yrb/ateliers-Bureautique/commit/6baae3c0cdbc50310dbb4cb876d3c6abe997c9cd))
+
 ### [0.1.31](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.30...powerpoint-v0.1.31) (2026-07-08)
 
 ### [0.1.30](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.29...powerpoint-v0.1.30) (2026-07-08)
