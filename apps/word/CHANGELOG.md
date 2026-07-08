@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.10.0...word-v1.11.0) (2026-07-08)
+
+
+### Features
+
+* **availability:** add module and exercise activation overrides ([4efc581](https://github.com/karma-yrb/ateliers-Bureautique/commit/4efc58140c0faab68d850fe8eade10565b192165))
+* **theme:** personnalise l'identite visuelle des modules ([ac7c7b9](https://github.com/karma-yrb/ateliers-Bureautique/commit/ac7c7b931ce1e5856d48ea951eece20fe4b45a9d))
+
+
+### Bug Fixes
+
+* **home:** reactivate powerpoint access ([8c231a8](https://github.com/karma-yrb/ateliers-Bureautique/commit/8c231a8df9d2690029e740b179d387b3c0ffa846))
+* **modules:** persist release badge links ([d91b501](https://github.com/karma-yrb/ateliers-Bureautique/commit/d91b501802b2aad436cff05cbddb7c293ac2a592))
+
 ## [1.10.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.9.1...word-v1.10.0) (2026-07-08)
 
 
