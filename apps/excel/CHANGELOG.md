@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.2.0...excel-v1.2.1) (2026-07-08)
+
+
+### Bug Fixes
+
+* **ui:** corrige les icones du menu utilisateur ([2051715](https://github.com/karma-yrb/ateliers-Bureautique/commit/2051715c9d252ce88a39f45fd213b0345b70ad75))
+
 ## [1.2.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.1.1...excel-v1.2.0) (2026-07-08)
 
 
