@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.1.1...excel-v1.2.0) (2026-07-08)
+
+
+### Features
+
+* **connected:** add deployment config, prefer server-backed user folders, and handle local/server progress conflicts ([52fd4f7](https://github.com/karma-yrb/ateliers-Bureautique/commit/52fd4f76c81dd68a45eee4534e86f07cbf0495c6))
+* **connected:** add explicit local or server folder selection in user setup ([6fad7a2](https://github.com/karma-yrb/ateliers-Bureautique/commit/6fad7a2e1b2240c4bdca278984e9ce44bfd5e9d3))
+* **connected:** clarify local and server folder actions in user setup ([12a32f3](https://github.com/karma-yrb/ateliers-Bureautique/commit/12a32f36b6ef6d487b38e7d6ab7791f52e9b61de))
+* **connected:** guide local and server folder reuse in user setup ([11f82fe](https://github.com/karma-yrb/ateliers-Bureautique/commit/11f82fef1057f5aa0958b2cb7ed7b35aac726232))
+
+
+### Bug Fixes
+
+* **home:** disable powerpoint access ([c359c1f](https://github.com/karma-yrb/ateliers-Bureautique/commit/c359c1f86b4ba7a688fa169930b693c4a5858e15))
+* **home:** reduce disabled powerpoint opacity ([9f2255c](https://github.com/karma-yrb/ateliers-Bureautique/commit/9f2255ce946681515b2b7f804f656ca9b6e50cff))
+* **powerpoint:** align statement and result visuals in structured exercise data ([dfd3113](https://github.com/karma-yrb/ateliers-Bureautique/commit/dfd311327e2937e75e0731b8579dedb15ac66172))
+
 ### [1.1.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.1.0...excel-v1.1.1) (2026-07-07)
 
 
