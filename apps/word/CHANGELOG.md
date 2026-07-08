@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.9.1...word-v1.10.0) (2026-07-08)
+
+
+### Features
+
+* **modules:** ajouter le bouton accueil bureautique ([97fff79](https://github.com/karma-yrb/ateliers-Bureautique/commit/97fff799a2adb646f44c3f339130d9bcffd375a3))
+
+
+### Bug Fixes
+
+* **modules:** link version badge to releases ([4fab6ec](https://github.com/karma-yrb/ateliers-Bureautique/commit/4fab6ec72335fc7ef822b926fe3e33bc0d527f83))
+* **ui:** corrige l icone du selecteur de dossier ([318113a](https://github.com/karma-yrb/ateliers-Bureautique/commit/318113a7cc5a1f1ec4f305ff471f33572290f8c8))
+
+
+### Documentation
+
+* **connected:** align v1 documentation with deployed local-server flows ([d5df0e7](https://github.com/karma-yrb/ateliers-Bureautique/commit/d5df0e7cba038d0b69d46c5b60528f66544701fd))
+
 ### [1.9.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.9.0...word-v1.9.1) (2026-07-08)
 
 
