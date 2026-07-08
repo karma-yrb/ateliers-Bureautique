@@ -44,7 +44,7 @@ window.POWERPOINT_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/categories-telechargement/45-power-point.html?download=491:ex-001",
       "downloadUrl": null,
       "downloadLabel": null,
-      "imageEnonce": "https://www.clic-formation.net/images/site/1.png",
+      "imageEnonce": null,
       "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive1.JPG",
       "imageEnonceCaption": "Point de depart",
       "imageResultatCaption": "Resultat attendu",
@@ -68,15 +68,11 @@ window.POWERPOINT_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [
           {
-            "src": "https://www.clic-formation.net/images/site/1.png",
-            "caption": "Apercu general du sujet."
+            "src": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive1.JPG",
+            "caption": "Diapositive 1"
           }
         ],
         "resultImages": [
-          {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive1.JPG",
-            "caption": "Diapositive 1"
-          },
           {
             "src": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive2.JPG",
             "caption": "Diapositive 2"
@@ -249,7 +245,7 @@ window.POWERPOINT_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/categories-telechargement/45-power-point.html?download=493:ex-003",
       "downloadUrl": null,
       "downloadLabel": null,
-      "imageEnonce": "https://www.clic-formation.net/images/site/2.png",
+      "imageEnonce": null,
       "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive1.JPG",
       "imageEnonceCaption": "Arborescence",
       "imageResultatCaption": "Resultat attendu",
@@ -272,15 +268,11 @@ window.POWERPOINT_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [
           {
-            "src": "https://www.clic-formation.net/images/site/2.png",
-            "caption": "Schema de navigation"
+            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive1.JPG",
+            "caption": "Diapositive 1"
           }
         ],
         "resultImages": [
-          {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive1.JPG",
-            "caption": "Diapositive 1"
-          },
           {
             "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive2.JPG",
             "caption": "Diapositive 2"
@@ -360,7 +352,7 @@ window.POWERPOINT_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/categories-telechargement/45-power-point.html?download=495:ex-005",
       "downloadUrl": null,
       "downloadLabel": null,
-      "imageEnonce": "https://www.clic-formation.net/images/site/3.png",
+      "imageEnonce": null,
       "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-005/vue.webp",
       "imageEnonceCaption": "Sujet",
       "imageResultatCaption": "Vue du resultat",
@@ -386,12 +378,7 @@ window.POWERPOINT_ATELIER_DATA = {
             "caption": "Support du sujet"
           }
         ],
-        "resultImages": [
-          {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-005/vue.webp",
-            "caption": "Apercu du quiz"
-          }
-        ]
+        "resultImages": null
       },
       "section": "bases",
       "moduleSlug": "animations-et-quiz",
@@ -531,7 +518,9 @@ window.POWERPOINT_ATELIER_DATA = {
           {
             "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-01.webp",
             "caption": "Diapositive 1"
-          },
+          }
+        ],
+        "resultImages": [
           {
             "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-02.webp",
             "caption": "Diapositive 2"
@@ -539,9 +528,7 @@ window.POWERPOINT_ATELIER_DATA = {
           {
             "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-03.webp",
             "caption": "Diapositive 3"
-          }
-        ],
-        "resultImages": [
+          },
           {
             "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-04.webp",
             "caption": "Diapositive 4"

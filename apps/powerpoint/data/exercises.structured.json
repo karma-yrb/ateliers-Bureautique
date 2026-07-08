@@ -378,12 +378,7 @@
             "caption": "Support du sujet"
           }
         ],
-        "resultImages": [
-          {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-005/vue.webp",
-            "caption": "Apercu du quiz"
-          }
-        ]
+        "resultImages": null
       },
       "section": "bases",
       "moduleSlug": "animations-et-quiz",
