@@ -1,7 +1,100 @@
 window.RELEASES_DATA = {
-  "version": "0.1.29",
-  "updatedAt": "2026-07-08T12:43:29.584Z",
+  "version": "0.1.30",
+  "updatedAt": "2026-07-08T13:46:37.096Z",
   "releases": [
+    {
+      "version": "0.1.30",
+      "tag": "powerpoint-v0.1.30",
+      "date": "2026-07-08",
+      "releaseType": "patch",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.4.0",
+          "breaking": false,
+          "hash": "8167168"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.11.0",
+          "breaking": false,
+          "hash": "d89c45f"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "5a3b3ee"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "modules",
+          "description": "persist release badge links",
+          "breaking": false,
+          "hash": "d91b501"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "availability",
+          "description": "add module and exercise activation overrides",
+          "breaking": false,
+          "hash": "4efc581"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "home",
+          "description": "reactivate powerpoint access",
+          "breaking": false,
+          "hash": "8c231a8"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "theme",
+          "description": "personnalise l'identite visuelle des modules",
+          "breaking": false,
+          "hash": "ac7c7b9"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.7.0",
+          "breaking": false,
+          "hash": "401f2dc"
+        }
+      ],
+      "counts": {
+        "feat": 2,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 8
+      }
+    },
     {
       "version": "0.1.29",
       "tag": "powerpoint-v0.1.29",
