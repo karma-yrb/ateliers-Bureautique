@@ -67,7 +67,7 @@ function renderHeaderNav({ appName, version }) {
         <p class="subtitle">Je choisis un thème, je lance un exercice, je suis les étapes.</p>
       </div>
       <div class="header-actions">
-        <a class="header-home-link" href="../../../pages/" aria-label="Retour a l'accueil Bureautique" title="Retour a l'accueil Bureautique">
+        <a class="header-home-link" href="../" data-local-href="../../../pages/" aria-label="Retour a l'accueil Bureautique" title="Retour a l'accueil Bureautique">
           <span class="header-home-link-icon" aria-hidden="true">&#128421;</span>
           <span class="header-home-link-text">Accueil Bureautique</span>
         </a>
@@ -90,7 +90,14 @@ function renderHeaderNav({ appName, version }) {
     <button class="nav-btn" data-nav="home">Accueil</button>
     <button class="nav-btn" data-nav="themes">Thèmes</button>
     <button class="nav-btn" data-nav="progress">Progression</button>
-  </nav>`;
+  </nav>
+
+  <script>
+    if (window.location.protocol === "file:") {
+      const homeLink = document.querySelector(".header-home-link[data-local-href]");
+      if (homeLink) homeLink.setAttribute("href", homeLink.getAttribute("data-local-href"));
+    }
+  </script>`;
 }
 
 function renderOverviewPages() {
