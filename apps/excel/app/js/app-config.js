@@ -1,5 +1,6 @@
 window.ATELIER_APP_CONFIG = {
   datasetGlobalName: "EXCEL_ATELIER_DATA",
+  availabilityOverridesGlobalName: "EXCEL_ATELIER_AVAILABILITY_OVERRIDES",
   modelGlobalName: "ExcelAtelierModel",
   viewGlobalName: "ExcelAtelierView",
   storageGlobalName: "ExcelAtelierFileStorage",

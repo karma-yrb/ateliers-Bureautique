@@ -1,5 +1,6 @@
 window.ATELIER_APP_CONFIG = {
   datasetGlobalName: "POWERPOINT_ATELIER_DATA",
+  availabilityOverridesGlobalName: "POWERPOINT_ATELIER_AVAILABILITY_OVERRIDES",
   modelGlobalName: "PowerPointAtelierModel",
   viewGlobalName: "PowerPointAtelierView",
   storageGlobalName: "PowerPointAtelierFileStorage",

@@ -1,5 +1,6 @@
 window.ATELIER_APP_CONFIG = {
   datasetGlobalName: "WORD_ATELIER_DATA",
+  availabilityOverridesGlobalName: "WORD_ATELIER_AVAILABILITY_OVERRIDES",
   modelGlobalName: "WordAtelierModel",
   viewGlobalName: "WordAtelierView",
   storageGlobalName: "WordAtelierFileStorage",

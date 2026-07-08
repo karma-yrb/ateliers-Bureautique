@@ -64,6 +64,18 @@ Chaque app garde seulement ce qui lui est propre :
 - `apps/*/js/app-config.js` pour les noms globaux et la configuration de stockage
 - quelques wrappers de scripts dans `apps/*/scripts/`
 
+## Activation / desactivation
+
+La V1 `actif / inactif` des modules et exercices est documentee dans :
+
+- [docs/GESTION_ACTIF_INACTIF.md](/C:/Dev/Apps%20Pimms/ateliers-Bureautique/docs/GESTION_ACTIF_INACTIF.md)
+
+Fichiers utilises :
+
+- `apps/word/data/availability-overrides.js`
+- `apps/excel/data/availability-overrides.js`
+- `apps/powerpoint/data/availability-overrides.js`
+
 ## Versionnement
 
 - Une version produit globale est portee par la racine du monorepo et affichee sur `pages/index.html`.

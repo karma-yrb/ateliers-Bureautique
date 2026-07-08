@@ -53,3 +53,8 @@
 - La source editable des exercices Word est `data/exercises.structured.json`.
 - Apres modification, lancer `npm run build:data` pour regenerer `data/exercises.js`.
 - Le pipeline Word ne genere plus de fichiers de scraping, revision ou audit.
+
+## Actif / inactif
+
+- Le pilotage de disponibilite se fait dans `data/availability-overrides.js`.
+- Le mode d'emploi complet est dans [docs/GESTION_ACTIF_INACTIF.md](/C:/Dev/Apps%20Pimms/ateliers-Bureautique/docs/GESTION_ACTIF_INACTIF.md).

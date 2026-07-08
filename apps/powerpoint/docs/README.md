@@ -22,3 +22,8 @@ Application PowerPoint initialisee depuis le template Excel et alignee sur le so
 
 - La source editable des exercices PowerPoint est `data/exercises.structured.json`.
 - Apres modification, lancer `npm run powerpoint:build:data` pour regenerer `data/exercises.js`.
+
+## Actif / inactif
+
+- Le pilotage de disponibilite se fait dans `data/availability-overrides.js`.
+- Le mode d'emploi complet est dans [docs/GESTION_ACTIF_INACTIF.md](/C:/Dev/Apps%20Pimms/ateliers-Bureautique/docs/GESTION_ACTIF_INACTIF.md).

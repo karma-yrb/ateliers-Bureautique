@@ -118,13 +118,58 @@ function foldText(value) {
     .toLowerCase();
 }
 
+function normalizeAvailabilityEntry(value) {
+  if (typeof value === "boolean") return { active: value };
+  if (value && typeof value === "object" && typeof value.active === "boolean") {
+    return { active: value.active };
+  }
+  return null;
+}
+
+function normalizeAvailabilityOverrides(value) {
+  const normalized = {
+    modules: new Map(),
+    exercises: new Map(),
+  };
+
+  if (!value || typeof value !== "object") return normalized;
+
+  const moduleEntries = value.modules && typeof value.modules === "object"
+    ? Object.entries(value.modules)
+    : [];
+  for (const [moduleId, entry] of moduleEntries) {
+    const normalizedEntry = normalizeAvailabilityEntry(entry);
+    if (!normalizedEntry || !String(moduleId || "").trim()) continue;
+    normalized.modules.set(String(moduleId).trim(), normalizedEntry);
+  }
+
+  const exerciseEntries = value.exercises && typeof value.exercises === "object"
+    ? Object.entries(value.exercises)
+    : [];
+  for (const [exerciseId, entry] of exerciseEntries) {
+    const normalizedEntry = normalizeAvailabilityEntry(entry);
+    if (!normalizedEntry || !String(exerciseId || "").trim()) continue;
+    normalized.exercises.set(String(exerciseId).trim(), normalizedEntry);
+  }
+
+  return normalized;
+}
+
 class AtelierModel {
-  constructor(rawData) {
+  constructor(rawData, options = {}) {
     if (!rawData || !Array.isArray(rawData.exercises) || !Array.isArray(rawData.modules)) {
       throw new Error("Données invalides");
     }
 
+    this.availabilityOverrides = normalizeAvailabilityOverrides(options.availabilityOverrides);
+    const allowedModuleIds = new Set(
+      rawData.modules
+        .filter((module) => this.#isModuleActive(module && module.id))
+        .map((module) => module.id),
+    );
+
     this.themes = rawData.modules
+      .filter((module) => allowedModuleIds.has(module.id))
       .map((m) => ({
         id: m.id,
         name: cleanText(m.cleanName || m.name || "Thème"),
@@ -138,6 +183,7 @@ class AtelierModel {
       });
 
     this.exercises = rawData.exercises
+      .filter((ex) => allowedModuleIds.has(ex.moduleId) && this.#isExerciseActive(ex && ex.id))
       .map((ex) => ({
         id: ex.id,
         globalIndex: toInt(ex.globalIndex, 0),
@@ -200,6 +246,18 @@ class AtelierModel {
     this.themes = this.themes.filter((theme) => (this.exByTheme.get(theme.id) || []).length > 0);
 
     this.progress = this.#emptyProgress();
+  }
+
+  #isModuleActive(moduleId) {
+    if (!moduleId) return true;
+    const override = this.availabilityOverrides.modules.get(String(moduleId).trim());
+    return override ? override.active !== false : true;
+  }
+
+  #isExerciseActive(exerciseId) {
+    if (!exerciseId) return true;
+    const override = this.availabilityOverrides.exercises.get(String(exerciseId).trim());
+    return override ? override.active !== false : true;
   }
 
   #emptyProgress() {

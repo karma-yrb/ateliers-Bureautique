@@ -53,14 +53,14 @@ export async function createConfiguredModelFactory({ appRoot, modelGlobalName })
   const appConfigSource = await fs.readFile(path.join(appRoot, "js", "app-config.js"), "utf8");
   const appRuntimeSource = await fs.readFile(path.join(appRoot, "js", "core", "app-runtime.js"), "utf8");
 
-  return function createModel(rawData = createBaseDataset()) {
+  return function createModel(rawData = createBaseDataset(), options = {}) {
     const context = vm.createContext({ window: {} });
     vm.runInContext(appConfigSource, context, { filename: "js/app-config.js" });
     vm.runInContext(coreModelSource, context, { filename: "js/core/model.js" });
     vm.runInContext(appRuntimeSource, context, { filename: "js/core/app-runtime.js" });
     context.window.registerConfiguredAtelierModel();
     const ModelClass = context.window[modelGlobalName];
-    return new ModelClass(rawData);
+    return new ModelClass(rawData, options);
   };
 }
 
@@ -69,6 +69,34 @@ export function registerSharedModelContractTests(createModel) {
     const model = createModel();
     const themeIds = model.getThemes().map((theme) => theme.id);
     assert.deepEqual(themeIds, ["m1", "m2"]);
+  });
+
+  test("availability overrides can disable a whole module", () => {
+    const model = createModel(createBaseDataset(), {
+      availabilityOverrides: {
+        modules: {
+          m2: { active: false },
+        },
+      },
+    });
+
+    assert.deepEqual(model.getThemes().map((theme) => theme.id), ["m1"]);
+    assert.equal(model.getExerciseById("ex-003"), null);
+    assert.equal(model.getSummary().total, 2);
+  });
+
+  test("availability overrides can disable a single exercise", () => {
+    const model = createModel(createBaseDataset(), {
+      availabilityOverrides: {
+        exercises: {
+          "ex-002": { active: false },
+        },
+      },
+    });
+
+    assert.deepEqual(model.getExercisesByTheme("m1").map((exercise) => exercise.id), ["ex-001"]);
+    assert.equal(model.getExerciseById("ex-002"), null);
+    assert.equal(model.getSummary().total, 2);
   });
 
   test("markExerciseDone updates summary and history", () => {

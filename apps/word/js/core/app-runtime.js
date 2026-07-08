@@ -15,6 +15,13 @@ function getAtelierAppConfig() {
   return config;
 }
 
+function getAtelierAvailabilityOverrides(config = getAtelierAppConfig()) {
+  const globalName = String(config.availabilityOverridesGlobalName || "").trim();
+  if (!globalName) return null;
+  const overrides = window[globalName];
+  return overrides && typeof overrides === "object" ? overrides : null;
+}
+
 function getAtelierDeploymentDefaults(appConfig = getAtelierAppConfig()) {
   return {
     environment: {
@@ -254,8 +261,9 @@ function bootstrapConfiguredAtelierApp(config = getAtelierAppConfig()) {
   const ViewClass = requireWindowValue(config.viewGlobalName, `Classe ${config.viewGlobalName} non chargee`);
   const StorageClass = requireWindowValue(config.storageGlobalName, `Classe ${config.storageGlobalName} non chargee`);
   const ControllerClass = requireWindowValue(config.controllerGlobalName, `Classe ${config.controllerGlobalName} non chargee`);
+  const availabilityOverrides = getAtelierAvailabilityOverrides(config);
 
-  const model = new ModelClass(data);
+  const model = new ModelClass(data, { availabilityOverrides });
   const view = new ViewClass();
   const storage = new StorageClass();
   const controller = new ControllerClass(model, view, storage);
@@ -265,6 +273,7 @@ function bootstrapConfiguredAtelierApp(config = getAtelierAppConfig()) {
 }
 
 window.getAtelierAppConfig = getAtelierAppConfig;
+window.getAtelierAvailabilityOverrides = getAtelierAvailabilityOverrides;
 window.getAtelierDeploymentDefaults = getAtelierDeploymentDefaults;
 window.loadAtelierDeploymentConfig = loadAtelierDeploymentConfig;
 window.checkAtelierServerAvailability = checkAtelierServerAvailability;
