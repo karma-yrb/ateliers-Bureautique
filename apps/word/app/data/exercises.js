@@ -3323,7 +3323,9 @@ window.WORD_ATELIER_DATA = {
         "Faire une mise en page conforme au visuel ci-dessous.",
         "Placez l'image au centre du paragraphe.",
         "L'habillage qui permet de réaliser cette présentation est \"Adapté\"."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-04/ex-04.jpg",
+      "downloadLabel": "Telecharger l'image"
     },
     {
       "id": "ex-065",
