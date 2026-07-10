@@ -4012,7 +4012,7 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/18-inserer-tableau/exercice-6.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-006/ex-006.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-006/ex-06.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-006/ex-06.gif",
       "description": "Créez deux tableaux 7 colonnes et 11 lignes et 3 colonnes et 8 lignes.",
@@ -4041,7 +4041,9 @@ window.WORD_ATELIER_DATA = {
         "Aligner l'adresse du destinataire pour qu'elle corresponde au pliage d'une enveloppe à fenêtre.",
         "Faire disparaître les bordures sur la gauche de la dernière ligne du premier tableau avec le menu \"Bordure\".",
         "Faire disparaître les bordures sur la gauche de la première ligne du second tableau avec le menu \"Bordure\"."
-      ]
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-081",
