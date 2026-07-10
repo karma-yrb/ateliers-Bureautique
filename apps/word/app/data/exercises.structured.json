@@ -3251,7 +3251,7 @@
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-3.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": null,
+      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003-tuto.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003.jpg",
       "description": "Assemblez textes et images, puis groupez chaque bloc avant de le positionner.",
@@ -3279,7 +3279,9 @@
         "Mettre le texte dans des zones de textes via un copier-coller.",
         "Insérer les images comme sur le résultat attendu. (utilisez de préférence l'habillage \"à travers le texte\").",
         "Grouper chaque zone avec sa photo et positionner l'ensemble."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003-img.zip",
+      "downloadLabel": "Telecharger les images"
     },
     {
       "id": "ex-064",
