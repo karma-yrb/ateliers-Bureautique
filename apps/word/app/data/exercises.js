@@ -354,7 +354,7 @@ window.WORD_ATELIER_DATA = {
       "description": "Personnalisez la barre d'acces rapide pour obtenir un rendu proche du modele.",
       "consignes": [],
       "instructions": [
-        "Cherchez l'icone Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour creer un nouveau document.",
+        "Cherchez l'icône Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le résultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour créer un nouveau document.",
         "Cliquez sur la petite flèche vers le bas à côté de la barre d'accès rapide pour accéder aux options de personnalisation.",
         "Sélectionnez les commandes que vous souhaitez ajouter à la barre d'accès rapide, telles que l'icône d'impression rapide.",
         "Vous pouvez également choisir d'autres commandes utiles en cochant les options disponibles."
@@ -400,7 +400,7 @@ window.WORD_ATELIER_DATA = {
       "description": "Personnalisez les onglets du ruban pour reproduire le resultat attendu.",
       "consignes": [],
       "instructions": [
-        "Cherchez l'icone Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour creer un nouveau document.",
+        "Cherchez l'icône Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le résultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour créer un nouveau document.",
         "Pour réaliser cette opération le menu est fichier > Options > Personnaliser le ruban.",
         "Vous manipulez ensuite en Cliqué-Glissé."
       ],
@@ -3268,7 +3268,7 @@ window.WORD_ATELIER_DATA = {
       "description": "Assemblez textes et images, puis groupez chaque bloc avant de le positionner.",
       "consignes": [],
       "instructions": [
-        "Cherchez l'icone Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour creer un nouveau document.",
+        "Cherchez l'icône Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le résultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour créer un nouveau document.",
         "Mettre le texte dans des zones de textes via un copier-coller.",
         "Grouper chaque zone avec sa photo et positionner l'ensemble."
       ],
