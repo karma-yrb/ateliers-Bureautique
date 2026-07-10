@@ -3970,7 +3970,7 @@
       "pageUrl": "https://www.clic-formation.net/18-inserer-tableau/exercice-5.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-005/ex-005.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-005/05.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-005/05.jpg",
       "description": "Reproduisez ce tableau dans votre traitement de texte. Cellule fusionnées, bordure \"tirets\"...",
@@ -3995,7 +3995,9 @@
       "originalInstructions": [
         "Reproduisez ce tableau dans votre traitement de texte. Cellule fusionnées, bordure \"tirets\"...",
         "NB : Pour des raisons pratiques, vous pouvez copier l'image quand elle est en taille réelle et la coller sur votre document de travail."
-      ]
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-080",
