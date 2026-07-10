@@ -1,7 +1,84 @@
 window.RELEASES_DATA = {
-  "version": "1.12.7",
-  "updatedAt": "2026-07-10T13:21:07.667Z",
+  "version": "1.12.8",
+  "updatedAt": "2026-07-10T13:37:34.297Z",
   "releases": [
+    {
+      "version": "1.12.8",
+      "tag": "word-v1.12.8",
+      "date": "2026-07-10",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "09b5193"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "runtime",
+          "description": "corrige navigation descriptions et noms de telechargement",
+          "breaking": false,
+          "hash": "fad074d"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "remove redundant workfile download mentions",
+          "breaking": false,
+          "hash": "8ad87b9"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.18.0",
+          "breaking": false,
+          "hash": "2a99bf5"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.40",
+          "breaking": false,
+          "hash": "fc097f0"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.7",
+          "breaking": false,
+          "hash": "9e541c4"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 6
+      }
+    },
     {
       "version": "1.12.7",
       "tag": "word-v1.12.7",
