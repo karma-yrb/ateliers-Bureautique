@@ -632,7 +632,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-003/ex-003-enonce.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-003/ex-03-resultat.jpg",
-      "description": "1- Téléchargez le document de travail",
+      "description": "",
       "consignes": [
         "Téléchargez le document de travail.",
         "Mettez les questions en gras et rouge et les réponses en vert."
@@ -1328,7 +1328,7 @@
       "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-005/ex-005-oiseaux.zip",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-005/ex-005.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-005/ex-005-solution.webp",
-      "description": "1- Téléchargez les images",
+      "description": "",
       "consignes": [
         "Téléchargez les images",
         "Téléchargez le fichier de travail",
@@ -7313,10 +7313,10 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/ex-008.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/enonce-2.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/ex-008-solution.gif",
-      "description": "Téléchargez ci-contre vos fichiers de travailL'objectif de l'exercice est de créer un publipostage. La difficulté de l'exercice provient du format de date Excel qui ne sera pas importé comme demandé par défaut. Il faut donc modifier le code champs. Le format des dates sera obligatoirement du type : 1er octobre 2020 .",
+      "description": "L'objectif de l'exercice est de creer un publipostage. La difficulte provient du format de date Excel, qui n'est pas importe comme attendu par defaut. Modifiez le code de champ afin d'obtenir des dates du type : 1er octobre 2020.",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez ci-contre vos fichiers de travailL'objectif de l'exercice est de créer un.",
+        "Téléchargez les fichiers de travail, puis creez le publipostage jusqu'au rendu attendu.",
         "Configurez les etapes de l'onglet Publipostage (source, champs, apercu) jusqu'au rendu attendu.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."

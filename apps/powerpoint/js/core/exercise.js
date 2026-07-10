@@ -66,6 +66,9 @@ function createAtelierExerciseRuntime(config = {}) {
         saveProgress();
       }
       view.showPage("exercise");
+      if (typeof window !== "undefined" && typeof window.scrollTo === "function") {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      }
 
       const done = model.getIsDone(exercise.id);
       const stepsVm = model.getExerciseStepsView

@@ -65,6 +65,11 @@ function createAtelierWorkFileRuntime(config = {}) {
         .replace(/^ex-(\d{1,3})$/, (_match, value) => `ex-${String(value).padStart(3, "0")}`)
         .replace(/[^a-z0-9_-]+/g, "-")
         .replace(/^-+|-+$/g, "") || "fichier-telecharge";
+    const modulePart = slugifyFilePart(
+      exercise && (exercise.moduleSlug || exercise.moduleName || exercise.moduleId),
+      "module",
+    );
+    const typePart = slugifyFilePart(getDownloadTypeLabel(downloadUrl), "fichier");
     let extension = "";
 
     try {
@@ -76,7 +81,28 @@ function createAtelierWorkFileRuntime(config = {}) {
       // conserve l'extension vide si l'URL est invalide
     }
 
-    return `${exerciseFileStem}${extension}`;
+    return `${exerciseFileStem}-${modulePart}-${typePart}${extension}`;
+  }
+
+  function slugifyFilePart(value, fallback) {
+    const slug = String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+    return slug || fallback;
+  }
+
+  function getDownloadTypeLabel(downloadUrl) {
+    const url = String(downloadUrl || "").toLowerCase();
+    if (url.endsWith(".docx") || url.endsWith(".doc")) return "fichier-travail";
+    if (url.endsWith(".xlsx") || url.endsWith(".xls")) return "tableur";
+    if (url.endsWith(".pptx") || url.endsWith(".ppt")) return "presentation";
+    if (url.endsWith(".zip")) return "archive";
+    if (url.endsWith(".pdf")) return "pdf";
+    if (/\.(jpg|jpeg|png|gif|webp|svg)$/.test(url)) return "visuel";
+    return "fichier-annexe";
   }
 
   function getDownloadFileNameFromLink(linkEl) {

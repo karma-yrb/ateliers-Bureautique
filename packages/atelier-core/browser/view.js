@@ -308,11 +308,6 @@ class AtelierView {
     this.exerciseStatusPill.classList.toggle("todo", !vm.done);
     this.exerciseToggleDoneBtn.setAttribute("data-id", vm.exercise.id);
 
-    if (this.exerciseDescription) {
-      this.exerciseDescription.textContent = vm.exercise.description || "";
-      this.exerciseDescription.style.display = vm.exercise.description ? "" : "none";
-    }
-
     const preamble = (vm.exercise && vm.exercise.preamble) ? vm.exercise.preamble : "";
     if (this.exercisePreambleWrap) {
       this.exercisePreambleWrap.style.display = preamble ? "" : "none";
@@ -329,6 +324,13 @@ class AtelierView {
       ? activeTab.instructions
       : (vm.steps || []);
     this.activeExerciseTabIndex = activeTab && vm.visuals.tabs ? vm.visuals.tabs.indexOf(activeTab) : 0;
+
+    if (this.exerciseDescription) {
+      const description = this.#getExerciseDescription(vm.exercise, effectiveSteps);
+      this.exerciseDescription.textContent = description;
+      this.exerciseDescription.style.display = description ? "" : "none";
+    }
+
     this.#renderExerciseSteps(vm.exercise, effectiveSteps);
 
     if (this.exerciseInstructionsWrap) {
@@ -346,7 +348,9 @@ class AtelierView {
     const workFileUrl = vm.exercise.workFileUrl || vm.exercise.docxUrl || "";
     if (this.exerciseWorkFileBtn && workFileUrl) {
       this.exerciseWorkFileBtn.href = workFileUrl;
-      this.exerciseWorkFileBtn.download = this.#getExerciseDownloadFileName(vm.exercise, workFileUrl);
+      this.exerciseWorkFileBtn.download = this.#getExerciseDownloadFileName(vm.exercise, workFileUrl, {
+        typeLabel: "fichier-travail",
+      });
       this.exerciseWorkFileBtn.style.display = "";
     } else if (this.exerciseWorkFileBtn) {
       this.exerciseWorkFileBtn.removeAttribute("href");
@@ -356,9 +360,13 @@ class AtelierView {
     if (vm.exercise.downloadUrl) {
       this.exerciseDownloadBtn.href = vm.exercise.downloadUrl;
       this.exerciseDownloadBtn.textContent = vm.exercise.downloadLabel || "Telecharger le 2e fichier";
+      this.exerciseDownloadBtn.download = this.#getExerciseDownloadFileName(vm.exercise, vm.exercise.downloadUrl, {
+        typeLabel: vm.exercise.downloadLabel || "fichier-annexe-2",
+      });
       this.exerciseDownloadBtn.style.display = "";
     } else {
       this.exerciseDownloadBtn.removeAttribute("href");
+      this.exerciseDownloadBtn.removeAttribute("download");
       this.exerciseDownloadBtn.style.display = "none";
     }
     this.#renderExtraDownloadButtons(vm.exercise.extraDownloadUrls || []);
@@ -567,6 +575,9 @@ class AtelierView {
       link.rel = "noopener";
       link.href = item.url;
       link.textContent = item.label || "Telecharger un fichier";
+      link.download = this.#getExerciseDownloadFileName(this.currentExerciseVm && this.currentExerciseVm.exercise, item.url, {
+        typeLabel: item.label || "fichier-annexe",
+      });
       this.exerciseFilesActions.insertBefore(link, this.exercisePickWorkFileBtn || null);
     }
   }
@@ -1153,7 +1164,49 @@ class AtelierView {
     this.imageModalStage = stage;
   }
 
-  #getExerciseDownloadFileName(exercise, fileUrl) {
+  #getExerciseDescription(exercise, steps) {
+    const description = String(exercise && exercise.description || "").trim();
+    if (!description) return "";
+
+    const normalizedDescription = this.#normalizeExerciseText(description);
+    const normalizedSteps = Array.isArray(steps)
+      ? steps.map((step) => this.#normalizeExerciseText(step)).filter(Boolean)
+      : [];
+
+    if (normalizedSteps.includes(normalizedDescription)) {
+      return "";
+    }
+
+    if (/^telechargez\b/.test(normalizedDescription) && normalizedSteps.some((step) => /^telechargez\b/.test(step))) {
+      return "";
+    }
+
+    return description;
+  }
+
+  #normalizeExerciseText(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/^\s*[\d]+[\s.-]*/g, "")
+      .replace(/^[^\p{L}\p{N}]+/gu, "")
+      .replace(/[.!:;]+$/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  #slugifyFilePart(value, fallback) {
+    const slug = String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+    return slug || fallback;
+  }
+
+  #getExerciseDownloadFileName(exercise, fileUrl, options = {}) {
     const exerciseNumber = Number(exercise && exercise.num);
     const exerciseId = Number.isFinite(exerciseNumber) && exerciseNumber > 0
       ? `ex-${String(exerciseNumber).padStart(3, "0")}`
@@ -1163,6 +1216,11 @@ class AtelierView {
         .replace(/^ex-(\d{1,2})$/, (_match, value) => `ex-${String(value).padStart(3, "0")}`)
         .replace(/[^a-z0-9_-]+/g, "-")
         .replace(/^-+|-+$/g, "") || "exercice";
+    const modulePart = this.#slugifyFilePart(
+      exercise && (exercise.moduleSlug || exercise.moduleName || exercise.moduleId),
+      "module",
+    );
+    const typePart = this.#slugifyFilePart(options.typeLabel || "fichier", "fichier");
     let extension = ".docx";
 
     try {
@@ -1174,7 +1232,7 @@ class AtelierView {
       // conserver .docx
     }
 
-    return `${exerciseId}${extension}`;
+    return `${exerciseId}-${modulePart}-${typePart}${extension}`;
   }
 }
 
