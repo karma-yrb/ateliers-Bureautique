@@ -2218,12 +2218,14 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-008-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-008-resultat.jpg",
-      "description": "1- Téléchargez le fichier de travail",
+      "description": "Telechargez le fichier de travail. La police conseillee pour les lettrines est 'SF Comic Script Shaded'. Si elle n'est pas installee, telechargez-la depuis Dafont ou utilisez une police decorative proche deja presente sur l'ordinateur. Bien respecter les ecarts et le nombre de lignes occupes par les lettrines.",
       "consignes": [],
       "instructions": [
-        "Reproduisez la mise en page du resultat attendu.",
-        "Appliquez une lettrine avec une police decorative proche de 'SF Comic Script Shaded' ou une alternative deja installee.",
-        "Respectez les ecarts et le nombre de lignes occupes par chaque lettrine."
+        "Telechargez d'abord le fichier de travail puis ouvrez-le dans Word.",
+        "Si la police 'SF Comic Script Shaded' n'est pas deja installee, ouvrez votre navigateur web et rendez-vous sur le site Dafont pour la rechercher.",
+        "Telechargez l'archive de la police, ouvrez le fichier ZIP puis ouvrez le fichier de police qu'il contient.",
+        "Dans la fenetre d'aper?u de la police, cliquez sur 'Installer', puis revenez dans Word. Si Word etait deja ouvert, fermez-le et relancez-le pour charger la nouvelle police.",
+        "Reproduisez ensuite la mise en page du resultat attendu, appliquez les lettrines et verifiez les ecarts ainsi que le nombre de lignes occupees."
       ],
       "scrape": {
         "ok": true,
@@ -2237,15 +2239,14 @@
         "resultImages": []
       },
       "preamble": "Reproduire la mise en page du résultat attendu.",
-      "criteria": [
-        "La police des lettrines est \"SF Comic Script Shaded\".",
-        "(Police à télécharger sur Dafont ou trouver une police originale déjà installée) Bien respecter les écarts et le nombre de lignes sur lesquelles sont insérées les lettrines."
-      ],
+      "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Reproduisez la mise en page du resultat attendu.",
-        "Appliquez une lettrine avec une police decorative proche de 'SF Comic Script Shaded' ou une alternative deja installee.",
-        "Respectez les ecarts et le nombre de lignes occupes par chaque lettrine."
+        "Telechargez d'abord le fichier de travail puis ouvrez-le dans Word.",
+        "Si la police 'SF Comic Script Shaded' n'est pas deja installee, ouvrez votre navigateur web et rendez-vous sur le site Dafont pour la rechercher.",
+        "Telechargez l'archive de la police, ouvrez le fichier ZIP puis ouvrez le fichier de police qu'il contient.",
+        "Dans la fenetre d'aper?u de la police, cliquez sur 'Installer', puis revenez dans Word. Si Word etait deja ouvert, fermez-le et relancez-le pour charger la nouvelle police.",
+        "Reproduisez ensuite la mise en page du resultat attendu, appliquez les lettrines et verifiez les ecarts ainsi que le nombre de lignes occupees."
       ]
     },
     {
