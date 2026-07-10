@@ -3191,7 +3191,9 @@ window.WORD_ATELIER_DATA = {
         "Éléments de travail à télécharger ci-contre.",
         "Insérez les images dans Word au niveau des différents paragraphes et choisir le bon \"habillage\" des visuels pour les positionner comme sur le résultat.",
         "Déplacez la seconde image en fin de première ligne du second paragraphe."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-001/ex-01-img.zip",
+      "downloadLabel": "Telecharger les visuels"
     },
     {
       "id": "ex-062",
