@@ -1,7 +1,92 @@
 window.RELEASES_DATA = {
-  "version": "1.13.0",
-  "updatedAt": "2026-07-08T15:01:51.400Z",
+  "version": "1.14.0",
+  "updatedAt": "2026-07-10T11:11:29.591Z",
   "releases": [
+    {
+      "version": "1.14.0",
+      "tag": "bureautique-v1.14.0",
+      "date": "2026-07-10",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.36",
+          "breaking": false,
+          "hash": "5cd88cd"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.3",
+          "breaking": false,
+          "hash": "01106ff"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.3",
+          "breaking": false,
+          "hash": "c2d3816"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "be9e9f5"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word-mise-en-colonne",
+          "description": "corrige le rendu et enrichit les consignes",
+          "breaking": false,
+          "hash": "6dedbf9"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word-ex-033",
+          "description": "clarifie description et etapes",
+          "breaking": false,
+          "hash": "25a0c9c"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word-ex-032",
+          "description": "add missing source zip",
+          "breaking": false,
+          "hash": "dfd15e0"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 3,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 7
+      }
+    },
     {
       "version": "1.13.0",
       "tag": "bureautique-v1.13.0",
