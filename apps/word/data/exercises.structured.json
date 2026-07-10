@@ -777,7 +777,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-006/ex-006.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-006/ex-006.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-006/ex-06.jpg",
-      "description": "1- Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [
         "Titre de spectacle : \"Times New Roman\", 18, centré.",
         "Compagnie : \"Cambria\", 12, bleu, aligné à gauche.",
@@ -843,7 +843,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-007/ex-007.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-007/ex-007.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-007/ex-07.jpg",
-      "description": "1- Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [
         "Bloc envoyeur aligné à gauche",
         "Bloc destinataire aligné à droite",
@@ -995,7 +995,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-009/ex-009.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-009/ex-009.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-009/ex-009-solution.gif",
-      "description": "Téléchargez votre fichier de travail ci-contre",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Les consignes sont directement dans le document au début de chaque exercice."
@@ -1046,7 +1046,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-010/ex-010.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-010/ex-007.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-010/exo10-resultat.jpg",
-      "description": "1- Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Mettez les titres du texte ci-dessous en gras, centré, couleur verte, taille 20, souligné.",
@@ -1214,7 +1214,7 @@
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-003/ex-003.docx",
       "imageResultat": "data/ex-003.png",
-      "description": "Téléchargez le fichier de travail ci-contre",
+      "description": "",
       "preamble": "Vous travaillez dans le bloc \"Paragraphe\" en respectant les consignes ci-dessous. Chaque bloc de texte (Titre, Paragraphe 1, 2, 3…) doit être séparé par un appui sur la touche [Entrée].",
       "consignes": [
         "Vous travaillez dans le bloc \"Paragraphe\" en respectant les consignes ci-dessous.",
@@ -1272,7 +1272,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-004/ex-004.docx",
       "imageEnonce": null,
       "imageResultat": "data/ex-004-2.jpg",
-      "description": "1 - Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [],
       "scrape": {
@@ -1393,7 +1393,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-006/competence-4-exercice-6.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-006/solution-exo-6.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-006/solution-exo-6.jpg",
-      "description": "1- Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Vous ajoutez un espace APRÈS LE PARAGRAPHE."
@@ -1435,7 +1435,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-001/ex-001-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-001/ex-001-resultat.jpg",
-      "description": "Téléchargez le fichier de travail ci-contre",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Centrez le titre de l'exercice et mettez-le en gras.",
@@ -1528,7 +1528,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-003/tuto-puce.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-003/ex-003-solution.jpg",
-      "description": "Téléchargez le fichier de travail ci-contre",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Vous sélectionnez les noms des 4 recettes et vous appliquez la numérotation par lettre.",
@@ -1570,7 +1570,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-004/004-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-004/004-resultat.jpg",
-      "description": "1- Téléchargez le fichier de travail ci-contre.",
+      "description": "",
       "consignes": [
         "Texte : \"Calibri\", 12.",
         "Créer des listes numérotées pour chaque niveau identifié.",
@@ -1622,7 +1622,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-005/ex-005-images.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-005/ex-005.jpg",
-      "description": "1- Téléchargez le fichier de travail ci-contre puis l'image associée au travail.",
+      "description": "Téléchargez aussi l'image associée au travail.",
       "consignes": [
         "Titre : police de votre choix.",
         "Texte : \"Calibri\", 16.",
@@ -1811,7 +1811,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-001/ex-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-001/ex-01.jpg",
-      "description": "Téléchargez le fichier de travail ci-contre puis l'image à insérer",
+      "description": "Téléchargez aussi l'image à insérer.",
       "consignes": [],
       "instructions": [
         "Après sélection du texte, vous choisissez \"menu mise en page\" --> \"Autres Colonnes\" --> 3 colonnes.",
@@ -1913,7 +1913,7 @@
       "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-003/ex-003-images.zip",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-003/support-ex-003.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-003/ex-003.jpg",
-      "description": "Télécharger le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Mise en page « paysage ».",
@@ -2008,7 +2008,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.jpg",
-      "description": "Télécharger le fichier de travail ci-contre.\nTélécharger aussi les images à insérer pour reproduire le modèle.",
+      "description": "Téléchargez aussi les images à insérer pour reproduire le modèle.",
       "consignes": [],
       "instructions": [
         "Ajuster les marges pour coller au modèle.",
@@ -2071,7 +2071,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-006/ex-006.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-006/ex-006-colonne-resultat.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-006/ex-006-colonne-resultat.webp",
-      "description": "Télécharger le fichier de travail et le zip qui contient les illustrations",
+      "description": "Téléchargez aussi le ZIP qui contient les illustrations.",
       "consignes": [],
       "instructions": [
         "Mise en colonne.",
@@ -2218,10 +2218,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-008-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-008-resultat.jpg",
-      "description": "Téléchargez le fichier de travail. La police conseillée pour les lettrines est \"SF Comic Script Shaded\". Si elle n'est pas installée, téléchargez-la depuis Dafont ou utilisez une police décorative proche déjà présente sur l'ordinateur. Bien respecter les écarts et le nombre de lignes occupées par les lettrines.",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Téléchargez d'abord le fichier de travail puis ouvrez-le dans Word.",
         "Si la police \"SF Comic Script Shaded\" n'est pas déjà installée, ouvrez votre navigateur web et rendez-vous sur le site Dafont pour la rechercher.",
         "Téléchargez l'archive de la police, ouvrez le fichier ZIP puis ouvrez le fichier de police qu'il contient.",
         "Dans la fenêtre d'aperçu de la police, cliquez sur \"Installer\", puis revenez dans Word. Si Word était déjà ouvert, fermez-le et relancez-le pour charger la nouvelle police.",
@@ -2242,7 +2241,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Téléchargez d'abord le fichier de travail puis ouvrez-le dans Word.",
         "Si la police \"SF Comic Script Shaded\" n'est pas déjà installée, ouvrez votre navigateur web et rendez-vous sur le site Dafont pour la rechercher.",
         "Téléchargez l'archive de la police, ouvrez le fichier ZIP puis ouvrez le fichier de police qu'il contient.",
         "Dans la fenêtre d'aperçu de la police, cliquez sur \"Installer\", puis revenez dans Word. Si Word était déjà ouvert, fermez-le et relancez-le pour charger la nouvelle police.",
@@ -2265,7 +2263,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-005/lettrine.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-005/ex-05.jpg",
-      "description": "Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Après sélection, copier ce texte dans votre traitement de texte.",
@@ -2311,10 +2309,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-001/ex-10.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-001/ex-10.jpg",
-      "description": "1- Téléchargez le fichier de travail ci-contre",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : 1- Téléchargez le fichier de travail ci-contre.",
         "Ajoutez les formes via Insertion > Formes puis harmonisez style, taille et alignement.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -2334,7 +2331,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : 1- Téléchargez le fichier de travail ci-contre.",
         "Ajoutez les formes via Insertion > Formes puis harmonisez style, taille et alignement.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -2738,7 +2734,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-001/19-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-001/19-01.jpg",
-      "description": "Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Texte en \"Arial\" 10."
@@ -2781,7 +2777,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-002/ex-002.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-002/19-02.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-002/19-02.jpg",
-      "description": "Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Mise en forme rapide du texte à l'aide de la zone prédéfinie \"Encadré mosaïque\". Disponible à partir de \"Word 2007\"."
@@ -2868,10 +2864,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-004/ex-004.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-004/ex-004.jpg",
-      "description": "Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail.",
         "Appliquez les réglages Word utiles (Accueil, Insertion, Mise en page) pour obtenir le rendu attendu.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -2891,7 +2886,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail.",
         "Appliquez les réglages Word utiles (Accueil, Insertion, Mise en page) pour obtenir le rendu attendu.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -2959,7 +2953,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-006/ex-006.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-006/ex-006-02.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-006/ex-006-02.jpg",
-      "description": "1- Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "On remarquera que les zones de droite se superposent.",
@@ -3001,7 +2995,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-001/ex-001-tuto-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-001/ex-001-resultat.jpg",
-      "description": "Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Vous insérez des sauts de pages avant chaque gros titre (il y en a trois).",
@@ -3042,7 +3036,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-002/ex-002.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-002/ex-002-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-002/ex-002-resultat.jpg",
-      "description": "Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Paragraphe 2 : Aucune mise en forme."
@@ -3088,10 +3082,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-003/ex-003-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-003/ex-003-resultat.jpg",
-      "description": "Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail.",
         "Inserez les sauts via Mise en page > Sauts puis vérifiez la structure du document.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -3111,7 +3104,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail.",
         "Inserez les sauts via Mise en page > Sauts puis vérifiez la structure du document.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -3133,10 +3125,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-004/ex-004-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-004/ex-004-resultat.jpg",
-      "description": "Téléchargez le fichier de travail",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail.",
         "Inserez les sauts via Mise en page > Sauts puis vérifiez la structure du document.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -3156,7 +3147,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail.",
         "Inserez les sauts via Mise en page > Sauts puis vérifiez la structure du document.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -4146,7 +4136,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-008/ex-008.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-008/ex-008.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-008/ex-008.jpg",
-      "description": "Fiche d'adhésion avec 5 tableaux (ou 4 possibles en \"invisibilisant\" certaines bordures dans le troisième) de différentes tailles à créer. Téléchargez le fichier de travail et suivez l'exemple ci-dessous. Les textes hors tableau sont déjà sur votre fichier de travail. Pour cet exercice, il est conseillé d'imprimer l'image ou mieux de l'avoir sur la droite de son écran pour mieux le copier.",
+      "description": "Suivez l'exemple ci-dessous. Les textes hors tableau sont déjà sur votre fichier de travail. Pour cet exercice, il est conseillé d'imprimer l'image ou mieux de l'avoir sur la droite de son écran pour mieux le copier.",
       "consignes": [],
       "instructions": [
         "Construisez la structure principale du document à partir de cet objectif : Fiche d'adhésion avec 5 tableaux (ou 4 possibles en \"invisibilisant\" certaines bordures.",
@@ -4191,7 +4181,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-009/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-009/ex-005-bouton.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-009/ex-005-resultat.gif",
-      "description": "Vous téléchargez le fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Sur le premier tableau, vous supprimez toutes les bordures avec la gomme.",
@@ -4407,7 +4397,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-005/ex-005.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-005/ex-005.jpg",
-      "description": "Vous téléchargez le fichier de travail ci-contre",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Après avoir réalisé le premier tableau.",
@@ -4462,7 +4452,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-006/ex-006.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-006/ex-006.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-006/ex-006.jpg",
-      "description": "Vous téléchargez le fichier de travail ci-contre",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Dans le document que vous venez de télécharger, vous dupliquez le tableau 3 fois et vous le modifié en conséquence pour les rubriques 2, 3 et 4."
@@ -4502,7 +4492,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-007/ex-007.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-007/tableau.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-007/tableau.gif",
-      "description": "Vous téléchargez le fichier de travail ci-contre",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Hauteur de ligne importante, en-tête centré en hauteur et en largeur, les autres cellules en hauteur uniquement."
@@ -5090,7 +5080,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-005/ex-05.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-005/ex-05.jpg",
-      "description": "Télécharger votre fichier de travail ci-contre",
+      "description": "",
       "consignes": [],
       "instructions": [],
       "scrape": {
@@ -5265,10 +5255,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-002/ex-002.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-002/ex02.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-002/ex02.jpg",
-      "description": "Téléchargez le fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail ici.",
         "Utilisez Accueil > Remplacer pour automatiser les corrections demandees.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5288,7 +5277,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail ici.",
         "Utilisez Accueil > Remplacer pour automatiser les corrections demandees.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5310,7 +5298,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-003/ex-003.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-003/ex-003-solution.webp",
-      "description": "Téléchargez le fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Compter combien de fois apparaît le mot « France », « paris » et « secteur ».",
@@ -5355,7 +5343,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-004/ex-004.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-004/ex-004-solution.webp",
-      "description": "Téléchargez le fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Remplacer « sommet » et \"sommets\" par sommets."
@@ -5401,7 +5389,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-005/ex-005.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-005/ex-005-solution.webp",
-      "description": "Télécharger le fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Vous utilisez la fonction \"Remplacer\" pour.",
@@ -5444,7 +5432,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-006/ex-006.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-006/ex-006-solution.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-006/ex-006-solution.jpg",
-      "description": "Télécharger le fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Vous copiez le texte du document.",
@@ -5487,7 +5475,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-007/ex-007.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-007/ex-07.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-007/ex-07.jpg",
-      "description": "Téléchargez le fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Supprimez toute la ponctuation."
@@ -5529,10 +5517,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-008/ex-008.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-008/ex-008.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-008/ex-008-solution.gif",
-      "description": "Téléchargez le fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail ici.",
         "Utilisez Accueil > Remplacer pour automatiser les corrections demandees.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5554,7 +5541,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez le fichier de travail ici.",
         "Utilisez Accueil > Remplacer pour automatiser les corrections demandees.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5576,7 +5562,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-001/ex-01.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-001/ex-01.jpg",
-      "description": "Téléchargez votre fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Justifiez le texte en \"Calibri\" 26."
@@ -5661,7 +5647,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-003/ex-03.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-003/ex-03.jpg",
-      "description": "Téléchargez votre fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Après avoir inséré le texte dans un document Word, vous insérez un tour de page en double filet puis un filigrane au choix. Les options se trouvent dans le même groupe."
@@ -5701,10 +5687,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-004/ex-004.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-004/ex-004.jpg",
-      "description": "Téléchargez votre fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez votre fichier de travail ici.",
         "Appliquez les réglages de l'onglet Mise en page (marges, orientation, fond, bordures).",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5724,7 +5709,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez votre fichier de travail ici.",
         "Appliquez les réglages de l'onglet Mise en page (marges, orientation, fond, bordures).",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5746,10 +5730,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-005/ex-005.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-005/ex-005.jpg",
-      "description": "Téléchargez votre fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez votre fichier de travail ici.",
         "Appliquez les réglages de l'onglet Mise en page (marges, orientation, fond, bordures).",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5769,7 +5752,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez votre fichier de travail ici.",
         "Appliquez les réglages de l'onglet Mise en page (marges, orientation, fond, bordures).",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5791,10 +5773,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-006/ex-006.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-006/ex-006-solution.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-006/ex-006-solution.jpg",
-      "description": "Téléchargez votre fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez votre fichier de travail ici.",
         "Appliquez les réglages de l'onglet Mise en page (marges, orientation, fond, bordures).",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -5814,7 +5795,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Téléchargez votre fichier de travail ici.",
         "Appliquez les réglages de l'onglet Mise en page (marges, orientation, fond, bordures).",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -6112,7 +6092,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-005/ex-005.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-005/ex-05.jpg",
-      "description": "Téléchargez votre fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "\"Mode lecture\".",
@@ -6375,7 +6355,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-005/ex-005-solution.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-005/ex-005-solution.jpg",
-      "description": "Téléchargez votre fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Ouvrez le fichier de travail puis modifiez le SmartArt déjà présent.",
@@ -6417,7 +6397,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-006/ex-006.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-006/ex-006.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-006/ex-006.jpg",
-      "description": "Téléchargez votre fichier de travail ici",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Ouvrez le fichier de travail puis insérez ou modifiez le SmartArt demandé.",
@@ -7457,7 +7437,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-002/ex-002.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-002/ex-002.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-002/ex-002.jpg",
-      "description": "Vous téléchargez votre fichier de travail ici.",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Titre 1 sur \"les formes glaciaires\",.",
@@ -7501,10 +7481,9 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-003/ex-003.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-003/ex-003.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-003/ex-03.jpg",
-      "description": "Vous téléchargez votre fichier de travail ici.",
+      "description": "",
       "consignes": [],
       "instructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Vous téléchargez votre fichier de travail ici..",
         "Appliquez les réglages Word utiles (Accueil, Insertion, Mise en page) pour obtenir le rendu attendu.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -7524,7 +7503,6 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Construisez la structure principale du document à partir de cet objectif : Vous téléchargez votre fichier de travail ici..",
         "Appliquez les réglages Word utiles (Accueil, Insertion, Mise en page) pour obtenir le rendu attendu.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
@@ -7546,7 +7524,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-004/ex-004.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-004/ex-04.jpg",
-      "description": "Vous téléchargez votre fichier de travail ici.",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Vous définissez 8 titres de niveau 1 sur : L'ours blanc, Caractéristiques physiques, habileté physiques, répartition et abondance, habitat et régime, cycle de vie, valeur économique et conservation.",
@@ -7589,7 +7567,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-005/ex-005.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-005/ex-05.jpg",
-      "description": "Vous téléchargez votre fichier de travail ici.",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Chaque planète est un titre de niveau 1, le reste de niveau 2.",
@@ -7631,7 +7609,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-006/ex-006.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-006/ex-006.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-006/ex-06.jpg",
-      "description": "Vous téléchargez votre fichier de travail ici.",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Vous générez deux tables des matières : une classque et une via des signets que vous aurez pris soin de répartir sur le document de travail.",
@@ -7672,7 +7650,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-007/ex-007.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-007/ex-007.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-007/ex-07.jpg",
-      "description": "Vous téléchargez votre fichier de travail ici.",
+      "description": "",
       "consignes": [],
       "instructions": [],
       "scrape": {
@@ -7710,7 +7688,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-008/ex-008.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-008/ex-008-resultat.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-008/ex-008-resultat.jpg",
-      "description": "Vous téléchargez votre fichier de travail ici.",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Mettez une note de bas de page pour les mots surlignés en jaune."
@@ -7751,7 +7729,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/ex-009.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/titre-n1.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/ex-009-resultat.jpg",
-      "description": "Vous téléchargez votre fichier de travail ici.",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Titre 1.",
@@ -8252,7 +8230,7 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-31/ex-001/ex-001.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-31/ex-001/ex-001.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-31/ex-001/ex-001.jpg",
-      "description": "1- Téléchargez le fichier de travail.",
+      "description": "",
       "consignes": [],
       "instructions": [
         "Convertissez en un clic le texte en minuscules. Utilisez la fonction Modifier la casse dans le bloc Police, ou sélectionnez le texte puis faites Maj + F3."
@@ -9427,7 +9405,7 @@
       "description": "Saut de section et mise en colonne",
       "consignes": [],
       "instructions": [
-        "Le fichier de travail est à télécharger ci-contre, les images sont à télécharger et à décompresser sur votre espace de travail.",
+        "Téléchargez aussi les images, puis décompressez-les sur votre espace de travail.",
         "Option 1 : Vous créez un tableau 2 colonnes et 7 lignes, bordures du tableau en pointillé (résultat en téléchargement sous cette forme, plus facile).",
         "Option 2 : Vous insérez 2 colonnes et répartissez le contenu dedans. Pas de pointillé autour des paragraphes.",
         "Dans tous les cas, un pied de page est présent."
@@ -9451,7 +9429,7 @@
       ],
       "originalConsignes": [],
       "originalInstructions": [
-        "Le fichier de travail est à télécharger ci-contre, les images sont à télécharger et à décompresser sur votre espace de travail.",
+        "Téléchargez aussi les images, puis décompressez-les sur votre espace de travail.",
         "Trois options pour cet exercice : .",
         "Option 1 : Vous créez un tableau 2 colonnes et 7 lignes, bordures du tableau en pointillé (résultat en téléchargement sous cette forme, plus facile).",
         "Option 2 : Vous insérez 2 colonnes et répartissez le contenu dedans. Pas de pointillé autour des paragraphes.",
@@ -10202,7 +10180,7 @@
       "description": "Tableau planning complexe",
       "consignes": [],
       "instructions": [
-        "Le fichier de travail est à télécharger ci-contre.",
+        "Ouvrez le fichier de travail.",
         "Pour commencer, insérez un tableau de 20 lignes et 17 colonnes, distribuer en couper/coller le texte dans les différentes cellules, bien fusionner les cellules quand c'est nécessaire."
       ],
       "scrape": {
@@ -10220,7 +10198,7 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Le fichier de travail est à télécharger ci-contre.",
+        "Ouvrez le fichier de travail.",
         "L'objectif est de faire un planning et donc un tableau complexe.",
         "Pour commencer, insérez un tableau de 20 lignes et 17 colonnes, distribuer en couper/coller le texte dans les différentes cellules, bien fusionner les cellules quand c'est nécessaire."
       ]
