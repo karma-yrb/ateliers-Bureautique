@@ -1843,7 +1843,9 @@ window.WORD_ATELIER_DATA = {
         "Marge de la page réduite à 1.5.",
         "Lettrine sur la première lettre du texte (facultatif).",
         "Photo en fin de texte centré dans la colonne."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-001/ex-01-img.jpg",
+      "downloadLabel": "Telecharger l'image"
     },
     {
       "id": "ex-031",
