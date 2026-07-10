@@ -3558,7 +3558,9 @@ window.WORD_ATELIER_DATA = {
         "le terme nouveau et les prix de chaque article sont surlignés jaunes et rouges à l'envi.",
         "Les sauts de pages sont à mettre sur les trois premières pages.",
         "En pied de page, insérez la numérotation."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-009/images.zip",
+      "downloadLabel": "Telecharger les images"
     },
     {
       "id": "ex-070",
