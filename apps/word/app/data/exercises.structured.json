@@ -3718,7 +3718,9 @@
         "Insérez un saut de page de façon à mettre ces 4 paragraphes à 1 par page : Introduction, Biographie, Carrière d'alpiniste et Ascensions marquantes.",
         "Insérez une numérotation avec numéro de page et nombre total de pages.",
         "Insérez le logo dans l'en-tête du document."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-003/ex-003-logo.png",
+      "downloadLabel": "Telecharger le logo"
     },
     {
       "id": "ex-074",
