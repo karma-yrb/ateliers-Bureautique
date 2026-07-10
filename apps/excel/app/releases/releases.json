@@ -1,7 +1,196 @@
 {
-  "version": "1.5.4",
-  "updatedAt": "2026-07-10T12:17:42.078Z",
+  "version": "1.5.5",
+  "updatedAt": "2026-07-10T12:53:28.101Z",
   "releases": [
+    {
+      "version": "1.5.5",
+      "tag": "excel-v1.5.5",
+      "date": "2026-07-10",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.5",
+          "breaking": false,
+          "hash": "fa981f7"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "6a82e94"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing image download",
+          "breaking": false,
+          "hash": "9d019c7"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "repair broken instructions for ex-039",
+          "breaking": false,
+          "hash": "2b17558"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "remove invalid workfile link",
+          "breaking": false,
+          "hash": "ef8e8ea"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "remove invalid workfile link",
+          "breaking": false,
+          "hash": "5b08394"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "remove invalid workfile link",
+          "breaking": false,
+          "hash": "7185ee8"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing secondary resource",
+          "breaking": false,
+          "hash": "fb3f145"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing secondary resource",
+          "breaking": false,
+          "hash": "907b33f"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing image download",
+          "breaking": false,
+          "hash": "dacf1cd"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing image download",
+          "breaking": false,
+          "hash": "9535151"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing secondary resource",
+          "breaking": false,
+          "hash": "249b667"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing secondary resource",
+          "breaking": false,
+          "hash": "1fed0c3"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "replace invalid workfile with download resource",
+          "breaking": false,
+          "hash": "0fa1067"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing secondary resource",
+          "breaking": false,
+          "hash": "5fef045"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing image download",
+          "breaking": false,
+          "hash": "84472c9"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing image download",
+          "breaking": false,
+          "hash": "8d1b1d4"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing secondary resource",
+          "breaking": false,
+          "hash": "212c72c"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "replace invalid workfile with download resource",
+          "breaking": false,
+          "hash": "6db5aa4"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "add missing secondary resource",
+          "breaking": false,
+          "hash": "5e32189"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 28,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 32
+      }
+    },
     {
       "version": "1.5.4",
       "tag": "excel-v1.5.4",
