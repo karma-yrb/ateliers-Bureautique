@@ -3430,7 +3430,7 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-7.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-007/ex-007.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-007/resultat-02.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-007/007-resultat.jpg",
       "description": "1- Téléchargez les visuels",
@@ -3458,7 +3458,9 @@ window.WORD_ATELIER_DATA = {
       "originalInstructions": [
         "Vous prenez deux formes au hasard et vous collez les deux poules en \"fond\".",
         "Vous rognez les visuels pour avoir un \"gros plan\" des poules."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-007/ex-007.zip",
+      "downloadLabel": "Telecharger les visuels"
     },
     {
       "id": "ex-068",
