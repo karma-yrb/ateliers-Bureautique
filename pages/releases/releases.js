@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "1.14.0",
-  "updatedAt": "2026-07-10T11:11:29.591Z",
+  "version": "1.15.0",
+  "updatedAt": "2026-07-10T12:17:56.782Z",
   "releases": [
+    {
+      "version": "1.15.0",
+      "tag": "bureautique-v1.15.0",
+      "date": "2026-07-10",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.37",
+          "breaking": false,
+          "hash": "f83e802"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.4",
+          "breaking": false,
+          "hash": "67292bc"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.4",
+          "breaking": false,
+          "hash": "47e3ba8"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "ajuste les descriptions et etapes d'exercices",
+          "breaking": false,
+          "hash": "9d2fa0b"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.14.0",
       "tag": "bureautique-v1.14.0",
