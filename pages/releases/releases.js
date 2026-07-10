@@ -1,7 +1,100 @@
 window.RELEASES_DATA = {
-  "version": "1.16.0",
-  "updatedAt": "2026-07-10T12:53:45.502Z",
+  "version": "1.17.0",
+  "updatedAt": "2026-07-10T13:13:56.341Z",
   "releases": [
+    {
+      "version": "1.17.0",
+      "tag": "bureautique-v1.17.0",
+      "date": "2026-07-10",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.39",
+          "breaking": false,
+          "hash": "afe16d7"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.6",
+          "breaking": false,
+          "hash": "aa0280e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.6",
+          "breaking": false,
+          "hash": "924ab68"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "ec85a1c"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "repair ex-039 encoding-safe font install step",
+          "breaking": false,
+          "hash": "3c187ef"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "replace repeated intro with default Word start steps for ex-076",
+          "breaking": false,
+          "hash": "af58b71"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "set explicit single download label for ex-043",
+          "breaking": false,
+          "hash": "4823acb"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "refine font setup instructions for ex-039",
+          "breaking": false,
+          "hash": "a54bbc4"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 4,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 8
+      }
+    },
     {
       "version": "1.16.0",
       "tag": "bureautique-v1.16.0",
