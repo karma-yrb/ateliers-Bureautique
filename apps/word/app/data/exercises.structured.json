@@ -4306,7 +4306,7 @@
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-d-un-tableau/exercice-tableau-word-3.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-003/ex-003.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-003/ex-132-03-solution.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-003/ex-132-03-solution.jpg",
       "description": "Même principe que l'exercice précédent texte vertical sur la première ligne et alternance de couleur dans les colonnes. Si possible distribuer la couleur sur les 5 colonnes en une fois. \"Selection multiple des colonnes \"",
@@ -4336,7 +4336,9 @@
         "Ajoutez les formes via Insertion > Formes puis harmonisez style, taille et alignement.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
-      ]
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-087",
