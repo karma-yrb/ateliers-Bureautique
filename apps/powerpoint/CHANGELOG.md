@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.40](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.39...powerpoint-v0.1.40) (2026-07-10)
+
+
+### Bug Fixes
+
+* **word:** restore proper accents in ex-039 font instructions ([4b90a4b](https://github.com/karma-yrb/ateliers-Bureautique/commit/4b90a4bb1c9c0a96105a7804a8382683fd55c1e9))
+* **word:** restore proper accents in ex-063 intro step ([f13bd79](https://github.com/karma-yrb/ateliers-Bureautique/commit/f13bd79c5f368f0236b2f1f232c52d675388b93d))
+* **word:** restore proper accents in ex-076 setup steps ([b6a9bbf](https://github.com/karma-yrb/ateliers-Bureautique/commit/b6a9bbf1f5e11519f21c8cdcfedd3f1d4394ae6e))
+
 ### [0.1.39](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.38...powerpoint-v0.1.39) (2026-07-10)
 
 

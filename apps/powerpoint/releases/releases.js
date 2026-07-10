@@ -1,7 +1,92 @@
 window.RELEASES_DATA = {
-  "version": "0.1.39",
-  "updatedAt": "2026-07-10T13:13:50.183Z",
+  "version": "0.1.40",
+  "updatedAt": "2026-07-10T13:21:26.204Z",
   "releases": [
+    {
+      "version": "0.1.40",
+      "tag": "powerpoint-v0.1.40",
+      "date": "2026-07-10",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.7",
+          "breaking": false,
+          "hash": "9e541c4"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.7",
+          "breaking": false,
+          "hash": "0cc82e6"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "d73f7fa"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "restore proper accents in ex-063 intro step",
+          "breaking": false,
+          "hash": "f13bd79"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "restore proper accents in ex-076 setup steps",
+          "breaking": false,
+          "hash": "b6a9bbf"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "restore proper accents in ex-039 font instructions",
+          "breaking": false,
+          "hash": "4b90a4b"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.17.0",
+          "breaking": false,
+          "hash": "8b4e962"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 3,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 7
+      }
+    },
     {
       "version": "0.1.39",
       "tag": "powerpoint-v0.1.39",
