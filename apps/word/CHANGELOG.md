@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.6](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.12.5...word-v1.12.6) (2026-07-10)
+
+
+### Bug Fixes
+
+* **word:** refine font setup instructions for ex-039 ([a54bbc4](https://github.com/karma-yrb/ateliers-Bureautique/commit/a54bbc4095c8eef4924cbb0b7613560883fbf7b4))
+* **word:** repair ex-039 encoding-safe font install step ([3c187ef](https://github.com/karma-yrb/ateliers-Bureautique/commit/3c187ef613ce3e9dc44a5af2b8ae7f6a8470e5ac))
+* **word:** replace repeated intro with default Word start steps for ex-076 ([af58b71](https://github.com/karma-yrb/ateliers-Bureautique/commit/af58b7193643980dc441fa3e5bc5a47f7115f862))
+* **word:** set explicit single download label for ex-043 ([4823acb](https://github.com/karma-yrb/ateliers-Bureautique/commit/4823acb1256b9a9bce84883e4a1a3c9d4d84ef9f))
+
 ### [1.12.5](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.12.4...word-v1.12.5) (2026-07-10)
 
 
