@@ -2221,7 +2221,9 @@
       "description": "1- Téléchargez le fichier de travail",
       "consignes": [],
       "instructions": [
-        "Résultat attendu : ."
+        "Reproduisez la mise en page du resultat attendu.",
+        "Appliquez une lettrine avec une police decorative proche de 'SF Comic Script Shaded' ou une alternative deja installee.",
+        "Respectez les ecarts et le nombre de lignes occupes par chaque lettrine."
       ],
       "scrape": {
         "ok": true,
@@ -2241,10 +2243,9 @@
       ],
       "originalConsignes": [],
       "originalInstructions": [
-        "Reproduire la mise en page du résultat attendu.",
-        "La police des lettrines est \"SF Comic Script Shaded\".",
-        "(Police à télécharger sur Dafont ou trouver une police originale déjà installée) Bien respecter les écarts et le nombre de lignes sur lesquelles sont insérées les lettrines.",
-        "Résultat attendu : ."
+        "Reproduisez la mise en page du resultat attendu.",
+        "Appliquez une lettrine avec une police decorative proche de 'SF Comic Script Shaded' ou une alternative deja installee.",
+        "Respectez les ecarts et le nombre de lignes occupes par chaque lettrine."
       ]
     },
     {
