@@ -3340,7 +3340,7 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-5.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-005/ex-005.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-005/ex-005-tuto.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-005/ex-05.jpg",
       "description": "1-Téléchargez la photo",
@@ -3364,7 +3364,9 @@ window.WORD_ATELIER_DATA = {
       "originalInstructions": [
         "Insérez cette photo dans un document que vous dupliquez.",
         "Vous enregistrez le document en deux versions, la première ne doit pas dépasser 600 Ko et l'autre ne doit pas faire moins de 1400 Ko."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-005/ex-05-photo.JPG",
+      "downloadLabel": "Telecharger la photo"
     },
     {
       "id": "ex-066",
