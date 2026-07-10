@@ -2034,14 +2034,27 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.jpg",
-      "description": "1- Télécharger le fichier de travail ci-contre",
+      "description": "Télécharger le fichier de travail ci-contre.\nTélécharger aussi les images à insérer pour reproduire le modèle.",
       "consignes": [],
       "instructions": [
-        "Mise en 3 colonnes après le saut de section.",
-        "Saut de colonnes à chaque fois.",
-        "Ligne séparatrice.",
+        "Ajuster les marges pour coller au modèle.",
+        "Encadrer le titre principal.",
         "Lettrine sur les deux premiers paragraphes.",
-        "Note de bas de page facultative (\"menu références\"--> \"Insérer une note de bas de page\")."
+        "Après « descente... », insérer un saut de section.",
+        "Après ce saut de section, mettre le texte en 3 colonnes avec ligne séparatrice.",
+        "Créer les titres soulignés.",
+        "Insérer les images à la fin en respectant leur taille et leur alignement.",
+        "Note de bas de page facultative (\"menu références\" --> \"Insérer une note de bas de page\")."
+      ],
+      "extraDownloadUrls": [
+        {
+          "url": "https://www.rawpixel.com/image/6267709/png-public-domain-black",
+          "label": "Télécharger image du pont"
+        },
+        {
+          "url": "https://www.rawpixel.com/image/6333446/png-sticker-public-domain",
+          "label": "Télécharger image de la statue"
+        }
       ],
       "scrape": {
         "ok": true,
@@ -2058,11 +2071,14 @@ window.WORD_ATELIER_DATA = {
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Mise en 3 colonnes après le saut de section.",
-        "Saut de colonnes à chaque fois.",
-        "Ligne séparatrice.",
+        "Ajuster les marges pour coller au modèle.",
+        "Encadrer le titre principal.",
         "Lettrine sur les deux premiers paragraphes.",
-        "Note de bas de page facultative (\"menu références\"--> \"Insérer une note de bas de page\")."
+        "Après « descente... », insérer un saut de section.",
+        "Après ce saut de section, mettre le texte en 3 colonnes avec ligne séparatrice.",
+        "Créer les titres soulignés.",
+        "Insérer les images à la fin en respectant leur taille et leur alignement.",
+        "Note de bas de page facultative (\"menu références\" --> \"Insérer une note de bas de page\")."
       ]
     },
     {

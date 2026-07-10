@@ -925,6 +925,7 @@ select {
   margin: 0 0 10px;
   color: var(--text, #102033);
   line-height: 1.45;
+  white-space: pre-line;
 }
 
 .steps-list {
