@@ -4581,7 +4581,7 @@
       "pageUrl": "https://www.clic-formation.net/tableau-avances-et-trucs/exercice-2.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-002/ex-002.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-002/ex-133-02-capture02.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-002/ex-133-02-capture01.jpg",
       "description": "L'exercice consiste à créer un nouveau style de tableau (en plus de ceux qui sont par défaut présent dans le logiciel).",
@@ -4612,7 +4612,9 @@
         "taille 14.",
         "centré.",
         "double bordure rouge."
-      ]
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-093",
