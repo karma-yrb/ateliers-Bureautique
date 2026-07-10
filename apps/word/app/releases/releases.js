@@ -1,7 +1,92 @@
 window.RELEASES_DATA = {
-  "version": "1.12.2",
-  "updatedAt": "2026-07-08T15:01:21.370Z",
+  "version": "1.12.3",
+  "updatedAt": "2026-07-10T11:11:01.511Z",
   "releases": [
+    {
+      "version": "1.12.3",
+      "tag": "word-v1.12.3",
+      "date": "2026-07-10",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "be9e9f5"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word-mise-en-colonne",
+          "description": "corrige le rendu et enrichit les consignes",
+          "breaking": false,
+          "hash": "6dedbf9"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word-ex-033",
+          "description": "clarifie description et etapes",
+          "breaking": false,
+          "hash": "25a0c9c"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word-ex-032",
+          "description": "add missing source zip",
+          "breaking": false,
+          "hash": "dfd15e0"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.13.0",
+          "breaking": false,
+          "hash": "2bc952d"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.35",
+          "breaking": false,
+          "hash": "0d4c677"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.2",
+          "breaking": false,
+          "hash": "74a58aa"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 3,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 7
+      }
+    },
     {
       "version": "1.12.2",
       "tag": "word-v1.12.2",
