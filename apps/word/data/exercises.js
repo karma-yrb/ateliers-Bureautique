@@ -4629,7 +4629,7 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tableau-avances-et-trucs/exercice-3.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003.webp",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003.webp",
       "description": "Pour un confort de travail, vous cliquez sur l'image du résultat attendu, glissez l'image sur le bureau puis dans votre document Word pour le reproduire.",
@@ -4664,7 +4664,9 @@ window.WORD_ATELIER_DATA = {
         "Les bordures horizontales trait plein orange.",
         "La largeur des jours de la semaine sera équilibré.",
         "Les cellules semaines seront fusionnées."
-      ]
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-094",
