@@ -3923,7 +3923,7 @@
       "pageUrl": "https://www.clic-formation.net/18-inserer-tableau/exercice-4.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-004/ex-004.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-004/ex-04.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-004/ex-04.jpg",
       "description": "Insérer un tableau de 7 lignes et 6 colonnes.",
@@ -3953,7 +3953,9 @@
         "Bordures externes épaisses (2 pts).",
         "Fusionner les cellules nécessaires à la présentation.",
         "NB : Pour des raisons pratiques, vous pouvez copier l'image quand elle est en taille réelle et la coller sur votre document de travail."
-      ]
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-079",
