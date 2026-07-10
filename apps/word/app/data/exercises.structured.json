@@ -2422,7 +2422,8 @@
       "originalInstructions": [
         "Faire une mise en page conforme aux résultats attendu : .",
         "L'exercice vise à découvrir la fonction qui permet de changer le fond des formes. Notez que le tour de chaque forme est \"pointillé\" \"épais\"... ou au choix."
-      ]
+      ],
+      "downloadLabel": "Telecharger les visuels"
     },
     {
       "id": "ex-044",
