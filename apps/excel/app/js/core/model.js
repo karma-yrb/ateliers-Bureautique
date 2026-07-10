@@ -97,6 +97,16 @@ function cleanText(value) {
     .trim();
 }
 
+function cleanDescriptionText(value) {
+  return String(value || "")
+    .replace(/\r\n?/g, "\n")
+    .replace(/^[^\p{L}\p{N}]+/u, "")
+    .split("\n")
+    .map((line) => line.replace(/[ \t]+/g, " ").trim())
+    .join("\n")
+    .trim();
+}
+
 function cleanStepText(value) {
   return String(value || "")
     .replace(/\r\n?/g, "\n")
@@ -192,7 +202,7 @@ class AtelierModel {
         num: toInt(ex.num, 0),
         title: cleanText(ex.title || `Exercice ${ex.num || ""}`),
         level: toInt(ex.level, 0),
-        description: cleanText(ex.description || ""),
+        description: cleanDescriptionText(ex.description || ""),
         workFileUrl: ex.workFileUrl || ex.docxUrl || null,
         docxUrl: ex.docxUrl || ex.workFileUrl || null,
         downloadUrl: ex.downloadUrl || null,

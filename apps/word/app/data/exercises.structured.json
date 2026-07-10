@@ -1770,26 +1770,11 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-008/exercice-05-08.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-008/exercice-05-08.jpg",
-      "description": "Collez les elements fournis, puis triez-les par ordre alphabetique dans Word.",
+      "description": "Copiez-collez la liste ci-dessous, puis utilisez la fonction de tri de Word pour la remettre dans l'ordre alphabétique.",
       "consignes": [],
       "instructions": [
         "Cherchez l'icone Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour creer un nouveau document.",
-        "Jupiter.",
-        "Atmosphère.",
-        "Satellites.",
-        "Europa.",
-        "Granymède.",
-        "Aigue-marine.",
-        "Améthyste.",
-        "Grenat.",
-        "Jade.",
-        "Opale.",
-        "Quartz.",
-        "Topaze.",
-        "Turquoise.",
-        "Callisto.",
-        "Saturne.",
-        "Titan."
+        "Copier-coller le texte suivant:\nJupiter.\nAtmosphère.\nSatellites.\nEuropa.\nGranymède.\nAigue-marine.\nAméthyste.\nGrenat.\nJade.\nOpale.\nQuartz.\nTopaze.\nTurquoise.\nCallisto.\nSaturne.\nTitan."
       ],
       "scrape": {
         "ok": true,
@@ -1802,27 +1787,12 @@
           "https://www.clic-formation.net/images/02-word/word-competence-05/ex-008/exercice-05-08.jpg"
         ]
       },
-      "preamble": "Après avoir copier-coller le texte ci-dessous, vous utilisez la fonction \"trié\" pour remettre l'ensemble par ordre alphabétique.",
+      "preamble": "",
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Après avoir copier-coller le texte ci-dessous, vous utilisez la fonction \"trié\" pour remettre l'ensemble par ordre alphabétique.",
-        "Jupiter.",
-        "Atmosphère.",
-        "Satellites.",
-        "Europa.",
-        "Granymède.",
-        "Aigue-marine.",
-        "Améthyste.",
-        "Grenat.",
-        "Jade.",
-        "Opale.",
-        "Quartz.",
-        "Topaze.",
-        "Turquoise.",
-        "Callisto.",
-        "Saturne.",
-        "Titan."
+        "Cherchez l'icone Word (un « W » blanc sur fond bleu), ou tapez « Word » dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur « Document vierge » pour creer un nouveau document.",
+        "Copier-coller le texte suivant:\nJupiter.\nAtmosphère.\nSatellites.\nEuropa.\nGranymède.\nAigue-marine.\nAméthyste.\nGrenat.\nJade.\nOpale.\nQuartz.\nTopaze.\nTurquoise.\nCallisto.\nSaturne.\nTitan."
       ]
     },
     {
