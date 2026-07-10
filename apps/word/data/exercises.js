@@ -2553,7 +2553,9 @@ window.WORD_ATELIER_DATA = {
         "Ajoutez les formes via Insertion > Formes puis harmonisez style, taille et alignement.",
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-006/ex-006.zip",
+      "downloadLabel": "Telecharger les photos"
     },
     {
       "id": "ex-047",
