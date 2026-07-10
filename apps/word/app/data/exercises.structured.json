@@ -3823,17 +3823,16 @@
       "pageUrl": "https://www.clic-formation.net/18-inserer-tableau/exercice-2-creer-un-tableau.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-002.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-02.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-02.gif",
       "description": "Vous pouvez réutiliser l'exercice précédent",
       "consignes": [],
       "instructions": [
-        "Étape 1 : Ouvrez votre traitement de texte et insérez un tableau de 1 colonne et 26 lignes.",
-        "Rédigez la liste comme sur l'exemple.",
-        "Étape 2 : Créer ou modifier le tableau avec 28 lignes et de 4 colonnes.",
-        "Grisez les cellules du haut en deux teintes.",
-        "Fusionner les cellules nécessaires."
+        "Etape 1 : Ouvrez votre traitement de texte et inserez un tableau de 1 colonne et 26 lignes.",
+        "Redigez la liste comme sur l'exemple, en la ressaisissant directement dans le document plutot qu'a partir d'un fichier a telecharger.",
+        "Etape 2 : Creez ou modifiez ensuite un tableau de 28 lignes et 4 colonnes.",
+        "Grisez les cellules du haut en deux teintes puis fusionnez les cellules necessaires."
       ],
       "scrape": {
         "ok": true,
@@ -3852,14 +3851,13 @@
       ],
       "originalConsignes": [],
       "originalInstructions": [
-        "Vous pouvez réutiliser l'exercice précédent.",
-        "Étape 1 : Ouvrez votre traitement de texte et insérez un tableau de 1 colonne et 26 lignes.",
-        "Rédigez la liste comme sur l'exemple.",
-        "Étape 2 : Créer ou modifier le tableau avec 28 lignes et de 4 colonnes.",
-        "Grisez les cellules du haut en deux teintes.",
-        "Fusionner les cellules nécessaires.",
-        "NB : Pour des raisons pratiques, vous pouvez copier l'image quand elle est en taille réelle et la coller sur votre document de travail."
-      ]
+        "Etape 1 : Ouvrez votre traitement de texte et inserez un tableau de 1 colonne et 26 lignes.",
+        "Redigez la liste comme sur l'exemple, en la ressaisissant directement dans le document plutot qu'a partir d'un fichier a telecharger.",
+        "Etape 2 : Creez ou modifiez ensuite un tableau de 28 lignes et 4 colonnes.",
+        "Grisez les cellules du haut en deux teintes puis fusionnez les cellules necessaires."
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-077",
