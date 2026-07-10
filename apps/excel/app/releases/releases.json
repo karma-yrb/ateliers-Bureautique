@@ -1,7 +1,100 @@
 {
-  "version": "1.5.5",
-  "updatedAt": "2026-07-10T12:53:28.101Z",
+  "version": "1.5.6",
+  "updatedAt": "2026-07-10T13:13:40.474Z",
   "releases": [
+    {
+      "version": "1.5.6",
+      "tag": "excel-v1.5.6",
+      "date": "2026-07-10",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.6",
+          "breaking": false,
+          "hash": "924ab68"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "ec85a1c"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "repair ex-039 encoding-safe font install step",
+          "breaking": false,
+          "hash": "3c187ef"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "replace repeated intro with default Word start steps for ex-076",
+          "breaking": false,
+          "hash": "af58b71"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "set explicit single download label for ex-043",
+          "breaking": false,
+          "hash": "4823acb"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "refine font setup instructions for ex-039",
+          "breaking": false,
+          "hash": "a54bbc4"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.16.0",
+          "breaking": false,
+          "hash": "852adc6"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.38",
+          "breaking": false,
+          "hash": "26a816e"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 4,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 8
+      }
+    },
     {
       "version": "1.5.5",
       "tag": "excel-v1.5.5",
