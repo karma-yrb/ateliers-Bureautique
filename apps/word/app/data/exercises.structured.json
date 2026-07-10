@@ -1989,12 +1989,12 @@
       "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-004/ex-004.docx",
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-004/ex-004-02.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-004/ex-004-01.jpg",
-      "description": "Téléchargez le fichier de travail ci-contre les images sont compressées.",
+      "description": "Vous utilisez les sauts de colonnes pour bien partitionner le texte.\nLes titres sont à faire simplement avec Word-art.\nColonne de gauche les photos (à décompresser après téléchargement), colonne de droite le texte.",
       "consignes": [],
       "instructions": [
-        "Colonne de gauche les photos (à décompresser après téléchargement), colonne de droite le texte.",
-        "Vous utilisez les sauts de colonnes pour bien partitionner le texte.",
-        "Les titres sont à faire simplement avec Word-art."
+        "Insérer une image au début du paragraphe.",
+        "Dans la mise en page, choisir une disposition sur 2 colonnes.",
+        "Avant le titre, insérer un saut de colonne pour le faire passer."
       ],
       "scrape": {
         "ok": true,
@@ -2013,9 +2013,9 @@
       "criteria": [],
       "originalConsignes": [],
       "originalInstructions": [
-        "Colonne de gauche les photos (à décompresser après téléchargement), colonne de droite le texte.",
-        "Vous utilisez les sauts de colonnes pour bien partitionner le texte.",
-        "Les titres sont à faire simplement avec Word-art."
+        "Insérer une image au début du paragraphe.",
+        "Dans la mise en page, choisir une disposition sur 2 colonnes.",
+        "Avant le titre, insérer un saut de colonne pour le faire passer."
       ]
     },
     {
