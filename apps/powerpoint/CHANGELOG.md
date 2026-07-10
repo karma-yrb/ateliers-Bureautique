@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.36](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.35...powerpoint-v0.1.36) (2026-07-10)
+
+
+### Bug Fixes
+
+* **word-ex-032:** add missing source zip ([dfd15e0](https://github.com/karma-yrb/ateliers-Bureautique/commit/dfd15e09c68d52a5e74ac746d17a2390d647cc29))
+* **word-ex-033:** clarifie description et etapes ([25a0c9c](https://github.com/karma-yrb/ateliers-Bureautique/commit/25a0c9c149006a31657706ea2effaca8f242ec44))
+* **word-mise-en-colonne:** corrige le rendu et enrichit les consignes ([6dedbf9](https://github.com/karma-yrb/ateliers-Bureautique/commit/6dedbf97b578e2ead0b9a00372c26cf035045df4))
+
 ### [0.1.35](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.34...powerpoint-v0.1.35) (2026-07-08)
 
 
