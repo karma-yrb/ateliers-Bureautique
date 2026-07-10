@@ -2570,7 +2570,7 @@
       "pageUrl": "https://www.clic-formation.net/18-inserer-une-forme/exercice-7.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-007/ex-007.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-007/comment-faire-caractere-speciaux.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-007/15-exercice-01.jpg",
       "description": "Une série de Symboles (Caractères spéciaux) à insérer et à manipuler. Ils sont disponibles via la police Wingding et Webding.",
@@ -2582,7 +2582,9 @@
       "originalConsignes": [],
       "originalInstructions": [
         "Une série de Symboles (Caractères spéciaux) à insérer et à manipuler. Ils sont disponibles via la police Wingding et Webding."
-      ]
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-048",
