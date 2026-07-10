@@ -3861,12 +3861,13 @@
       "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-02.gif",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-02.gif",
-      "description": "Vous pouvez réutiliser l'exercice précédent",
+      "description": "Creez le tableau directement dans un nouveau document Word en vous appuyant sur le resultat attendu.",
       "consignes": [],
       "instructions": [
-        "Etape 1 : Ouvrez votre traitement de texte et inserez un tableau de 1 colonne et 26 lignes.",
+        "Cherchez l'icone Word (un ? W ? blanc sur fond bleu), ou tapez ? Word ? dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur ? Document vierge ? pour creer un nouveau document.",
+        "Etape 1 : inserez un tableau de 1 colonne et 26 lignes.",
         "Redigez la liste comme sur l'exemple, en la ressaisissant directement dans le document plutot qu'a partir d'un fichier a telecharger.",
-        "Etape 2 : Creez ou modifiez ensuite un tableau de 28 lignes et 4 colonnes.",
+        "Etape 2 : creez ou modifiez ensuite un tableau de 28 lignes et 4 colonnes.",
         "Grisez les cellules du haut en deux teintes puis fusionnez les cellules necessaires."
       ],
       "scrape": {
@@ -3880,15 +3881,16 @@
           "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-02.gif"
         ]
       },
-      "preamble": "Vous pouvez réutiliser l'exercice précédent.",
+      "preamble": "",
       "criteria": [
         "NB : Pour des raisons pratiques, vous pouvez copier l'image quand elle est en taille réelle et la coller sur votre document de travail."
       ],
       "originalConsignes": [],
       "originalInstructions": [
-        "Etape 1 : Ouvrez votre traitement de texte et inserez un tableau de 1 colonne et 26 lignes.",
+        "Cherchez l'icone Word (un ? W ? blanc sur fond bleu), ou tapez ? Word ? dans la barre de recherche de Windows, puis cliquez sur le resultat pour ouvrir le logiciel. Ensuite, cliquez sur ? Document vierge ? pour creer un nouveau document.",
+        "Etape 1 : inserez un tableau de 1 colonne et 26 lignes.",
         "Redigez la liste comme sur l'exemple, en la ressaisissant directement dans le document plutot qu'a partir d'un fichier a telecharger.",
-        "Etape 2 : Creez ou modifiez ensuite un tableau de 28 lignes et 4 colonnes.",
+        "Etape 2 : creez ou modifiez ensuite un tableau de 28 lignes et 4 colonnes.",
         "Grisez les cellules du haut en deux teintes puis fusionnez les cellules necessaires."
       ],
       "downloadUrl": null,
