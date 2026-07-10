@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.38](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.37...powerpoint-v0.1.38) (2026-07-10)
+
+
+### Bug Fixes
+
+* **word-ex-073:** add missing logo download ([5dabe5b](https://github.com/karma-yrb/ateliers-Bureautique/commit/5dabe5b2bf78aa1120782d7c482b8401370586ba))
+* **word:** add missing image download ([9d019c7](https://github.com/karma-yrb/ateliers-Bureautique/commit/9d019c78392b41dc4c0c4370ab5c1bed1d111fc3))
+* **word:** add missing image download ([dacf1cd](https://github.com/karma-yrb/ateliers-Bureautique/commit/dacf1cdf3b6baf6bfaf97af4f3115920c8e8dc75))
+* **word:** add missing image download ([9535151](https://github.com/karma-yrb/ateliers-Bureautique/commit/9535151b4abf43afa3d4c34b51cfab3942558db4))
+* **word:** add missing image download ([84472c9](https://github.com/karma-yrb/ateliers-Bureautique/commit/84472c92e010b32a7fef5cbe73856fdfdb327440))
+* **word:** add missing image download ([8d1b1d4](https://github.com/karma-yrb/ateliers-Bureautique/commit/8d1b1d4d2052433574a2982bbe0d4598add28393))
+* **word:** add missing image download for ex-081 ([2371bb2](https://github.com/karma-yrb/ateliers-Bureautique/commit/2371bb2f3a252fe6c457da714915cc28747c0f96))
+* **word:** add missing secondary resource ([fb3f145](https://github.com/karma-yrb/ateliers-Bureautique/commit/fb3f1455fd18b5e13c93e134029ab1323bbea8f9))
+* **word:** add missing secondary resource ([907b33f](https://github.com/karma-yrb/ateliers-Bureautique/commit/907b33f87bf1b66efec42f4d4462b0f83d1cb7d5))
+* **word:** add missing secondary resource ([249b667](https://github.com/karma-yrb/ateliers-Bureautique/commit/249b667d194b895cc8645ec14c4c3e90655fbe8d))
+* **word:** add missing secondary resource ([1fed0c3](https://github.com/karma-yrb/ateliers-Bureautique/commit/1fed0c3faece2969961b3a385a494a0a01e55608))
+* **word:** add missing secondary resource ([5fef045](https://github.com/karma-yrb/ateliers-Bureautique/commit/5fef0451074d970169a8219a9855dac3e3c7e91f))
+* **word:** add missing secondary resource ([212c72c](https://github.com/karma-yrb/ateliers-Bureautique/commit/212c72c4cf74b9d149eb3f709d18bf24d4693404))
+* **word:** add missing secondary resource ([5e32189](https://github.com/karma-yrb/ateliers-Bureautique/commit/5e3218978b58a63f540e0fe50dd7d5348615c9f8))
+* **word:** add missing secondary resource ([da87c1e](https://github.com/karma-yrb/ateliers-Bureautique/commit/da87c1e7dee51e69dd2f92e072108ade1f932d0f))
+* **word:** keep only zip resource for ex-043 ([039bbb1](https://github.com/karma-yrb/ateliers-Bureautique/commit/039bbb197a4a485b62adaa6efe6428d852f1c81d))
+* **word:** remove invalid workfile for ex-047 ([243ca95](https://github.com/karma-yrb/ateliers-Bureautique/commit/243ca95a2767ee6b8d918501fd0d559cfe16a35d))
+* **word:** remove invalid workfile for ex-076 ([10c9c04](https://github.com/karma-yrb/ateliers-Bureautique/commit/10c9c046613554675fcb37cc2716497bf6a60c74))
+* **word:** remove invalid workfile link ([ef8e8ea](https://github.com/karma-yrb/ateliers-Bureautique/commit/ef8e8eabf5486d0822309cda60e5b60bc7bcdab1))
+* **word:** remove invalid workfile link ([5b08394](https://github.com/karma-yrb/ateliers-Bureautique/commit/5b083940d23a311d8917e528d182e9dcf603598e))
+* **word:** remove invalid workfile link ([7185ee8](https://github.com/karma-yrb/ateliers-Bureautique/commit/7185ee874d8d5edfbfc49559d9b1daceca6d6cc8))
+* **word:** remove invalid workfile links ([ba2c48e](https://github.com/karma-yrb/ateliers-Bureautique/commit/ba2c48e89989ab3d5931bfdfa329853e06f5d58c))
+* **word:** remove invalid workfile links ([bd263d0](https://github.com/karma-yrb/ateliers-Bureautique/commit/bd263d0e588bc7cf899e1b22727de42df0147a7e))
+* **word:** remove invalid workfile links ([57f244b](https://github.com/karma-yrb/ateliers-Bureautique/commit/57f244bedb580eda1404ae9744cf423719f75a29))
+* **word:** remove invalid workfile links ([42150a1](https://github.com/karma-yrb/ateliers-Bureautique/commit/42150a1c7e04180ea9710404f97723c8e5f83936))
+* **word:** repair broken instructions for ex-039 ([2b17558](https://github.com/karma-yrb/ateliers-Bureautique/commit/2b175588d11fab2e95650ce7116ee19a01d78503))
+* **word:** replace invalid workfile with download resource ([0fa1067](https://github.com/karma-yrb/ateliers-Bureautique/commit/0fa106764f548f0b91b3a99573d10977d07b110b))
+* **word:** replace invalid workfile with download resource ([6db5aa4](https://github.com/karma-yrb/ateliers-Bureautique/commit/6db5aa42f3cbcb01c23395c79f7bc48a052d42f0))
+
 ### [0.1.37](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.36...powerpoint-v0.1.37) (2026-07-10)
 
 
