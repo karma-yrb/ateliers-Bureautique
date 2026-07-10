@@ -2224,7 +2224,7 @@ window.WORD_ATELIER_DATA = {
         "Telechargez d'abord le fichier de travail puis ouvrez-le dans Word.",
         "Si la police 'SF Comic Script Shaded' n'est pas deja installee, ouvrez votre navigateur web et rendez-vous sur le site Dafont pour la rechercher.",
         "Telechargez l'archive de la police, ouvrez le fichier ZIP puis ouvrez le fichier de police qu'il contient.",
-        "Dans la fenetre d'aper?u de la police, cliquez sur 'Installer', puis revenez dans Word. Si Word etait deja ouvert, fermez-le et relancez-le pour charger la nouvelle police.",
+        "Dans la fenetre d'apercu de la police, cliquez sur 'Installer', puis revenez dans Word. Si Word etait deja ouvert, fermez-le et relancez-le pour charger la nouvelle police.",
         "Reproduisez ensuite la mise en page du resultat attendu, appliquez les lettrines et verifiez les ecarts ainsi que le nombre de lignes occupees."
       ],
       "scrape": {
@@ -2245,7 +2245,7 @@ window.WORD_ATELIER_DATA = {
         "Telechargez d'abord le fichier de travail puis ouvrez-le dans Word.",
         "Si la police 'SF Comic Script Shaded' n'est pas deja installee, ouvrez votre navigateur web et rendez-vous sur le site Dafont pour la rechercher.",
         "Telechargez l'archive de la police, ouvrez le fichier ZIP puis ouvrez le fichier de police qu'il contient.",
-        "Dans la fenetre d'aper?u de la police, cliquez sur 'Installer', puis revenez dans Word. Si Word etait deja ouvert, fermez-le et relancez-le pour charger la nouvelle police.",
+        "Dans la fenetre d'apercu de la police, cliquez sur 'Installer', puis revenez dans Word. Si Word etait deja ouvert, fermez-le et relancez-le pour charger la nouvelle police.",
         "Reproduisez ensuite la mise en page du resultat attendu, appliquez les lettrines et verifiez les ecarts ainsi que le nombre de lignes occupees."
       ]
     },
