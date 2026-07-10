@@ -3872,7 +3872,7 @@
       "pageUrl": "https://www.clic-formation.net/18-inserer-tableau/exercice-3-creer-un-tableau.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-003/ex-003.docx",
+      "docxUrl": null,
       "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-003/ex-03.jpg",
       "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-003/ex-03.jpg",
       "description": "Créer un tableau de 3 de colonnes et 11 lignes",
@@ -3906,7 +3906,9 @@
         "Aligner la colonne \"salaires\" à droite en modifiant la fin de ligne.",
         "Aligner la colonne \"Cote\" à gauche en modifiant le début de linge.",
         "NB : Pour des raisons pratiques, vous pouvez copier l'image quand elle est en taille réelle et la coller sur votre document de travail."
-      ]
+      ],
+      "downloadUrl": null,
+      "downloadLabel": ""
     },
     {
       "id": "ex-078",
