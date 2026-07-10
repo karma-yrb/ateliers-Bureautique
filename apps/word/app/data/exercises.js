@@ -3506,7 +3506,9 @@ window.WORD_ATELIER_DATA = {
         "Le travail est distribué sur 7 pages.",
         "Pour les pins de couleur utiliser l'habillage de l'image pour les positionner.",
         "Le travail est à présenter globalement comme dans le résultat attendu."
-      ]
+      ],
+      "downloadUrl": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-008/ex-008-images.zip",
+      "downloadLabel": "Telecharger les images"
     },
     {
       "id": "ex-069",
