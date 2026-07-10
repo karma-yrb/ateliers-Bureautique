@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.41](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.40...powerpoint-v0.1.41) (2026-07-10)
+
+
+### Bug Fixes
+
+* **runtime:** corrige navigation descriptions et noms de telechargement ([fad074d](https://github.com/karma-yrb/ateliers-Bureautique/commit/fad074d5cc7eae944ab8d64e46134f199e484d6e))
+* **word:** remove redundant workfile download mentions ([8ad87b9](https://github.com/karma-yrb/ateliers-Bureautique/commit/8ad87b98bb7e72aee0b08355a7c3265844f93394))
+
 ### [0.1.40](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.39...powerpoint-v0.1.40) (2026-07-10)
 
 
