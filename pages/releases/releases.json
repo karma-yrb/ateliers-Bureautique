@@ -1,7 +1,84 @@
 {
-  "version": "1.18.0",
-  "updatedAt": "2026-07-10T13:21:34.084Z",
+  "version": "1.19.0",
+  "updatedAt": "2026-07-10T13:38:06.875Z",
   "releases": [
+    {
+      "version": "1.19.0",
+      "tag": "bureautique-v1.19.0",
+      "date": "2026-07-10",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.41",
+          "breaking": false,
+          "hash": "a59913e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.8",
+          "breaking": false,
+          "hash": "d713f19"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.12.8",
+          "breaking": false,
+          "hash": "46376c7"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "09b5193"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "runtime",
+          "description": "corrige navigation descriptions et noms de telechargement",
+          "breaking": false,
+          "hash": "fad074d"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "word",
+          "description": "remove redundant workfile download mentions",
+          "breaking": false,
+          "hash": "8ad87b9"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 2,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 6
+      }
+    },
     {
       "version": "1.18.0",
       "tag": "bureautique-v1.18.0",
