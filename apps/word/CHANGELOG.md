@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.12.8...word-v1.13.0) (2026-07-13)
+
+
+### Features
+
+* **assets:** support public drive download links ([70c3588](https://github.com/karma-yrb/ateliers-Bureautique/commit/70c3588586ee8e23ec444b2bb3235a80d59c9117))
+
 ### [1.12.8](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.12.7...word-v1.12.8) (2026-07-10)
 
 

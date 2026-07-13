@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "1.12.8",
-  "updatedAt": "2026-07-10T13:37:34.297Z",
+  "version": "1.13.0",
+  "updatedAt": "2026-07-13T12:21:16.008Z",
   "releases": [
+    {
+      "version": "1.13.0",
+      "tag": "word-v1.13.0",
+      "date": "2026-07-13",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "assets",
+          "description": "support public drive download links",
+          "breaking": false,
+          "hash": "70c3588"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.19.0",
+          "breaking": false,
+          "hash": "215b373"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.41",
+          "breaking": false,
+          "hash": "a59913e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.5.8",
+          "breaking": false,
+          "hash": "d713f19"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.12.8",
       "tag": "word-v1.12.8",
