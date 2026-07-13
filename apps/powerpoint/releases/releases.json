@@ -1,7 +1,68 @@
 {
-  "version": "0.1.41",
-  "updatedAt": "2026-07-10T13:37:57.536Z",
+  "version": "0.1.42",
+  "updatedAt": "2026-07-13T12:21:39.354Z",
   "releases": [
+    {
+      "version": "0.1.42",
+      "tag": "powerpoint-v0.1.42",
+      "date": "2026-07-13",
+      "releaseType": "patch",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version de maintenance.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.6.0",
+          "breaking": false,
+          "hash": "91e5669"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.13.0",
+          "breaking": false,
+          "hash": "ea78818"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "assets",
+          "description": "support public drive download links",
+          "breaking": false,
+          "hash": "70c3588"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.19.0",
+          "breaking": false,
+          "hash": "215b373"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "0.1.41",
       "tag": "powerpoint-v0.1.41",

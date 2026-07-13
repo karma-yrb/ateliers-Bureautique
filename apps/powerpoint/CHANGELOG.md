@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.42](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.41...powerpoint-v0.1.42) (2026-07-13)
+
+
+### Features
+
+* **assets:** support public drive download links ([70c3588](https://github.com/karma-yrb/ateliers-Bureautique/commit/70c3588586ee8e23ec444b2bb3235a80d59c9117))
+
 ### [0.1.41](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.40...powerpoint-v0.1.41) (2026-07-10)
 
 
