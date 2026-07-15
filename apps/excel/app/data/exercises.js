@@ -422,18 +422,18 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": null,
-      "imageEnonce": "data/assets/excel/bases-01-prise-en-main/excel-ex-001-image-enonce.webp",
-      "imageResultat": "data/assets/excel/bases-01-prise-en-main/excel-ex-001-image-resultat.jpg",
+      "imageEnonce": null,
+      "imageResultat": "data/assets/excel/bases-01-prise-en-main/excel-ex-001-scrape-resultat-1.jpg",
       "imageEnonceCaption": "Énoncé",
-      "imageResultatCaption": "Résultat attendu",
+      "imageResultatCaption": "Résultat attendu - Exercice 1",
       "description": "Prise en main Excel",
       "preamble": "La prise en main du logiciel concerne en premier lieu l'enregistrement de votre travail.",
       "instructions": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Prise en main Excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Pour ce premier exercice, vous enregistrez deux classeurs sur le bureau de votre ordinateur : le premier fichier s'appellera \"statistiques.xlsx\", le second \"chiffres.xlsx\".",
+        "Les deux classeurs peuvent rester vides.",
+        "Ensuite, vous créez un dossier \"societe-aleou\" toujours sur le bureau de l'ordinateur.",
+        "Dans ce dossier, vous créez deux sous-dossiers : \"statistiques\" et \"chiffres\".",
+        "Vous glissez les fichiers de l'exercice précédent dans le bon dossier."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -457,19 +457,19 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "prise-en-main",
       "consignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Prise en main Excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Pour ce premier exercice, vous enregistrez deux classeurs sur le bureau de votre ordinateur : le premier fichier s'appellera \"statistiques.xlsx\", le second \"chiffres.xlsx\".",
+        "Les deux classeurs peuvent rester vides.",
+        "Ensuite, vous créez un dossier \"societe-aleou\" toujours sur le bureau de l'ordinateur.",
+        "Dans ce dossier, vous créez deux sous-dossiers : \"statistiques\" et \"chiffres\".",
+        "Vous glissez les fichiers de l'exercice précédent dans le bon dossier."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Prise en main Excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Pour ce premier exercice, vous enregistrez deux classeurs sur le bureau de votre ordinateur : le premier fichier s'appellera \"statistiques.xlsx\", le second \"chiffres.xlsx\".",
+        "Les deux classeurs peuvent rester vides.",
+        "Ensuite, vous créez un dossier \"societe-aleou\" toujours sur le bureau de l'ordinateur.",
+        "Dans ce dossier, vous créez deux sous-dossiers : \"statistiques\" et \"chiffres\".",
+        "Vous glissez les fichiers de l'exercice précédent dans le bon dossier."
       ],
       "originalInstructions": [
         "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
@@ -480,7 +480,15 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "paragraphMode": false,
       "extraImages": [],
-      "extraDownloadUrls": []
+      "extraDownloadUrls": [],
+      "exerciseTextPreamble": null,
+      "etapes": [
+        "Pour ce premier exercice, vous enregistrez deux classeurs sur le bureau de votre ordinateur : le premier fichier s'appellera \"statistiques.xlsx\", le second \"chiffres.xlsx\".",
+        "Les deux classeurs peuvent rester vides.",
+        "Ensuite, vous créez un dossier \"societe-aleou\" toujours sur le bureau de l'ordinateur.",
+        "Dans ce dossier, vous créez deux sous-dossiers : \"statistiques\" et \"chiffres\".",
+        "Vous glissez les fichiers de l'exercice précédent dans le bon dossier."
+      ]
     },
     {
       "id": "excel-ex-002",
@@ -565,7 +573,11 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Gérer l'affichage du classeur",
       "preamble": "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\".",
       "instructions": [
-        "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
+        "Figez la ligne supérieure de la feuille.",
+        "Refaites ensuite l'opération en figeant la première colonne.",
+        "Fractionnez la page.",
+        "Appliquez un zoom à 180 %.",
+        "Affichez la feuille en mode \"Saut de page\", puis en mode \"Mise en page\"."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -605,18 +617,34 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "prise-en-main",
       "consignes": [
-        "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
+        "Figez la ligne supérieure de la feuille.",
+        "Refaites ensuite l'opération en figeant la première colonne.",
+        "Fractionnez la page.",
+        "Appliquez un zoom à 180 %.",
+        "Affichez la feuille en mode \"Saut de page\", puis en mode \"Mise en page\"."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
+        "Figez la ligne supérieure de la feuille.",
+        "Refaites ensuite l'opération en figeant la première colonne.",
+        "Fractionnez la page.",
+        "Appliquez un zoom à 180 %.",
+        "Affichez la feuille en mode \"Saut de page\", puis en mode \"Mise en page\"."
       ],
       "originalInstructions": [
         "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
       ],
       "paragraphMode": false,
       "extraDownloadUrls": [],
-      "extraImages": []
+      "extraImages": [],
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Figez la ligne supérieure de la feuille.",
+        "Refaites ensuite l'opération en figeant la première colonne.",
+        "Fractionnez la page.",
+        "Appliquez un zoom à 180 %.",
+        "Affichez la feuille en mode \"Saut de page\", puis en mode \"Mise en page\"."
+      ]
     },
     {
       "id": "excel-ex-004",
@@ -638,7 +666,7 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Gérer l'affichage des feuilles",
       "preamble": "Énoncé de l'exercice :",
       "instructions": [
-        "Dans le groupe \"Afficher\" vous retirez le Quadrillage, la Barre de Formules et les En-têtes."
+        "Dans le groupe \"Afficher\", retirez le quadrillage, la barre de formules et les en-têtes."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -655,16 +683,20 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "prise-en-main",
       "consignes": [
-        "Dans le groupe \"Afficher\" vous retirez le Quadrillage, la Barre de Formules et les En-têtes."
+        "Dans le groupe \"Afficher\", retirez le quadrillage, la barre de formules et les en-têtes."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Dans le groupe \"Afficher\" vous retirez le Quadrillage, la Barre de Formules et les En-têtes."
+        "Dans le groupe \"Afficher\", retirez le quadrillage, la barre de formules et les en-têtes."
       ],
       "originalInstructions": [
         "Dans le groupe \"Afficher\" vous retirez le Quadrillage, la Barre de Formules et les En-têtes."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Dans le groupe \"Afficher\", retirez le quadrillage, la barre de formules et les en-têtes."
+      ]
     },
     {
       "id": "excel-ex-005",
@@ -686,11 +718,11 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Saisir des données dans Excel",
       "preamble": "6 séries d'exercices de saisie dans votre tableur.",
       "instructions": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Saisissez les préfectures sans utiliser la souris, uniquement avec la touche Entrée.",
+        "Saisissez les départements sans utiliser la souris, uniquement avec la touche Tabulation.",
+        "Saisissez les symboles utiles dans Excel.",
+        "Saisissez les mois de l'année, puis supprimez un mois sur deux en une seule action grâce à la multisélection.",
+        "Incrémentez les jours de la semaine, puis supprimez Mardi et Jeudi en une seule action."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -730,19 +762,19 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "saisir-des-donnees",
       "consignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Saisissez les préfectures sans utiliser la souris, uniquement avec la touche Entrée.",
+        "Saisissez les départements sans utiliser la souris, uniquement avec la touche Tabulation.",
+        "Saisissez les symboles utiles dans Excel.",
+        "Saisissez les mois de l'année, puis supprimez un mois sur deux en une seule action grâce à la multisélection.",
+        "Incrémentez les jours de la semaine, puis supprimez Mardi et Jeudi en une seule action."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Saisissez les préfectures sans utiliser la souris, uniquement avec la touche Entrée.",
+        "Saisissez les départements sans utiliser la souris, uniquement avec la touche Tabulation.",
+        "Saisissez les symboles utiles dans Excel.",
+        "Saisissez les mois de l'année, puis supprimez un mois sur deux en une seule action grâce à la multisélection.",
+        "Incrémentez les jours de la semaine, puis supprimez Mardi et Jeudi en une seule action."
       ],
       "originalInstructions": [
         "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
@@ -753,7 +785,15 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "paragraphMode": false,
       "extraImages": [],
-      "extraDownloadUrls": []
+      "extraDownloadUrls": [],
+      "exerciseTextPreamble": "5 séries d'exercices de saisie dans votre tableur.",
+      "etapes": [
+        "Saisissez les préfectures sans utiliser la souris, uniquement avec la touche Entrée.",
+        "Saisissez les départements sans utiliser la souris, uniquement avec la touche Tabulation.",
+        "Saisissez les symboles utiles dans Excel.",
+        "Saisissez les mois de l'année, puis supprimez un mois sur deux en une seule action grâce à la multisélection.",
+        "Incrémentez les jours de la semaine, puis supprimez Mardi et Jeudi en une seule action."
+      ]
     },
     {
       "id": "excel-ex-006",
@@ -775,11 +815,7 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Saisir des données dans Excel, construction d'un tabeau simple",
       "preamble": "",
       "instructions": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel, construction d'un tabeau simple.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Saisissez ce tableau sans utiliser la souris, hormis pour les bordures et la fusion des cellules."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -796,19 +832,11 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "saisir-des-donnees",
       "consignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel, construction d'un tabeau simple.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Saisissez ce tableau sans utiliser la souris, hormis pour les bordures et la fusion des cellules."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel, construction d'un tabeau simple.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Saisissez ce tableau sans utiliser la souris, hormis pour les bordures et la fusion des cellules."
       ],
       "originalInstructions": [
         "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
@@ -817,7 +845,11 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Saisissez ce tableau sans utiliser la souris, hormis pour les bordures et la fusion des cellules."
+      ]
     },
     {
       "id": "excel-ex-007",
@@ -1565,11 +1597,8 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Créer un Nouveau style de cellule",
       "preamble": "",
       "instructions": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Créer un Nouveau style de cellule.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous créez ce style avec la fonctionnalité \"Nouveau style de cellule\".",
+        "Dans la capture écran, c'est ce qu'il vous faut reproduire."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -1588,19 +1617,13 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Créer un Nouveau style de cellule.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous créez ce style avec la fonctionnalité \"Nouveau style de cellule\".",
+        "Dans la capture écran, c'est ce qu'il vous faut reproduire."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Créer un Nouveau style de cellule.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous créez ce style avec la fonctionnalité \"Nouveau style de cellule\".",
+        "Dans la capture écran, c'est ce qu'il vous faut reproduire."
       ],
       "originalInstructions": [
         "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
@@ -1609,7 +1632,12 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Vous créez ce style avec la fonctionnalité \"Nouveau style de cellule\".",
+        "Dans la capture écran, c'est ce qu'il vous faut reproduire."
+      ]
     },
     {
       "id": "excel-ex-021",
@@ -1631,7 +1659,10 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Mise en forme tableau (révision complète)",
       "preamble": "",
       "instructions": [
-        "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
+        "Cellule d'en tête \"fusionner-centrer\".",
+        "Tour de cellule épaisse et noire.",
+        "Fond de cellule dégradé deux couleurs en diagonale.",
+        "Police taille 48."
       ],
       "exerciseTabs": [
         {
@@ -1718,18 +1749,31 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
+        "Cellule d'en tête \"fusionner-centrer\".",
+        "Tour de cellule épaisse et noire.",
+        "Fond de cellule dégradé deux couleurs en diagonale.",
+        "Police taille 48."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
+        "Cellule d'en tête \"fusionner-centrer\".",
+        "Tour de cellule épaisse et noire.",
+        "Fond de cellule dégradé deux couleurs en diagonale.",
+        "Police taille 48."
       ],
       "originalInstructions": [
         "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
       "paragraphMode": false,
       "extraDownloadUrls": [],
-      "extraImages": []
+      "extraImages": [],
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Cellule d'en tête \"fusionner-centrer\".",
+        "Tour de cellule épaisse et noire.",
+        "Fond de cellule dégradé deux couleurs en diagonale.",
+        "Police taille 48."
+      ]
     },
     {
       "id": "excel-ex-022",
@@ -2430,11 +2474,9 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez ce tableau en ne saisissant que la cellule B1 et la cellule A2.",
+        "Utilisez la poignée de recopie vers le bas, puis vers la droite.",
+        "Les bordures ne sont pas obligatoires."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2451,19 +2493,15 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez ce tableau en ne saisissant que la cellule B1 et la cellule A2.",
+        "Utilisez la poignée de recopie vers le bas, puis vers la droite.",
+        "Les bordures ne sont pas obligatoires."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez ce tableau en ne saisissant que la cellule B1 et la cellule A2.",
+        "Utilisez la poignée de recopie vers le bas, puis vers la droite.",
+        "Les bordures ne sont pas obligatoires."
       ],
       "originalInstructions": [
         "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
@@ -2472,7 +2510,13 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Reproduisez ce tableau en ne saisissant que la cellule B1 et la cellule A2.",
+        "Utilisez la poignée de recopie vers le bas, puis vers la droite.",
+        "Les bordures ne sont pas obligatoires."
+      ]
     },
     {
       "id": "excel-ex-033",
@@ -2494,11 +2538,8 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Appliquez un fond gris aux cellules A1 et B2.",
+        "Utilisez ensuite la poignée de recopie horizontalement jusqu'en colonne G, puis verticalement jusqu'à la ligne 23."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2515,19 +2556,13 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Appliquez un fond gris aux cellules A1 et B2.",
+        "Utilisez ensuite la poignée de recopie horizontalement jusqu'en colonne G, puis verticalement jusqu'à la ligne 23."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Appliquez un fond gris aux cellules A1 et B2.",
+        "Utilisez ensuite la poignée de recopie horizontalement jusqu'en colonne G, puis verticalement jusqu'à la ligne 23."
       ],
       "originalInstructions": [
         "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
@@ -2536,7 +2571,12 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Appliquez un fond gris aux cellules A1 et B2.",
+        "Utilisez ensuite la poignée de recopie horizontalement jusqu'en colonne G, puis verticalement jusqu'à la ligne 23."
+      ]
     },
     {
       "id": "excel-ex-034",
@@ -6783,11 +6823,8 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Exercice pour mettre des valeurs au format monétaire dans Excel. Niveau Facile",
       "preamble": "",
       "instructions": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre des valeurs au format monétaire dans Excel. Niveau Facile.",
-        "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez ce tableau.",
+        "Appliquez le format monétaire aux données numériques."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -6806,19 +6843,13 @@ window.EXCEL_ATELIER_DATA = {
       "section": "avance",
       "moduleSlug": "format-de-cellule",
       "consignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre des valeurs au format monétaire dans Excel. Niveau Facile.",
-        "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez ce tableau.",
+        "Appliquez le format monétaire aux données numériques."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre des valeurs au format monétaire dans Excel. Niveau Facile.",
-        "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez ce tableau.",
+        "Appliquez le format monétaire aux données numériques."
       ],
       "originalInstructions": [
         "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
@@ -6827,7 +6858,12 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Reproduisez ce tableau.",
+        "Appliquez le format monétaire aux données numériques."
+      ]
     },
     {
       "id": "excel-ex-101",
@@ -7482,11 +7518,8 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Table de multiplication complète en deux tours de valeur absolue",
       "preamble": "",
       "instructions": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Table de multiplication complète en deux tours de valeur absolue.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez cette table de multiplication à l'aide de la poignée de recopie, verticalement puis horizontalement.",
+        "Réfléchissez au blocage de ligne et de colonne nécessaire pour obtenir le bon résultat."
       ],
       "levelLabel": "Avance",
       "scrape": {
@@ -7505,19 +7538,13 @@ window.EXCEL_ATELIER_DATA = {
       "section": "avance",
       "moduleSlug": "reference-absolue",
       "consignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Table de multiplication complète en deux tours de valeur absolue.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez cette table de multiplication à l'aide de la poignée de recopie, verticalement puis horizontalement.",
+        "Réfléchissez au blocage de ligne et de colonne nécessaire pour obtenir le bon résultat."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
-        "Construisez la structure principale du classeur a partir de cet objectif: Table de multiplication complète en deux tours de valeur absolue.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Reproduisez cette table de multiplication à l'aide de la poignée de recopie, verticalement puis horizontalement.",
+        "Réfléchissez au blocage de ligne et de colonne nécessaire pour obtenir le bon résultat."
       ],
       "originalInstructions": [
         "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
@@ -7526,7 +7553,12 @@ window.EXCEL_ATELIER_DATA = {
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Reproduisez cette table de multiplication à l'aide de la poignée de recopie, verticalement puis horizontalement.",
+        "Réfléchissez au blocage de ligne et de colonne nécessaire pour obtenir le bon résultat."
+      ]
     },
     {
       "id": "excel-ex-113",
@@ -10301,7 +10333,7 @@ window.EXCEL_ATELIER_DATA = {
       "moduleName": "Nommer une cellule",
       "moduleNameClean": "Nommer une cellule",
       "num": 3,
-      "title": ": Nommer une cellule ou une plage de cellules (Nommer une cellule 3)",
+      "title": "Nommer une cellule ou une plage de cellules",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-3-nommer-cellule.html",
       "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-003.xlsx",
@@ -10315,8 +10347,9 @@ window.EXCEL_ATELIER_DATA = {
       "preamble": "",
       "instructions": [
         "Montant_TVA : colonne C (uniquement les valeurs).",
-        "PHT : Colonne B (uniquement les valeurs).",
-        "Taux_tva : B2."
+        "PHT : colonne B (uniquement les valeurs).",
+        "Taux_tva : B2.",
+        "Vous installez les calculs en colonne C et D."
       ],
       "levelLabel": "Intermediaire",
       "scrape": {
@@ -10336,21 +10369,30 @@ window.EXCEL_ATELIER_DATA = {
       "moduleSlug": "nommer-une-cellule",
       "consignes": [
         "Montant_TVA : colonne C (uniquement les valeurs).",
-        "PHT : Colonne B (uniquement les valeurs).",
-        "Taux_tva : B2."
+        "PHT : colonne B (uniquement les valeurs).",
+        "Taux_tva : B2.",
+        "Vous installez les calculs en colonne C et D."
       ],
       "criteria": [],
       "originalConsignes": [
         "Montant_TVA : colonne C (uniquement les valeurs).",
-        "PHT : Colonne B (uniquement les valeurs).",
-        "Taux_tva : B2."
+        "PHT : colonne B (uniquement les valeurs).",
+        "Taux_tva : B2.",
+        "Vous installez les calculs en colonne C et D."
       ],
       "originalInstructions": [
         "Montant_TVA : colonne C (uniquement les valeurs).",
         "PHT : Colonne B (uniquement les valeurs).",
         "Taux_tva : B2."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Vous trouvez la cellule ou les plages à nommer comme dans le modèle ci-dessous.",
+      "etapes": [
+        "Montant_TVA : colonne C (uniquement les valeurs).",
+        "PHT : colonne B (uniquement les valeurs).",
+        "Taux_tva : B2.",
+        "Vous installez les calculs en colonne C et D."
+      ]
     },
     {
       "id": "excel-ex-156",
@@ -10372,8 +10414,6 @@ window.EXCEL_ATELIER_DATA = {
       "description": ": Nommer une cellule ou une plage de cellules",
       "preamble": "",
       "instructions": [
-        "Vous téléchargez votre fichier de travail ci-contre.",
-        "Consignes :.",
         "Vous nommez les zones de couleur verte et insérez les calculs dans les cellules bleues."
       ],
       "levelLabel": "Intermediaire",
@@ -10393,14 +10433,10 @@ window.EXCEL_ATELIER_DATA = {
       "section": "avance",
       "moduleSlug": "nommer-une-cellule",
       "consignes": [
-        "Vous téléchargez votre fichier de travail ci-contre.",
-        "Consignes :.",
         "Vous nommez les zones de couleur verte et insérez les calculs dans les cellules bleues."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Vous téléchargez votre fichier de travail ci-contre.",
-        "Consignes :.",
         "Vous nommez les zones de couleur verte et insérez les calculs dans les cellules bleues."
       ],
       "originalInstructions": [
@@ -10408,7 +10444,11 @@ window.EXCEL_ATELIER_DATA = {
         "Consignes :.",
         "Vous nommez les zones de couleur verte et insérez les calculs dans les cellules bleues."
       ],
-      "paragraphMode": false
+      "paragraphMode": false,
+      "exerciseTextPreamble": "Énoncé de l'exercice :",
+      "etapes": [
+        "Vous nommez les zones de couleur verte et insérez les calculs dans les cellules bleues."
+      ]
     },
     {
       "id": "excel-ex-157",
@@ -16695,10 +16735,14 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Cas diagramme de GANTT Simple",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Cas diagramme de GANTT Simple.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Créez un tableau de référence contenant les colonnes Étape du projet, Date de début, Durée en jour et Date de fin.",
+        "Calculez la date de fin de chaque étape.",
+        "Faites démarrer chaque nouvelle étape à partir de la date de fin de l'étape précédente.",
+        "Insérez un histogramme empilé à partir des colonnes A et B.",
+        "Ajoutez ensuite la durée via \"Sélectionner des données\", puis masquez la première série avec l'option \"Sans remplissage\".",
+        "Inversez l'ordre de l'axe vertical.",
+        "Ajustez les bornes minimale et maximale de l'axe horizontal avec des valeurs numériques cohérentes.",
+        "Améliorez la présentation générale du diagramme."
       ],
       "levelLabel": "Expert",
       "scrape": {
@@ -16720,17 +16764,25 @@ window.EXCEL_ATELIER_DATA = {
       "section": "complets",
       "moduleSlug": "cas-gantt-simple",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Cas diagramme de GANTT Simple.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Créez un tableau de référence contenant les colonnes Étape du projet, Date de début, Durée en jour et Date de fin.",
+        "Calculez la date de fin de chaque étape.",
+        "Faites démarrer chaque nouvelle étape à partir de la date de fin de l'étape précédente.",
+        "Insérez un histogramme empilé à partir des colonnes A et B.",
+        "Ajoutez ensuite la durée via \"Sélectionner des données\", puis masquez la première série avec l'option \"Sans remplissage\".",
+        "Inversez l'ordre de l'axe vertical.",
+        "Ajustez les bornes minimale et maximale de l'axe horizontal avec des valeurs numériques cohérentes.",
+        "Améliorez la présentation générale du diagramme."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Cas diagramme de GANTT Simple.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Créez un tableau de référence contenant les colonnes Étape du projet, Date de début, Durée en jour et Date de fin.",
+        "Calculez la date de fin de chaque étape.",
+        "Faites démarrer chaque nouvelle étape à partir de la date de fin de l'étape précédente.",
+        "Insérez un histogramme empilé à partir des colonnes A et B.",
+        "Ajoutez ensuite la durée via \"Sélectionner des données\", puis masquez la première série avec l'option \"Sans remplissage\".",
+        "Inversez l'ordre de l'axe vertical.",
+        "Ajustez les bornes minimale et maximale de l'axe horizontal avec des valeurs numériques cohérentes.",
+        "Améliorez la présentation générale du diagramme."
       ],
       "originalInstructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas diagramme de GANTT Simple.",
@@ -16740,7 +16792,18 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "paragraphMode": false,
       "extraDownloadUrls": [],
-      "extraImages": []
+      "extraImages": [],
+      "exerciseTextPreamble": "Téléchargez le fichier de travail ci-contre.",
+      "etapes": [
+        "Créez un tableau de référence contenant les colonnes Étape du projet, Date de début, Durée en jour et Date de fin.",
+        "Calculez la date de fin de chaque étape.",
+        "Faites démarrer chaque nouvelle étape à partir de la date de fin de l'étape précédente.",
+        "Insérez un histogramme empilé à partir des colonnes A et B.",
+        "Ajoutez ensuite la durée via \"Sélectionner des données\", puis masquez la première série avec l'option \"Sans remplissage\".",
+        "Inversez l'ordre de l'axe vertical.",
+        "Ajustez les bornes minimale et maximale de l'axe horizontal avec des valeurs numériques cohérentes.",
+        "Améliorez la présentation générale du diagramme."
+      ]
     },
     {
       "id": "excel-ex-229",
