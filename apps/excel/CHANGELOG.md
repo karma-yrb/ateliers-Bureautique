@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.7.0...excel-v1.7.1) (2026-07-15)
+
+
+### Documentation
+
+* **audit:** prioritize removing app artifacts from git ([fd71356](https://github.com/karma-yrb/ateliers-Bureautique/commit/fd71356f7a2b28fbef44d5c39183dea7c7bed44d))
+* **repo:** clarify structure and app script roles ([057b693](https://github.com/karma-yrb/ateliers-Bureautique/commit/057b693d5d372f3447bec03158d8c60d25a60184))
+* **repo:** define repo conventions and remaining audit ([8b2347a](https://github.com/karma-yrb/ateliers-Bureautique/commit/8b2347a3d2eb7d60c4b2eb442bfe6303a9b5c4f0))
+* **sync:** document depot synchronization ([8432505](https://github.com/karma-yrb/ateliers-Bureautique/commit/843250546440162ec9acc26dcee9ff1d10d4c3fa))
+
 ## [1.7.0](///compare/excel-v1.6.0...excel-v1.7.0) (2026-07-15)
 
 
