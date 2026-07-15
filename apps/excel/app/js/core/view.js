@@ -149,6 +149,9 @@ class AtelierView {
     this.modalDragStartY = 0;
     this.modalScrollStartLeft = 0;
     this.modalScrollStartTop = 0;
+    this.imageViewerHost = null;
+    this.imageModalHome = this.imageModal ? this.imageModal.parentElement : null;
+    this.imageModalHomeNextSibling = this.imageModal ? this.imageModal.nextSibling : null;
     this.#ensureModalStage();
     this.#bindModalEvents();
   }
@@ -512,12 +515,12 @@ class AtelierView {
     }));
     for (const [index, btn] of buttons.entries()) {
       btn.addEventListener("click", () => {
-        this.openImageModal(galleryItems[index].src, galleryItems[index].alt, galleryItems, index);
+        this.openImageModal(galleryItems[index].src, galleryItems[index].alt, galleryItems, index, btn);
       });
       btn.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          this.openImageModal(galleryItems[index].src, galleryItems[index].alt, galleryItems, index);
+          this.openImageModal(galleryItems[index].src, galleryItems[index].alt, galleryItems, index, btn);
         }
       });
     }
@@ -549,12 +552,12 @@ class AtelierView {
     }));
     for (const [index, btn] of buttons.entries()) {
       btn.addEventListener("click", () => {
-        this.openImageModal(galleryItems[index].src, galleryItems[index].alt, galleryItems, index);
+        this.openImageModal(galleryItems[index].src, galleryItems[index].alt, galleryItems, index, btn);
       });
       btn.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          this.openImageModal(galleryItems[index].src, galleryItems[index].alt, galleryItems, index);
+          this.openImageModal(galleryItems[index].src, galleryItems[index].alt, galleryItems, index, btn);
         }
       });
     }
@@ -1050,7 +1053,7 @@ class AtelierView {
     });
   }
 
-  openImageModal(src, altText, galleryItems = null, galleryIndex = 0) {
+  openImageModal(src, altText, galleryItems = null, galleryIndex = 0, trigger = null) {
     if (!src || !this.imageModal || !this.imageModalImg) return;
     const normalizedItems = Array.isArray(galleryItems) && galleryItems.length
       ? galleryItems.filter((item) => item && item.src)
@@ -1058,9 +1061,16 @@ class AtelierView {
     const maxIndex = normalizedItems.length - 1;
     this.modalGalleryItems = normalizedItems;
     this.modalGalleryIndex = Math.max(0, Math.min(maxIndex, Number(galleryIndex) || 0));
+    const host = trigger && trigger.closest(".images-grid, .extra-wrap");
+    if (host) {
+      this.imageViewerHost = host;
+      host.classList.add("image-viewer-open");
+      host.appendChild(this.imageModal);
+    }
     this.#renderModalImage();
     this.imageModal.hidden = false;
     this.imageModal.setAttribute("aria-hidden", "false");
+    this.imageModalClose.focus({ preventScroll: true });
   }
 
   showPreviousModalImage() {
@@ -1079,6 +1089,13 @@ class AtelierView {
     if (!this.imageModal || !this.imageModalImg) return;
     this.imageModal.hidden = true;
     this.imageModal.setAttribute("aria-hidden", "true");
+    if (this.imageViewerHost) {
+      this.imageViewerHost.classList.remove("image-viewer-open");
+      this.imageViewerHost = null;
+    }
+    if (this.imageModalHome) {
+      this.imageModalHome.insertBefore(this.imageModal, this.imageModalHomeNextSibling);
+    }
     this.imageModalImg.removeAttribute("src");
     this.imageModalImg.alt = "";
     if (this.imageModalCaption) {
@@ -1129,9 +1146,9 @@ class AtelierView {
 
     if (this.modalZoom === 1) {
       this.modalBaseWidth = 0;
-      this.imageModalImg.style.maxWidth = "min(1200px, 94vw)";
-      this.imageModalImg.style.maxHeight = "90vh";
-      this.imageModalImg.style.width = "";
+      this.imageModalImg.style.maxWidth = "100%";
+      this.imageModalImg.style.maxHeight = "none";
+      this.imageModalImg.style.width = "100%";
       this.imageModalImg.style.height = "";
       this.imageModalImg.style.cursor = "zoom-in";
       this.imageModalStage.scrollLeft = 0;
