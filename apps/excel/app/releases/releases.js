@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.7.1",
-  "updatedAt": "2026-07-15T12:10:41.641Z",
+  "version": "1.7.2",
+  "updatedAt": "2026-07-15T13:36:00.566Z",
   "releases": [
+    {
+      "version": "1.7.2",
+      "tag": "excel-v1.7.2",
+      "date": "2026-07-15",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.14.2",
+          "breaking": false,
+          "hash": "7115058"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "250c4af"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel",
+          "description": "corriger les enonces critiques",
+          "breaking": false,
+          "hash": "ac00736"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.22.0",
+          "breaking": false,
+          "hash": "6712247"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.44",
+          "breaking": false,
+          "hash": "14a239f"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.7.1",
       "tag": "excel-v1.7.1",
