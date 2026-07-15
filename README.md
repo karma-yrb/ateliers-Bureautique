@@ -75,6 +75,8 @@ Chaque app garde seulement ce qui lui est propre :
 Le dossier `apps/*/app/` ne doit pas etre modifie a la main sauf cas exceptionnel documente.
 La source canonique reste `apps/*/{data,js,index.html,styles*.css,releases/,README.txt}` puis `npm run <app>:sync:app` recopie les elements publies vers `app/`.
 
+La politique detaillee de versionnement et de generation est documentee dans `docs/CONVENTIONS_REPO.md`.
+
 ## Activation / desactivation
 
 La V1 `actif / inactif` des modules et exercices est documentee dans :
