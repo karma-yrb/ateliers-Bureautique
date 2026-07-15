@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](///compare/excel-v1.6.0...excel-v1.7.0) (2026-07-15)
+
+
+### Features
+
+* **assets:** localize exercise source assets f09307c
+
 ## [1.6.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.5.8...excel-v1.6.0) (2026-07-13)
 
 
