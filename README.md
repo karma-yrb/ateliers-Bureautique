@@ -64,6 +64,17 @@ Chaque app garde seulement ce qui lui est propre :
 - `apps/*/js/app-config.js` pour les noms globaux et la configuration de stockage
 - quelques wrappers de scripts dans `apps/*/scripts/`
 
+## Conventions de structure
+
+- `docs/` contient la documentation durable du projet.
+- `reports/` contient les inventaires, exports et rapports regenerables.
+- `apps/*/app/` contient la version distribuable/publiee de chaque atelier.
+- `apps/*/README.txt` documente la source de travail et le flux de developpement.
+- `apps/*/app/README.txt` documente la version distribuable et son usage cote poste utilisateur.
+
+Le dossier `apps/*/app/` ne doit pas etre modifie a la main sauf cas exceptionnel documente.
+La source canonique reste `apps/*/{data,js,index.html,styles*.css,releases/,README.txt}` puis `npm run <app>:sync:app` recopie les elements publies vers `app/`.
+
 ## Activation / desactivation
 
 La V1 `actif / inactif` des modules et exercices est documentee dans :
@@ -110,6 +121,26 @@ Pour Excel, le flux standard suit maintenant la meme logique :
 - la source editable est `apps/excel/data/exercises.structured.json`
 - `npm run excel:build:data` regenere `apps/excel/data/exercises.js`
 - `npm run excel:sync:app` copie les donnees et fichiers distribues vers `apps/excel/app`
+
+Pour PowerPoint, le flux est similaire a Excel :
+
+- la source editable est `apps/powerpoint/data/exercises.structured.json`
+- `npm run powerpoint:build:data` regenere `apps/powerpoint/data/exercises.js`
+- `npm run powerpoint:sync:app` copie les donnees et fichiers distribues vers `apps/powerpoint/app`
+
+## Scripts par app
+
+Chaque dossier `apps/*/scripts/` contient trois familles de scripts :
+
+- scripts de flux courant : `build-data-js`, `sync-app`, `validate-encoding`, `repair-encoding`
+- scripts de publication : `run-release-all`, `release-all.sh`, `update-release-artifacts`, `validate-release-*`, `standard-version-*`
+- scripts de maintenance de contenu : `scripts/maintenance/*`
+
+Etat par atelier :
+
+- `apps/word/scripts/` : flux courant et publication seulement ; les anciens scripts de scraping/revision/audit ne sont plus conserves
+- `apps/excel/scripts/` : flux courant, publication et scripts de maintenance (`scrape`, `revise`, `audit`)
+- `apps/powerpoint/scripts/` : flux courant, publication et scripts de maintenance (`scrape`, `revise`, `audit`)
 
 ## Organisation cible
 

@@ -50,6 +50,7 @@ Le fichier maitre est :
 Une version tableur est generee pour travail manuel :
 
 - `reports/download-assets-inventory.xlsx`
+- `reports/sources-a-telecharger-par-exercice-v2.xlsx` pour le suivi manuel historique quand il est encore utile
 
 Les telechargements source sont centralises dans un dossier mere dedie :
 

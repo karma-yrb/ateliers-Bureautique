@@ -1,5 +1,8 @@
 Atelier PowerPoint (MVC)
 
+Ce fichier documente la source de travail dans `apps/powerpoint/`.
+Le fichier `app/README.txt` documente, lui, la version distribuable destinee au poste utilisateur.
+
 Application pedagogique PowerPoint issue du template Word.
 
 Source cible des exercices :
@@ -17,3 +20,8 @@ Flux standard :
 - modifier data/exercises.structured.json
 - npm run powerpoint:build:data -> regenere data/exercises.js pour le navigateur
 - npm run powerpoint:sync:app -> recopie les donnees vers app/data
+
+Scripts presents dans `scripts/` :
+- flux courant : `build-data-js`, `sync-app`, `validate-encoding`, `repair-encoding`
+- publication : `run-release-all`, `release-all.sh`, `update-release-artifacts`, `validate-release-*`, `standard-version-*`
+- maintenance de contenu : `maintenance/scrape-exercises.mjs`, `maintenance/revise-exercises.mjs`, `maintenance/audit-exercises.mjs`

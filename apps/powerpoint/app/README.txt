@@ -1,5 +1,8 @@
 Atelier PowerPoint (MVC)
 
+Ce fichier documente la version distribuable contenue dans `apps/powerpoint/app/`.
+Le fichier `../README.txt` documente la source de travail et les commandes de developpement.
+
 Application pedagogique PowerPoint issue du template Word.
 
 Source cible des exercices :

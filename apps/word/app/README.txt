@@ -1,5 +1,8 @@
 # README - Version distribuable (app)
 
+Ce fichier documente la version distribuable contenue dans `apps/word/app/`.
+Le fichier `../README.txt` documente la source de travail et les commandes de developpement.
+
 Cette version enregistre la progression dans un fichier utilisateur (pas en localStorage pour la progression).
 
 Structure a copier sur le poste cible :
