@@ -93,6 +93,7 @@ async function compareRecursive(srcPath, dstPath, relativePath = "") {
 
 async function validateAppSync(root) {
   const mismatches = [];
+  const allowedAppEntries = new Set(["data", "js", "releases", "README.txt", "deployment-config.json", "index.html", "styles.css", "styles-redesign-v2.css"]);
 
   for (const { src, dst } of DEFAULT_SYNC_ITEMS) {
     mismatches.push(
@@ -102,6 +103,16 @@ async function validateAppSync(root) {
         src,
       )).map((item) => `${src} -> ${dst}: ${item}`),
     );
+  }
+
+  const appRoot = path.join(root, "app");
+  if (await exists(appRoot)) {
+    const appEntries = await fs.readdir(appRoot);
+    for (const entry of appEntries) {
+      if (!allowedAppEntries.has(entry)) {
+        mismatches.push(`app/: ${entry} (fichier ou dossier orphelin dans app/)`);
+      }
+    }
   }
 
   return mismatches;

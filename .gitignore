@@ -1,6 +1,7 @@
 node_modules/
 backups/
 logs/
+**/logs/
 .trash/
 *.log
 .DS_Store
