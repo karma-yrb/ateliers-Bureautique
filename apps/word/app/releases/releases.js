@@ -1,7 +1,116 @@
 window.RELEASES_DATA = {
-  "version": "1.14.0",
-  "updatedAt": "2026-07-15T09:19:34.496Z",
+  "version": "1.14.1",
+  "updatedAt": "2026-07-15T12:10:29.209Z",
   "releases": [
+    {
+      "version": "1.14.1",
+      "tag": "word-v1.14.1",
+      "date": "2026-07-15",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version de maintenance.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "2a02f45"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "audit",
+          "description": "prioritize removing app artifacts from git",
+          "breaking": false,
+          "hash": "fd71356"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "repo",
+          "description": "define repo conventions and remaining audit",
+          "breaking": false,
+          "hash": "8b2347a"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "repo",
+          "description": "clarify structure and app script roles",
+          "breaking": false,
+          "hash": "057b693"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "repo",
+          "description": "separate durable docs from generated reports",
+          "breaking": false,
+          "hash": "8756078"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "repo",
+          "description": "clean generated artifacts and tighten app sync",
+          "breaking": false,
+          "hash": "470a8e7"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "sync",
+          "description": "document depot synchronization",
+          "breaking": false,
+          "hash": "8432505"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.21.0",
+          "breaking": false,
+          "hash": "be4b8f9"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.43",
+          "breaking": false,
+          "hash": "8b77a73"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.7.0",
+          "breaking": false,
+          "hash": "fc7820b"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 4,
+        "test": 0,
+        "chore": 6,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 10
+      }
+    },
     {
       "version": "1.14.0",
       "tag": "word-v1.14.0",
