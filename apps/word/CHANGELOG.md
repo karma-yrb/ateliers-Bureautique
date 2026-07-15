@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](///compare/word-v1.13.0...word-v1.14.0) (2026-07-15)
+
+
+### Features
+
+* **assets:** localize exercise source assets f09307c
+
 ## [1.13.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.12.8...word-v1.13.0) (2026-07-13)
 
 

@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.13.0",
-  "updatedAt": "2026-07-13T12:21:16.008Z",
+  "version": "1.14.0",
+  "updatedAt": "2026-07-15T09:19:34.496Z",
   "releases": [
+    {
+      "version": "1.14.0",
+      "tag": "word-v1.14.0",
+      "date": "2026-07-15",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "7b68094"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "assets",
+          "description": "localize exercise source assets",
+          "breaking": false,
+          "hash": "f09307c"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.20.0",
+          "breaking": false,
+          "hash": "c60e0d7"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.42",
+          "breaking": false,
+          "hash": "8522092"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.6.0",
+          "breaking": false,
+          "hash": "91e5669"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.13.0",
       "tag": "word-v1.13.0",
