@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.22.0",
-  "updatedAt": "2026-07-15T12:11:02.639Z",
+  "version": "1.23.0",
+  "updatedAt": "2026-07-15T13:36:23.635Z",
   "releases": [
+    {
+      "version": "1.23.0",
+      "tag": "bureautique-v1.23.0",
+      "date": "2026-07-15",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.45",
+          "breaking": false,
+          "hash": "e94afdb"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.7.2",
+          "breaking": false,
+          "hash": "789103a"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.14.2",
+          "breaking": false,
+          "hash": "7115058"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "250c4af"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "excel",
+          "description": "corriger les enonces critiques",
+          "breaking": false,
+          "hash": "ac00736"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.22.0",
       "tag": "bureautique-v1.22.0",
