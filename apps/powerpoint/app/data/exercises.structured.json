@@ -41,11 +41,11 @@
       "title": "Creation d'un diaporama simple",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/exercice-ppt-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ENOJcwxYjWNTK3snK2MNXEfdexjPUbUI",
+      "docxUrl": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive1.JPG",
+      "imageResultat": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "Point de depart",
       "imageResultatCaption": "Resultat attendu",
       "description": "Construire un diaporama de 5 diapositives avec images, WordArt, tableau et graphique simple.",
@@ -68,25 +68,25 @@
         "extraImages": [],
         "enonceImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive1.JPG",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-001-scrape-enonce-1.jpg",
             "caption": "Diapositive 1"
           }
         ],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive2.JPG",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-001-scrape-resultat-1.jpg",
             "caption": "Diapositive 2"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive3.JPG",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-001-scrape-resultat-2.jpg",
             "caption": "Diapositive 3"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive4.JPG",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-001-scrape-resultat-3.jpg",
             "caption": "Diapositive 4"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-001/solution/Diapositive5.JPG",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-001-scrape-resultat-4.jpg",
             "caption": "Diapositive 5"
           }
         ]
@@ -129,11 +129,11 @@
       "title": "Creer un diaporama avec un masque",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/exercice-ppt-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1zMzBD-1jNFfmn33xzHeBVUTA1TD1_6f1",
+      "docxUrl": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002.pptx",
       "downloadUrl": null,
       "downloadLabel": null,
-      "imageEnonce": "https://www.clic-formation.net/images/07-power-point/ex-002/consigne.webp",
-      "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/01.jpg",
+      "imageEnonce": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-image-enonce.webp",
+      "imageResultat": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-image-resultat.jpg",
       "imageEnonceCaption": "Consigne",
       "imageResultatCaption": "Resultat attendu",
       "description": "Construire un masque de diapositive puis le decliner sur un diaporama de 10 pages.",
@@ -157,49 +157,49 @@
         "extraImages": [],
         "enonceImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/consigne.webp",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-enonce-1.webp",
             "caption": "Consigne generale"
           }
         ],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/01.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-1.jpg",
             "caption": "Diapositive 1"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/02.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-2.jpg",
             "caption": "Diapositive 2"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/03.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-3.jpg",
             "caption": "Diapositive 3"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/04.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-4.jpg",
             "caption": "Diapositive 4"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/05.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-5.jpg",
             "caption": "Diapositive 5"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/06.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-6.jpg",
             "caption": "Diapositive 6"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/07.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-7.jpg",
             "caption": "Diapositive 7"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/08.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-8.jpg",
             "caption": "Diapositive 8"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/09.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-9.jpg",
             "caption": "Diapositive 9"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-002/solution/10.jpg",
+            "src": "data/assets/powerpoint/bases-01-diaporamas/powerpoint-ex-002-scrape-resultat-10.jpg",
             "caption": "Diapositive 10"
           }
         ]
@@ -242,11 +242,11 @@
       "title": "Presentation avec boutons d'action et liens hypertexte",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/exercice-ppt-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1fA9jO61ZgU7_c-uf_cSgNuVALURyfElK",
+      "docxUrl": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001.pptx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive1.JPG",
+      "imageResultat": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "Arborescence",
       "imageResultatCaption": "Resultat attendu",
       "description": "Creer un diaporama non lineaire avec navigation interne et boutons d'action.",
@@ -268,45 +268,45 @@
         "extraImages": [],
         "enonceImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive1.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-enonce-1.jpg",
             "caption": "Diapositive 1"
           }
         ],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive2.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-1.jpg",
             "caption": "Diapositive 2"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive3.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-2.jpg",
             "caption": "Diapositive 3"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive4.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-3.jpg",
             "caption": "Diapositive 4"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive5.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-4.jpg",
             "caption": "Diapositive 5"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive6.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-5.jpg",
             "caption": "Diapositive 6"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive7.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-6.jpg",
             "caption": "Diapositive 7"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive8.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-7.jpg",
             "caption": "Diapositive 8"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive9.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-8.jpg",
             "caption": "Diapositive 9"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-003/ex-003-diapo/Diapositive10.JPG",
+            "src": "data/assets/powerpoint/bases-02-navigation-interactive/powerpoint-ex-001-scrape-resultat-9.jpg",
             "caption": "Diapositive 10"
           }
         ]
@@ -349,11 +349,11 @@
       "title": "Quiz avec animations et sons",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/exercice-ppt-5.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1zsl1IceLH2JZ0DO0iEBaP1JySEOBDMA_",
+      "docxUrl": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-001.pptx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-005/vue.webp",
+      "imageResultat": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-001-image-resultat.webp",
       "imageEnonceCaption": "Sujet",
       "imageResultatCaption": "Vue du resultat",
       "description": "Mettre en place un mini quiz avec trajectoires, messages caches, sons et lien externe.",
@@ -374,7 +374,7 @@
         "extraImages": [],
         "enonceImages": [
           {
-            "src": "https://www.clic-formation.net/images/site/3.png",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-001-scrape-enonce-1.png",
             "caption": "Support du sujet"
           }
         ],
@@ -417,11 +417,11 @@
       "title": "Assembler une maison avec des animations",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/exercice-ppt-6.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1CZgG4PPyexiG2p9yNzelRZFCRgKuDBFz",
+      "docxUrl": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-002.pptx",
       "downloadUrl": null,
       "downloadLabel": null,
-      "imageEnonce": "https://www.clic-formation.net/images/07-power-point/ex-006/avant.gif",
-      "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-006/apres.gif",
+      "imageEnonce": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-002-image-resultat.gif",
       "imageEnonceCaption": "Avant clic",
       "imageResultatCaption": "Apres clic",
       "description": "Creer des formes de maison hors champ puis les faire s'assembler au clic.",
@@ -442,13 +442,13 @@
         "extraImages": [],
         "enonceImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-006/avant.gif",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-002-scrape-enonce-1.gif",
             "caption": "Avant animation"
           }
         ],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-006/apres.gif",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-002-scrape-resultat-1.gif",
             "caption": "Maison assemblee"
           }
         ]
@@ -489,11 +489,11 @@
       "title": "Diaporama anime avec medias et SmartArt",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/exercice-ppt-7.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1zt8BUW98zl079o3SX1SRwI3vOtWTck30",
+      "docxUrl": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003.pptx",
       "downloadUrl": null,
       "downloadLabel": null,
-      "imageEnonce": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-01.webp",
-      "imageResultat": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-06.webp",
+      "imageEnonce": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003-image-resultat.webp",
       "imageEnonceCaption": "Detail des diapositives",
       "imageResultatCaption": "Resultat attendu",
       "description": "Travailler les apparitions decalees, le regroupement de formes, les medias et un SmartArt final.",
@@ -516,29 +516,29 @@
         "extraImages": [],
         "enonceImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-01.webp",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003-scrape-enonce-1.webp",
             "caption": "Diapositive 1"
           }
         ],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-02.webp",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003-scrape-resultat-1.webp",
             "caption": "Diapositive 2"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-03.webp",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003-scrape-resultat-2.webp",
             "caption": "Diapositive 3"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-04.webp",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003-scrape-resultat-3.webp",
             "caption": "Diapositive 4"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-05.webp",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003-scrape-resultat-4.webp",
             "caption": "Diapositive 5"
           },
           {
-            "src": "https://www.clic-formation.net/images/07-power-point/ex-007/visuels/diapo-06.webp",
+            "src": "data/assets/powerpoint/bases-03-animations-et-quiz/powerpoint-ex-003-scrape-resultat-5.webp",
             "caption": "Diapositive 6"
           }
         ]

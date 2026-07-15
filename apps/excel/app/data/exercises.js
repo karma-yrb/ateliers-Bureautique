@@ -1,5 +1,5 @@
 window.EXCEL_ATELIER_DATA = {
-  "generatedAt": "2026-07-02T14:08:44.876Z",
+  "generatedAt": "2026-07-13T12:28:16.741Z",
   "source": "https://www.clic-formation.net/tableur.html + live scrape",
   "modules": [
     {
@@ -422,14 +422,14 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": null,
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-1-arriere-plan.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/resultat-01.jpg",
+      "imageEnonce": "data/assets/excel/bases-01-prise-en-main/excel-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-01-prise-en-main/excel-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "Énoncé",
       "imageResultatCaption": "Résultat attendu",
       "description": "Prise en main Excel",
       "preamble": "La prise en main du logiciel concerne en premier lieu l'enregistrement de votre travail.",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Prise en main Excel.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -445,11 +445,11 @@ window.EXCEL_ATELIER_DATA = {
         "enonceImages": [],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-001/ex-001.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-001-scrape-resultat-1.jpg",
             "caption": "Etape 1 : Classeur enregistre et structure de base creee."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-01/ex-002/ex-002.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-001-scrape-resultat-2.jpg",
             "caption": "Etape 2 : Mise en forme finalisee selon le resultat attendu."
           }
         ]
@@ -457,7 +457,7 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "prise-en-main",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Prise en main Excel.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -465,7 +465,7 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Prise en main Excel.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -502,10 +502,8 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Gérer les feuilles dans excel",
       "preamble": "Par défaut, Excel vous propose 3 feuilles par classeur, l'exercice suivant vous les fait manipuler. Reproduisez les trois étapes dans votre tableur.",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
-        "Renommez les feuilles comme dans l'exemple et ajoutez des couleurs si votre version d'Excel le permet. Pour ajouter une feuille, cliquez sur le petit +.",
-        "Déplacez le week-end en fin de ligne. Pour déplacer une feuille, placez la souris sur le nom de la feuille, cliquez, gardez le clic et glissez-déposez.",
-        "Supprimez les deux jours du week-end. Pour supprimer une feuille, placez la souris sur le nom de la feuille, faites un clic droit puis choisissez Supprimer."
+        "Par défaut, Excel vous propose 3 feuilles par classeur, l'exercice suivant vous les fait manipuler.",
+        "Reproduisez les trois étapes dans votre tableur."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -517,15 +515,15 @@ window.EXCEL_ATELIER_DATA = {
         "enonceImages": [],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-001/competence-02-ex-011.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-002-scrape-resultat-1.jpg",
             "caption": "Étape 1 : Renommer les feuilles comme dans l'exemple et ajouter des couleurs si possible."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-001/competence-02-ex-012.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-002-scrape-resultat-2.jpg",
             "caption": "Étape 2 : Déplacer le week-end en fin de ligne par glisser-déposer."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-001/competence-02-ex-013.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-002-scrape-resultat-3.jpg",
             "caption": "Étape 3 : Supprimer les deux jours du week-end avec clic droit puis Supprimer."
           }
         ]
@@ -533,17 +531,13 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "prise-en-main",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
-        "Renommez les feuilles comme dans l'exemple et ajoutez des couleurs si votre version d'Excel le permet. Pour ajouter une feuille, cliquez sur le petit +.",
-        "Déplacez le week-end en fin de ligne. Pour déplacer une feuille, placez la souris sur le nom de la feuille, cliquez, gardez le clic et glissez-déposez.",
-        "Supprimez les deux jours du week-end. Pour supprimer une feuille, placez la souris sur le nom de la feuille, faites un clic droit puis choisissez Supprimer."
+        "Par défaut, Excel vous propose 3 feuilles par classeur, l'exercice suivant vous les fait manipuler.",
+        "Reproduisez les trois étapes dans votre tableur."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
-        "Renommez les feuilles comme dans l'exemple et ajoutez des couleurs si votre version d'Excel le permet. Pour ajouter une feuille, cliquez sur le petit +.",
-        "Déplacez le week-end en fin de ligne. Pour déplacer une feuille, placez la souris sur le nom de la feuille, cliquez, gardez le clic et glissez-déposez.",
-        "Supprimez les deux jours du week-end. Pour supprimer une feuille, placez la souris sur le nom de la feuille, faites un clic droit puis choisissez Supprimer."
+        "Par défaut, Excel vous propose 3 feuilles par classeur, l'exercice suivant vous les fait manipuler.",
+        "Reproduisez les trois étapes dans votre tableur."
       ],
       "originalInstructions": [
         "Par défaut, Excel vous propose 3 feuilles par classeur, l'exercice suivant vous les fait manipuler.",
@@ -561,7 +555,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Gérer l'affichage du classeur",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/interface-excel/exercice-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1HTcsGwU8yxBwAOXAQMXdBtcNIUmq1mdF",
+      "docxUrl": "data/assets/excel/bases-01-prise-en-main/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -571,11 +565,7 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Gérer l'affichage du classeur",
       "preamble": "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\".",
       "instructions": [
-        "Figer les colonnes et/ou les lignes : Présentez le fichier de façon à figer la ligne supérieure. Remarquez dans l'exemple le numéro des deux premières lignes.",
-        "Figer les colonnes et/ou les lignes : Même exercice que le précédent en figeant la première colonne.",
-        "Fractionner la page : Fractionnez la page de façon à avoir deux fois le même affichage comme ci-dessous.",
-        "Le zoom : Augmentez le zoom du fichier exemple à 180%.",
-        "Mode d'affichage : Affichez votre feuille en mode \"Saut de page\" et \"Mise en page\"."
+        "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -587,27 +577,27 @@ window.EXCEL_ATELIER_DATA = {
         "enonceImages": [],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-01/figer-ligne.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-003-scrape-resultat-1.jpg",
             "caption": "Figer les colonnes et/ou les lignes : Présentez le fichier de façon à figer la ligne supérieure. Remarquez dans l'exemple le numéro des deux premières lignes."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-02/figer-colonne.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-003-scrape-resultat-2.jpg",
             "caption": "Figer les colonnes et/ou les lignes : Même exercice que le précédent en figeant la première colonne."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-03/fractionner.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-003-scrape-resultat-3.jpg",
             "caption": "Fractionner la page : Fractionnez la page de façon à avoir deux fois le même affichage comme ci-dessous."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-04/zoom-180.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-003-scrape-resultat-4.jpg",
             "caption": "Le zoom : Augmentez le zoom du fichier exemple à 180%."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-05/mode-mise-en-page.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-003-scrape-resultat-5.jpg",
             "caption": "Mode d'affichage : Affichez votre feuille en mode \"Saut de page\" et \"Mise en page\"."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-05/mode-saut-de-page.jpg",
+            "src": "data/assets/excel/bases-01-prise-en-main/excel-ex-003-scrape-resultat-6.jpg",
             "caption": "Mode d'affichage : Affichez votre feuille en mode \"Saut de page\" et \"Mise en page\"."
           }
         ]
@@ -615,19 +605,11 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "prise-en-main",
       "consignes": [
-        "Figer les colonnes et/ou les lignes : Présentez le fichier de façon à figer la ligne supérieure. Remarquez dans l'exemple le numéro des deux premières lignes.",
-        "Figer les colonnes et/ou les lignes : Même exercice que le précédent en figeant la première colonne.",
-        "Fractionner la page : Fractionnez la page de façon à avoir deux fois le même affichage comme ci-dessous.",
-        "Le zoom : Augmentez le zoom du fichier exemple à 180%.",
-        "Mode d'affichage : Affichez votre feuille en mode \"Saut de page\" et \"Mise en page\"."
+        "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Figer les colonnes et/ou les lignes : Présentez le fichier de façon à figer la ligne supérieure. Remarquez dans l'exemple le numéro des deux premières lignes.",
-        "Figer les colonnes et/ou les lignes : Même exercice que le précédent en figeant la première colonne.",
-        "Fractionner la page : Fractionnez la page de façon à avoir deux fois le même affichage comme ci-dessous.",
-        "Le zoom : Augmentez le zoom du fichier exemple à 180%.",
-        "Mode d'affichage : Affichez votre feuille en mode \"Saut de page\" et \"Mise en page\"."
+        "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
       ],
       "originalInstructions": [
         "Cet exercice vous fera découvrir quelques réglages de l'onglet \"Affichage\"."
@@ -646,20 +628,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Gérer l'affichage des feuilles",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/interface-excel/exercice-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1rAxO_mZ0N9eJZclw2Q3ZjjuOQKrDjg_-",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1fJfpOjzZxvbFJJn4uk30iosMPHHKSEWr",
+      "docxUrl": "data/assets/excel/bases-01-prise-en-main/excel-ex-004.xlsx",
+      "downloadUrl": "data/assets/excel/bases-01-prise-en-main/excel-ex-004-annexe-1.xlsx",
       "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-06/ex-006-solution.jpg",
+      "imageResultat": "data/assets/excel/bases-01-prise-en-main/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Gérer l'affichage des feuilles",
       "preamble": "Énoncé de l'exercice :",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Gérer l'affichage des feuilles.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Dans le groupe \"Afficher\" vous retirez le Quadrillage, la Barre de Formules et les En-têtes."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -670,23 +649,17 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-10/ex-06/ex-006-solution.jpg"
+          "data/assets/excel/bases-01-prise-en-main/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "prise-en-main",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Gérer l'affichage des feuilles.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Dans le groupe \"Afficher\" vous retirez le Quadrillage, la Barre de Formules et les En-têtes."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Gérer l'affichage des feuilles.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Dans le groupe \"Afficher\" vous retirez le Quadrillage, la Barre de Formules et les En-têtes."
       ],
       "originalInstructions": [
         "Dans le groupe \"Afficher\" vous retirez le Quadrillage, la Barre de Formules et les En-têtes."
@@ -713,10 +686,10 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Saisir des données dans Excel",
       "preamble": "6 séries d'exercices de saisie dans votre tableur.",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Debutant",
@@ -729,27 +702,27 @@ window.EXCEL_ATELIER_DATA = {
         "enonceImages": [],
         "resultImages": [
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/ex-002-02.gif",
+            "src": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-001-scrape-resultat-1.gif",
             "caption": "Série 1 : Saisissez cette série de préfectures en utilisant uniquement la touche Entrée pour changer de cellule, sans utiliser la souris."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/ex-002-01.gif",
+            "src": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-001-scrape-resultat-2.gif",
             "caption": "Série 2 : Saisissez cette série de départements en utilisant uniquement la touche Tabulation pour changer de cellule, sans utiliser la souris."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/serie-3-signes.gif",
+            "src": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-001-scrape-resultat-3.gif",
             "caption": "Série 3 : Saisissez au moins une fois chaque signe qui vous sera utile dans Excel."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/ex-002-resultat.jpg",
+            "src": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-001-scrape-resultat-4.jpg",
             "caption": "Série 4 : Saisissez cette liste puis supprimez un mois sur deux, soit un à un, soit d'un seul coup en faisant une sélection multiple avec Ctrl + clic sur les numéros de lignes. Pour cette manipulation, la touche Suppr du clavier sera inopérante."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/003-initiale.jpg",
+            "src": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-001-scrape-resultat-5.jpg",
             "caption": "Série 5 : Incrémentez la liste des jours de la semaine."
           },
           {
-            "src": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-002/003-resultat.jpg",
+            "src": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-001-scrape-resultat-6.jpg",
             "caption": "Série 5 : Supprimez mardi et jeudi en une seule action."
           }
         ]
@@ -757,18 +730,18 @@ window.EXCEL_ATELIER_DATA = {
       "section": "bases",
       "moduleSlug": "saisir-des-donnees",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -792,16 +765,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Saisir des données dans Excel, construction d'un tabeau simple",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/saisir-des-donnees/exercice-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1qOimAcBDxqZJcrZ8jEflBZOJk2VH2Qy-",
+      "docxUrl": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-04/exo-04-resultat.jpg",
+      "imageResultat": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-002-image-resultat.jpg",
       "imageEnonceCaption": null,
       "imageResultatCaption": "",
       "description": "Saisir des données dans Excel, construction d'un tabeau simple",
       "preamble": "",
       "instructions": [
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel, construction d'un tabeau simple.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -815,13 +789,14 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-04/exo-04-resultat.jpg"
+          "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-002-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
       "section": "bases",
       "moduleSlug": "saisir-des-donnees",
       "consignes": [
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel, construction d'un tabeau simple.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -829,6 +804,7 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Saisir des données dans Excel, construction d'un tabeau simple.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -853,11 +829,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Saisir des données dans Excel et mise en couleur",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/saisir-des-donnees/exercice-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1M5zg_shEy0K6he7mPE6pcuEtex4SegnT",
+      "docxUrl": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003.gif",
+      "imageResultat": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-003-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Saisir des données dans Excel et mise en couleur",
@@ -875,7 +851,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003.gif"
+          "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-003-scrape-enonce-1.gif"
         ],
         "resultImages": []
       },
@@ -909,22 +885,18 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 4",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/saisir-des-donnees/exercice-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1w3afmvZKOzBFW9A2dI77xBjvxEdi0h6F",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1ZDbg_7h0U7RPJiRnDYW5J0s_yHcaKENS",
+      "docxUrl": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-004.xlsx",
+      "downloadUrl": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-004-annexe-1.xlsx",
       "downloadLabel": "Télécharger le 2ᵉ fichier",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-33/ex-001/ex-001.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-33/ex-001/ex-001-solution.gif",
+      "imageEnonce": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-004-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-004-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice 4",
       "preamble": "",
       "instructions": [
         "Vous téléchargez votre fichier de travail ici.",
-        "L'opération est relativement simple si vous avez bien suivi le support de la rubrique et bien fait apparaître le bouton FORMULAIRE.",
-        "soit dans le ruban.",
-        "soit dans la barre d'accès rapide.",
-        "Si ce n'est pas le cas.",
-        "il vous faut le faire.",
+        "L'opération est relativement simple si vous avez bien suivi le support de la rubrique et bien fait apparaître le bouton FORMULAIRE, soit dans le ruban, soit dans la barre d'accès rapide. Si ce n'est pas le cas, il vous faut le faire.",
         "Après avoir téléchargé le fichier de travail, vous ajoutez deux lignes via le formulaire. Pensez à sélectionner une cellule du tableau au minimum avant."
       ],
       "levelLabel": "Debutant",
@@ -935,31 +907,23 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-33/ex-001/ex-001.gif"
+          "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-004-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-33/ex-001/ex-001-solution.gif"
+          "data/assets/excel/bases-02-saisir-des-donnees/excel-ex-004-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
       "moduleSlug": "saisir-des-donnees",
       "consignes": [
         "Vous téléchargez votre fichier de travail ici.",
-        "L'opération est relativement simple si vous avez bien suivi le support de la rubrique et bien fait apparaître le bouton FORMULAIRE.",
-        "soit dans le ruban.",
-        "soit dans la barre d'accès rapide.",
-        "Si ce n'est pas le cas.",
-        "il vous faut le faire.",
+        "L'opération est relativement simple si vous avez bien suivi le support de la rubrique et bien fait apparaître le bouton FORMULAIRE, soit dans le ruban, soit dans la barre d'accès rapide. Si ce n'est pas le cas, il vous faut le faire.",
         "Après avoir téléchargé le fichier de travail, vous ajoutez deux lignes via le formulaire. Pensez à sélectionner une cellule du tableau au minimum avant."
       ],
       "criteria": [],
       "originalConsignes": [
         "Vous téléchargez votre fichier de travail ici.",
-        "L'opération est relativement simple si vous avez bien suivi le support de la rubrique et bien fait apparaître le bouton FORMULAIRE.",
-        "soit dans le ruban.",
-        "soit dans la barre d'accès rapide.",
-        "Si ce n'est pas le cas.",
-        "il vous faut le faire.",
+        "L'opération est relativement simple si vous avez bien suivi le support de la rubrique et bien fait apparaître le bouton FORMULAIRE, soit dans le ruban, soit dans la barre d'accès rapide. Si ce n'est pas le cas, il vous faut le faire.",
         "Après avoir téléchargé le fichier de travail, vous ajoutez deux lignes via le formulaire. Pensez à sélectionner une cellule du tableau au minimum avant."
       ],
       "originalInstructions": [
@@ -979,10 +943,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 1",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1cILXsAE9A_X-rgsnZT3ZOggHh6-epP-9",
+      "docxUrl": "data/assets/excel/bases-03-selection/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-002/ex-02.jpg",
+      "imageEnonce": "data/assets/excel/bases-03-selection/excel-ex-001-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -1001,7 +965,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-002/ex-02.jpg"
+          "data/assets/excel/bases-03-selection/excel-ex-001-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -1035,10 +999,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Sélection multiple dans excel",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1-US5wudQkmb_mekATiVoEqIPMyN31OXe",
+      "docxUrl": "data/assets/excel/bases-03-selection/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-003/ex-03.jpg",
+      "imageEnonce": "data/assets/excel/bases-03-selection/excel-ex-002-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -1056,7 +1020,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-003/ex-03.jpg"
+          "data/assets/excel/bases-03-selection/excel-ex-002-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -1087,22 +1051,18 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Sélectionner et dupliquer la cellule dans excel",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1epIGwDS-drsj3_PzanyiHfAja9wS1tYo",
+      "docxUrl": "data/assets/excel/bases-03-selection/excel-ex-003.zip",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-04/ex-04.jpg",
+      "imageEnonce": "data/assets/excel/bases-03-selection/excel-ex-003-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Sélectionner et dupliquer la cellule dans excel",
       "preamble": "",
       "instructions": [
-        "Telechargez puis ouvrez le fichier de travail de l'exercice.",
-        "Homogeneisez la largeur des colonnes et la hauteur des lignes pour obtenir une grille reguliere.",
-        "Mettez une cellule modele en fond noir avec le format attendu.",
-        "Dupliquez cette mise en forme sur les autres cellules necessaires avec le pinceau de reproduction de mise en forme.",
-        "Si besoin, utilisez aussi CTRL+C puis CTRL+V pour reproduire rapidement le format.",
-        "Comparez votre feuille avec l'image de reference et corrigez les ecarts."
+        "Reproduire cette mise en forme en un minimum de clic.",
+        "L'exercice consiste à Homogénéiser la hauteur et la largeur des lignes, d'appliquer un fond noir sur une cellule et de répliquer cette mise en forme. Les raccourcis clavier CTRL+C et CTRL+V peuvent, vous êtes d'un grand secours ou encore la fonction de \"reproduction de mise en forme\" (le pinceau)."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -1112,27 +1072,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-02/ex-04/ex-04.jpg"
+          "data/assets/excel/bases-03-selection/excel-ex-003-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
       "section": "bases",
       "moduleSlug": "selection",
       "consignes": [
-        "Telechargez puis ouvrez le fichier de travail de l'exercice.",
-        "Homogeneisez la largeur des colonnes et la hauteur des lignes pour obtenir une grille reguliere.",
-        "Mettez une cellule modele en fond noir avec le format attendu.",
-        "Dupliquez cette mise en forme sur les autres cellules necessaires avec le pinceau de reproduction de mise en forme.",
-        "Si besoin, utilisez aussi CTRL+C puis CTRL+V pour reproduire rapidement le format.",
-        "Comparez votre feuille avec l'image de reference et corrigez les ecarts."
+        "Reproduire cette mise en forme en un minimum de clic.",
+        "L'exercice consiste à Homogénéiser la hauteur et la largeur des lignes, d'appliquer un fond noir sur une cellule et de répliquer cette mise en forme. Les raccourcis clavier CTRL+C et CTRL+V peuvent, vous êtes d'un grand secours ou encore la fonction de \"reproduction de mise en forme\" (le pinceau)."
       ],
       "criteria": [],
       "originalConsignes": [
         "Reproduire cette mise en forme en un minimum de clic.",
-        "L'exercice consiste à Homogénéiser la hauteur et la largeur des lignes.",
-        "d'appliquer un fond noir sur une cellule et de répliquer cette mise en forme.",
-        "Les raccourcis clavier CTRL+C et CTRL+V peuvent.",
-        "vous êtes d'un grand secours ou encore la fonction de \"reproduction de mise en forme\" (le pinceau)."
+        "L'exercice consiste à Homogénéiser la hauteur et la largeur des lignes, d'appliquer un fond noir sur une cellule et de répliquer cette mise en forme. Les raccourcis clavier CTRL+C et CTRL+V peuvent, vous êtes d'un grand secours ou encore la fonction de \"reproduction de mise en forme\" (le pinceau)."
       ],
       "originalInstructions": [
         "Reproduire cette mise en forme en un minimum de clic.",
@@ -1150,11 +1103,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Sélection, suppression etinsertion de celulles dans excel",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1XJuQPPuVUW7p6XnVwRVteVss3wpHwVoG",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1MdVw4PjCKh9jgs5JamikqO_Gjy0WC1vj",
+      "docxUrl": "data/assets/excel/bases-03-selection/excel-ex-004.xlsx",
+      "downloadUrl": "data/assets/excel/bases-03-selection/excel-ex-004-annexe-1.xlsx",
       "downloadLabel": "Télécharger le 2ᵉ fichier",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-04/exo-04-resultat.jpg",
+      "imageResultat": "data/assets/excel/bases-03-selection/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Sélection, suppression etinsertion de celulles dans excel",
@@ -1174,7 +1127,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-04/exo-04-resultat.jpg"
+          "data/assets/excel/bases-03-selection/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -1210,11 +1163,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Sélectionner des cellules non-contigües dans excel",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-5.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=15jGwUcg6FC9BBuPv_BuxXtiYelp4fFxC",
+      "docxUrl": "data/assets/excel/bases-03-selection/excel-ex-005.zip",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-005/ex-005-selection-non-contigu.gif",
+      "imageResultat": "data/assets/excel/bases-03-selection/excel-ex-005-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Sélectionner des cellules non-contigües dans excel",
@@ -1232,7 +1185,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-03/ex-005/ex-005-selection-non-contigu.gif"
+          "data/assets/excel/bases-03-selection/excel-ex-005-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -1262,11 +1215,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Format et embelissement",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Od3iWAmm0QdM_P_wB8GWONmnmC45Uuy8",
+      "docxUrl": "data/assets/excel/bases-04-mise-en-forme/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-001/exo-01.jpg",
+      "imageResultat": "data/assets/excel/bases-04-mise-en-forme/excel-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Format et embelissement",
@@ -1287,7 +1240,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-001/exo-01.jpg"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -1326,11 +1279,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Format et embelissement",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1lqo8qY1XE3kUQa7mpRY1ejDxrRxJJk9m",
+      "docxUrl": "data/assets/excel/bases-04-mise-en-forme/excel-ex-002.zip",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-002/ex-002.webp",
+      "imageResultat": "data/assets/excel/bases-04-mise-en-forme/excel-ex-002-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Format et embelissement",
@@ -1352,7 +1305,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-002/ex-002.webp"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-002-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -1394,22 +1347,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Format automatique",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1r1iT9UpVKPdJJsRGNspT35xbFfHmc0_1",
+      "docxUrl": "data/assets/excel/bases-04-mise-en-forme/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003-3.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003-2.gif",
+      "imageEnonce": "data/assets/excel/bases-04-mise-en-forme/excel-ex-003-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-04-mise-en-forme/excel-ex-003-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Format automatique",
       "preamble": "",
       "instructions": [
-        "Telechargez puis ouvrez le fichier de travail.",
-        "Dupliquez la feuille de travail au moins 3 fois pour creer trois variantes.",
-        "Sur chaque copie, appliquez une mise en forme automatique differente (style de tableau, couleurs, bordures, police).",
-        "Verifiez que les donnees restent lisibles et coherentes apres chaque mise en forme.",
-        "Comparez vos resultats avec les images de reference et corrigez les ecarts.",
-        "Enregistrez votre classeur."
+        "Après avoir téléchargé le fichier de travail ci-contre, vous le dupliquez 3 fois au minimum et appliquez les mises en formes automatiques pour obtenir des résultats variés."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -1420,27 +1368,19 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003-3.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-003/ex-003-4.gif"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-003-scrape-resultat-1.gif",
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-003-scrape-resultat-2.gif",
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-003-scrape-resultat-3.gif"
         ]
       },
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Telechargez puis ouvrez le fichier de travail.",
-        "Dupliquez la feuille de travail au moins 3 fois pour creer trois variantes.",
-        "Sur chaque copie, appliquez une mise en forme automatique differente (style de tableau, couleurs, bordures, police).",
-        "Verifiez que les donnees restent lisibles et coherentes apres chaque mise en forme.",
-        "Comparez vos resultats avec les images de reference et corrigez les ecarts.",
-        "Enregistrez votre classeur."
+        "Après avoir téléchargé le fichier de travail ci-contre, vous le dupliquez 3 fois au minimum et appliquez les mises en formes automatiques pour obtenir des résultats variés."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Format automatique.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Après avoir téléchargé le fichier de travail ci-contre, vous le dupliquez 3 fois au minimum et appliquez les mises en formes automatiques pour obtenir des résultats variés."
       ],
       "originalInstructions": [
         "Après avoir téléchargé le fichier de travail ci-contre, vous le dupliquez 3 fois au minimum et appliquez les mises en formes automatiques pour obtenir des résultats variés."
@@ -1457,11 +1397,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Ecriture oblique dans une cellule",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ifgTIryCYAPWO55cUaaWNcIWWzP6F5lR",
+      "docxUrl": "data/assets/excel/bases-04-mise-en-forme/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-004/ex-004.jpg",
+      "imageResultat": "data/assets/excel/bases-04-mise-en-forme/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Ecriture oblique dans une cellule",
@@ -1478,7 +1418,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-004/ex-004.jpg"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -1509,11 +1449,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Histoire de bordure et de couleur de fond",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-5.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=12guTLsTNqDDIGSplJg32MqGkhAhlU7JC",
+      "docxUrl": "data/assets/excel/bases-04-mise-en-forme/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-005/ex-005.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-005/ex-005-solution.gif",
+      "imageEnonce": "data/assets/excel/bases-04-mise-en-forme/excel-ex-005-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-04-mise-en-forme/excel-ex-005-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Histoire de bordure et de couleur de fond",
@@ -1531,10 +1471,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-005/ex-005.gif"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-005-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-005/ex-005-solution.gif"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-005-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -1567,20 +1507,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Styles personnalisés",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-6.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1GI7Zaf_uVO1hL5Vk2zsBklbCjPOrjx9F",
+      "docxUrl": "data/assets/excel/bases-04-mise-en-forme/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-006/style-pesronnalise.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-006/ex-006.jpg",
+      "imageEnonce": "data/assets/excel/bases-04-mise-en-forme/excel-ex-006-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-04-mise-en-forme/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Styles personnalisés",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Styles personnalisés.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous réalisez ce tableau avec les styles personnalisés d'Excel prédéfinis dans votre version. Vous pouvez également créer votre propre style, c'est plus classe."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -1591,23 +1528,17 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-006/ex-006.jpg"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Styles personnalisés.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous réalisez ce tableau avec les styles personnalisés d'Excel prédéfinis dans votre version. Vous pouvez également créer votre propre style, c'est plus classe."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Styles personnalisés.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous réalisez ce tableau avec les styles personnalisés d'Excel prédéfinis dans votre version. Vous pouvez également créer votre propre style, c'est plus classe."
       ],
       "originalInstructions": [
         "Vous réalisez ce tableau avec les styles personnalisés d'Excel prédéfinis dans votre version. Vous pouvez également créer votre propre style, c'est plus classe."
@@ -1627,14 +1558,14 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-007/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-007/ex-004-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-04-mise-en-forme/excel-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-04-mise-en-forme/excel-ex-007-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Créer un Nouveau style de cellule",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Créer un Nouveau style de cellule.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -1648,16 +1579,16 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-007/ex-004.jpg"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-007-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-007/ex-004-solution.jpg"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Créer un Nouveau style de cellule.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -1665,7 +1596,7 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Créer un Nouveau style de cellule.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -1690,7 +1621,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme tableau (révision complète)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-8.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=166wQ4PXySGbeYHEYS9RcnFi-4icQ9rFv",
+      "docxUrl": "data/assets/excel/bases-04-mise-en-forme/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -1700,10 +1631,7 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Mise en forme tableau (révision complète)",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Mise en forme tableau (révision complète).",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
       "exerciseTabs": [
         {
@@ -1716,7 +1644,7 @@ window.EXCEL_ATELIER_DATA = {
             "Les bordures sont fines et noires."
           ],
           "resultImages": [
-            "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-1.gif"
+            "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-onglet-resultat-1-1.gif"
           ]
         },
         {
@@ -1729,7 +1657,7 @@ window.EXCEL_ATELIER_DATA = {
             "La police blanche, les couleurs, les largeurs et les hauteurs se règlent en un minimum d'actions."
           ],
           "resultImages": [
-            "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-2.gif"
+            "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-onglet-resultat-2-1.gif"
           ]
         },
         {
@@ -1743,7 +1671,7 @@ window.EXCEL_ATELIER_DATA = {
             "Fusionnez et centrez la ligne A sur la largeur du tableau."
           ],
           "resultImages": [
-            "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-3.gif"
+            "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-onglet-resultat-3-1.gif"
           ]
         },
         {
@@ -1756,7 +1684,7 @@ window.EXCEL_ATELIER_DATA = {
             "La police est en taille 48."
           ],
           "resultImages": [
-            "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-4.gif"
+            "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-onglet-resultat-4-1.gif"
           ]
         },
         {
@@ -1767,7 +1695,7 @@ window.EXCEL_ATELIER_DATA = {
             "Partie basse : bordure pointillée noire en ligne uniquement."
           ],
           "resultImages": [
-            "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-5.gif"
+            "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-onglet-resultat-5-1.gif"
           ]
         }
       ],
@@ -1780,27 +1708,21 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-1.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-3.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-4.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-008/ex-5.gif"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-scrape-resultat-1.gif",
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-scrape-resultat-2.gif",
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-scrape-resultat-3.gif",
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-scrape-resultat-4.gif",
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-008-scrape-resultat-5.gif"
         ]
       },
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Mise en forme tableau (révision complète).",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Mise en forme tableau (révision complète).",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
       ],
       "originalInstructions": [
         "Vous réalisez les modifications 5 tableaux comme aux échecs (en un minimum de coup)."
@@ -1819,22 +1741,21 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Création planning compact et imprimable",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-embelissement/format-embelissement-9.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=16V9il6B-gc1ByC8kjmBN5XwYnADlFJzf",
+      "docxUrl": "data/assets/excel/bases-04-mise-en-forme/excel-ex-009.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-009/ex-009.webp",
+      "imageResultat": "data/assets/excel/bases-04-mise-en-forme/excel-ex-009-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Création planning compact et imprimable",
       "preamble": "",
       "instructions": [
-        "Ouvrez le fichier de travail. Si vous telechargez une archive ZIP de ressources, faites clic droit > Extraire tout... puis ouvrez le dossier de destination.",
-        "Masquez le quadrillage de la feuille pour obtenir une presentation propre.",
-        "Tracez une bordure exterieure large et blanche autour du planning.",
-        "Renseignez les jours et les heures, puis utilisez la poignee de recopie des que possible.",
-        "Appliquez les couleurs avec le pinceau de reproduction de mise en forme.",
-        "Comparez votre rendu a l'image de reference et ajustez les couleurs si necessaire."
+        "Quadrillage invisible.",
+        "Bordure large et blanche.",
+        "Les heures et jour de la semaine sont à distribuer avec la poignée de recopie quand c'est possible.",
+        "Les couleurs sont à mettre en place avec l'outil \"reproduction de mis en forme\".",
+        "Respecter les couleurs à peu près."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -1845,18 +1766,17 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-04/ex-009/ex-009.webp"
+          "data/assets/excel/bases-04-mise-en-forme/excel-ex-009-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
       "moduleSlug": "mise-en-forme",
       "consignes": [
-        "Ouvrez le fichier de travail. Si vous telechargez une archive ZIP de ressources, faites clic droit > Extraire tout... puis ouvrez le dossier de destination.",
-        "Masquez le quadrillage de la feuille pour obtenir une presentation propre.",
-        "Tracez une bordure exterieure large et blanche autour du planning.",
-        "Renseignez les jours et les heures, puis utilisez la poignee de recopie des que possible.",
-        "Appliquez les couleurs avec le pinceau de reproduction de mise en forme.",
-        "Comparez votre rendu a l'image de reference et ajustez les couleurs si necessaire."
+        "Quadrillage invisible.",
+        "Bordure large et blanche.",
+        "Les heures et jour de la semaine sont à distribuer avec la poignée de recopie quand c'est possible.",
+        "Les couleurs sont à mettre en place avec l'outil \"reproduction de mis en forme\".",
+        "Respecter les couleurs à peu près."
       ],
       "criteria": [],
       "originalConsignes": [
@@ -1885,8 +1805,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Insérer simplement des images ou icônes dans Excel via le menu \"Insertion\"-->Image",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1QVyJLeXKt4nZftGx2vJNKlAUMR-LL088",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1sNZaCEIB4IF0jGiXkFeb_3TmFOgoag9t",
+      "docxUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-001.xlsx",
+      "downloadUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-001-annexe-1.zip",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -1908,8 +1828,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/ex-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-001/ex-01-resultat.jpg"
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-001-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-001-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -1944,8 +1864,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Intégrer des illustrations, filigrane, pied de page et smart-art",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1u1zPKUuzNo1DY14BMZoGusFo4C9nBGmi",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=135BVS_acSVxsFuJQFj89IfbZYsxlN2hj",
+      "docxUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-002.xlsx",
+      "downloadUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-annexe-1.zip",
       "downloadLabel": "Telecharger les images (ZIP)",
       "imageEnonce": null,
       "imageResultat": null,
@@ -1970,17 +1890,17 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-1-arriere-plan.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-2-entete-1.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-2-entete-3.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/feuille-3-insertion-image.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/smart-art.webp"
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-enonce-1.webp",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-enonce-2.webp",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-enonce-3.webp",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-enonce-4.webp",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-enonce-5.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/resultat-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/resultat-02.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/resultat-03.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-002/resultat-04.jpg"
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-resultat-2.jpg",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-resultat-3.jpg",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-002-scrape-resultat-4.jpg"
         ]
       },
       "section": "bases",
@@ -2027,11 +1947,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Intégrer des illustrations et des formes",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-3.html",
-      "docxUrl": null,
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1ixB_H4da1DxB22CaIrJzX3LvBeDfO6sJ",
-      "downloadLabel": "Telecharger les images (ZIP)",
+      "docxUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-003.zip",
+      "downloadUrl": null,
+      "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-003/ex-03-resultat.jpg",
+      "imageResultat": "data/assets/excel/bases-05-integrer-une-image/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Intégrer des illustrations et des formes",
@@ -2049,7 +1969,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-003/ex-03-resultat.jpg"
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-003-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -2083,9 +2003,9 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Intégrer des illustrations via SMART-ART",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-4.html",
-      "docxUrl": null,
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1zbsowcWOV-HdbMrtPovhceL0LA_dqWBp",
-      "downloadLabel": "Telecharger les ressources (ZIP)",
+      "docxUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-004.zip",
+      "downloadUrl": null,
+      "downloadLabel": "",
       "imageEnonce": null,
       "imageResultat": null,
       "imageEnonceCaption": null,
@@ -2093,12 +2013,10 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Intégrer des illustrations via SMART-ART",
       "preamble": "",
       "instructions": [
-        "Telechargez puis ouvrez le fichier de travail (decompressez l'archive ZIP si necessaire via clic droit > Extraire tout...).",
-        "Inserez un SmartArt adapte au modele (menu Insertion > SmartArt), puis renseignez les textes.",
-        "Ajustez la mise en forme du SmartArt (couleurs, styles, tailles) pour vous rapprocher du rendu attendu.",
-        "Ajoutez les illustrations demandees et placez-les correctement dans la composition.",
-        "Verifiez l'alignement global et les espacements avant validation.",
-        "Terminez par l'insertion d'icones (menu Insertion > Icones), puis redimensionnez et recolorez-les pour finaliser la maquette."
+        "Construisez la structure principale du classeur a partir de cet objectif: Intégrer des illustrations via SMART-ART.",
+        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
+        "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2109,28 +2027,26 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/smart-art-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/smart-art-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04-02.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-004/ex-04-03.jpg"
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-004-scrape-resultat-1.gif",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-004-scrape-resultat-2.jpg",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-004-scrape-resultat-3.gif",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-004-scrape-resultat-4.jpg",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-004-scrape-resultat-5.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "integrer-une-image",
       "consignes": [
-        "Telechargez puis ouvrez le fichier de travail (decompressez l'archive ZIP si necessaire via clic droit > Extraire tout...).",
-        "Inserez un SmartArt adapte au modele (menu Insertion > SmartArt), puis renseignez les textes.",
-        "Ajustez la mise en forme du SmartArt (couleurs, styles, tailles) pour vous rapprocher du rendu attendu.",
-        "Ajoutez les illustrations demandees et placez-les correctement dans la composition.",
-        "Verifiez l'alignement global et les espacements avant validation.",
-        "Terminez par l'insertion d'icones (menu Insertion > Icones), puis redimensionnez et recolorez-les pour finaliser la maquette."
+        "Construisez la structure principale du classeur a partir de cet objectif: Intégrer des illustrations via SMART-ART.",
+        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
+        "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Intégrer des illustrations via SMART-ART.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -2153,11 +2069,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Capture écran direct depuis Excel",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-5.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1UEgs8lRwt5Rqs0CMmO_IiPcXiwI8fXi8",
+      "docxUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-005/ex-005.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-005/ex-005-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-05-integrer-une-image/excel-ex-005-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-05-integrer-une-image/excel-ex-005-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Capture écran direct depuis Excel",
@@ -2182,10 +2098,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-005/ex-005.webp"
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-005-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-005/ex-005-solution.webp"
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-005-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -2239,8 +2155,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Outils de mise en forme d'image",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/integrer-une-image/exercice-6.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1CEksGJBc6SZYCLr4T3cGj5exrIXxJU_z",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1N5mA7BfKpt_kVudhfbEH45RxLFEW9jQA",
+      "docxUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-006.xlsx",
+      "downloadUrl": "data/assets/excel/bases-05-integrer-une-image/excel-ex-006-annexe-1.zip",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -2251,7 +2167,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Outils de mise en forme d'image.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Debutant",
@@ -2263,8 +2179,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-006/image-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-08/ex-006/ex-006.jpg"
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-006-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-05-integrer-une-image/excel-ex-006-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -2272,14 +2188,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Outils de mise en forme d'image.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Outils de mise en forme d'image.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -2302,11 +2218,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Poignée de recopie (Poignée de recopie 1)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/poignee-de-recopie/exercice-1-poignee-de-recopie.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1IfagQDn64Z5t0hYGlj5dNi_NHBZ6mCFp",
+      "docxUrl": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-001/ex-001-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-001-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Poignée de recopie",
@@ -2324,10 +2240,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-001/ex-001.webp"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-001/ex-001-solution.webp"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-001-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -2364,13 +2280,12 @@ window.EXCEL_ATELIER_DATA = {
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-002/ex-002.gif",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-002-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Fusionner A1 et B1 jusqu'à la ligne 3 avec la poignée de recopie.",
         "Fusionner C1-->C3.",
         "Insérer les prénoms et les fond de couleur des cellules.",
@@ -2387,13 +2302,12 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-002/ex-002.gif"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-002-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Fusionner A1 et B1 jusqu'à la ligne 3 avec la poignée de recopie.",
         "Fusionner C1-->C3.",
         "Insérer les prénoms et les fond de couleur des cellules.",
@@ -2403,7 +2317,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Fusionner A1 et B1 jusqu'à la ligne 3 avec la poignée de recopie.",
         "Fusionner C1-->C3.",
         "Insérer les prénoms et les fond de couleur des cellules.",
@@ -2434,20 +2347,21 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-003/ex-003-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-003-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Ouvrez Excel et creez un classeur vierge.",
-        "Observez l'image d'enonce pour reproduire la structure du tableau (emplacement des titres, lignes et colonnes).",
-        "Saisissez A3 = 1,00 EUR et A4 = 1,50 EUR, puis etendez la serie vers le bas jusqu'a 10,00 EUR avec la poignee de recopie.",
-        "Saisissez B2 = 10% et C2 = 20%, puis etendez vers la droite jusqu'a 50%.",
-        "En B3, saisissez la formule de calcul du montant, puis recopiez-la vers la droite et vers le bas avec la poignee de recopie.",
-        "Comparez ensuite votre feuille a l'image de resultat et corrigez les ecarts de format ou de formule.",
-        "Enregistrez le fichier une fois le rendu conforme."
+        "cellules à saisir maximum, à faire en moins d'une minute.",
+        "A3 : Saisir 1 (format euro).",
+        "A4 : Saisir 1,50 (format euro).",
+        "Sélectionner A3 et A4 : tirer vers le bas jusqu'à 10,00€.",
+        "B2 : Saisir 10%.",
+        "C2 : Saisir 20%.",
+        "Sélectionner B2 et C2 : tirer vers la droite jusqu'à 50%.",
+        "En B3, vous trouvez la formule qui va calculer les montants verticalement puis horizontalement (une seule saisie donc en B3) avec la poignée de recopie."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2458,23 +2372,23 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-003/ex-003-solution.webp"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-003-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Ouvrez Excel et creez un classeur vierge.",
-        "Observez l'image d'enonce pour reproduire la structure du tableau (emplacement des titres, lignes et colonnes).",
-        "Saisissez A3 = 1,00 EUR et A4 = 1,50 EUR, puis etendez la serie vers le bas jusqu'a 10,00 EUR avec la poignee de recopie.",
-        "Saisissez B2 = 10% et C2 = 20%, puis etendez vers la droite jusqu'a 50%.",
-        "En B3, saisissez la formule de calcul du montant, puis recopiez-la vers la droite et vers le bas avec la poignee de recopie.",
-        "Comparez ensuite votre feuille a l'image de resultat et corrigez les ecarts de format ou de formule.",
-        "Enregistrez le fichier une fois le rendu conforme."
+        "cellules à saisir maximum, à faire en moins d'une minute.",
+        "A3 : Saisir 1 (format euro).",
+        "A4 : Saisir 1,50 (format euro).",
+        "Sélectionner A3 et A4 : tirer vers le bas jusqu'à 10,00€.",
+        "B2 : Saisir 10%.",
+        "C2 : Saisir 20%.",
+        "Sélectionner B2 et C2 : tirer vers la droite jusqu'à 50%.",
+        "En B3, vous trouvez la formule qui va calculer les montants verticalement puis horizontalement (une seule saisie donc en B3) avec la poignée de recopie."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "cellules à saisir maximum, à faire en moins d'une minute.",
         "A3 : Saisir 1 (format euro).",
         "A4 : Saisir 1,50 (format euro).",
@@ -2510,18 +2424,17 @@ window.EXCEL_ATELIER_DATA = {
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-004/004.jpg",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Ouvrez Excel et creez un classeur vierge.",
-        "Reproduisez la trame du tableau a l'aide de la poignee de recopie (series, numerotation et formats).",
-        "Inserez l'image \"coccinelle\" via Insertion > Images > Cet appareil, puis placez-la dans la zone indiquee par le modele.",
-        "Inserez ensuite le \"logo Louis Braille\" de la meme maniere, puis ajustez sa taille pour garder une mise en page lisible.",
-        "Alignez les deux images avec les cellules (menu Format de l'image > Aligner) et verifiez qu'elles ne masquent pas les donnees.",
-        "Comparez au resultat attendu puis corrigez les ecarts avant d'enregistrer."
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
+        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
+        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
+        "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2532,22 +2445,21 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-004/004.jpg"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Ouvrez Excel et creez un classeur vierge.",
-        "Reproduisez la trame du tableau a l'aide de la poignee de recopie (series, numerotation et formats).",
-        "Inserez l'image \"coccinelle\" via Insertion > Images > Cet appareil, puis placez-la dans la zone indiquee par le modele.",
-        "Inserez ensuite le \"logo Louis Braille\" de la meme maniere, puis ajustez sa taille pour garder une mise en page lisible.",
-        "Alignez les deux images avec les cellules (menu Format de l'image > Aligner) et verifiez qu'elles ne masquent pas les donnees.",
-        "Comparez au resultat attendu puis corrigez les ecarts avant d'enregistrer."
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
+        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
+        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
+        "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -2576,18 +2488,17 @@ window.EXCEL_ATELIER_DATA = {
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-005/ex-005-solution.jpg",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-005-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Ouvrez Excel et creez un classeur vierge (ou ouvrez le fichier de travail fourni).",
-        "Si une archive ZIP est fournie, decompressez-la une seule fois via clic droit > Extraire tout... puis utilisez les fichiers extraits.",
-        "Realisez le tableau en utilisant la poignee de recopie pour accelerer la saisie.",
-        "Appliquez la mise en forme demandee (alignement, formats de cellule, bordures).",
-        "Comparez votre feuille avec l'image de resultat et corrigez les ecarts.",
-        "Enregistrez le classeur final."
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
+        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
+        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
+        "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2598,22 +2509,21 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-005/ex-005-solution.jpg"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Ouvrez Excel et creez un classeur vierge (ou ouvrez le fichier de travail fourni).",
-        "Si une archive ZIP est fournie, decompressez-la une seule fois via clic droit > Extraire tout... puis utilisez les fichiers extraits.",
-        "Realisez le tableau en utilisant la poignee de recopie pour accelerer la saisie.",
-        "Appliquez la mise en forme demandee (alignement, formats de cellule, bordures).",
-        "Comparez votre feuille avec l'image de resultat et corrigez les ecarts.",
-        "Enregistrez le classeur final."
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
+        "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
+        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
+        "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Poignée de recopie.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -2642,13 +2552,12 @@ window.EXCEL_ATELIER_DATA = {
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-006/ex-006.jpg",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Poignée de recopie",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous réalisez le tableau ci-dessous.",
         "En saisissant 8 cellules avec le bon format de cellule, ça devrait suffire…c'est parti !!"
       ],
@@ -2661,19 +2570,17 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-006/ex-006.jpg"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous réalisez le tableau ci-dessous.",
         "En saisissant 8 cellules avec le bon format de cellule, ça devrait suffire…c'est parti !!"
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous réalisez le tableau ci-dessous.",
         "En saisissant 8 cellules avec le bon format de cellule, ça devrait suffire…c'est parti !!"
       ],
@@ -2693,11 +2600,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Poignée de recopie (Poignée de recopie 7)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/poignee-de-recopie/exercice-7-poigne-de-recopie.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1jDB0HkXvAmItSQtbhftWweGFUmMQfUeR",
+      "docxUrl": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-007/ex-007-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-007/ex-007-resultat.gif",
+      "imageEnonce": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-007-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Poignée de recopie",
@@ -2716,10 +2623,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-007/ex-007-enonce.gif"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-007-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-007/ex-007-resultat.gif"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-007-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -2755,11 +2662,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Liste personnalisable",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/poignee-de-recopie/exercice-8-liste-personnalisable.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1bcbVK1IFhEaJezWgEuoLBXduhCle9TwO",
+      "docxUrl": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-008/tuto-liste-personnalisee.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-008/ex02.gif",
+      "imageEnonce": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-008-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-008-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Liste personnalisable",
@@ -2781,7 +2688,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-008/ex02.gif"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-008-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -2827,18 +2734,17 @@ window.EXCEL_ATELIER_DATA = {
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009-resultat.webp",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-009-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Liste personnalisable via le web",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Objectif : Exploiter les données depuis internet pour les intégrer dans une liste personnalisable.",
-        "Vous recuperez les capitales asiatiques depuis le site web propose puis vous les importez dans vos listes personnalisees.",
-        "Si le copier-coller depuis internet pose probleme (liens ou cellules grisees), collez d'abord dans le Bloc-notes puis recollez dans Excel.",
-        "Creez ensuite la liste personnalisee via Fichier > Options > Options avancees > Modifier les listes personnalisees.",
-        "Testez la liste sur une feuille vierge avec la poignee de recopie, puis comparez au resultat attendu."
+        "Vous récupérez sur ce site internet les Capitales asiatiques et vous les importées dans vos listes personnalisées.",
+        "Si le copier-coller depuis internet vous pose un problème (liens et cellules grisées), vous passez le texte (via copier-coller) par le bloc note puis Excel.",
+        "Vue page web.",
+        "Vue Excel après le bloc-note."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -2847,26 +2753,24 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009-vue-excel.webp"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-009-scrape-extra-1.webp"
         ],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-009/ex-009-resultat.webp"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-009-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
       "moduleSlug": "poignee-de-recopie",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Objectif : Exploiter les données depuis internet pour les intégrer dans une liste personnalisable.",
-        "Vous recuperez les capitales asiatiques depuis le site web propose puis vous les importez dans vos listes personnalisees.",
-        "Si le copier-coller depuis internet pose probleme (liens ou cellules grisees), collez d'abord dans le Bloc-notes puis recollez dans Excel.",
-        "Creez ensuite la liste personnalisee via Fichier > Options > Options avancees > Modifier les listes personnalisees.",
-        "Testez la liste sur une feuille vierge avec la poignee de recopie, puis comparez au resultat attendu."
+        "Vous récupérez sur ce site internet les Capitales asiatiques et vous les importées dans vos listes personnalisées.",
+        "Si le copier-coller depuis internet vous pose un problème (liens et cellules grisées), vous passez le texte (via copier-coller) par le bloc note puis Excel.",
+        "Vue page web.",
+        "Vue Excel après le bloc-note."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Objectif : Exploiter les données depuis internet pour les intégrer dans une liste personnalisable.",
         "Vous récupérez sur ce site internet les Capitales asiatiques et vous les importées dans vos listes personnalisées.",
         "Si le copier-coller depuis internet vous pose un problème (liens et cellules grisées), vous passez le texte (via copier-coller) par le bloc note puis Excel.",
@@ -2892,11 +2796,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Faire un planning rapidement",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/poignee-de-recopie/exercice-10-poignee-de-recopie.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=18z59WvTJ2R6QKoUD1_4kdSoyMh9rq3S3",
+      "docxUrl": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-010.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-010/ex-010-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-010/ex010-solution.gif",
+      "imageEnonce": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-010-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-010-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Faire un planning rapidement",
@@ -2917,10 +2821,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-010/ex-010-enonce.gif"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-010-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-06/ex-010/ex010-solution.gif"
+          "data/assets/excel/bases-06-poignee-de-recopie/excel-ex-010-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -2962,11 +2866,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 1)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-1-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=13nacmj7Y2PeEZ3H3ZMEZQDfOZ1tXXOz-",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-001/ex-001-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-07-faire-une-addition/excel-ex-001-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Addition",
@@ -2985,10 +2889,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-001/ex-001.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-001/ex-001-solution.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-001-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -3024,11 +2928,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 2)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-2-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1_eTpL_icL2CLV896bAnY9rUdyzTq7SU0",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-002/ex-002-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-002-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-07-faire-une-addition/excel-ex-002-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Addition",
@@ -3045,10 +2949,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-002/ex-002.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-002-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-002/ex-002-solution.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-002-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -3078,7 +2982,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 3)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-3-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1hRmVV8Nrxp4w5esVS9dkCaL4qfFBfCX4",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
@@ -3104,8 +3008,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-003/ex-003.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-003/ex-003-solution.gif"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-003-scrape-resultat-1.gif",
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-003-scrape-resultat-2.gif"
         ]
       },
       "section": "bases",
@@ -3149,11 +3053,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 4)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-4-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1v3trwTAth4ZCznfIkSJSkhJDjMcvwYM0",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-004/ex-004-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-004-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-07-faire-une-addition/excel-ex-004-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Addition",
@@ -3171,10 +3075,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-004/ex-004.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-004-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-004/ex-004-solution.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-004-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -3207,11 +3111,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 5)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-5-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=139siC-8FXpXO74Pyx-J63IMZDaQSrHQ4",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-005/ex-05.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-005/ex-05-resultat.jpg",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-07-faire-une-addition/excel-ex-005-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Addition",
@@ -3228,10 +3132,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-005/ex-05.jpg"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-005/ex-05-resultat.jpg"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -3261,11 +3165,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 6)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-6-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1y2Od9X9nzSg3q2HB8PQOXaZWDXgY5Ehh",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-006/ex-006.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-006/ex-006-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-006-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-07-faire-une-addition/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Addition",
@@ -3282,10 +3186,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-006/ex-006.gif"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-006-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-006/ex-006-solution.jpg"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -3315,11 +3219,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 7)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-7-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=12BKjHadCd3gZpSp-i4rmYZ2Saj6ikEii",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-007/ex-007.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-007/ex-007-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-007-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-07-faire-une-addition/excel-ex-007-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Addition",
@@ -3340,7 +3244,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-007/ex-007-solution.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-007-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -3379,10 +3283,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 8)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-8-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1G33ONsIpyFS1Joygz2l8HF05CHu9vERd",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-008/ex-008.webp",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-008-image-enonce.webp",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -3403,11 +3307,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-008/ex-008-solution.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-008-scrape-extra-1.webp"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-008/ex-008.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-008/ex-008-solution.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-008-scrape-enonce-1.webp",
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-008-scrape-enonce-2.webp"
         ],
         "resultImages": []
       },
@@ -3450,11 +3354,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 9)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-9-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1xz3_8wDWgNwNGb4PooiLZuOLj0BL0wdA",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-009.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-009/ex-009.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-009/ex-009-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-009-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-07-faire-une-addition/excel-ex-009-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Addition",
@@ -3479,10 +3383,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-009/ex-009.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-009-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-009/ex-009-solution.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-009-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -3536,11 +3440,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Addition (Faire une Addition 10)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/addition/exercices-10-addition.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1MRW8wehTkF9xGokxfBabixjdCvWNPT7C",
+      "docxUrl": "data/assets/excel/bases-07-faire-une-addition/excel-ex-010.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-010/ex-010.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-010/ex-010-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-07-faire-une-addition/excel-ex-010-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-07-faire-une-addition/excel-ex-010-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Addition",
@@ -3562,10 +3466,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-010/ex-010.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-010-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-11/ex-010/ex-010-solution.webp"
+          "data/assets/excel/bases-07-faire-une-addition/excel-ex-010-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -3610,11 +3514,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Soustraction (Faire une Soustraction 1)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/soustraction/exercice-1-soustraction.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1KK0UPPxKLwXNckTAnIzmq47UsACkLSbx",
+      "docxUrl": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-001/ex-001-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-001-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Soustraction",
@@ -3633,10 +3537,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-001/ex-001.webp"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-001/ex-001-solution.webp"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-001-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -3672,11 +3576,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Soustraction (Faire une Soustraction 2)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/soustraction/exercice-2-soustraction.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Knp0TtJz6slvWdHIXFAGAqaszxr2p7XN",
+      "docxUrl": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-002/ex04.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-002/ex-102-02-resultat.jpg",
+      "imageEnonce": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-002-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Soustraction",
@@ -3695,10 +3599,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-002/ex04.jpg"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-002-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-002/ex-102-02-resultat.jpg"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -3734,11 +3638,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Soustraction (Faire une Soustraction 3)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/soustraction/exercice-3-soustraction.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=10Vt64zL-j4-9SMIwLIQoAkF5tt_pu6UI",
+      "docxUrl": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-003/ex-102-01-enonce.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-003/ex-102-01-resultat.jpg",
+      "imageEnonce": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Soustraction",
@@ -3761,10 +3665,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-003/ex-102-01-enonce.jpg"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-003-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-003/ex-102-01-resultat.jpg"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -3812,20 +3716,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Soustraction (Faire une Soustraction 4)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/soustraction/exercice-4-soustraction.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1arFJCB_ZsB3wynEOFmx8cifA7aRbtXWF",
+      "docxUrl": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-004/ex-004-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-004/ex-004-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-004-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Soustraction",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Complétez le tableau en calculant les totaux par atelier et le solde de production par mois."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -3835,26 +3736,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-004/ex-004-enonce.gif"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-004-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-004/ex-004-solution.jpg"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Complétez le tableau en calculant les totaux par atelier et le solde de production par mois."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Complétez le tableau en calculant les totaux par atelier et le solde de production par mois."
       ],
       "originalInstructions": [
         "Complétez le tableau en calculant les totaux par atelier et le solde de production par mois."
@@ -3871,20 +3766,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Soustraction (Faire une Soustraction 5)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/soustraction/exercice-5-soustraction.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1XOEMgzw3zDWMC1KLTIwWbd8ClGrKxdNk",
+      "docxUrl": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-005/ex-005-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-005/ex-005.jpg",
+      "imageEnonce": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-005-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-005-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Soustraction",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Après avoir calculé le total d'heure par personne, vous en déduisez le solde. Le format n'est pas requis."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -3894,26 +3786,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-005/ex-005-enonce.gif"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-005-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-005/ex-005.jpg"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Après avoir calculé le total d'heure par personne, vous en déduisez le solde. Le format n'est pas requis."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Après avoir calculé le total d'heure par personne, vous en déduisez le solde. Le format n'est pas requis."
       ],
       "originalInstructions": [
         "Après avoir calculé le total d'heure par personne, vous en déduisez le solde. Le format n'est pas requis."
@@ -3930,20 +3816,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Soustraction (Faire une Soustraction 6)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/soustraction/exercice-6-soustraction.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1pQzxQ50fQk1MWfw_dIfcMyG1q75yjR18",
+      "docxUrl": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-006/ex-006-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-006/ex-006.jpg",
+      "imageEnonce": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-006-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Soustraction",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Complétez le tableau en calculant les totaux par mois et le solde de livraisons."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -3953,26 +3836,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-006/ex-006-enonce.gif"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-006-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-006/ex-006.jpg"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Complétez le tableau en calculant les totaux par mois et le solde de livraisons."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Soustraction.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Complétez le tableau en calculant les totaux par mois et le solde de livraisons."
       ],
       "originalInstructions": [
         "Complétez le tableau en calculant les totaux par mois et le solde de livraisons."
@@ -3989,20 +3866,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice pour mettre en place une soustraction entre deux nombres dans excel",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/soustraction/exercice-7-soustraction.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=10ies_IUmYOMyX2c31bhKPZ5IxZ0lnnHS",
+      "docxUrl": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-007/ex-007.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-007/ex-007-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-007-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-007-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice pour mettre en place une soustraction entre deux nombres dans excel",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre en place une soustraction entre deux nombres dans excel.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Avec une soustraction que vous étirez vers le bas, vous calculez la différence en euros entre 2024 et 2025."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -4012,26 +3886,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-007/ex-007.webp"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-007-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-007/ex-007-solution.webp"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-007-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
       "moduleSlug": "faire-une-soustraction",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre en place une soustraction entre deux nombres dans excel.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Avec une soustraction que vous étirez vers le bas, vous calculez la différence en euros entre 2024 et 2025."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre en place une soustraction entre deux nombres dans excel.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Avec une soustraction que vous étirez vers le bas, vous calculez la différence en euros entre 2024 et 2025."
       ],
       "originalInstructions": [
         "Avec une soustraction que vous étirez vers le bas, vous calculez la différence en euros entre 2024 et 2025."
@@ -4048,11 +3916,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice pour mettre en place une soustraction entre deux nombres dans excel - Exercice 8",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/soustraction/exercice-8-soustraction.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1BnCVxq78nr3k94FKM_Y2-G8T5Z2_1X1L",
+      "docxUrl": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-008/ex-008.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-008/ex-008-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-008-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-008-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice pour mettre en place une soustraction entre deux nombres dans excel - Exercice 8",
@@ -4069,10 +3937,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-008/ex-008.webp"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-008-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-12/ex-008/ex-008-solution.webp"
+          "data/assets/excel/bases-08-faire-une-soustraction/excel-ex-008-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -4102,11 +3970,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Multiplication (Faire une Multiplication 1)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/multiplication/exercice-1-multiplication.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1DsqbiyJH4P4Sn2Dqe731ulBxHpjyrz6q",
+      "docxUrl": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-001/ex-001-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-001/ex-001-solution.gif",
+      "imageEnonce": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-001-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Multiplication",
@@ -4123,10 +3991,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-001/ex-001-enonce.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-001-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-001/ex-001-solution.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-001-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -4156,11 +4024,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Multiplication (Faire une Multiplication 2)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/multiplication/exercice-2-multiplication.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1MYAOvjPKSR6N00TImRXLtconI0v2s4iB",
+      "docxUrl": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-002/ex-002-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-002/ex-002-solution.gif",
+      "imageEnonce": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-002-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Multiplication",
@@ -4177,10 +4045,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-002/ex-002-enonce.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-002-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-002/ex-002-solution.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-002-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -4210,11 +4078,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Multiplication (Faire une Multiplication 3)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/multiplication/exercice-3-multiplication.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1dtaiHt3dMizP1yyoEU4fCZxxTyylE2Ro",
+      "docxUrl": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-003/ex-003-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-003/ex-003-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-003-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Multiplication",
@@ -4231,10 +4099,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-003/ex-003-enonce.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-003-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-003/ex-003-solution.jpg"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4264,11 +4132,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Multiplication (Faire une Multiplication 4)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/multiplication/exercice-4-multiplication.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Xb9bcUJ9hYQnEavkaFZTiBpgYyGqWixt",
+      "docxUrl": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-004/ex-004-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-004/ex-004-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-004-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Multiplication",
@@ -4285,10 +4153,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-004/ex-004-enonce.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-004-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-004/ex-004-solution.jpg"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4318,11 +4186,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Multiplication (Faire une Multiplication 5)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/multiplication/exercice-5-multiplication.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1GNWcKWui8jus250iVAenim7eOjY-bFH8",
+      "docxUrl": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-005/ex-005-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-005/ex-005-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-005-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-005-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Multiplication",
@@ -4339,10 +4207,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-005/ex-005-enonce.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-005-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-005/ex-005-solution.jpg"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4372,11 +4240,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Multiplication (Faire une Multiplication 6)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/multiplication/exercice-6-multiplication.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1CZRJyRLbnx9WrUFe7hFB9xQv7pP-oFy6",
+      "docxUrl": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-006/ex-006-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-006/ex-006-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-006-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Multiplication",
@@ -4394,10 +4262,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-006/ex-006-enonce.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-006-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-006/ex-006-solution.jpg"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4430,11 +4298,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Multiplication (Faire une Multiplication 7)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/multiplication/exercice-7-multiplication.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1e2SxvXrv3Zwv6569U6cf9j-SgQkTXWaA",
+      "docxUrl": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-007/ex-007-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-007/ex-007-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-007-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Multiplication",
@@ -4454,10 +4322,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-007/ex-007-enonce.gif"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-007-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-14/ex-007/ex-007-solution.jpg"
+          "data/assets/excel/bases-09-faire-une-multiplication/excel-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4496,20 +4364,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 1)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/division/exercice-1-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1wNxAWi0XiiZKPMXuFepohYKPEYNz-EmU",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-001/ex-001.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-001/ex-001-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-10-faire-une-division/excel-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-10-faire-une-division/excel-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous faites la division dans la colonne C pour trouver le chiffre d'affaires par personne."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -4519,26 +4384,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-001/ex-001.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-001-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-001/ex-001-solution.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous faites la division dans la colonne C pour trouver le chiffre d'affaires par personne."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous faites la division dans la colonne C pour trouver le chiffre d'affaires par personne."
       ],
       "originalInstructions": [
         "Vous faites la division dans la colonne C pour trouver le chiffre d'affaires par personne."
@@ -4555,8 +4414,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 2)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/division/exercice-2-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1dJss61MFs4mjnFJ_VuoYTfDmUr6WztjX",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1ME5qSmJ1eRKdzfxToJxpF4uUg90O-n7P",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-002.xlsx",
+      "downloadUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-002-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -4581,8 +4440,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-002/ex-002-solution.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-002-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-002-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -4626,11 +4485,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 3)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/division/exercice-3-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ZNXVDlvI0g76SXiILhoKu2mU237TQ_m5",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-003/ex-003.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-003/ex-003-soluce.jpg",
+      "imageEnonce": "data/assets/excel/bases-10-faire-une-division/excel-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-10-faire-une-division/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Division",
@@ -4648,10 +4507,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-003/ex-003.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-003-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-003/ex-003-soluce.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4684,11 +4543,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 4)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/division/exercice-4-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=12r4ieTZ5AWrnPbFPgasUTcrH4RG8sllU",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-004/ex-004-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-10-faire-une-division/excel-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-10-faire-une-division/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Division",
@@ -4705,10 +4564,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-004/ex-004.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-004/ex-004-solution.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4738,11 +4597,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 5)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/division/exercice-5-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1sEmUfxpGNwYxD2JfWZ0QUEW8w2lwZQAI",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-005/09-j.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-005/09-j-resultat.jpg",
+      "imageEnonce": "data/assets/excel/bases-10-faire-une-division/excel-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-10-faire-une-division/excel-ex-005-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Division",
@@ -4780,10 +4639,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-005/09-j.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-005/09-j-resultat.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4876,11 +4735,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 6)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/division/exercice-6-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1DKt44kxs4Awp3ipYGuA3M5FdJQORZJpm",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-006/09-i.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-006/09-i-solution.jpg",
+      "imageEnonce": "data/assets/excel/bases-10-faire-une-division/excel-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-10-faire-une-division/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Division",
@@ -4902,10 +4761,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-006/09-i.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-006-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-006/09-i-solution.jpg"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -4950,11 +4809,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 7)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/division/exercice-7-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=17Y8M0COPoJGBx_1gLm0rC1BtKI6P7sHo",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-007/ex-007.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-007/ex-007-solution.gif",
+      "imageEnonce": "data/assets/excel/bases-10-faire-une-division/excel-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-10-faire-une-division/excel-ex-007-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Division",
@@ -4973,10 +4832,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-007/ex-007.gif"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-007-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-007/ex-007-solution.gif"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-007-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -5012,20 +4871,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 8)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/division/exercice-8-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ldVJoFVSI9C0Z_QZvlKtlmOATusnCR-z",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-008/ex-008.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-008/ex-008-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-10-faire-une-division/excel-ex-008-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-10-faire-une-division/excel-ex-008-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "En D3:D21, vous devez déterminer à l'aide de la division quel est le rendement de production d'objet à l'heure. Le temps de réalisation d'un objet est donné à la MINUTE."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -5035,26 +4891,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-008/ex-008.webp"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-008-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-008/ex-008-solution.webp"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-008-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "En D3:D21, vous devez déterminer à l'aide de la division quel est le rendement de production d'objet à l'heure. Le temps de réalisation d'un objet est donné à la MINUTE."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "En D3:D21, vous devez déterminer à l'aide de la division quel est le rendement de production d'objet à l'heure. Le temps de réalisation d'un objet est donné à la MINUTE."
       ],
       "originalInstructions": [
         "En D3:D21, vous devez déterminer à l'aide de la division quel est le rendement de production d'objet à l'heure. Le temps de réalisation d'un objet est donné à la MINUTE."
@@ -5071,20 +4921,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Division (Faire une Division 9)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/division/exercice-9-division.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1kAD7o1cQfUThdNvD9fcEbNG-cqtVcFdD",
+      "docxUrl": "data/assets/excel/bases-10-faire-une-division/excel-ex-009.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-009/ex-009.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-009/ex-009-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-10-faire-une-division/excel-ex-009-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-10-faire-une-division/excel-ex-009-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Division",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "En D3:D20, vous devez déterminer, à l'aide de la division, le pourcentage de perte de chaque produit vendu par Fruits et Légumes du Languedoc 34."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -5094,26 +4941,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-009/ex-009.webp"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-009-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-13/ex-009/ex-009-solution.webp"
+          "data/assets/excel/bases-10-faire-une-division/excel-ex-009-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
       "moduleSlug": "faire-une-division",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "En D3:D20, vous devez déterminer, à l'aide de la division, le pourcentage de perte de chaque produit vendu par Fruits et Légumes du Languedoc 34."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Division.",
-        "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "En D3:D20, vous devez déterminer, à l'aide de la division, le pourcentage de perte de chaque produit vendu par Fruits et Légumes du Languedoc 34."
       ],
       "originalInstructions": [
         "En D3:D20, vous devez déterminer, à l'aide de la division, le pourcentage de perte de chaque produit vendu par Fruits et Légumes du Languedoc 34."
@@ -5130,10 +4971,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Pourcentage (Calculer des pourcentages 1)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-1-pourcentage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1GBR2n9Jh_ie15WAkdJ5N2ksxDIBTZdr_",
+      "docxUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-10.gif",
+      "imageEnonce": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-001-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -5154,11 +4995,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-10-soluce.jpg"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-001-scrape-extra-1.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-10.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-001/ex-10-soluce.jpg"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-001-scrape-enonce-1.gif",
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-001-scrape-enonce-2.jpg"
         ],
         "resultImages": []
       },
@@ -5201,8 +5042,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Pourcentage (Calculer des pourcentages 2)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-2-pourcentage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1cLWEv-Iw4Wx3CgzsT9RvT6gz5L3sO2ZV",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1wf3ERkF7KRJkRUCNS4vCO7fhcxsykKiy",
+      "docxUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-002.xlsx",
+      "downloadUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-002-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -5213,7 +5054,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Pourcentage.",
         "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Debutant",
@@ -5225,8 +5066,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-002/ex-09.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-002/ex-09-soluce.jpg"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-002-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-002-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -5234,14 +5075,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Pourcentage.",
         "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Pourcentage.",
         "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -5264,8 +5105,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Pourcentage (Calculer des pourcentages 3)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-3-pourcentage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1HAclULVvPTw96cVfhSX6E8lGksnaSKCf",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1PTuZ0x5yicJwk6NVzcFhM6EUO9TskyTm",
+      "docxUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-003.xlsx",
+      "downloadUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-003-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -5286,8 +5127,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/ex-003-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-003/003-solution.jpg"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-003-scrape-resultat-1.gif",
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-003-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -5319,8 +5160,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Pourcentage (Calculer des pourcentages 4)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-4-pourcentage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1JaryBiktC95Wjr8hjDLy9uEEUynTY8Js",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1hCfa1TSvBBjL9y6XbxsPKdgcRZ5NZ0by",
+      "docxUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-004.xlsx",
+      "downloadUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-004-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -5341,8 +5182,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-004/ex-004-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-004/004-solution.jpg"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-004-scrape-resultat-1.gif",
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-004-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -5374,8 +5215,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Pourcentage (Calculer des pourcentages 5)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-5-pourcentage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1qdK1k9WxVP3R_B0itBODgA7F9kkTl5GV",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1dUZe0dbdCwtBzDs_yTlEDnGVrp2Yb4MJ",
+      "docxUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-005.xlsx",
+      "downloadUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-005-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -5386,7 +5227,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Pourcentage.",
         "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Debutant",
@@ -5398,8 +5239,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-005/ex-005.jpg"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-005-scrape-resultat-1.gif",
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-005-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -5407,14 +5248,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Pourcentage.",
         "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Pourcentage.",
         "Saisissez la formule adaptee puis recopiez-la correctement en controlant references et resultat calcule.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -5437,8 +5278,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Pourcentage (Calculer des pourcentages 6)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-6-pourcentage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1nE3NUfdeHUgDXHDwuohO2OuIBFUtH02-",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1XUA-Sy-s_lbxaCnJdGSzynBFFfImWScZ",
+      "docxUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-006.xlsx",
+      "downloadUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-006-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -5459,8 +5300,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-006/ex-006.jpg"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-006-scrape-resultat-1.gif",
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-006-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -5492,10 +5333,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Pourcentage (Calculer des pourcentages 7)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-7-pourcentage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1j-pDSyhhFD4-pesVVeu1zaa9trqNicOV",
+      "docxUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-007/ex-007-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-007-image-enonce.webp",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -5533,7 +5374,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-007/ex-007-solution.webp"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-007-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
@@ -5624,11 +5465,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Pourcentage (Calculer des pourcentages 8)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/pourcentage/exercice-8-pourcentage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1y5-nklSyf_jXrN6VIJmU9VzpDPA8wiUa",
+      "docxUrl": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-008/ex-008.webp",
+      "imageResultat": "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-008-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Pourcentage",
@@ -5662,7 +5503,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-15/ex-008/ex-008.webp"
+          "data/assets/excel/bases-11-calculer-des-pourcentages/excel-ex-008-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
@@ -5750,7 +5591,6 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Graphique 1 : Graphique sur l'évolution des ventes dans le Nord Est.",
         "Graphique 2 : Graphique en 3D sur la répartition des ventes en 2002.",
         "Graphique 3 : Graphique en pourcentage sur la répartition des ventes en 2005.",
@@ -5765,17 +5605,16 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-05-a.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-05-b.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-05-c.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-01/13-05-d.jpg"
+          "data/assets/excel/bases-12-graphiques/excel-ex-001-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-001-scrape-resultat-2.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-001-scrape-resultat-3.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-001-scrape-resultat-4.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-001-scrape-resultat-5.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "graphiques",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Graphique 1 : Graphique sur l'évolution des ventes dans le Nord Est.",
         "Graphique 2 : Graphique en 3D sur la répartition des ventes en 2002.",
         "Graphique 3 : Graphique en pourcentage sur la répartition des ventes en 2005.",
@@ -5783,7 +5622,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Graphique 1 : Graphique sur l'évolution des ventes dans le Nord Est.",
         "Graphique 2 : Graphique en 3D sur la répartition des ventes en 2002.",
         "Graphique 3 : Graphique en pourcentage sur la répartition des ventes en 2005.",
@@ -5809,7 +5647,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel (Graphiques 2)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-2-graphique.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1bxFY0fpLtaSA6hMUl8Q7S6UubUthKUfU",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -5821,7 +5659,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Graphique Excel.",
         "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Debutant",
@@ -5833,17 +5671,17 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/tuto.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/13-b-3.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/01-electricite.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/02-electricite.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/tuto-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/03-ventes-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/03-ventes.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/04-charges-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/04-charges.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/05-chiffres-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-02/05-chiffres.gif"
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-1.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-2.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-3.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-4.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-5.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-6.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-7.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-8.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-9.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-10.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-002-scrape-resultat-11.gif"
         ]
       },
       "section": "bases",
@@ -5851,14 +5689,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Graphique Excel.",
         "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Graphique Excel.",
         "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -5881,7 +5719,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel (Graphiques 3)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-3-graphique.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Yk64YcwEYJYROlRG_yq2SMjAd8QxETIz",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -5903,14 +5741,14 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/support-cas-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/ex-003-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/resultat-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/support-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/support-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/ex-003-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/resultat-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-03/resultat-03.gif"
+          "data/assets/excel/bases-12-graphiques/excel-ex-003-scrape-resultat-1.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-003-scrape-resultat-2.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-003-scrape-resultat-3.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-003-scrape-resultat-4.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-003-scrape-resultat-5.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-003-scrape-resultat-6.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-003-scrape-resultat-7.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-003-scrape-resultat-8.gif"
         ]
       },
       "section": "bases",
@@ -5942,8 +5780,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel (Graphiques 4)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-4-graphique.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1iNoq2Q9WVXZHEZ-rxkFeZo8uwdZGtSBa",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=127IDLPIE1PEiKjuWvrqMAR3qKUNth2Pn",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-004.xlsx",
+      "downloadUrl": "data/assets/excel/bases-12-graphiques/excel-ex-004-annexe-1.xlsx",
       "downloadLabel": "Telecharger les ressources",
       "imageEnonce": null,
       "imageResultat": null,
@@ -5973,13 +5811,13 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/13-05.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/13-05-solution2.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/13-05-solution1.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-04/exo-02/ex-004-03.gif"
+          "data/assets/excel/bases-12-graphiques/excel-ex-004-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-004-scrape-resultat-2.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-004-scrape-resultat-3.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-004-scrape-resultat-4.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-004-scrape-resultat-5.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-004-scrape-resultat-6.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-004-scrape-resultat-7.gif"
         ]
       },
       "section": "bases",
@@ -6027,7 +5865,7 @@ window.EXCEL_ATELIER_DATA = {
       "paragraphMode": false,
       "extraDownloadUrls": [
         {
-          "url": "https://drive.google.com/uc?export=download&id=1HLSkAb1xE_RG2U6yLCgzzpt-rmHmDDEl",
+          "url": "data/assets/excel/bases-12-graphiques/excel-ex-004-annexe-2.xlsx",
           "label": "Telecharger le 3e fichier"
         }
       ],
@@ -6043,7 +5881,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel (Graphiques 5)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-5-graphique.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1GtbXnrkXdisKi24664kxnH3VIQraMH0W",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -6053,10 +5891,7 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Graphique Excel",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Graphique Excel.",
-        "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -6067,25 +5902,19 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-02.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-05/ex-05-03.jpg"
+          "data/assets/excel/bases-12-graphiques/excel-ex-005-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-005-scrape-resultat-2.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-005-scrape-resultat-3.jpg"
         ]
       },
       "section": "bases",
       "moduleSlug": "graphiques",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Graphique Excel.",
-        "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Graphique Excel.",
-        "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
       ],
       "originalInstructions": [
         "À partir du tableau ci-dessous, concevez un graphique qui montre le niveau de salaire par salarié et par année."
@@ -6104,11 +5933,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel (Graphiques 6)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-6-graphique-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ZmeDV-eny0tO2RLFQ-efhgBfKtTncp4j",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-06/ex-06.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-06/ex-06-01.jpg",
+      "imageEnonce": "data/assets/excel/bases-12-graphiques/excel-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-12-graphiques/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Graphique Excel",
@@ -6125,11 +5954,11 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-06/ex-06.jpg"
+          "data/assets/excel/bases-12-graphiques/excel-ex-006-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-06/ex-06-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-06/ex-06-02.jpg"
+          "data/assets/excel/bases-12-graphiques/excel-ex-006-scrape-resultat-1.jpg",
+          "data/assets/excel/bases-12-graphiques/excel-ex-006-scrape-resultat-2.jpg"
         ]
       },
       "section": "bases",
@@ -6159,11 +5988,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel (Graphiques 7)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-7-graphique-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1O3nkkefcupVOdaBC9TEolP-ZdVxnRrNI",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-07/ex-007.jpg",
+      "imageResultat": "data/assets/excel/bases-12-graphiques/excel-ex-007-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Graphique Excel",
@@ -6182,7 +6011,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-07/ex-007.jpg"
+          "data/assets/excel/bases-12-graphiques/excel-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -6215,11 +6044,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel (Graphiques 8)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-8-graphique-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1uf2s3EXzAzRLxCOJE9_TTXbh6SNlPPAO",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-08/ex-008.jpg",
+      "imageResultat": "data/assets/excel/bases-12-graphiques/excel-ex-008-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Graphique Excel",
@@ -6241,7 +6070,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-08/ex-008.jpg"
+          "data/assets/excel/bases-12-graphiques/excel-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -6283,7 +6112,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel - Pyramides des âges",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-9-graphique-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1jHM_pZ3XS7u9qeKrspRqQr-0oiTYubow",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-009.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -6307,15 +6136,15 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto03.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto04.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto05.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto06.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto07.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/tuto08.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-09/resultat.gif"
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-1.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-2.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-3.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-4.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-5.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-6.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-7.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-8.gif",
+          "data/assets/excel/bases-12-graphiques/excel-ex-009-scrape-resultat-9.gif"
         ]
       },
       "section": "bases",
@@ -6353,11 +6182,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Excel - Graphique Volume d'heures",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-10-graphique-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1mSmSkOsPCixUkG0FcwJLu6JKhaOlgKap",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-010.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-10/ex-010.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-10/ex-010-solution.gif",
+      "imageEnonce": "data/assets/excel/bases-12-graphiques/excel-ex-010-image-enonce.gif",
+      "imageResultat": "data/assets/excel/bases-12-graphiques/excel-ex-010-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Graphique Excel - Graphique Volume d'heures",
@@ -6377,10 +6206,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-10/ex-010.gif"
+          "data/assets/excel/bases-12-graphiques/excel-ex-010-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/ex-10/ex-010-solution.gif"
+          "data/assets/excel/bases-12-graphiques/excel-ex-010-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -6419,20 +6248,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Graphique Sparkline",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/graphiques1/exercice-1-sparkline.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Rb9yLD2BKBQ-J6dh1TXgmTW_d4f4nZ_f",
+      "docxUrl": "data/assets/excel/bases-12-graphiques/excel-ex-011.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-19/sparkline/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-19/sparkline/ex-001/ex-001-solution.webp",
+      "imageEnonce": "data/assets/excel/bases-12-graphiques/excel-ex-011-image-enonce.webp",
+      "imageResultat": "data/assets/excel/bases-12-graphiques/excel-ex-011-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Graphique Sparkline",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Graphique Sparkline.",
-        "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Consignes : De F2 à F6, vous insérez des graphiques spaklines avec les données des 4 trimestres pour chaque champ d'activité."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -6442,26 +6268,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/sparkline/ex-001/ex-001.webp"
+          "data/assets/excel/bases-12-graphiques/excel-ex-011-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-19/sparkline/ex-001/ex-001-solution.webp"
+          "data/assets/excel/bases-12-graphiques/excel-ex-011-scrape-resultat-1.webp"
         ]
       },
       "section": "bases",
       "moduleSlug": "graphiques",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Graphique Sparkline.",
-        "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Consignes : De F2 à F6, vous insérez des graphiques spaklines avec les données des 4 trimestres pour chaque champ d'activité."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Graphique Sparkline.",
-        "Inserez ou ajustez le graphique puis harmonisez titres, series, axes et mise en forme.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Consignes : De F2 à F6, vous insérez des graphiques spaklines avec les données des 4 trimestres pour chaque champ d'activité."
       ],
       "originalInstructions": [
         "Consignes : De F2 à F6, vous insérez des graphiques spaklines avec les données des 4 trimestres pour chaque champ d'activité."
@@ -6478,11 +6298,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Impression Classeur Excel",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/impression/exercice-1-impression-classeur-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=15-QziUKK_z5KxjtTBtphzXU-yVY8RPV1",
+      "docxUrl": "data/assets/excel/bases-13-impression/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-001/ex-001.jpg",
+      "imageResultat": "data/assets/excel/bases-13-impression/excel-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Impression Classeur Excel",
@@ -6501,7 +6321,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-001/ex-001.jpg"
+          "data/assets/excel/bases-13-impression/excel-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -6534,11 +6354,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Zone d'impression Excel",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/impression/exercice-2-impression-classeur-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1dt42NXch_-Ieev4JdViAGU92UFEMALQ4",
+      "docxUrl": "data/assets/excel/bases-13-impression/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-002/ex-002.jpg",
+      "imageResultat": "data/assets/excel/bases-13-impression/excel-ex-002-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Zone d'impression Excel",
@@ -6557,7 +6377,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-002/ex-002.jpg"
+          "data/assets/excel/bases-13-impression/excel-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -6590,11 +6410,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Impression & saut de page dans Excel",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/impression/exercice-3-impression-classeur-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1eHWAkC9BpAKJeCjL4aupg4CPoeryXicf",
+      "docxUrl": "data/assets/excel/bases-13-impression/excel-ex-003.zip",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-003/ex-003.jpg",
+      "imageResultat": "data/assets/excel/bases-13-impression/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Impression & saut de page dans Excel",
@@ -6614,7 +6434,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-003/ex-003.jpg"
+          "data/assets/excel/bases-13-impression/excel-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -6650,11 +6470,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Impression & reglage des marges et du zoom",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/impression/exercice-4-impression-classeur-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1xL_rniX_PwhbDKRwWx3rKX3So16KWEGJ",
+      "docxUrl": "data/assets/excel/bases-13-impression/excel-ex-004.zip",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-004/ex-004.jpg",
+      "imageResultat": "data/assets/excel/bases-13-impression/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Impression & reglage des marges et du zoom",
@@ -6673,7 +6493,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-004/ex-004.jpg"
+          "data/assets/excel/bases-13-impression/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -6706,10 +6526,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Entête & pied de page",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/impression/exercice-5-impression-classeur-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1mPS2vQZZQ7z7biWGjYNPIhcmjlkQtzfk",
+      "docxUrl": "data/assets/excel/bases-13-impression/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-005/ex005.jpg",
+      "imageEnonce": "data/assets/excel/bases-13-impression/excel-ex-005-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -6731,7 +6551,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-005/ex005.jpg"
+          "data/assets/excel/bases-13-impression/excel-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -6774,11 +6594,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 6 (Impression 6)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/impression/exercice-6-impression-classeur-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1IUbdtNpoxJyG93PLbS0WhRv8EOmdeO4Y",
+      "docxUrl": "data/assets/excel/bases-13-impression/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-006/ex-006.jpg",
+      "imageResultat": "data/assets/excel/bases-13-impression/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice 6",
@@ -6797,7 +6617,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-006/ex-006.jpg"
+          "data/assets/excel/bases-13-impression/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "bases",
@@ -6830,11 +6650,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Niveau de difficulté de l'exercice : 1",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/impression/exercice-7-impression-classeur-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=14Emg003U62O_KMfBwi6oZ3P0RK0BxuTm",
+      "docxUrl": "data/assets/excel/bases-13-impression/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-007/tuto-centre-tableau.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-007/page-impression.gif",
+      "imageEnonce": "data/assets/excel/bases-13-impression/excel-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/bases-13-impression/excel-ex-007-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Niveau de difficulté de l'exercice : 1",
@@ -6853,7 +6673,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-09/ex-007/page-impression.gif"
+          "data/assets/excel/bases-13-impression/excel-ex-007-scrape-resultat-1.gif"
         ]
       },
       "section": "bases",
@@ -6886,10 +6706,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice pour manipuler de façon simple les formats de cellules dans excel. Niveau facile",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/format-de-celulle/exercice-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1sSi9p2DSpwl9HbdAUeT-7T9vq4qdH0j6",
+      "docxUrl": "data/assets/excel/avance-02-format-de-cellule/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-01/07-01.jpg",
+      "imageEnonce": "data/assets/excel/avance-02-format-de-cellule/excel-ex-001-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -6909,11 +6729,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-01/07-01-solution.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-001-scrape-extra-1.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-01/07-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-01/07-01-solution.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-001-scrape-enonce-1.jpg",
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-001-scrape-enonce-2.jpg"
         ],
         "resultImages": []
       },
@@ -6956,14 +6776,14 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-02/04-04.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-02/04-04-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-02-format-de-cellule/excel-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-02-format-de-cellule/excel-ex-002-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice pour mettre des valeurs au format monétaire dans Excel. Niveau Facile",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre des valeurs au format monétaire dans Excel. Niveau Facile.",
         "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -6977,16 +6797,16 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-02/04-04.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-002-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-02/04-04-solution.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
       "moduleSlug": "format-de-cellule",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre des valeurs au format monétaire dans Excel. Niveau Facile.",
         "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -6994,7 +6814,7 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Exercice pour mettre des valeurs au format monétaire dans Excel. Niveau Facile.",
         "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -7019,11 +6839,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice pour manipuler le format personnalisé: \"jjjj\".",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-de-celulle/exercice-3-format-de-cellule-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1grlvrGzFKrhfuKLil2XmxFhtaAf_kFuo",
+      "docxUrl": "data/assets/excel/avance-02-format-de-cellule/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-03/enonce.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-03/resultat-attendu.jpg",
+      "imageEnonce": "data/assets/excel/avance-02-format-de-cellule/excel-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-02-format-de-cellule/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice pour manipuler le format personnalisé: \"jjjj\".",
@@ -7042,10 +6862,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-03/enonce.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-003-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-03/resultat-attendu.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -7081,7 +6901,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Format de cellule à insérer",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/format-de-celulle/exercice-4-format-de-cellule-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1nGksEaKlqoVeuLRNK19XhUEnBARNTwa8",
+      "docxUrl": "data/assets/excel/avance-02-format-de-cellule/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -7093,7 +6913,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Format de cellule à insérer.",
         "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": null,
@@ -7105,10 +6925,10 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/enonce.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/enonce-exercice-04.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/resultat-attendu.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-04/solution-exercice-04.webp"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-004-scrape-resultat-1.jpg",
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-004-scrape-resultat-2.webp",
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-004-scrape-resultat-3.jpg",
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-004-scrape-resultat-4.webp"
         ]
       },
       "section": "avance",
@@ -7116,14 +6936,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Format de cellule à insérer.",
         "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Format de cellule à insérer.",
         "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -7146,11 +6966,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice pour appliquer un format de cellule % à un ensemble de cellule",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/format-de-celulle/exercice-5-format-de-cellule-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1HFzC6x5I9oa8q94cSFTmIzUMuWaz0FZH",
+      "docxUrl": "data/assets/excel/avance-02-format-de-cellule/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-005/005-depart.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-005/005-resultat.jpg",
+      "imageEnonce": "data/assets/excel/avance-02-format-de-cellule/excel-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-02-format-de-cellule/excel-ex-005-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice pour appliquer un format de cellule % à un ensemble de cellule",
@@ -7167,10 +6987,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-005/005-depart.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-005/005-resultat.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -7200,11 +7020,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice pour aborder les formats de cellules \"spéciaux\" dans Excel",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-de-celulle/exercice-6-format-de-cellule-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1NDCu_FvuGA66X1Zn41kIV8sTVT7az0AK",
+      "docxUrl": "data/assets/excel/avance-02-format-de-cellule/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-006/ex-006-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-006/ex-006.jpg",
+      "imageEnonce": "data/assets/excel/avance-02-format-de-cellule/excel-ex-006-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-02-format-de-cellule/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice pour aborder les formats de cellules \"spéciaux\" dans Excel",
@@ -7222,10 +7042,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-006/ex-006-enonce.gif"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-006-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-006/ex-006.jpg"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -7258,20 +7078,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice complet pour la mise en place de nombreux formats DATE personnalisés",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/format-de-celulle/exercice-7-format-de-cellule-excel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1g1L_Ovj7FAHeSs1Z0KHmTWTeTV8xJAZr",
+      "docxUrl": "data/assets/excel/avance-02-format-de-cellule/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-007/ex-007.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-007/ex-007-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-02-format-de-cellule/excel-ex-007-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-02-format-de-cellule/excel-ex-007-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice complet pour la mise en place de nombreux formats DATE personnalisés",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice complet pour la mise en place de nombreux formats DATE personnalisés.",
-        "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez les formats de cellule personnalisés dans les cellules bleues afin d'afficher les dates comme prévu dans la capture écran ci-contre. La colonne B renferme des indices sérieux…."
       ],
       "levelLabel": null,
       "scrape": {
@@ -7281,26 +7098,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-007/ex-007.webp"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-007-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-007/ex-007-solution.webp"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-007-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
       "moduleSlug": "format-de-cellule",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice complet pour la mise en place de nombreux formats DATE personnalisés.",
-        "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez les formats de cellule personnalisés dans les cellules bleues afin d'afficher les dates comme prévu dans la capture écran ci-contre. La colonne B renferme des indices sérieux…."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice complet pour la mise en place de nombreux formats DATE personnalisés.",
-        "Ajustez le format des cellules puis verifiez nombres, dates, alignements et affichages attendus.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez les formats de cellule personnalisés dans les cellules bleues afin d'afficher les dates comme prévu dans la capture écran ci-contre. La colonne B renferme des indices sérieux…."
       ],
       "originalInstructions": [
         "Vous appliquez les formats de cellule personnalisés dans les cellules bleues afin d'afficher les dates comme prévu dans la capture écran ci-contre. La colonne B renferme des indices sérieux…."
@@ -7317,11 +7128,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice pour manipuler les heures et ses formats de cellules",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/format-de-celulle/exercice-8-date.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=15_lgQAZSSDx6VzXdFchgnplFdy33Gc_S",
+      "docxUrl": "data/assets/excel/avance-02-format-de-cellule/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-008/ex-008.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-008/ex-008-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-02-format-de-cellule/excel-ex-008-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-02-format-de-cellule/excel-ex-008-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice pour manipuler les heures et ses formats de cellules",
@@ -7339,10 +7150,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-008/ex-008.gif"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-008-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-07/ex-008/ex-008-solution.gif"
+          "data/assets/excel/avance-02-format-de-cellule/excel-ex-008-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -7375,11 +7186,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice simple: comment mettre en place une valeur absolue dans une colonne - Série 1",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/reference-absolue/exercice-1-reference-absolue.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1qnyv-Zc0-Uf4CGmwTmeESVE8fNj7KlnB",
+      "docxUrl": "data/assets/excel/avance-03-reference-absolue/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-01/ex-001.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-01/ex-001-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-001-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice simple: comment mettre en place une valeur absolue dans une colonne - Série 1",
@@ -7398,10 +7209,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-01/ex-001.gif"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-001-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-01/ex-001-solution.gif"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-001-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -7437,11 +7248,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice simple: comment mettre en place une valeur absolue dans une colonne - Série 2",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/reference-absolue/exercice-2-reference-absolue.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=11oKo7GBv_r4T1sKW8iY-_49iU6ngp5Lx",
+      "docxUrl": "data/assets/excel/avance-03-reference-absolue/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-02/ex-002.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-02/ex-002-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-002-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice simple: comment mettre en place une valeur absolue dans une colonne - Série 2",
@@ -7458,10 +7269,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-02/ex-002.gif"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-002-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-02/ex-002-solution.gif"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-002-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -7494,14 +7305,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-03/08-c.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-03/08-03-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Utilisation de la poignée de recopie et de la valeur absolue/relative",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Construire le tableau sur Excel.",
         "Vous devez trouver l'opération, à insérer dans les cellules bleues, elle va vous permettre d'utiliser la poignée de recopie sur tout le tableau, colonne par colonne.",
         "Attention, il y a plusieurs solutions pour saisir sa formule (indice : $A$1 ou A$1)."
@@ -7514,23 +7324,21 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-03/08-c.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-003-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-03/08-03-solution.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
       "moduleSlug": "reference-absolue",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Construire le tableau sur Excel.",
         "Vous devez trouver l'opération, à insérer dans les cellules bleues, elle va vous permettre d'utiliser la poignée de recopie sur tout le tableau, colonne par colonne.",
         "Attention, il y a plusieurs solutions pour saisir sa formule (indice : $A$1 ou A$1)."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Construire le tableau sur Excel.",
         "Vous devez trouver l'opération, à insérer dans les cellules bleues, elle va vous permettre d'utiliser la poignée de recopie sur tout le tableau, colonne par colonne.",
         "Attention, il y a plusieurs solutions pour saisir sa formule (indice : $A$1 ou A$1)."
@@ -7552,11 +7360,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Comment utiliser la valeur absolue ppour la construction d'un tableau d'encaissement",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/reference-absolue/exercice-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1RINdEjyfxP7x7_ts7Y2LqUoKLxliqAwh",
+      "docxUrl": "data/assets/excel/avance-03-reference-absolue/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-04/ex-106-04-enonce.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-04/ex-106-04-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Comment utiliser la valeur absolue ppour la construction d'un tableau d'encaissement",
@@ -7573,10 +7381,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-04/ex-106-04-enonce.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-04/ex-106-04-solution.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -7606,11 +7414,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en place d'un tableau de calcul frais kilometrique et forfait déplacement",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/reference-absolue/exercice-5.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1p9sjF06-uHYvTaEgiMsxU67CMZD85xKN",
+      "docxUrl": "data/assets/excel/avance-03-reference-absolue/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-05/ex-005.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-05/ex-005-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-005-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-005-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Mise en place d'un tableau de calcul frais kilometrique et forfait déplacement",
@@ -7628,10 +7436,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-05/ex-005.gif"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-005-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-05/ex-005-solution.gif"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-005-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -7667,14 +7475,14 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-06/ex-106-06.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-06/ex-106-06-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Table de multiplication complète en deux tours de valeur absolue",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Table de multiplication complète en deux tours de valeur absolue.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -7688,16 +7496,16 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-06/ex-106-06.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-006-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-06/ex-106-06-solution.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
       "moduleSlug": "reference-absolue",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Table de multiplication complète en deux tours de valeur absolue.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -7705,7 +7513,7 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
+        "Creez un nouveau classeur Excel et enregistrez-le avant de commencer.",
         "Construisez la structure principale du classeur a partir de cet objectif: Table de multiplication complète en deux tours de valeur absolue.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
         "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
@@ -7730,11 +7538,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Calcul de part de marché sur un ensemble de valeur",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/reference-absolue/exercice-7-valeur-absolue.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1vZU9YohYNx7ggl46kWJlOP125XNIu-RO",
+      "docxUrl": "data/assets/excel/avance-03-reference-absolue/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-07/ex-106-07.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-07/ex-107-07-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-007-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Calcul de part de marché sur un ensemble de valeur",
@@ -7751,10 +7559,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-07/ex-106-07.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-007-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-07/ex-107-07-solution.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -7784,11 +7592,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Obtenir un pourcentage sur un total avec la valeur absolue",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/reference-absolue/exercice-8-valeur-absolue.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=138Qq1svEFL1Pc1ye8zKYOw59HVOYK3Ar",
+      "docxUrl": "data/assets/excel/avance-03-reference-absolue/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-08/ex-08.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-08/ex-08-resultat.jpg",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-008-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Obtenir un pourcentage sur un total avec la valeur absolue",
@@ -7805,10 +7613,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-08/ex-08.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-008-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-08/ex-08-resultat.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -7838,11 +7646,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Répercuter un calcul sur plusieurs cellules avec la valeur absolue",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/reference-absolue/exercice-9-valeur-absolue.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1zHY5RH7GWbputuV2aIRTS7hDnyo_IjuX",
+      "docxUrl": "data/assets/excel/avance-03-reference-absolue/excel-ex-009.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-09/ex-09.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-09/ex-09-resultat.jpg",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-009-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-009-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Répercuter un calcul sur plusieurs cellules avec la valeur absolue",
@@ -7861,10 +7669,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-09/ex-09.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-009-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-09/ex-09-resultat.jpg"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-009-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -7900,11 +7708,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Valeur absolue, liste déroulante et format personnalisé. Pas facile...",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/reference-absolue/exercice-10-valeur-absolue.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1SysNAisbuP8IC2-feno_e27GhsL6PGCu",
+      "docxUrl": "data/assets/excel/avance-03-reference-absolue/excel-ex-010.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-10/ex-10.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-10/ex-10-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-03-reference-absolue/excel-ex-010-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-03-reference-absolue/excel-ex-010-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Valeur absolue, liste déroulante et format personnalisé. Pas facile...",
@@ -7927,11 +7735,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-10/ex-10-solution.gif"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-010-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-10/ex-10.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-16/ex-10/ex-10-solution.gif"
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-010-scrape-enonce-1.gif",
+          "data/assets/excel/avance-03-reference-absolue/excel-ex-010-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -7983,7 +7791,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Trier et Filtrer une liste",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-1-tri.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1J1HX9WGveahuKDwtca1bQcwJwHZGFvxr",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -8012,13 +7820,13 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/ex-001-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-03.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-04.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-05.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-001/feuille-06.gif"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-001-scrape-resultat-1.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-001-scrape-resultat-2.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-001-scrape-resultat-3.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-001-scrape-resultat-4.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-001-scrape-resultat-5.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-001-scrape-resultat-6.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-001-scrape-resultat-7.gif"
         ]
       },
       "section": "avance",
@@ -8071,7 +7879,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Trier et Filtrer une liste",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-2-tri.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1QcP2x77d7g0IQLASiXGNRp89-Sn5DJEj",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -8098,11 +7906,11 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002-s1.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002-s2.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002-s3.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-002/ex-002-s4.webp"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-002-scrape-resultat-1.webp",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-002-scrape-resultat-2.webp",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-002-scrape-resultat-3.webp",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-002-scrape-resultat-4.webp",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-002-scrape-resultat-5.webp"
         ]
       },
       "section": "avance",
@@ -8149,7 +7957,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Trier et Filtrer une liste",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ueokMe4DUCYkVo4LUMbHccoXgZpK0NJb",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -8174,10 +7982,10 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-1.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-2.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-3.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-003/ex-03-4.jpg"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-003-scrape-resultat-1.jpg",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-003-scrape-resultat-2.jpg",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-003-scrape-resultat-3.jpg",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-003-scrape-resultat-4.jpg"
         ]
       },
       "section": "avance",
@@ -8218,11 +8026,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Filtre avancée d'une liste",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-3-tri-filtre.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1m6Zfn3_7ZbJ2gXWO00noRheytUzNtvES",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-004/ex-004.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-004/ex-004-solution-3.jpg",
+      "imageEnonce": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-004-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Filtre avancée d'une liste",
@@ -8239,11 +8047,11 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-004/ex-004.gif"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-004-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-004/ex-004-solution-3.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-004/ex-004-solution-2.jpg"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-004-scrape-resultat-1.jpg",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-004-scrape-resultat-2.jpg"
         ]
       },
       "section": "avance",
@@ -8273,10 +8081,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 7 (Trier et filtrer 7)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-7-tri-filtre.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1h0kKqMRYUiiH1DkHCnrZY_cZ63pM50Cu",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-007/ex-007.gif",
+      "imageEnonce": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -8298,15 +8106,15 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-007/ex-007-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-007/ex-007-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-007/ex-007-03.gif"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007-scrape-extra-1.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007-scrape-extra-2.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007-scrape-extra-3.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-007/ex-007.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-007/ex-007-01.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-007/ex-007-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-007/ex-007-03.gif"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007-scrape-enonce-1.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007-scrape-enonce-2.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007-scrape-enonce-3.gif",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-007-scrape-enonce-4.gif"
         ],
         "resultImages": []
       },
@@ -8352,10 +8160,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Filtres avancés",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-5-tri-filtre.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1l_3TqgBefqBRsHuS5MrAza0NzuswfVmY",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-005/ex-005-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-005-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -8376,7 +8184,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-005/ex-005-solution.jpg"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -8416,8 +8224,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 6 (Trier et filtrer 6)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-6-tri-filtre.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1YVLkyCgOh4Zaaxn6ONVXLSu7VX-ufr6k",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1kP0Jd679V1SxSgle48xCVVGHRtrtZXvY",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-006.xlsx",
+      "downloadUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-006-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -8442,9 +8250,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-1.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-2.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-006/ex-006-solution-3.jpg"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-006-scrape-resultat-1.jpg",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-006-scrape-resultat-2.jpg",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-006-scrape-resultat-3.jpg"
         ]
       },
       "section": "avance",
@@ -8488,11 +8296,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 8",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-8-tri-filtre.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1YErSuU_ZZKN3yGHNEMpALrfKvT-bIbMj",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-008/ex-008.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-008/ex-008-resultat.webp",
+      "imageEnonce": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-008-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-008-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice 8",
@@ -8522,11 +8330,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-008/ex-008-resultat.webp"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-008-scrape-extra-1.webp"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-008/ex-008-resultat.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-008/ex-008.webp"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-008-scrape-enonce-1.webp",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-008-scrape-enonce-2.webp"
         ],
         "resultImages": []
       },
@@ -8599,7 +8407,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 9",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/tri/exercice-9-segment.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1AURIn90NBogACBhwJRh25HR8Pib1fHt4",
+      "docxUrl": "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-009.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -8629,8 +8437,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-009/ex-009.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-18/ex-009/ex-009-solution.webp"
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-009-scrape-resultat-1.webp",
+          "data/assets/excel/avance-04-trier-et-filtrer/excel-ex-009-scrape-resultat-2.webp"
         ]
       },
       "section": "avance",
@@ -8686,11 +8494,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme conditionnelle (Mise en forme conditionnelle 1)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-1-mise-en-forme-conditionnelle.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1CIf9QIOnBcbejyT1Ov31yFJNR1M_0BII",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-001/ex-001.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-001/ex-001-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-001-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Mise en forme conditionnelle",
@@ -8709,10 +8517,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-001/ex-001.gif"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-001-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-001/ex-001-solution.gif"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-001-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -8748,11 +8556,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme conditionnelle (Mise en forme conditionnelle 2)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1foswjmuUw6BeoM8PFtk8-Mcd5_TvgUPN",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex2/ex-002.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex2/ex-002-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-002-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Mise en forme conditionnelle",
@@ -8769,10 +8577,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex2/ex-002.gif"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-002-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex2/ex-002-solution.gif"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-002-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -8802,11 +8610,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme conditionnelle (Mise en forme conditionnelle 3)",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=16w96rgT1MxJJu1SkR3u0GQCMI12rruYy",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-003/ex-003-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-003-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Mise en forme conditionnelle",
@@ -8823,10 +8631,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-003/ex-003.webp"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-003-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-003/ex-003-solution.webp"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-003-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -8856,11 +8664,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme conditionnelle (Mise en forme conditionnelle 4)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1bLxfdvLwbDydTOnzB98ZGIDpgqpP2edo",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-004/ex-004-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-004-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-004-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Mise en forme conditionnelle",
@@ -8879,10 +8687,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-004/ex-004.webp"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-004-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-004/ex-004-solution.webp"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-004-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -8918,7 +8726,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme conditionnelle (Mise en forme conditionnelle 5)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-5.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1VN2q1uSf474OU7U3Jdqwee1RahJ74K0C",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -8940,9 +8748,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005-explication.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-005/ex-005-solution.webp"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-005-scrape-resultat-1.webp",
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-005-scrape-resultat-2.jpg",
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-005-scrape-resultat-3.webp"
         ]
       },
       "section": "avance",
@@ -8974,11 +8782,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme conditionnelle (Mise en forme conditionnelle 6)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-6.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1LGjTDrkE0xNaTeT7Vj_uFRRixvM9c4hD",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-006/ex-006-solution.jpg",
+      "imageResultat": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Mise en forme conditionnelle",
@@ -9005,7 +8813,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-006/ex-006-solution.jpg"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -9062,11 +8870,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 7 (Mise en forme conditionnelle 7)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-7.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1M0t11We3U8ucWDuiyz-L490O6AH1jiEs",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-007/ex-007-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-007/ex-007-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-007-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice 7",
@@ -9087,10 +8895,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-007/ex-007-enonce.gif"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-007-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-007/ex-007-solution.gif"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-007-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -9132,11 +8940,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme conditionnelle (Mise en forme conditionnelle 8)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-8.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1BIUkHR1vAHNGk-uQfdpzPZ2txRh5mvdq",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-008/ex-008.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-008/ex-008-correction-01.webp",
+      "imageEnonce": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-008-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-008-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Mise en forme conditionnelle",
@@ -9157,12 +8965,12 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-008/ex-008.webp"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-008-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-008/ex-008-correction-01.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-008/ex-008-correction-02.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-008/ex-008-correction-03.webp"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-008-scrape-resultat-1.webp",
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-008-scrape-resultat-2.webp",
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-008-scrape-resultat-3.webp"
         ]
       },
       "section": "avance",
@@ -9204,8 +9012,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Mise en forme conditionnelle (Mise en forme conditionnelle 9)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-conditionnelle/exercice-9.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1eOAhBnq0MMhfe6CQmqpJ6JljwfHDcZ3i",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=106ZFWohy0yxemg4Qa0XxCz-lsaoiqC_f",
+      "docxUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-009.xlsx",
+      "downloadUrl": "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-009-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -9226,8 +9034,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-17/ex-009/ex-009-solution.webp"
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-009-scrape-resultat-1.webp",
+          "data/assets/excel/avance-05-mise-en-forme-conditionnelle/excel-ex-009-scrape-resultat-2.webp"
         ]
       },
       "section": "avance",
@@ -9259,11 +9067,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Validation des données",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-1-validation-des-donnees.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1p2ldj0_DQAXa6hBRvNgvlcWTA1Vl17mo",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-001/ex-001.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-001/ex-001-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Validation des données",
@@ -9281,10 +9089,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-001/ex-001.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-001-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-001/ex-001-solution.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -9317,11 +9125,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Validation des données",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-2-validation-des-donnees.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Kljw_MCqxmd4v4Unm9HLwR-NrfcgkDwn",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-002/ex-002.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-002/ex-002-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-002-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Validation des données",
@@ -9339,14 +9147,14 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-002/ex-002-liste.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-002-scrape-extra-1.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-002/ex-002.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-002/ex-002-liste.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-002-scrape-enonce-1.jpg",
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-002-scrape-enonce-2.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-002/ex-002-solution.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -9382,11 +9190,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Validation des données",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-3-validation-des-donnees.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=166EbFaPyG3Rmict1Z90HTP-P7zvEHd9P",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-003/ex-003.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-003/ex-003-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-003-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Validation des données",
@@ -9403,10 +9211,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-003/ex-003.gif"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-003-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-003/ex-003-solution.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -9436,11 +9244,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Listes de choix et messages d'avertissement",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-4-validation-des-donnees.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1t4oG3F3rToYFb2pVyKYAN0YJIGtp1UF3",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-004/ex-004-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Listes de choix et messages d'avertissement",
@@ -9458,10 +9266,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-004/ex-004.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-004/ex-004-solution.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -9494,11 +9302,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Supprimer les doublons",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-5-supprimer-les-doublons.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1hiSd328Y0cCbal5IK7F4VwhxQAWNe7r6",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-005/ex-005.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-005/ex-005-nom.jpg",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-005-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Supprimer les doublons",
@@ -9518,12 +9326,12 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-005/ex-005.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-005/ex-005-nom.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-005/ex-005-prenom.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-005/ex-005-concatener.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-005-scrape-resultat-1.jpg",
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-005-scrape-resultat-2.jpg",
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-005-scrape-resultat-3.jpg"
         ]
       },
       "section": "avance",
@@ -9562,11 +9370,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Remplissage instantané",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-6-remplissage-instantane.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ksH6nKQbSKYIbvJRKZ31677Ex1qARVo6",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-006/ex-006.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-006/ex-006-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-006-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Remplissage instantané",
@@ -9584,10 +9392,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-006/ex-006.gif"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-006-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-006/ex-006-solution.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -9620,11 +9428,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "xercice 7 : Validation des données",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-7-validation-des-donnees.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1QjCjgsGgZ9KvwqR0FYwQMcY0j4QrMqjA",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-007/ex-007.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-007/ex-007-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-007-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "xercice 7 : Validation des données",
@@ -9646,10 +9454,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-007/ex-007.gif"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-007-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-007/ex-007-solution.jpg"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -9694,11 +9502,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Validation des données - Fonction RECHERCHE",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-8-validation-des-donnees.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1grEXZUCypF9DOmR3QyVi_D9MLw-L31l_",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-008/ex-008.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-008/ex-008-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-008-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-008-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Validation des données - Fonction RECHERCHE",
@@ -9716,10 +9524,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-008/ex-008.gif"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-008-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-008/ex-008-solution.gif"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-008-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -9752,8 +9560,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Convertir des données",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-8-convertir-des-donnees.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Vv7tEHhfDWmAIU7MQQMew88HquwfW9mh",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=10BrbFkoEb3bPzDJT3my6oCwWDNfFDut7",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-009.xlsx",
+      "downloadUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-009-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -9777,9 +9585,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/tuto.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-009/ex-009-solution.gif"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-009-scrape-resultat-1.gif",
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-009-scrape-resultat-2.gif",
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-009-scrape-resultat-3.gif"
         ]
       },
       "section": "avance",
@@ -9820,11 +9628,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Listes déroulantes en cascade",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/validation-des-donnees/exercice-10-listes-deroulantes-en-cascade.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1YOGo6xSFybgOGMbxDZQZF_d4SIPErbXB",
+      "docxUrl": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-010.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-010/ex-010.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-010/ex-010-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-010-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-06-outils-de-donnees/excel-ex-010-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Listes déroulantes en cascade",
@@ -9844,10 +9652,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-010/ex-010.gif"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-010-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-21/ex-010/ex-010-solution.gif"
+          "data/assets/excel/avance-06-outils-de-donnees/excel-ex-010-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -9886,11 +9694,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Lier des feuilles de calculs",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1YzmrARBrYqRNcu02zmVk4F-8Zf0ixH0g",
+      "docxUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-001/ex-001.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-001/ex-001-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Lier des feuilles de calculs",
@@ -9908,14 +9716,14 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-001/ex-001-02.jpg"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-001-scrape-extra-1.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-001/ex-001.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-001/ex-001-02.jpg"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-001-scrape-enonce-1.jpg",
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-001-scrape-enonce-2.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-001/ex-001-solution.jpg"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -9951,20 +9759,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 2",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Yt7gr1RalT1DaRQq2k6usU8Rngwy66uH",
+      "docxUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-002/ex-002-resultat.jpg",
+      "imageEnonce": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-002-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-002-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice 2",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice 2.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Remplir les deux tableaux ci-dessous en collant avec liaison les valeurs copiées dans les autres onglets."
       ],
       "levelLabel": "Intermediaire",
       "scrape": {
@@ -9974,26 +9779,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-002/ex-002.webp"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-002-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-002/ex-002-resultat.jpg"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
       "moduleSlug": "lier-des-feuilles",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice 2.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Remplir les deux tableaux ci-dessous en collant avec liaison les valeurs copiées dans les autres onglets."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice 2.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Remplir les deux tableaux ci-dessous en collant avec liaison les valeurs copiées dans les autres onglets."
       ],
       "originalInstructions": [
         "Remplir les deux tableaux ci-dessous en collant avec liaison les valeurs copiées dans les autres onglets."
@@ -10010,7 +9809,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Lier des feuilles de calculs & appareil photo",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1yAezdnORm5T9caObTZUOqD4Xr58LTzvV",
+      "docxUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -10022,7 +9821,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Lier des feuilles de calculs & appareil photo.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": null,
@@ -10034,10 +9833,10 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/tuto-appareil-photo.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/tuto-appareil-photo-02.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/ex-003-solution.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-003/ex-003-appareil-photo-resultats.webp"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-003-scrape-resultat-1.webp",
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-003-scrape-resultat-2.webp",
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-003-scrape-resultat-3.jpg",
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-003-scrape-resultat-4.webp"
         ]
       },
       "section": "avance",
@@ -10045,14 +9844,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Lier des feuilles de calculs & appareil photo.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Lier des feuilles de calculs & appareil photo.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -10075,20 +9874,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Lier des feuilles de calculs",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1uSPif7ChvKSKigMdzwyaRSb68gVuwnOV",
+      "docxUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-004/ex-004-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-004-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Lier des feuilles de calculs",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Lier des feuilles de calculs.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Depuis cette feuille, vous rapatriez dynamiquement les valeurs du tableau Lyon Sud de la feuille \"Vue d'ensemble\"."
       ],
       "levelLabel": null,
       "scrape": {
@@ -10098,26 +9894,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-004/ex-004.webp"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-004-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-004/ex-004-solution.jpg"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
       "moduleSlug": "lier-des-feuilles",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Lier des feuilles de calculs.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Depuis cette feuille, vous rapatriez dynamiquement les valeurs du tableau Lyon Sud de la feuille \"Vue d'ensemble\"."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Lier des feuilles de calculs.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Depuis cette feuille, vous rapatriez dynamiquement les valeurs du tableau Lyon Sud de la feuille \"Vue d'ensemble\"."
       ],
       "originalInstructions": [
         "Depuis cette feuille, vous rapatriez dynamiquement les valeurs du tableau Lyon Sud de la feuille \"Vue d'ensemble\"."
@@ -10134,11 +9924,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Lier des feuilles de calculs",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-5.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1c2Pd1I9vbSv2HW3vkroL4IbIAHpvlW77",
+      "docxUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-005/ex-005-adresse.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-005/ex-005-telephone.jpg",
+      "imageEnonce": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-005-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Lier des feuilles de calculs",
@@ -10158,9 +9948,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-005/ex-005-telephone.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-005/ex-005-adresse.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-005/ex-005-mail.jpg"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-005-scrape-resultat-1.jpg",
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-005-scrape-resultat-2.jpg",
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-005-scrape-resultat-3.jpg"
         ]
       },
       "section": "avance",
@@ -10196,11 +9986,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Transposer un tableau",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-6.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1VlxLkcPLRizuD4CgQVepKsjYYWsUDr9h",
+      "docxUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-006/ex-006.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-006/ex-006-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-006-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-006-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Transposer un tableau",
@@ -10220,10 +10010,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-006/ex-006.webp"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-006-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-006/ex-006-solution.jpg"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -10262,11 +10052,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Lier des feuilles de calculs via des liens Hypertextes",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-7.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1NNm-EpAAtBux2lxvHGNnnrFIdg3oDJTu",
+      "docxUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-007/analyse-1.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-007/accueil.gif",
+      "imageEnonce": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-007-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Lier des feuilles de calculs via des liens Hypertextes",
@@ -10285,8 +10075,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-007/accueil.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-007/analyse-1.gif"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-007-scrape-resultat-1.gif",
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-007-scrape-resultat-2.gif"
         ]
       },
       "section": "avance",
@@ -10319,8 +10109,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Lier des feuilles de calculs dans plusieurs classeurs",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/lier-des-feuilles-de-calculs/exercice-8.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1AXfueQOryYBdn7jZZy4PL2edAKGFLzj5",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=15ZJysfr3N8zMx68G2QV88uG4PfwXcfZ1",
+      "docxUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-008.xlsx",
+      "downloadUrl": "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-008-annexe-1.zip",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -10343,8 +10133,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-20/ex-008/ex-008.gif"
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-008-scrape-resultat-1.gif",
+          "data/assets/excel/avance-07-lier-des-feuilles/excel-ex-008-scrape-resultat-2.gif"
         ]
       },
       "section": "avance",
@@ -10382,11 +10172,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": ": Nommer une cellule ou une plage de cellules (Nommer une cellule 1)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-1-nommer-une-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1fKPV3jOUWvs5c2T11vMIypj999qbZZlL",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-001/ex-001.jpg",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-001-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": ": Nommer une cellule ou une plage de cellules",
@@ -10405,10 +10195,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-001/ex-001.webp"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-001/ex-001.jpg"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -10444,11 +10234,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": ": Nommer une cellule ou une plage de cellules (Nommer une cellule 2)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/10-02-nommage-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1SVr-4yLE02ZBGSJ2QGu38YmhlF0t-q8k",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-002/ex-002.gif",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-002-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-002-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": ": Nommer une cellule ou une plage de cellules",
@@ -10469,10 +10259,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-002/ex-002.webp"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-002-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-002/ex-002.gif"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-002-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
@@ -10514,11 +10304,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": ": Nommer une cellule ou une plage de cellules (Nommer une cellule 3)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-3-nommer-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1hyrqKoa7Ojx0S9GW9zuyRQ9HCOyJTT0O",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-003/ex-003.jpg",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-003-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": ": Nommer une cellule ou une plage de cellules",
@@ -10536,10 +10326,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-003/ex-003.webp"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-003-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-003/ex-003.jpg"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "section": "avance",
@@ -10572,11 +10362,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": ": Nommer une cellule ou une plage de cellules (Nommer une cellule 4)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-4-nommer-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1wpKIsiCGApMpeN4YEOLRBoQGlX41hj3V",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-004/ex-004-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-004-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-004-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": ": Nommer une cellule ou une plage de cellules",
@@ -10594,10 +10384,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-004/ex-004.webp"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-004-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-004/ex-004-solution.webp"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-004-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -10630,10 +10420,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 5",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-5-nommer-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1g0BY3O-sdvkorhSAPeqjEcQuUluOCoax",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-005/ex-005.jpg",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-005-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -10656,7 +10446,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-005/ex-005.jpg"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -10702,10 +10492,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 6 (Nommer une cellule 6)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-6-nommer-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1tTCniIp6nBvX0MHzqErSPOS30f-xTNDQ",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-006/ex-006.jpg",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-006-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -10730,7 +10520,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-006/ex-006.jpg"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-006-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -10782,10 +10572,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 7 (Nommer une cellule 7)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-7-nommer-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1nsSD3Y03mXSEHUsOS3tzEWYN5w3yy2Z_",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-007/ex-007-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-007-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -10811,11 +10601,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-007/ex-007.gif"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-007-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-007/ex-007-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-007/ex-007.gif"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-007-scrape-enonce-1.gif",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-007-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -10873,10 +10663,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 8",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-8-nommer-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1WDu9eAs7FaFGj3Hl_4ugBaSgoyoaaiQd",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-008/ex-008-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-008-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -10899,11 +10689,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-008/ex-008.gif"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-008-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-008/ex-008-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-008/ex-008.gif"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-008-scrape-enonce-1.gif",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-008-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -10952,10 +10742,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 9",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/nommer-une-plage-de-celulle/exercice-9-nommer-cellule.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1wPSWb3kYAk6BCVzRPT1NBXu81ikwP2BN",
+      "docxUrl": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009.zip",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/ex-009.webp",
+      "imageEnonce": "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-image-enonce.webp",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -10990,17 +10780,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/zone-nommee.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/nommage-image.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/validation-donnee.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/gestionnaire-de-nom.webp"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-extra-1.webp",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-extra-2.webp",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-extra-3.gif",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-extra-4.webp"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/ex-009.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/zone-nommee.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/nommage-image.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/validation-donnee.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-28/ex-009/gestionnaire-de-nom.webp"
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-enonce-1.webp",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-enonce-2.webp",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-enonce-3.webp",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-enonce-4.gif",
+          "data/assets/excel/avance-08-nommer-une-cellule/excel-ex-009-scrape-enonce-5.webp"
         ],
         "resultImages": []
       },
@@ -11085,8 +10875,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercie 1 : Tableau Croisé Dynamique",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/tableau-croise-dynamique-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1kdwYE7j_J1IDZDQddw3Xdx2Mqln4elk-",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1rpG8WMNbyG-8Mhxcc-D6ZLByhMper9A2",
+      "docxUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-001.xlsx",
+      "downloadUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-001-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -11109,11 +10899,11 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/ex-001.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/exo1.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/exo-2.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/exo-3.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-001/exo-4.jpg"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-001-scrape-resultat-1.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-001-scrape-resultat-2.jpg",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-001-scrape-resultat-3.jpg",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-001-scrape-resultat-4.jpg",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-001-scrape-resultat-5.jpg"
         ]
       },
       "section": "avance",
@@ -11151,7 +10941,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Tableau Croisé Dynamique (Tableaux croisés dynamiques 2)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-2-tcd.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1DwwGxEfg8xHKwDaYyBcth0NR3xXpF94i",
+      "docxUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -11178,14 +10968,14 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/ex-002.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-1.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-3.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-4.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-5.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/feuille-6.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-002/ex-002-feuille-7.gif"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002-scrape-resultat-1.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002-scrape-resultat-2.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002-scrape-resultat-3.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002-scrape-resultat-4.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002-scrape-resultat-5.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002-scrape-resultat-6.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002-scrape-resultat-7.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-002-scrape-resultat-8.gif"
         ]
       },
       "section": "avance",
@@ -11232,7 +11022,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Tableau Croisé Dynamique (Tableaux croisés dynamiques 3)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-3-tcd.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1rW6ZuEDCc0ElPatsjjLJLfKNwNAMjKfk",
+      "docxUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -11260,15 +11050,15 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/ex-003.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-1.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-3.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-4.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-5.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-6.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-7.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-003/feuille-8.gif"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-1.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-2.jpg",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-3.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-4.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-5.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-6.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-7.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-8.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-003-scrape-resultat-9.gif"
         ]
       },
       "section": "avance",
@@ -11318,7 +11108,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Tableau Croisé Dynamique (Tableaux croisés dynamiques 4)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-4-tcd.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1GRaI__uIYzmuxPjKtMEZy5v-vHenN6me",
+      "docxUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -11349,11 +11139,11 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/ex-004.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/feuille-1.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/feuille-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/feuille-3.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-004/feuille-4.gif"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-004-scrape-resultat-1.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-004-scrape-resultat-2.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-004-scrape-resultat-3.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-004-scrape-resultat-4.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-004-scrape-resultat-5.gif"
         ]
       },
       "section": "avance",
@@ -11412,7 +11202,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Tableau Croisé Dynamique (Tableaux croisés dynamiques 5)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-5-tcd.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=18Pga6sAcL7euoueHP1NXUKCFoNXpmmCp",
+      "docxUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -11442,11 +11232,11 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/ex-005.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/feuille-1.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/feuille-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/feuille-3.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-005/feuille-4.gif"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-005-scrape-resultat-1.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-005-scrape-resultat-2.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-005-scrape-resultat-3.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-005-scrape-resultat-4.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-005-scrape-resultat-5.gif"
         ]
       },
       "section": "avance",
@@ -11502,7 +11292,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Tableau Croisé Dynamique (Tableaux croisés dynamiques 6)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-6-tcd.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1cndD6yxrRhTqlgPa19zYdoLChHEt05lX",
+      "docxUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-006.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -11533,12 +11323,12 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/ex-006.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-1.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-3.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-4.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-006/feuille-5.gif"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-006-scrape-resultat-1.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-006-scrape-resultat-2.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-006-scrape-resultat-3.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-006-scrape-resultat-4.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-006-scrape-resultat-5.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-006-scrape-resultat-6.gif"
         ]
       },
       "section": "avance",
@@ -11597,7 +11387,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Tableau Croisé Dynamique (Tableaux croisés dynamiques 7)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-7.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1JhHeS5CucTvyRvhUaRBXmd6ODOJLo8kp",
+      "docxUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -11626,15 +11416,15 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/ex-007.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-01.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-02.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-03.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-04.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-05.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-06.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-07.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-007/feuille-08.gif"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-1.jpg",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-2.jpg",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-3.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-4.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-5.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-6.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-7.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-8.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-007-scrape-resultat-9.gif"
         ]
       },
       "section": "avance",
@@ -11697,7 +11487,6 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Tableau Croisé Dynamique",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Après avoir téléchargé votre fichier de travail ci-contre, vous effectuez les différentes manipulations :.",
         "Comparaison des chiffres d'affaires par mois (CA_Mensuel) pour chaque vendeur.",
         "Calculs des moyennes et les écarts-types des chiffres d'affaires pour chaque vendeur et pour chaque produit.",
@@ -11712,14 +11501,13 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-008/ex-008.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-008/ex-008-solution-2.gif"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-008-scrape-resultat-1.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-008-scrape-resultat-2.gif"
         ]
       },
       "section": "avance",
       "moduleSlug": "tableaux-croises-dynamiques",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Après avoir téléchargé votre fichier de travail ci-contre, vous effectuez les différentes manipulations :.",
         "Comparaison des chiffres d'affaires par mois (CA_Mensuel) pour chaque vendeur.",
         "Calculs des moyennes et les écarts-types des chiffres d'affaires pour chaque vendeur et pour chaque produit.",
@@ -11727,7 +11515,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Après avoir téléchargé votre fichier de travail ci-contre, vous effectuez les différentes manipulations :.",
         "Comparaison des chiffres d'affaires par mois (CA_Mensuel) pour chaque vendeur.",
         "Calculs des moyennes et les écarts-types des chiffres d'affaires pour chaque vendeur et pour chaque produit.",
@@ -11753,7 +11540,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Tableau Croisé Dynamique (Tableaux croisés dynamiques 9)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/fonctions-base-de-donnees/exercice-9.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=17j_8xTAy-3fhTwJkCtHFmJSUOhY23ffY",
+      "docxUrl": "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-009.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -11778,10 +11565,10 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-feuille-1.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-feuille-2.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-31/ex-009/ex-009-feuille-3.gif"
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-009-scrape-resultat-1.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-009-scrape-resultat-2.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-009-scrape-resultat-3.gif",
+          "data/assets/excel/avance-09-tableaux-croises-dynamiques/excel-ex-009-scrape-resultat-4.gif"
         ]
       },
       "section": "avance",
@@ -11822,20 +11609,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 1",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/sous-totaux/exercice-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1MU5y_s5_4TwnWvvaC7z71BFzGuRhRzwo",
+      "docxUrl": "data/assets/excel/avance-10-sous-totaux/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-001/ex-001.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-001/ex-001-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-10-sous-totaux/excel-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-10-sous-totaux/excel-ex-001-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice 1",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice 1.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez simplement un sous-total pour chaque variété de fruits."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -11845,26 +11629,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-001/ex-001.gif"
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-001-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-001/ex-001-solution.gif"
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-001-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
       "moduleSlug": "sous-totaux",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice 1.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez simplement un sous-total pour chaque variété de fruits."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Exercice 1.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez simplement un sous-total pour chaque variété de fruits."
       ],
       "originalInstructions": [
         "Vous appliquez simplement un sous-total pour chaque variété de fruits."
@@ -11881,20 +11659,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Sous-Totaux",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/sous-totaux/exercice-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1L1HGZh4Ir-re1HV053duoRzt1FBLQkq3",
+      "docxUrl": "data/assets/excel/avance-10-sous-totaux/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-002/ex-002.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-002/ex-002-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-10-sous-totaux/excel-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-10-sous-totaux/excel-ex-002-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Sous-Totaux",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Sous-Totaux.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez un sous-total pour déterminer la moyenne de chaque classe dans chaque matière. Il vous faudra modifier le fichier de travail."
       ],
       "levelLabel": "Intermediaire",
       "scrape": {
@@ -11904,26 +11679,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-002/ex-002.gif"
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-002-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-002/ex-002-solution.gif"
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-002-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
       "moduleSlug": "sous-totaux",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Sous-Totaux.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez un sous-total pour déterminer la moyenne de chaque classe dans chaque matière. Il vous faudra modifier le fichier de travail."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Sous-Totaux.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Vous appliquez un sous-total pour déterminer la moyenne de chaque classe dans chaque matière. Il vous faudra modifier le fichier de travail."
       ],
       "originalInstructions": [
         "Vous appliquez un sous-total pour déterminer la moyenne de chaque classe dans chaque matière. Il vous faudra modifier le fichier de travail."
@@ -11940,20 +11709,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Sous-Totaux",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/sous-totaux/exercice-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1O4VbAD-z-NB3-IL06JWZkpuAVJTN9VkB",
+      "docxUrl": "data/assets/excel/avance-10-sous-totaux/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-003/ex-003.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-003/ex-003-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-10-sous-totaux/excel-ex-003-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-10-sous-totaux/excel-ex-003-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Sous-Totaux",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Sous-Totaux.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Après une modification du fichier de travail, vous déterminez le sous-total de chaque société. (sans modifications ça va être compliqué)."
       ],
       "levelLabel": "Intermediaire",
       "scrape": {
@@ -11963,26 +11729,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-003/ex-003.gif"
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-003-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-003/ex-003-solution.gif"
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-003-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
       "moduleSlug": "sous-totaux",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Sous-Totaux.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Après une modification du fichier de travail, vous déterminez le sous-total de chaque société. (sans modifications ça va être compliqué)."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: Sous-Totaux.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Après une modification du fichier de travail, vous déterminez le sous-total de chaque société. (sans modifications ça va être compliqué)."
       ],
       "originalInstructions": [
         "Après une modification du fichier de travail, vous déterminez le sous-total de chaque société. (sans modifications ça va être compliqué)."
@@ -11999,7 +11759,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Sous-Totaux",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/sous-totaux/exercice-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1LTTs98RsAnNSy3qYM6X9VzpqkbrZd0hL",
+      "docxUrl": "data/assets/excel/avance-10-sous-totaux/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -12022,10 +11782,10 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/ex-004-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/par-service.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/par-duree.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-29/ex-004/par-type-de-panne.gif"
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-004-scrape-resultat-1.gif",
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-004-scrape-resultat-2.gif",
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-004-scrape-resultat-3.gif",
+          "data/assets/excel/avance-10-sous-totaux/excel-ex-004-scrape-resultat-4.gif"
         ]
       },
       "section": "avance",
@@ -12060,20 +11820,17 @@ window.EXCEL_ATELIER_DATA = {
       "title": "La consolidation dans excel",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/consolidation/exercice-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=15zW49hUJQlDHMHT0-tCoeb9x_VO3O7dC",
+      "docxUrl": "data/assets/excel/avance-11-consolidation/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-001/ex-001-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-001/ex-001-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-11-consolidation/excel-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/excel/avance-11-consolidation/excel-ex-001-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "La consolidation dans excel",
       "preamble": "",
       "instructions": [
-        "Construisez la structure principale du classeur a partir de cet objectif: La consolidation dans excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Dans un espace au choix sur la feuille de calcul et de préférence à côté, vous insérez un tableau qui va faire la \"consolidation\" des deux premiers."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -12083,26 +11840,20 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-001/ex-001-enonce.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-001-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-001/ex-001-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-001-scrape-resultat-1.gif"
         ]
       },
       "section": "avance",
       "moduleSlug": "consolidation",
       "consignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: La consolidation dans excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Dans un espace au choix sur la feuille de calcul et de préférence à côté, vous insérez un tableau qui va faire la \"consolidation\" des deux premiers."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Construisez la structure principale du classeur a partir de cet objectif: La consolidation dans excel.",
-        "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
-        "Enregistrez votre travail puis marquez l'exercice comme termine."
+        "Dans un espace au choix sur la feuille de calcul et de préférence à côté, vous insérez un tableau qui va faire la \"consolidation\" des deux premiers."
       ],
       "originalInstructions": [
         "Dans un espace au choix sur la feuille de calcul et de préférence à côté, vous insérez un tableau qui va faire la \"consolidation\" des deux premiers."
@@ -12119,10 +11870,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 2",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/consolidation/exercice-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=10_DOzSqWmSKSNcERRtLnvSZID6XcyJWK",
+      "docxUrl": "data/assets/excel/avance-11-consolidation/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-002/ex-002-enonce.gif",
+      "imageEnonce": "data/assets/excel/avance-11-consolidation/excel-ex-002-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -12140,11 +11891,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-002/ex-002-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-002-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-002/ex-002-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-002/ex-002-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-002-scrape-enonce-1.gif",
+          "data/assets/excel/avance-11-consolidation/excel-ex-002-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -12178,10 +11929,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 3",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/consolidation/exercice-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1L320mvpcwZ-dsQ8h_6oYM_ZTbizpwHuy",
+      "docxUrl": "data/assets/excel/avance-11-consolidation/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-003/ex-003-enonce.gif",
+      "imageEnonce": "data/assets/excel/avance-11-consolidation/excel-ex-003-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -12199,11 +11950,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-003/ex-003-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-003-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-003/ex-003-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-003/ex-003-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-003-scrape-enonce-1.gif",
+          "data/assets/excel/avance-11-consolidation/excel-ex-003-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -12237,10 +11988,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 4",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/consolidation/exercice-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1oWGAAb6voYM0pB-hvBk2uMcpCqPGs_FE",
+      "docxUrl": "data/assets/excel/avance-11-consolidation/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-004/ex-004-enonce.gif",
+      "imageEnonce": "data/assets/excel/avance-11-consolidation/excel-ex-004-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -12258,11 +12009,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-004/ex-004-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-004-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-004/ex-004-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-004/ex-004-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-004-scrape-enonce-1.gif",
+          "data/assets/excel/avance-11-consolidation/excel-ex-004-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -12296,10 +12047,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 5",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/consolidation/exercice-5.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1d6ACZNVk6EXxL4PDKO1SVKre7JksWq7o",
+      "docxUrl": "data/assets/excel/avance-11-consolidation/excel-ex-005.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-005/ex-005-enonce.gif",
+      "imageEnonce": "data/assets/excel/avance-11-consolidation/excel-ex-005-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -12317,11 +12068,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-005/ex-005-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-005-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-005/ex-005-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-005/ex-005-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-005-scrape-enonce-1.gif",
+          "data/assets/excel/avance-11-consolidation/excel-ex-005-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -12355,10 +12106,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 6 (Consolidation 6)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/consolidation/exercice-6.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1h8b5YPeg5QFbkSdHwHtHGAc7TsRSQtry",
+      "docxUrl": "data/assets/excel/avance-11-consolidation/excel-ex-006.zip",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-006/ex-006-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-11-consolidation/excel-ex-006-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -12380,7 +12131,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-006/ex-006-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-006-scrape-enonce-1.gif"
         ],
         "resultImages": []
       },
@@ -12423,10 +12174,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 7 (Consolidation 7)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/consolidation/exercice-7.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1-QycLH__SxxBhXk9KmQmPS6efac65_j2",
+      "docxUrl": "data/assets/excel/avance-11-consolidation/excel-ex-007.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-007/ex-007-solution.jpg",
+      "imageEnonce": "data/assets/excel/avance-11-consolidation/excel-ex-007-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -12444,11 +12195,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-007/ex-007.jpg"
+          "data/assets/excel/avance-11-consolidation/excel-ex-007-scrape-extra-1.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-007/ex-007-solution.jpg",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-007/ex-007.jpg"
+          "data/assets/excel/avance-11-consolidation/excel-ex-007-scrape-enonce-1.jpg",
+          "data/assets/excel/avance-11-consolidation/excel-ex-007-scrape-enonce-2.jpg"
         ],
         "resultImages": []
       },
@@ -12482,10 +12233,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 8",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/consolidation/exercice-8.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=19tQAH5h6JFz7DemhzC7Dfzj5pAywl0KK",
+      "docxUrl": "data/assets/excel/avance-11-consolidation/excel-ex-008.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-008/ex-008-solution.gif",
+      "imageEnonce": "data/assets/excel/avance-11-consolidation/excel-ex-008-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -12506,7 +12257,7 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-30/ex-008/ex-008-solution.gif"
+          "data/assets/excel/avance-11-consolidation/excel-ex-008-scrape-enonce-1.gif"
         ],
         "resultImages": []
       },
@@ -12549,8 +12300,8 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-001/ex-001-resultat.webp",
+      "imageEnonce": "data/assets/excel/avance-12-macro/excel-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-12-macro/excel-ex-001-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Réaliser une macro simple",
@@ -12572,8 +12323,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-001/ex-001-resultat.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-001/ex-001-resultat-2.webp"
+          "data/assets/excel/avance-12-macro/excel-ex-001-scrape-resultat-1.webp",
+          "data/assets/excel/avance-12-macro/excel-ex-001-scrape-resultat-2.webp"
         ]
       },
       "section": "avance",
@@ -12625,7 +12376,6 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Exercice 2",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Le planning ci-dessous est à réaliser chaque mois pour tous les employés.",
         "Afin de gagner du temps vous lancer l'enregistrement d'une MACRO et vous réalisez ce tableau.",
         "A la fin de la réalisation vous \"arrêter l'enregistrement\".",
@@ -12642,14 +12392,13 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-002/ex-002.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp"
+          "data/assets/excel/avance-12-macro/excel-ex-002-scrape-resultat-1.webp",
+          "data/assets/excel/avance-12-macro/excel-ex-002-scrape-resultat-2.webp"
         ]
       },
       "section": "avance",
       "moduleSlug": "macro",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Le planning ci-dessous est à réaliser chaque mois pour tous les employés.",
         "Afin de gagner du temps vous lancer l'enregistrement d'une MACRO et vous réalisez ce tableau.",
         "A la fin de la réalisation vous \"arrêter l'enregistrement\".",
@@ -12659,7 +12408,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Le planning ci-dessous est à réaliser chaque mois pour tous les employés.",
         "Afin de gagner du temps vous lancer l'enregistrement d'une MACRO et vous réalisez ce tableau.",
         "A la fin de la réalisation vous \"arrêter l'enregistrement\".",
@@ -12689,8 +12437,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 3",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/macro/exercice-3-macro.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1UYNztY_viGQ01Jk8pUtm8soKrQ01zbac",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1zoScUB9rCjiJZvx-apOa4zLmSrDkhJe2",
+      "docxUrl": "data/assets/excel/avance-12-macro/excel-ex-003.xlsx",
+      "downloadUrl": "data/assets/excel/avance-12-macro/excel-ex-003-annexe-1.zip",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -12731,9 +12479,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/support-01.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-003/ex-003-solution.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp"
+          "data/assets/excel/avance-12-macro/excel-ex-003-scrape-resultat-1.webp",
+          "data/assets/excel/avance-12-macro/excel-ex-003-scrape-resultat-2.webp",
+          "data/assets/excel/avance-12-macro/excel-ex-003-scrape-resultat-3.webp"
         ]
       },
       "section": "avance",
@@ -12825,7 +12573,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Exercice 4",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/macro/exercice-4-macro.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1-keqoSJk8PvkPvEWmZg0kTbm0V5PJJHp",
+      "docxUrl": "data/assets/excel/avance-12-macro/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -12859,9 +12607,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-004/ex-004-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp"
+          "data/assets/excel/avance-12-macro/excel-ex-004-scrape-resultat-1.webp",
+          "data/assets/excel/avance-12-macro/excel-ex-004-scrape-resultat-2.gif",
+          "data/assets/excel/avance-12-macro/excel-ex-004-scrape-resultat-3.webp"
         ]
       },
       "section": "avance",
@@ -12932,14 +12680,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-005/ex-005.webp",
+      "imageEnonce": "data/assets/excel/avance-12-macro/excel-ex-005-image-enonce.webp",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Exercice 5",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "CONSIGNES :.",
         "En partant d'un classeur vierge, vous allez intégrer une macro qui va automatiquement générer un menu déroulant pour changer d'onglet.",
         "Le nom de l'onglet sera affiché, la couleur de fond sera orange et modifiable à volonté. La liste déroulante est en A2 mais l'emplacement reste modifiable à volonté.",
@@ -12953,14 +12700,13 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/ex-005/ex-005.webp"
+          "data/assets/excel/avance-12-macro/excel-ex-005-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
       "section": "avance",
       "moduleSlug": "macro",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "CONSIGNES :.",
         "En partant d'un classeur vierge, vous allez intégrer une macro qui va automatiquement générer un menu déroulant pour changer d'onglet.",
         "Le nom de l'onglet sera affiché, la couleur de fond sera orange et modifiable à volonté. La liste déroulante est en A2 mais l'emplacement reste modifiable à volonté.",
@@ -12968,7 +12714,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "CONSIGNES :.",
         "En partant d'un classeur vierge, vous allez intégrer une macro qui va automatiquement générer un menu déroulant pour changer d'onglet.",
         "Le nom de l'onglet sera affiché, la couleur de fond sera orange et modifiable à volonté. La liste déroulante est en A2 mais l'emplacement reste modifiable à volonté.",
@@ -12992,11 +12737,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Case à cocher",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-1-case-a-cocher.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1kEzSnykHAILUk8nBBMRDk9e5iWussCP1",
+      "docxUrl": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g188.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-001/ex-001-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g188-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g188-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Case à cocher",
@@ -13019,10 +12764,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-001/ex-001.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g188-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-001/ex-001-solution.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g188-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13070,7 +12815,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Case à cocher",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-2-case-a-cocher.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1zDJxJwW1b7PDUCyv9eFOuNjKX4RebgCo",
+      "docxUrl": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g189.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -13096,9 +12841,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/ex-002.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/tuto-mefc.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-002/ex-002-solution.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g189-scrape-resultat-1.webp",
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g189-scrape-resultat-2.webp",
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g189-scrape-resultat-3.webp"
         ]
       },
       "section": "avance",
@@ -13142,11 +12887,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Case à cocher",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-3-case-a-cocher.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1iMLNAai5NkJx_QI_2ezlbG_3f_h8hQt2",
+      "docxUrl": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g190.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-003/ex-003-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g190-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g190-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Case à cocher",
@@ -13177,10 +12922,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-003/ex-003.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g190-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-case-a-cocher/ex-003/ex-003-solution.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g190-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13252,11 +12997,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cases d'option (Controles de Formulaire 1)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-1-bouton-radio.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1kEzSnykHAILUk8nBBMRDk9e5iWussCP1",
+      "docxUrl": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g191.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-001/ex-001-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g191-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g191-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Cases d'option",
@@ -13275,10 +13020,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-001/ex-001.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g191-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-001/ex-001-solution.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-001-g191-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13314,11 +13059,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cases d'option (Controles de Formulaire 2)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-2-bouton-radio.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1zDJxJwW1b7PDUCyv9eFOuNjKX4RebgCo",
+      "docxUrl": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g192.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-002/ex-002-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g192-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g192-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Cases d'option",
@@ -13341,10 +13086,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-002/ex-002.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g192-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-002/ex-002-solution.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-002-g192-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13392,11 +13137,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cases d'option (Controles de Formulaire 3)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-3-bouton-radio.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1iMLNAai5NkJx_QI_2ezlbG_3f_h8hQt2",
+      "docxUrl": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g193.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-003/ex-003-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g193-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g193-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Cases d'option",
@@ -13429,10 +13174,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-003/ex-003.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g193-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-003/ex-003-solution.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-003-g193-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13510,7 +13255,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cases d'option (Controles de Formulaire 4)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/controles-de-formulaire/exercice-4-bouton-radio.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1BQ_mL4cnQ-aZ2d-kSHiDXWg-YV0MFHfV",
+      "docxUrl": "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -13536,9 +13281,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/tuto-01.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/tuto-02.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-bouton-radio/ex-004/ex-004-resultat.webp"
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-004-scrape-resultat-1.webp",
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-004-scrape-resultat-2.webp",
+          "data/assets/excel/avance-13-controles-de-formulaire/excel-ex-004-scrape-resultat-3.webp"
         ]
       },
       "section": "avance",
@@ -13582,11 +13327,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "ActiveX : Zone de texte",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/activex/exercice-1-activex.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1XJh-gU4E6ey_HvTt2BXKV2rzh2bGpQFt",
+      "docxUrl": "data/assets/excel/avance-14-activex/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-activex-zone/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-activex-zone/ex-001/ex-001-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-14-activex/excel-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-14-activex/excel-ex-001-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "ActiveX : Zone de texte",
@@ -13613,10 +13358,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-activex-zone/ex-001/ex-001.webp"
+          "data/assets/excel/avance-14-activex/excel-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-36/ex-activex-zone/ex-001/ex-001-solution.webp"
+          "data/assets/excel/avance-14-activex/excel-ex-001-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13676,11 +13421,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Calcul Matriciel (Calcul matriciel 1)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/calcul-matriciel/exercice-calcul-matriciel-1.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1vn3Vu2UAVmN4DSa7HVeGxu5OpuBaUdas",
+      "docxUrl": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-001/ex-001-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-001-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Calcul Matriciel",
@@ -13697,10 +13442,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-001/ex-001.webp"
+          "data/assets/excel/avance-15-calcul-matriciel/excel-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-001/ex-001-solution.webp"
+          "data/assets/excel/avance-15-calcul-matriciel/excel-ex-001-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13730,11 +13475,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Calcul Matriciel (Calcul matriciel 2)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/calcul-matriciel/exercice-calcul-matriciel-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1XRr9zG6tHP4v9nz0-woBAJcAPEEGf00C",
+      "docxUrl": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-002.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-002/ex-002-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-002-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-002-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Calcul Matriciel",
@@ -13751,10 +13496,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-002/ex-002.webp"
+          "data/assets/excel/avance-15-calcul-matriciel/excel-ex-002-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-002/ex-002-solution.webp"
+          "data/assets/excel/avance-15-calcul-matriciel/excel-ex-002-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13784,11 +13529,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Calcul Matriciel (Calcul matriciel 3)",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/calcul-matriciel/exercice-calcul-matriciel-3.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1luyjq0C9xsMbCmq6Vdp7oSOUQYHG9l6f",
+      "docxUrl": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-003.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-003/ex-003-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-003-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Calcul Matriciel",
@@ -13805,10 +13550,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-003/ex-003.webp"
+          "data/assets/excel/avance-15-calcul-matriciel/excel-ex-003-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-003/ex-003-solution.webp"
+          "data/assets/excel/avance-15-calcul-matriciel/excel-ex-003-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13838,11 +13583,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Calcul Matriciel (Calcul matriciel 4)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/calcul-matriciel/exercice-calcul-matriciel-4.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1mw1S0Nhs7MwKUmuFqunkqsOQq5bbzWTm",
+      "docxUrl": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-004.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-004/ex-004-solution.webp",
+      "imageEnonce": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-004-image-enonce.webp",
+      "imageResultat": "data/assets/excel/avance-15-calcul-matriciel/excel-ex-004-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Calcul Matriciel",
@@ -13863,10 +13608,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-004/ex-004.webp"
+          "data/assets/excel/avance-15-calcul-matriciel/excel-ex-004-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/excel-competence-38/ex-004/ex-004-solution.webp"
+          "data/assets/excel/avance-15-calcul-matriciel/excel-ex-004-scrape-resultat-1.webp"
         ]
       },
       "section": "avance",
@@ -13908,7 +13653,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Wi-Tool",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/exercices-asca-ul11-word/wi-tool.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1cDbedja0gfq2Sg_5fbZNBIXxs6xU6ODd",
+      "docxUrl": "data/assets/excel/asca-02-ul11-word/excel-ex-001.docx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -13940,8 +13685,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2008-05/01.gif",
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2008-05/02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-001-scrape-resultat-1.gif",
+          "data/assets/excel/asca-02-ul11-word/excel-ex-001-scrape-resultat-2.gif"
         ]
       },
       "section": "asca",
@@ -14006,14 +13751,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/asca-ul21/2009-01/01.gif",
+      "imageEnonce": "data/assets/excel/asca-02-ul11-word/excel-ex-002-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Electra",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "La société Electra fabrique et commercialise des appareils de chauffage électrique.",
@@ -14039,7 +13783,6 @@ window.EXCEL_ATELIER_DATA = {
       "section": "asca",
       "moduleSlug": "ul11-word",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "La société Electra fabrique et commercialise des appareils de chauffage électrique.",
@@ -14054,7 +13797,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "La société Electra fabrique et commercialise des appareils de chauffage électrique.",
@@ -14095,14 +13837,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/asca-ul21/2009-05/01.gif",
+      "imageEnonce": "data/assets/excel/asca-02-ul11-word/excel-ex-003-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Cité des concerts",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "le document indiquant les avantages et tarifs correspondant au parcours Concerts (format A4).",
         "l'imprimé qui permettra d'obtenir le programme 2009-2010 (format A5)."
       ],
@@ -14119,13 +13860,11 @@ window.EXCEL_ATELIER_DATA = {
       "section": "asca",
       "moduleSlug": "ul11-word",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "le document indiquant les avantages et tarifs correspondant au parcours Concerts (format A4).",
         "l'imprimé qui permettra d'obtenir le programme 2009-2010 (format A5)."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "le document indiquant les avantages et tarifs correspondant au parcours Concerts (format A4).",
         "l'imprimé qui permettra d'obtenir le programme 2009-2010 (format A5)."
       ],
@@ -14148,14 +13887,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/asca-ul21/2010-01/sujet-01.gif",
+      "imageEnonce": "data/assets/excel/asca-02-ul11-word/excel-ex-004-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Union des commercants",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "L'Union des Commerçants et Artisans (UCA) de la ville de Bourg-en-Bresse organise plusieurs fois par an des animations commerciales. La prochaine aura lieu au printemps prochain, à l'occasion du week-end de Pâques.",
@@ -14174,18 +13912,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2010-01/sujet-02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-004-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2010-01/sujet-01.gif",
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2010-01/sujet-02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-004-scrape-enonce-1.gif",
+          "data/assets/excel/asca-02-ul11-word/excel-ex-004-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul11-word",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "L'Union des Commerçants et Artisans (UCA) de la ville de Bourg-en-Bresse organise plusieurs fois par an des animations commerciales. La prochaine aura lieu au printemps prochain, à l'occasion du week-end de Pâques.",
@@ -14199,7 +13936,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "L'Union des Commerçants et Artisans (UCA) de la ville de Bourg-en-Bresse organise plusieurs fois par an des animations commerciales. La prochaine aura lieu au printemps prochain, à l'occasion du week-end de Pâques.",
@@ -14238,14 +13974,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/asca-ul21/2010-05/novatix-01.gif",
+      "imageEnonce": "data/assets/excel/asca-02-ul11-word/excel-ex-005-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Novatix",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "Le groupe Novatix gère, pour un réseau d'entreprises adhérentes, la diffusion de chèques de table et chèques-cadeau.",
@@ -14265,18 +14000,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2010-05/novatix-02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-005-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2010-05/novatix-01.gif",
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2010-05/novatix-02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-005-scrape-enonce-1.gif",
+          "data/assets/excel/asca-02-ul11-word/excel-ex-005-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul11-word",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "Le groupe Novatix gère, pour un réseau d'entreprises adhérentes, la diffusion de chèques de table et chèques-cadeau.",
@@ -14291,7 +14025,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Exposé de la situation.",
         "Le groupe Novatix gère, pour un réseau d'entreprises adhérentes, la diffusion de chèques de table et chèques-cadeau.",
@@ -14329,10 +14062,10 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Super Print",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/exercices-asca-ul11-word/cas-super-print.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1xUpFqygOLu6C_tRn8IAL3vWJfQeZpZSE",
+      "docxUrl": "data/assets/excel/asca-02-ul11-word/excel-ex-006.docx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/asca-ul21/2011-01/super-print-01.gif",
+      "imageEnonce": "data/assets/excel/asca-02-ul11-word/excel-ex-006-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
@@ -14357,11 +14090,11 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2011-01/super-print-02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-006-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2011-01/super-print-01.gif",
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2011-01/super-print-02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-006-scrape-enonce-1.gif",
+          "data/assets/excel/asca-02-ul11-word/excel-ex-006-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -14419,14 +14152,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/asca-ul21/2011-05/credit-top-01.gif",
+      "imageEnonce": "data/assets/excel/asca-02-ul11-word/excel-ex-007-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Credit Top",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Expose de la Situation.",
         "Le groupe CrediTop est une société financière qui propose des crédits à la consommation.",
@@ -14444,18 +14176,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2011-05/credit-top-02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-007-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2011-05/credit-top-01.gif",
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2011-05/credit-top-02.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-007-scrape-enonce-1.gif",
+          "data/assets/excel/asca-02-ul11-word/excel-ex-007-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul11-word",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Expose de la Situation.",
         "Le groupe CrediTop est une société financière qui propose des crédits à la consommation.",
@@ -14468,7 +14199,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Expose de la Situation.",
         "Le groupe CrediTop est une société financière qui propose des crédits à la consommation.",
@@ -14505,14 +14235,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/asca-ul21/2012/bio-02.gif",
+      "imageEnonce": "data/assets/excel/asca-02-ul11-word/excel-ex-008-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Logique Bio",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Expose de la Situation.",
         "Le magasin de produits biologiques « Logique Bio » fête ses 10 ans d'ouverture. A cette occasion, le directeur a décidé d'organiser une opération de promotion auprès de ses meilleurs clients.",
@@ -14532,18 +14261,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2012/bio-01.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-008-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2012/bio-02.gif",
-          "https://www.clic-formation.net/images/02-word/asca-ul21/2012/bio-01.gif"
+          "data/assets/excel/asca-02-ul11-word/excel-ex-008-scrape-enonce-1.gif",
+          "data/assets/excel/asca-02-ul11-word/excel-ex-008-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul11-word",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Expose de la Situation.",
         "Le magasin de produits biologiques « Logique Bio » fête ses 10 ans d'ouverture. A cette occasion, le directeur a décidé d'organiser une opération de promotion auprès de ses meilleurs clients.",
@@ -14558,7 +14286,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Expose de la Situation.",
         "Le magasin de produits biologiques « Logique Bio » fête ses 10 ans d'ouverture. A cette occasion, le directeur a décidé d'organiser une opération de promotion auprès de ses meilleurs clients.",
@@ -14606,7 +14333,6 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Enveloppe",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "L'entreprise « LES GENS DANS L'ENVELOPPE » vous demande de comparer trois fournisseurs de boîtes d'archivage en vue de choisir la meilleure offre.",
         "Deux négociations sont en cours avec des remises différentes :.",
         "On vous remet :.",
@@ -14631,16 +14357,15 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/2016-01-gens-enveloppe.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/tableau.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/2016-01-gens-enveloppe-2.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2016-01-gens-enveloppe/2016-01-gens-enveloppe-solution-1.webp"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-001-scrape-resultat-1.webp",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-001-scrape-resultat-2.webp",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-001-scrape-resultat-3.webp",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-001-scrape-resultat-4.webp"
         ]
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "L'entreprise « LES GENS DANS L'ENVELOPPE » vous demande de comparer trois fournisseurs de boîtes d'archivage en vue de choisir la meilleure offre.",
         "Deux négociations sont en cours avec des remises différentes :.",
         "On vous remet :.",
@@ -14658,7 +14383,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "L'entreprise « LES GENS DANS L'ENVELOPPE » vous demande de comparer trois fournisseurs de boîtes d'archivage en vue de choisir la meilleure offre.",
         "Deux négociations sont en cours avec des remises différentes :.",
         "On vous remet :.",
@@ -14714,7 +14438,6 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Nett Industrie",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "La ristourne est une réduction attribuée en fin d'année et dont l'ampleur est basée sur le montant total des commandes réalisées sur l'année.",
         "Les conditions de ristourne sont contractuelles : pour l'entreprise, la ristourne représente un pourcentage fixe du chiffre d'affaires.",
         "Son calcul est indépendant et fera l'objet d'un document commercial à part entière."
@@ -14728,22 +14451,20 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-01-nett-industrie/2017-01-nett-industrie-01.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-01-nett-industrie/regle-2.png",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-01-nett-industrie/2017-01-nett-industrie-resultat.webp"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-002-scrape-resultat-1.webp",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-002-scrape-resultat-2.png",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-002-scrape-resultat-3.webp"
         ]
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "La ristourne est une réduction attribuée en fin d'année et dont l'ampleur est basée sur le montant total des commandes réalisées sur l'année.",
         "Les conditions de ristourne sont contractuelles : pour l'entreprise, la ristourne représente un pourcentage fixe du chiffre d'affaires.",
         "Son calcul est indépendant et fera l'objet d'un document commercial à part entière."
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "La ristourne est une réduction attribuée en fin d'année et dont l'ampleur est basée sur le montant total des commandes réalisées sur l'année.",
         "Les conditions de ristourne sont contractuelles : pour l'entreprise, la ristourne représente un pourcentage fixe du chiffre d'affaires.",
         "Son calcul est indépendant et fera l'objet d'un document commercial à part entière."
@@ -14770,14 +14491,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-05-bustop/bustop.webp",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-05-bustop/bustop-solution.webp",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/excel/asca-03-ul21-excel/excel-ex-003-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Bustop",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Le tarif du déplacement dépend de la ville de destination.",
         "Chaque car dispose de 40 places.",
         "L'entreprise fonctionne avec des déplacements 7 jours sur 7.",
@@ -14794,13 +14514,12 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2017-05-bustop/bustop-solution.webp"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-003-scrape-resultat-1.webp"
         ]
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Le tarif du déplacement dépend de la ville de destination.",
         "Chaque car dispose de 40 places.",
         "L'entreprise fonctionne avec des déplacements 7 jours sur 7.",
@@ -14810,7 +14529,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Le tarif du déplacement dépend de la ville de destination.",
         "Chaque car dispose de 40 places.",
         "L'entreprise fonctionne avec des déplacements 7 jours sur 7.",
@@ -14841,14 +14559,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/resultat-02.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/resultat-01.gif",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-004-image-enonce.gif",
+      "imageResultat": "data/assets/excel/asca-03-ul21-excel/excel-ex-004-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Com Un Parfum",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Le magazine COM'UN PARFUM édite une revue spécialisée dans les produits « mode ». Chaque année, un article traite des senteurs ; des tableaux et graphiques y sont associés.",
         "Il vous est demandé, pour le prochain magazine, de présenter et d'automatiser :.",
@@ -14894,22 +14611,21 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/resultat-01.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/annexe-02.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/annexe-01.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-004-scrape-extra-1.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-004-scrape-extra-2.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-004-scrape-extra-3.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/resultat-01.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/resultat-02.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/annexe-02.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2006-01-com-un-parfum/annexe-01.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-004-scrape-enonce-1.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-004-scrape-enonce-2.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-004-scrape-enonce-3.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-004-scrape-enonce-4.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Le magazine COM'UN PARFUM édite une revue spécialisée dans les produits « mode ». Chaque année, un article traite des senteurs ; des tableaux et graphiques y sont associés.",
         "Il vous est demandé, pour le prochain magazine, de présenter et d'automatiser :.",
@@ -14950,7 +14666,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Le magazine COM'UN PARFUM édite une revue spécialisée dans les produits « mode ». Chaque année, un article traite des senteurs ; des tableaux et graphiques y sont associés.",
         "Il vous est demandé, pour le prochain magazine, de présenter et d'automatiser :.",
@@ -15043,14 +14758,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-05-vancouver/vancouver.jpg",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-005-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "VANCOUVER",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Mise en forme en tenant compte de l’annexe 1 (sans les en-têtes de lignes ni de colonnes) ;.",
         "Mise en page, sur une page, en mode portrait (à centrer horizontalement dans la page) ;.",
         "Ombrage (grisé, tramé...) sur les zones de calculs ;.",
@@ -15073,20 +14787,19 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-05-vancouver/2010-05-vancouver-graphique.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-05-vancouver/2010-05-vancouver-tableau.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-005-scrape-extra-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-005-scrape-extra-2.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-05-vancouver/vancouver.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-05-vancouver/2010-05-vancouver-graphique.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-05-vancouver/2010-05-vancouver-tableau.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-005-scrape-enonce-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-005-scrape-enonce-2.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-005-scrape-enonce-3.jpg"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Mise en forme en tenant compte de l’annexe 1 (sans les en-têtes de lignes ni de colonnes) ;.",
         "Mise en page, sur une page, en mode portrait (à centrer horizontalement dans la page) ;.",
         "Ombrage (grisé, tramé...) sur les zones de calculs ;.",
@@ -15104,7 +14817,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Mise en forme en tenant compte de l’annexe 1 (sans les en-têtes de lignes ni de colonnes) ;.",
         "Mise en page, sur une page, en mode portrait (à centrer horizontalement dans la page) ;.",
         "Ombrage (grisé, tramé...) sur les zones de calculs ;.",
@@ -15151,14 +14863,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-05-suedoise-sandwich/2011-05-suedoise-sandwich-exo.jpg",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-006-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "La Sue'DOISE",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Du nombre moyen de formules vendues par jour ;.",
         "Du chiffre d’affaires (CA) hebdomadaire par formule, en quantité (soit le nombre de formules vendues) et en valeur ;.",
         "De l'ordre de classement en fonction des CA en valeur.",
@@ -15174,18 +14885,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-05-suedoise-sandwich/2011-05-suedoise.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-006-scrape-extra-1.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-05-suedoise-sandwich/2011-05-suedoise-sandwich-exo.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-05-suedoise-sandwich/2011-05-suedoise.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-006-scrape-enonce-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-006-scrape-enonce-2.jpg"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Du nombre moyen de formules vendues par jour ;.",
         "Du chiffre d’affaires (CA) hebdomadaire par formule, en quantité (soit le nombre de formules vendues) et en valeur ;.",
         "De l'ordre de classement en fonction des CA en valeur.",
@@ -15196,7 +14906,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Du nombre moyen de formules vendues par jour ;.",
         "Du chiffre d’affaires (CA) hebdomadaire par formule, en quantité (soit le nombre de formules vendues) et en valeur ;.",
         "De l'ordre de classement en fonction des CA en valeur.",
@@ -15229,14 +14938,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.cdformation.com/images/01-excel/exercices-pratiques/2008-05-mosaique/2008-05-mosaique-capture.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-05-mosaique/2008-05-mosaique-resultat-tableau.jpg",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/asca-03-ul21-excel/excel-ex-007-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Mosaïque",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Le cabinet d’architecte Mosaïque souhaite analyser ses dépenses en vue de les réduire.",
         "Une réunion de travail a précisé les postes à analyser : Consommables, Électricité, Lignes, téléphones...",
@@ -15289,20 +14997,19 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-05-mosaique/2008-05-mosaique-resultat-tableau.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-05-mosaique/2008-05-mosaique-resultat.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-007-scrape-extra-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-007-scrape-extra-2.jpg"
         ],
         "enonceImages": [
-          "https://www.cdformation.com/images/01-excel/exercices-pratiques/2008-05-mosaique/2008-05-mosaique-capture.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-05-mosaique/2008-05-mosaique-resultat-tableau.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-05-mosaique/2008-05-mosaique-resultat.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-007-scrape-enonce-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-007-scrape-enonce-2.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-007-scrape-enonce-3.jpg"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Le cabinet d’architecte Mosaïque souhaite analyser ses dépenses en vue de les réduire.",
         "Une réunion de travail a précisé les postes à analyser : Consommables, Électricité, Lignes, téléphones...",
@@ -15350,7 +15057,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "Le cabinet d’architecte Mosaïque souhaite analyser ses dépenses en vue de les réduire.",
         "Une réunion de travail a précisé les postes à analyser : Consommables, Électricité, Lignes, téléphones...",
@@ -15457,14 +15163,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-01-sudinfo/2011-01-sudinfo.jpg",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-008-image-enonce.jpg",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Sud Informatique",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "L'entreprise Sud Informatique souhaite faire une analyse de son chiffre d'affaires par famille de produits. Pour cela, elle souhaite déterminer, pour chaque famille :.",
         "le nombre de factures émises, en nombre et en pourcentage,.",
@@ -15504,20 +15209,19 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-01-sudinfo/2011-01-sudinfo-solution.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-01-sudinfo/2011-01-sudinfo-graphe.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-008-scrape-extra-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-008-scrape-extra-2.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-01-sudinfo/2011-01-sudinfo.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-01-sudinfo/2011-01-sudinfo-solution.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2011-01-sudinfo/2011-01-sudinfo-graphe.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-008-scrape-enonce-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-008-scrape-enonce-2.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-008-scrape-enonce-3.jpg"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "L'entreprise Sud Informatique souhaite faire une analyse de son chiffre d'affaires par famille de produits. Pour cela, elle souhaite déterminer, pour chaque famille :.",
         "le nombre de factures émises, en nombre et en pourcentage,.",
@@ -15552,7 +15256,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "L'entreprise Sud Informatique souhaite faire une analyse de son chiffre d'affaires par famille de produits. Pour cela, elle souhaite déterminer, pour chaque famille :.",
         "le nombre de factures émises, en nombre et en pourcentage,.",
@@ -15633,14 +15336,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2012-05-cosmetiques/2012-05-cosmetique.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2012-05-cosmetiques/2012-05-cosmetique-resultat.jpg",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-009-image-enonce.jpg",
+      "imageResultat": "data/assets/excel/asca-03-ul21-excel/excel-ex-009-image-resultat.jpg",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Générale Cosmétiques",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "La société « GÉNÉRALE DE COSMÉTIQUES » souhaite analyser les ventes des 4 catégories de produits vendus par un ensemble de commerciaux sur différents secteurs géographiques.",
         "On vous demande.",
@@ -15682,20 +15384,19 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2012-05-cosmetiques/2012-05-cosmetique-resultat.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2012-05-cosmetiques/2012-05-cosmetique-graphe.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-009-scrape-extra-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-009-scrape-extra-2.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2012-05-cosmetiques/2012-05-cosmetique.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2012-05-cosmetiques/2012-05-cosmetique-resultat.jpg",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2012-05-cosmetiques/2012-05-cosmetique-graphe.jpg"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-009-scrape-enonce-1.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-009-scrape-enonce-2.jpg",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-009-scrape-enonce-3.jpg"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "La société « GÉNÉRALE DE COSMÉTIQUES » souhaite analyser les ventes des 4 catégories de produits vendus par un ensemble de commerciaux sur différents secteurs géographiques.",
         "On vous demande.",
@@ -15732,7 +15433,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "La société « GÉNÉRALE DE COSMÉTIQUES » souhaite analyser les ventes des 4 catégories de produits vendus par un ensemble de commerciaux sur différents secteurs géographiques.",
         "On vous demande.",
@@ -15817,14 +15517,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-01-petits-porteurs/resultat-2.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-01-petits-porteurs/resultat-01.gif",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-010-image-enonce.gif",
+      "imageResultat": "data/assets/excel/asca-03-ul21-excel/excel-ex-010-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Petits Porteurs",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "L'association « LES PETITS PORTEURS » initie ses adhérents à la gestion d'un portefeuille de titres.",
         "Vous devez automatiser le suivi mensuel d'un portefeuille de titres.",
@@ -15873,20 +15572,19 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-01-petits-porteurs/resultat-01.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-01-petits-porteurs/masque.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-010-scrape-extra-1.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-010-scrape-extra-2.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-01-petits-porteurs/resultat-01.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-01-petits-porteurs/resultat-2.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-01-petits-porteurs/masque.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-010-scrape-enonce-1.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-010-scrape-enonce-2.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-010-scrape-enonce-3.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "L'association « LES PETITS PORTEURS » initie ses adhérents à la gestion d'un portefeuille de titres.",
         "Vous devez automatiser le suivi mensuel d'un portefeuille de titres.",
@@ -15930,7 +15628,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "L'association « LES PETITS PORTEURS » initie ses adhérents à la gestion d'un portefeuille de titres.",
         "Vous devez automatiser le suivi mensuel d'un portefeuille de titres.",
@@ -16029,14 +15726,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-05-centre-format/2009-05-enonce.gif",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-011-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Centre Format",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "CENTRE FORMAT, établissement agréé de formation professionnelle, souhaite automatiser les évaluations associées à chaque session de formation.",
         "Vous devez automatiser le bilan de la formation ITSI-12 de la semaine 20.",
@@ -16089,18 +15785,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-05-centre-format/2009-05.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-011-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-05-centre-format/2009-05-enonce.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2009-05-centre-format/2009-05.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-011-scrape-enonce-1.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-011-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "CENTRE FORMAT, établissement agréé de formation professionnelle, souhaite automatiser les évaluations associées à chaque session de formation.",
         "Vous devez automatiser le bilan de la formation ITSI-12 de la semaine 20.",
@@ -16148,7 +15843,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "CENTRE FORMAT, établissement agréé de formation professionnelle, souhaite automatiser les évaluations associées à chaque session de formation.",
         "Vous devez automatiser le bilan de la formation ITSI-12 de la semaine 20.",
@@ -16255,14 +15949,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-01-parcelle/2008-01-02.gif",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-012-image-enonce.gif",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Parcelle",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Présentation en tenant compte de l'annexe 1 (sans les en-têtes de lignes ni de colonnes) ;.",
         "Mise en page, sur une page, en mode portrait (à centrer horizontalement dans la page) ;.",
         "Ombrage (grisé, tramé...) sur les zones calculs (dont, en sus, gras sur les sommes à rapprocher) ;.",
@@ -16278,18 +15971,17 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-01-parcelle/2008-01-03.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-012-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-01-parcelle/2008-01-02.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2008-01-parcelle/2008-01-03.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-012-scrape-enonce-1.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-012-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Présentation en tenant compte de l'annexe 1 (sans les en-têtes de lignes ni de colonnes) ;.",
         "Mise en page, sur une page, en mode portrait (à centrer horizontalement dans la page) ;.",
         "Ombrage (grisé, tramé...) sur les zones calculs (dont, en sus, gras sur les sommes à rapprocher) ;.",
@@ -16300,7 +15992,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Présentation en tenant compte de l'annexe 1 (sans les en-têtes de lignes ni de colonnes) ;.",
         "Mise en page, sur une page, en mode portrait (à centrer horizontalement dans la page) ;.",
         "Ombrage (grisé, tramé...) sur les zones calculs (dont, en sus, gras sur les sommes à rapprocher) ;.",
@@ -16333,14 +16024,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-01-ress-marketing/annexe-1.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-01-ress-marketing/resultat-1.gif",
+      "imageEnonce": "data/assets/excel/asca-03-ul21-excel/excel-ex-013-image-enonce.gif",
+      "imageResultat": "data/assets/excel/asca-03-ul21-excel/excel-ex-013-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Ress Marketing",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "RESS-MARKETING, pour sa rubrique « Enquêtes », souhaite, dans le cadre d'un sondage sur la présence des sportifs dans les campagnes de communication, rédiger un article dans lequel sera inséré un graphique titré :.",
         "« Quel sportif vous paraît le plus crédible pour devenir l'ambassadeur d'une marque ? ».",
@@ -16377,20 +16067,19 @@ window.EXCEL_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-01-ress-marketing/resultat-1.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-01-ress-marketing/resultat-2.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-013-scrape-extra-1.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-013-scrape-extra-2.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-01-ress-marketing/annexe-1.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-01-ress-marketing/resultat-1.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/2010-01-ress-marketing/resultat-2.gif"
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-013-scrape-enonce-1.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-013-scrape-enonce-2.gif",
+          "data/assets/excel/asca-03-ul21-excel/excel-ex-013-scrape-enonce-3.gif"
         ],
         "resultImages": []
       },
       "section": "asca",
       "moduleSlug": "ul21-excel",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "RESS-MARKETING, pour sa rubrique « Enquêtes », souhaite, dans le cadre d'un sondage sur la présence des sportifs dans les campagnes de communication, rédiger un article dans lequel sera inséré un graphique titré :.",
         "« Quel sportif vous paraît le plus crédible pour devenir l'ambassadeur d'une marque ? ».",
@@ -16422,7 +16111,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous pouvez télécharger au format PDF, l'original du sujet ASCA pour l'imprimer. L'exercice est à faire en 1 heure. Condition complète ici.",
         "RESS-MARKETING, pour sa rubrique « Enquêtes », souhaite, dans le cadre d'un sondage sur la présence des sportifs dans les campagnes de communication, rédiger un article dans lequel sera inséré un graphique titré :.",
         "« Quel sportif vous paraît le plus crédible pour devenir l'ambassadeur d'une marque ? ».",
@@ -16494,11 +16182,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Création planning congés",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/cas-creation-planning-conges.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1n71rW9AVchvyIL6C2GPdsxnJ7h61Clv1",
+      "docxUrl": "data/assets/excel/complets-02-cas-creation-planning-conges/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-creation-planning/cas-planning-conge.webp",
+      "imageResultat": "data/assets/excel/complets-02-cas-creation-planning-conges/excel-ex-001-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Cas Création planning congés",
@@ -16522,7 +16210,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-creation-planning/cas-planning-conge.webp"
+          "data/assets/excel/complets-02-cas-creation-planning-conges/excel-ex-001-scrape-resultat-1.webp"
         ]
       },
       "section": "complets",
@@ -16570,11 +16258,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Fiche Clients garage",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-fiche-clients-garage.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1JJ-0tULcsbPXo483jnkFbmBuwehxduSN",
+      "docxUrl": "data/assets/excel/complets-03-cas-fiche-clients-garage/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-garage/cas-garage-solution.webp",
+      "imageResultat": "data/assets/excel/complets-03-cas-fiche-clients-garage/excel-ex-001-image-resultat.webp",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Cas Fiche Clients garage",
@@ -16594,7 +16282,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-garage/cas-garage-solution.webp"
+          "data/assets/excel/complets-03-cas-fiche-clients-garage/excel-ex-001-scrape-resultat-1.webp"
         ]
       },
       "section": "complets",
@@ -16630,7 +16318,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Formulaire de saisie",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-formulaire-de-saisie.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1y8K0gFanQiPuJ9GtgmayyBNNAN_d40pX",
+      "docxUrl": "data/assets/excel/complets-04-cas-formulaire-de-saisie/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -16642,7 +16330,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Formulaire de saisie.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": null,
@@ -16654,8 +16342,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-formulaire-saisie/cas-formulaire-03.webp",
-          "https://www.clic-formation.net/images/01-excel/excel-competence-32/support/tuto-macro.webp"
+          "data/assets/excel/complets-04-cas-formulaire-de-saisie/excel-ex-001-scrape-resultat-1.webp",
+          "data/assets/excel/complets-04-cas-formulaire-de-saisie/excel-ex-001-scrape-resultat-2.webp"
         ]
       },
       "section": "complets",
@@ -16663,14 +16351,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Formulaire de saisie.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Formulaire de saisie.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Verifiez votre rendu avec l'image fournie puis corrigez les differences.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -16693,8 +16381,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Fiche d'intervention",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-fiche-dintervention.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1YWiDEvYW7K-hLbdfE1JfwRaGIVdZ0WDB",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1dNMDKyHqCRmrCBegVP10qIRju05Bnef6",
+      "docxUrl": "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001.xlsx",
+      "downloadUrl": "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-annexe-1.xlsx",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -16719,16 +16407,16 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/preparation-feuille-base.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/preparation-feuille-fiche.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/liste.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/selection.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/estnum.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/filtre.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/selection-nom.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/selection-resultat.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/validation-01.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-intervention/validation-02.webp"
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-1.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-2.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-3.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-4.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-5.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-6.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-7.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-8.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-9.webp",
+          "data/assets/excel/complets-05-cas-fiche-d-intervention/excel-ex-001-scrape-resultat-10.webp"
         ]
       },
       "section": "complets",
@@ -16772,7 +16460,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Calendrier perpétuel (ou presque)",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/cas-calendrier-perpetuel.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1bf-7pjoQliTCG_rIXm48laqbw14ifCGB",
+      "docxUrl": "data/assets/excel/complets-06-cas-calendrier-perpetuel/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -16784,7 +16472,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Calendrier perpétuel (ou presque).",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": null,
@@ -16796,9 +16484,9 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier-modele.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier-resultat-modele-simple.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-calendrier/calendrier-resultat-modele-complexe.webp"
+          "data/assets/excel/complets-06-cas-calendrier-perpetuel/excel-ex-001-scrape-resultat-1.webp",
+          "data/assets/excel/complets-06-cas-calendrier-perpetuel/excel-ex-001-scrape-resultat-2.webp",
+          "data/assets/excel/complets-06-cas-calendrier-perpetuel/excel-ex-001-scrape-resultat-3.webp"
         ]
       },
       "section": "complets",
@@ -16806,14 +16494,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Calendrier perpétuel (ou presque).",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Calendrier perpétuel (ou presque).",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -16839,14 +16527,13 @@ window.EXCEL_ATELIER_DATA = {
       "docxUrl": null,
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-reservations-spectacle/cas-inscription-spectacle.webp",
+      "imageEnonce": "data/assets/excel/complets-07-cas-reservation-spectacle/excel-ex-001-image-enonce.webp",
       "imageResultat": null,
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Cas Réservation Spectacle (macros)",
       "preamble": "",
       "instructions": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous devez réaliser un tableau de saisie des réservations pour le spectacle des petites s'oreilles et insérer les macros permettant la modification rapide de certaines cellules et/ou la mise en forme.",
         "Ligne 1, vous insérez un titre de présentation du tableau.",
         "Colonne A afin de bien marquer la rétractation du menu de gauche, sélectionnez la colonne et appliquez une couleur de fond.",
@@ -16869,14 +16556,13 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-reservations-spectacle/cas-inscription-spectacle.webp"
+          "data/assets/excel/complets-07-cas-reservation-spectacle/excel-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
       "section": "complets",
       "moduleSlug": "cas-reservation-spectacle",
       "consignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous devez réaliser un tableau de saisie des réservations pour le spectacle des petites s'oreilles et insérer les macros permettant la modification rapide de certaines cellules et/ou la mise en forme.",
         "Ligne 1, vous insérez un titre de présentation du tableau.",
         "Colonne A afin de bien marquer la rétractation du menu de gauche, sélectionnez la colonne et appliquez une couleur de fond.",
@@ -16893,7 +16579,6 @@ window.EXCEL_ATELIER_DATA = {
       ],
       "criteria": [],
       "originalConsignes": [
-        "Ouvrez Microsoft Excel : cliquez sur le bouton Demarrer, recherchez \"Excel\", puis ouvrez l'application. Ensuite, cliquez sur \"Classeur vierge\" pour creer un nouveau classeur, puis enregistrez-le avant de commencer.",
         "Vous devez réaliser un tableau de saisie des réservations pour le spectacle des petites s'oreilles et insérer les macros permettant la modification rapide de certaines cellules et/ou la mise en forme.",
         "Ligne 1, vous insérez un titre de présentation du tableau.",
         "Colonne A afin de bien marquer la rétractation du menu de gauche, sélectionnez la colonne et appliquez une couleur de fond.",
@@ -16935,8 +16620,8 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Fiche Horticole",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-fiche-horticole.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=17B-T3muwZH9OvLR99WwoPR7Pv2dpYN7Z",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1U9u5PcaMvBXdWKGmAh3adKSvn-YnOufj",
+      "docxUrl": "data/assets/excel/complets-08-cas-fiche-horticole/excel-ex-001.xlsx",
+      "downloadUrl": "data/assets/excel/complets-08-cas-fiche-horticole/excel-ex-001-annexe-1.zip",
       "downloadLabel": "Telecharger le 2e fichier",
       "imageEnonce": null,
       "imageResultat": null,
@@ -16959,10 +16644,10 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/etape-01.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/etape-02.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/etape-3.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-fiche-plante/resultat-attendu.webp"
+          "data/assets/excel/complets-08-cas-fiche-horticole/excel-ex-001-scrape-resultat-1.webp",
+          "data/assets/excel/complets-08-cas-fiche-horticole/excel-ex-001-scrape-resultat-2.webp",
+          "data/assets/excel/complets-08-cas-fiche-horticole/excel-ex-001-scrape-resultat-3.webp",
+          "data/assets/excel/complets-08-cas-fiche-horticole/excel-ex-001-scrape-resultat-4.webp"
         ]
       },
       "section": "complets",
@@ -17000,7 +16685,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas diagramme de GANTT Simple",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-gantt-simple.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1rG2jtmhagE2qhJEbLJXbSJlLm4U_sj5y",
+      "docxUrl": "data/assets/excel/complets-09-cas-gantt-simple/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -17012,7 +16697,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas diagramme de GANTT Simple.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Expert",
@@ -17024,12 +16709,12 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-01.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-02.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-03.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-06.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/gantt-04.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-diagramme-de-gantt-01/resultat-gantt.webp"
+          "data/assets/excel/complets-09-cas-gantt-simple/excel-ex-001-scrape-resultat-1.webp",
+          "data/assets/excel/complets-09-cas-gantt-simple/excel-ex-001-scrape-resultat-2.webp",
+          "data/assets/excel/complets-09-cas-gantt-simple/excel-ex-001-scrape-resultat-3.webp",
+          "data/assets/excel/complets-09-cas-gantt-simple/excel-ex-001-scrape-resultat-4.webp",
+          "data/assets/excel/complets-09-cas-gantt-simple/excel-ex-001-scrape-resultat-5.webp",
+          "data/assets/excel/complets-09-cas-gantt-simple/excel-ex-001-scrape-resultat-6.webp"
         ]
       },
       "section": "complets",
@@ -17037,14 +16722,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas diagramme de GANTT Simple.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas diagramme de GANTT Simple.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -17067,7 +16752,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Société CLICOU",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/cas-societe-clicou.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=142JFoc0IfkiWnBOC-1MA3wdd4wbkxhYg",
+      "docxUrl": "data/assets/excel/complets-10-cas-societe-clicou/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -17089,12 +16774,12 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-1.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-2.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-3.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-1.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-2.webp",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-vente-clicou/feuille-resultat-3.webp"
+          "data/assets/excel/complets-10-cas-societe-clicou/excel-ex-001-scrape-resultat-1.webp",
+          "data/assets/excel/complets-10-cas-societe-clicou/excel-ex-001-scrape-resultat-2.webp",
+          "data/assets/excel/complets-10-cas-societe-clicou/excel-ex-001-scrape-resultat-3.webp",
+          "data/assets/excel/complets-10-cas-societe-clicou/excel-ex-001-scrape-resultat-4.webp",
+          "data/assets/excel/complets-10-cas-societe-clicou/excel-ex-001-scrape-resultat-5.webp",
+          "data/assets/excel/complets-10-cas-societe-clicou/excel-ex-001-scrape-resultat-6.webp"
         ]
       },
       "section": "complets",
@@ -17126,11 +16811,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas SUD informatique",
       "level": 2,
       "pageUrl": "https://www.clic-formation.net/cas-sud-informatique.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1rNOVS_uyvFiLmxTkuV1wuXv6Y78LhDMg",
+      "docxUrl": "data/assets/excel/complets-11-cas-sud-informatique/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-sud-informatique/enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-sud-informatique/solution.gif",
+      "imageEnonce": "data/assets/excel/complets-11-cas-sud-informatique/excel-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/excel/complets-11-cas-sud-informatique/excel-ex-001-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Cas SUD informatique",
@@ -17150,7 +16835,7 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-sud-informatique/solution.gif"
+          "data/assets/excel/complets-11-cas-sud-informatique/excel-ex-001-scrape-resultat-1.gif"
         ]
       },
       "section": "complets",
@@ -17186,7 +16871,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas grand Raid 6666",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-grand-raid.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=138JPCuxLTWt6OR5pZv2XCV6HRY7sN7DW",
+      "docxUrl": "data/assets/excel/complets-12-cas-grand-raid/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -17212,8 +16897,8 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/complet-01/exo-01.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/complet-01/exo-02.gif"
+          "data/assets/excel/complets-12-cas-grand-raid/excel-ex-001-scrape-resultat-1.gif",
+          "data/assets/excel/complets-12-cas-grand-raid/excel-ex-001-scrape-resultat-2.gif"
         ]
       },
       "section": "complets",
@@ -17257,7 +16942,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Course Haut Caroux",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/cas-course-haut-caroux.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1FJ0foadDb_fN5zrQf9eJstz1iKgipkMs",
+      "docxUrl": "data/assets/excel/complets-13-cas-course-haut-caroux/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -17269,7 +16954,7 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Course Haut Caroux.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "levelLabel": "Avance",
@@ -17281,11 +16966,11 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-code.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-course.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-taille.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-departement.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-haut-caroux/resultat-categorie.gif"
+          "data/assets/excel/complets-13-cas-course-haut-caroux/excel-ex-001-scrape-resultat-1.gif",
+          "data/assets/excel/complets-13-cas-course-haut-caroux/excel-ex-001-scrape-resultat-2.gif",
+          "data/assets/excel/complets-13-cas-course-haut-caroux/excel-ex-001-scrape-resultat-3.gif",
+          "data/assets/excel/complets-13-cas-course-haut-caroux/excel-ex-001-scrape-resultat-4.gif",
+          "data/assets/excel/complets-13-cas-course-haut-caroux/excel-ex-001-scrape-resultat-5.gif"
         ]
       },
       "section": "complets",
@@ -17293,14 +16978,14 @@ window.EXCEL_ATELIER_DATA = {
       "consignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Course Haut Caroux.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "criteria": [],
       "originalConsignes": [
         "Construisez la structure principale du classeur a partir de cet objectif: Cas Course Haut Caroux.",
         "Appliquez les outils Excel utiles (saisie, formules, mise en forme, donnees ou insertion) pour obtenir le rendu attendu.",
-        "Relisez le classeur et verifiez la coherence des donnees, calculs et formats avant validation.",
+        "Comparez votre feuille avec l'image de resultat attendu puis corrigez les ecarts.",
         "Enregistrez votre travail puis marquez l'exercice comme termine."
       ],
       "originalInstructions": [
@@ -17323,7 +17008,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Salon de Coiffure",
       "level": 4,
       "pageUrl": "https://www.clic-formation.net/cas-salon-de-coiffure.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1NtlXxlk84DdmJTOadWaw6UyI2LEU-Tc8",
+      "docxUrl": "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -17348,18 +17033,18 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/03.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/04.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/05.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/06.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/07.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/08.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/10.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/11.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/12.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/13.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/14.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-salon-coiffure/15.gif"
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-1.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-2.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-3.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-4.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-5.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-6.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-7.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-8.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-9.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-10.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-11.gif",
+          "data/assets/excel/complets-14-cas-salon-de-coiffure/excel-ex-001-scrape-resultat-12.gif"
         ]
       },
       "section": "complets",
@@ -17400,7 +17085,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Cas Facturation",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/cas-facturation.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1pTVfI5Ea7qY1zrmoXhNabCQSe8Ten4ri",
+      "docxUrl": "data/assets/excel/complets-15-cas-facturation/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -17427,11 +17112,11 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-1.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-2.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-3.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-4.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/cas-facturation/cas-5.gif"
+          "data/assets/excel/complets-15-cas-facturation/excel-ex-001-scrape-resultat-1.gif",
+          "data/assets/excel/complets-15-cas-facturation/excel-ex-001-scrape-resultat-2.gif",
+          "data/assets/excel/complets-15-cas-facturation/excel-ex-001-scrape-resultat-3.gif",
+          "data/assets/excel/complets-15-cas-facturation/excel-ex-001-scrape-resultat-4.gif",
+          "data/assets/excel/complets-15-cas-facturation/excel-ex-001-scrape-resultat-5.gif"
         ]
       },
       "section": "complets",
@@ -17478,7 +17163,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Révisions Opérations simples",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/revisions-operations-simples.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1xelbUTpHwWgV0_MHM5gzyCwSESWzxV0-",
+      "docxUrl": "data/assets/excel/complets-16-revision-operations/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": null,
       "imageEnonce": null,
@@ -17501,16 +17186,16 @@ window.EXCEL_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-01-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-02-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-03-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-04-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-05-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-06-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-07-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-08-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-09-solution.gif",
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/revision-operations-simples/cas-10-solution.gif"
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-1.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-2.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-3.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-4.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-5.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-6.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-7.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-8.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-9.gif",
+          "data/assets/excel/complets-16-revision-operations/excel-ex-001-scrape-resultat-10.gif"
         ]
       },
       "section": "complets",
@@ -17545,11 +17230,11 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Calculs heures et distances",
       "level": 3,
       "pageUrl": "https://www.clic-formation.net/calculs-heures-et-distances.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=121hdg0LWYTwKpmBOvgVMfUhcWxVBuxLd",
+      "docxUrl": "data/assets/excel/complets-17-calculs-heures-et-distances/excel-ex-001.xlsx",
       "downloadUrl": null,
       "downloadLabel": "",
-      "imageEnonce": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/heures-et-distances/heure-et-distance-enonce.gif",
-      "imageResultat": "https://www.clic-formation.net/images/01-excel/exercices-pratiques/heures-et-distances/heure-et-distance-enonce-solution.gif",
+      "imageEnonce": "data/assets/excel/complets-17-calculs-heures-et-distances/excel-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/excel/complets-17-calculs-heures-et-distances/excel-ex-001-image-resultat.gif",
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Calculs heures et distances",
@@ -17578,10 +17263,10 @@ window.EXCEL_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/heures-et-distances/heure-et-distance-enonce.gif"
+          "data/assets/excel/complets-17-calculs-heures-et-distances/excel-ex-001-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/01-excel/exercices-pratiques/heures-et-distances/heure-et-distance-enonce-solution.gif"
+          "data/assets/excel/complets-17-calculs-heures-et-distances/excel-ex-001-scrape-resultat-1.gif"
         ]
       },
       "section": "complets",

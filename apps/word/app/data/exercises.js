@@ -300,12 +300,12 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/prise-en-main-word/exercice-1.html",
       "level": 0,
       "levelLabel": null,
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1t-ypk2BMPi-uKrGi3GQikQq9D5uf1wZj",
+      "docxUrl": "data/assets/word/bases-01-prise-en-main/word-ex-001.docx",
       "imageEnonce": "",
       "imageResultat": [
-        "data/ex-001a.png",
-        "data/ex-001b.png",
-        "data/ex-001c.png"
+        "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-1.png",
+        "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-2.png",
+        "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-3.png"
       ],
       "description": "",
       "consignes": [],
@@ -349,8 +349,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "Debutant",
       "docxUrl": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-002/ex-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-002/ex-01-resultats.jpg",
+      "imageEnonce": "data/assets/word/bases-01-prise-en-main/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-01-prise-en-main/word-ex-002-image-resultat.jpg",
       "description": "Personnalisez la barre d'acces rapide pour obtenir un rendu proche du modele.",
       "consignes": [],
       "instructions": [
@@ -365,11 +365,11 @@ window.WORD_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-01/ex-002/ex-01-resultats.jpg"
+          "data/assets/word/bases-01-prise-en-main/word-ex-002-scrape-extra-1.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-01/ex-002/ex-01-resultats.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-01/ex-002/ex-01.jpg"
+          "data/assets/word/bases-01-prise-en-main/word-ex-002-scrape-enonce-1.jpg",
+          "data/assets/word/bases-01-prise-en-main/word-ex-002-scrape-enonce-2.jpg"
         ],
         "resultImages": []
       },
@@ -395,8 +395,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "Debutant",
       "docxUrl": "",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/ex-003-tuto.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/exo-02-resultat.jpg",
+      "imageEnonce": "data/assets/word/bases-01-prise-en-main/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-01-prise-en-main/word-ex-003-image-resultat.jpg",
       "description": "Personnalisez les onglets du ruban pour reproduire le resultat attendu.",
       "consignes": [],
       "instructions": [
@@ -410,13 +410,13 @@ window.WORD_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/exo-02-resultat.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/exo-02.jpg"
+          "data/assets/word/bases-01-prise-en-main/word-ex-003-scrape-extra-1.jpg",
+          "data/assets/word/bases-01-prise-en-main/word-ex-003-scrape-extra-2.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/exo-02-resultat.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/ex-003-tuto.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-01/ex-003/exo-02.jpg"
+          "data/assets/word/bases-01-prise-en-main/word-ex-003-scrape-enonce-1.jpg",
+          "data/assets/word/bases-01-prise-en-main/word-ex-003-scrape-enonce-2.jpg",
+          "data/assets/word/bases-01-prise-en-main/word-ex-003-scrape-enonce-3.jpg"
         ],
         "resultImages": []
       },
@@ -445,7 +445,7 @@ window.WORD_ATELIER_DATA = {
       "levelLabel": null,
       "docxUrl": "",
       "imageEnonce": "",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-001/ex-01.jpg",
+      "imageResultat": "data/assets/word/bases-02-gerer-les-documents/word-ex-001-image-resultat.jpg",
       "description": "Creez une arborescence de dossiers et enregistrez un document Word dans trois formats.",
       "consignes": [],
       "instructions": [
@@ -463,7 +463,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-02/ex-001/ex-01.jpg"
+          "data/assets/word/bases-02-gerer-les-documents/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -489,9 +489,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/gerer-les-documents-dans-word/exercice-2.html",
       "level": 0,
       "levelLabel": null,
-      "docxUrl": "https://drive.google.com/uc?export=download&id=15rcn3BSw9ZvQ_v_Q7E5tpF9WAJ_2K8bV",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-002/ex-002.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-02/ex-002/ex-002.jpg",
+      "docxUrl": "data/assets/word/bases-02-gerer-les-documents/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-02-gerer-les-documents/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-02-gerer-les-documents/word-ex-002-image-resultat.jpg",
       "description": "Comment utiliser les modèle disponible avec via \"Microsoft Word\"",
       "consignes": [],
       "instructions": [
@@ -507,7 +507,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-02/ex-002/ex-002.jpg"
+          "data/assets/word/bases-02-gerer-les-documents/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -532,9 +532,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-1-changer-de-police.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Om6WAGnGJ3fBbrvJ-OyiZ7uk1aT7qMuG",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-001/liste-2.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-001/ex-01.jpg",
+      "docxUrl": "data/assets/word/bases-03-saisir-du-texte/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-001-image-resultat.jpg",
       "description": "Saisir cette liste à l'identique sur Word. Police \"Calibri\". Les deux séries sont des images que vous pouvez glisser sur votre ordinateur ou votre document de travail pour pouvoir travailler confortablement. Vous pouvez aussi imprimer les deux images via le clic-droit de votre souris.",
       "consignes": [],
       "instructions": [
@@ -551,8 +551,8 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-001/ex-01.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-001/liste-2.webp"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-001-scrape-resultat-1.jpg",
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-001-scrape-resultat-2.webp"
         ]
       },
       "preamble": "",
@@ -578,9 +578,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-2-changer-de-police.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1yblQMNC8e0DfvCpVrVtGG52MWVk3X6xX",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-002/ex-02.jpg",
+      "docxUrl": "data/assets/word/bases-03-saisir-du-texte/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-002-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-002-image-resultat.jpg",
       "description": "Téléchargez le document de travail ci-contre",
       "consignes": [
         "Téléchargez le document de travail ci-contre",
@@ -598,10 +598,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-002/ex-002.webp"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-002-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-002/ex-02.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -629,9 +629,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-3-mises-en-forme.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1_xmcCjwRCHWQisvf1nooKgx1UK9UgQFY",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-003/ex-003-enonce.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-003/ex-03-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-03-saisir-du-texte/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-003-image-resultat.jpg",
       "description": "",
       "consignes": [
         "Téléchargez le document de travail.",
@@ -647,10 +647,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-003/ex-003-enonce.webp"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-003-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-003/ex-03-resultat.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -677,8 +677,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/reproduction.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/ex-04.jpg",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-004-image-resultat.jpg",
       "description": "Saisissez les mois de l'annee et reutilisez le pinceau de reproduction de mise en forme.",
       "consignes": [],
       "instructions": [
@@ -693,10 +693,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/reproduction.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-004/ex-04.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -722,8 +722,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-005/ex-05.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-005/ex-05.jpg",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-005-image-resultat.jpg",
       "description": "Reproduisez la phrase modele et appliquez le surlignage demande.",
       "consignes": [],
       "instructions": [
@@ -739,7 +739,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-005/ex-05.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Reproduire la ligne ci-dessous en utilisant la fonction copier-coller pour cette phrase",
@@ -774,9 +774,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-aligner-du-texte.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=18KPTgtMtljWAaD2yTNtWtFTcFX0Qo_cq",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-006/ex-006.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-006/ex-06.jpg",
+      "docxUrl": "data/assets/word/bases-03-saisir-du-texte/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-006-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-006-image-resultat.jpg",
       "description": "",
       "consignes": [
         "Titre de spectacle : \"Times New Roman\", 18, centré.",
@@ -796,10 +796,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-006/ex-006.webp"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-006-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-006/ex-06.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -840,9 +840,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-2-aligner-du-texte.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1t0_9sZFxTJ-afjiog-OJPtuHa7WE8w51",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-007/ex-007.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-007/ex-07.jpg",
+      "docxUrl": "data/assets/word/bases-03-saisir-du-texte/word-ex-007.docx",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-007-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-007-image-resultat.jpg",
       "description": "",
       "consignes": [
         "Bloc envoyeur aligné à gauche",
@@ -864,10 +864,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-007/ex-007.webp"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-007-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-007/ex-07.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -903,8 +903,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-008/ex-008.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-008/ex-008.jpg",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-008-image-resultat.jpg",
       "description": "Saisissez ou collez le texte, puis reproduisez la mise en forme du modele.",
       "consignes": [
         "Saisir ce texte à l'identique sur votre traitement de texte, exécuter la mise en forme comme sur le modèle. Vous pouvez aussi faire un copier-coller, mais la saisie vous permettra de vérifier si vous connaissez la façon de sortir tous les caractères.",
@@ -941,7 +941,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-008/ex-008.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -992,9 +992,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-9-effacer-inserer.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=14bF4EvrE0CdLG4eu7uRGCx1RDBOpCOeG",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-009/ex-009.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-009/ex-009-solution.gif",
+      "docxUrl": "data/assets/word/bases-03-saisir-du-texte/word-ex-009.docx",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-009-image-enonce.gif",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-009-image-resultat.gif",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -1007,10 +1007,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-009/ex-009.gif"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-009-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-009/ex-009-solution.gif"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-009-scrape-resultat-1.gif"
         ]
       },
       "preamble": "7 exercices sur le même document pour manipuler :",
@@ -1043,9 +1043,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-police/exercice-10-mise-en-forme.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1afrozs5-3OghdXvyU3lJ9grb4a3vCXjr",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-010/ex-007.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-03/ex-010/exo10-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-03-saisir-du-texte/word-ex-010.docx",
+      "imageEnonce": "data/assets/word/bases-03-saisir-du-texte/word-ex-010-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-03-saisir-du-texte/word-ex-010-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -1059,10 +1059,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-010/ex-007.webp"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-010-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-03/ex-010/exo10-resultat.jpg"
+          "data/assets/word/bases-03-saisir-du-texte/word-ex-010-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1087,9 +1087,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-couleur/exercice-1-changer-de-couleur.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1c5ryPVWafmJSBsqrb84Ig5j9O-YOJtwD",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-001/ex-001.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-001/ex-001.jpg",
+      "docxUrl": "data/assets/word/bases-04-options-paragraphe/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-04-options-paragraphe/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-04-options-paragraphe/word-ex-001-image-resultat.jpg",
       "description": "Mise en page (Gestion de l'espace) : Marges : Configurer des marges de page identiques (haut, bas, gauche, droite) d'au moins 2,5 cm pour centrer le bloc de texte. Alignement horizontal : Centrer le texte horizontalement sur la page. Alignement vertical : Utiliser les options de mise en page pour centrer verticalement le paragraphe au milieu de la page blanche. Mise en forme du texte (Groupe Police) : Appliquer la Police \"Arial Rounded Mt Bold\" (ou une police épaisse équivalente). Définir la taille des caractères à 24 points. Appliquer l'attribut Italique à l'ensemble du texte. Mise en forme du paragraphe (Groupe Paragraphe) : Espacement : Ajuster l'interligne et l'espacement (avant/après) pour que le texte s'étende de manière harmonieuse et utilise la quasi-totalité de la hauteur disponible dans le cadre. Bordure et ombre : Appliquer une bordure de 0,5 pt de style \"Ombré\" directement au paragraphe (et non à la page). Ajuster les options de distance du texte si nécessaire pour que le cadre ne colle pas aux lettres.",
       "consignes": [],
       "instructions": [
@@ -1104,7 +1104,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-04/ex-001/ex-001.jpg"
+          "data/assets/word/bases-04-options-paragraphe/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1147,9 +1147,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-couleur/exercice-2-changer-de-couleur.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1aq3uEMcoecSqVf_RQ1CjkXO2X2zJdu2a",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-002/ex-002.jpg",
+      "docxUrl": "data/assets/word/bases-04-options-paragraphe/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-04-options-paragraphe/word-ex-002-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-04-options-paragraphe/word-ex-002-image-resultat.jpg",
       "description": "Téléchargez le texte de l'exercice ci-contre, vous travaillerez dans le bloc \"Paragraphe\"",
       "preamble": "Veuillez à bien séparer les paragraphe et mettre tout le texte en police \"Times New Roman\"",
       "consignes": [
@@ -1168,10 +1168,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-04/ex-002/ex-002.webp"
+          "data/assets/word/bases-04-options-paragraphe/word-ex-002-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-04/ex-002/ex-002.jpg"
+          "data/assets/word/bases-04-options-paragraphe/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "criteria": [
@@ -1212,8 +1212,8 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-couleur/exercice-3-bordures-paragraphes.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1K654P8Aa4RGjhrazhYoD7g7x_rNHaniG",
-      "imageResultat": "data/ex-003.png",
+      "docxUrl": "data/assets/word/bases-04-options-paragraphe/word-ex-003.docx",
+      "imageResultat": "data/assets/word/bases-04-options-paragraphe/word-ex-003-image-resultat.png",
       "description": "",
       "preamble": "Vous travaillez dans le bloc \"Paragraphe\" en respectant les consignes ci-dessous. Chaque bloc de texte (Titre, Paragraphe 1, 2, 3…) doit être séparé par un appui sur la touche [Entrée].",
       "consignes": [
@@ -1232,7 +1232,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "data/ex-003.png"
+          "data/assets/word/bases-04-options-paragraphe/word-ex-003-scrape-resultat-1.png"
         ]
       },
       "criteria": [
@@ -1269,9 +1269,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-couleur/exercice-4-alignement-paragraphes.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1gZVfHrH564pfRo2syxOkhLKXfww2tLtK",
+      "docxUrl": "data/assets/word/bases-04-options-paragraphe/word-ex-004.docx",
       "imageEnonce": null,
-      "imageResultat": "data/ex-004-2.jpg",
+      "imageResultat": "data/assets/word/bases-04-options-paragraphe/word-ex-004-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [],
@@ -1283,7 +1283,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "data/ex-004-2.jpg"
+          "data/assets/word/bases-04-options-paragraphe/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Respectant les consignes ci-dessous en faisant attention à bien séparer les paragraphes",
@@ -1324,10 +1324,10 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-couleur/exercice-5-alignement-paragraphes.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1D7EKBTS5RQZpkVWKQQX5NWD0GApNQ3j3",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=17w4Tq0Eb97m5fH3wLRiC1vtVKTmMbAcF",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-005/ex-005.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-005/ex-005-solution.webp",
+      "docxUrl": "data/assets/word/bases-04-options-paragraphe/word-ex-005.docx",
+      "downloadUrl": "data/assets/word/bases-04-options-paragraphe/word-ex-005-annexe-1.zip",
+      "imageEnonce": "data/assets/word/bases-04-options-paragraphe/word-ex-005-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-04-options-paragraphe/word-ex-005-image-resultat.webp",
       "description": "",
       "consignes": [
         "Téléchargez les images",
@@ -1348,10 +1348,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-04/ex-005/ex-005.webp"
+          "data/assets/word/bases-04-options-paragraphe/word-ex-005-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-04/ex-005/ex-005-solution.webp"
+          "data/assets/word/bases-04-options-paragraphe/word-ex-005-scrape-resultat-1.webp"
         ]
       },
       "preamble": "Vous travaillez dans le bloc \"Paragraphe\" et insertion image",
@@ -1390,9 +1390,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/changer-de-couleur/exercice-6-interlinge.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1yef1QW6VG4JVVjiTfnGEAQDcIjE3oYYe",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-006/solution-exo-6.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-04/ex-006/solution-exo-6.jpg",
+      "docxUrl": "data/assets/word/bases-04-options-paragraphe/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/bases-04-options-paragraphe/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-04-options-paragraphe/word-ex-006-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -1406,7 +1406,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-04/ex-006/solution-exo-6.jpg"
+          "data/assets/word/bases-04-options-paragraphe/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1432,9 +1432,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/29-puces-et-numeros/puce-et-numeros-1.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1I8xr-8WCnR5oAf1fGZvdoCcCS2c1vnKx",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-001/ex-001-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-001/ex-001-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-05-puces-et-numeros/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-001-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -1450,7 +1450,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-001/ex-001-resultat.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1475,9 +1475,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/29-puces-et-numeros/exercice-2.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1up-s3ODJlDHZacQixHN5fnVwA76Aau9k",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-002/ex-002-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-002/ex-002-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-05-puces-et-numeros/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-002-image-resultat.jpg",
       "description": "1- Téléchargez les visuels qui vous serviront de puces personnalisées",
       "consignes": [],
       "instructions": [
@@ -1493,10 +1493,10 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-002/ex-002-resultat.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1rzs2hhRu6l7Gbtt3U1EL7ULCN17jo6cQ",
+      "downloadUrl": "data/assets/word/bases-05-puces-et-numeros/word-ex-002-annexe-1.zip",
       "downloadLabel": "Télécharger puces personnalisées",
       "preamble": "",
       "criteria": [
@@ -1525,9 +1525,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/29-puces-et-numeros/exercice-3.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=19TH0Oo12RIWxZnPr3eZK6v9SJa9DKt1K",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-003/tuto-puce.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-003/ex-003-solution.jpg",
+      "docxUrl": "data/assets/word/bases-05-puces-et-numeros/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-003-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -1542,7 +1542,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-003/ex-003-solution.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Vous sélectionnez ensuite chaque liste individuellement et vous cherchez le menu \"définir un nouveau format de numérotation\" pour trouver le résultat attendu.",
@@ -1567,9 +1567,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/29-puces-et-numeros/exercice-4.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1WEvAeuUTIscogxX-AwcceEsjii7-kny2",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-004/004-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-004/004-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-05-puces-et-numeros/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-004-image-resultat.jpg",
       "description": "",
       "consignes": [
         "Texte : \"Calibri\", 12.",
@@ -1588,7 +1588,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-004/004-resultat.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1619,9 +1619,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/29-puces-et-numeros/exercice-5.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1lSLLwiCMpo6EyvT6GV6hXAnEbqmnH9rM",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-005/ex-005-images.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-005/ex-005.jpg",
+      "docxUrl": "data/assets/word/bases-05-puces-et-numeros/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-005-image-resultat.jpg",
       "description": "Téléchargez aussi l'image associée au travail.",
       "consignes": [
         "Titre : police de votre choix.",
@@ -1642,10 +1642,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-005/ex-005-images.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-005/ex-005.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1681,9 +1681,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/29-puces-et-numeros/exercice-6.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1AR8pXdBISaVQ71XufpUh5V3y5IHEtbS2",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-006/trier-resulat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-006/trier-resulat.jpg",
+      "docxUrl": "data/assets/word/bases-05-puces-et-numeros/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-006-image-resultat.jpg",
       "description": "Triez la liste de façon à ce que les éléments soient classés par ordre alphabétique. La fonction se trouve dans le groupe \"paragraphe\".",
       "consignes": [
         "Téléchargez le fichier de travail.",
@@ -1698,7 +1698,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-006/trier-resulat.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1725,8 +1725,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-007/ex-007--resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-007/ex-007--resultat.jpg",
+      "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-007-image-resultat.jpg",
       "description": "Copiez le texte fourni et personnalisez les puces avec un caractere special.",
       "consignes": [],
       "instructions": [
@@ -1742,7 +1742,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-007/ex-007--resultat.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1768,8 +1768,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-008/exercice-05-08.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-05/ex-008/exercice-05-08.jpg",
+      "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-008-image-resultat.jpg",
       "description": "Copiez-collez la liste ci-dessous, puis utilisez la fonction de tri de Word pour la remettre dans l'ordre alphabétique.",
       "consignes": [],
       "instructions": [
@@ -1784,7 +1784,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-05/ex-008/exercice-05-08.jpg"
+          "data/assets/word/bases-05-puces-et-numeros/word-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1808,9 +1808,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/28-mise-en-colonne/21-01-mise-en-colonne.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1-shgvHF8Z8nkta02jvht-a5C1y1Zletu",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-001/ex-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-001/ex-01.jpg",
+      "docxUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-06-mise-en-colonne/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-06-mise-en-colonne/word-ex-001-image-resultat.jpg",
       "description": "Téléchargez aussi l'image à insérer.",
       "consignes": [],
       "instructions": [
@@ -1827,7 +1827,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-06/ex-001/ex-01.jpg"
+          "data/assets/word/bases-06-mise-en-colonne/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1844,7 +1844,7 @@ window.WORD_ATELIER_DATA = {
         "Lettrine sur la première lettre du texte (facultatif).",
         "Photo en fin de texte centré dans la colonne."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1WpJHWWcjlzw6vPYyw6pHWJvP0go-k76c",
+      "downloadUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-001-annexe-1.jpg",
       "downloadLabel": "Telecharger l'image"
     },
     {
@@ -1860,9 +1860,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/28-mise-en-colonne/exercice-mise-en-colonne.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=10PWhZwUhZDHf-jn-bQ8WkZXOOxhKetzf",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-002/ex-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-002/ex-02.jpg",
+      "docxUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-06-mise-en-colonne/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-06-mise-en-colonne/word-ex-002-image-resultat.jpg",
       "description": "1-Téléchargez le texte de l'exercice 2-Consignes :",
       "consignes": [],
       "instructions": [
@@ -1879,7 +1879,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-06/ex-002/ex-02.jpg"
+          "data/assets/word/bases-06-mise-en-colonne/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "ATTENTION insertion de saut de section obligatoire. Sinon ça va être compliqué….",
@@ -1909,10 +1909,10 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/28-mise-en-colonne/exercice-mise-en-colonne-3.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=10LUpc53KRfTPkBslM3JQSmt8CQkc-Lyc",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1mumoGc06yupzzG7aJgiIfFzyC10y-cS7",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-003/support-ex-003.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-003/ex-003.jpg",
+      "docxUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-003.docx",
+      "downloadUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-003-annexe-1.zip",
+      "imageEnonce": "data/assets/word/bases-06-mise-en-colonne/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-06-mise-en-colonne/word-ex-003-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -1928,7 +1928,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-06/ex-003/ex-003.jpg"
+          "data/assets/word/bases-06-mise-en-colonne/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -1958,9 +1958,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/28-mise-en-colonne/exercice-mise-en-colonne-4.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1NA6jlk3UeYOxRxWL7zcjoMDbrDcMUW-r",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-004/ex-004-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-004/ex-004-01.jpg",
+      "docxUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/bases-06-mise-en-colonne/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-06-mise-en-colonne/word-ex-004-image-resultat.jpg",
       "description": "Vous utilisez les sauts de colonnes pour bien partitionner le texte.\nLes titres sont à faire simplement avec Word-art.\nColonne de gauche les photos (à décompresser après téléchargement), colonne de droite le texte.",
       "consignes": [],
       "instructions": [
@@ -1976,9 +1976,9 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-06/ex-004/ex-004-01.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-06/ex-004/ex-004-02.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-06/ex-004/ex-004-03.jpg"
+          "data/assets/word/bases-06-mise-en-colonne/word-ex-004-scrape-resultat-1.jpg",
+          "data/assets/word/bases-06-mise-en-colonne/word-ex-004-scrape-resultat-2.jpg",
+          "data/assets/word/bases-06-mise-en-colonne/word-ex-004-scrape-resultat-3.jpg"
         ]
       },
       "preamble": "",
@@ -1989,7 +1989,7 @@ window.WORD_ATELIER_DATA = {
         "Dans la mise en page, choisir une disposition sur 2 colonnes.",
         "Avant le titre, insérer un saut de colonne pour le faire passer."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1vmQOA1QYIcjFyof-p_On2X_w2jMC7WDk",
+      "downloadUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-004-annexe-1.zip",
       "downloadLabel": "Telecharger les images"
     },
     {
@@ -2005,9 +2005,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/28-mise-en-colonne/exercice-mise-en-colonne-5.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1dgKNZErR0gUp4Q-B5WrtmS5vHjheMB_M",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.jpg",
+      "docxUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/bases-06-mise-en-colonne/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-06-mise-en-colonne/word-ex-005-image-resultat.jpg",
       "description": "Téléchargez aussi les images à insérer pour reproduire le modèle.",
       "consignes": [],
       "instructions": [
@@ -2029,7 +2029,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-06/ex-005/ex-005.jpg"
+          "data/assets/word/bases-06-mise-en-colonne/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -2059,9 +2059,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/28-mise-en-colonne/exercice-mise-en-colonne-6.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1kE2RVkUap2W4j4gknVMXpVqraFeT0Ofi",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-006/ex-006-colonne-resultat.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-06/ex-006/ex-006-colonne-resultat.webp",
+      "docxUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/bases-06-mise-en-colonne/word-ex-006-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-06-mise-en-colonne/word-ex-006-image-resultat.webp",
       "description": "Téléchargez aussi le ZIP qui contient les illustrations.",
       "consignes": [],
       "instructions": [
@@ -2077,7 +2077,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-06/ex-006/ex-006-colonne-resultat.webp"
+          "data/assets/word/bases-06-mise-en-colonne/word-ex-006-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -2093,7 +2093,7 @@ window.WORD_ATELIER_DATA = {
         "Les fiches animaux sont à entourer en vert directement depuis le traitement de texte dans le menu \"bordure de l'image\".",
         "Les titres de chaque page sont dans la même police que le texte de la première page et de grande taille."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=11Qeqoti7JAhEJe4W5AxoIFOwK1pBu-AY",
+      "downloadUrl": "data/assets/word/bases-06-mise-en-colonne/word-ex-006-annexe-1.zip",
       "downloadLabel": "Telecharger les illustrations"
     },
     {
@@ -2109,9 +2109,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/17-word-art/exercice-1.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1sWMA-Oto32iUbqULR3ecoWUruwGgyKqM",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-001/17-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-001/17-01.jpg",
+      "docxUrl": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-001-image-resultat.jpg",
       "description": "À l'aide de WordArt dans Word, reproduisez l'affichette ci-dessous à partir du fichier de travail.",
       "consignes": [],
       "instructions": [
@@ -2127,7 +2127,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-07/ex-001/17-01.jpg"
+          "data/assets/word/bases-07-word-art-et-lettrine/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -2155,9 +2155,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/17-word-art/exercice-3.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ZVk_vWkH1_ZNDlMkrQVwU3HutR-OPqKD",
+      "docxUrl": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-003.docx",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-003/ex-003.jpg",
+      "imageResultat": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-003-image-resultat.jpg",
       "description": "Insérez deux WordArt, au-dessus et au-dessous du tableau, avec un style actuel proche du résultat attendu.",
       "consignes": [
         "Insérez un WordArt au-dessus du tableau et un second en dessous.",
@@ -2176,7 +2176,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-07/ex-003/ex-003.jpg"
+          "data/assets/word/bases-07-word-art-et-lettrine/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Appuyez-vous sur le résultat attendu, sans chercher à reproduire exactement un ancien style Office 2010.",
@@ -2206,9 +2206,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/17-word-art/exercice-lettrine-1.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=10VF-qvJMcIqzPJuHmOvHJvTQvrdhck5b",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-008-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-008-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-004-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -2224,7 +2224,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-07/ex-004/ex-008-resultat.jpg"
+          "data/assets/word/bases-07-word-art-et-lettrine/word-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -2251,9 +2251,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/17-word-art/exercice-lettrine.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1r4nBgMenKdr0brjhVMtooIGF4XyP4oaH",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-005/lettrine.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-07/ex-005/ex-05.jpg",
+      "docxUrl": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/bases-07-word-art-et-lettrine/word-ex-005-image-enonce.jpg",
+      "imageResultat": null,
       "description": "",
       "consignes": [],
       "instructions": [
@@ -2268,7 +2268,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-07/ex-005/lettrine.jpg"
+          "data/assets/word/bases-07-word-art-et-lettrine/word-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -2297,9 +2297,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/18-inserer-une-forme/exercice-1-insertion-forme.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=13tegPCTkxytqB6z5Emv-7dTG--pWt_p4",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-001/ex-10.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-001/ex-10.jpg",
+      "docxUrl": "data/assets/word/bases-08-inserer-une-forme/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-001-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -2315,7 +2315,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-001/ex-10.jpg"
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -2341,8 +2341,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-002/ex-11.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-002/ex-11.jpg",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-002-image-resultat.jpg",
       "description": "Reproduisez le document en utilisant les formes disponibles dans Word.",
       "consignes": [],
       "instructions": [
@@ -2359,7 +2359,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-002/ex-11.jpg"
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Vous réalisez un document identique au résultat attendu.",
@@ -2386,9 +2386,9 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1Z09pxTmy4W_xhvn2xjVTe9Nlap8DNoGi",
+      "downloadUrl": "data/assets/word/bases-08-inserer-une-forme/word-ex-003-annexe-1.zip",
       "imageEnonce": null,
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-003/ex-12.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-003-image-resultat.jpg",
       "description": "1-Téléchargez les visuels",
       "consignes": [],
       "instructions": [
@@ -2426,8 +2426,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-004/ex-004.jpg",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-004-image-resultat.jpg",
       "description": "Reproduisez la composition en formes en vous aidant du modele fourni.",
       "consignes": [],
       "instructions": [
@@ -2442,7 +2442,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-004/ex-004.jpg"
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une mise en page conforme au modèle ci-dessous.",
@@ -2470,8 +2470,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-006/ex-006-comment-faire.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-005/ex-14.jpg",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-005-image-resultat.jpg",
       "description": "Creez la composition avec SmartArt et les photos fournies.",
       "consignes": [],
       "instructions": [
@@ -2489,7 +2489,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-005/ex-14.jpg"
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une présentation identique au résultat attendu.",
@@ -2519,8 +2519,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-006/ex-006-resulttat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-006/ex-006-resultat.jpg",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-006-image-resultat.jpg",
       "description": "Téléchargez les photos utiles à l'exercice.",
       "consignes": [],
       "instructions": [
@@ -2537,8 +2537,8 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-006/ex-006-resultat.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-006/ex-006-resulttat.jpg"
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-006-scrape-resultat-1.jpg",
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-006-scrape-resultat-2.jpg"
         ]
       },
       "preamble": "",
@@ -2550,7 +2550,7 @@ window.WORD_ATELIER_DATA = {
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1DB6pZ-0ddPzyACDS11lGngbEt2gbCgRt",
+      "downloadUrl": "data/assets/word/bases-08-inserer-une-forme/word-ex-006-annexe-1.zip",
       "downloadLabel": "Telecharger les photos"
     },
     {
@@ -2567,8 +2567,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-007/comment-faire-caractere-speciaux.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-007/15-exercice-01.jpg",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-007-image-resultat.jpg",
       "description": "Une série de Symboles (Caractères spéciaux) à insérer et à manipuler. Ils sont disponibles via la police Wingding et Webding.",
       "consignes": [],
       "instructions": [],
@@ -2580,7 +2580,8 @@ window.WORD_ATELIER_DATA = {
         "Une série de Symboles (Caractères spéciaux) à insérer et à manipuler. Ils sont disponibles via la police Wingding et Webding."
       ],
       "downloadUrl": null,
-      "downloadLabel": ""
+      "downloadLabel": "",
+      "scrape": {}
     },
     {
       "id": "ex-048",
@@ -2595,9 +2596,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/18-inserer-une-forme/exercice-8.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=15innW8uNB2KeAr5tUGNHcX0IUBm9O2Gc",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-008/ex-008-tuto.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-008/ex-008.gif",
+      "docxUrl": "data/assets/word/bases-08-inserer-une-forme/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-008-image-enonce.gif",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-008-image-resultat.gif",
       "description": "La Pyramide de Maslow.",
       "consignes": [],
       "instructions": [
@@ -2613,7 +2614,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-008/ex-008.gif"
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-008-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -2645,10 +2646,10 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/18-inserer-une-forme/exercice-9.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=11l7QFXOyHB-DcK-JWTbnXZCv9wS006Vj",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1kGVbzPdUKx2nWVHMCtKMVuMaTjAlon2J",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-009/ex-009-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-009/ex-009-solution.jpg",
+      "docxUrl": "data/assets/word/bases-08-inserer-une-forme/word-ex-009.docx",
+      "downloadUrl": "data/assets/word/bases-08-inserer-une-forme/word-ex-009-annexe-1.zip",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-009-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-009-image-resultat.jpg",
       "description": "Visuels et texte à télécharger ci-contre",
       "consignes": [],
       "instructions": [],
@@ -2660,7 +2661,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-009/ex-009-solution.jpg"
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-009-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Dans cet exercice, 6 formes et 2 images à insérer comme sur le résultat attendu. Pour faciliter la mise en place, pensez à grouper les formes, en particulier les flèches de directions.",
@@ -2684,9 +2685,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/18-inserer-une-forme/exercice-10.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1gBRQrVsF5VtB9NJG_4epdY-DhGusrx9V",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-010/ex-tuto-010.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-08/ex-010/010-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-08-inserer-une-forme/word-ex-010.docx",
+      "imageEnonce": "data/assets/word/bases-08-inserer-une-forme/word-ex-010-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-08-inserer-une-forme/word-ex-010-image-resultat.jpg",
       "description": "Téléchargez le fichier ici",
       "consignes": [],
       "instructions": [],
@@ -2699,7 +2700,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-08/ex-010/010-resultat.jpg"
+          "data/assets/word/bases-08-inserer-une-forme/word-ex-010-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Vous travaillez avec la fonction \"Aligner\" du bloc \"Organiser\" (dépend de votre version de logiciel) pour obtenir AUTOMATIQUEMENT le résultat ci-dessous :",
@@ -2722,9 +2723,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/26-zone-de-texte/exercice-1-zone-de-texte.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1j-g7kwgPyqhU7xMKIlY35kYrMf4Yc0ZI",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-001/19-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-001/19-01.jpg",
+      "docxUrl": "data/assets/word/bases-09-zone-de-texte/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-09-zone-de-texte/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-09-zone-de-texte/word-ex-001-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -2738,7 +2739,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-09/ex-001/19-01.jpg"
+          "data/assets/word/bases-09-zone-de-texte/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "À l'aide de la fonction zone de texte simple, vous présentez le texte ci-dessous en 6 zones distinctes.",
@@ -2765,9 +2766,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/26-zone-de-texte/exercice-2-zone-de-texte.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1PPnz5KF_zz23sZvScMt3v794mu4BTGFu",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-002/19-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-002/19-02.jpg",
+      "docxUrl": "data/assets/word/bases-09-zone-de-texte/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-09-zone-de-texte/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-09-zone-de-texte/word-ex-002-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -2781,7 +2782,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-09/ex-002/19-02.jpg"
+          "data/assets/word/bases-09-zone-de-texte/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Consignes : .",
@@ -2806,8 +2807,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-003/ex-003.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-003/ex-003.jpg",
+      "imageEnonce": "data/assets/word/bases-09-zone-de-texte/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-09-zone-de-texte/word-ex-003-image-resultat.jpg",
       "description": "Placez des zones de texte sur la carte en respectant les couleurs et les arrondis.",
       "consignes": [],
       "instructions": [
@@ -2824,7 +2825,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-09/ex-003/ex-003.jpg"
+          "data/assets/word/bases-09-zone-de-texte/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -2852,9 +2853,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/26-zone-de-texte/exercice-4-zone-de-texte.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=19M1-zJ34ZIUpw3rOB_LPi7RSMtq8cI7c",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-004/ex-004.jpg",
+      "docxUrl": "data/assets/word/bases-09-zone-de-texte/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/bases-09-zone-de-texte/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-09-zone-de-texte/word-ex-004-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -2870,7 +2871,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-09/ex-004/ex-004.jpg"
+          "data/assets/word/bases-09-zone-de-texte/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -2895,9 +2896,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/26-zone-de-texte/exercice-5-zone-de-texte.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1h_6DaYihC9wjQpSaco7SjaAQUSXsMpuz",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-005/ex-005-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-005/ex-005-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-09-zone-de-texte/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/bases-09-zone-de-texte/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-09-zone-de-texte/word-ex-005-image-resultat.jpg",
       "description": "Téléchargez les éléments texte et images ci-contre",
       "consignes": [],
       "instructions": [
@@ -2911,7 +2912,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-09/ex-005/ex-005-resultat.jpg"
+          "data/assets/word/bases-09-zone-de-texte/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -2925,7 +2926,7 @@ window.WORD_ATELIER_DATA = {
         "Couleur de Police et encadrement de la zone : blanc.",
         "Vous justifiez le texte dans la zone et laissez la place pour le titre \"Mont Blanc Mario Colonel\"."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1qBZeD-Kzd5W_TrCBfhOjzyR3uhFKvonl",
+      "downloadUrl": "data/assets/word/bases-09-zone-de-texte/word-ex-005-annexe-1.jpg",
       "downloadLabel": "Telecharger l'image"
     },
     {
@@ -2941,9 +2942,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/26-zone-de-texte/exercice-6-zone-de-texte.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1U9uxX1Fn1GE7AGwQoEKJOZdMLMnoa2YP",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-006/ex-006-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-09/ex-006/ex-006-02.jpg",
+      "docxUrl": "data/assets/word/bases-09-zone-de-texte/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/bases-09-zone-de-texte/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-09-zone-de-texte/word-ex-006-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -2958,7 +2959,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-09/ex-006/ex-006-02.jpg"
+          "data/assets/word/bases-09-zone-de-texte/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Le texte ci-dessous est découpé en trois parties, elles correspondent à trois zones de textes à incorporer automatiquement dans un document Word, à partir du menu : \"zone de texte\".",
@@ -2983,9 +2984,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme/exercice-1-mise-en-forme-avancee.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Lbs3Q8jBl4DvcpixAEHz3l9bWCXHvBFT",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-001/ex-001-tuto-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-001/ex-001-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-11-section-et-saut/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-11-section-et-saut/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-11-section-et-saut/word-ex-001-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -3000,7 +3001,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-11/ex-001/ex-001-resultat.jpg"
+          "data/assets/word/bases-11-section-et-saut/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3024,9 +3025,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme/exercice-2-mise-forme-avancee.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Pvgj2p9yG8o9nPLvuqi6tVkLVROCvAAl",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-002/ex-002-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-002/ex-002-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-11-section-et-saut/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-11-section-et-saut/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-11-section-et-saut/word-ex-002-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -3040,7 +3041,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-11/ex-002/ex-002-resultat.jpg"
+          "data/assets/word/bases-11-section-et-saut/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3070,9 +3071,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme/exercice-3.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1xpwaDckukEXMMYc9IXDLGt8GEJvz2FmE",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-003/ex-003-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-003/ex-003-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-11-section-et-saut/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/bases-11-section-et-saut/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-11-section-et-saut/word-ex-003-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -3088,7 +3089,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-11/ex-003/ex-003-resultat.jpg"
+          "data/assets/word/bases-11-section-et-saut/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3113,9 +3114,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme/exercice-4.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1MZqj1oJC3e7V_7qrRHdA_cW9HoX5YruR",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-004/ex-004-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-11/ex-004/ex-004-resultat.jpg",
+      "docxUrl": "data/assets/word/bases-11-section-et-saut/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/bases-11-section-et-saut/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-11-section-et-saut/word-ex-004-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -3131,7 +3132,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-11/ex-004/ex-004-resultat.jpg"
+          "data/assets/word/bases-11-section-et-saut/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3156,9 +3157,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-1.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1vbMEpYaSJNswJ7nZrxj5vSFAS_c4XZhC",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-001/ex-001-tuto.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-001/ex-01.jpg",
+      "docxUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-001-image-resultat.jpg",
       "description": "Éléments de travail à télécharger ci-contre.",
       "consignes": [],
       "instructions": [
@@ -3173,7 +3174,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-001/ex-01.jpg"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3184,7 +3185,7 @@ window.WORD_ATELIER_DATA = {
         "Insérez les images dans Word au niveau des différents paragraphes et choisir le bon \"habillage\" des visuels pour les positionner comme sur le résultat.",
         "Déplacez la seconde image en fin de première ligne du second paragraphe."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1NOB3hFMxgKs5Ln3Cr7d2Mq145VC2gNkt",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-001-annexe-1.zip",
       "downloadLabel": "Telecharger les visuels"
     },
     {
@@ -3201,8 +3202,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-002/ex-002-tuto.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-002/ex-02.jpg",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-002-image-resultat.jpg",
       "description": "Téléchargez les visuels ci-contre et décompresser les sur bureau",
       "consignes": [],
       "instructions": [
@@ -3217,7 +3218,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-002/ex-02.jpg"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3227,7 +3228,7 @@ window.WORD_ATELIER_DATA = {
         "Insérer les images dans un document Word en les plaçant au hasard.",
         "Accéder au menu mise en forme et jouer avec votre talent artistique."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1u3SuBs1dRRNr3sI3ONNONqp9Y-EqdPQ4",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-002-annexe-1.zip",
       "downloadLabel": "Telecharger les visuels"
     },
     {
@@ -3243,9 +3244,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-3.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=12lThdL44SwwDnetGrB6r8D3r92SY2qNZ",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003-tuto.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003.jpg",
+      "docxUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-003-image-enonce.gif",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-003-image-resultat.jpg",
       "description": "Assemblez textes et images, puis groupez chaque bloc avant de le positionner.",
       "consignes": [],
       "instructions": [
@@ -3261,7 +3262,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-003/ex-003.jpg"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Insérer les images comme sur le résultat attendu. (utilisez de préférence l'habillage \"à travers le texte\").",
@@ -3272,7 +3273,7 @@ window.WORD_ATELIER_DATA = {
         "Insérer les images comme sur le résultat attendu. (utilisez de préférence l'habillage \"à travers le texte\").",
         "Grouper chaque zone avec sa photo et positionner l'ensemble."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1ISKAXVvgTAU06aZcEIqkbDTswyxlEDuV",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-003-annexe-1.zip",
       "downloadLabel": "Telecharger les images"
     },
     {
@@ -3288,9 +3289,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-4.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1WAiDis7XRelZigEmqOH2YrjESLT43xDe",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-004/ex-04.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-004/ex-04.jpg",
+      "docxUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-004-image-resultat.jpg",
       "description": "Téléchargez les documents ci-contre",
       "consignes": [],
       "instructions": [
@@ -3305,7 +3306,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-004/ex-04.jpg"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une mise en page conforme au visuel ci-dessous.",
@@ -3316,7 +3317,7 @@ window.WORD_ATELIER_DATA = {
         "Placez l'image au centre du paragraphe.",
         "L'habillage qui permet de réaliser cette présentation est \"Adapté\"."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=13Ex1ti-u0di3R4SBgKLJUc_6g2v3UIWT",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-004-annexe-1.zip",
       "downloadLabel": "Telecharger l'image"
     },
     {
@@ -3333,8 +3334,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-005/ex-005-tuto.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-005/ex-05.jpg",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-005-image-enonce.gif",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-005-image-resultat.jpg",
       "description": "1-Téléchargez la photo",
       "consignes": [],
       "instructions": [
@@ -3357,7 +3358,7 @@ window.WORD_ATELIER_DATA = {
         "Insérez cette photo dans un document que vous dupliquez.",
         "Vous enregistrez le document en deux versions, la première ne doit pas dépasser 600 Ko et l'autre ne doit pas faire moins de 1400 Ko."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1vqIwhck8fj0jEdg8kHG8CFGOBv58DR9q",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-005-annexe-1.zip",
       "downloadLabel": "Telecharger la photo"
     },
     {
@@ -3374,8 +3375,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-006/ex-06.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-006/ex-06.jpg",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-006-image-resultat.jpg",
       "description": "1-Téléchargez les photos",
       "consignes": [],
       "instructions": [
@@ -3393,7 +3394,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-006/ex-06.jpg"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3406,7 +3407,7 @@ window.WORD_ATELIER_DATA = {
         "avec les fonctions \"Avancer\" et \"reculer\" (la fonction est accessible si l'habillage des photos est sur \"devant le texte\" ou \"derrière le texte\").",
         "Groupez les deux blocs pour pouvoir les déplacer ensemble."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1dtb8TKj4lj1KBH42UvzTGNBmujhCzwPi",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-006-annexe-1.zip",
       "downloadLabel": "Telecharger les photos"
     },
     {
@@ -3423,8 +3424,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-007/resultat-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-007/007-resultat.jpg",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-007-image-resultat.jpg",
       "description": "1- Téléchargez les visuels",
       "consignes": [],
       "instructions": [
@@ -3438,8 +3439,8 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-007/007-resultat.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-007/resultat-02.jpg"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-007-scrape-resultat-1.jpg",
+          "data/assets/word/bases-12-inserer-une-image/word-ex-007-scrape-resultat-2.jpg"
         ]
       },
       "preamble": "",
@@ -3451,7 +3452,7 @@ window.WORD_ATELIER_DATA = {
         "Vous prenez deux formes au hasard et vous collez les deux poules en \"fond\".",
         "Vous rognez les visuels pour avoir un \"gros plan\" des poules."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=19f2HXc_Ogs6BHFn_PgeHWdklhYJTqUSE",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-007-annexe-1.zip",
       "downloadLabel": "Telecharger les visuels"
     },
     {
@@ -3467,9 +3468,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-8.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1m8EBruRppLrOgXVkbL-r74Izl6UbPuck",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-008/resultat-ex-008.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-008/resultat-ex-008.jpg",
+      "docxUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-008-image-resultat.jpg",
       "description": "1-Téléchargez le fichier texte et les images ci-contre.",
       "consignes": [],
       "instructions": [
@@ -3485,7 +3486,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-008/resultat-ex-008.jpg"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Le travail est à présenter globalement comme dans le résultat attendu.",
@@ -3499,7 +3500,7 @@ window.WORD_ATELIER_DATA = {
         "Pour les pins de couleur utiliser l'habillage de l'image pour les positionner.",
         "Le travail est à présenter globalement comme dans le résultat attendu."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1wrw9MbnPBr0VtwkA7CnZ9-2D8Rv7_Bjj",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-008-annexe-1.zip",
       "downloadLabel": "Telecharger les images"
     },
     {
@@ -3515,9 +3516,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-9.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1e5i9eBtl_fdjAh0kU7e0UNtkQLkZM18-",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-009/ex-009.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-009/ex-009.jpg",
+      "docxUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-009.docx",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-009-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-009-image-resultat.jpg",
       "description": "1-Téléchargez le fichier texte et les images ci-contre.",
       "consignes": [],
       "instructions": [
@@ -3535,7 +3536,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-009/ex-009.jpg"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-009-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3551,7 +3552,7 @@ window.WORD_ATELIER_DATA = {
         "Les sauts de pages sont à mettre sur les trois premières pages.",
         "En pied de page, insérez la numérotation."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1MRTiyzT7nr0b10khHTMRYjdZ-gO0Xt7n",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-009-annexe-1.zip",
       "downloadLabel": "Telecharger les images"
     },
     {
@@ -3567,9 +3568,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/inserer-une-image/exercice-10.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1PDRAN0Ixf_e370N4c0OLRGojwHxn7idG",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-010/ex-010-solution.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-12/ex-010/ex-010-solution.webp",
+      "docxUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-010.docx",
+      "imageEnonce": "data/assets/word/bases-12-inserer-une-image/word-ex-010-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-12-inserer-une-image/word-ex-010-image-resultat.webp",
       "description": "Téléchargez le fichier texte et les images ci-contre.",
       "consignes": [],
       "instructions": [
@@ -3587,7 +3588,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-12/ex-010/ex-010-solution.webp"
+          "data/assets/word/bases-12-inserer-une-image/word-ex-010-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -3606,7 +3607,7 @@ window.WORD_ATELIER_DATA = {
         "Mise en 3 colonnes.",
         "Insertion vidéo via menu \"Vidéo en ligne\"."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1tkfYsuxUqk-iZuBa0FNJAKC2miwdehfJ",
+      "downloadUrl": "data/assets/word/bases-12-inserer-une-image/word-ex-010-annexe-1.webp",
       "downloadLabel": "Telecharger l'image de fond"
     },
     {
@@ -3622,9 +3623,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/en-tete-et-pied-de-page/exercice-1.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1uPvP1GY5RZah9XhhlyZADSkZEkY56sY9",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-001/ex-001-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-001/ex-001-solution.jpg",
+      "docxUrl": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-001-image-resultat.jpg",
       "description": "Vous téléchargez votre document support",
       "consignes": [],
       "instructions": [
@@ -3638,7 +3639,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-13/ex-001/ex-001-solution.jpg"
+          "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3662,9 +3663,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/en-tete-et-pied-de-page/exercice-2.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1IG1frRFY0genvKn7JIg_Y4R_fSPSsz33",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-002/logo.png",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-002/ex-002-solution.jpg",
+      "docxUrl": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-002-image-enonce.png",
+      "imageResultat": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-002-image-resultat.jpg",
       "description": "Vous téléchargez votre document de travail ci-contre",
       "consignes": [],
       "instructions": [
@@ -3678,10 +3679,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-13/ex-002/logo.png"
+          "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-002-scrape-enonce-1.png"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-13/ex-002/ex-002-solution.jpg"
+          "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3706,9 +3707,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/en-tete-et-pied-de-page/exercice-3.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1zBvlPoVKZoviOH-GKcijaGevGrxU6JUu",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-003/ex-003.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-003/ex-003.jpg",
+      "docxUrl": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-003-image-resultat.jpg",
       "description": "1-Téléchargez le texte de l'exercice et le copier dans Word",
       "consignes": [],
       "instructions": [
@@ -3724,7 +3725,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-13/ex-003/ex-003.jpg"
+          "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3735,7 +3736,7 @@ window.WORD_ATELIER_DATA = {
         "Insérez une numérotation avec numéro de page et nombre total de pages.",
         "Insérez le logo dans l'en-tête du document."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1Tg8du8PD8F9LoCES7oVridcFWdF4QSUO",
+      "downloadUrl": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-003-annexe-1.png",
       "downloadLabel": "Telecharger le logo"
     },
     {
@@ -3751,9 +3752,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/en-tete-et-pied-de-page/exercice-4.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1GJpgiJGemqaIo8C1UZ-YdhUHZIk_ESaE",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-004/ex-004-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-13/ex-004/ex-004-solution.jpg",
+      "docxUrl": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-004-image-resultat.jpg",
       "description": "Vous téléchargez votre document de travail ci-contre",
       "consignes": [],
       "instructions": [
@@ -3769,7 +3770,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-13/ex-004/ex-004-solution.jpg"
+          "data/assets/word/bases-13-en-tete-et-pied-de-page/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3795,8 +3796,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-001/ex-01.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-001/ex-01.gif",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-001-image-resultat.gif",
       "description": "Ce n'est pas très pratique pour un tableau, mais vous pouvez télécharger le texte ici",
       "consignes": [],
       "instructions": [
@@ -3812,7 +3813,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-001/ex-01.gif"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-001-scrape-resultat-1.gif"
         ]
       },
       "preamble": "NB : Vous pouvez copier l'image du résultat attendu quand elle est en taille réelle et la coller sur votre document de travail pour l'avoir sous les yeux. Sinon copie/coller.",
@@ -3840,8 +3841,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-02.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-02.gif",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-002-image-resultat.gif",
       "description": "Créez le tableau directement dans un nouveau document Word en vous appuyant sur le résultat attendu.",
       "consignes": [],
       "instructions": [
@@ -3859,7 +3860,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-002/ex-02.gif"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-002-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -3891,8 +3892,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-003/ex-03.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-003/ex-03.jpg",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-003-image-resultat.jpg",
       "description": "Créer un tableau de 3 de colonnes et 11 lignes",
       "consignes": [],
       "instructions": [
@@ -3908,7 +3909,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-003/ex-03.jpg"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3942,8 +3943,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-004/ex-04.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-004/ex-04.jpg",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-004-image-resultat.jpg",
       "description": "Insérer un tableau de 7 lignes et 6 colonnes.",
       "consignes": [],
       "instructions": [
@@ -3958,7 +3959,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-004/ex-04.jpg"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -3989,8 +3990,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-005/05.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-005/05.jpg",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-005-image-resultat.jpg",
       "description": "Reproduisez ce tableau dans votre traitement de texte. Cellule fusionnées, bordure \"tirets\"...",
       "consignes": [],
       "instructions": [],
@@ -4002,7 +4003,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-005/05.jpg"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4031,8 +4032,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-006/ex-06.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-006/ex-06.gif",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-006-image-enonce.gif",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-006-image-resultat.gif",
       "description": "Créez deux tableaux 7 colonnes et 11 lignes et 3 colonnes et 8 lignes.",
       "consignes": [],
       "instructions": [
@@ -4046,7 +4047,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-006/ex-06.gif"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-006-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -4077,8 +4078,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-007/ex-07.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-007/ex-07.jpg",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-007-image-resultat.jpg",
       "description": "T éléchargez la photo miniature",
       "consignes": [],
       "instructions": [
@@ -4094,7 +4095,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-007/ex-07.jpg"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4108,7 +4109,7 @@ window.WORD_ATELIER_DATA = {
         "Fusionnez au bon endroit pour insérer l'hélicoptère.",
         "Trame de fond en gris pour la troisième ligne."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1kmA7fWYU8psZxFt4EJPUraOEjTHXAaUr",
+      "downloadUrl": "data/assets/word/bases-14-inserer-un-tableau/word-ex-007-annexe-1.jpg",
       "downloadLabel": "Telecharger la photo miniature"
     },
     {
@@ -4124,9 +4125,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/18-inserer-tableau/exercice-8.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1PBVlOL7jNHWH6AWyDR6lzLHRpfNOYj9O",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-008/ex-008.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-008/ex-008.jpg",
+      "docxUrl": "data/assets/word/bases-14-inserer-un-tableau/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-008-image-resultat.jpg",
       "description": "Suivez l'exemple ci-dessous. Les textes hors tableau sont déjà sur votre fichier de travail. Pour cet exercice, il est conseillé d'imprimer l'image ou mieux de l'avoir sur la droite de son écran pour mieux le copier.",
       "consignes": [],
       "instructions": [
@@ -4143,7 +4144,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-008/ex-008.jpg"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4169,9 +4170,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/18-inserer-tableau/exercice-9.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Ha-pnkCBCZNuXOlygoczo77twx1nUxtT",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-009/ex-005-bouton.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-14/ex-009/ex-005-resultat.gif",
+      "docxUrl": "data/assets/word/bases-14-inserer-un-tableau/word-ex-009.docx",
+      "imageEnonce": "data/assets/word/bases-14-inserer-un-tableau/word-ex-009-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-14-inserer-un-tableau/word-ex-009-image-resultat.gif",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -4185,7 +4186,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-14/ex-009/ex-005-bouton.jpg"
+          "data/assets/word/bases-14-inserer-un-tableau/word-ex-009-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -4210,9 +4211,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-d-un-tableau/exercice-1-surligner-du-texte.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=17KQqjlNn_E1tY3laslNqIeaCe6mUllU1",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-001/ex-132-01-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-001/ex-132-01-solution.jpg",
+      "docxUrl": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-001-image-resultat.jpg",
       "description": "1-Téléchargez le document qui vous évite la saisie",
       "consignes": [],
       "instructions": [
@@ -4226,7 +4227,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-15/ex-001/ex-132-01-solution.jpg"
+          "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4252,9 +4253,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-d-un-tableau/exercice-tableau-word-2.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1h2whIDrZWSPxo7FS1iYY7KPUXgvr-fXW",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-002/ex-132-02-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-002/ex-132-02-solution.jpg",
+      "docxUrl": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-002-image-resultat.jpg",
       "description": "1-Téléchargez le document qui vous évite la saisie",
       "consignes": [],
       "instructions": [
@@ -4268,7 +4269,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-15/ex-002/ex-132-02-solution.jpg"
+          "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4295,8 +4296,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-003/ex-132-03-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-003/ex-132-03-solution.jpg",
+      "imageEnonce": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-003-image-resultat.jpg",
       "description": "Même principe que l'exercice précédent texte vertical sur la première ligne et alternance de couleur dans les colonnes. Si possible distribuer la couleur sur les 5 colonnes en une fois. \"Selection multiple des colonnes \"",
       "consignes": [],
       "instructions": [
@@ -4313,7 +4314,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-15/ex-003/ex-132-03-solution.jpg"
+          "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4342,8 +4343,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-004/ex-132-05.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-004/ex-132-04.jpg",
+      "imageEnonce": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-004-image-resultat.jpg",
       "description": "Creez deux calendriers imprimables sur une page A4 en paysage.",
       "consignes": [],
       "instructions": [
@@ -4359,8 +4360,8 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-15/ex-004/ex-132-04.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-15/ex-004/ex-132-05.jpg"
+          "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-004-scrape-resultat-1.jpg",
+          "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-004-scrape-resultat-2.jpg"
         ]
       },
       "preamble": "Finalisez comme sur le résultat ci-dessous.",
@@ -4385,9 +4386,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-d-un-tableau/exercice-tableau-word-5.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1TzIZo-ubZ6nxp7jzpeZ-0IafFVEsGXoB",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-005/ex-005.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-005/ex-005.jpg",
+      "docxUrl": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-005-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -4408,7 +4409,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-15/ex-005/ex-005.jpg"
+          "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Consignes : .",
@@ -4440,9 +4441,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-d-un-tableau/exercice-tableau-word-6.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1I5ak9Wa2294oZbx4VZ6TDsPi9bFXxfxM",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-006/ex-006.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-006/ex-006.jpg",
+      "docxUrl": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-006-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -4456,7 +4457,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-15/ex-006/ex-006.jpg"
+          "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4480,9 +4481,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/mise-en-forme-d-un-tableau/exercice-tableau-word-7.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=19alJknfvNOUAPfzCZrn68vMxk1nmJopZ",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-007/tableau.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-15/ex-007/tableau.gif",
+      "docxUrl": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-007.docx",
+      "imageEnonce": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-007-image-resultat.gif",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -4496,7 +4497,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-15/ex-007/tableau.gif"
+          "data/assets/word/bases-15-mise-en-forme-tableau/word-ex-007-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -4527,8 +4528,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003-outils.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003.jpg",
+      "imageEnonce": "data/assets/word/bases-16-tableau-avance/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-16-tableau-avance/word-ex-001-image-resultat.jpg",
       "description": "Vous utilisez les fonctions qui se cachent sous l'onglet création du bloc \"Outils de tableau\"",
       "consignes": [],
       "instructions": [],
@@ -4539,10 +4540,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003-outils.jpg"
+          "data/assets/word/bases-16-tableau-avance/word-ex-001-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003.jpg"
+          "data/assets/word/bases-16-tableau-avance/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Pour un confort de travail, il est conseillé de glisser l'image du résultat attendu sur le bureau puis dans votre document Word pour le reproduire.",
@@ -4570,8 +4571,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-002/ex-133-02-capture02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-002/ex-133-02-capture01.jpg",
+      "imageEnonce": "data/assets/word/bases-16-tableau-avance/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-16-tableau-avance/word-ex-002-image-resultat.jpg",
       "description": "L'exercice consiste à créer un nouveau style de tableau (en plus de ceux qui sont par défaut présent dans le logiciel).",
       "consignes": [],
       "instructions": [
@@ -4585,7 +4586,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-002/ex-133-02-capture01.jpg"
+          "data/assets/word/bases-16-tableau-avance/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4618,8 +4619,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003.webp",
+      "imageEnonce": "data/assets/word/bases-16-tableau-avance/word-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/word/bases-16-tableau-avance/word-ex-003-image-resultat.webp",
       "description": "Pour un confort de travail, vous cliquez sur l'image du résultat attendu, glissez l'image sur le bureau puis dans votre document Word pour le reproduire.",
       "consignes": [],
       "instructions": [
@@ -4636,7 +4637,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-003/ex-003.webp"
+          "data/assets/word/bases-16-tableau-avance/word-ex-003-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -4669,9 +4670,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tableau-avances-et-trucs/exercice-4.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1vGsX6zV_gDFKPNR6kH9t6rGbJ1FwxSMe",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-004/ex-004.jpg",
+      "docxUrl": "data/assets/word/bases-16-tableau-avance/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/bases-16-tableau-avance/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-16-tableau-avance/word-ex-004-image-resultat.jpg",
       "description": "Vous pouvez télécharger le texte en vrac ici",
       "consignes": [],
       "instructions": [
@@ -4687,7 +4688,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-004/ex-004.jpg"
+          "data/assets/word/bases-16-tableau-avance/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4715,9 +4716,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tableau-avances-et-trucs/exercice-5.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1pPybaoBH_mMSWLpuOxxGxYC1IVosfbmM",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-005/ex-134-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-005/ex-134-01.jpg",
+      "docxUrl": "data/assets/word/bases-16-tableau-avance/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/bases-16-tableau-avance/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-16-tableau-avance/word-ex-005-image-resultat.jpg",
       "description": "Téléchargez le tableau de base pour vous éviter la saisie",
       "consignes": [],
       "instructions": [
@@ -4733,7 +4734,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-005/ex-134-01.jpg"
+          "data/assets/word/bases-16-tableau-avance/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4758,9 +4759,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tableau-avances-et-trucs/exercice-6.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1DdaEmiIWxnRhUUJ660PfP38pH5Z4Y1TY",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-006/ex-002-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-006/ex-06.jpg",
+      "docxUrl": "data/assets/word/bases-16-tableau-avance/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/bases-16-tableau-avance/word-ex-006-image-enonce.jpg",
+      "imageResultat": null,
       "description": "Téléchargez le tableau de base pour vous éviter la saisie",
       "consignes": [],
       "instructions": [
@@ -4774,7 +4775,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-006/ex-002-solution.jpg"
+          "data/assets/word/bases-16-tableau-avance/word-ex-006-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -4800,9 +4801,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/tableau-avances-et-trucs/exercice-7.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1SL1XDuoXCVDDhZNVfPD0YCp8ekIkXj3e",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-007/ex-003-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-007/ex-003-solution.jpg",
+      "docxUrl": "data/assets/word/bases-16-tableau-avance/word-ex-007.docx",
+      "imageEnonce": "data/assets/word/bases-16-tableau-avance/word-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-16-tableau-avance/word-ex-007-image-resultat.jpg",
       "description": "Téléchargez le document Word",
       "consignes": [],
       "instructions": [
@@ -4819,7 +4820,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-007/ex-003-solution.jpg"
+          "data/assets/word/bases-16-tableau-avance/word-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4846,8 +4847,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-008/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-16/ex-008/ex-004.jpg",
+      "imageEnonce": "data/assets/word/bases-16-tableau-avance/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/bases-16-tableau-avance/word-ex-008-image-resultat.jpg",
       "description": "Téléchargez le document Word",
       "consignes": [],
       "instructions": [
@@ -4864,7 +4865,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-16/ex-008/ex-004.jpg"
+          "data/assets/word/bases-16-tableau-avance/word-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -4890,9 +4891,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/14-tabulation-simple/exercice-1-tabulation.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1AUd_x-M4LDzGyk7X2LIS9V1PQE4KRW8V",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-001/ex-01.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-001/ex-01.gif",
+      "docxUrl": "data/assets/word/avance-17-regles-et-tabulations/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-17-regles-et-tabulations/word-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/word/avance-17-regles-et-tabulations/word-ex-001-image-resultat.gif",
       "description": "Saisir ou téléchargez le courrier",
       "consignes": [],
       "instructions": [
@@ -4907,7 +4908,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-17/ex-001/ex-01.gif"
+          "data/assets/word/avance-17-regles-et-tabulations/word-ex-001-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -4938,9 +4939,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/14-tabulation-simple/exercice-2-tabulation.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1U8nCpfMJkrA92O_6z9FONAAy63gQDW6q",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-002/ex-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-002/ex-02.jpg",
+      "docxUrl": "data/assets/word/avance-17-regles-et-tabulations/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/avance-17-regles-et-tabulations/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-17-regles-et-tabulations/word-ex-002-image-resultat.jpg",
       "description": "Saisir ou téléchargez le texte",
       "consignes": [],
       "instructions": [
@@ -4955,7 +4956,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-17/ex-002/ex-02.jpg"
+          "data/assets/word/avance-17-regles-et-tabulations/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une mise en page conforme aux consignes : .",
@@ -4984,9 +4985,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/14-tabulation-simple/exercice-3-tabulation.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1quVfoSNgPBkdIFvPbC_cVOcjg6J96wjb",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-003/ex-03.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-003/ex-03.jpg",
+      "docxUrl": "data/assets/word/avance-17-regles-et-tabulations/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/avance-17-regles-et-tabulations/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-17-regles-et-tabulations/word-ex-003-image-resultat.jpg",
       "description": "Saisir ou téléchargez le texte",
       "consignes": [],
       "instructions": [
@@ -5000,7 +5001,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-17/ex-003/ex-03.jpg"
+          "data/assets/word/avance-17-regles-et-tabulations/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une mise en page conforme aux consignes : .",
@@ -5028,9 +5029,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/14-tabulation-simple/exercice-4-tabulation.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1iEWoyYsvI4yR35553biW_ggT2B00K6sJ",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-004/ex-004.webp",
+      "docxUrl": "data/assets/word/avance-17-regles-et-tabulations/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/avance-17-regles-et-tabulations/word-ex-004-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-17-regles-et-tabulations/word-ex-004-image-resultat.webp",
       "description": "Télécharger le document de travail",
       "consignes": [],
       "instructions": [
@@ -5044,7 +5045,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-17/ex-004/ex-004.webp"
+          "data/assets/word/avance-17-regles-et-tabulations/word-ex-004-scrape-resultat-1.webp"
         ]
       },
       "preamble": "Pour cet exercice, vous utilisez la tabulation pour centrer et aligner à droite.",
@@ -5068,9 +5069,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/14-tabulation-simple/exercice-5-tabulation.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=16bA6DmXCQbaUUV2guM-3xjnb9kQOai4L",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-005/ex-05.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-005/ex-05.jpg",
+      "docxUrl": "data/assets/word/avance-17-regles-et-tabulations/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/avance-17-regles-et-tabulations/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-17-regles-et-tabulations/word-ex-005-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [],
@@ -5082,7 +5083,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-17/ex-005/ex-05.jpg"
+          "data/assets/word/avance-17-regles-et-tabulations/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une mise en page conforme aux consignes : .",
@@ -5109,8 +5110,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-006/ex-06.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-006/ex-06.jpg",
+      "imageEnonce": "data/assets/word/avance-17-regles-et-tabulations/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-17-regles-et-tabulations/word-ex-006-image-resultat.jpg",
       "description": "Collez le texte fourni, puis reglez les marges selon le modele.",
       "consignes": [],
       "instructions": [
@@ -5125,7 +5126,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-17/ex-006/ex-06.jpg"
+          "data/assets/word/avance-17-regles-et-tabulations/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une mise en page conforme aux consignes : .",
@@ -5153,9 +5154,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/14-tabulation-simple/exercice-7-tabulation.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=13pwKot2hXDrCWEqopZEYtPogvIomuHXh",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-007/ex-007.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-17/ex-007/ex-007.gif",
+      "docxUrl": "data/assets/word/avance-17-regles-et-tabulations/word-ex-007.docx",
+      "imageEnonce": "data/assets/word/avance-17-regles-et-tabulations/word-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/word/avance-17-regles-et-tabulations/word-ex-007-image-resultat.gif",
       "description": "Saisir ou téléchargez le texte",
       "consignes": [],
       "instructions": [
@@ -5169,7 +5170,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-17/ex-007/ex-007.gif"
+          "data/assets/word/avance-17-regles-et-tabulations/word-ex-007-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -5196,9 +5197,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/remplacer-un-mot/exercie-1.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1yCz36f4hHUaFwh_fGsXov2obs9K8_lZX",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-001/ex-001-solution.webp",
+      "docxUrl": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-001-image-resultat.webp",
       "description": "Téléchargez le document de travail",
       "consignes": [],
       "instructions": [
@@ -5214,10 +5215,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-001/ex-001.webp"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-001/ex-001-solution.webp"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-001-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -5243,9 +5244,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/remplacer-un-mot/08-02-recherche.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1A3Es9yxvnbP4-2ZknrDoCkTf3V6ighN0",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-002/ex02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-002/ex02.jpg",
+      "docxUrl": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-002-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5261,7 +5262,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-002/ex02.jpg"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5286,9 +5287,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/remplacer-un-mot/08-03-remplacer.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1-PALomlgBAnj7sOpV-aDR6gcIh7J5ohq",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-003/ex-003-solution.webp",
+      "docxUrl": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-003-image-resultat.webp",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5303,10 +5304,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-003/ex-003.webp"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-003-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-003/ex-003-solution.webp"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-003-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -5331,9 +5332,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/remplacer-un-mot/08-03-remplacer-2.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1iiJhkPwlxmNTYF_ojPB0vkStR5nRzR3p",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-004/ex-004.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-004/ex-004-solution.webp",
+      "docxUrl": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-004-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-004-image-resultat.webp",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5346,10 +5347,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-004/ex-004.webp"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-004-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-004/ex-004-solution.webp"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-004-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -5377,9 +5378,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/remplacer-un-mot/08-03-remplacer-3.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1jRFW0tybj2SSyxMBVMYfunztk8MghIH9",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-005/ex-005.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-005/ex-005-solution.webp",
+      "docxUrl": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-005-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-005-image-resultat.webp",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5393,10 +5394,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-005/ex-005.webp"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-005-scrape-enonce-1.webp"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-005/ex-005-solution.webp"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-005-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -5420,9 +5421,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/remplacer-un-mot/exercice-6.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1eHFZPRz7oiJeQWOXFV4e2zAmKTQS5x4v",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-006/ex-006-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-006/ex-006-solution.jpg",
+      "docxUrl": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-006-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5438,7 +5439,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-006/ex-006-solution.jpg"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5463,9 +5464,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/remplacer-un-mot/exercice-7.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1LZBWNScuU-BljeEWahOA2FreP2IhP1ZV",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-007/ex-07.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-007/ex-07.jpg",
+      "docxUrl": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-007.docx",
+      "imageEnonce": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-007-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5479,7 +5480,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-007/ex-07.jpg"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5505,9 +5506,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/remplacer-un-mot/exercice-8.html",
       "level": 4,
       "levelLabel": "🔴 Expert ⭐⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1JA56SWdpQg8ONMxuk5BoTMCyiGXtnjfn",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-008/ex-008.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-18/ex-008/ex-008-solution.gif",
+      "docxUrl": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-008-image-enonce.gif",
+      "imageResultat": "data/assets/word/avance-18-chercher-et-remplacer/word-ex-008-image-resultat.gif",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5522,10 +5523,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-008/ex-008.gif"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-008-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-18/ex-008/ex-008-solution.gif"
+          "data/assets/word/avance-18-chercher-et-remplacer/word-ex-008-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -5550,9 +5551,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/format-de-page/exercice-1.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1_2JWts0QwuioK7VtF9Fh6CITd814da6E",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-001/ex-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-001/ex-01.jpg",
+      "docxUrl": "data/assets/word/avance-19-format-de-page/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-19-format-de-page/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-19-format-de-page/word-ex-001-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5591,8 +5592,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-002/ex-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-002/ex-02.jpg",
+      "imageEnonce": "data/assets/word/avance-19-format-de-page/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-19-format-de-page/word-ex-002-image-resultat.jpg",
       "description": "Téléchargez l'image ici",
       "consignes": [],
       "instructions": [
@@ -5609,7 +5610,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-19/ex-002/ex-02.jpg"
+          "data/assets/word/avance-19-format-de-page/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5635,9 +5636,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/format-de-page/exercice-3.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1vawgkd02Eh3Ny-Mn0aCQAW0xTg772CZf",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-003/ex-03.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-003/ex-03.jpg",
+      "docxUrl": "data/assets/word/avance-19-format-de-page/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/avance-19-format-de-page/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-19-format-de-page/word-ex-003-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5651,7 +5652,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-19/ex-003/ex-03.jpg"
+          "data/assets/word/avance-19-format-de-page/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une mise en page conforme aux consignes : .",
@@ -5675,9 +5676,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/format-de-page/exercice-4.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=14VxPbfqZjuA-DIqlW3Slw5BgfaLX5aBk",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-004/ex-004.jpg",
+      "docxUrl": "data/assets/word/avance-19-format-de-page/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/avance-19-format-de-page/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-19-format-de-page/word-ex-004-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5693,7 +5694,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-19/ex-004/ex-004.jpg"
+          "data/assets/word/avance-19-format-de-page/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5718,9 +5719,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/format-de-page/exercice-5.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=10Xvya2NdS_iVv2el5bmfabP5Hq3rdbHO",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-005/ex-005.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-005/ex-005.jpg",
+      "docxUrl": "data/assets/word/avance-19-format-de-page/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/avance-19-format-de-page/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-19-format-de-page/word-ex-005-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5736,7 +5737,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-19/ex-005/ex-005.jpg"
+          "data/assets/word/avance-19-format-de-page/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5761,9 +5762,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/format-de-page/exercice-6.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1vQ4VXoBZE8zb8VcnKJU98FybrrpGY2Q2",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-006/ex-006-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-006/ex-006-solution.jpg",
+      "docxUrl": "data/assets/word/avance-19-format-de-page/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/avance-19-format-de-page/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-19-format-de-page/word-ex-006-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -5779,7 +5780,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-19/ex-006/ex-006-solution.jpg"
+          "data/assets/word/avance-19-format-de-page/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5805,8 +5806,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-007/13.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-007/13.gif",
+      "imageEnonce": "data/assets/word/avance-19-format-de-page/word-ex-007-image-enonce.gif",
+      "imageResultat": "data/assets/word/avance-19-format-de-page/word-ex-007-image-resultat.gif",
       "description": "Télécharger le texte et les images",
       "consignes": [],
       "instructions": [
@@ -5822,7 +5823,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-19/ex-007/13.gif"
+          "data/assets/word/avance-19-format-de-page/word-ex-007-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -5838,7 +5839,7 @@ window.WORD_ATELIER_DATA = {
         "Mettre les dates et heures dans un tableau à bordure double (facultatif).",
         "Insérer les images après téléchargement (facultatif)."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1Ae-32C1v8-Yf6rJMsXO16n-6GDUNrvAZ"
+      "downloadUrl": "data/assets/word/avance-19-format-de-page/word-ex-007-annexe-1.zip"
     },
     {
       "id": "ex-121",
@@ -5853,9 +5854,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/format-de-page/exercice-8.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1sIdu6ticYWOJnDe_hGQ47Eq0DH6TA133",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-008/ex-008.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-19/ex-008/ex-008-solution.gif",
+      "docxUrl": "data/assets/word/avance-19-format-de-page/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/avance-19-format-de-page/word-ex-008-image-enonce.gif",
+      "imageResultat": "data/assets/word/avance-19-format-de-page/word-ex-008-image-resultat.gif",
       "description": "Télécharger le texte et les images ci-contre",
       "consignes": [],
       "instructions": [
@@ -5872,10 +5873,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-19/ex-008/ex-008.gif"
+          "data/assets/word/avance-19-format-de-page/word-ex-008-scrape-enonce-1.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-19/ex-008/ex-008-solution.gif"
+          "data/assets/word/avance-19-format-de-page/word-ex-008-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -5905,9 +5906,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/aligner-du-texte/exercice-1.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=15s5YVYSHsMxAyds8YBYB5tj9byuZaGio",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-001/ex-001.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-001/ex-001.jpg",
+      "docxUrl": "data/assets/word/avance-20-affichage/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-20-affichage/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-20-affichage/word-ex-001-image-resultat.jpg",
       "description": "Télécharger le document de travail",
       "consignes": [],
       "instructions": [
@@ -5924,7 +5925,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-20/ex-001/ex-001.jpg"
+          "data/assets/word/avance-20-affichage/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5950,9 +5951,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/aligner-du-texte/exercice-2.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1p_CMPkfOrwFmeeC3AhgBm4vNxoqYUAVP",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-002/ex-002.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-002/ex-002.jpg",
+      "docxUrl": "data/assets/word/avance-20-affichage/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/avance-20-affichage/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-20-affichage/word-ex-002-image-resultat.jpg",
       "description": "Télécharger le document de travail",
       "consignes": [],
       "instructions": [
@@ -5969,7 +5970,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-20/ex-002/ex-002.jpg"
+          "data/assets/word/avance-20-affichage/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -5995,9 +5996,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/aligner-du-texte/exercice-3.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1CHRk3qD2ZKs5G027-D-5dBEg32jNiqhC",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-003/ex-003.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-003/ex-003.jpg",
+      "docxUrl": "data/assets/word/avance-20-affichage/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/avance-20-affichage/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-20-affichage/word-ex-003-image-resultat.jpg",
       "description": "Vous pouvez télécharger votre document de travail ci-contre.",
       "consignes": [],
       "instructions": [
@@ -6013,7 +6014,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-20/ex-003/ex-003.jpg"
+          "data/assets/word/avance-20-affichage/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6038,9 +6039,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/aligner-du-texte/exercice-4.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1OkG5tL61gY0Zb0wp9bwcg91zqJ0VFiDt",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-004/ex-004-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-004/ex-004-solution.jpg",
+      "docxUrl": "data/assets/word/avance-20-affichage/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/avance-20-affichage/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-20-affichage/word-ex-004-image-resultat.jpg",
       "description": "Vous téléchargez le document Word",
       "consignes": [],
       "instructions": [
@@ -6056,7 +6057,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-20/ex-004/ex-004-solution.jpg"
+          "data/assets/word/avance-20-affichage/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6081,9 +6082,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/aligner-du-texte/exercice-5.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1XoOv7bRB7YxXeKKtEHBiT1ArXDd0fObJ",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-005/ex-005.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-005/ex-05.jpg",
+      "docxUrl": "data/assets/word/avance-20-affichage/word-ex-005.docx",
+      "imageEnonce": null,
+      "imageResultat": null,
       "description": "",
       "consignes": [],
       "instructions": [
@@ -6122,9 +6123,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/aligner-du-texte/exercice-6.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=14a929lKkf_27FZNV_Vwt9MgCZZkfVjYm",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-006/ex-006-enonce.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-20/ex-006/ex-06.jpg",
+      "docxUrl": "data/assets/word/avance-20-affichage/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/avance-20-affichage/word-ex-006-image-enonce.jpg",
+      "imageResultat": null,
       "description": "Vous ouvrez plusieurs documents Word et utilisez la fonction \"changer de fenêtre\" comme ci-dessous.",
       "consignes": [],
       "instructions": [
@@ -6140,7 +6141,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-20/ex-006/ex-006-enonce.jpg"
+          "data/assets/word/avance-20-affichage/word-ex-006-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -6167,9 +6168,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/27-outil-dessin/exercice-1.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1_3MyNqeI7qeN2T6QUJ3a-azF2Xg4TAan",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-001/ex-001.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-001/ex-001.jpg",
+      "docxUrl": "data/assets/word/avance-21-smart-art/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-21-smart-art/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-21-smart-art/word-ex-001-image-resultat.jpg",
       "description": "Dans Insertion > SmartArt, choisissez une disposition de type processus puis reproduisez la présentation du résultat attendu.",
       "consignes": [],
       "instructions": [
@@ -6185,7 +6186,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-21/ex-001/ex-001.jpg"
+          "data/assets/word/avance-21-smart-art/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6212,8 +6213,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-002/ex-002.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-002/ex-002.jpg",
+      "imageEnonce": "data/assets/word/avance-21-smart-art/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-21-smart-art/word-ex-002-image-resultat.jpg",
       "description": "Faire une mise en page conforme au résultat attendu.",
       "consignes": [],
       "instructions": [
@@ -6229,7 +6230,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-21/ex-002/ex-002.jpg"
+          "data/assets/word/avance-21-smart-art/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Faire une mise en page conforme au résultat attendu.",
@@ -6254,8 +6255,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-003/ex-003.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-003/ex-003.jpg",
+      "imageEnonce": "data/assets/word/avance-21-smart-art/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-21-smart-art/word-ex-003-image-resultat.jpg",
       "description": "Téléchargez les visuels",
       "consignes": [],
       "instructions": [
@@ -6271,7 +6272,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-21/ex-003/ex-003.jpg"
+          "data/assets/word/avance-21-smart-art/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6283,7 +6284,7 @@ window.WORD_ATELIER_DATA = {
         "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts.",
         "Enregistrez votre travail puis marquez l'exercice comme terminé."
       ],
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1_NP8RV1f13rHg9r0hSVcnPhUtktWhIau"
+      "downloadUrl": "data/assets/word/avance-21-smart-art/word-ex-003-annexe-1.zip"
     },
     {
       "id": "ex-131",
@@ -6299,8 +6300,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-004/ex-04.jpg",
+      "imageEnonce": "data/assets/word/avance-21-smart-art/word-ex-004-image-enonce.jpg",
+      "imageResultat": null,
       "description": "Manipulation de la fonction \"organigramme\".",
       "consignes": [],
       "instructions": [
@@ -6315,7 +6316,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-21/ex-004/ex-004.jpg"
+          "data/assets/word/avance-21-smart-art/word-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -6345,9 +6346,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/27-outil-dessin/exercice-5.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Mzb7oTMp9CM8wUns2H_LwHbWyilBBFGM",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-005/ex-005-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-005/ex-005-solution.jpg",
+      "docxUrl": "data/assets/word/avance-21-smart-art/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/avance-21-smart-art/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-21-smart-art/word-ex-005-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -6363,7 +6364,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-21/ex-005/ex-005-solution.jpg"
+          "data/assets/word/avance-21-smart-art/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Modifiez le SmartArt existant pour obtenir la version attendue.",
@@ -6387,9 +6388,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/27-outil-dessin/exercice-6.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=148kbogqYquI7tOCPR2t5pJbyoDfVMofD",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-006/ex-006.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-21/ex-006/ex-006.jpg",
+      "docxUrl": "data/assets/word/avance-21-smart-art/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/avance-21-smart-art/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-21-smart-art/word-ex-006-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -6405,7 +6406,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-21/ex-006/ex-006.jpg"
+          "data/assets/word/avance-21-smart-art/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6432,8 +6433,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-001/ex-001-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-001/ex-001-resultat.jpg",
+      "imageEnonce": "data/assets/word/avance-22-modeles/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-22-modeles/word-ex-001-image-resultat.jpg",
       "description": "1-Copier ce texte dans votre logiciel.",
       "consignes": [],
       "instructions": [
@@ -6458,7 +6459,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-22/ex-001/ex-001-resultat.jpg"
+          "data/assets/word/avance-22-modeles/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Mettez en forme le courrier de façon proche du résultat attendu.",
@@ -6497,8 +6498,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-002/ex-002-support.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-002/ex-002-solution.jpg",
+      "imageEnonce": "data/assets/word/avance-22-modeles/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-22-modeles/word-ex-002-image-resultat.jpg",
       "description": "Créez un document à partir d'un modèle Office existant, par exemple un modèle proche de \"Économique\".",
       "consignes": [],
       "instructions": [
@@ -6513,10 +6514,10 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-22/ex-002/ex-002-support.jpg"
+          "data/assets/word/avance-22-modeles/word-ex-002-scrape-enonce-1.jpg"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-22/ex-002/ex-002-solution.jpg"
+          "data/assets/word/avance-22-modeles/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6541,8 +6542,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-003/ex-003.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-003/ex-003.jpg",
+      "imageEnonce": "data/assets/word/avance-22-modeles/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-22-modeles/word-ex-003-image-resultat.jpg",
       "description": "Creez puis enregistrez un modele Word personnalise pour un courrier d'assurance.",
       "consignes": [],
       "instructions": [
@@ -6573,7 +6574,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-22/ex-003/ex-003.jpg"
+          "data/assets/word/avance-22-modeles/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "[une seule mention à choisir ci-dessous].",
@@ -6618,8 +6619,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-22/ex-004/ex-004.jpg",
+      "imageEnonce": "data/assets/word/avance-22-modeles/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-22-modeles/word-ex-004-image-resultat.jpg",
       "description": "Creez puis enregistrez un modele Word personnalise avec zones de saisie.",
       "consignes": [],
       "instructions": [
@@ -6654,7 +6655,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-22/ex-004/ex-004.jpg"
+          "data/assets/word/avance-22-modeles/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6698,8 +6699,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-001/ex-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-001/ex-01.jpg",
+      "imageEnonce": "data/assets/word/avance-23-styles/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-23-styles/word-ex-001-image-resultat.jpg",
       "description": "Collez le texte, puis appliquez des styles rapides aux questions et aux réponses.",
       "consignes": [],
       "instructions": [
@@ -6728,7 +6729,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-24/ex-001/ex-01.jpg"
+          "data/assets/word/avance-23-styles/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6765,8 +6766,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-002/ex-002-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-002/ex-002-solution.jpg",
+      "imageEnonce": "data/assets/word/avance-23-styles/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-23-styles/word-ex-002-image-resultat.jpg",
       "description": "Collez le texte, puis appliquez des styles cohérents aux questions et aux réponses.",
       "consignes": [],
       "instructions": [
@@ -6795,7 +6796,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-24/ex-002/ex-002-solution.jpg"
+          "data/assets/word/avance-23-styles/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6831,9 +6832,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/27-styles/exercice-3.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1MShAk8lf86J2a7xj_cpYY3cmnYrd7tv6",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-003/nouveau-style-word.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-003/ex-03.jpg",
+      "docxUrl": "data/assets/word/avance-23-styles/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/avance-23-styles/word-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-23-styles/word-ex-003-image-resultat.jpg",
       "description": "Dans le groupe Styles de l'onglet Accueil, créez 3 nouveaux styles rapides.",
       "consignes": [],
       "instructions": [
@@ -6849,7 +6850,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-24/ex-003/ex-03.jpg"
+          "data/assets/word/avance-23-styles/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6878,9 +6879,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/27-styles/exercice-4.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1fOBPbJaa1OQxkGpgJs7KZsSw5WmJGeJf",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-004/ex-004-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-004/ex-004-resultat.jpg",
+      "docxUrl": "data/assets/word/avance-23-styles/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/avance-23-styles/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-23-styles/word-ex-004-image-resultat.jpg",
       "description": "Avec le raccourci CTRL+Maj+ALT+S, vous accédez à la boite de dialogue de modification des styles. Vous choisissez le style normal que vous avez modifié en fonction de la capture écran ci-dessous.",
       "consignes": [],
       "instructions": [
@@ -6893,7 +6894,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-24/ex-004/ex-004-resultat.jpg"
+          "data/assets/word/avance-23-styles/word-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -6919,8 +6920,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "Intermediaire",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-005/13-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-005/13-01.jpg",
+      "imageEnonce": "data/assets/word/avance-23-styles/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-23-styles/word-ex-005-image-resultat.jpg",
       "description": "Consignes :",
       "consignes": [
         "Enregistrez ces 5 nouveaux styles dans Word via le menu \"Nouveau style\".",
@@ -6941,7 +6942,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-24/ex-005/13-01.jpg"
+          "data/assets/word/avance-23-styles/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -6982,9 +6983,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/24-publipostage/exercice-1.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1FlZcxHAJ1u9MMW1LPEcf1h-2Aru_Vndr",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-001/ex-01-apres.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-001/ex-01-avant.jpg",
+      "docxUrl": "data/assets/word/avance-24-publipostage/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-24-publipostage/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-24-publipostage/word-ex-001-image-resultat.jpg",
       "description": "Télécharger ci-contre les données et la lettre type",
       "consignes": [],
       "instructions": [
@@ -7002,8 +7003,8 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-001/ex-01-avant.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-001/ex-01-apres.jpg"
+          "data/assets/word/avance-24-publipostage/word-ex-001-scrape-resultat-1.jpg",
+          "data/assets/word/avance-24-publipostage/word-ex-001-scrape-resultat-2.jpg"
         ]
       },
       "preamble": "",
@@ -7030,9 +7031,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/24-publipostage/exercice-2.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1qPCqmatbAqaxK3wKdKI3x0-Yx11LrEqM",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-002/ex-01.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-002/ex-01.jpg",
+      "docxUrl": "data/assets/word/avance-24-publipostage/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/avance-24-publipostage/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-24-publipostage/word-ex-002-image-resultat.jpg",
       "description": "Télécharger ci-contre les données et la lettre type",
       "consignes": [],
       "instructions": [
@@ -7049,7 +7050,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-002/ex-01.jpg"
+          "data/assets/word/avance-24-publipostage/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -7075,9 +7076,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/24-publipostage/exercice-3.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1HfsbgIWDfxK-0fBK3jMy1aUXQmSQU4td",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-003/ex-03.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-003/ex-03.jpg",
+      "docxUrl": "data/assets/word/avance-24-publipostage/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/avance-24-publipostage/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-24-publipostage/word-ex-003-image-resultat.jpg",
       "description": "Télécharger ci-contre les données et la lettre type",
       "consignes": [],
       "instructions": [
@@ -7094,7 +7095,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-003/ex-03.jpg"
+          "data/assets/word/avance-24-publipostage/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -7121,8 +7122,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-004/ex-004-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-004/ex-004-resultat.jpg",
+      "imageEnonce": "data/assets/word/avance-24-publipostage/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-24-publipostage/word-ex-004-image-resultat.jpg",
       "description": "Preparez un publipostage a partir des donnees et de la lettre type.",
       "consignes": [],
       "instructions": [
@@ -7142,7 +7143,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-004/ex-004-resultat.jpg"
+          "data/assets/word/avance-24-publipostage/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -7176,8 +7177,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-005/ex-005.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-005/ex-05.jpg",
+      "imageEnonce": "data/assets/word/avance-24-publipostage/word-ex-005-image-enonce.webp",
+      "imageResultat": null,
       "description": "Realisez un publipostage avec champs conditionnels pour valider votre maitrise.",
       "consignes": [],
       "instructions": [
@@ -7217,9 +7218,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/24-publipostage/exercice-6.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1tbSig9ag9S4Da9Prp1Oaj3uPSAWEf9vP",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-006/ex-006-solution.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-006/ex-006-solution.webp",
+      "docxUrl": "data/assets/word/avance-24-publipostage/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/avance-24-publipostage/word-ex-006-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-24-publipostage/word-ex-006-image-resultat.webp",
       "description": "Téléchargez votre document de travail ci-contre",
       "consignes": [],
       "instructions": [
@@ -7236,7 +7237,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-006/ex-006-solution.webp"
+          "data/assets/word/avance-24-publipostage/word-ex-006-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -7262,9 +7263,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/24-publipostage/exercice-7.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1MGsceRjexwl966xBWMQMOqHP7MoIrfEG",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-007/ex-007.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-24/ex-007/ex-07.jpg",
+      "docxUrl": "data/assets/word/avance-24-publipostage/word-ex-007.docx",
+      "imageEnonce": null,
+      "imageResultat": null,
       "description": "Téléchargez votre document de travail ici",
       "consignes": [],
       "instructions": [
@@ -7303,9 +7304,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/24-publipostage/exercice-8.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=142FTGd_lWHErBekdBuZxPI1vLWlGMsvV",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/enonce-2.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/ex-008-solution.gif",
+      "docxUrl": "data/assets/word/avance-24-publipostage/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/avance-24-publipostage/word-ex-008-image-enonce.gif",
+      "imageResultat": "data/assets/word/avance-24-publipostage/word-ex-008-image-resultat.gif",
       "description": "L'objectif de l'exercice est de creer un publipostage. La difficulte provient du format de date Excel, qui n'est pas importe comme attendu par defaut. Modifiez le code de champ afin d'obtenir des dates du type : 1er octobre 2020.",
       "consignes": [],
       "instructions": [
@@ -7320,14 +7321,14 @@ window.WORD_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/enonce-1.gif"
+          "data/assets/word/avance-24-publipostage/word-ex-008-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/enonce-2.gif",
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/enonce-1.gif"
+          "data/assets/word/avance-24-publipostage/word-ex-008-scrape-enonce-1.gif",
+          "data/assets/word/avance-24-publipostage/word-ex-008-scrape-enonce-2.gif"
         ],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-26/ex-008/ex-008-solution.gif"
+          "data/assets/word/avance-24-publipostage/word-ex-008-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -7353,9 +7354,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-1.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1GWGOY6rKWiKFUoGrKWspbV0wgQAVifFG",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-001/ex-001-a.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-001/ex-001-c.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-25-document-long/word-ex-001-image-resultat.jpg",
       "description": "Créer une Hiérarchisation sur les éléments de la liste ci-dessous :",
       "consignes": [],
       "instructions": [
@@ -7386,7 +7387,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-001/ex-001-c.jpg"
+          "data/assets/word/avance-25-document-long/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "Créer une Hiérarchisation sur les éléments de la liste ci-dessous : .",
@@ -7427,9 +7428,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-2.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1qQzTyRSn4vW_XPsFvZKHLPuE5xy9BvZ9",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-002/ex-002.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-002/ex-002.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-25-document-long/word-ex-002-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -7444,7 +7445,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-002/ex-002.jpg"
+          "data/assets/word/avance-25-document-long/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -7471,9 +7472,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-3.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1moGQMa_pRz8amPO31JKh8EivzCT1UgYH",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-003/ex-003.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-003/ex-03.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-003-image-enonce.jpg",
+      "imageResultat": null,
       "description": "",
       "consignes": [],
       "instructions": [
@@ -7488,7 +7489,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-003/ex-003.jpg"
+          "data/assets/word/avance-25-document-long/word-ex-003-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -7514,9 +7515,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-4.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1_oDSMz4sWb1qVUSshD3tB1hU6ImP40sc",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-004/ex-004.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-004/ex-04.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-004-image-enonce.jpg",
+      "imageResultat": null,
       "description": "",
       "consignes": [],
       "instructions": [
@@ -7531,7 +7532,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-004/ex-004.jpg"
+          "data/assets/word/avance-25-document-long/word-ex-004-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -7557,9 +7558,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-5.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1N_gU5A8Z9LN3PxIsIb7efPkcgUuLdieP",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-005/ex-005.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-005/ex-05.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-005-image-enonce.jpg",
+      "imageResultat": null,
       "description": "",
       "consignes": [],
       "instructions": [
@@ -7573,7 +7574,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-005/ex-005.jpg"
+          "data/assets/word/avance-25-document-long/word-ex-005-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -7599,9 +7600,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-6.html",
       "level": 4,
       "levelLabel": "🔴 Expert ⭐⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1iD3GtLLjHmWrscrWZ5X57E6M1ykM0u63",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-006/ex-006.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-006/ex-06.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-006-image-enonce.jpg",
+      "imageResultat": null,
       "description": "",
       "consignes": [],
       "instructions": [
@@ -7615,7 +7616,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-006/ex-006.jpg"
+          "data/assets/word/avance-25-document-long/word-ex-006-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -7640,9 +7641,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-7.html",
       "level": 4,
       "levelLabel": "🔴 Expert ⭐⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1PRPXWgx1kbfstJc3CJ61MeMVlIj1cUiq",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-007/ex-007.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-25/ex-007/ex-07.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-007.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-007-image-enonce.jpg",
+      "imageResultat": null,
       "description": "",
       "consignes": [],
       "instructions": [],
@@ -7653,7 +7654,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-007/ex-007.jpg"
+          "data/assets/word/avance-25-document-long/word-ex-007-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -7678,9 +7679,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-8.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=17r7ySYgky5wsOckcQc4DsG-uI70mSPVs",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-008/ex-008-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-008/ex-008-resultat.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-25-document-long/word-ex-008-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -7693,7 +7694,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-008/ex-008-resultat.jpg"
+          "data/assets/word/avance-25-document-long/word-ex-008-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -7719,9 +7720,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/document-long/exercice-9.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1AZSk5Etn6urWHCRmjLJbt6FP4OLPLhvw",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/titre-n1.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/ex-009-resultat.jpg",
+      "docxUrl": "data/assets/word/avance-25-document-long/word-ex-009.docx",
+      "imageEnonce": "data/assets/word/avance-25-document-long/word-ex-009-image-enonce.gif",
+      "imageResultat": "data/assets/word/avance-25-document-long/word-ex-009-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -7736,13 +7737,13 @@ window.WORD_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/ex-009-resultat.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/titre-n2.gif"
+          "data/assets/word/avance-25-document-long/word-ex-009-scrape-extra-1.jpg",
+          "data/assets/word/avance-25-document-long/word-ex-009-scrape-extra-2.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/ex-009-resultat.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/titre-n1.gif",
-          "https://www.clic-formation.net/images/02-word/word-competence-27/ex-009/titre-n2.gif"
+          "data/assets/word/avance-25-document-long/word-ex-009-scrape-enonce-1.jpg",
+          "data/assets/word/avance-25-document-long/word-ex-009-scrape-enonce-2.gif",
+          "data/assets/word/avance-25-document-long/word-ex-009-scrape-enonce-3.gif"
         ],
         "resultImages": []
       },
@@ -7772,8 +7773,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-001/ex-01-simple-clic.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-001/ex-01.jpg",
+      "imageEnonce": "data/assets/word/avance-26-lier-le-document/word-ex-001-image-enonce.jpg",
+      "imageResultat": null,
       "description": "Collez un tableau Excel dans Word et verifiez que la liaison fonctionne.",
       "consignes": [],
       "instructions": [
@@ -7787,11 +7788,11 @@ window.WORD_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-001/ex-01-double-clic.jpg"
+          "data/assets/word/avance-26-lier-le-document/word-ex-001-scrape-extra-1.jpg"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-001/ex-01-simple-clic.jpg",
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-001/ex-01-double-clic.jpg"
+          "data/assets/word/avance-26-lier-le-document/word-ex-001-scrape-enonce-1.jpg",
+          "data/assets/word/avance-26-lier-le-document/word-ex-001-scrape-enonce-2.jpg"
         ],
         "resultImages": []
       },
@@ -7818,8 +7819,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-002/exo-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-002/ex-02.jpg",
+      "imageEnonce": "data/assets/word/avance-26-lier-le-document/word-ex-002-image-enonce.jpg",
+      "imageResultat": null,
       "description": "1-Vous réalisez ce tableau sous Excel",
       "consignes": [],
       "instructions": [
@@ -7833,7 +7834,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-002/exo-02.jpg"
+          "data/assets/word/avance-26-lier-le-document/word-ex-002-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -7859,8 +7860,8 @@ window.WORD_ATELIER_DATA = {
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-003/ex-03.jpg",
+      "imageEnonce": "data/assets/word/avance-26-lier-le-document/word-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-26-lier-le-document/word-ex-003-image-resultat.jpg",
       "description": "1-Dans votre navigateur internet, trouvez les URL des Trails de la Factrice, de l'UTMB et de l'Échappée Belle",
       "consignes": [],
       "instructions": [
@@ -7875,7 +7876,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-003/ex-003.webp"
+          "data/assets/word/avance-26-lier-le-document/word-ex-003-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
@@ -7902,9 +7903,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/lier-votre-document/exercice-4.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1MyAmywErWvc8pJTVUspzxgzIKfy2wfIG",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-004/ex-004-excel.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-004/ex-04.jpg",
+      "docxUrl": "data/assets/word/avance-26-lier-le-document/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/avance-26-lier-le-document/word-ex-004-image-enonce.webp",
+      "imageResultat": null,
       "description": "Le document de travail est à télécharger ci-contre.",
       "consignes": [],
       "instructions": [
@@ -7921,13 +7922,13 @@ window.WORD_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-004/ex-004-solution-1.webp",
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-004/ex-004-solution-2.webp"
+          "data/assets/word/avance-26-lier-le-document/word-ex-004-scrape-extra-1.webp",
+          "data/assets/word/avance-26-lier-le-document/word-ex-004-scrape-extra-2.webp"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-004/ex-004-excel.webp",
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-004/ex-004-solution-1.webp",
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-004/ex-004-solution-2.webp"
+          "data/assets/word/avance-26-lier-le-document/word-ex-004-scrape-enonce-1.webp",
+          "data/assets/word/avance-26-lier-le-document/word-ex-004-scrape-enonce-2.webp",
+          "data/assets/word/avance-26-lier-le-document/word-ex-004-scrape-enonce-3.webp"
         ],
         "resultImages": []
       },
@@ -7958,9 +7959,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/lier-votre-document/exercice-5.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1C5lLWxZog_UOreAiOo28XYf2OJMcYHhr",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-005/ex-005.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-005/ex-05.jpg",
+      "docxUrl": "data/assets/word/avance-26-lier-le-document/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/avance-26-lier-le-document/word-ex-005-image-enonce.webp",
+      "imageResultat": null,
       "description": "1 - Téléchargez le document Word",
       "consignes": [],
       "instructions": [
@@ -8001,9 +8002,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/lier-votre-document/exercice-6.html",
       "level": 1,
       "levelLabel": "🟢 Débutant ⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1DCS9q6lmxCI6Vt6a1kJ8HC77ugxbIvrG",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-006/ex-005-solution.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-26/ex-006/ex-06.jpg",
+      "docxUrl": "data/assets/word/avance-26-lier-le-document/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/avance-26-lier-le-document/word-ex-006-image-enonce.jpg",
+      "imageResultat": null,
       "description": "Vous téléchargez le dossier \"Montagne.zip\" ci-contre et de décompresser ou vous voulez sur votre ordinateur",
       "consignes": [],
       "instructions": [
@@ -8017,7 +8018,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-28/ex-006/ex-005-solution.jpg"
+          "data/assets/word/avance-26-lier-le-document/word-ex-006-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -8044,9 +8045,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/champs-et-formulaire/exercice-1.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1b4wBn8XBGeyO0I7TJvUl2LOWQgg0nkJt",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-29/ex-001/ex-001.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-001/ex-01.jpg",
+      "docxUrl": "data/assets/word/avance-27-champs-et-formulaire/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-27-champs-et-formulaire/word-ex-001-image-enonce.webp",
+      "imageResultat": null,
       "description": "Vous réalisez le questionnaire suivant avec l'outil d'insertion des contrôles de l'onglet développeur, vous utilisez les bons contrôles :",
       "consignes": [],
       "instructions": [
@@ -8069,7 +8070,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-29/ex-001/ex-001.webp"
+          "data/assets/word/avance-27-champs-et-formulaire/word-ex-001-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
@@ -8104,9 +8105,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/champs-et-formulaire/exercice-2.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=16xlRSmVNs2kmDGHOXQUrNgS0fnIVZp7J",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-29/ex-002/ex-002.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-002/ex-02.jpg",
+      "docxUrl": "data/assets/word/avance-27-champs-et-formulaire/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/avance-27-champs-et-formulaire/word-ex-002-image-enonce.webp",
+      "imageResultat": null,
       "description": "Vous réalisez cette fiche de saisie avec des contrôles de formulaires avec les consignes suivantes:",
       "consignes": [],
       "instructions": [
@@ -8127,7 +8128,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-29/ex-002/ex-002.webp"
+          "data/assets/word/avance-27-champs-et-formulaire/word-ex-002-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
@@ -8160,9 +8161,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/champs-et-formulaire/exercice-3.html",
       "level": 3,
       "levelLabel": "🟠 Avancé ⭐⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1gT8XeoowyFuQmoFtkHtaar8jL7mR6ViT",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-29/ex-003/ex-003-solution.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-27/ex-003/ex-03.jpg",
+      "docxUrl": "data/assets/word/avance-27-champs-et-formulaire/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/avance-27-champs-et-formulaire/word-ex-003-image-enonce.webp",
+      "imageResultat": null,
       "description": "Vous réalisez le questionnaire suivant avec l'outil d'insertion des contrôles de l'onglet developpeur, vous utilisez les bons contôles:",
       "consignes": [],
       "instructions": [
@@ -8185,7 +8186,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-29/ex-003/ex-003-solution.webp"
+          "data/assets/word/avance-27-champs-et-formulaire/word-ex-003-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
@@ -8220,9 +8221,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/31-trucs/exercice-1-convertir-des-majuscules-en-minuscules.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1QNlUW9ddqlXoRJ9Zyk_0tK4wo0RXkMhq",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-31/ex-001/ex-001.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-31/ex-001/ex-001.jpg",
+      "docxUrl": "data/assets/word/avance-28-trucs-et-astuces/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/avance-28-trucs-et-astuces/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/avance-28-trucs-et-astuces/word-ex-001-image-resultat.jpg",
       "description": "",
       "consignes": [],
       "instructions": [
@@ -8235,7 +8236,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/word-competence-31/ex-001/ex-001.jpg"
+          "data/assets/word/avance-28-trucs-et-astuces/word-ex-001-scrape-enonce-1.jpg"
         ],
         "resultImages": []
       },
@@ -8260,9 +8261,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/31-trucs/exercice-1-convertir-du-texte-en-tableau.html",
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1CDU7DbVkRywXMArgd1Z-Tn-eeiazsOnj",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-31/ex-002/tuto-convertir-texte-en-tableau.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-002/ex-02.jpg",
+      "docxUrl": "data/assets/word/avance-28-trucs-et-astuces/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/avance-28-trucs-et-astuces/word-ex-002-image-enonce.webp",
+      "imageResultat": "data/assets/word/avance-28-trucs-et-astuces/word-ex-002-image-resultat.webp",
       "description": "L'objectif est de convertir du texte en tableau. Dans cet exercice, vous travaillez sur la liste des pays d'Europe et leurs capitales.",
       "consignes": [],
       "instructions": [
@@ -8304,8 +8305,8 @@ window.WORD_ATELIER_DATA = {
       "level": 2,
       "levelLabel": "🟡 Intermédiaire ⭐⭐",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-003/ex-003.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/word-competence-28/ex-003/ex-03.jpg",
+      "imageEnonce": "data/assets/word/avance-28-trucs-et-astuces/word-ex-003-image-enonce.webp",
+      "imageResultat": null,
       "description": "L'objectif est de découvrir comment sortir rapidement des caractères qui ne sont pas sur le clavier",
       "consignes": [],
       "instructions": [
@@ -8372,9 +8373,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/animaux.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=139_4OfbiHQCNibrq5An74d_SA47rd_PX",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/animaux/animaux.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/animaux/animaux.gif",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-001-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-001-image-resultat.gif",
       "description": "Associe du texte à une image",
       "consignes": [],
       "instructions": [
@@ -8389,7 +8390,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/animaux/animaux.gif"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-001-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -8413,9 +8414,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/cb-nettoyage.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1W5kQUTINSbDO-wnEFO41VaRQw__Flavp",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/cb-nettoyage/resultat-cb-nettoyage.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/cb-nettoyage/resultat-cb-nettoyage.gif",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-002-image-resultat.gif",
       "description": "Tabulations, listes à puces...",
       "consignes": [],
       "instructions": [
@@ -8432,7 +8433,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/cb-nettoyage/resultat-cb-nettoyage.gif"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-002-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -8461,9 +8462,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/credit-carte.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1jAdJExbyo0l9VbKYVZzljAs7ugYBZPLs",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/credit-carte/credit-carte-ex.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/credit-carte/credit-carte-ex.jpg",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-003-image-resultat.jpg",
       "description": "Attributs paragraphes et alignements",
       "consignes": [],
       "instructions": [
@@ -8479,7 +8480,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/credit-carte/credit-carte-ex.jpg"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -8504,9 +8505,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/documentation.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1QKIpGErNzO3mVfS3hAmU64yb8LP3PeDC",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/documentation/resultat-documentation.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/documentation/resultat-documentation.jpg",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-004-image-resultat.jpg",
       "description": "Alignements et attributs paragraphes",
       "consignes": [],
       "instructions": [
@@ -8522,7 +8523,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/documentation/resultat-documentation.jpg"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -8547,9 +8548,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/internet.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1GrwJihE2D_gaPLDBUWmPQ5TjUYBgc86R",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/internet/resultat-internet.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/internet/resultat-internet.gif",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-005-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-005-image-resultat.gif",
       "description": "Listes à puces, numérotées et caractères spéciaux",
       "consignes": [],
       "instructions": [
@@ -8565,7 +8566,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/internet/resultat-internet.gif"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-005-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -8590,9 +8591,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/jacques-fox.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1wM3jxTVoNR1Tm8F_7QHEqhH0--RAedfC",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/jacques-fox/reusltat-jacques-fox.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/jacques-fox/reusltat-jacques-fox.jpg",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-006-image-resultat.jpg",
       "description": "Word Art, alignements et tabulations",
       "consignes": [],
       "instructions": [
@@ -8609,7 +8610,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/jacques-fox/reusltat-jacques-fox.jpg"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-006-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -8638,9 +8639,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/lycee.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1kDXMasXiaCwBe22qeyp5lW_D_6lw2XQO",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/lycee/lycee-resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/lycee/lycee-resultat.jpg",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-007.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-007-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-007-image-resultat.jpg",
       "description": "Tabulations, alignements et pied de page",
       "consignes": [],
       "instructions": [
@@ -8658,7 +8659,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/lycee/lycee-resultat.jpg"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-007-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -8685,9 +8686,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/micro-sud.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=18i4I55INsSRZfXEdHGqFfpBCluj2l0CZ",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/micro-sud/micro-sud-ex.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/micro-sud/micro-sud-ex.jpg",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-008-image-resultat.jpg",
       "description": "Courrier simple avec tabulations, encadrement et alignements",
       "consignes": [],
       "instructions": [
@@ -8703,7 +8704,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/micro-sud/micro-sud-ex.jpg"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -8728,9 +8729,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/mont-blanc.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1gDfw_J0h0OKutitSEhLht54PsoJRJQzA",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/mont-blanc/mont-blanc-solution.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/mont-blanc/mont-blanc-solution.gif",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-009.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-009-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-009-image-resultat.gif",
       "description": "Saut de page, numérotation et balisage Titre 1",
       "consignes": [],
       "instructions": [
@@ -8745,7 +8746,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/mont-blanc/mont-blanc-solution.gif"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-009-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -8772,9 +8773,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/multipro.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1p0JgvCDxr36AXtDwgP1funt8sN47os_n",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/multipro/multipro-solution.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/multipro/multipro-solution.webp",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-010.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-010-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-010-image-resultat.webp",
       "description": "Courrier enveloppes à fenêtre, liste à puces, tabulations et points de suite",
       "consignes": [],
       "instructions": [
@@ -8788,7 +8789,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/multipro/multipro-solution.webp"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-010-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -8824,9 +8825,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/pepiniere-bessiere.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1MgHPngrBl0HXTHG1tGMRu_KjZBqqaViM",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/pepiniere-bussiere/resultat_bessieres.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/pepiniere-bussiere/resultat_bessieres.gif",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-011.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-011-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-011-image-resultat.gif",
       "description": "Courrier type simple, en-tête, texte justifié et tabulations",
       "consignes": [],
       "instructions": [
@@ -8843,7 +8844,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/pepiniere-bussiere/resultat_bessieres.gif"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-011-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -8872,9 +8873,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-1/tortilla.html",
       "level": 1,
       "levelLabel": "Débutant",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1fHjvgqYwfErmi29xyUAjXWyzvh0_oY5S",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/tortilla/resultat-tortilla.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/tortilla/resultat-tortilla.gif",
+      "docxUrl": "data/assets/word/complets-29-niveau-1-debutant/word-ex-012.docx",
+      "imageEnonce": "data/assets/word/complets-29-niveau-1-debutant/word-ex-012-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-29-niveau-1-debutant/word-ex-012-image-resultat.gif",
       "description": "Attribut de texte simple, alignement paragraphe",
       "consignes": [],
       "instructions": [],
@@ -8886,7 +8887,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-1/tortilla/resultat-tortilla.gif"
+          "data/assets/word/complets-29-niveau-1-debutant/word-ex-012-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -8915,9 +8916,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/armenie.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1JH7RFG3_5DGOvWJ6F3uL6vA65JNhb04V",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/armenie/resultat-armenie.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/armenie/resultat-armenie.jpg",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-001-image-resultat.jpg",
       "description": "Mise en forme simple, word-art, alignement, tabulation, insertion d'images",
       "consignes": [],
       "instructions": [
@@ -8934,7 +8935,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/armenie/resultat-armenie.jpg"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-001-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -8960,9 +8961,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/bulletin-d-inscription.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1kUGtGwYBwMMKQkYeQhShcPE2RfY4S91E",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/inscription/resultat-inscription.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/inscription/resultat-inscription.gif",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-002-image-resultat.gif",
       "description": "Tabulation et points de suite, réglage de l'interligne, filigrane",
       "consignes": [],
       "instructions": [
@@ -8977,7 +8978,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/inscription/resultat-inscription.gif"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-002-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -9006,9 +9007,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/carre-de-couleur.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1m6b6sdI_M_UM9dmJrPmXwtQuLvZy110w",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/carre/resultat-carre.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/carre/resultat-carre.gif",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-003-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-003-image-resultat.gif",
       "description": "Création d'un document carré (tableau et page) et cellules de couleurs",
       "consignes": [],
       "instructions": [
@@ -9025,7 +9026,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/carre/resultat-carre.gif"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-003-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -9058,9 +9059,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/eco-services.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=18I6Zz4iRgi1UpfvqznbLkhuJZj_-1F3b",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/eco-services/page-02.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/eco-services/page-01.webp",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-004-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-004-image-resultat.webp",
       "description": "Mise en colonne, tour et fond de page, word-art et image",
       "consignes": [],
       "instructions": [
@@ -9080,8 +9081,8 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/eco-services/page-01.webp",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/eco-services/page-02.webp"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-004-scrape-resultat-1.webp",
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-004-scrape-resultat-2.webp"
         ]
       },
       "preamble": "",
@@ -9110,9 +9111,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/fenetres-hill.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1I1r9lfXxn4-koorhJjI0luRxNWDCATht",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/fenetres-hill/courrier-fenetres-hill.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/fenetres-hill/courrier-fenetres-hill.jpg",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-005.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-005-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-005-image-resultat.jpg",
       "description": "Tabulations et insertion de tableau",
       "consignes": [],
       "instructions": [
@@ -9129,7 +9130,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/fenetres-hill/courrier-fenetres-hill.jpg"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-005-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -9158,9 +9159,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/joe-dalton.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1nnYG0-QiO8rnauPqWHFfmNiOsnV5Ktvq",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-liste.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/joe-dalton/resultat-joe-dalton.gif",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-006-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-006-image-resultat.gif",
       "description": "Tabulations et insertion de tableau",
       "consignes": [],
       "instructions": [
@@ -9175,7 +9176,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/joe-dalton/resultat-joe-dalton.gif"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-006-scrape-resultat-1.gif"
         ]
       },
       "preamble": "Les listes à puces multi-niveau (tuto disponible ci-dessous).",
@@ -9200,9 +9201,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/menu-restaurant.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1fLEkWBs4zz-HtngGPshQjIri-IK9TvXt",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/menu/menu.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/menu/menu.webp",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-007.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-007-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-007-image-resultat.webp",
       "description": "Tabulations et point de suite, insertion de symboles et saut de page",
       "consignes": [],
       "instructions": [
@@ -9216,7 +9217,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/menu/menu.webp"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-007-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
@@ -9248,9 +9249,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/nexxus.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1CRwOmA1qzMFn-ZTiEEcoUikJWETasPwK",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/nexxus/nexxus-ex.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/nexxus/nexxus-ex.jpg",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-008-image-resultat.jpg",
       "description": "Tabulations et insertion de tableau",
       "consignes": [],
       "instructions": [
@@ -9267,7 +9268,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/nexxus/nexxus-ex.jpg"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-008-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -9296,9 +9297,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/stress.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1qPSXv3EdB6gXmKbz4wXxJQZ0niIedBOO",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/stress/stress-resultat.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/stress/stress-resultat.webp",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-009.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-009-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-009-image-resultat.webp",
       "description": "Mise en colonne et saut de section",
       "consignes": [],
       "instructions": [
@@ -9313,7 +9314,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/stress/stress-resultat.webp"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-009-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -9337,9 +9338,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/topo-randonnees.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1J588Tvupklc3TytdB7x4bWvP8B8jv3lU",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/cambre-ase/resultat-rando-cambre-page-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/cambre-ase/resultat-rando-cambre-page-01.jpg",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-010.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-010-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-010-image-resultat.jpg",
       "description": "Topo randonnées",
       "consignes": [],
       "instructions": [
@@ -9359,8 +9360,8 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/cambre-ase/resultat-rando-cambre-page-01.jpg",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/cambre-ase/resultat-rando-cambre-page-02.jpg"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-010-scrape-resultat-1.jpg",
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-010-scrape-resultat-2.jpg"
         ]
       },
       "preamble": "",
@@ -9392,9 +9393,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/vacances-a-la-montagne.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ilGNNHj5rDJEWJWi6qEIgJKM0aKPxQJS",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/vacances-montagne/resultat-vacances-montagne-02.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/vacances-montagne/resultat-vacances-montagne-01.webp",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-011.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-011-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-011-image-resultat.webp",
       "description": "Saut de section et mise en colonne",
       "consignes": [],
       "instructions": [
@@ -9411,9 +9412,9 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/vacances-montagne/resultat-vacances-montagne-01.webp",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/vacances-montagne/resultat-vacances-montagne-02.webp",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/vacances-montagne/resultat-vacances-montagne-03.webp"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-011-scrape-resultat-1.webp",
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-011-scrape-resultat-2.webp",
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-011-scrape-resultat-3.webp"
         ]
       },
       "preamble": "Trois options pour cet exercice : .",
@@ -9443,9 +9444,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/voyages.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ihZi02OQBdkf-r4iKrK2jSWA9sNZliuX",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/voyage/voyage-resultat.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/voyage/voyage-resultat.webp",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-012.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-012-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-012-image-resultat.webp",
       "description": "Tableau, table des matières dynamiques, insertion d'images",
       "consignes": [],
       "instructions": [
@@ -9469,7 +9470,7 @@ window.WORD_ATELIER_DATA = {
         "nextUrl": null,
         "extraImages": [],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/voyage/voyage-resultat.webp"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-012-scrape-enonce-1.webp"
         ],
         "resultImages": []
       },
@@ -9510,9 +9511,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-2/tableaux.html",
       "level": 2,
       "levelLabel": "Moyen",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1HvqFIpVOdpw9IDOuZWI5Q8ZNsKQdzUsE",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/tableaux/ex-012.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/tableaux/ex-012.webp",
+      "docxUrl": "data/assets/word/complets-30-niveau-2-moyen/word-ex-013.docx",
+      "imageEnonce": "data/assets/word/complets-30-niveau-2-moyen/word-ex-013-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-30-niveau-2-moyen/word-ex-013-image-resultat.webp",
       "description": "Que des tableaux à faire et à modifier",
       "consignes": [],
       "instructions": [
@@ -9526,7 +9527,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-2/tableaux/ex-012.webp"
+          "data/assets/word/complets-30-niveau-2-moyen/word-ex-013-scrape-resultat-1.webp"
         ]
       },
       "preamble": "Dans le fichier ci-contre, vous avez 4 exercices court (peut-être) autour des tableaux.",
@@ -9553,9 +9554,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/affichette-post-it-2.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1ZIKk_M6GwNhQR8SdeS9XFGJGluyt8J94",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/lacs-italiens/grandslacs.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/lacs-italiens/grandslacs.webp",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-001-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-001-image-resultat.webp",
       "description": "Documents longs: Les Lacs Italiens",
       "consignes": [],
       "instructions": [
@@ -9572,7 +9573,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/lacs-italiens/grandslacs.webp"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-001-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -9601,9 +9602,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/affichette-post-it.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1rlIjay5LmSo4-_uzrtX2aZWodCPT52PO",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/affichette-post-it/resultat-affichette-post-it.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/affichette-post-it/resultat-affichette-post-it.jpg",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-002-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-002-image-resultat.jpg",
       "description": "Sens de l'écriture et caractères spéciaux",
       "consignes": [],
       "instructions": [
@@ -9618,7 +9619,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/affichette-post-it/resultat-affichette-post-it.jpg"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-002-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -9642,9 +9643,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/affichette-vtt.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1lIlmf5D-CWtS3fC2TkVyXYf-IOCmlQIx",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/affichette-vtt/affichette-vtt.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/affichette-vtt/affichette-vtt.webp",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-003-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-003-image-resultat.webp",
       "description": "Création d'une affichette A4 avec zones de textes, word-art et listes à puces",
       "consignes": [],
       "instructions": [
@@ -9662,7 +9663,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/affichette-vtt/affichette-vtt.webp"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-003-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -9689,9 +9690,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/artesi.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=14W0a5gUyDQSxr-mH16ZiP7LCooMVbKy6",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/artesi/resultat-artesi-2.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/artesi/resultat-artesi-2.jpg",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-004.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-004-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-004-image-resultat.jpg",
       "description": "Bulletin d'inscription Artési, tabulation et point de suite",
       "consignes": [],
       "instructions": [
@@ -9707,7 +9708,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/artesi/resultat-artesi-2.jpg"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-004-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -9736,8 +9737,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "Intermédiaire",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/agro/agro-resultat.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/agro/agro-resultat.webp",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-005-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-005-image-resultat.webp",
       "description": "Combinez saut de section, colonnes, collages Excel et reglages de marges.",
       "consignes": [],
       "instructions": [
@@ -9755,7 +9756,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/agro/agro-resultat.webp"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-005-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -9781,9 +9782,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/association.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1UyLZtbpgs7SW6AmdtvTKmSOQ1aiK25vd",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/association/resultat-association.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/association/resultat-association.gif",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-006.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-006-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-006-image-resultat.gif",
       "description": "Tabulations de partout",
       "consignes": [],
       "instructions": [
@@ -9800,7 +9801,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/association/resultat-association.gif"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-006-scrape-resultat-1.gif"
         ]
       },
       "preamble": "",
@@ -9830,8 +9831,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "Intermédiaire",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/facebook/facebook-resultat.webp",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/facebook/facebook-resultat.webp",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-007-image-enonce.webp",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-007-image-resultat.webp",
       "description": "Composez la page avec un tableau complexe, des colonnes et des zones de texte.",
       "consignes": [],
       "instructions": [
@@ -9848,7 +9849,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/facebook/facebook-resultat.webp"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-007-scrape-resultat-1.webp"
         ]
       },
       "preamble": "",
@@ -9876,9 +9877,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/caisse-a-roulette.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1k8xuedHdiSjpeIUbtTswzkZ66GyTJEgq",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/caisse-a-roulette/caisse-a-roulette-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/caisse-a-roulette/caisse-a-roulette-01.jpg",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-008.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-008-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-008-image-resultat.jpg",
       "description": "Tableau, outils dessin",
       "consignes": [],
       "instructions": [
@@ -9898,9 +9899,9 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/caisse-a-roulette/caisse-a-roulette-01.jpg",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/caisse-a-roulette/caisse-a-roulette-02.jpg",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/caisse-a-roulette/caisse-a-roulette-03.jpg"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-008-scrape-resultat-1.jpg",
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-008-scrape-resultat-2.jpg",
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-008-scrape-resultat-3.jpg"
         ]
       },
       "preamble": "La banderole est à réaliser avec les outils dessins de Word, la caisse à roulette est à télécharger ci-dessous et à placer sous la banderole.",
@@ -9931,8 +9932,8 @@ window.WORD_ATELIER_DATA = {
       "level": 3,
       "levelLabel": "Intermédiaire",
       "docxUrl": null,
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/flyer-a5-mc-isolation/resultat.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/flyer-a5-mc-isolation/resultat.jpg",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-009-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-009-image-resultat.jpg",
       "description": "Composez le flyer avec un tableau, des colonnes et des formes.",
       "consignes": [],
       "instructions": [
@@ -9949,7 +9950,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/flyer-a5-mc-isolation/resultat.jpg"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-009-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -9977,9 +9978,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/flyer-ongles.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1tYahbfW_XX89WukBzGnOQWF3-jP21l7G",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/flyer-ongles/exo-flyer-ongle.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/flyer-ongles/exo-flyer-ongle.jpg",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-010.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-010-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-010-image-resultat.jpg",
       "description": "Composition d'un flyer",
       "consignes": [],
       "instructions": [
@@ -9995,7 +9996,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/flyer-ongles/exo-flyer-ongle.jpg"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-010-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -10023,9 +10024,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/joomla.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=19qdYP4GIE76cKcDmtDUKSDrEHWSaum1f",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/joomla/resultat-joomla.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/joomla/resultat-joomla.jpg",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-011.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-011-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-011-image-resultat.jpg",
       "description": "Fond de page et zone de texte",
       "consignes": [],
       "instructions": [
@@ -10039,7 +10040,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/joomla/resultat-joomla.jpg"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-011-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
@@ -10069,9 +10070,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/journal-4-pages.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=12EglkbiyCCCgyRzI2yb7ud8ipvPfrfmQ",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/journal/resultat-journal-4-pages-02.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/journal/resultat-journal-4-pages-01.jpg",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-012.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-012-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-012-image-resultat.jpg",
       "description": "Document long sur 4 pages en colonnes",
       "consignes": [],
       "instructions": [
@@ -10089,10 +10090,10 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/journal/resultat-journal-4-pages-01.jpg",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/journal/resultat-journal-4-pages-02.jpg",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/journal/resultat-journal-4-pages-03.jpg",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/journal/resultat-journal-4-pages-04.jpg"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-012-scrape-resultat-1.jpg",
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-012-scrape-resultat-2.jpg",
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-012-scrape-resultat-3.jpg",
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-012-scrape-resultat-4.jpg"
         ]
       },
       "preamble": "",
@@ -10119,9 +10120,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/salon-international.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1s3h9TWAbTIzSE8mSWSZzDr7tCUgHJDfr",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/salon-international/page-1.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/salon-international/page-2.gif",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-013.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-013-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-013-image-resultat.gif",
       "description": "Colonne ou tableau ? Au choix",
       "consignes": [],
       "instructions": [
@@ -10136,11 +10137,11 @@ window.WORD_ATELIER_DATA = {
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/salon-international/page-2.gif"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-013-scrape-extra-1.gif"
         ],
         "enonceImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/salon-international/page-2.gif",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/salon-international/page-1.gif"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-013-scrape-enonce-1.gif",
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-013-scrape-enonce-2.gif"
         ],
         "resultImages": []
       },
@@ -10167,9 +10168,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-3/tableau-planning.html",
       "level": 3,
       "levelLabel": "Intermédiaire",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1DTRTb2vUHJ6Np2-qGXqgc0ZhuV_QwOe_",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/tableau-planning/tableau-resultat.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/tableau-planning/tableau-resultat.gif",
+      "docxUrl": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-014.docx",
+      "imageEnonce": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-014-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-014-image-resultat.gif",
       "description": "Tableau planning complexe",
       "consignes": [],
       "instructions": [
@@ -10184,7 +10185,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-3/tableau-planning/tableau-resultat.gif"
+          "data/assets/word/complets-31-niveau-3-intermediaire/word-ex-014-scrape-resultat-1.gif"
         ]
       },
       "preamble": "L'objectif est de faire un planning et donc un tableau complexe.",
@@ -10209,9 +10210,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-4/etude-de-cas.html",
       "level": 4,
       "levelLabel": "Expert",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1nUUgTG6YgidIYDrZu81agO3zjXwQm06t",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/etude-de-cas/resultet-etude-de-cas.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/etude-de-cas/resultet-etude-de-cas.jpg",
+      "docxUrl": "data/assets/word/complets-32-niveau-4-expert/word-ex-001.docx",
+      "imageEnonce": "data/assets/word/complets-32-niveau-4-expert/word-ex-001-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-32-niveau-4-expert/word-ex-001-image-resultat.jpg",
       "description": "Zones de texte sur la grille",
       "consignes": [],
       "instructions": [
@@ -10252,9 +10253,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-4/fiche-commune.html",
       "level": 4,
       "levelLabel": "Expert",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1Te1FW0Br_pNmrqstMy5jiE8hBxJ3hHpb",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/fiche-commune/resultat-02.gif",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/fiche-commune/resultat-01.gif",
+      "docxUrl": "data/assets/word/complets-32-niveau-4-expert/word-ex-002.docx",
+      "imageEnonce": "data/assets/word/complets-32-niveau-4-expert/word-ex-002-image-enonce.gif",
+      "imageResultat": "data/assets/word/complets-32-niveau-4-expert/word-ex-002-image-resultat.gif",
       "description": "Fiche commune",
       "consignes": [],
       "instructions": [
@@ -10273,8 +10274,8 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/fiche-commune/resultat-01.gif",
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/fiche-commune/resultat-02.gif"
+          "data/assets/word/complets-32-niveau-4-expert/word-ex-002-scrape-resultat-1.gif",
+          "data/assets/word/complets-32-niveau-4-expert/word-ex-002-scrape-resultat-2.gif"
         ]
       },
       "preamble": "",
@@ -10302,9 +10303,9 @@ window.WORD_ATELIER_DATA = {
       "pageUrl": "https://www.clic-formation.net/exercices-niveau-4/gazette-du-caroux.html",
       "level": 4,
       "levelLabel": "Expert",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1VXZgeKRcNiU31VRXrVOk-OW1UVfB2m-Y",
-      "imageEnonce": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/gazette/gazette-tuto.jpg",
-      "imageResultat": "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/gazette/gazette-tuto.jpg",
+      "docxUrl": "data/assets/word/complets-32-niveau-4-expert/word-ex-003.docx",
+      "imageEnonce": "data/assets/word/complets-32-niveau-4-expert/word-ex-003-image-enonce.jpg",
+      "imageResultat": "data/assets/word/complets-32-niveau-4-expert/word-ex-003-image-resultat.jpg",
       "description": "Gazette du Caroux",
       "consignes": [],
       "instructions": [
@@ -10321,7 +10322,7 @@ window.WORD_ATELIER_DATA = {
         "extraImages": [],
         "enonceImages": [],
         "resultImages": [
-          "https://www.clic-formation.net/images/02-word/bibliotheque/niveau-4/gazette/gazette-tuto.jpg"
+          "data/assets/word/complets-32-niveau-4-expert/word-ex-003-scrape-resultat-1.jpg"
         ]
       },
       "preamble": "",
