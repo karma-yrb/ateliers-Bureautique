@@ -1,0 +1,517 @@
+{
+  "generatedAt": "2026-07-15T08:12:46.483Z",
+  "summary": {
+    "totalChecks": 2047,
+    "failedChecks": 0,
+    "datasetSyncFailures": 0,
+    "byApp": {
+      "word": {
+        "modules": [
+          {
+            "moduleId": "m4",
+            "moduleName": "¶ Options paragraphe",
+            "checks": 25,
+            "failures": 0
+          },
+          {
+            "moduleId": "m5",
+            "moduleName": "• Puces et Numéros",
+            "checks": 32,
+            "failures": 0
+          },
+          {
+            "moduleId": "m11",
+            "moduleName": "↵ Section et saut",
+            "checks": 16,
+            "failures": 0
+          },
+          {
+            "moduleId": "m14",
+            "moduleName": "⊞ Insérer un tableau",
+            "checks": 30,
+            "failures": 0
+          },
+          {
+            "moduleId": "m6",
+            "moduleName": "▥ Mise en colonne",
+            "checks": 30,
+            "failures": 0
+          },
+          {
+            "moduleId": "m9",
+            "moduleName": "☐ Zone de texte",
+            "checks": 24,
+            "failures": 0
+          },
+          {
+            "moduleId": "m24",
+            "moduleName": "✉️ Publipostage",
+            "checks": 29,
+            "failures": 0
+          },
+          {
+            "moduleId": "m3",
+            "moduleName": "✍️ Saisir du texte",
+            "checks": 45,
+            "failures": 0
+          },
+          {
+            "moduleId": "m8",
+            "moduleName": "⬟ Insérer une forme",
+            "checks": 35,
+            "failures": 0
+          },
+          {
+            "moduleId": "m15",
+            "moduleName": "🎨 Mise en forme tableau",
+            "checks": 27,
+            "failures": 0
+          },
+          {
+            "moduleId": "m23",
+            "moduleName": "🎭 Styles",
+            "checks": 17,
+            "failures": 0
+          },
+          {
+            "moduleId": "m20",
+            "moduleName": "👁️ Affichage",
+            "checks": 20,
+            "failures": 0
+          },
+          {
+            "moduleId": "m28",
+            "moduleName": "💡 Trucs et astuces",
+            "checks": 8,
+            "failures": 0
+          },
+          {
+            "moduleId": "m2",
+            "moduleName": "📁 Gérer les documents",
+            "checks": 6,
+            "failures": 0
+          },
+          {
+            "moduleId": "m13",
+            "moduleName": "📄 En-tête et pied de page",
+            "checks": 18,
+            "failures": 0
+          },
+          {
+            "moduleId": "m16",
+            "moduleName": "📊 Tableau avancé",
+            "checks": 28,
+            "failures": 0
+          },
+          {
+            "moduleId": "m22",
+            "moduleName": "📋 Modèles",
+            "checks": 13,
+            "failures": 0
+          },
+          {
+            "moduleId": "m17",
+            "moduleName": "📏 Règles et Tabulations",
+            "checks": 27,
+            "failures": 0
+          },
+          {
+            "moduleId": "m19",
+            "moduleName": "📐 Format de page",
+            "checks": 31,
+            "failures": 0
+          },
+          {
+            "moduleId": "m25",
+            "moduleName": "📖 Document long",
+            "checks": 35,
+            "failures": 0
+          },
+          {
+            "moduleId": "m27",
+            "moduleName": "📝 Champs et formulaire",
+            "checks": 9,
+            "failures": 0
+          },
+          {
+            "moduleId": "m18",
+            "moduleName": "🔍 Chercher et Remplacer",
+            "checks": 37,
+            "failures": 0
+          },
+          {
+            "moduleId": "m26",
+            "moduleName": "🔗 Lier le document",
+            "checks": 21,
+            "failures": 0
+          },
+          {
+            "moduleId": "m32",
+            "moduleName": "🔴 Niveau 4 - Expert",
+            "checks": 12,
+            "failures": 0
+          },
+          {
+            "moduleId": "m21",
+            "moduleName": "🔷 Smart Art",
+            "checks": 21,
+            "failures": 0
+          },
+          {
+            "moduleId": "m1",
+            "moduleName": "🖥️ Prise en main",
+            "checks": 16,
+            "failures": 0
+          },
+          {
+            "moduleId": "m12",
+            "moduleName": "🖼️ Insérer une image",
+            "checks": 46,
+            "failures": 0
+          },
+          {
+            "moduleId": "m31",
+            "moduleName": "🟠 Niveau 3 - Intermédiaire",
+            "checks": 60,
+            "failures": 0
+          },
+          {
+            "moduleId": "m30",
+            "moduleName": "🟡 Niveau 2 - Moyen",
+            "checks": 56,
+            "failures": 0
+          },
+          {
+            "moduleId": "m29",
+            "moduleName": "🟢 Niveau 1 - Débutant",
+            "checks": 48,
+            "failures": 0
+          },
+          {
+            "moduleId": "m7",
+            "moduleName": "🅰 Word Art et Lettrine",
+            "checks": 14,
+            "failures": 0
+          }
+        ]
+      },
+      "excel": {
+        "modules": [
+          {
+            "moduleId": "avance-activex",
+            "moduleName": "ActiveX",
+            "checks": 5,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-calcul-matriciel",
+            "moduleName": "Calcul matriciel",
+            "checks": 20,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-calculer-des-pourcentages",
+            "moduleName": "Calculer des pourcentages",
+            "checks": 31,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-calculs-heures-et-distances",
+            "moduleName": "Calculs heures et distances",
+            "checks": 5,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-calendrier-perpetuel",
+            "moduleName": "Cas Calendrier perpétuel",
+            "checks": 4,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-course-haut-caroux",
+            "moduleName": "Cas Course Haut Caroux",
+            "checks": 6,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-creation-planning-conges",
+            "moduleName": "Cas Création planning congés",
+            "checks": 3,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-facturation",
+            "moduleName": "Cas Facturation",
+            "checks": 6,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-fiche-clients-garage",
+            "moduleName": "Cas Fiche Clients garage",
+            "checks": 3,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-fiche-d-intervention",
+            "moduleName": "Cas Fiche d'intervention",
+            "checks": 12,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-fiche-horticole",
+            "moduleName": "Cas Fiche Horticole",
+            "checks": 6,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-formulaire-de-saisie",
+            "moduleName": "Cas Formulaire de saisie",
+            "checks": 3,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-gantt-simple",
+            "moduleName": "Cas GANTT Simple",
+            "checks": 7,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-grand-raid",
+            "moduleName": "Cas grand Raid",
+            "checks": 3,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-reservation-spectacle",
+            "moduleName": "Cas Réservation Spectacle",
+            "checks": 2,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-salon-de-coiffure",
+            "moduleName": "Cas Salon de Coiffure",
+            "checks": 13,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-societe-clicou",
+            "moduleName": "Cas Société CLICOU",
+            "checks": 7,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-cas-sud-informatique",
+            "moduleName": "Cas SUD informatique",
+            "checks": 4,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-consolidation",
+            "moduleName": "Consolidation",
+            "checks": 36,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-controles-de-formulaire",
+            "moduleName": "Controles de Formulaire",
+            "checks": 33,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-faire-une-addition",
+            "moduleName": "Faire une Addition",
+            "checks": 47,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-faire-une-division",
+            "moduleName": "Faire une Division",
+            "checks": 44,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-faire-une-multiplication",
+            "moduleName": "Faire une Multiplication",
+            "checks": 35,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-faire-une-soustraction",
+            "moduleName": "Faire une Soustraction",
+            "checks": 40,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-format-de-cellule",
+            "moduleName": "Format de cellule",
+            "checks": 39,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-graphiques",
+            "moduleName": "Graphiques",
+            "checks": 72,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-impression",
+            "moduleName": "Impression",
+            "checks": 22,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-integrer-une-image",
+            "moduleName": "Intégrer une image",
+            "checks": 33,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-lier-des-feuilles",
+            "moduleName": "Lier des feuilles",
+            "checks": 42,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-macro",
+            "moduleName": "Macro",
+            "checks": 17,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-mise-en-forme",
+            "moduleName": "Mise en forme",
+            "checks": 42,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-mise-en-forme-conditionnelle",
+            "moduleName": "Mise en forme conditionnelle",
+            "checks": 43,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-nommer-une-cellule",
+            "moduleName": "Nommer une cellule",
+            "checks": 47,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-outils-de-donnees",
+            "moduleName": "Outils de données",
+            "checks": 54,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-poignee-de-recopie",
+            "moduleName": "Poignée de recopie",
+            "checks": 33,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-prise-en-main",
+            "moduleName": "Prise en main",
+            "checks": 18,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-reference-absolue",
+            "moduleName": "Référence absolue",
+            "checks": 49,
+            "failures": 0
+          },
+          {
+            "moduleId": "complets-revision-operations",
+            "moduleName": "Révision Opérations",
+            "checks": 11,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-saisir-des-donnees",
+            "moduleName": "Saisir des données",
+            "checks": 18,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-selection",
+            "moduleName": "Sélection",
+            "checks": 16,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-sous-totaux",
+            "moduleName": "Sous-Totaux",
+            "checks": 20,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-tableaux-croises-dynamiques",
+            "moduleName": "Tableaux croisés dynamiques",
+            "checks": 62,
+            "failures": 0
+          },
+          {
+            "moduleId": "avance-trier-et-filtrer",
+            "moduleName": "Trier et filtrer",
+            "checks": 51,
+            "failures": 0
+          },
+          {
+            "moduleId": "asca-ul11-word",
+            "moduleName": "UL11 Word",
+            "checks": 26,
+            "failures": 0
+          },
+          {
+            "moduleId": "asca-ul21-excel",
+            "moduleName": "UL21 Excel",
+            "checks": 71,
+            "failures": 0
+          }
+        ]
+      },
+      "powerpoint": {
+        "modules": [
+          {
+            "moduleId": "bases-animations",
+            "moduleName": "Animations et quiz",
+            "checks": 17,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-diaporamas",
+            "moduleName": "Diaporamas",
+            "checks": 21,
+            "failures": 0
+          },
+          {
+            "moduleId": "bases-navigation",
+            "moduleName": "Navigation interactive",
+            "checks": 12,
+            "failures": 0
+          }
+        ]
+      }
+    }
+  },
+  "datasetSync": [
+    {
+      "app": "word",
+      "ok": true,
+      "sourcePath": "C:\\Dev\\Apps Pimms\\ateliers-Bureautique\\apps\\word\\data\\exercises.structured.json",
+      "packagedPath": "C:\\Dev\\Apps Pimms\\ateliers-Bureautique\\apps\\word\\app\\data\\exercises.structured.json"
+    },
+    {
+      "app": "excel",
+      "ok": true,
+      "sourcePath": "C:\\Dev\\Apps Pimms\\ateliers-Bureautique\\apps\\excel\\data\\exercises.structured.json",
+      "packagedPath": "C:\\Dev\\Apps Pimms\\ateliers-Bureautique\\apps\\excel\\app\\data\\exercises.structured.json"
+    },
+    {
+      "app": "powerpoint",
+      "ok": true,
+      "sourcePath": "C:\\Dev\\Apps Pimms\\ateliers-Bureautique\\apps\\powerpoint\\data\\exercises.structured.json",
+      "packagedPath": "C:\\Dev\\Apps Pimms\\ateliers-Bureautique\\apps\\powerpoint\\app\\data\\exercises.structured.json"
+    }
+  ],
+  "failures": []
+}

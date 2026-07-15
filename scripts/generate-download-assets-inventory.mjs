@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { buildCanonicalModuleFolder, buildLegacyModuleFolder, slugify } from "./lib/module-folder.mjs";
 
 const ROOT = process.cwd();
 const JSON_OUTPUT = path.join(ROOT, "docs", "download-assets-inventory.json");
@@ -38,22 +39,38 @@ function ensureDir(filePath) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
-function slugify(value, fallback = "module") {
-  const slug = String(value || "")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-  return slug || fallback;
-}
-
 function getExerciseNumber(exercise) {
   const num = Number(exercise && exercise.num);
   if (Number.isFinite(num) && num > 0) return String(num).padStart(3, "0");
   const id = String(exercise && exercise.id || "");
   const match = id.match(/(\d{1,3})$/);
   return match ? String(match[1]).padStart(3, "0") : "000";
+}
+
+function buildDuplicateExerciseMap(exercises) {
+  const counts = new Map();
+  for (const exercise of exercises) {
+    const key = `${exercise.moduleId || ""}::${getExerciseNumber(exercise)}`;
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  return counts;
+}
+
+function buildExerciseBaseName(appConfig, exercise, duplicateExerciseMap) {
+  const exerciseNo = getExerciseNumber(exercise);
+  const duplicateKey = `${exercise.moduleId || ""}::${exerciseNo}`;
+  const duplicateCount = duplicateExerciseMap.get(duplicateKey) || 0;
+
+  if (duplicateCount <= 1) {
+    return `${appConfig.prefix}-ex-${exerciseNo}`;
+  }
+
+  const globalIndex = Number(exercise && exercise.globalIndex);
+  if (Number.isFinite(globalIndex) && globalIndex > 0) {
+    return `${appConfig.prefix}-ex-${exerciseNo}-g${String(globalIndex).padStart(3, "0")}`;
+  }
+
+  return `${appConfig.prefix}-ex-${exerciseNo}-${slugify(exercise.id || exercise.title, "dup")}`;
 }
 
 function getExtension(url, fallback = ".bin") {
@@ -82,21 +99,19 @@ function getFileRole(slot) {
   return "annexe";
 }
 
-function pushItem(items, appConfig, exercise, slot, sourceUrl, index = 0, label = "") {
+function pushItem(items, appConfig, exercise, slot, sourceUrl, index = 0, label = "", duplicateExerciseMap = new Map()) {
   const url = typeof sourceUrl === "string"
     ? sourceUrl.trim()
     : String(sourceUrl && sourceUrl.url || "").trim();
   if (!url) return;
 
-  const exerciseNo = getExerciseNumber(exercise);
-  const moduleStem = String(exercise.moduleId || "").startsWith("m")
-    ? `${exercise.moduleId}-${slugify(exercise.moduleNameClean || exercise.moduleName, "module")}`
-    : slugify(exercise.moduleId || exercise.moduleNameClean || exercise.moduleName, "module");
+  const moduleStem = buildCanonicalModuleFolder(exercise);
   const extension = getExtension(url, ".bin");
   const isPrimary = slot === "docxUrl";
+  const exerciseBaseName = buildExerciseBaseName(appConfig, exercise, duplicateExerciseMap);
   const suggestedFileName = isPrimary
-    ? `${appConfig.prefix}-ex-${exerciseNo}${extension}`
-    : `${appConfig.prefix}-ex-${exerciseNo}-annexe-${index}${extension}`;
+    ? `${exerciseBaseName}${extension}`
+    : `${exerciseBaseName}-annexe-${index}${extension}`;
   const assetRelativePath = path.posix.join("assets", appConfig.app, moduleStem, suggestedFileName);
 
   items.push({
@@ -105,6 +120,7 @@ function pushItem(items, appConfig, exercise, slot, sourceUrl, index = 0, label 
     exerciseNum: Number(exercise.num || 0),
     moduleId: exercise.moduleId || "",
     moduleFolder: moduleStem,
+    moduleLegacyFolder: String(exercise.moduleLegacyFolder || "").trim(),
     title: exercise.title || "",
     slot,
     itemIndex: index,
@@ -129,25 +145,44 @@ function buildItems() {
   for (const appConfig of APPS) {
     const data = readJson(appConfig.sourcePath);
     const exercises = Array.isArray(data.exercises) ? data.exercises : [];
+    const moduleMap = new Map((data.modules || []).map((module) => [module.id, module]));
+    const duplicateExerciseMap = buildDuplicateExerciseMap(exercises);
 
     for (const exercise of exercises) {
-      pushItem(items, appConfig, exercise, "docxUrl", exercise.docxUrl, 0, "Fichier principal");
+      const moduleMeta = moduleMap.get(exercise.moduleId) || {};
+      const normalizedExercise = {
+        ...moduleMeta,
+        ...exercise,
+        section: exercise.section || moduleMeta.section,
+        orderInSection: exercise.orderInSection || moduleMeta.orderInSection,
+        moduleName: exercise.moduleName || moduleMeta.name,
+        moduleNameClean: exercise.moduleNameClean || moduleMeta.cleanName || exercise.moduleName,
+        moduleSlug: slugify(moduleMeta.cleanName || exercise.moduleNameClean || exercise.moduleName, "module"),
+        moduleLegacyFolder: buildLegacyModuleFolder({
+          moduleId: exercise.moduleId || moduleMeta.id,
+          moduleName: exercise.moduleName || moduleMeta.name,
+          moduleNameClean: exercise.moduleNameClean || moduleMeta.cleanName || exercise.moduleName,
+        }),
+      };
+
+      pushItem(items, appConfig, normalizedExercise, "docxUrl", normalizedExercise.docxUrl, 0, "Fichier principal", duplicateExerciseMap);
 
       let annexIndex = 1;
-      if (exercise.downloadUrl) {
-        pushItem(items, appConfig, exercise, "downloadUrl", exercise.downloadUrl, annexIndex, exercise.downloadLabel || "Annexe 1");
+      if (normalizedExercise.downloadUrl) {
+        pushItem(items, appConfig, normalizedExercise, "downloadUrl", normalizedExercise.downloadUrl, annexIndex, normalizedExercise.downloadLabel || "Annexe 1", duplicateExerciseMap);
         annexIndex += 1;
       }
-      if (Array.isArray(exercise.extraDownloadUrls)) {
-        for (const extra of exercise.extraDownloadUrls) {
+      if (Array.isArray(normalizedExercise.extraDownloadUrls)) {
+        for (const extra of normalizedExercise.extraDownloadUrls) {
           pushItem(
             items,
             appConfig,
-            exercise,
+            normalizedExercise,
             "extraDownloadUrls",
             extra,
             annexIndex,
             extra && extra.label ? extra.label : `Annexe ${annexIndex}`,
+            duplicateExerciseMap,
           );
           annexIndex += 1;
         }
