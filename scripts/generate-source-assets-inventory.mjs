@@ -3,8 +3,8 @@ import path from "node:path";
 import { buildCanonicalModuleFolder, buildLegacyModuleFolder, slugify } from "./lib/module-folder.mjs";
 
 const ROOT = process.cwd();
-const JSON_OUTPUT = path.join(ROOT, "docs", "source-assets-inventory.json");
-const DOWNLOAD_INVENTORY_PATH = path.join(ROOT, "docs", "download-assets-inventory.json");
+const JSON_OUTPUT = path.join(ROOT, "reports", "source-assets-inventory.json");
+const DOWNLOAD_INVENTORY_PATH = path.join(ROOT, "reports", "download-assets-inventory.json");
 
 const APPS = [
   { app: "word", prefix: "word", sourcePath: path.join(ROOT, "apps", "word", "data", "exercises.structured.json") },

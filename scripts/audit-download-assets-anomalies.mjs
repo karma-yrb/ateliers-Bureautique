@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const REPORT_PATH = path.join(ROOT, "docs", "download-assets-fetch-report.md");
+const REPORT_PATH = path.join(ROOT, "reports", "download-assets-fetch-report.md");
 const DOWNLOAD_ROOT = path.join(ROOT, "downloads-assets-source");
 
 const APP_SOURCES = {

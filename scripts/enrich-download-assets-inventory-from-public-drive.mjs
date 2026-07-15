@@ -3,7 +3,7 @@ import path from "node:path";
 import vm from "node:vm";
 
 const ROOT = process.cwd();
-const INVENTORY_PATH = path.join(ROOT, "docs", "download-assets-inventory.json");
+const INVENTORY_PATH = path.join(ROOT, "reports", "download-assets-inventory.json");
 const FOLDER_MIME = "application/vnd.google-apps.folder";
 
 function readJson(filePath) {

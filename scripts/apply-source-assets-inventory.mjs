@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const INVENTORY_PATH = path.join(ROOT, "docs", "source-assets-inventory.json");
+const INVENTORY_PATH = path.join(ROOT, "reports", "source-assets-inventory.json");
 
 const APPS = [
   { app: "word", sourcePath: path.join(ROOT, "apps", "word", "data", "exercises.structured.json") },

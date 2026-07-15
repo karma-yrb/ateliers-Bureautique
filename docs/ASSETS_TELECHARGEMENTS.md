@@ -45,11 +45,11 @@ assets/
 
 Le fichier maitre est :
 
-- `docs/download-assets-inventory.json`
+- `reports/download-assets-inventory.json`
 
 Une version tableur est generee pour travail manuel :
 
-- `docs/download-assets-inventory.xlsx`
+- `reports/download-assets-inventory.xlsx`
 
 Les telechargements source sont centralises dans un dossier mere dedie :
 

@@ -28,8 +28,8 @@ Resultat :
 
 Rapports associes :
 
-- `docs/exercise-asset-links-report.json`
-- `docs/exercise-asset-links-report.md`
+- `reports/exercise-asset-links-report.json`
+- `reports/exercise-asset-links-report.md`
 
 ## Sauvegarde de l'ancien etat local
 

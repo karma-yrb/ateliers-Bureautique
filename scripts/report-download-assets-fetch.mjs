@@ -2,12 +2,16 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const INVENTORY_PATH = path.join(ROOT, "docs", "download-assets-inventory.json");
+const INVENTORY_PATH = path.join(ROOT, "reports", "download-assets-inventory.json");
 const DOWNLOAD_ROOT = path.join(ROOT, "downloads-assets-source");
-const REPORT_PATH = path.join(ROOT, "docs", "download-assets-fetch-report.md");
+const REPORT_PATH = path.join(ROOT, "reports", "download-assets-fetch-report.md");
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
+}
+
+function ensureDir(filePath) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
 function normalizeRelativeTarget(assetRelativePath) {
@@ -106,6 +110,7 @@ if (!missing.length && !suspicious.length) {
   lines.push("Aucune anomalie detectee.", "");
 }
 
+ensureDir(REPORT_PATH);
 fs.writeFileSync(REPORT_PATH, `${lines.join("\n")}\n`);
 
 console.log(`Rapport genere : ${REPORT_PATH}`);

@@ -2,9 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const INVENTORY_PATH = path.join(ROOT, "docs", "source-assets-inventory.json");
-const REPORT_JSON = path.join(ROOT, "docs", "exercise-asset-links-report.json");
-const REPORT_MD = path.join(ROOT, "docs", "exercise-asset-links-report.md");
+const INVENTORY_PATH = path.join(ROOT, "reports", "source-assets-inventory.json");
+const REPORT_JSON = path.join(ROOT, "reports", "exercise-asset-links-report.json");
+const REPORT_MD = path.join(ROOT, "reports", "exercise-asset-links-report.md");
 
 const APPS = [
   { app: "word", dataPath: path.join(ROOT, "apps", "word", "data", "exercises.structured.json"), packagedPath: path.join(ROOT, "apps", "word", "app", "data", "exercises.structured.json") },
@@ -17,6 +17,7 @@ function readJson(filePath) {
 }
 
 function writeJson(filePath, value) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
 }
 
@@ -251,6 +252,7 @@ if (report.failures.length) {
   lines.push("Aucun echec detecte.");
 }
 
+fs.mkdirSync(path.dirname(REPORT_MD), { recursive: true });
 fs.writeFileSync(REPORT_MD, `${lines.join("\n")}\n`, "utf8");
 
 console.log(`Rapport JSON : ${REPORT_JSON}`);
