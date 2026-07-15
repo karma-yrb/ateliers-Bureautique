@@ -5,8 +5,9 @@ Le fichier `../README.txt` documente la source de travail et les commandes de de
 
 Application pedagogique PowerPoint issue du template Word.
 
-Source cible des exercices :
-https://www.clic-formation.net/tableur.html
+Sources et adaptations des exercices :
+- ressources initiales publiees sur Clic-formation : https://www.clic-formation.net/
+- consignes, fichiers et apercus modifies, restructures ou completes pour cette application
 
 Commandes principales depuis la racine :
 - npm run powerpoint:test

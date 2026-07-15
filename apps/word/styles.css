@@ -239,6 +239,32 @@ body {
   padding: 0 16px;
 }
 
+.app-footer {
+  max-width: 980px;
+  margin: 0 auto 28px;
+  padding: 0 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.app-footer p {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.app-footer a {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.app-footer a:hover,
+.app-footer a:focus-visible {
+  color: #1f5960;
+}
+
 .page {
   display: none;
   gap: 14px;

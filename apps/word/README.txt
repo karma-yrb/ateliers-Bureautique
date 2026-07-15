@@ -8,6 +8,10 @@ But
 - Parcours complet: theme -> exercice -> etapes -> progression.
 - Le site externe n'est utilise que pour les assets (docx, images).
 
+Sources et adaptations des exercices :
+- ressources initiales publiees sur Clic-formation : https://www.clic-formation.net/
+- consignes, fichiers et apercus modifies, restructures ou completes pour cette application
+
 Structure
 - index.html
 - styles.css

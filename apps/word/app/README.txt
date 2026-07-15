@@ -5,6 +5,10 @@ Le fichier `../README.txt` documente la source de travail et les commandes de de
 
 Cette version enregistre la progression dans un fichier utilisateur (pas en localStorage pour la progression).
 
+Sources et adaptations des exercices :
+- ressources initiales publiees sur Clic-formation : https://www.clic-formation.net/
+- consignes, fichiers et apercus modifies, restructures ou completes pour cette application
+
 Structure a copier sur le poste cible :
 - C:\Exercices\AtelierWord\
   - index.html
