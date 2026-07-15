@@ -1,7 +1,116 @@
 window.RELEASES_DATA = {
-  "version": "1.21.0",
-  "updatedAt": "2026-07-15T09:19:54.706Z",
+  "version": "1.22.0",
+  "updatedAt": "2026-07-15T12:11:02.639Z",
   "releases": [
+    {
+      "version": "1.22.0",
+      "tag": "bureautique-v1.22.0",
+      "date": "2026-07-15",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.44",
+          "breaking": false,
+          "hash": "14a239f"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.7.1",
+          "breaking": false,
+          "hash": "ca0a160"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.14.1",
+          "breaking": false,
+          "hash": "bb77be5"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "2a02f45"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "audit",
+          "description": "prioritize removing app artifacts from git",
+          "breaking": false,
+          "hash": "fd71356"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "repo",
+          "description": "define repo conventions and remaining audit",
+          "breaking": false,
+          "hash": "8b2347a"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "repo",
+          "description": "clarify structure and app script roles",
+          "breaking": false,
+          "hash": "057b693"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "repo",
+          "description": "separate durable docs from generated reports",
+          "breaking": false,
+          "hash": "8756078"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "repo",
+          "description": "clean generated artifacts and tighten app sync",
+          "breaking": false,
+          "hash": "470a8e7"
+        },
+        {
+          "type": "docs",
+          "typeLabel": "Documentation",
+          "scope": "sync",
+          "description": "document depot synchronization",
+          "breaking": false,
+          "hash": "8432505"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 4,
+        "test": 0,
+        "chore": 6,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 10
+      }
+    },
     {
       "version": "1.21.0",
       "tag": "bureautique-v1.21.0",
