@@ -1,5 +1,28 @@
 # Audit restant
 
+## Priorite n°1 pour un futur audit d'amelioration
+
+La recommandation qui doit ressortir en premier est la suivante :
+
+- sortir `apps/*/app/` du versionnement Git et le remplacer par un artefact genere au moment de la publication
+
+Pourquoi cette recommandation passe avant les autres :
+
+- c'est le principal facteur de duplication du depot
+- c'est le principal facteur de poids inutile dans Git
+- c'est la source la plus probable de derive entre source canonique et version publiee
+- c'est le chantier qui apporte le plus de gain structurel a lui seul
+
+Important :
+
+- ce n'est pas un simple nettoyage de fichiers
+- ce chantier implique une adaptation du pipeline de publication
+- tant que cette migration n'est pas faite, `apps/*/app/` reste un artefact publie assume et doit continuer a etre valide
+
+Question de suivi recommandee pour tout prochain audit :
+
+- "Peut-on maintenant supprimer `apps/*/app/` du versionnement et le regenerer uniquement en CI / publication ?"
+
 ## Etat actuel
 
 Le depot est propre sur les points suivants :
