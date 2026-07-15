@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.14.2](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.14.1...word-v1.14.2) (2026-07-15)
+
+
+### Bug Fixes
+
+* **excel:** corriger les enonces critiques ([ac00736](https://github.com/karma-yrb/ateliers-Bureautique/commit/ac00736319c6f8f68b2e45fed15d0e31e266a479))
+
 ### [1.14.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.14.0...word-v1.14.1) (2026-07-15)
 
 
