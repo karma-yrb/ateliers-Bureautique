@@ -2,6 +2,103 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.21.0](///compare/v0.1.7...v1.21.0) (2026-07-15)
+
+
+### Features
+
+* **assets:** localize exercise source assets f09307c
+* **assets:** support public drive download links 70c3588
+* **availability:** add module and exercise activation overrides 4efc581
+* **connected:** add deployment config, prefer server-backed user folders, and handle local/server progress conflicts 52fd4f7
+* **connected:** add explicit local or server folder selection in user setup 6fad7a2
+* **connected:** clarify local and server folder actions in user setup 12a32f3
+* **connected:** guide local and server folder reuse in user setup 11f82fe
+* **core:** add exercise feedback and usability reports 5db0fdb
+* **header:** deplacer l'accueil bureautique dans le header 50109fc
+* **home:** refine landing page hero and enable PowerPoint c8261fb
+* **modules:** ajouter le bouton accueil bureautique 97fff79
+* **powerpoint:** add powerpoint workshop ab2eebb
+* **theme:** personnalise l'identite visuelle des modules ac7c7b9
+
+
+### Bug Fixes
+
+* **deploy:** publish powerpoint page 03f45c0
+* **excel-ex-001:** add explicit captions for each result image 3411f6e
+* **excel-ex-011:** harmonize steps into a single coherent list 60bcc2f
+* **excel-ex-016:** rewrite instructions to be clear and digestible 1b82778
+* **excel-ex-022:** add explicit decompression step and clearer workflow a1cac39
+* **excel-ex-026:** reorder workflow and end with icon insertion d185a1b
+* **excel-ex-031:** rewrite unclear mixed text into actionable steps 25b03d0
+* **excel-ex-032:** clarify coccinelle and Louis Braille image insertion e6e5e4d
+* **excel-ex-033:** remove repeated decompression wording 30023ed
+* **excel-ex-037:** remove enonce image and normalize download link roles 8a9880e
+* **feedback:** align selected toggle colors 8fe8295
+* **header:** corriger le lien accueil bureautique e2aa251
+* **header:** corriger le retour vers l'accueil publie 565a4f7
+* **home:** disable powerpoint access c359c1f
+* **home:** hide powerpoint access aeb54f6
+* **homepage:** display global version badge 8c35d9d
+* **home:** reactivate powerpoint access 8c231a8
+* **home:** reduce disabled powerpoint opacity 9f2255c
+* **modal:** unifie et simplifie la fin d'exercice 334ba1e
+* **modules:** link version badge to releases 4fab6ec
+* **modules:** link version badge to releases 21fee96
+* **modules:** persist release badge links d91b501
+* **modules:** restaurer le bouton accueil bureautique 6baae3c
+* **powerpoint:** align statement and result visuals in structured exercise data dfd3113
+* **release:** run root npm commands through cmd on windows 3adb0f9
+* **release:** support npm invocation on windows 3fd0b20
+* **repo:** nettoie le backup et fiabilise le test html f3c1040
+* **runtime:** corrige navigation descriptions et noms de telechargement fad074d
+* **ui:** corrige l icone du selecteur de dossier 318113a
+* **ui:** corrige les icones du menu utilisateur 2051715
+* **user-setup:** clarify account picker label e45fb8e
+* **ux:** affichage nom, étape lancement et reset section Préparer l'exercice cb59d55
+* **word-ex-032:** add missing source zip dfd15e0
+* **word-ex-033:** clarifie description et etapes 25a0c9c
+* **word-ex-073:** add missing logo download 5dabe5b
+* **word-mise-en-colonne:** corrige le rendu et enrichit les consignes 6dedbf9
+* **word:** add missing image download 9d019c7
+* **word:** add missing image download dacf1cd
+* **word:** add missing image download 9535151
+* **word:** add missing image download 84472c9
+* **word:** add missing image download 8d1b1d4
+* **word:** add missing image download for ex-081 2371bb2
+* **word:** add missing secondary resource fb3f145
+* **word:** add missing secondary resource 907b33f
+* **word:** add missing secondary resource 249b667
+* **word:** add missing secondary resource 1fed0c3
+* **word:** add missing secondary resource 5fef045
+* **word:** add missing secondary resource 212c72c
+* **word:** add missing secondary resource 5e32189
+* **word:** add missing secondary resource da87c1e
+* **word:** ajuste les descriptions et etapes d'exercices 9d2fa0b
+* **word:** keep only zip resource for ex-043 039bbb1
+* **word:** refine font setup instructions for ex-039 a54bbc4
+* **word:** remove invalid workfile for ex-047 243ca95
+* **word:** remove invalid workfile for ex-076 10c9c04
+* **word:** remove invalid workfile link ef8e8ea
+* **word:** remove invalid workfile link 5b08394
+* **word:** remove invalid workfile link 7185ee8
+* **word:** remove invalid workfile links ba2c48e
+* **word:** remove invalid workfile links bd263d0
+* **word:** remove invalid workfile links 57f244b
+* **word:** remove invalid workfile links 42150a1
+* **word:** remove redundant workfile download mentions 8ad87b9
+* **word:** repair broken instructions for ex-039 2b17558
+* **word:** repair ex-039 encoding-safe font install step 3c187ef
+* **word:** repair misencoded completion icon 3c3b0d3
+* **word:** replace invalid workfile with download resource 0fa1067
+* **word:** replace invalid workfile with download resource 6db5aa4
+* **word:** replace repeated intro with default Word start steps for ex-076 af58b71
+* **word:** restore proper accents in ex-039 font instructions 4b90a4b
+* **word:** restore proper accents in ex-063 intro step f13bd79
+* **word:** restore proper accents in ex-076 setup steps b6a9bbf
+* **word:** set explicit single download label for ex-043 4823acb
+* **workfile:** hide unusable open file button 507a385
+
 ## [1.20.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/v0.1.7...v1.20.0) (2026-07-13)
 
 

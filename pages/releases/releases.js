@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.20.0",
-  "updatedAt": "2026-07-13T12:21:47.602Z",
+  "version": "1.21.0",
+  "updatedAt": "2026-07-15T09:19:54.706Z",
   "releases": [
+    {
+      "version": "1.21.0",
+      "tag": "bureautique-v1.21.0",
+      "date": "2026-07-15",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.43",
+          "breaking": false,
+          "hash": "8b77a73"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.7.0",
+          "breaking": false,
+          "hash": "fc7820b"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.14.0",
+          "breaking": false,
+          "hash": "61c1b23"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "7b68094"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "assets",
+          "description": "localize exercise source assets",
+          "breaking": false,
+          "hash": "f09307c"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.20.0",
       "tag": "bureautique-v1.20.0",
