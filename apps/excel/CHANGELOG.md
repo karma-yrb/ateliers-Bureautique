@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.7.2...excel-v1.8.0) (2026-07-15)
+
+
+### Features
+
+* **modules:** ajouter la mention des sources Clic-formation ([24f247a](https://github.com/karma-yrb/ateliers-Bureautique/commit/24f247a70a0e100efd9c66564bfa4f0e9001e896))
+
 ### [1.7.2](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.7.1...excel-v1.7.2) (2026-07-15)
 
 

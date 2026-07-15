@@ -1,7 +1,76 @@
 window.RELEASES_DATA = {
-  "version": "1.7.2",
-  "updatedAt": "2026-07-15T13:36:00.566Z",
+  "version": "1.8.0",
+  "updatedAt": "2026-07-15T14:02:07.417Z",
   "releases": [
+    {
+      "version": "1.8.0",
+      "tag": "excel-v1.8.0",
+      "date": "2026-07-15",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.15.0",
+          "breaking": false,
+          "hash": "da82270"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "95f1541"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "modules",
+          "description": "ajouter la mention des sources Clic-formation",
+          "breaking": false,
+          "hash": "24f247a"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.23.0",
+          "breaking": false,
+          "hash": "f9ac371"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.45",
+          "breaking": false,
+          "hash": "e94afdb"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 0,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 4,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 5
+      }
+    },
     {
       "version": "1.7.2",
       "tag": "excel-v1.7.2",
