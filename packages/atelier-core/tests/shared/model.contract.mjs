@@ -161,6 +161,36 @@ export function registerSharedModelContractTests(createModel) {
     ]);
   });
 
+  test("explicit scrape image lists do not inherit fallback images", () => {
+    const model = createModel({
+      modules: [{ id: "m1", cleanName: "Images", section: "bases", sectionOrder: 1, orderInSection: 1 }],
+      exercises: [
+        {
+          id: "ex-001",
+          globalIndex: 1,
+          moduleId: "m1",
+          moduleNameClean: "Images",
+          num: 1,
+          title: "Image d'énoncé uniquement",
+          instructions: ["Etape 1"],
+          imageEnonce: "data/fallback-enonce.jpg",
+          imageResultat: "data/fallback-resultat.jpg",
+          scrape: {
+            enonceImages: ["data/scrape-enonce.jpg"],
+            resultImages: [],
+          },
+        },
+      ],
+    });
+
+    const visuals = model.getVisualsForExercise(model.getExerciseById("ex-001"));
+
+    assert.deepEqual(JSON.parse(JSON.stringify(visuals.enonceImages)), [
+      { src: "data/scrape-enonce.jpg", caption: "" },
+    ]);
+    assert.deepEqual(Array.from(visuals.resultImages), []);
+  });
+
   test("importProgressObject sanitizes invalid exercise ids", () => {
     const model = createModel();
     model.importProgressObject({

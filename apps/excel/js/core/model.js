@@ -229,6 +229,8 @@ class AtelierModel {
         imageResultat: ex.imageResultat || null,
         imageEnonceCaption: cleanText(ex.imageEnonceCaption || ""),
         imageResultatCaption: cleanText(ex.imageResultatCaption || ""),
+        scrapeEnonceImagesProvided: Array.isArray(ex.scrape && ex.scrape.enonceImages),
+        scrapeResultImagesProvided: Array.isArray(ex.scrape && ex.scrape.resultImages),
         scrapeEnonceImages: normalizeImageList(ex.scrape && ex.scrape.enonceImages),
         scrapeResultImages: normalizeImageList(ex.scrape && ex.scrape.resultImages),
         exerciseTabs: normalizeExerciseTabs(ex.exerciseTabs),
@@ -591,9 +593,8 @@ class AtelierModel {
       fallbackResultImages = fallbackEnonceSingle;
     }
 
-    const hasScrapeVisuals = scrapeEnonceImages.length > 0 || scrapeResultImages.length > 0;
-    const enonceImagesRaw = hasScrapeVisuals ? (scrapeEnonceImages.length ? scrapeEnonceImages : fallbackEnonceImages) : fallbackEnonceImages;
-    const resultImagesRaw = hasScrapeVisuals ? (scrapeResultImages.length ? scrapeResultImages : fallbackResultImages) : fallbackResultImages;
+    const enonceImagesRaw = exercise.scrapeEnonceImagesProvided ? scrapeEnonceImages : fallbackEnonceImages;
+    const resultImagesRaw = exercise.scrapeResultImagesProvided ? scrapeResultImages : fallbackResultImages;
     const enonceImages = uniqueImageObjects(
       enonceImagesRaw.map((item) => (
         typeof item === "string"
