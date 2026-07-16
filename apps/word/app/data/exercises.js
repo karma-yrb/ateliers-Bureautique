@@ -458,11 +458,10 @@ window.WORD_ATELIER_DATA = {
       "description": "Creez une arborescence de dossiers et enregistrez un document Word dans trois formats.",
       "consignes": [],
       "instructions": [
-        "Ouvrez Word depuis le menu Démarrer ou la barre de recherche Windows : tapez \"Word\", cliquez sur l'application Microsoft Word, puis choisissez \"Document vierge\" pour commencer.",
-        "Créez un dossier \"Europe\" sur le bureau.",
-        "Puis un dossier \"France\".",
-        "Dans France, créez un document Word en 3 formats : .doc, .docx et .pdf.",
-        "Comparez votre document avec l'image de résultat attendu puis corrigez les écarts."
+        "! Word n'est pas nécessaire pour cet exercice !",
+        "Cliquez sur l’icône jaune 📁 appelée « Explorateur de fichiers » en bas de l’écran.",
+        "Cherchez le dossier où se trouve votre document (par exemple Documents ou Téléchargements).",
+        "Double-cliquez sur le document Word pour l’ouvrir."
       ],
       "scrape": {
         "ok": true,
