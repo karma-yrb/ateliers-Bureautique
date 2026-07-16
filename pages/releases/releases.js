@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "1.25.0",
-  "updatedAt": "2026-07-16T07:03:43.613Z",
+  "version": "1.26.0",
+  "updatedAt": "2026-07-16T12:02:54.867Z",
   "releases": [
+    {
+      "version": "1.26.0",
+      "tag": "bureautique-v1.26.0",
+      "date": "2026-07-16",
+      "releaseType": "minor",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.48",
+          "breaking": false,
+          "hash": "60ffc53"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.2",
+          "breaking": false,
+          "hash": "0a6679e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.16.2",
+          "breaking": false,
+          "hash": "e780dac"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "assets",
+          "description": "utiliser les liens en ligne des exercices",
+          "breaking": false,
+          "hash": "93a8c9d"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.25.0",
       "tag": "bureautique-v1.25.0",
