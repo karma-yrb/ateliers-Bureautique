@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.8.0...excel-v1.9.0) (2026-07-16)
+
+
+### Features
+
+* **images:** integrate previews in exercise blocks ([0a407d0](https://github.com/karma-yrb/ateliers-Bureautique/commit/0a407d0bb96f5dbfa948bd24e6d3b5a8303328ae))
+
+
+### Bug Fixes
+
+* **core:** respect explicit empty image lists ([92ac359](https://github.com/karma-yrb/ateliers-Bureautique/commit/92ac359cc8c06b70c197f34edfaed93fc0349625))
+
 ## [1.8.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/excel-v1.7.2...excel-v1.8.0) (2026-07-15)
 
 
