@@ -1094,8 +1094,13 @@
       "description": "Sélectionner et dupliquer la cellule dans excel",
       "preamble": "",
       "instructions": [
-        "Reproduire cette mise en forme en un minimum de clic.",
-        "L'exercice consiste à Homogénéiser la hauteur et la largeur des lignes, d'appliquer un fond noir sur une cellule et de répliquer cette mise en forme. Les raccourcis clavier CTRL+C et CTRL+V peuvent, vous êtes d'un grand secours ou encore la fonction de \"reproduction de mise en forme\" (le pinceau)."
+        "Reproduisez les différentes sélections visibles sur l'image de l'énoncé.",
+        "Pour sélectionner une plage de cellules, cliquez sur la première cellule, maintenez le bouton gauche enfoncé, puis faites glisser jusqu'à la dernière cellule.",
+        "Pour sélectionner une ligne ou une colonne entière, cliquez sur son numéro (ligne) ou sa lettre (colonne).",
+        "Pour modifier la hauteur d'une ligne ou la largeur d'une colonne, faites un clic droit sur son numéro ou sa lettre, puis choisissez « Hauteur de ligne » ou « Largeur de colonne ».",
+        "Attention : la hauteur des lignes et la largeur des colonnes n'utilisent pas la même échelle. Une même valeur ne donnera pas la même taille à l'écran.",
+        "Pour sélectionner plusieurs zones non adjacentes, maintenez la touche Ctrl enfoncée pendant vos sélections.",
+        "Comparez votre résultat avec l'image de l'énoncé avant de passer à la suite."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -1137,8 +1142,8 @@
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/selectionner-la-celulle/exercice-4.html",
       "docxUrl": "https://drive.google.com/uc?export=download&id=1XJuQPPuVUW7p6XnVwRVteVss3wpHwVoG",
-      "downloadUrl": "https://drive.google.com/uc?export=download&id=1MdVw4PjCKh9jgs5JamikqO_Gjy0WC1vj",
-      "downloadLabel": "Télécharger le 2ᵉ fichier",
+      "downloadUrl": "",
+      "downloadLabel": "",
       "imageEnonce": null,
       "imageResultat": "data/assets/excel/bases-03-selection/excel-ex-004-image-resultat.jpg",
       "imageEnonceCaption": "",
@@ -1256,7 +1261,7 @@
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Format et embelissement",
-      "preamble": "",
+      "preamble": "Vous devez réaliser cette maquette de tableau à l'identique.",
       "instructions": [
         "fusionner quand c'est nécessaire (plusieurs cellules en une).",
         "Copier-coller des cellules.",
