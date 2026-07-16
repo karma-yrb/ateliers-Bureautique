@@ -301,7 +301,11 @@
       "level": 0,
       "levelLabel": null,
       "docxUrl": "https://drive.google.com/uc?export=download&id=1t-ypk2BMPi-uKrGi3GQikQq9D5uf1wZj",
-      "imageEnonce": "",
+      "imageEnonce": [
+        "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-1.png",
+        "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-2.png",
+        "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-3.png"
+      ],
       "imageResultat": [
         "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-1.png",
         "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-2.png",
@@ -320,7 +324,11 @@
         "prevUrl": null,
         "nextUrl": null,
         "extraImages": [],
-        "enonceImages": [],
+        "enonceImages": [
+          "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-1.png",
+          "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-2.png",
+          "data/assets/word/bases-01-prise-en-main/word-ex-001-image-resultat-3.png"
+        ],
         "resultImages": []
       },
       "preamble": "",
