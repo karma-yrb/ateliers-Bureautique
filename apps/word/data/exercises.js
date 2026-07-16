@@ -1630,18 +1630,20 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": "https://drive.google.com/uc?export=download&id=1lSLLwiCMpo6EyvT6GV6hXAnEbqmnH9rM",
       "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-005-image-enonce.jpg",
       "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-005-image-resultat.jpg",
-      "description": "Téléchargez aussi l'image associée au travail.",
+      "description": "Téléchargez aussi l'image associée au travail en cliquant droit sur l'image en bas, puis \"enregistrer l'image sous\". Vous pourrez ensuite l'insérer dans votre document Word.",
       "consignes": [
-        "Titre : police de votre choix.",
-        "Texte : \"Calibri\", 16.",
-        "Caractères spéciaux : \"Wingdings\".",
-        "Puces des ingrédients : flèche basique.",
-        "Vous insérez l'image pour le folklore."
+        "Le titre est mis en forme avec la police de votre choix.",
+        "Le texte de la recette est en police Calibri, taille 16.",
+        "Insérez une icône en rapport avec la cuisine (Insertion > Illustrations > Icônes).",
+        "La liste des ingrédients utilise des puces en forme de flèche.",
+        "Ajoutez une image en rapport avec la recette."
       ],
       "instructions": [
-        "Caractères spéciaux : \"Wingdings\".",
-        "Puces des ingrédients : flèche basique.",
-        "Vous insérez l'image pour le folklore."
+        "Saisissez le titre de la recette puis appliquez la police de votre choix.",
+        "Sélectionnez le texte de la recette et mettez-le en police Calibri, taille 16.",
+        "Placez le curseur à l'endroit souhaité puis ouvrez Insertion > Illustrations > Icônes. Recherchez une icône en rapport avec les illustrations présentées et cliquez sur Insérer.",
+        "Sélectionnez la liste des ingrédients puis appliquez des puces en forme de flèche.",
+        "Insérez une image en rapport avec la recette pour illustrer le document."
       ],
       "scrape": {
         "ok": true,
@@ -1657,10 +1659,7 @@ window.WORD_ATELIER_DATA = {
         ]
       },
       "preamble": "",
-      "criteria": [
-        "Titre : police de votre choix.",
-        "Texte : \"Calibri\", 16."
-      ],
+      "criteria": [],
       "originalConsignes": [
         "Titre : police de votre choix.",
         "Texte : \"Calibri\", 16.",

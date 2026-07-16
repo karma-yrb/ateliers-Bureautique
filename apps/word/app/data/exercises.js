@@ -1630,18 +1630,19 @@ window.WORD_ATELIER_DATA = {
       "docxUrl": "https://drive.google.com/uc?export=download&id=1lSLLwiCMpo6EyvT6GV6hXAnEbqmnH9rM",
       "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-005-image-enonce.jpg",
       "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-005-image-resultat.jpg",
-      "description": "Téléchargez aussi l'image associée au travail.",
+      "description": "Téléchargez aussi l'image associée au travail en cliquant droit sur l'image en bas, puis \"enregistrer l'image sous\". Vous pourrez ensuite l'insérer dans votre document Word.",
       "consignes": [
-        "Titre : police de votre choix.",
-        "Texte : \"Calibri\", 16.",
-        "Caractères spéciaux : \"Wingdings\".",
-        "Puces des ingrédients : flèche basique.",
-        "Vous insérez l'image pour le folklore."
+        "Le titre est mis en forme avec la police de votre choix.",
+        "Le texte de la recette est en police Calibri, taille 16.",
+        "Insérez une icône en rapport avec la cuisine (Insertion > Illustrations > Icônes).",
+        "La liste des ingrédients utilise des puces en forme de flèche.",
+        "Ajoutez une image en rapport avec la recette."
       ],
       "instructions": [
-        "Caractères spéciaux : \"Wingdings\".",
-        "Puces des ingrédients : flèche basique.",
-        "Vous insérez l'image pour le folklore."
+        "Placez le curseur à l'endroit où vous souhaitez ajouter une icône, puis ouvrez le menu Insertion > Illustrations > Icônes.",
+        "Recherchez une icône sur le thème de la cuisine, sélectionnez-la puis cliquez sur Insérer.",
+        "Sélectionnez la liste des ingrédients puis appliquez des puces en forme de flèche.",
+        "Insérez une image en rapport avec la recette."
       ],
       "scrape": {
         "ok": true,
@@ -1658,8 +1659,11 @@ window.WORD_ATELIER_DATA = {
       },
       "preamble": "",
       "criteria": [
-        "Titre : police de votre choix.",
-        "Texte : \"Calibri\", 16."
+        "Le titre est correctement mis en forme.",
+        "Le texte est en Calibri, taille 16.",
+        "Une icône a été insérée depuis le menu Insertion > Icônes.",
+        "La liste des ingrédients utilise des puces en forme de flèche.",
+        "Une image en rapport avec la recette est présente."
       ],
       "originalConsignes": [
         "Titre : police de votre choix.",
