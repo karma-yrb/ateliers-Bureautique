@@ -10362,5 +10362,4 @@ window.WORD_ATELIER_DATA = {
     "instructions": "Actions à réaliser",
     "criteria": "Contraintes de rendu ou critères de réussite"
   }
-}
-;
+};
