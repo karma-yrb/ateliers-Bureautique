@@ -408,9 +408,10 @@
       "description": "Personnalisez les onglets du ruban pour reproduire le resultat attendu.",
       "consignes": [],
       "instructions": [
-        "Ouvrez Word depuis le menu Démarrer ou la barre de recherche Windows : tapez \"Word\", cliquez sur l'application Microsoft Word, puis choisissez \"Document vierge\" pour commencer.",
-        "Pour réaliser cette opération le menu est fichier > Options > Personnaliser le ruban.",
-        "Vous manipulez ensuite en Cliqué-Glissé."
+        "Cherchez l'icône Microsoft Word sur votre Bureau ou dans le menu Démarrer. Si vous ne la trouvez pas, cliquez sur la barre de recherche Windows, tapez « Word », puis cliquez sur Microsoft Word.",
+        "Lorsque le logiciel s'ouvre, cliquez sur « Document vierge ».",
+        "Ouvrez le menu « Fichier », cliquez sur « Options », puis sélectionnez « Personnaliser le ruban » dans la colonne de gauche.",
+        "Dans la liste des onglets principaux, cochez la case « Insertion » pour afficher l'onglet ou décochez-la pour le masquer, puis cliquez sur « OK » pour valider."
       ],
       "scrape": {
         "ok": true,
