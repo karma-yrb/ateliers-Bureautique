@@ -1639,10 +1639,11 @@ window.WORD_ATELIER_DATA = {
         "Ajoutez une image en rapport avec la recette."
       ],
       "instructions": [
-        "Placez le curseur à l'endroit où vous souhaitez ajouter une icône, puis ouvrez le menu Insertion > Illustrations > Icônes.",
-        "Recherchez une icône sur le thème de la cuisine, sélectionnez-la puis cliquez sur Insérer.",
+        "Saisissez le titre de la recette puis appliquez la police de votre choix.",
+        "Sélectionnez le texte de la recette et mettez-le en police Calibri, taille 16.",
+        "Placez le curseur à l'endroit souhaité puis ouvrez Insertion > Illustrations > Icônes. Recherchez une icône en rapport avec les illustrations présentées et cliquez sur Insérer.",
         "Sélectionnez la liste des ingrédients puis appliquez des puces en forme de flèche.",
-        "Insérez une image en rapport avec la recette."
+        "Insérez une image en rapport avec la recette pour illustrer le document."
       ],
       "scrape": {
         "ok": true,
@@ -1658,13 +1659,7 @@ window.WORD_ATELIER_DATA = {
         ]
       },
       "preamble": "",
-      "criteria": [
-        "Le titre est correctement mis en forme.",
-        "Le texte est en Calibri, taille 16.",
-        "Une icône a été insérée depuis le menu Insertion > Icônes.",
-        "La liste des ingrédients utilise des puces en forme de flèche.",
-        "Une image en rapport avec la recette est présente."
-      ],
+      "criteria": [],
       "originalConsignes": [
         "Titre : police de votre choix.",
         "Texte : \"Calibri\", 16.",
@@ -1698,10 +1693,10 @@ window.WORD_ATELIER_DATA = {
       "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-006-image-resultat.jpg",
       "description": "Triez la liste de façon à ce que les éléments soient classés par ordre alphabétique. La fonction se trouve dans le groupe \"paragraphe\".",
       "consignes": [
-        "Téléchargez le fichier de travail.",
-        "Triez la liste de façon à ce que les éléments soient classés par ordre alphabétique. La fonction se trouve dans le groupe \"paragraphe\"."
+        "Triez la liste de façon à ce que les éléments soient classés par ordre alphabétique. La fonction se trouve dans le groupe \"paragraphe\".",
+        "test"
       ],
-      "instructions": [],
+      "instructions": ["test"],
       "scrape": {
         "ok": true,
         "url": "https://www.clic-formation.net/29-puces-et-numeros/exercice-6.html",

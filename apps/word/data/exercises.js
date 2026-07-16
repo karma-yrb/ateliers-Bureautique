@@ -1692,11 +1692,14 @@ window.WORD_ATELIER_DATA = {
       "imageEnonce": "data/assets/word/bases-05-puces-et-numeros/word-ex-006-image-enonce.jpg",
       "imageResultat": "data/assets/word/bases-05-puces-et-numeros/word-ex-006-image-resultat.jpg",
       "description": "Triez la liste de façon à ce que les éléments soient classés par ordre alphabétique. La fonction se trouve dans le groupe \"paragraphe\".",
-      "consignes": [
-        "Téléchargez le fichier de travail.",
-        "Triez la liste de façon à ce que les éléments soient classés par ordre alphabétique. La fonction se trouve dans le groupe \"paragraphe\"."
+      "consignes": [],
+      "instructions": [
+        "Sélectionnez toute la liste que vous souhaitez trier.",
+        "Ouvrez l'onglet Accueil puis repérez le groupe Paragraphe.",
+        "Cliquez sur le bouton Trier (A → Z).",
+        "Dans la fenêtre qui s'ouvre, vérifiez que le tri est effectué sur les Paragraphes, de type Texte et dans l'ordre Croissant (A à Z).",
+        "Cliquez sur OK et vérifiez que les éléments sont maintenant classés par ordre alphabétique."
       ],
-      "instructions": [],
       "scrape": {
         "ok": true,
         "url": "https://www.clic-formation.net/29-puces-et-numeros/exercice-6.html",
