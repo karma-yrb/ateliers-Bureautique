@@ -805,7 +805,7 @@ window.EXCEL_ATELIER_DATA = {
       "title": "Saisir des données dans Excel, construction d'un tabeau simple",
       "level": 1,
       "pageUrl": "https://www.clic-formation.net/saisir-des-donnees/exercice-2.html",
-      "docxUrl": "https://drive.google.com/uc?export=download&id=1qOimAcBDxqZJcrZ8jEflBZOJk2VH2Qy-",
+      "docxUrl": "",
       "downloadUrl": null,
       "downloadLabel": "",
       "imageEnonce": null,
