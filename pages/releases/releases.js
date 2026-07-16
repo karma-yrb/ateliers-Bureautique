@@ -1,7 +1,100 @@
 window.RELEASES_DATA = {
-  "version": "1.24.0",
-  "updatedAt": "2026-07-15T14:02:22.161Z",
+  "version": "1.25.0",
+  "updatedAt": "2026-07-16T07:03:43.613Z",
   "releases": [
+    {
+      "version": "1.25.0",
+      "tag": "bureautique-v1.25.0",
+      "date": "2026-07-16",
+      "releaseType": "minor",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version mineure avec nouvelles fonctionnalites et ameliorations.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.47",
+          "breaking": false,
+          "hash": "f68f022"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.1",
+          "breaking": false,
+          "hash": "888f2ce"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.16.1",
+          "breaking": false,
+          "hash": "c2446e9"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "37c116d"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.0",
+          "breaking": false,
+          "hash": "f9185f8"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.16.0",
+          "breaking": false,
+          "hash": "f09bd17"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "core",
+          "description": "respect explicit empty image lists",
+          "breaking": false,
+          "hash": "92ac359"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "images",
+          "description": "integrate previews in exercise blocks",
+          "breaking": false,
+          "hash": "0a407d0"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 6,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 8
+      }
+    },
     {
       "version": "1.24.0",
       "tag": "bureautique-v1.24.0",
