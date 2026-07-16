@@ -928,7 +928,8 @@ window.EXCEL_ATELIER_DATA = {
       "preamble": "",
       "instructions": [
         "Vous téléchargez votre fichier de travail ici.",
-        "L'opération est relativement simple si vous avez bien suivi le support de la rubrique et bien fait apparaître le bouton FORMULAIRE, soit dans le ruban, soit dans la barre d'accès rapide. Si ce n'est pas le cas, il vous faut le faire.",
+        "L'opération est relativement simple si vous avez bien suivi le support de la rubrique et bien fait apparaître le bouton FORMULAIRE, soit dans le ruban, soit dans la barre d'accès rapide.",
+        "Si ce n'est pas le cas, il vous faut le faire ici https://www.clic-formation.net/saisir-des-donnees/support-formulaire.html",
         "Après avoir téléchargé le fichier de travail, vous ajoutez deux lignes via le formulaire. Pensez à sélectionner une cellule du tableau au minimum avant."
       ],
       "levelLabel": "Debutant",
