@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "1.16.1",
-  "updatedAt": "2026-07-16T07:03:18.249Z",
+  "version": "1.16.2",
+  "updatedAt": "2026-07-16T12:02:25.305Z",
   "releases": [
+    {
+      "version": "1.16.2",
+      "tag": "word-v1.16.2",
+      "date": "2026-07-16",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "assets",
+          "description": "utiliser les liens en ligne des exercices",
+          "breaking": false,
+          "hash": "93a8c9d"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.25.0",
+          "breaking": false,
+          "hash": "6426576"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "0.1.47",
+          "breaking": false,
+          "hash": "f68f022"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.1",
+          "breaking": false,
+          "hash": "888f2ce"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "1.16.1",
       "tag": "word-v1.16.1",

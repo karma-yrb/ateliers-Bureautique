@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.2](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.16.1...word-v1.16.2) (2026-07-16)
+
+
+### Bug Fixes
+
+* **assets:** utiliser les liens en ligne des exercices ([93a8c9d](https://github.com/karma-yrb/ateliers-Bureautique/commit/93a8c9d12308d2a3251b2cab72590117cf4777bf))
+
 ### [1.16.1](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.16.0...word-v1.16.1) (2026-07-16)
 
 ## [1.16.0](https://github.com/karma-yrb/ateliers-Bureautique/compare/word-v1.15.0...word-v1.16.0) (2026-07-16)
