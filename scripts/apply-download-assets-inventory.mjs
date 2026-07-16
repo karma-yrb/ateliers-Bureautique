@@ -29,7 +29,7 @@ function writeJson(filePath, value) {
 
 function normalizeAssetUrl(baseAssetUrl, assetUrl, assetRelativePath) {
   const explicit = String(assetUrl || "").trim();
-  if (explicit) return explicit;
+  if (/^https?:\/\//i.test(explicit)) return explicit;
 
   const base = String(baseAssetUrl || "").trim().replace(/\/+$/, "");
   const relative = String(assetRelativePath || "").trim().replace(/\\/g, "/").replace(/^\/+/, "");
@@ -43,7 +43,7 @@ function buildInventoryMap(payload) {
     const key = `${item.app}::${item.exerciseId}::${item.slot}::${Number(item.itemIndex || 0)}`;
     const assetUrl = normalizeAssetUrl(
       payload.baseAssetUrl,
-      item.assetUrl || item.driveDownloadUrl,
+      item.driveDownloadUrl || item.assetUrl || item.sourceUrl,
       item.assetRelativePath,
     );
     if (!assetUrl) continue;
