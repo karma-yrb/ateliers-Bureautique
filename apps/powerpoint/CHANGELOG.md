@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.48](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.47...powerpoint-v0.1.48) (2026-07-16)
+
+
+### Bug Fixes
+
+* **assets:** utiliser les liens en ligne des exercices ([93a8c9d](https://github.com/karma-yrb/ateliers-Bureautique/commit/93a8c9d12308d2a3251b2cab72590117cf4777bf))
+
 ### [0.1.47](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.46...powerpoint-v0.1.47) (2026-07-16)
 
 

@@ -1,7 +1,68 @@
 window.RELEASES_DATA = {
-  "version": "0.1.47",
-  "updatedAt": "2026-07-16T07:03:35.202Z",
+  "version": "0.1.48",
+  "updatedAt": "2026-07-16T12:02:45.449Z",
   "releases": [
+    {
+      "version": "0.1.48",
+      "tag": "powerpoint-v0.1.48",
+      "date": "2026-07-16",
+      "releaseType": "patch",
+      "impact": {
+        "level": "low",
+        "rationale": "Corrections ciblees, documentation ou maintenance."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.2",
+          "breaking": false,
+          "hash": "0a6679e"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.16.2",
+          "breaking": false,
+          "hash": "e780dac"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "assets",
+          "description": "utiliser les liens en ligne des exercices",
+          "breaking": false,
+          "hash": "93a8c9d"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.25.0",
+          "breaking": false,
+          "hash": "6426576"
+        }
+      ],
+      "counts": {
+        "feat": 0,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 3,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 4
+      }
+    },
     {
       "version": "0.1.47",
       "tag": "powerpoint-v0.1.47",
