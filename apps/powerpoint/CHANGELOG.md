@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.47](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.46...powerpoint-v0.1.47) (2026-07-16)
+
+
+### Features
+
+* **images:** integrate previews in exercise blocks ([0a407d0](https://github.com/karma-yrb/ateliers-Bureautique/commit/0a407d0bb96f5dbfa948bd24e6d3b5a8303328ae))
+
+
+### Bug Fixes
+
+* **core:** respect explicit empty image lists ([92ac359](https://github.com/karma-yrb/ateliers-Bureautique/commit/92ac359cc8c06b70c197f34edfaed93fc0349625))
+
 ### [0.1.46](https://github.com/karma-yrb/ateliers-Bureautique/compare/powerpoint-v0.1.45...powerpoint-v0.1.46) (2026-07-15)
 
 

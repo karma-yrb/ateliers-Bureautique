@@ -1,7 +1,100 @@
 window.RELEASES_DATA = {
-  "version": "0.1.46",
-  "updatedAt": "2026-07-15T14:02:15.457Z",
+  "version": "0.1.47",
+  "updatedAt": "2026-07-16T07:03:35.202Z",
   "releases": [
+    {
+      "version": "0.1.47",
+      "tag": "powerpoint-v0.1.47",
+      "date": "2026-07-16",
+      "releaseType": "patch",
+      "impact": {
+        "level": "medium",
+        "rationale": "Nouvelles fonctionnalites ou changements techniques structurants."
+      },
+      "summary": "Version corrective orientee stabilite.",
+      "elements": [
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.1",
+          "breaking": false,
+          "hash": "888f2ce"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.16.1",
+          "breaking": false,
+          "hash": "c2446e9"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "",
+          "description": "prepare monorepo release",
+          "breaking": false,
+          "hash": "37c116d"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.9.0",
+          "breaking": false,
+          "hash": "f9185f8"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.16.0",
+          "breaking": false,
+          "hash": "f09bd17"
+        },
+        {
+          "type": "fix",
+          "typeLabel": "Correction",
+          "scope": "core",
+          "description": "respect explicit empty image lists",
+          "breaking": false,
+          "hash": "92ac359"
+        },
+        {
+          "type": "feat",
+          "typeLabel": "Fonctionnalite",
+          "scope": "images",
+          "description": "integrate previews in exercise blocks",
+          "breaking": false,
+          "hash": "0a407d0"
+        },
+        {
+          "type": "chore",
+          "typeLabel": "Maintenance",
+          "scope": "release",
+          "description": "1.24.0",
+          "breaking": false,
+          "hash": "8fb38f5"
+        }
+      ],
+      "counts": {
+        "feat": 1,
+        "fix": 1,
+        "perf": 0,
+        "refactor": 0,
+        "docs": 0,
+        "test": 0,
+        "chore": 6,
+        "build": 0,
+        "ci": 0,
+        "style": 0,
+        "revert": 0,
+        "other": 0,
+        "breaking": 0,
+        "total": 8
+      }
+    },
     {
       "version": "0.1.46",
       "tag": "powerpoint-v0.1.46",
