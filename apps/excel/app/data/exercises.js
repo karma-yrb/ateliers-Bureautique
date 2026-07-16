@@ -1261,9 +1261,9 @@ window.EXCEL_ATELIER_DATA = {
       "imageEnonceCaption": "",
       "imageResultatCaption": "",
       "description": "Format et embelissement",
-      "preamble": "",
+      "preamble": "Vous devez réaliser cette maquette de tableau à l'identique.",
       "instructions": [
-        "fusionner quand c'est nécessaire (plusieurs cellules en une).",
+        "Fusionner quand c'est nécessaire (plusieurs cellules en une).",
         "Copier-coller des cellules.",
         "Insérer des bordures obliques.",
         "Faire le tour du tableau de double ligne.",
@@ -1445,8 +1445,11 @@ window.EXCEL_ATELIER_DATA = {
       "description": "Ecriture oblique dans une cellule",
       "preamble": "",
       "instructions": [
-        "Vous reproduisez ce tableau en prenant soin de respecter la mise en forme et particulièrement l'orientation de l'écriture des cellules.",
-        "Cette fonction se trouve dans le format de cellule et alignement."
+        "Reproduisez le tableau en respectant les données, la mise en forme et l'orientation du texte dans certaines cellules.",
+        "Sélectionnez la ou les cellules dont vous souhaitez modifier l'orientation.",
+        "Faites un clic droit sur la sélection, puis choisissez « Format de cellule ».",
+        "Ouvrez l'onglet « Alignement », puis utilisez la zone « Orientation » pour incliner ou faire pivoter le texte.",
+        "Ajustez l'orientation jusqu'à obtenir le même résultat que sur l'image de l'énoncé, puis validez avec « OK »."
       ],
       "levelLabel": "Debutant",
       "scrape": {

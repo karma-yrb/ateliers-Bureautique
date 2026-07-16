@@ -1445,8 +1445,11 @@
       "description": "Ecriture oblique dans une cellule",
       "preamble": "",
       "instructions": [
-        "Vous reproduisez ce tableau en prenant soin de respecter la mise en forme et particulièrement l'orientation de l'écriture des cellules.",
-        "Cette fonction se trouve dans le format de cellule et alignement."
+        "Reproduisez le tableau en respectant les données, la mise en forme et l'orientation du texte dans certaines cellules.",
+        "Sélectionnez la ou les cellules dont vous souhaitez modifier l'orientation.",
+        "Faites un clic droit sur la sélection, puis choisissez « Format de cellule ».",
+        "Ouvrez l'onglet « Alignement », puis utilisez la zone « Orientation » pour incliner ou faire pivoter le texte.",
+        "Ajustez l'orientation jusqu'à obtenir le même résultat que sur l'image de l'énoncé, puis validez avec « OK »."
       ],
       "levelLabel": "Debutant",
       "scrape": {
@@ -1499,7 +1502,10 @@
       "instructions": [
         "Pensez à insérer une ligne au-dessus du modèle.",
         "La bordure interne des cellules n'est pas de la même épaisseur que le cadre.",
-        "Le pinceau de reproduction de mis en forme est indispensable."
+        "Sélectionnez la cellule ou la zone dont vous souhaitez copier la mise en forme.",
+        "Dans l'onglet « Accueil », cliquez sur l'outil « Reproduire la mise en forme » (le pinceau).",
+        "Cliquez ensuite sur la cellule ou la zone où vous souhaitez appliquer cette mise en forme.",
+        "Vérifiez que les bordures, l'alignement et les autres éléments de mise en forme correspondent au modèle."
       ],
       "levelLabel": "Debutant",
       "scrape": {
