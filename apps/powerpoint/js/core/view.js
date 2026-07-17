@@ -280,7 +280,9 @@ class AtelierView {
   }
 
   renderExercise(vm) {
-    this.currentExerciseVm = vm;
+      this.currentExerciseVm = vm;
+      // Si une image est ouverte, on ferme le visualiseur afin de réinitialiser le zoom et d'éviter qu'il reste affiché lors du changement d'exercice.
+      this.closeImageModal();
 
     // Réinitialiser la section "Préparer l'exercice" immédiatement
     if (this.exerciseWorkFileStatus) this.exerciseWorkFileStatus.textContent = "";
