@@ -1502,7 +1502,10 @@ window.EXCEL_ATELIER_DATA = {
       "instructions": [
         "Pensez à insérer une ligne au-dessus du modèle.",
         "La bordure interne des cellules n'est pas de la même épaisseur que le cadre.",
-        "Le pinceau de reproduction de mis en forme est indispensable."
+        "Sélectionnez la cellule ou la zone dont vous souhaitez copier la mise en forme.",
+        "Dans l'onglet « Accueil », cliquez sur l'outil « Reproduire la mise en forme » (le pinceau).",
+        "Cliquez ensuite sur la cellule ou la zone où vous souhaitez appliquer cette mise en forme.",
+        "Vérifiez que les bordures, l'alignement et les autres éléments de mise en forme correspondent au modèle."
       ],
       "levelLabel": "Debutant",
       "scrape": {
