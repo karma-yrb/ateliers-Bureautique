@@ -281,6 +281,8 @@ class AtelierView {
 
   renderExercise(vm) {
     this.currentExerciseVm = vm;
+      // Si une image est ouverte, on ferme le visualiseur afin de réinitialiser le zoom et d'éviter qu'il reste affiché lors du changement d'exercice.
+      this.closeImageModal();
 
     // Réinitialiser la section "Préparer l'exercice" immédiatement
     if (this.exerciseWorkFileStatus) this.exerciseWorkFileStatus.textContent = "";
@@ -1066,6 +1068,8 @@ this.imageModalStage.addEventListener(
   }
 
   openImageModal(src, altText, galleryItems = null, galleryIndex = 0, trigger = null) {
+    // Si une image est déjà ouverte (changement d'exercice sans fermeture), on réinitialise complètement le visualiseur avant d'ouvrir la nouvelle.
+    this.closeImageModal();
     if (!src || !this.imageModal || !this.imageModalImg) return;
     const normalizedItems = Array.isArray(galleryItems) && galleryItems.length
       ? galleryItems.filter((item) => item && item.src)
